@@ -8,11 +8,7 @@ assignees: ''
 
 ## Feature Request
 
-**Summary:**
-{Briefly describe the feature you want to add}
+**[C-FEATURE]: 🚀 [Task Name]**
 
-**Reason:**
-{Explain why this feature would be useful}
-
-**Proposed Implementation:**
-{If you have an idea on how to implement this, please provide details here}
+**Description:** 
+[Brief task description]
