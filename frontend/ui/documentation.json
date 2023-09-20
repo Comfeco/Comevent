@@ -1,0 +1,1442 @@
+{
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-81c0146152848dc8b5c73ad1a26f81f8a1cd646d42a97dbe159bee556e1cfe2d15db464e2e9be173854497ab9408d32a94eb6bbfb8251c99c3b28b3a19b61f8b",
+            "file": "frontend/ui/components/molecules/button/button.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "Button",
+            "styleUrls": [
+                "./button.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "css",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 22,
+                    "type": "\"button-primary\" | \"button-secondary\" | \"button-tertiary\"",
+                    "decorators": []
+                },
+                {
+                    "name": "disabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 21,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "'button'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 20,
+                    "type": "\"button\" | \"submit\" | \"reset\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { ButtonType } from './button.interface';\n\n@Component({\n  standalone: true,\n  selector: 'Button',\n  imports: [CommonModule],\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ButtonComponent implements ButtonType {\n  @Input() type: 'button' | 'submit' | 'reset' = 'button';\n  @Input() disabled = false;\n  @Input() css!: 'button-primary' | 'button-secondary' | 'button-tertiary';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".button {\r\n  @apply outline-none rounded w-auto px-4;\r\n}\r\n\r\n.button-primary {\r\n  @apply bg-purple-500 text-white w-full hover:bg-purple-700 transition-all h-9;\r\n}\r\n\r\n.button-secondary {\r\n}\r\n\r\n.button-tertiary {\r\n}\r\n",
+                    "styleUrl": "./button.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "implements": [
+                "ButtonType"
+            ],
+            "templateData": "<button\n  [ngClass]=\"{\n    button: true,\n    'button-primary': css === 'button-primary' && !disabled,\n    'button-secondary': css === 'button-secondary',\n    'button-tertiary': css === 'button-tertiary',\n    'bg-slate-400 text-white w-full transition-all h-9': disabled\n  }\"\n  [type]=\"type\"\n  [class]=\"css\"\n  [disabled]=\"disabled\"\n>\n  <ng-content></ng-content>\n</button>\n"
+        },
+        {
+            "name": "ErrorInputComponent",
+            "id": "component-ErrorInputComponent-4182d382468b355816130c312223711701cb61de68c431ef9ed60eb1824f608e8d8925a6426a1d7113ccd99c60742409b328d91cc52a8ed93ff7da9d2490f86b",
+            "file": "frontend/ui/components/atoms/error-input/error-input.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "c-error-input",
+            "styleUrls": [
+                "./error-input.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./error-input.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "controlName",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 29,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "formContained",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 26,
+                    "type": "AbstractControl",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "errorMessages",
+                    "defaultValue": "{\n    required: () => ErrorMessages.EMPTY,\n    email: () => ErrorMessages.INVALID_EMAIL,\n    pattern: () => ErrorMessages.PATTERN,\n    minlength: (booleanValue: BooleanValue = { requiredLength: 6 }) =>\n      ErrorMessages.MIN_LENGTH(booleanValue),\n    maxlength: (booleanValue: BooleanValue = { requiredLength: 50 }) =>\n      ErrorMessages.MAX_LENGTH(booleanValue),\n  }",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Record<string | ErrorFunction>",
+                    "optional": false,
+                    "description": "",
+                    "line": 33,
+                    "modifierKind": [
+                        121,
+                        124,
+                        146
+                    ]
+                },
+                {
+                    "name": "listErrors",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string[] | null | void",
+                    "optional": false,
+                    "description": "",
+                    "line": 31
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "getMessage",
+                    "args": [
+                        {
+                            "name": "errorName",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "booleanValue",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "optional": true
+                        },
+                        {
+                            "name": "controlName",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "optional": true
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "any",
+                    "typeParameters": [],
+                    "line": 71,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "errorName",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "booleanValue",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "optional": true,
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "controlName",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "optional": true,
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "listOfErrors",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "string[]",
+                    "typeParameters": [],
+                    "line": 54,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { AbstractControl, FormGroup } from '@angular/forms';\nimport {\n  BooleanValue,\n  ErrorFunction,\n  ErrorMessages,\n} from './error-input.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-error-input',\n  imports: [CommonModule],\n  templateUrl: './error-input.component.html',\n  styleUrls: ['./error-input.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ErrorInputComponent {\n  @Input()\n  public formContained!: AbstractControl;\n\n  @Input()\n  public controlName?: string;\n\n  listErrors!: string[] | null | void;\n\n  private static readonly errorMessages: Record<string, ErrorFunction> = {\n    required: () => ErrorMessages.EMPTY,\n    email: () => ErrorMessages.INVALID_EMAIL,\n    pattern: () => ErrorMessages.PATTERN,\n    minlength: (booleanValue: BooleanValue = { requiredLength: 6 }) =>\n      ErrorMessages.MIN_LENGTH(booleanValue),\n    maxlength: (booleanValue: BooleanValue = { requiredLength: 50 }) =>\n      ErrorMessages.MAX_LENGTH(booleanValue),\n  };\n\n  get currentControl(): AbstractControl | null {\n    if (this.formContained && this.controlName) {\n      if (this.formContained instanceof FormGroup) {\n        return this.formContained.get(this.controlName);\n      } else {\n        return this.formContained;\n      }\n    }\n    return null;\n  }\n\n  listOfErrors(): string[] {\n    if (this.currentControl?.errors) {\n      return Object.keys(this.currentControl?.errors)\n        .map((field) => {\n          const error = this.currentControl?.errors\n            ? this.currentControl?.errors[field]\n            : null;\n          if (error) {\n            return this.getMessage(field, error);\n          }\n          return '';\n        })\n        .filter(Boolean);\n    }\n    return [];\n  }\n\n  private getMessage(\n    errorName: string,\n    booleanValue?: any,\n    controlName?: string\n  ) {\n    return ErrorInputComponent.errorMessages[errorName](\n      booleanValue,\n      controlName\n    );\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".error {\r\n  @apply w-full rounded-md h-auto p-1 bg-red-200 gap-2 items-center flex;\r\n}\r\n",
+                    "styleUrl": "./error-input.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "accessors": {
+                "currentControl": {
+                    "name": "currentControl",
+                    "getSignature": {
+                        "name": "currentControl",
+                        "type": "",
+                        "returnType": "AbstractControl | null",
+                        "line": 43
+                    }
+                }
+            },
+            "templateData": "<span>\n  <div class=\"error\">\n    <img class=\"h-8 w-8\" src=\"\" alt=\"icon error\" />\n    {{ listOfErrors() }}\n  </div>\n</span>\n"
+        },
+        {
+            "name": "InputComponent",
+            "id": "component-InputComponent-9825b0bde61f16e1ac24b6c6221176a7cd19e60eb006659653f5d67aaf48fec66531717b3a1cfedac6d035f071255821d7922735b50cc730de0b1dd4284815ff",
+            "file": "frontend/ui/components/molecules/input/input.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [
+                {
+                    "name": "{\n    provide: NG_VALUE_ACCESSOR, useExisting: forwardRef(() => InputComponent), multi: true,\n}",
+                    "type": "component"
+                }
+            ],
+            "selector": "c-input",
+            "styleUrls": [
+                "./input.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./input.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "css",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 59,
+                    "type": "\"input-primary\" | \"input-secondary\" | \"input-tertiary\"",
+                    "decorators": []
+                },
+                {
+                    "name": "disabled",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 77,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "formControl",
+                    "defaultValue": "new FormControl()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 72,
+                    "type": "FormControl",
+                    "decorators": []
+                },
+                {
+                    "name": "formGroup",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 70,
+                    "type": "FormGroup",
+                    "decorators": []
+                },
+                {
+                    "name": "id",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 68,
+                    "type": "string | undefined",
+                    "decorators": []
+                },
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 53,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "placeholder",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 56,
+                    "type": "string | undefined",
+                    "decorators": []
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "'text'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 62,
+                    "type": "\"number\" | \"text\" | \"email\" | \"password\"",
+                    "decorators": []
+                },
+                {
+                    "name": "value",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 65,
+                    "type": "string | number | undefined",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "_disabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 74,
+                    "modifierKind": [
+                        121
+                    ]
+                },
+                {
+                    "name": "destroyRef",
+                    "defaultValue": "inject(DestroyRef)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "DestroyRef",
+                    "optional": false,
+                    "description": "",
+                    "line": 50
+                },
+                {
+                    "name": "onChange",
+                    "defaultValue": "noop",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "function",
+                    "optional": false,
+                    "description": "",
+                    "line": 123
+                },
+                {
+                    "name": "onTouch",
+                    "defaultValue": "noop",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "function",
+                    "optional": false,
+                    "description": "",
+                    "line": 124
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "getValidatorsForType",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "[] | null",
+                    "typeParameters": [],
+                    "line": 93,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121
+                    ]
+                },
+                {
+                    "name": "isFormControl",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "boolean",
+                    "typeParameters": [],
+                    "line": 146,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "isValid",
+                    "args": [
+                        {
+                            "name": "inputName",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "boolean",
+                    "typeParameters": [],
+                    "line": 150,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "inputName",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 107,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "registerOnChange",
+                    "args": [
+                        {
+                            "name": "fn",
+                            "type": "function",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "function": [
+                                {
+                                    "name": "value",
+                                    "type": "string",
+                                    "deprecated": false,
+                                    "deprecationMessage": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 132,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "fn",
+                            "type": "function",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "function": [
+                                {
+                                    "name": "value",
+                                    "type": "string",
+                                    "deprecated": false,
+                                    "deprecationMessage": ""
+                                }
+                            ],
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "registerOnTouched",
+                    "args": [
+                        {
+                            "name": "fn",
+                            "type": "function",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "function": []
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 136,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "fn",
+                            "type": "function",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "function": [],
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "setDisabledState",
+                    "args": [
+                        {
+                            "name": "isDisabled",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 140,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "isDisabled",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "writeValue",
+                    "args": [
+                        {
+                            "name": "value",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 126,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "value",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "FormsModule",
+                    "type": "module"
+                },
+                {
+                    "name": "ReactiveFormsModule",
+                    "type": "module"
+                },
+                {
+                    "name": "ErrorInputComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  DestroyRef,\n  Input,\n  OnInit,\n  ViewEncapsulation,\n  forwardRef,\n  inject,\n} from '@angular/core';\nimport { takeUntilDestroyed } from '@angular/core/rxjs-interop';\nimport {\n  AbstractControl,\n  ControlValueAccessor,\n  FormControl,\n  FormGroup,\n  FormsModule,\n  NG_VALUE_ACCESSOR,\n  ReactiveFormsModule,\n  ValidatorFn,\n  Validators,\n} from '@angular/forms';\nimport { debounceTime, noop, tap } from 'rxjs';\nimport { ErrorInputComponent } from '../../atoms/error-input/error-input.component';\nimport { InputType } from './input.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-input',\n  imports: [\n    CommonModule,\n    FormsModule,\n    ReactiveFormsModule,\n    ErrorInputComponent,\n  ],\n  providers: [\n    {\n      provide: NG_VALUE_ACCESSOR,\n      useExisting: forwardRef(() => InputComponent),\n      multi: true,\n    },\n  ],\n  templateUrl: './input.component.html',\n  styleUrls: ['./input.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class InputComponent implements ControlValueAccessor, OnInit, InputType {\n  destroyRef: DestroyRef = inject(DestroyRef);\n\n  @Input()\n  name!: string;\n\n  @Input()\n  placeholder?: string | undefined;\n\n  @Input()\n  css!: 'input-primary' | 'input-secondary' | 'input-tertiary';\n\n  @Input()\n  type: 'number' | 'text' | 'email' | 'password' = 'text';\n\n  @Input()\n  value?: string | number | undefined;\n\n  @Input()\n  id?: string | undefined;\n\n  @Input() formGroup?: FormGroup;\n\n  @Input() formControl: FormControl = new FormControl();\n\n  private _disabled = false;\n\n  @Input()\n  get disabled(): boolean {\n    return this._disabled;\n  }\n  set disabled(value: boolean) {\n    this._disabled = value;\n    this.setDisabledState(value);\n  }\n\n  get control(): AbstractControl | null {\n    if (this.formGroup) {\n      return this.formGroup.controls[this.name];\n    }\n    return this.formControl || null;\n  }\n\n  //Validators\n  private getValidatorsForType(): ValidatorFn[] | null {\n    switch (this.type) {\n      case 'email':\n        return [Validators.required, Validators.email];\n      case 'number':\n        return [Validators.pattern(/^[0-9]*$/), Validators.required];\n      case 'password':\n        return [Validators.required, Validators.minLength(6)];\n      case 'text':\n      default:\n        return [Validators.required];\n    }\n  }\n\n  ngOnInit(): void {\n    if (this.control) {\n      this.control.setValidators(this.getValidatorsForType());\n      this.control.updateValueAndValidity();\n\n      this.control.valueChanges\n        .pipe(\n          debounceTime(200),\n          tap((value) => this.onChange(value)),\n          takeUntilDestroyed(this.destroyRef)\n        )\n        .subscribe();\n    }\n  }\n\n  // ControlValueAccessor methods\n  onChange: (value: string) => void = noop;\n  onTouch: () => void = noop;\n\n  writeValue(value: string): void {\n    if (this.control) {\n      this.control.setValue(value, { emitEvent: false });\n    }\n  }\n\n  registerOnChange(fn: (value: string) => void): void {\n    this.onChange = fn;\n  }\n\n  registerOnTouched(fn: () => void): void {\n    this.onTouch = fn;\n  }\n\n  setDisabledState(isDisabled: boolean): void {\n    if (this.control) {\n      isDisabled ? this.control.disable() : this.control.enable();\n    }\n  }\n\n  isFormControl(): boolean {\n    return !!this.formControl;\n  }\n\n  isValid(inputName: string): boolean {\n    if (this.formControl) {\n      return this.formControl.touched ? this.formControl.valid : true;\n    }\n    if (this.formGroup) {\n      const control = this.formGroup.get(inputName);\n      if (control?.touched) {\n        return control.valid;\n      }\n    }\n    return true;\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".content-input {\r\n  @apply flex flex-col gap-1;\r\n}\r\n\r\n.input {\r\n  @apply outline-none rounded w-auto px-4;\r\n}\r\n\r\n.error {\r\n  @apply border-red-500 text-red-400;\r\n}\r\n\r\n.input-primary {\r\n  @apply focus:placeholder-transparent placeholder-gray-200 h-10 w-full border-b-2 text-gray-600 focus:outline-none focus:border-purple-400 transition-all;\r\n}\r\n",
+                    "styleUrl": "./input.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "implements": [
+                "ControlValueAccessor",
+                "OnInit",
+                "InputType"
+            ],
+            "accessors": {
+                "disabled": {
+                    "name": "disabled",
+                    "setSignature": {
+                        "name": "disabled",
+                        "type": "void",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "args": [
+                            {
+                                "name": "value",
+                                "type": "boolean",
+                                "deprecated": false,
+                                "deprecationMessage": ""
+                            }
+                        ],
+                        "returnType": "void",
+                        "line": 80,
+                        "jsdoctags": [
+                            {
+                                "name": "value",
+                                "type": "boolean",
+                                "deprecated": false,
+                                "deprecationMessage": "",
+                                "tagName": {
+                                    "text": "param"
+                                }
+                            }
+                        ]
+                    },
+                    "getSignature": {
+                        "name": "disabled",
+                        "type": "boolean",
+                        "returnType": "boolean",
+                        "line": 77
+                    }
+                },
+                "control": {
+                    "name": "control",
+                    "getSignature": {
+                        "name": "control",
+                        "type": "",
+                        "returnType": "AbstractControl | null",
+                        "line": 85
+                    }
+                }
+            },
+            "templateData": "<div class=\"content-input\">\n  <input\n    *ngIf=\"formGroup; else formControlTemplate\"\n    [ngClass]=\"{ input: true, 'input-primary': css === 'input-primary' }\"\n    [name]=\"name\"\n    [placeholder]=\"placeholder\"\n    [type]=\"type\"\n    [attr.value]=\"value || null\"\n    [attr.id]=\"id || null\"\n    [formControlName]=\"name\"\n  />\n\n  <ng-template #formControlTemplate>\n    <input\n      *ngIf=\"formControl\"\n      [ngClass]=\"{ input: true, 'input-primary': css === 'input-primary' }\"\n      [name]=\"name\"\n      [placeholder]=\"placeholder\"\n      [type]=\"type\"\n      [attr.value]=\"value || null\"\n      [attr.id]=\"id || null\"\n      [formControl]=\"formControl\"\n    />\n  </ng-template>\n\n  <c-error-input\n    *ngIf=\"!isValid(name)\"\n    [formContained]=\"formControl || formGroup!\"\n    [controlName]=\"name\"\n  ></c-error-input>\n</div>\n"
+        },
+        {
+            "name": "LabelComponent",
+            "id": "component-LabelComponent-e8ab10543c78185bb66e9d3e9b6a087649d07a6d981e11f07acb06a7668a0faed9870391eb32c0cb74627005d2b53bab264e1443f38a84e2f363d79feeea5ad3",
+            "file": "frontend/ui/components/atoms/label/label.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "c-label",
+            "styleUrls": [
+                "./label.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./label.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "css",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 20,
+                    "type": "\"label-primary\" | \"label-secondary\" | \"label-tertiary\"",
+                    "decorators": []
+                },
+                {
+                    "name": "for",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 21,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { LabelType } from './label.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-label',\n  imports: [CommonModule],\n  templateUrl: './label.component.html',\n  styleUrls: ['./label.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class LabelComponent implements LabelType {\n  @Input() css!: 'label-primary' | 'label-secondary' | 'label-tertiary';\n  @Input() for?: string;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".label {\r\n  @apply text-base font-medium flex flex-col gap-1;\r\n}\r\n\r\n.label-primary {\r\n  @apply text-black font-medium;\r\n}\r\n",
+                    "styleUrl": "./label.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "implements": [
+                "LabelType"
+            ],
+            "templateData": "<label\n  [ngClass]=\"{\n    label: true,\n    'label-primary': css === 'label-primary'\n  }\"\n>\n  <ng-content></ng-content>\n</label>\n"
+        },
+        {
+            "name": "TitleComponent",
+            "id": "component-TitleComponent-54617e5ecd2cddd155bb502a8decf975944327c705a885e0cd47698c8a56e8790850981be603005e1f5e5fea5ce7061e8babc6ae5a3cf2d5e7f7b29540d8a069",
+            "file": "frontend/ui/components/atoms/title/title.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "c-title",
+            "styleUrls": [
+                "./title.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./title.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "color",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 27,
+                    "type": "\"t-white\" | \"t-black\"",
+                    "decorators": []
+                },
+                {
+                    "name": "css",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 20,
+                    "type": "\"title-xs\" | \"title-sm\" | \"title-base\" | \"title-xl\" | \"title-2xl\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { TitleType } from './title.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-title',\n  imports: [CommonModule],\n  templateUrl: './title.component.html',\n  styleUrls: ['./title.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class TitleComponent implements TitleType {\n  @Input() css!:\n    | 'title-xs'\n    | 'title-sm'\n    | 'title-base'\n    | 'title-xl'\n    | 'title-2xl';\n\n  @Input() color!: 't-white' | 't-black';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".title {\r\n  @apply font-bold;\r\n}\r\n\r\n.title-xs {\r\n  @apply text-xs;\r\n}\r\n\r\n.title-sm {\r\n  @apply text-sm;\r\n}\r\n\r\n.title-base {\r\n  @apply text-base;\r\n}\r\n\r\n.title-lg {\r\n  @apply text-lg;\r\n}\r\n\r\n.title-xl {\r\n  @apply text-xl;\r\n}\r\n\r\n.title-2xl {\r\n  @apply text-2xl;\r\n}\r\n\r\n.t-white {\r\n  @apply text-white dark:text-black;\r\n}\r\n\r\n.t-black {\r\n  @apply text-black dark:text-white;\r\n}\r\n",
+                    "styleUrl": "./title.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "implements": [
+                "TitleType"
+            ],
+            "templateData": "<p\n  [ngClass]=\"{\n    title: true,\n    'title-xs': css === 'title-xs',\n    'title-sm': css === 'title-sm',\n    'title-base': css === 'title-base',\n    'title-xl': css === 'title-xl',\n    'title-2xl': css === 'title-2xl',\n    't-white': color === 't-white',\n    't-black': color === 't-black'\n  }\"\n>\n  <ng-content></ng-content>\n</p>\n"
+        }
+    ],
+    "modules": [],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "config",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/.storybook/main.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "StorybookConfig",
+                "defaultValue": "{\n  stories: ['../stories/**/*.stories.@(js|jsx|ts|tsx)'],\n  addons: [\n    '@storybook/addon-links',\n    '@storybook/addon-essentials',\n    {\n      name: '@storybook/addon-styling',\n      options: {\n        // Check out https://github.com/storybookjs/addon-styling/blob/main/docs/api.md\n        // For more details on this addon's options.\n        /* postCss: {\n          implementation: require.resolve('postcss'),\n        }, */\n      }, // * no options for Angular,\n    },\n  ],\n  framework: {\n    name: '@storybook/angular',\n    options: {},\n  },\n  docs: {\n    autodocs: true,\n    defaultName: 'Docs',\n  },\n  // staticDirs: ['../public'],\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<StoryType>",
+                "defaultValue": "{\n  title: 'Components/Atoms/Label',\n  component: LabelComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-label [css]=\"css\">\n          ${text}\n        </c-label>\n      `,\n    };\n  },\n  argTypes: {\n    css: {\n      type: 'string',\n    },\n    text: {\n      type: 'string',\n    },\n    for: {\n      type: 'string',\n    },\n  },\n  args: {\n    css: 'label-primary' || 'label-secondary' || 'label-tertiary',\n    text: '',\n    for: '',\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<StoryType>",
+                "defaultValue": "{\n  title: 'Components/Atoms/Title',\n  component: TitleComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-title [css]=\"css\" [color]=\"color\">\n          ${text}\n        </c-title>\n      `,\n    };\n  },\n  argTypes: {\n    css: {\n      control: {\n        type: 'select',\n        options: [\n          'title-xs',\n          'title-sm',\n          'title-base',\n          'title-xl',\n          'title-2xl',\n        ],\n      },\n    },\n    color: {\n      control: { type: 'radio', options: ['t-white', 't-black'] },\n    },\n    text: {\n      control: { type: 'text' },\n    },\n  },\n  args: {\n    css: 'title-xs',\n    color: 't-black',\n    text: 'Title Text',\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<StoryComponent>",
+                "defaultValue": "{\n  title: 'Components/Molecules/Button',\n  component: ButtonComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [ButtonComponent, TitleComponent],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  argTypes: {\n    css: {\n      options: ['button-primary', 'button-secondary', 'button-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'radio' },\n    },\n    type: {\n      options: ['button', 'reset', 'submit'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { title, ...buttonProps } = args;\n    const { text, ...titleProps } = title;\n\n    return {\n      props: { buttonProps, titleProps },\n      template: `\n      <Button [css]=\"buttonProps.css\" [disabled]=\"buttonProps.disabled\" [type]=\"buttonProps.type\">\n      <c-title [css]=\"titleProps.css\" [color]=\"titleProps.color\">${text}</c-title>\n    </Button>\n      `,\n    };\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<StoryComponent>",
+                "defaultValue": "{\n  title: 'Components/Molecules/Input',\n  component: InputComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [InputComponent, LabelComponent, ErrorInputComponent],\n      imports: [CommonModule, FormsModule, ReactiveFormsModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  argTypes: {\n    css: {\n      options: ['input-primary', 'input-secondary', 'input-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'radio' },\n    },\n    type: {\n      options: ['number', 'text', 'email', 'password'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { label, errors, ...inputProps } = args;\n    const { text, ...inputLabel } = label;\n    const { error, ...inputError } = errors;\n\n    return {\n      props: { inputProps, inputLabel, inputError },\n      template: `\n      <c-label [css]=\"inputLabel.css\">\n        ${text}\n        <c-input\n        [css]=\"inputProps.css\"\n        [type]=\"inputProps.type\"\n        [placeholder]=\"inputProps.placeholder\"\n        [disabled]=\"inputProps.disabled\"\n        [formControl]=\"inputProps.formControl\"\n        [name]=\"inputProps.name\"></c-input>\n      </c-label>\n\n      <c-error-input\n        [formContained]=\"inputProps.formControl\"\n        [controlName]=\"inputProps.name\"\n      >${error}</c-error-input>\n      `,\n    };\n  },\n}"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    css: 'label-primary',\n    text: 'Label Text',\n  },\n}"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    color: 't-black',\n    css: 'title-2xl',\n    text: 'Title Text',\n  },\n}"
+            },
+            {
+                "name": "PrimaryButton",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    css: 'button-primary',\n    title: {\n      css: 'title-base',\n      color: 't-white',\n      text: 'Text button',\n    },\n  },\n}"
+            },
+            {
+                "name": "PrimaryButton",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    css: 'input-primary',\n    type: 'text',\n    placeholder: 'Entry text',\n    disabled: false,\n    name: 'example',\n    formControl: new FormControl(''),\n    label: {\n      css: 'label-primary',\n      text: 'Label text',\n    },\n  },\n}"
+            }
+        ],
+        "functions": [],
+        "typealiases": [
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<StoryType>",
+                "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 180
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<StoryType>",
+                "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 180
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<>",
+                "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 180
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<>",
+                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 180
+            },
+            {
+                "name": "StoryComponent",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "",
+                "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 190
+            },
+            {
+                "name": "StoryComponent",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "",
+                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 190
+            },
+            {
+                "name": "StoryError",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "",
+                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 190
+            },
+            {
+                "name": "StoryLabel",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "",
+                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 190
+            },
+            {
+                "name": "StoryTitle",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "",
+                "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 190
+            },
+            {
+                "name": "StoryType",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "",
+                "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 190
+            },
+            {
+                "name": "StoryType",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "",
+                "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 190
+            }
+        ],
+        "enumerations": [],
+        "groupedVariables": {
+            "frontend/ui/.storybook/main.ts": [
+                {
+                    "name": "config",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/.storybook/main.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "StorybookConfig",
+                    "defaultValue": "{\n  stories: ['../stories/**/*.stories.@(js|jsx|ts|tsx)'],\n  addons: [\n    '@storybook/addon-links',\n    '@storybook/addon-essentials',\n    {\n      name: '@storybook/addon-styling',\n      options: {\n        // Check out https://github.com/storybookjs/addon-styling/blob/main/docs/api.md\n        // For more details on this addon's options.\n        /* postCss: {\n          implementation: require.resolve('postcss'),\n        }, */\n      }, // * no options for Angular,\n    },\n  ],\n  framework: {\n    name: '@storybook/angular',\n    options: {},\n  },\n  docs: {\n    autodocs: true,\n    defaultName: 'Docs',\n  },\n  // staticDirs: ['../public'],\n}"
+                }
+            ],
+            "frontend/ui/stories/atoms/label/label.component.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<StoryType>",
+                    "defaultValue": "{\n  title: 'Components/Atoms/Label',\n  component: LabelComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-label [css]=\"css\">\n          ${text}\n        </c-label>\n      `,\n    };\n  },\n  argTypes: {\n    css: {\n      type: 'string',\n    },\n    text: {\n      type: 'string',\n    },\n    for: {\n      type: 'string',\n    },\n  },\n  args: {\n    css: 'label-primary' || 'label-secondary' || 'label-tertiary',\n    text: '',\n    for: '',\n  },\n}"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    css: 'label-primary',\n    text: 'Label Text',\n  },\n}"
+                }
+            ],
+            "frontend/ui/stories/atoms/title/title.component.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<StoryType>",
+                    "defaultValue": "{\n  title: 'Components/Atoms/Title',\n  component: TitleComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-title [css]=\"css\" [color]=\"color\">\n          ${text}\n        </c-title>\n      `,\n    };\n  },\n  argTypes: {\n    css: {\n      control: {\n        type: 'select',\n        options: [\n          'title-xs',\n          'title-sm',\n          'title-base',\n          'title-xl',\n          'title-2xl',\n        ],\n      },\n    },\n    color: {\n      control: { type: 'radio', options: ['t-white', 't-black'] },\n    },\n    text: {\n      control: { type: 'text' },\n    },\n  },\n  args: {\n    css: 'title-xs',\n    color: 't-black',\n    text: 'Title Text',\n  },\n}"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    color: 't-black',\n    css: 'title-2xl',\n    text: 'Title Text',\n  },\n}"
+                }
+            ],
+            "frontend/ui/stories/molecules/button/button.component.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<StoryComponent>",
+                    "defaultValue": "{\n  title: 'Components/Molecules/Button',\n  component: ButtonComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [ButtonComponent, TitleComponent],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  argTypes: {\n    css: {\n      options: ['button-primary', 'button-secondary', 'button-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'radio' },\n    },\n    type: {\n      options: ['button', 'reset', 'submit'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { title, ...buttonProps } = args;\n    const { text, ...titleProps } = title;\n\n    return {\n      props: { buttonProps, titleProps },\n      template: `\n      <Button [css]=\"buttonProps.css\" [disabled]=\"buttonProps.disabled\" [type]=\"buttonProps.type\">\n      <c-title [css]=\"titleProps.css\" [color]=\"titleProps.color\">${text}</c-title>\n    </Button>\n      `,\n    };\n  },\n}"
+                },
+                {
+                    "name": "PrimaryButton",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    css: 'button-primary',\n    title: {\n      css: 'title-base',\n      color: 't-white',\n      text: 'Text button',\n    },\n  },\n}"
+                }
+            ],
+            "frontend/ui/stories/molecules/input/input.component.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<StoryComponent>",
+                    "defaultValue": "{\n  title: 'Components/Molecules/Input',\n  component: InputComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [InputComponent, LabelComponent, ErrorInputComponent],\n      imports: [CommonModule, FormsModule, ReactiveFormsModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  argTypes: {\n    css: {\n      options: ['input-primary', 'input-secondary', 'input-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'radio' },\n    },\n    type: {\n      options: ['number', 'text', 'email', 'password'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { label, errors, ...inputProps } = args;\n    const { text, ...inputLabel } = label;\n    const { error, ...inputError } = errors;\n\n    return {\n      props: { inputProps, inputLabel, inputError },\n      template: `\n      <c-label [css]=\"inputLabel.css\">\n        ${text}\n        <c-input\n        [css]=\"inputProps.css\"\n        [type]=\"inputProps.type\"\n        [placeholder]=\"inputProps.placeholder\"\n        [disabled]=\"inputProps.disabled\"\n        [formControl]=\"inputProps.formControl\"\n        [name]=\"inputProps.name\"></c-input>\n      </c-label>\n\n      <c-error-input\n        [formContained]=\"inputProps.formControl\"\n        [controlName]=\"inputProps.name\"\n      >${error}</c-error-input>\n      `,\n    };\n  },\n}"
+                },
+                {
+                    "name": "PrimaryButton",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    css: 'input-primary',\n    type: 'text',\n    placeholder: 'Entry text',\n    disabled: false,\n    name: 'example',\n    formControl: new FormControl(''),\n    label: {\n      css: 'label-primary',\n      text: 'Label text',\n    },\n  },\n}"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {
+            "frontend/ui/stories/atoms/label/label.component.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<StoryType>",
+                    "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 180
+                },
+                {
+                    "name": "StoryType",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "",
+                    "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 190
+                }
+            ],
+            "frontend/ui/stories/atoms/title/title.component.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<StoryType>",
+                    "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 180
+                },
+                {
+                    "name": "StoryType",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "",
+                    "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 190
+                }
+            ],
+            "frontend/ui/stories/molecules/button/button.component.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<>",
+                    "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 180
+                },
+                {
+                    "name": "StoryComponent",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "",
+                    "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 190
+                },
+                {
+                    "name": "StoryTitle",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "",
+                    "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 190
+                }
+            ],
+            "frontend/ui/stories/molecules/input/input.component.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<>",
+                    "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 180
+                },
+                {
+                    "name": "StoryComponent",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "",
+                    "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 190
+                },
+                {
+                    "name": "StoryError",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "",
+                    "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 190
+                },
+                {
+                    "name": "StoryLabel",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "",
+                    "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 190
+                }
+            ]
+        }
+    },
+    "routes": [],
+    "coverage": {
+        "count": 0,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "frontend/ui/.storybook/main.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "config",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/atoms/error-input/error-input.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ErrorInputComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/atoms/label/label.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "LabelComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/atoms/title/title.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TitleComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/molecules/button/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/molecules/input/input.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "InputComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/22",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/atoms/title/title.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/atoms/title/title.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "PrimaryButton",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "PrimaryButton",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}

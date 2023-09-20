@@ -1,0 +1,15 @@
+{
+  "material-icon-theme.activeIconPack": "qwik",
+  "material-icon-theme.files.associations": {
+    "*.controller.ts": "nest-controller",
+    "*.service.ts": "nest-service",
+    "*.resolver.ts": "nest-resolver",
+    "*.module.ts": "nest-module",
+    "*.pipe.ts": "nest-pipe",
+    "*.middleware.ts": "nest-middleware",
+    "*.decorator.ts": "nest-decorator",
+    "*.guard.ts": "nest-guard"
+  },
+  "angular.enable-strict-mode-prompt": false,
+  "typescript.tsdk": "node_modules\\typescript\\lib"
+}

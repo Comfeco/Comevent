@@ -1,0 +1,38 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": true,
+    "removeComments": true,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "strictBindCallApply": false,
+    "incremental": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "commonjs",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@config": ["config/index.ts"],
+      "@db/constants": [
+        "backend/database/src/constants/interfaces.entities.ts"
+      ],
+      "@db/entities": ["backend/database/src/lib/entities"],
+      "@environments": ["config/constants.ts"],
+      "@nx-boilerplate/frontend/ui": ["frontend/ui/src/index.ts"],
+      "@ui/components": ["frontend/ui/components"],
+      "@types": ["frontend/app/src/common/types"],
+      "@utils": ["frontend/app/src/utils"],
+      "@services": ["frontend/app/src/common/services"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

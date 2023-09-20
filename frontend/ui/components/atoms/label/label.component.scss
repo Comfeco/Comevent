@@ -1,0 +1,7 @@
+.label {
+  @apply text-base font-medium flex flex-col gap-1;
+}
+
+.label-primary {
+  @apply text-black font-medium;
+}

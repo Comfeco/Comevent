@@ -1,0 +1,15 @@
+<div *ngIf="control" class="content-input">
+  <input
+    [ngClass]="{ input: true, 'input-primary': css === 'input-primary' }"
+    [placeholder]="placeholder"
+    [type]="type"
+    [attr.value]="value || null"
+    [attr.id]="id || null"
+    [formControl]="control"
+  />
+  <c-error-input
+    *ngIf="!isValid()"
+    [formContained]="control"
+    [controlName]="name"
+  ></c-error-input>
+</div>
