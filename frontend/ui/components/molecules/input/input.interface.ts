@@ -12,10 +12,7 @@ type OptionalInputType = {
   formGroup: FormGroup;
   formControl: FormControl;
   placeholder: string;
+  disabled?: boolean;
 };
 
 export type InputType = RequiredInputType & Partial<OptionalInputType>;
-
-export type InputProps = {
-  disabled?: boolean;
-};

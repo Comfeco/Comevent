@@ -1,5 +1,3 @@
-import { Meta, StoryObj, moduleMetadata } from '@storybook/angular';
-//import { action } from '@storybook/addon-actions';
 import { CommonModule } from '@angular/common';
 import {
   FormControl,
@@ -7,10 +5,10 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
+import { Meta, StoryObj, moduleMetadata } from '@storybook/angular';
 import {
   ErrorInputComponent,
   InputComponent,
-  InputProps,
   InputType,
   LabelComponent,
 } from '@ui/components';
@@ -19,7 +17,7 @@ type StoryDetails = {
   label: LabelComponent & { text: string };
 };
 
-type StoryComponent = (InputType & InputProps) & StoryDetails;
+type StoryComponent = InputType & StoryDetails;
 
 type Story = StoryObj<StoryComponent>;
 
@@ -50,7 +48,6 @@ const meta: Meta<StoryComponent> = {
     },
   },
   render: (args: StoryComponent) => {
-    console.log('Render called with args:', args);
     const { label, ...inputProps } = args;
     const { text, ...inputLabel } = label;
 
@@ -83,7 +80,6 @@ export const PrimaryInput: Story = {
     placeholder: 'Entry text',
     disabled: false,
     name: 'example',
-    formControl: new FormControl('', Validators.required),
     label: {
       css: 'label-primary',
       text: 'Label text',

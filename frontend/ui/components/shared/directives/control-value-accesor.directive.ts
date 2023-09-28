@@ -32,7 +32,7 @@ export class ControlValueAccesorDirective<T>
   @Input() additionalValidators: ValidatorFn[] = [];
 
   control: FormControl | undefined;
-  private _isDisabled = false;
+  protected _isDisabled!: boolean;
   private _destroy$ = new Subject<void>();
   private _onTouched!: () => T;
 
@@ -89,7 +89,6 @@ export class ControlValueAccesorDirective<T>
   } */
 
   setFormControl() {
-    console.log('setFormControl called');
     try {
       const formControl = this.injector.get(NgControl);
 
@@ -104,6 +103,7 @@ export class ControlValueAccesorDirective<T>
             .form as FormControl;
           break;
       }
+      this.setDisabledState(this._isDisabled);
     } catch (err) {
       this.control = new FormControl();
     }
@@ -133,8 +133,7 @@ export class ControlValueAccesorDirective<T>
     this._onTouched = fn;
   }
 
-  setDisabledState?(isDisabled: boolean): void {
-    console.log('setDisabledState called with:', isDisabled);
+  setDisabledState(isDisabled: boolean): void {
     this._isDisabled = isDisabled;
 
     if (this.control) {

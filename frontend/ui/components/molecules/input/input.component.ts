@@ -46,11 +46,8 @@ export class InputComponent<T>
   @Input() value?: string | number | undefined;
   @Input() customErrorMessages: Record<string, string> = {};
   @Input() name!: string;
-  private _disabled = false;
-
   @Input()
   set disabled(value: boolean) {
-    console.log('Setter called with:', value);
-    this._disabled = value;
+    this.setDisabledState(value);
   }
 }
