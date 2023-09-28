@@ -70,7 +70,7 @@ git checkout develop
 2. Para crear una nueva rama, utiliza el siguiente comando en tu terminal:
 
 ```
-git checkout -b T-XX-description develop
+git checkout -b C-XX-description develop
 ```
 
 Donde `XX` es el número del problema en el que estás trabajando y `description` es un breve resumen de los cambios que planeas hacer. Esta convención de nomenclatura ayuda a realizar un seguimiento de qué rama corresponde a qué problema.

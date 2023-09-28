@@ -28,7 +28,7 @@ export class ControlValueAccesorDirective<T>
 {
   constructor(@Inject(Injector) private injector: Injector) {}
 
-  @Input() type = 'text';
+  @Input() type: 'number' | 'text' | 'email' | 'password' = 'text';
   @Input() additionalValidators: ValidatorFn[] = [];
 
   control: FormControl | undefined;
@@ -89,6 +89,7 @@ export class ControlValueAccesorDirective<T>
   } */
 
   setFormControl() {
+    console.log('setFormControl called');
     try {
       const formControl = this.injector.get(NgControl);
 
@@ -133,6 +134,7 @@ export class ControlValueAccesorDirective<T>
   }
 
   setDisabledState?(isDisabled: boolean): void {
+    console.log('setDisabledState called with:', isDisabled);
     this._isDisabled = isDisabled;
 
     if (this.control) {
