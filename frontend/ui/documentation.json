@@ -443,6 +443,72 @@
             "templateData": "<label\n  [ngClass]=\"{\n    label: true,\n    'label-primary': css === 'label-primary'\n  }\"\n>\n  <ng-content></ng-content>\n</label>\n"
         },
         {
+            "name": "StepComponent",
+            "id": "component-StepComponent-57604e9ba65114e58cbf5b5790f034964db778971e9700ad40f81ef4fd9c9cf98027ba6cb75103861f72cf62cd7b0324796f7a9a2a632414c3efd367ff21ccc9",
+            "file": "frontend/ui/components/molecules/step/step.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "c-input",
+            "styleUrls": [
+                "./step.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./step.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "FormsModule",
+                    "type": "module"
+                },
+                {
+                    "name": "ReactiveFormsModule",
+                    "type": "module"
+                },
+                {
+                    "name": "ErrorInputComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { FormsModule, ReactiveFormsModule } from '@angular/forms';\nimport { ErrorInputComponent } from '../../atoms/error-input/error-input.component';\nimport { StepType } from './step.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-input',\n  imports: [\n    CommonModule,\n    FormsModule,\n    ReactiveFormsModule,\n    ErrorInputComponent,\n  ],\n  templateUrl: './step.component.html',\n  styleUrls: ['./step.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class StepComponent implements StepType {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".content-input {\n  @apply flex flex-col gap-1;\n}\n",
+                    "styleUrl": "./step.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "implements": [
+                "StepType"
+            ],
+            "templateData": "<div class=\"\"></div>\n"
+        },
+        {
             "name": "TitleComponent",
             "id": "component-TitleComponent-f821fe895e6a6a7d3e5dcb36ff9d8aa69daceb9de7468136828f38f6d2e71e36ff71067c4e86513e3d925fac7f74e3b2a7468d0b45e2054535ab5747d648ed1a",
             "file": "frontend/ui/components/atoms/title/title.component.ts",
@@ -1005,6 +1071,15 @@
                 "name": "InputComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/8",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/molecules/step/step.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "StepComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {

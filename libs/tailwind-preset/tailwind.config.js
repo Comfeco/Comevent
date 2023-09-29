@@ -59,6 +59,13 @@ module.exports = {
           },
         },
       },
+      boxShadow: {
+        'nutral-level1': '0 2px 4px rgba(0, 0, 0, 0.10)',
+        'nutral-level2': '0 4px 8px rgba(0, 0, 0, 0.10)',
+        'nutral-level3': '0 10px 18px rgba(0, 0, 0, 0.10)',
+        'nutral-level4': '0 12px 24px rgba(0, 0, 0, 0.10)',
+        'material-level1': '0 2px 4px rgba(140, 68, 204, 0.30)',
+      },
     },
     plugins: [],
   },
