@@ -11,7 +11,7 @@ import {
   InputComponent,
   InputType,
   LabelComponent,
-} from '@ui/components';
+} from '../../../components';
 
 type StoryDetails = {
   label: LabelComponent & { text: string };

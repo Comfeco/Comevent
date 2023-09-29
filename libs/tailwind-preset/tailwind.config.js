@@ -3,25 +3,63 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          light: '#ac7ff4',
-          //DEFAULT: '#14b8a6',
-          dark: '#713fc2',
+          DEFAULT: '#8C44CC',
+          light: {
+            1: '#A76EDD',
+            2: '#F0E1FF',
+          },
+          dark: '#6B23A0',
+          darkMode: '#B76AFF',
+          secondary: {
+            DEFAULT: '#25D76B',
+            light: {
+              1: '#4EE88A',
+              2: '#C4F7D8',
+            },
+            dark: '#00B54A',
+            darkMode: '#4EE88A',
+          },
+          accent: {
+            DEFAULT: '#FFC107',
+            light: '#FFD540',
+            dark: '#E6A000',
+            darkMode: '#FFDA77',
+          },
+          white: {
+            1: '#FFFFFF',
+            2: '#F9F9F9',
+          },
+          black: {
+            1: '#2E2E2E',
+            2: '#20223A',
+          },
+          success: {
+            DEFAULT: '#25D76B',
+            light: {
+              1: '#4EE88A',
+              2: '#C4F7D8',
+            },
+            darkMode: '#60E494',
+          },
+          error: {
+            DEFAULT: '#FF6B6B',
+            light: '#FFDDDD',
+            darkMode: '#FF6B6B',
+          },
+          warning: {
+            DEFAULT: '#FF8964',
+            light: '#FFCABA',
+            darkMode: '#FF8964',
+          },
+          gray: {
+            1: '#E3E3E3',
+            2: '#C4C4C4',
+            3: '#777879',
+            4: '#555555',
+          },
         },
-        secondary: {
-          light: '#18b6f6',
-          //DEFAULT: '#0ea5e9',
-          dark: '#006ce9',
-        },
-        white: '#ffffff',
-        black: '#000000',
-      },
-      spacing: {
-        sm: '0.5rem',
-        md: '1rem',
-        lg: '1.5rem',
-        xl: '2rem',
       },
     },
+    plugins: [],
   },
-  plugins: [],
 };
