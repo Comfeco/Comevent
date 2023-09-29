@@ -78,7 +78,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".button {\n  @apply outline-none rounded w-auto px-4;\n}\n\n.button-primary {\n  @apply bg-blue-500 text-white w-full hover:bg-blue-700 transition-all h-9;\n}\n\n.button-secondary {\n}\n\n.button-tertiary {\n}\n\n.button:disabled {\n  @apply bg-slate-400 text-white w-full opacity-60;\n}\n",
+                    "data": "",
                     "styleUrl": "./button.component.scss"
                 }
             ],
@@ -432,7 +432,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".label {\n  @apply text-base font-medium flex flex-col gap-1;\n}\n\n.label-primary {\n  @apply text-black font-medium;\n}\n",
+                    "data": "",
                     "styleUrl": "./label.component.scss"
                 }
             ],
@@ -444,7 +444,7 @@
         },
         {
             "name": "StepComponent",
-            "id": "component-StepComponent-57604e9ba65114e58cbf5b5790f034964db778971e9700ad40f81ef4fd9c9cf98027ba6cb75103861f72cf62cd7b0324796f7a9a2a632414c3efd367ff21ccc9",
+            "id": "component-StepComponent-f6d25224fc14c30be3b1a990698abb716e7cb65d864ce9a8b831a8d002630785d8be6ebe42e1ab5102ba8aa7cea57b1a95bba4bce5cb1b706beb2e650fd95fd7",
             "file": "frontend/ui/components/molecules/step/step.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -454,7 +454,7 @@
             "inputs": [],
             "outputs": [],
             "providers": [],
-            "selector": "c-input",
+            "selector": "c-step",
             "styleUrls": [
                 "./step.component.scss"
             ],
@@ -464,9 +464,50 @@
             ],
             "viewProviders": [],
             "hostDirectives": [],
-            "inputsClass": [],
+            "inputsClass": [
+                {
+                    "name": "info",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 27,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "logo",
+                    "defaultValue": "'area'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 29,
+                    "type": "",
+                    "decorators": []
+                },
+                {
+                    "name": "status",
+                    "defaultValue": "Status.IN_PROGRESS",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 28,
+                    "type": "Status",
+                    "decorators": []
+                }
+            ],
             "outputsClass": [],
-            "propertiesClass": [],
+            "propertiesClass": [
+                {
+                    "name": "Status",
+                    "defaultValue": "Status",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 31,
+                    "modifierKind": [
+                        123
+                    ]
+                }
+            ],
             "methodsClass": [],
             "deprecated": false,
             "deprecationMessage": "",
@@ -494,11 +535,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { FormsModule, ReactiveFormsModule } from '@angular/forms';\nimport { ErrorInputComponent } from '../../atoms/error-input/error-input.component';\nimport { StepType } from './step.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-input',\n  imports: [\n    CommonModule,\n    FormsModule,\n    ReactiveFormsModule,\n    ErrorInputComponent,\n  ],\n  templateUrl: './step.component.html',\n  styleUrls: ['./step.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class StepComponent implements StepType {}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { FormsModule, ReactiveFormsModule } from '@angular/forms';\nimport { ErrorInputComponent } from '../../atoms/error-input/error-input.component';\nimport { Status, StepType } from './step.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-step',\n  imports: [\n    CommonModule,\n    FormsModule,\n    ReactiveFormsModule,\n    ErrorInputComponent,\n  ],\n  templateUrl: './step.component.html',\n  styleUrls: ['./step.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class StepComponent implements StepType {\n  @Input() info!: string;\n  @Input() status: Status = Status.IN_PROGRESS;\n  @Input() logo: StepType['logo'] = 'area';\n\n  public Status = Status;\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".content-input {\n  @apply flex flex-col gap-1;\n}\n",
+                    "data": ".content-global-step {\n  @apply flex flex-col gap-2;\n}\n\n.content-step {\n  @apply flex justify-center items-center h-[46px] w-[46px] bg-primary rounded-full;\n}\n\n.content-inner-step {\n  @apply flex justify-center items-center h-[38px] w-[38px] bg-white-1 rounded-full border-transparent border-2;\n}\n",
                     "styleUrl": "./step.component.scss"
                 }
             ],
@@ -506,7 +547,7 @@
             "implements": [
                 "StepType"
             ],
-            "templateData": "<div class=\"\"></div>\n"
+            "templateData": "<div class=\"content-global-step\">\n  <div class=\"content-step\">\n    <div class=\"content-inner-step\">\n      <ng-container [ngSwitch]=\"logo\">\n        <div *ngSwitchCase=\"'basic'\">\n          <svg\n            width=\"25\"\n            height=\"24\"\n            viewBox=\"0 0 25 24\"\n            fill=\"none\"\n            xmlns=\"http://www.w3.org/2000/svg\"\n          >\n            <path\n              [ngClass]=\"[\n                {\n                  'stroke-primary': status === Status.IN_PROGRESS,\n                  'stroke-gray-2': status === Status.PENDING\n                }\n              ]\"\n              d=\"M8.5 5H6.5C5.96957 5 5.46086 5.21071 5.08579 5.58579C4.71071 5.96086 4.5 6.46957 4.5 7V19C4.5 19.5304 4.71071 20.0391 5.08579 20.4142C5.46086 20.7893 5.96957 21 6.5 21H12.197\"\n              stroke-width=\"2\"\n              stroke-linecap=\"round\"\n              stroke-linejoin=\"round\"\n            />\n            <path\n              [ngClass]=\"[\n                {\n                  'stroke-primary': status === Status.IN_PROGRESS,\n                  'stroke-gray-2': status === Status.PENDING\n                }\n              ]\"\n              d=\"M18.5 12V7C18.5 6.46957 18.2893 5.96086 17.9142 5.58579C17.5391 5.21071 17.0304 5 16.5 5H14.5\"\n              stroke-width=\"2\"\n              stroke-linecap=\"round\"\n              stroke-linejoin=\"round\"\n            />\n            <path\n              [ngClass]=\"[\n                {\n                  'stroke-primary': status === Status.IN_PROGRESS,\n                  'stroke-gray-2': status === Status.PENDING\n                }\n              ]\"\n              d=\"M8.5 5C8.5 4.46957 8.71071 3.96086 9.08579 3.58579C9.46086 3.21071 9.96957 3 10.5 3H12.5C13.0304 3 13.5391 3.21071 13.9142 3.58579C14.2893 3.96086 14.5 4.46957 14.5 5C14.5 5.53043 14.2893 6.03914 13.9142 6.41421C13.5391 6.78929 13.0304 7 12.5 7H10.5C9.96957 7 9.46086 6.78929 9.08579 6.41421C8.71071 6.03914 8.5 5.53043 8.5 5Z\"\n              stroke-width=\"2\"\n              stroke-linecap=\"round\"\n              stroke-linejoin=\"round\"\n            />\n            <path\n              [ngClass]=\"[\n                {\n                  'stroke-primary': status === Status.IN_PROGRESS,\n                  'stroke-gray-2': status === Status.PENDING\n                }\n              ]\"\n              d=\"M8.5 11H12.5\"\n              stroke-width=\"2\"\n              stroke-linecap=\"round\"\n              stroke-linejoin=\"round\"\n            />\n            <path\n              [ngClass]=\"[\n                {\n                  'stroke-primary': status === Status.IN_PROGRESS,\n                  'stroke-gray-2': status === Status.PENDING\n                }\n              ]\"\n              d=\"M8.5 15H11.5\"\n              stroke-width=\"2\"\n              stroke-linecap=\"round\"\n              stroke-linejoin=\"round\"\n            />\n            <path\n              [ngClass]=\"[\n                {\n                  'stroke-primary': status === Status.IN_PROGRESS,\n                  'stroke-gray-2': status === Status.PENDING\n                }\n              ]\"\n              d=\"M14.5 17.5C14.5 18.163 14.7634 18.7989 15.2322 19.2678C15.7011 19.7366 16.337 20 17 20C17.663 20 18.2989 19.7366 18.7678 19.2678C19.2366 18.7989 19.5 18.163 19.5 17.5C19.5 16.837 19.2366 16.2011 18.7678 15.7322C18.2989 15.2634 17.663 15 17 15C16.337 15 15.7011 15.2634 15.2322 15.7322C14.7634 16.2011 14.5 16.837 14.5 17.5Z\"\n              stroke-width=\"2\"\n              stroke-linecap=\"round\"\n              stroke-linejoin=\"round\"\n            />\n            <path\n              [ngClass]=\"[\n                {\n                  'stroke-primary': status === Status.IN_PROGRESS,\n                  'stroke-gray-2': status === Status.PENDING\n                }\n              ]\"\n              d=\"M19 19.5L21.5 22\"\n              stroke-width=\"2\"\n              stroke-linecap=\"round\"\n              stroke-linejoin=\"round\"\n            />\n          </svg>\n        </div>\n        <div *ngSwitchCase=\"'pass'\">\n          <svg\n            width=\"24\"\n            height=\"24\"\n            viewBox=\"0 0 24 24\"\n            fill=\"none\"\n            xmlns=\"http://www.w3.org/2000/svg\"\n          >\n            <g clip-path=\"url(#clip0_21_327)\">\n              <path\n                [ngClass]=\"[\n                  {\n                    'stroke-primary': status === Status.IN_PROGRESS,\n                    'stroke-gray-2': status === Status.PENDING\n                  }\n                ]\"\n                d=\"M12 17V21\"\n                stroke-width=\"2\"\n                stroke-linecap=\"round\"\n                stroke-linejoin=\"round\"\n              />\n              <path\n                [ngClass]=\"[\n                  {\n                    'stroke-primary': status === Status.IN_PROGRESS,\n                    'stroke-gray-2': status === Status.PENDING\n                  }\n                ]\"\n                d=\"M10 20L14 18\"\n                stroke-width=\"2\"\n                stroke-linecap=\"round\"\n                stroke-linejoin=\"round\"\n              />\n              <path\n                [ngClass]=\"[\n                  {\n                    'stroke-primary': status === Status.IN_PROGRESS,\n                    'stroke-gray-2': status === Status.PENDING\n                  }\n                ]\"\n                d=\"M10 18L14 20\"\n                stroke-width=\"2\"\n                stroke-linecap=\"round\"\n                stroke-linejoin=\"round\"\n              />\n              <path\n                [ngClass]=\"[\n                  {\n                    'stroke-primary': status === Status.IN_PROGRESS,\n                    'stroke-gray-2': status === Status.PENDING\n                  }\n                ]\"\n                d=\"M5 17V21\"\n                stroke-width=\"2\"\n                stroke-linecap=\"round\"\n                stroke-linejoin=\"round\"\n              />\n              <path\n                [ngClass]=\"[\n                  {\n                    'stroke-primary': status === Status.IN_PROGRESS,\n                    'stroke-gray-2': status === Status.PENDING\n                  }\n                ]\"\n                d=\"M3 20L7 18\"\n                stroke-width=\"2\"\n                stroke-linecap=\"round\"\n                stroke-linejoin=\"round\"\n              />\n              <path\n                [ngClass]=\"[\n                  {\n                    'stroke-primary': status === Status.IN_PROGRESS,\n                    'stroke-gray-2': status === Status.PENDING\n                  }\n                ]\"\n                d=\"M3 18L7 20\"\n                stroke-width=\"2\"\n                stroke-linecap=\"round\"\n                stroke-linejoin=\"round\"\n              />\n              <path\n                [ngClass]=\"[\n                  {\n                    'stroke-primary': status === Status.IN_PROGRESS,\n                    'stroke-gray-2': status === Status.PENDING\n                  }\n                ]\"\n                d=\"M19 17V21\"\n                stroke-width=\"2\"\n                stroke-linecap=\"round\"\n                stroke-linejoin=\"round\"\n              />\n              <path\n                [ngClass]=\"[\n                  {\n                    'stroke-primary': status === Status.IN_PROGRESS,\n                    'stroke-gray-2': status === Status.PENDING\n                  }\n                ]\"\n                d=\"M17 20L21 18\"\n                stroke-width=\"2\"\n                stroke-linecap=\"round\"\n                stroke-linejoin=\"round\"\n              />\n              <path\n                [ngClass]=\"[\n                  {\n                    'stroke-primary': status === Status.IN_PROGRESS,\n                    'stroke-gray-2': status === Status.PENDING\n                  }\n                ]\"\n                d=\"M17 18L21 20\"\n                stroke-width=\"2\"\n                stroke-linecap=\"round\"\n                stroke-linejoin=\"round\"\n              />\n              <path\n                [ngClass]=\"[\n                  {\n                    'stroke-primary': status === Status.IN_PROGRESS,\n                    'stroke-gray-2': status === Status.PENDING\n                  }\n                ]\"\n                d=\"M9 6C9 6.79565 9.31607 7.55871 9.87868 8.12132C10.4413 8.68393 11.2044 9 12 9C12.7956 9 13.5587 8.68393 14.1213 8.12132C14.6839 7.55871 15 6.79565 15 6C15 5.20435 14.6839 4.44129 14.1213 3.87868C13.5587 3.31607 12.7956 3 12 3C11.2044 3 10.4413 3.31607 9.87868 3.87868C9.31607 4.44129 9 5.20435 9 6Z\"\n                stroke-width=\"2\"\n                stroke-linecap=\"round\"\n                stroke-linejoin=\"round\"\n              />\n              <path\n                [ngClass]=\"[\n                  {\n                    'stroke-primary': status === Status.IN_PROGRESS,\n                    'stroke-gray-2': status === Status.PENDING\n                  }\n                ]\"\n                d=\"M7 14C7 13.4696 7.21071 12.9609 7.58579 12.5858C7.96086 12.2107 8.46957 12 9 12H15C15.5304 12 16.0391 12.2107 16.4142 12.5858C16.7893 12.9609 17 13.4696 17 14\"\n                stroke-width=\"2\"\n                stroke-linecap=\"round\"\n                stroke-linejoin=\"round\"\n              />\n            </g>\n            <defs>\n              <clipPath id=\"clip0_21_327\">\n                <rect width=\"24\" height=\"24\" fill=\"white\" />\n              </clipPath>\n            </defs>\n          </svg>\n        </div>\n        <div *ngSwitchCase=\"'area'\">\n          <svg\n            width=\"24\"\n            height=\"24\"\n            viewBox=\"0 0 24 24\"\n            fill=\"none\"\n            xmlns=\"http://www.w3.org/2000/svg\"\n          >\n            <g clip-path=\"url(#clip0_21_398)\">\n              <path\n                [ngClass]=\"[\n                  {\n                    'stroke-primary': status === Status.IN_PROGRESS,\n                    'stroke-gray-2': status === Status.PENDING\n                  }\n                ]\"\n                d=\"M4 18V13L8 11L12 13V18L8 20L4 18Z\"\n                stroke-width=\"2\"\n                stroke-linecap=\"round\"\n                stroke-linejoin=\"round\"\n              />\n              <path\n                [ngClass]=\"[\n                  {\n                    'stroke-primary': status === Status.IN_PROGRESS,\n                    'stroke-gray-2': status === Status.PENDING\n                  }\n                ]\"\n                d=\"M8 11V6L12 4L16 6V11\"\n                stroke-width=\"2\"\n                stroke-linecap=\"round\"\n                stroke-linejoin=\"round\"\n              />\n              <path\n                [ngClass]=\"[\n                  {\n                    'stroke-primary': status === Status.IN_PROGRESS,\n                    'stroke-gray-2': status === Status.PENDING\n                  }\n                ]\"\n                d=\"M12.5 13L16.5 11L20.5 13V18L16.5 20L12.5 18\"\n                stroke-width=\"2\"\n                stroke-linecap=\"round\"\n                stroke-linejoin=\"round\"\n              />\n            </g>\n            <defs>\n              <clipPath id=\"clip0_21_398\">\n                <rect width=\"24\" height=\"24\" fill=\"white\" />\n              </clipPath>\n            </defs>\n          </svg>\n        </div>\n        <div *ngSwitchCase=\"'check'\">\n          <svg\n            width=\"19\"\n            height=\"14\"\n            viewBox=\"0 0 19 14\"\n            fill=\"none\"\n            xmlns=\"http://www.w3.org/2000/svg\"\n          >\n            <path\n              d=\"M2 7L7 12L17 2\"\n              stroke=\"#25D76B\"\n              stroke-width=\"4\"\n              stroke-linecap=\"round\"\n              stroke-linejoin=\"round\"\n            />\n          </svg>\n        </div>\n      </ng-container>\n    </div>\n  </div>\n  <p class=\"text-body-1 font-body text-black-1\">\n    {{ info }}\n  </p>\n  <p\n    [ngClass]=\"[\n      {\n        'text-primary': status === Status.IN_PROGRESS,\n        'text-gray-2': status === Status.PENDING,\n        'text-success': status === Status.COMPLETED,\n        'text-body-4 font-body': true\n      }\n    ]\"\n  >\n    {{ status }}\n  </p>\n</div>\n"
         },
         {
             "name": "TitleComponent",
@@ -569,7 +610,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".title {\n  @apply font-bold;\n}\n\n.title-xs {\n  @apply text-xs;\n}\n\n.title-sm {\n  @apply text-sm;\n}\n\n.title-base {\n  @apply text-base;\n}\n\n.title-lg {\n  @apply text-lg;\n}\n\n.title-xl {\n  @apply text-xl;\n}\n\n.title-2xl {\n  @apply text-2xl;\n}\n\n.t-white {\n  @apply text-white dark:text-black;\n}\n\n.t-black {\n  @apply text-black dark:text-white;\n}\n",
+                    "data": "",
                     "styleUrl": "./title.component.scss"
                 }
             ],
@@ -1079,7 +1120,7 @@
                 "linktype": "component",
                 "name": "StepComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/1",
+                "coverageCount": "0/5",
                 "status": "low"
             },
             {
