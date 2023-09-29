@@ -2,15 +2,16 @@ import { CommonModule } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
+  Input,
   ViewEncapsulation,
 } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ErrorInputComponent } from '../../atoms/error-input/error-input.component';
-import { StepType } from './step.interface';
+import { Status, StepType } from './step.interface';
 
 @Component({
   standalone: true,
-  selector: 'c-input',
+  selector: 'c-step',
   imports: [
     CommonModule,
     FormsModule,
@@ -22,4 +23,10 @@ import { StepType } from './step.interface';
   encapsulation: ViewEncapsulation.Emulated,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class StepComponent implements StepType {}
+export class StepComponent implements StepType {
+  @Input() info!: string;
+  @Input() status: Status = Status.IN_PROGRESS;
+  @Input() logo: StepType['logo'] = 'area';
+
+  public Status = Status;
+}

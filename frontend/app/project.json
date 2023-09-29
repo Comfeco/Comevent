@@ -24,7 +24,7 @@
             "output": "assets/ui"
           }
         ],
-        "styles": ["frontend/app/src/styles.scss"],
+        "styles": ["frontend/app/src/styles.scss", "frontend/ui/styles.scss"],
         "scripts": []
       },
       "configurations": {

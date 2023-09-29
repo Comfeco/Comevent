@@ -1,5 +1,13 @@
-type RequiredStepType = {};
+export enum Status {
+  IN_PROGRESS = 'In Progress',
+  COMPLETED = 'Completed',
+  PENDING = 'Pending',
+}
 
-type OptionalStepType = {};
+type RequiredStepType = {
+  info: string;
+  status: Status;
+  logo: 'basic' | 'pass' | 'area' | 'check';
+};
 
-export type StepType = RequiredStepType & Partial<OptionalStepType>;
+export type StepType = RequiredStepType;

@@ -1,3 +1,11 @@
-.content-input {
-  @apply flex flex-col gap-1;
+.content-global-step {
+  @apply flex flex-col gap-2;
+}
+
+.content-step {
+  @apply flex justify-center items-center h-[46px] w-[46px] bg-primary rounded-full;
+}
+
+.content-inner-step {
+  @apply flex justify-center items-center h-[38px] w-[38px] bg-white-1 rounded-full border-transparent border-2;
 }
