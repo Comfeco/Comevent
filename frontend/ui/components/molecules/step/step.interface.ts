@@ -1,12 +1,5 @@
-export enum Status {
-  IN_PROGRESS = 'In Progress',
-  COMPLETED = 'Completed',
-  PENDING = 'Pending',
-}
-
 type RequiredStepType = {
-  info: string;
-  status: Status;
+  status: 'In Progress' | 'Completed' | 'Pending';
   logo: 'basic' | 'pass' | 'area' | 'check';
 };
 

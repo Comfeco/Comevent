@@ -1,9 +1,9 @@
 .content-global-step {
-  @apply flex flex-col gap-2;
+  @apply flex flex-col gap-2 items-center;
 }
 
 .content-step {
-  @apply flex justify-center items-center h-[46px] w-[46px] bg-primary rounded-full;
+  @apply flex justify-center items-center h-[46px] w-[46px] rounded-full;
 }
 
 .content-inner-step {

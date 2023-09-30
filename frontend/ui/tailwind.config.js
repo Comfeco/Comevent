@@ -52,7 +52,7 @@ module.exports = {
         },
 
         '.body-small': {
-          '@apply text-body-3 font-normal': {},
+          '@apply text-body-3 font-normal font-body text-black-1': {},
         },
 
         '.body-smaller': {

@@ -1,6 +1,10 @@
 export * from './atoms';
 export * from './atoms/error-input/error-input.component';
 export * from './atoms/error-input/error-input.interface';
+export * from './atoms/icons';
+export * from './atoms/icons/icon-area/icon-area.component';
+export * from './atoms/icons/icon-basic/icon-basic.component';
+export * from './atoms/icons/icon-pass/icon-pass.component';
 export * from './atoms/label/label.component';
 export * from './atoms/label/label.interface';
 export * from './atoms/title/title.component';
@@ -9,3 +13,6 @@ export * from './molecules/button/button.component';
 export * from './molecules/button/button.interface';
 export * from './molecules/input/input.component';
 export * from './molecules/input/input.interface';
+export * from './molecules/step/step.component';
+export * from './molecules/step/step.interface';
+export * from './shared/directives/control-value-accesor.directive';
