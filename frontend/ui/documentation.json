@@ -9,7 +9,7 @@
     "components": [
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-81c0146152848dc8b5c73ad1a26f81f8a1cd646d42a97dbe159bee556e1cfe2d15db464e2e9be173854497ab9408d32a94eb6bbfb8251c99c3b28b3a19b61f8b",
+            "id": "component-ButtonComponent-25c5571d235a861345f4e4c2a866c28f3619cee54bc5fc491e63203e81680d0eec2d442c4c5db45e8d5dceaba3e607199c4f92034471839f8887ceff630c03b5",
             "file": "frontend/ui/components/molecules/button/button.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -19,7 +19,7 @@
             "inputs": [],
             "outputs": [],
             "providers": [],
-            "selector": "Button",
+            "selector": "c-button",
             "styleUrls": [
                 "./button.component.scss"
             ],
@@ -35,7 +35,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 22,
-                    "type": "\"button-primary\" | \"button-secondary\" | \"button-tertiary\"",
+                    "type": "",
                     "decorators": []
                 },
                 {
@@ -44,7 +44,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 21,
-                    "type": "boolean",
+                    "type": "",
                     "decorators": []
                 },
                 {
@@ -53,7 +53,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 20,
-                    "type": "\"button\" | \"submit\" | \"reset\"",
+                    "type": "",
                     "decorators": []
                 }
             ],
@@ -74,11 +74,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { ButtonType } from './button.interface';\n\n@Component({\n  standalone: true,\n  selector: 'Button',\n  imports: [CommonModule],\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ButtonComponent implements ButtonType {\n  @Input() type: 'button' | 'submit' | 'reset' = 'button';\n  @Input() disabled = false;\n  @Input() css!: 'button-primary' | 'button-secondary' | 'button-tertiary';\n}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { ButtonType } from './button.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-button',\n  imports: [CommonModule],\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ButtonComponent implements ButtonType {\n  @Input() type: ButtonType['type'] = 'button';\n  @Input() disabled: ButtonType['disabled'] = false;\n  @Input() css!: ButtonType['css'];\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".button {\r\n  @apply outline-none rounded w-auto px-4;\r\n}\r\n\r\n.button-primary {\r\n  @apply bg-purple-500 text-white w-full hover:bg-purple-700 transition-all h-9;\r\n}\r\n\r\n.button-secondary {\r\n}\r\n\r\n.button-tertiary {\r\n}\r\n",
+                    "data": "",
                     "styleUrl": "./button.component.scss"
                 }
             ],
@@ -86,13 +86,12 @@
             "implements": [
                 "ButtonType"
             ],
-            "templateData": "<button\n  [ngClass]=\"{\n    button: true,\n    'button-primary': css === 'button-primary' && !disabled,\n    'button-secondary': css === 'button-secondary',\n    'button-tertiary': css === 'button-tertiary',\n    'bg-slate-400 text-white w-full transition-all h-9': disabled\n  }\"\n  [type]=\"type\"\n  [class]=\"css\"\n  [disabled]=\"disabled\"\n>\n  <ng-content></ng-content>\n</button>\n"
+            "templateData": "<button\n  [ngClass]=\"{\n    button: true,\n    'button-primary': css === 'button-primary' && !disabled,\n    'button-secondary': css === 'button-secondary',\n    'button-tertiary': css === 'button-tertiary',\n    'transition-all h-9': disabled\n  }\"\n  [type]=\"type\"\n  [class]=\"css\"\n  [disabled]=\"disabled\"\n>\n  <ng-content></ng-content>\n</button>\n"
         },
         {
             "name": "ErrorInputComponent",
-            "id": "component-ErrorInputComponent-4182d382468b355816130c312223711701cb61de68c431ef9ed60eb1824f608e8d8925a6426a1d7113ccd99c60742409b328d91cc52a8ed93ff7da9d2490f86b",
+            "id": "component-ErrorInputComponent-315e29372e122a690481f1fb9bd58f0829c8a68d25cc3c3d8adc3a2dbffb6ca6dfef5a1a0600e492435a55abf2df36562ccab811af482bd0474477d9361f8966",
             "file": "frontend/ui/components/atoms/error-input/error-input.component.ts",
-            "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
                 "ViewEncapsulation.Emulated"
             ],
@@ -115,7 +114,7 @@
                     "name": "controlName",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 29,
+                    "line": 14,
                     "type": "string",
                     "decorators": []
                 },
@@ -123,67 +122,28 @@
                     "name": "formContained",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 26,
+                    "line": 15,
                     "type": "AbstractControl",
                     "decorators": []
                 }
             ],
             "outputsClass": [],
-            "propertiesClass": [
-                {
-                    "name": "errorMessages",
-                    "defaultValue": "{\n    required: () => ErrorMessages.EMPTY,\n    email: () => ErrorMessages.INVALID_EMAIL,\n    pattern: () => ErrorMessages.PATTERN,\n    minlength: (booleanValue: BooleanValue = { requiredLength: 6 }) =>\n      ErrorMessages.MIN_LENGTH(booleanValue),\n    maxlength: (booleanValue: BooleanValue = { requiredLength: 50 }) =>\n      ErrorMessages.MAX_LENGTH(booleanValue),\n  }",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Record<string | ErrorFunction>",
-                    "optional": false,
-                    "description": "",
-                    "line": 33,
-                    "modifierKind": [
-                        121,
-                        124,
-                        146
-                    ]
-                },
-                {
-                    "name": "listErrors",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "string[] | null | void",
-                    "optional": false,
-                    "description": "",
-                    "line": 31
-                }
-            ],
+            "propertiesClass": [],
             "methodsClass": [
                 {
-                    "name": "getMessage",
+                    "name": "getErrorMessage",
                     "args": [
                         {
-                            "name": "errorName",
-                            "type": "string",
+                            "name": "errors",
+                            "type": "Record<string | any>",
                             "deprecated": false,
                             "deprecationMessage": ""
-                        },
-                        {
-                            "name": "booleanValue",
-                            "type": "any",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "optional": true
-                        },
-                        {
-                            "name": "controlName",
-                            "type": "string",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "optional": true
                         }
                     ],
                     "optional": false,
-                    "returnType": "any",
+                    "returnType": "string",
                     "typeParameters": [],
-                    "line": 71,
+                    "line": 33,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "modifierKind": [
@@ -191,45 +151,15 @@
                     ],
                     "jsdoctags": [
                         {
-                            "name": "errorName",
-                            "type": "string",
+                            "name": "errors",
+                            "type": "Record<string | any>",
                             "deprecated": false,
                             "deprecationMessage": "",
-                            "tagName": {
-                                "text": "param"
-                            }
-                        },
-                        {
-                            "name": "booleanValue",
-                            "type": "any",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "optional": true,
-                            "tagName": {
-                                "text": "param"
-                            }
-                        },
-                        {
-                            "name": "controlName",
-                            "type": "string",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "optional": true,
                             "tagName": {
                                 "text": "param"
                             }
                         }
                     ]
-                },
-                {
-                    "name": "listOfErrors",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "string[]",
-                    "typeParameters": [],
-                    "line": 54,
-                    "deprecated": false,
-                    "deprecationMessage": ""
                 }
             ],
             "deprecated": false,
@@ -246,11 +176,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { AbstractControl, FormGroup } from '@angular/forms';\nimport {\n  BooleanValue,\n  ErrorFunction,\n  ErrorMessages,\n} from './error-input.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-error-input',\n  imports: [CommonModule],\n  templateUrl: './error-input.component.html',\n  styleUrls: ['./error-input.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ErrorInputComponent {\n  @Input()\n  public formContained!: AbstractControl;\n\n  @Input()\n  public controlName?: string;\n\n  listErrors!: string[] | null | void;\n\n  private static readonly errorMessages: Record<string, ErrorFunction> = {\n    required: () => ErrorMessages.EMPTY,\n    email: () => ErrorMessages.INVALID_EMAIL,\n    pattern: () => ErrorMessages.PATTERN,\n    minlength: (booleanValue: BooleanValue = { requiredLength: 6 }) =>\n      ErrorMessages.MIN_LENGTH(booleanValue),\n    maxlength: (booleanValue: BooleanValue = { requiredLength: 50 }) =>\n      ErrorMessages.MAX_LENGTH(booleanValue),\n  };\n\n  get currentControl(): AbstractControl | null {\n    if (this.formContained && this.controlName) {\n      if (this.formContained instanceof FormGroup) {\n        return this.formContained.get(this.controlName);\n      } else {\n        return this.formContained;\n      }\n    }\n    return null;\n  }\n\n  listOfErrors(): string[] {\n    if (this.currentControl?.errors) {\n      return Object.keys(this.currentControl?.errors)\n        .map((field) => {\n          const error = this.currentControl?.errors\n            ? this.currentControl?.errors[field]\n            : null;\n          if (error) {\n            return this.getMessage(field, error);\n          }\n          return '';\n        })\n        .filter(Boolean);\n    }\n    return [];\n  }\n\n  private getMessage(\n    errorName: string,\n    booleanValue?: any,\n    controlName?: string\n  ) {\n    return ErrorInputComponent.errorMessages[errorName](\n      booleanValue,\n      controlName\n    );\n  }\n}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { Component, Input, ViewEncapsulation } from '@angular/core';\nimport { AbstractControl, FormGroup } from '@angular/forms';\nimport { DefaultErrorMessages } from './error-input.interface';\n@Component({\n  standalone: true,\n  selector: 'c-error-input',\n  imports: [CommonModule],\n  templateUrl: './error-input.component.html',\n  styleUrls: ['./error-input.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n})\nexport class ErrorInputComponent {\n  @Input() public controlName?: string;\n  @Input() public formContained!: AbstractControl;\n\n  private get currentControl(): AbstractControl | null {\n    if (this.formContained && this.controlName) {\n      return this.formContained instanceof FormGroup\n        ? this.formContained.get(this.controlName)\n        : this.formContained;\n    }\n    return null;\n  }\n\n  protected get error(): string {\n    const errorMessage = this.currentControl?.errors\n      ? this.getErrorMessage(this.currentControl?.errors)\n      : '';\n    return errorMessage;\n  }\n\n  private getErrorMessage(errors: Record<string, any>): string {\n    const [errorName] = Object.keys(errors);\n    const errorFunction = DefaultErrorMessages[errorName];\n    if (errorFunction) {\n      return errorFunction(errors[errorName]);\n    } else {\n      return 'An error occurred';\n    }\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".error {\r\n  @apply w-full rounded-md h-auto p-1 bg-red-200 gap-2 items-center flex;\r\n}\r\n",
+                    "data": ".error {\n  @apply w-full rounded-md h-auto p-1 bg-red-200 gap-2 items-center flex text-red-500 flex-wrap justify-center font-semibold;\n}\n\n.size-icon {\n  @apply h-4 w-4;\n}\n",
                     "styleUrl": "./error-input.component.scss"
                 }
             ],
@@ -262,15 +192,195 @@
                         "name": "currentControl",
                         "type": "",
                         "returnType": "AbstractControl | null",
-                        "line": 43
+                        "line": 17
+                    }
+                },
+                "error": {
+                    "name": "error",
+                    "getSignature": {
+                        "name": "error",
+                        "type": "string",
+                        "returnType": "string",
+                        "line": 26
                     }
                 }
             },
-            "templateData": "<span>\n  <div class=\"error\">\n    <img class=\"h-8 w-8\" src=\"\" alt=\"icon error\" />\n    {{ listOfErrors() }}\n  </div>\n</span>\n"
+            "templateData": "<span>\n  <div class=\"error\">\n    <img class=\"size-icon\" src=\"/assets/ui/icon-error.svg\" alt=\"icon error\" />\n    <span class=\"text-center\">{{ error }}</span>\n  </div>\n</span>\n"
+        },
+        {
+            "name": "IconAreaComponent",
+            "id": "component-IconAreaComponent-1bb4289ee6f37d62351819a2a7e11e20d51c4dcfb34f2d8b45612c29de6bb92d3f546e3df29c02708890d96635909394fd4a962817dcc5a778e72ceceb9ecc95",
+            "file": "frontend/ui/components/atoms/icons/icon-area/icon-area.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-area",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./icon-area.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "status",
+                    "defaultValue": "'Pending'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { IconType } from '../icon.interface';\n\n@Component({\n  standalone: true,\n  selector: 'icon-area',\n  imports: [CommonModule],\n  templateUrl: './icon-area.component.html',\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconAreaComponent implements IconType {\n  @Input() status: IconType['status'] = 'Pending';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "implements": [
+                "IconType"
+            ],
+            "templateData": "<svg\n  width=\"24\"\n  height=\"24\"\n  viewBox=\"0 0 24 24\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <g clip-path=\"url(#clip0_21_398)\">\n    <path\n      [ngClass]=\"{\n        'stroke-primary': status === 'In Progress',\n        'stroke-gray-2': status === 'Pending'\n      }\"\n      d=\"M4 18V13L8 11L12 13V18L8 20L4 18Z\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        'stroke-primary': status === 'In Progress',\n        'stroke-gray-2': status === 'Pending'\n      }\"\n      d=\"M8 11V6L12 4L16 6V11\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        'stroke-primary': status === 'In Progress',\n        'stroke-gray-2': status === 'Pending'\n      }\"\n      d=\"M12.5 13L16.5 11L20.5 13V18L16.5 20L12.5 18\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n  </g>\n  <defs>\n    <clipPath id=\"clip0_21_398\">\n      <rect width=\"24\" height=\"24\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>\n"
+        },
+        {
+            "name": "IconBasicComponent",
+            "id": "component-IconBasicComponent-9b655b12e5c32a3db5a8b3a6526473c5edae34a5b01ae8cfea6736e10f7842ca138932eac9d10883a2074f9b8eb2cff979d61b5ac394e90e24ea37170d106145",
+            "file": "frontend/ui/components/atoms/icons/icon-basic/icon-basic.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-basic",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./icon-basic.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "status",
+                    "defaultValue": "'Pending'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { IconType } from '../icon.interface';\n\n@Component({\n  standalone: true,\n  selector: 'icon-basic',\n  imports: [CommonModule],\n  templateUrl: './icon-basic.component.html',\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconBasicComponent implements IconType {\n  @Input() status: IconType['status'] = 'Pending';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "implements": [
+                "IconType"
+            ],
+            "templateData": "<svg\n  width=\"25\"\n  height=\"24\"\n  viewBox=\"0 0 25 24\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    [ngClass]=\"{\n      'stroke-primary': status === 'In Progress',\n      'stroke-gray-2': status === 'Pending'\n    }\"\n    d=\"M8.5 5H6.5C5.96957 5 5.46086 5.21071 5.08579 5.58579C4.71071 5.96086 4.5 6.46957 4.5 7V19C4.5 19.5304 4.71071 20.0391 5.08579 20.4142C5.46086 20.7893 5.96957 21 6.5 21H12.197\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      'stroke-primary': status === 'In Progress',\n      'stroke-gray-2': status === 'Pending'\n    }\"\n    d=\"M18.5 12V7C18.5 6.46957 18.2893 5.96086 17.9142 5.58579C17.5391 5.21071 17.0304 5 16.5 5H14.5\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      'stroke-primary': status === 'In Progress',\n      'stroke-gray-2': status === 'Pending'\n    }\"\n    d=\"M8.5 5C8.5 4.46957 8.71071 3.96086 9.08579 3.58579C9.46086 3.21071 9.96957 3 10.5 3H12.5C13.0304 3 13.5391 3.21071 13.9142 3.58579C14.2893 3.96086 14.5 4.46957 14.5 5C14.5 5.53043 14.2893 6.03914 13.9142 6.41421C13.5391 6.78929 13.0304 7 12.5 7H10.5C9.96957 7 9.46086 6.78929 9.08579 6.41421C8.71071 6.03914 8.5 5.53043 8.5 5Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      'stroke-primary': status === 'In Progress',\n      'stroke-gray-2': status === 'Pending'\n    }\"\n    d=\"M8.5 11H12.5\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      'stroke-primary': status === 'In Progress',\n      'stroke-gray-2': status === 'Pending'\n    }\"\n    d=\"M8.5 15H11.5\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      'stroke-primary': status === 'In Progress',\n      'stroke-gray-2': status === 'Pending'\n    }\"\n    d=\"M14.5 17.5C14.5 18.163 14.7634 18.7989 15.2322 19.2678C15.7011 19.7366 16.337 20 17 20C17.663 20 18.2989 19.7366 18.7678 19.2678C19.2366 18.7989 19.5 18.163 19.5 17.5C19.5 16.837 19.2366 16.2011 18.7678 15.7322C18.2989 15.2634 17.663 15 17 15C16.337 15 15.7011 15.2634 15.2322 15.7322C14.7634 16.2011 14.5 16.837 14.5 17.5Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      'stroke-primary': status === 'In Progress',\n      'stroke-gray-2': status === 'Pending'\n    }\"\n    d=\"M19 19.5L21.5 22\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
+        },
+        {
+            "name": "IconPassComponent",
+            "id": "component-IconPassComponent-067d0c878e303aeb71efda8d4d0424e6242aa64e36e02a694958404ff17bf10273f1161bd495ae86d86419e01439dccd0b312b659b4a6d99f088600128df6217",
+            "file": "frontend/ui/components/atoms/icons/icon-pass/icon-pass.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-pass",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./icon-pass.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "status",
+                    "defaultValue": "'Pending'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { IconType } from '../icon.interface';\n\n@Component({\n  standalone: true,\n  selector: 'icon-pass',\n  imports: [CommonModule],\n  templateUrl: './icon-pass.component.html',\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconPassComponent implements IconType {\n  @Input() status: IconType['status'] = 'Pending';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "implements": [
+                "IconType"
+            ],
+            "templateData": "<svg\n  width=\"24\"\n  height=\"24\"\n  viewBox=\"0 0 24 24\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <g clip-path=\"url(#clip0_21_327)\">\n    <path\n      [ngClass]=\"{\n        'stroke-primary': status === 'In Progress',\n        'stroke-gray-2': status === 'Pending'\n      }\"\n      d=\"M12 17V21\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        'stroke-primary': status === 'In Progress',\n        'stroke-gray-2': status === 'Pending'\n      }\"\n      d=\"M10 20L14 18\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        'stroke-primary': status === 'In Progress',\n        'stroke-gray-2': status === 'Pending'\n      }\"\n      d=\"M10 18L14 20\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        'stroke-primary': status === 'In Progress',\n        'stroke-gray-2': status === 'Pending'\n      }\"\n      d=\"M5 17V21\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        'stroke-primary': status === 'In Progress',\n        'stroke-gray-2': status === 'Pending'\n      }\"\n      d=\"M3 20L7 18\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        'stroke-primary': status === 'In Progress',\n        'stroke-gray-2': status === 'Pending'\n      }\"\n      d=\"M3 18L7 20\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        'stroke-primary': status === 'In Progress',\n        'stroke-gray-2': status === 'Pending'\n      }\"\n      d=\"M19 17V21\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        'stroke-primary': status === 'In Progress',\n        'stroke-gray-2': status === 'Pending'\n      }\"\n      d=\"M17 20L21 18\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        'stroke-primary': status === 'In Progress',\n        'stroke-gray-2': status === 'Pending'\n      }\"\n      d=\"M17 18L21 20\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        'stroke-primary': status === 'In Progress',\n        'stroke-gray-2': status === 'Pending'\n      }\"\n      d=\"M9 6C9 6.79565 9.31607 7.55871 9.87868 8.12132C10.4413 8.68393 11.2044 9 12 9C12.7956 9 13.5587 8.68393 14.1213 8.12132C14.6839 7.55871 15 6.79565 15 6C15 5.20435 14.6839 4.44129 14.1213 3.87868C13.5587 3.31607 12.7956 3 12 3C11.2044 3 10.4413 3.31607 9.87868 3.87868C9.31607 4.44129 9 5.20435 9 6Z\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        'stroke-primary': status === 'In Progress',\n        'stroke-gray-2': status === 'Pending'\n      }\"\n      d=\"M7 14C7 13.4696 7.21071 12.9609 7.58579 12.5858C7.96086 12.2107 8.46957 12 9 12H15C15.5304 12 16.0391 12.2107 16.4142 12.5858C16.7893 12.9609 17 13.4696 17 14\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n  </g>\n  <defs>\n    <clipPath id=\"clip0_21_327\">\n      <rect width=\"24\" height=\"24\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>\n"
         },
         {
             "name": "InputComponent",
-            "id": "component-InputComponent-9825b0bde61f16e1ac24b6c6221176a7cd19e60eb006659653f5d67aaf48fec66531717b3a1cfedac6d035f071255821d7922735b50cc730de0b1dd4284815ff",
+            "id": "component-InputComponent-a0342a5d55ed1377359874d2f8c4658d213b41cf7060f0b01342e0200e92c618eed66aa254059b883d2d24ffa68db927d85a1e2d69c5473a2f9e26c0a6cc262f",
             "file": "frontend/ui/components/molecules/input/input.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -298,50 +408,44 @@
             "inputsClass": [
                 {
                     "name": "css",
+                    "defaultValue": "'input-primary'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 59,
-                    "type": "\"input-primary\" | \"input-secondary\" | \"input-tertiary\"",
+                    "line": 44,
+                    "type": "",
+                    "decorators": []
+                },
+                {
+                    "name": "customErrorMessages",
+                    "defaultValue": "{}",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 47,
+                    "type": "Record<string | string>",
                     "decorators": []
                 },
                 {
                     "name": "disabled",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 77,
+                    "line": 50,
                     "type": "boolean",
                     "decorators": []
                 },
                 {
-                    "name": "formControl",
-                    "defaultValue": "new FormControl()",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 72,
-                    "type": "FormControl",
-                    "decorators": []
-                },
-                {
-                    "name": "formGroup",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 70,
-                    "type": "FormGroup",
-                    "decorators": []
-                },
-                {
                     "name": "id",
+                    "defaultValue": "''",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 68,
-                    "type": "string | undefined",
+                    "line": 43,
+                    "type": "string",
                     "decorators": []
                 },
                 {
                     "name": "name",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 53,
+                    "line": 48,
                     "type": "string",
                     "decorators": []
                 },
@@ -349,267 +453,22 @@
                     "name": "placeholder",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 56,
+                    "line": 45,
                     "type": "string | undefined",
-                    "decorators": []
-                },
-                {
-                    "name": "type",
-                    "defaultValue": "'text'",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 62,
-                    "type": "\"number\" | \"text\" | \"email\" | \"password\"",
                     "decorators": []
                 },
                 {
                     "name": "value",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 65,
+                    "line": 46,
                     "type": "string | number | undefined",
                     "decorators": []
                 }
             ],
             "outputsClass": [],
-            "propertiesClass": [
-                {
-                    "name": "_disabled",
-                    "defaultValue": "false",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "optional": false,
-                    "description": "",
-                    "line": 74,
-                    "modifierKind": [
-                        121
-                    ]
-                },
-                {
-                    "name": "destroyRef",
-                    "defaultValue": "inject(DestroyRef)",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "DestroyRef",
-                    "optional": false,
-                    "description": "",
-                    "line": 50
-                },
-                {
-                    "name": "onChange",
-                    "defaultValue": "noop",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "function",
-                    "optional": false,
-                    "description": "",
-                    "line": 123
-                },
-                {
-                    "name": "onTouch",
-                    "defaultValue": "noop",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "function",
-                    "optional": false,
-                    "description": "",
-                    "line": 124
-                }
-            ],
-            "methodsClass": [
-                {
-                    "name": "getValidatorsForType",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "[] | null",
-                    "typeParameters": [],
-                    "line": 93,
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "modifierKind": [
-                        121
-                    ]
-                },
-                {
-                    "name": "isFormControl",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "boolean",
-                    "typeParameters": [],
-                    "line": 146,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                },
-                {
-                    "name": "isValid",
-                    "args": [
-                        {
-                            "name": "inputName",
-                            "type": "string",
-                            "deprecated": false,
-                            "deprecationMessage": ""
-                        }
-                    ],
-                    "optional": false,
-                    "returnType": "boolean",
-                    "typeParameters": [],
-                    "line": 150,
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "jsdoctags": [
-                        {
-                            "name": "inputName",
-                            "type": "string",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "tagName": {
-                                "text": "param"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "ngOnInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 107,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                },
-                {
-                    "name": "registerOnChange",
-                    "args": [
-                        {
-                            "name": "fn",
-                            "type": "function",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "function": [
-                                {
-                                    "name": "value",
-                                    "type": "string",
-                                    "deprecated": false,
-                                    "deprecationMessage": ""
-                                }
-                            ]
-                        }
-                    ],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 132,
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "jsdoctags": [
-                        {
-                            "name": "fn",
-                            "type": "function",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "function": [
-                                {
-                                    "name": "value",
-                                    "type": "string",
-                                    "deprecated": false,
-                                    "deprecationMessage": ""
-                                }
-                            ],
-                            "tagName": {
-                                "text": "param"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "registerOnTouched",
-                    "args": [
-                        {
-                            "name": "fn",
-                            "type": "function",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "function": []
-                        }
-                    ],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 136,
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "jsdoctags": [
-                        {
-                            "name": "fn",
-                            "type": "function",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "function": [],
-                            "tagName": {
-                                "text": "param"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "setDisabledState",
-                    "args": [
-                        {
-                            "name": "isDisabled",
-                            "type": "boolean",
-                            "deprecated": false,
-                            "deprecationMessage": ""
-                        }
-                    ],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 140,
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "jsdoctags": [
-                        {
-                            "name": "isDisabled",
-                            "type": "boolean",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "tagName": {
-                                "text": "param"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "writeValue",
-                    "args": [
-                        {
-                            "name": "value",
-                            "type": "string",
-                            "deprecated": false,
-                            "deprecationMessage": ""
-                        }
-                    ],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 126,
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "jsdoctags": [
-                        {
-                            "name": "value",
-                            "type": "string",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "tagName": {
-                                "text": "param"
-                            }
-                        }
-                    ]
-                }
-            ],
+            "propertiesClass": [],
+            "methodsClass": [],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
@@ -636,18 +495,17 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  DestroyRef,\n  Input,\n  OnInit,\n  ViewEncapsulation,\n  forwardRef,\n  inject,\n} from '@angular/core';\nimport { takeUntilDestroyed } from '@angular/core/rxjs-interop';\nimport {\n  AbstractControl,\n  ControlValueAccessor,\n  FormControl,\n  FormGroup,\n  FormsModule,\n  NG_VALUE_ACCESSOR,\n  ReactiveFormsModule,\n  ValidatorFn,\n  Validators,\n} from '@angular/forms';\nimport { debounceTime, noop, tap } from 'rxjs';\nimport { ErrorInputComponent } from '../../atoms/error-input/error-input.component';\nimport { InputType } from './input.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-input',\n  imports: [\n    CommonModule,\n    FormsModule,\n    ReactiveFormsModule,\n    ErrorInputComponent,\n  ],\n  providers: [\n    {\n      provide: NG_VALUE_ACCESSOR,\n      useExisting: forwardRef(() => InputComponent),\n      multi: true,\n    },\n  ],\n  templateUrl: './input.component.html',\n  styleUrls: ['./input.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class InputComponent implements ControlValueAccessor, OnInit, InputType {\n  destroyRef: DestroyRef = inject(DestroyRef);\n\n  @Input()\n  name!: string;\n\n  @Input()\n  placeholder?: string | undefined;\n\n  @Input()\n  css!: 'input-primary' | 'input-secondary' | 'input-tertiary';\n\n  @Input()\n  type: 'number' | 'text' | 'email' | 'password' = 'text';\n\n  @Input()\n  value?: string | number | undefined;\n\n  @Input()\n  id?: string | undefined;\n\n  @Input() formGroup?: FormGroup;\n\n  @Input() formControl: FormControl = new FormControl();\n\n  private _disabled = false;\n\n  @Input()\n  get disabled(): boolean {\n    return this._disabled;\n  }\n  set disabled(value: boolean) {\n    this._disabled = value;\n    this.setDisabledState(value);\n  }\n\n  get control(): AbstractControl | null {\n    if (this.formGroup) {\n      return this.formGroup.controls[this.name];\n    }\n    return this.formControl || null;\n  }\n\n  //Validators\n  private getValidatorsForType(): ValidatorFn[] | null {\n    switch (this.type) {\n      case 'email':\n        return [Validators.required, Validators.email];\n      case 'number':\n        return [Validators.pattern(/^[0-9]*$/), Validators.required];\n      case 'password':\n        return [Validators.required, Validators.minLength(6)];\n      case 'text':\n      default:\n        return [Validators.required];\n    }\n  }\n\n  ngOnInit(): void {\n    if (this.control) {\n      this.control.setValidators(this.getValidatorsForType());\n      this.control.updateValueAndValidity();\n\n      this.control.valueChanges\n        .pipe(\n          debounceTime(200),\n          tap((value) => this.onChange(value)),\n          takeUntilDestroyed(this.destroyRef)\n        )\n        .subscribe();\n    }\n  }\n\n  // ControlValueAccessor methods\n  onChange: (value: string) => void = noop;\n  onTouch: () => void = noop;\n\n  writeValue(value: string): void {\n    if (this.control) {\n      this.control.setValue(value, { emitEvent: false });\n    }\n  }\n\n  registerOnChange(fn: (value: string) => void): void {\n    this.onChange = fn;\n  }\n\n  registerOnTouched(fn: () => void): void {\n    this.onTouch = fn;\n  }\n\n  setDisabledState(isDisabled: boolean): void {\n    if (this.control) {\n      isDisabled ? this.control.disable() : this.control.enable();\n    }\n  }\n\n  isFormControl(): boolean {\n    return !!this.formControl;\n  }\n\n  isValid(inputName: string): boolean {\n    if (this.formControl) {\n      return this.formControl.touched ? this.formControl.valid : true;\n    }\n    if (this.formGroup) {\n      const control = this.formGroup.get(inputName);\n      if (control?.touched) {\n        return control.valid;\n      }\n    }\n    return true;\n  }\n}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n  forwardRef,\n} from '@angular/core';\nimport {\n  FormsModule,\n  NG_VALUE_ACCESSOR,\n  ReactiveFormsModule,\n} from '@angular/forms';\nimport { ErrorInputComponent } from '../../atoms/error-input/error-input.component';\nimport { ControlValueAccesorDirective } from '../../shared/directives/control-value-accesor.directive';\nimport { InputType } from './input.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-input',\n  imports: [\n    CommonModule,\n    FormsModule,\n    ReactiveFormsModule,\n    ErrorInputComponent,\n  ],\n  providers: [\n    {\n      provide: NG_VALUE_ACCESSOR,\n      useExisting: forwardRef(() => InputComponent),\n      multi: true,\n    },\n  ],\n  templateUrl: './input.component.html',\n  styleUrls: ['./input.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class InputComponent<T>\n  extends ControlValueAccesorDirective<T>\n  implements InputType\n{\n  @Input() id = '';\n  @Input() css: InputType['css'] = 'input-primary';\n  @Input() placeholder?: string | undefined;\n  @Input() value?: string | number | undefined;\n  @Input() customErrorMessages: Record<string, string> = {};\n  @Input() name!: string;\n  @Input()\n  set disabled(value: boolean) {\n    this.setDisabledState(value);\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".content-input {\r\n  @apply flex flex-col gap-1;\r\n}\r\n\r\n.input {\r\n  @apply outline-none rounded w-auto px-4;\r\n}\r\n\r\n.error {\r\n  @apply border-red-500 text-red-400;\r\n}\r\n\r\n.input-primary {\r\n  @apply focus:placeholder-transparent placeholder-gray-200 h-10 w-full border-b-2 text-gray-600 focus:outline-none focus:border-purple-400 transition-all;\r\n}\r\n",
+                    "data": ".content-input {\n  @apply flex flex-col gap-1;\n}\n\n.input {\n  @apply outline-none rounded w-auto px-4;\n}\n\n.error {\n  @apply border-red-500 text-red-400;\n}\n\n.input-primary {\n  @apply focus:placeholder-transparent placeholder-gray-200 h-10 w-full border-b-2 text-gray-600 focus:outline-none focus:border-purple-400 transition-all placeholder:font-semibold;\n}\n",
                     "styleUrl": "./input.component.scss"
                 }
             ],
             "stylesData": "",
+            "extends": "ControlValueAccesorDirective",
             "implements": [
-                "ControlValueAccessor",
-                "OnInit",
                 "InputType"
             ],
             "accessors": {
@@ -667,7 +525,7 @@
                             }
                         ],
                         "returnType": "void",
-                        "line": 80,
+                        "line": 50,
                         "jsdoctags": [
                             {
                                 "name": "value",
@@ -679,25 +537,10 @@
                                 }
                             }
                         ]
-                    },
-                    "getSignature": {
-                        "name": "disabled",
-                        "type": "boolean",
-                        "returnType": "boolean",
-                        "line": 77
-                    }
-                },
-                "control": {
-                    "name": "control",
-                    "getSignature": {
-                        "name": "control",
-                        "type": "",
-                        "returnType": "AbstractControl | null",
-                        "line": 85
                     }
                 }
             },
-            "templateData": "<div class=\"content-input\">\n  <input\n    *ngIf=\"formGroup; else formControlTemplate\"\n    [ngClass]=\"{ input: true, 'input-primary': css === 'input-primary' }\"\n    [name]=\"name\"\n    [placeholder]=\"placeholder\"\n    [type]=\"type\"\n    [attr.value]=\"value || null\"\n    [attr.id]=\"id || null\"\n    [formControlName]=\"name\"\n  />\n\n  <ng-template #formControlTemplate>\n    <input\n      *ngIf=\"formControl\"\n      [ngClass]=\"{ input: true, 'input-primary': css === 'input-primary' }\"\n      [name]=\"name\"\n      [placeholder]=\"placeholder\"\n      [type]=\"type\"\n      [attr.value]=\"value || null\"\n      [attr.id]=\"id || null\"\n      [formControl]=\"formControl\"\n    />\n  </ng-template>\n\n  <c-error-input\n    *ngIf=\"!isValid(name)\"\n    [formContained]=\"formControl || formGroup!\"\n    [controlName]=\"name\"\n  ></c-error-input>\n</div>\n"
+            "templateData": "<div *ngIf=\"control\" class=\"content-input\">\n  <input\n    [ngClass]=\"{ input: true, 'input-primary': css === 'input-primary' }\"\n    [placeholder]=\"placeholder\"\n    [type]=\"type\"\n    [attr.value]=\"value || null\"\n    [attr.id]=\"id || null\"\n    [formControl]=\"control\"\n  />\n  <c-error-input\n    *ngIf=\"!isValid()\"\n    [formContained]=\"control\"\n    [controlName]=\"name\"\n  ></c-error-input>\n</div>\n"
         },
         {
             "name": "LabelComponent",
@@ -760,7 +603,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".label {\r\n  @apply text-base font-medium flex flex-col gap-1;\r\n}\r\n\r\n.label-primary {\r\n  @apply text-black font-medium;\r\n}\r\n",
+                    "data": "",
                     "styleUrl": "./label.component.scss"
                 }
             ],
@@ -771,8 +614,93 @@
             "templateData": "<label\n  [ngClass]=\"{\n    label: true,\n    'label-primary': css === 'label-primary'\n  }\"\n>\n  <ng-content></ng-content>\n</label>\n"
         },
         {
+            "name": "StepComponent",
+            "id": "component-StepComponent-5c21caae911bedfb679c95d0610170288008dd678a3397cf6b7e21758014d8b26cf1e1b756211556229c7bb336f7a288295eb3bb07183ee8dde89da399f5dd99",
+            "file": "frontend/ui/components/molecules/step/step.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "c-step",
+            "styleUrls": [
+                "./step.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./step.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "logo",
+                    "defaultValue": "'area'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 31,
+                    "type": "",
+                    "decorators": []
+                },
+                {
+                    "name": "status",
+                    "defaultValue": "'Pending'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 30,
+                    "type": "",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "IconAreaComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "IconPassComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "IconBasicComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport {\n  IconAreaComponent,\n  IconBasicComponent,\n  IconPassComponent,\n} from '../../atoms/icons';\nimport { StepType } from './step.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-step',\n  imports: [\n    CommonModule,\n    IconAreaComponent,\n    IconPassComponent,\n    IconBasicComponent,\n  ],\n  templateUrl: './step.component.html',\n  styleUrls: ['./step.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class StepComponent implements StepType {\n  @Input() status: StepType['status'] = 'Pending';\n  @Input() logo: StepType['logo'] = 'area';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".content-global-step {\n  @apply flex flex-col gap-2 items-center;\n}\n\n.content-step {\n  @apply flex justify-center items-center h-[46px] w-[46px] rounded-full;\n}\n\n.content-inner-step {\n  @apply flex justify-center items-center h-[38px] w-[38px] bg-white-1 rounded-full border-transparent border-2;\n}\n",
+                    "styleUrl": "./step.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "implements": [
+                "StepType"
+            ],
+            "templateData": "<div class=\"content-global-step\">\n  <div\n    [ngClass]=\"{\n      'bg-primary': status === 'In Progress',\n      'bg-gray-2': status === 'Pending',\n      'bg-success': status === 'Completed',\n      'content-step': true\n    }\"\n  >\n    <div class=\"content-inner-step\">\n      <ng-container [ngSwitch]=\"logo\">\n        <div *ngSwitchCase=\"'basic'\">\n          <icon-basic [status]=\"status\" />\n        </div>\n        <div *ngSwitchCase=\"'pass'\">\n          <icon-pass [status]=\"status\" />\n        </div>\n        <div *ngSwitchCase=\"'area'\">\n          <icon-area [status]=\"status\" />\n        </div>\n        <div *ngSwitchCase=\"'check'\">\n          <svg\n            width=\"19\"\n            height=\"14\"\n            viewBox=\"0 0 19 14\"\n            fill=\"none\"\n            xmlns=\"http://www.w3.org/2000/svg\"\n          >\n            <path\n              [ngClass]=\"{\n                'stroke-success': status === 'Completed'\n              }\"\n              d=\"M2 7L7 12L17 2\"\n              stroke-width=\"4\"\n              stroke-linecap=\"round\"\n              stroke-linejoin=\"round\"\n            />\n          </svg>\n        </div>\n      </ng-container>\n    </div>\n  </div>\n  <p *ngIf=\"logo === 'basic'\" class=\"body-small\">Basic data</p>\n  <p *ngIf=\"logo === 'pass'\" class=\"body-small\">Password</p>\n  <p *ngIf=\"logo === 'area'\" class=\"body-small\">Area of Interest</p>\n  <p\n    [ngClass]=\"{\n      'text-primary': status === 'In Progress',\n      'text-gray-2': status === 'Pending',\n      'text-success': status === 'Completed',\n      'font-body text-body-3 font-normal': true\n    }\"\n  >\n    {{ status }}\n  </p>\n</div>\n"
+        },
+        {
             "name": "TitleComponent",
-            "id": "component-TitleComponent-54617e5ecd2cddd155bb502a8decf975944327c705a885e0cd47698c8a56e8790850981be603005e1f5e5fea5ce7061e8babc6ae5a3cf2d5e7f7b29540d8a069",
+            "id": "component-TitleComponent-f821fe895e6a6a7d3e5dcb36ff9d8aa69daceb9de7468136828f38f6d2e71e36ff71067c4e86513e3d925fac7f74e3b2a7468d0b45e2054535ab5747d648ed1a",
             "file": "frontend/ui/components/atoms/title/title.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -797,8 +725,8 @@
                     "name": "color",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 27,
-                    "type": "\"t-white\" | \"t-black\"",
+                    "line": 22,
+                    "type": "",
                     "decorators": []
                 },
                 {
@@ -806,7 +734,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 20,
-                    "type": "\"title-xs\" | \"title-sm\" | \"title-base\" | \"title-xl\" | \"title-2xl\"",
+                    "type": "",
                     "decorators": []
                 }
             ],
@@ -827,11 +755,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { TitleType } from './title.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-title',\n  imports: [CommonModule],\n  templateUrl: './title.component.html',\n  styleUrls: ['./title.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class TitleComponent implements TitleType {\n  @Input() css!:\n    | 'title-xs'\n    | 'title-sm'\n    | 'title-base'\n    | 'title-xl'\n    | 'title-2xl';\n\n  @Input() color!: 't-white' | 't-black';\n}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { TitleType } from './title.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-title',\n  imports: [CommonModule],\n  templateUrl: './title.component.html',\n  styleUrls: ['./title.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class TitleComponent implements TitleType {\n  @Input() css!: TitleType['css'];\n\n  @Input() color!: TitleType['color'];\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".title {\r\n  @apply font-bold;\r\n}\r\n\r\n.title-xs {\r\n  @apply text-xs;\r\n}\r\n\r\n.title-sm {\r\n  @apply text-sm;\r\n}\r\n\r\n.title-base {\r\n  @apply text-base;\r\n}\r\n\r\n.title-lg {\r\n  @apply text-lg;\r\n}\r\n\r\n.title-xl {\r\n  @apply text-xl;\r\n}\r\n\r\n.title-2xl {\r\n  @apply text-2xl;\r\n}\r\n\r\n.t-white {\r\n  @apply text-white dark:text-black;\r\n}\r\n\r\n.t-black {\r\n  @apply text-black dark:text-white;\r\n}\r\n",
+                    "data": "",
                     "styleUrl": "./title.component.scss"
                 }
             ],
@@ -846,6 +774,56 @@
     "miscellaneous": {
         "variables": [
             {
+                "name": "AreaStepPending",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    logo: 'area',\n    status: 'Pending',\n  },\n}"
+            },
+            {
+                "name": "AreaStepProgess",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    logo: 'area',\n    status: 'In Progress',\n  },\n}"
+            },
+            {
+                "name": "BasicStepPending",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    logo: 'basic',\n    status: 'Pending',\n  },\n}"
+            },
+            {
+                "name": "BasicStepProgess",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    logo: 'basic',\n    status: 'In Progress',\n  },\n}"
+            },
+            {
+                "name": "CheckStep",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    logo: 'check',\n    status: 'Completed',\n  },\n}"
+            },
+            {
                 "name": "config",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -854,6 +832,36 @@
                 "deprecationMessage": "",
                 "type": "StorybookConfig",
                 "defaultValue": "{\n  stories: ['../stories/**/*.stories.@(js|jsx|ts|tsx)'],\n  addons: [\n    '@storybook/addon-links',\n    '@storybook/addon-essentials',\n    {\n      name: '@storybook/addon-styling',\n      options: {\n        // Check out https://github.com/storybookjs/addon-styling/blob/main/docs/api.md\n        // For more details on this addon's options.\n        /* postCss: {\n          implementation: require.resolve('postcss'),\n        }, */\n      }, // * no options for Angular,\n    },\n  ],\n  framework: {\n    name: '@storybook/angular',\n    options: {},\n  },\n  docs: {\n    autodocs: true,\n    defaultName: 'Docs',\n  },\n  // staticDirs: ['../public'],\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<StoryComponent>",
+                "defaultValue": "{\n  title: 'Components/Molecules/Button',\n  component: ButtonComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [ButtonComponent, TitleComponent],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  argTypes: {\n    css: {\n      options: ['button-primary', 'button-secondary', 'button-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'radio' },\n    },\n    type: {\n      options: ['button', 'reset', 'submit'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { title, ...buttonProps } = args;\n    const { text, ...titleProps } = title;\n\n    return {\n      props: { buttonProps, titleProps },\n      template: `\n      <c-button [css]=\"buttonProps.css\" [disabled]=\"buttonProps.disabled\" [type]=\"buttonProps.type\">\n      <c-title [css]=\"titleProps.css\" [color]=\"titleProps.color\">${text}</c-title>\n    </c-button>\n      `,\n    };\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<StoryComponent>",
+                "defaultValue": "{\n  title: 'Components/Molecules/Input',\n  component: InputComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [InputComponent, LabelComponent, ErrorInputComponent],\n      imports: [CommonModule, FormsModule, ReactiveFormsModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  argTypes: {\n    css: {\n      options: ['input-primary', 'input-secondary', 'input-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'radio' },\n    },\n    type: {\n      options: ['number', 'text', 'email', 'password'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { label, ...inputProps } = args;\n    const { text, ...inputLabel } = label;\n\n    const sharedFormControl = new FormControl('', Validators.required);\n\n    return {\n      props: { inputProps, inputLabel, sharedFormControl },\n      template: `\n      <c-label [css]=\"inputLabel.css\">\n        ${text}\n        <c-input\n        [css]=\"inputProps.css\"\n        [type]=\"inputProps.type\"\n        [placeholder]=\"inputProps.placeholder\"\n        [formControl]=\"sharedFormControl\"\n        [disabled]=\"inputProps.disabled\"\n        [name]=\"inputProps.name\"></c-input>\n      </c-label>\n\n      `,\n    };\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<StoryComponent>",
+                "defaultValue": "{\n  title: 'Components/Molecules/Step',\n  component: StepComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        StepComponent,\n        IconAreaComponent,\n        IconPassComponent,\n        IconBasicComponent,\n      ],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  argTypes: {\n    status: {\n      options: ['In Progress', 'Completed', 'Pending'],\n      control: { type: 'radio' },\n    },\n    logo: {\n      options: ['basic', 'pass', 'area', 'check'],\n      control: { type: 'radio' },\n    },\n  },\n  parameters: {\n    //👇 Runs a function before the story is rendered\n    before: (args: any, { argTypes }: any) => {\n      if (args.logo === 'check') {\n        //👇 Resets the status to 'Completed' if it's 'In Progress' and the logo is 'check'\n        args.status = 'Completed';\n      }\n      return args;\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { logo, status } = args;\n\n    return {\n      props: { logo, status },\n      template: `\n        <c-step\n        [status]=\"status\"\n        [logo]=\"logo\"\n        />\n      `,\n    };\n  },\n}"
             },
             {
                 "name": "meta",
@@ -876,24 +884,24 @@
                 "defaultValue": "{\n  title: 'Components/Atoms/Title',\n  component: TitleComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-title [css]=\"css\" [color]=\"color\">\n          ${text}\n        </c-title>\n      `,\n    };\n  },\n  argTypes: {\n    css: {\n      control: {\n        type: 'select',\n        options: [\n          'title-xs',\n          'title-sm',\n          'title-base',\n          'title-xl',\n          'title-2xl',\n        ],\n      },\n    },\n    color: {\n      control: { type: 'radio', options: ['t-white', 't-black'] },\n    },\n    text: {\n      control: { type: 'text' },\n    },\n  },\n  args: {\n    css: 'title-xs',\n    color: 't-black',\n    text: 'Title Text',\n  },\n}"
             },
             {
-                "name": "meta",
+                "name": "PasswordStepPending",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+                "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<StoryComponent>",
-                "defaultValue": "{\n  title: 'Components/Molecules/Button',\n  component: ButtonComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [ButtonComponent, TitleComponent],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  argTypes: {\n    css: {\n      options: ['button-primary', 'button-secondary', 'button-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'radio' },\n    },\n    type: {\n      options: ['button', 'reset', 'submit'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { title, ...buttonProps } = args;\n    const { text, ...titleProps } = title;\n\n    return {\n      props: { buttonProps, titleProps },\n      template: `\n      <Button [css]=\"buttonProps.css\" [disabled]=\"buttonProps.disabled\" [type]=\"buttonProps.type\">\n      <c-title [css]=\"titleProps.css\" [color]=\"titleProps.color\">${text}</c-title>\n    </Button>\n      `,\n    };\n  },\n}"
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    logo: 'pass',\n    status: 'Pending',\n  },\n}"
             },
             {
-                "name": "meta",
+                "name": "PasswordStepProgess",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<StoryComponent>",
-                "defaultValue": "{\n  title: 'Components/Molecules/Input',\n  component: InputComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [InputComponent, LabelComponent, ErrorInputComponent],\n      imports: [CommonModule, FormsModule, ReactiveFormsModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  argTypes: {\n    css: {\n      options: ['input-primary', 'input-secondary', 'input-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'radio' },\n    },\n    type: {\n      options: ['number', 'text', 'email', 'password'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { label, errors, ...inputProps } = args;\n    const { text, ...inputLabel } = label;\n    const { error, ...inputError } = errors;\n\n    return {\n      props: { inputProps, inputLabel, inputError },\n      template: `\n      <c-label [css]=\"inputLabel.css\">\n        ${text}\n        <c-input\n        [css]=\"inputProps.css\"\n        [type]=\"inputProps.type\"\n        [placeholder]=\"inputProps.placeholder\"\n        [disabled]=\"inputProps.disabled\"\n        [formControl]=\"inputProps.formControl\"\n        [name]=\"inputProps.name\"></c-input>\n      </c-label>\n\n      <c-error-input\n        [formContained]=\"inputProps.formControl\"\n        [controlName]=\"inputProps.name\"\n      >${error}</c-error-input>\n      `,\n    };\n  },\n}"
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    logo: 'pass',\n    status: 'In Progress',\n  },\n}"
             },
             {
                 "name": "Primary",
@@ -926,18 +934,51 @@
                 "defaultValue": "{\n  args: {\n    css: 'button-primary',\n    title: {\n      css: 'title-base',\n      color: 't-white',\n      text: 'Text button',\n    },\n  },\n}"
             },
             {
-                "name": "PrimaryButton",
+                "name": "PrimaryInput",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    css: 'input-primary',\n    type: 'text',\n    placeholder: 'Entry text',\n    disabled: false,\n    name: 'example',\n    formControl: new FormControl(''),\n    label: {\n      css: 'label-primary',\n      text: 'Label text',\n    },\n  },\n}"
+                "defaultValue": "{\n  args: {\n    css: 'input-primary',\n    type: 'text',\n    placeholder: 'Entry text',\n    disabled: false,\n    name: 'example',\n    label: {\n      css: 'label-primary',\n      text: 'Label text',\n    },\n  },\n}"
             }
         ],
         "functions": [],
         "typealiases": [
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<>",
+                "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 180
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<StoryComponent>",
+                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 180
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<StoryComponent>",
+                "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 180
+            },
             {
                 "name": "Story",
                 "ctype": "miscellaneous",
@@ -961,28 +1002,6 @@
                 "kind": 180
             },
             {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj<>",
-                "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 180
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj<>",
-                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 180
-            },
-            {
                 "name": "StoryComponent",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
@@ -1005,26 +1024,26 @@
                 "kind": 190
             },
             {
-                "name": "StoryError",
+                "name": "StoryComponent",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "",
-                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "rawtype": "StepType",
+                "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 190
+                "kind": 180
             },
             {
-                "name": "StoryLabel",
+                "name": "StoryDetails",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "",
+                "rawtype": "literal type",
                 "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 190
+                "kind": 184
             },
             {
                 "name": "StoryTitle",
@@ -1062,6 +1081,88 @@
         ],
         "enumerations": [],
         "groupedVariables": {
+            "frontend/ui/stories/molecules/step/step.component.stories.ts": [
+                {
+                    "name": "AreaStepPending",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    logo: 'area',\n    status: 'Pending',\n  },\n}"
+                },
+                {
+                    "name": "AreaStepProgess",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    logo: 'area',\n    status: 'In Progress',\n  },\n}"
+                },
+                {
+                    "name": "BasicStepPending",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    logo: 'basic',\n    status: 'Pending',\n  },\n}"
+                },
+                {
+                    "name": "BasicStepProgess",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    logo: 'basic',\n    status: 'In Progress',\n  },\n}"
+                },
+                {
+                    "name": "CheckStep",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    logo: 'check',\n    status: 'Completed',\n  },\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<StoryComponent>",
+                    "defaultValue": "{\n  title: 'Components/Molecules/Step',\n  component: StepComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        StepComponent,\n        IconAreaComponent,\n        IconPassComponent,\n        IconBasicComponent,\n      ],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  argTypes: {\n    status: {\n      options: ['In Progress', 'Completed', 'Pending'],\n      control: { type: 'radio' },\n    },\n    logo: {\n      options: ['basic', 'pass', 'area', 'check'],\n      control: { type: 'radio' },\n    },\n  },\n  parameters: {\n    //👇 Runs a function before the story is rendered\n    before: (args: any, { argTypes }: any) => {\n      if (args.logo === 'check') {\n        //👇 Resets the status to 'Completed' if it's 'In Progress' and the logo is 'check'\n        args.status = 'Completed';\n      }\n      return args;\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { logo, status } = args;\n\n    return {\n      props: { logo, status },\n      template: `\n        <c-step\n        [status]=\"status\"\n        [logo]=\"logo\"\n        />\n      `,\n    };\n  },\n}"
+                },
+                {
+                    "name": "PasswordStepPending",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    logo: 'pass',\n    status: 'Pending',\n  },\n}"
+                },
+                {
+                    "name": "PasswordStepProgess",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    logo: 'pass',\n    status: 'In Progress',\n  },\n}"
+                }
+            ],
             "frontend/ui/.storybook/main.ts": [
                 {
                     "name": "config",
@@ -1072,6 +1173,50 @@
                     "deprecationMessage": "",
                     "type": "StorybookConfig",
                     "defaultValue": "{\n  stories: ['../stories/**/*.stories.@(js|jsx|ts|tsx)'],\n  addons: [\n    '@storybook/addon-links',\n    '@storybook/addon-essentials',\n    {\n      name: '@storybook/addon-styling',\n      options: {\n        // Check out https://github.com/storybookjs/addon-styling/blob/main/docs/api.md\n        // For more details on this addon's options.\n        /* postCss: {\n          implementation: require.resolve('postcss'),\n        }, */\n      }, // * no options for Angular,\n    },\n  ],\n  framework: {\n    name: '@storybook/angular',\n    options: {},\n  },\n  docs: {\n    autodocs: true,\n    defaultName: 'Docs',\n  },\n  // staticDirs: ['../public'],\n}"
+                }
+            ],
+            "frontend/ui/stories/molecules/button/button.component.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<StoryComponent>",
+                    "defaultValue": "{\n  title: 'Components/Molecules/Button',\n  component: ButtonComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [ButtonComponent, TitleComponent],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  argTypes: {\n    css: {\n      options: ['button-primary', 'button-secondary', 'button-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'radio' },\n    },\n    type: {\n      options: ['button', 'reset', 'submit'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { title, ...buttonProps } = args;\n    const { text, ...titleProps } = title;\n\n    return {\n      props: { buttonProps, titleProps },\n      template: `\n      <c-button [css]=\"buttonProps.css\" [disabled]=\"buttonProps.disabled\" [type]=\"buttonProps.type\">\n      <c-title [css]=\"titleProps.css\" [color]=\"titleProps.color\">${text}</c-title>\n    </c-button>\n      `,\n    };\n  },\n}"
+                },
+                {
+                    "name": "PrimaryButton",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    css: 'button-primary',\n    title: {\n      css: 'title-base',\n      color: 't-white',\n      text: 'Text button',\n    },\n  },\n}"
+                }
+            ],
+            "frontend/ui/stories/molecules/input/input.component.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<StoryComponent>",
+                    "defaultValue": "{\n  title: 'Components/Molecules/Input',\n  component: InputComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [InputComponent, LabelComponent, ErrorInputComponent],\n      imports: [CommonModule, FormsModule, ReactiveFormsModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  argTypes: {\n    css: {\n      options: ['input-primary', 'input-secondary', 'input-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'radio' },\n    },\n    type: {\n      options: ['number', 'text', 'email', 'password'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { label, ...inputProps } = args;\n    const { text, ...inputLabel } = label;\n\n    const sharedFormControl = new FormControl('', Validators.required);\n\n    return {\n      props: { inputProps, inputLabel, sharedFormControl },\n      template: `\n      <c-label [css]=\"inputLabel.css\">\n        ${text}\n        <c-input\n        [css]=\"inputProps.css\"\n        [type]=\"inputProps.type\"\n        [placeholder]=\"inputProps.placeholder\"\n        [formControl]=\"sharedFormControl\"\n        [disabled]=\"inputProps.disabled\"\n        [name]=\"inputProps.name\"></c-input>\n      </c-label>\n\n      `,\n    };\n  },\n}"
+                },
+                {
+                    "name": "PrimaryInput",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    css: 'input-primary',\n    type: 'text',\n    placeholder: 'Entry text',\n    disabled: false,\n    name: 'example',\n    label: {\n      css: 'label-primary',\n      text: 'Label text',\n    },\n  },\n}"
                 }
             ],
             "frontend/ui/stories/atoms/label/label.component.stories.ts": [
@@ -1117,55 +1262,105 @@
                     "type": "Story",
                     "defaultValue": "{\n  args: {\n    color: 't-black',\n    css: 'title-2xl',\n    text: 'Title Text',\n  },\n}"
                 }
-            ],
-            "frontend/ui/stories/molecules/button/button.component.stories.ts": [
-                {
-                    "name": "meta",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<StoryComponent>",
-                    "defaultValue": "{\n  title: 'Components/Molecules/Button',\n  component: ButtonComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [ButtonComponent, TitleComponent],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  argTypes: {\n    css: {\n      options: ['button-primary', 'button-secondary', 'button-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'radio' },\n    },\n    type: {\n      options: ['button', 'reset', 'submit'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { title, ...buttonProps } = args;\n    const { text, ...titleProps } = title;\n\n    return {\n      props: { buttonProps, titleProps },\n      template: `\n      <Button [css]=\"buttonProps.css\" [disabled]=\"buttonProps.disabled\" [type]=\"buttonProps.type\">\n      <c-title [css]=\"titleProps.css\" [color]=\"titleProps.color\">${text}</c-title>\n    </Button>\n      `,\n    };\n  },\n}"
-                },
-                {
-                    "name": "PrimaryButton",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    css: 'button-primary',\n    title: {\n      css: 'title-base',\n      color: 't-white',\n      text: 'Text button',\n    },\n  },\n}"
-                }
-            ],
-            "frontend/ui/stories/molecules/input/input.component.stories.ts": [
-                {
-                    "name": "meta",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<StoryComponent>",
-                    "defaultValue": "{\n  title: 'Components/Molecules/Input',\n  component: InputComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [InputComponent, LabelComponent, ErrorInputComponent],\n      imports: [CommonModule, FormsModule, ReactiveFormsModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  argTypes: {\n    css: {\n      options: ['input-primary', 'input-secondary', 'input-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'radio' },\n    },\n    type: {\n      options: ['number', 'text', 'email', 'password'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { label, errors, ...inputProps } = args;\n    const { text, ...inputLabel } = label;\n    const { error, ...inputError } = errors;\n\n    return {\n      props: { inputProps, inputLabel, inputError },\n      template: `\n      <c-label [css]=\"inputLabel.css\">\n        ${text}\n        <c-input\n        [css]=\"inputProps.css\"\n        [type]=\"inputProps.type\"\n        [placeholder]=\"inputProps.placeholder\"\n        [disabled]=\"inputProps.disabled\"\n        [formControl]=\"inputProps.formControl\"\n        [name]=\"inputProps.name\"></c-input>\n      </c-label>\n\n      <c-error-input\n        [formContained]=\"inputProps.formControl\"\n        [controlName]=\"inputProps.name\"\n      >${error}</c-error-input>\n      `,\n    };\n  },\n}"
-                },
-                {
-                    "name": "PrimaryButton",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    css: 'input-primary',\n    type: 'text',\n    placeholder: 'Entry text',\n    disabled: false,\n    name: 'example',\n    formControl: new FormControl(''),\n    label: {\n      css: 'label-primary',\n      text: 'Label text',\n    },\n  },\n}"
-                }
             ]
         },
         "groupedFunctions": {},
         "groupedEnumerations": {},
         "groupedTypeAliases": {
+            "frontend/ui/stories/molecules/button/button.component.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<>",
+                    "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 180
+                },
+                {
+                    "name": "StoryComponent",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "",
+                    "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 190
+                },
+                {
+                    "name": "StoryTitle",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "",
+                    "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 190
+                }
+            ],
+            "frontend/ui/stories/molecules/input/input.component.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<StoryComponent>",
+                    "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 180
+                },
+                {
+                    "name": "StoryComponent",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "",
+                    "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 190
+                },
+                {
+                    "name": "StoryDetails",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "literal type",
+                    "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "frontend/ui/stories/molecules/step/step.component.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<StoryComponent>",
+                    "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 180
+                },
+                {
+                    "name": "StoryComponent",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StepType",
+                    "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 180
+                }
+            ],
             "frontend/ui/stories/atoms/label/label.component.stories.ts": [
                 {
                     "name": "Story",
@@ -1213,87 +1408,6 @@
                     "description": "",
                     "kind": 190
                 }
-            ],
-            "frontend/ui/stories/molecules/button/button.component.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<>",
-                    "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 180
-                },
-                {
-                    "name": "StoryComponent",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "",
-                    "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 190
-                },
-                {
-                    "name": "StoryTitle",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "",
-                    "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 190
-                }
-            ],
-            "frontend/ui/stories/molecules/input/input.component.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<>",
-                    "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 180
-                },
-                {
-                    "name": "StoryComponent",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "",
-                    "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 190
-                },
-                {
-                    "name": "StoryError",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "",
-                    "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 190
-                },
-                {
-                    "name": "StoryLabel",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "",
-                    "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 190
-                }
             ]
         }
     },
@@ -1318,7 +1432,34 @@
                 "linktype": "component",
                 "name": "ErrorInputComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/7",
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/atoms/icons/icon-area/icon-area.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconAreaComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/atoms/icons/icon-basic/icon-basic.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconBasicComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/atoms/icons/icon-pass/icon-pass.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconPassComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
                 "status": "low"
             },
             {
@@ -1354,7 +1495,16 @@
                 "linktype": "component",
                 "name": "InputComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/22",
+                "coverageCount": "0/8",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/molecules/step/step.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "StepComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {
@@ -1432,7 +1582,87 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "PrimaryButton",
+                "name": "PrimaryInput",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "AreaStepPending",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "AreaStepProgess",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "BasicStepPending",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "BasicStepProgess",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "CheckStep",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "PasswordStepPending",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "PasswordStepProgess",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

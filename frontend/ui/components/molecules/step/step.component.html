@@ -1,0 +1,84 @@
+<div class="content-global-step">
+  <div
+    [ngClass]="{
+      'bg-primary': status === 'In Progress',
+      'bg-gray-2': status === 'Pending',
+      'bg-success': status === 'Completed',
+      'content-step': true
+    }"
+  >
+    <div class="content-inner-step">
+      <div *ngIf="status === 'Completed'">
+        <svg
+          width="19"
+          height="14"
+          viewBox="0 0 19 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            [ngClass]="{
+              'stroke-success': status === 'Completed'
+            }"
+            d="M2 7L7 12L17 2"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+
+      <ng-container *ngIf="status !== 'Completed'" [ngSwitch]="logo">
+        <div *ngSwitchCase="'basic'">
+          <icon-basic [status]="status" />
+        </div>
+        <div *ngSwitchCase="'pass'">
+          <icon-pass [status]="status" />
+        </div>
+        <div *ngSwitchCase="'area'">
+          <icon-area [status]="status" />
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  <p
+    *ngIf="
+      (logo === 'basic' && status !== 'Completed') ||
+      (logo === 'basic' && status === 'Completed')
+    "
+    class="body-small"
+  >
+    Basic data
+  </p>
+
+  <p
+    *ngIf="
+      (logo === 'pass' && status !== 'Completed') ||
+      (logo === 'pass' && status === 'Completed')
+    "
+    class="body-small"
+  >
+    Password
+  </p>
+
+  <p
+    *ngIf="
+      (logo === 'area' && status !== 'Completed') ||
+      (logo === 'area' && status === 'Completed')
+    "
+    class="body-small"
+  >
+    Area of Interest
+  </p>
+
+  <p
+    [ngClass]="{
+      'text-primary': status === 'In Progress',
+      'text-gray-2': status === 'Pending',
+      'text-success': status === 'Completed',
+      'font-body text-body-3 font-normal': true
+    }"
+  >
+    {{ status }}
+  </p>
+</div>

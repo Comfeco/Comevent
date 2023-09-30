@@ -1,12 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, ViewEncapsulation } from '@angular/core';
 import { AbstractControl, FormGroup } from '@angular/forms';
-import { ControlValueAccesorDirective } from '../../shared/directives/control-value-accesor.directive';
 import { DefaultErrorMessages } from './error-input.interface';
 @Component({
   standalone: true,
   selector: 'c-error-input',
-  imports: [CommonModule, ControlValueAccesorDirective],
+  imports: [CommonModule],
   templateUrl: './error-input.component.html',
   styleUrls: ['./error-input.component.scss'],
   encapsulation: ViewEncapsulation.Emulated,

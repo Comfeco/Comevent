@@ -35,7 +35,7 @@
         "browserTarget": "frontend-ui:build-storybook",
         "compodoc": true,
         "compodocArgs": ["-e", "json", "-d", "frontend/ui"],
-        "styles": ["frontend/ui/styles.scss"]
+        "styles": ["frontend/ui/.storybook/styles.scss"]
       },
       "configurations": {
         "ci": {
@@ -47,7 +47,7 @@
       "executor": "@storybook/angular:build-storybook",
       "outputs": ["{options.outputDir}"],
       "options": {
-        "styles": ["frontend/ui/styles.scss"],
+        "styles": ["frontend/ui/.storybook/styles.scss"],
         "outputDir": "dist/storybook/frontend-ui",
         "configDir": "frontend/ui/.storybook",
         "browserTarget": "frontend-ui:build-storybook",
