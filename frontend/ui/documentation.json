@@ -89,6 +89,85 @@
             "templateData": "<button\n  [ngClass]=\"{\n    button: true,\n    'button-primary': css === 'button-primary' && !disabled,\n    'button-secondary': css === 'button-secondary',\n    'button-tertiary': css === 'button-tertiary',\n    'transition-all h-9': disabled\n  }\"\n  [type]=\"type\"\n  [class]=\"css\"\n  [disabled]=\"disabled\"\n>\n  <ng-content></ng-content>\n</button>\n"
         },
         {
+            "name": "ContainerStepComponent",
+            "id": "component-ContainerStepComponent-73cc89a87845909a40bf7e48910ed8c68a4c800413219dd956a0b979f8486ea450dc0c57d0835d95a4581514600ce95f1e33485383dd46a112b00fcf4a76e817",
+            "file": "frontend/ui/components/organism/container-step/container-step.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "c-container-step",
+            "styleUrls": [
+                "./container-step.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./container-step.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "containerStatus",
+                    "defaultValue": "'Pending'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 22,
+                    "type": "",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "steps",
+                    "defaultValue": "[\n    {\n      logo: 'basic',\n      status: 'In Progress',\n    },\n    {\n      logo: 'pass',\n      status: 'Pending',\n    },\n    {\n      logo: 'area',\n      status: 'Pending',\n    },\n  ]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "StepType[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 24
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "StepComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { StepType } from '../..';\nimport { StepComponent } from '../../molecules/step/step.component';\nimport { ContainerStepType } from './container-step.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-container-step',\n  imports: [CommonModule, StepComponent],\n  templateUrl: './container-step.component.html',\n  styleUrls: ['./container-step.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ContainerStepComponent implements ContainerStepType {\n  @Input() containerStatus: ContainerStepType['containerStatus'] = 'Pending';\n\n  steps: StepType[] = [\n    {\n      logo: 'basic',\n      status: 'In Progress',\n    },\n    {\n      logo: 'pass',\n      status: 'Pending',\n    },\n    {\n      logo: 'area',\n      status: 'Pending',\n    },\n  ];\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".content-container-step {\n  @apply flex flex-col gap-2 items-center;\n}\n",
+                    "styleUrl": "./container-step.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "implements": [
+                "ContainerStepType"
+            ],
+            "templateData": "<div class=\"content-container-step\">\n  <ng-container *ngFor=\"let step of steps\">\n    <c-step [logo]=\"step.logo\" [status]=\"step.status\" />\n  </ng-container>\n</div>\n"
+        },
+        {
             "name": "ErrorInputComponent",
             "id": "component-ErrorInputComponent-315e29372e122a690481f1fb9bd58f0829c8a68d25cc3c3d8adc3a2dbffb6ca6dfef5a1a0600e492435a55abf2df36562ccab811af482bd0474477d9361f8966",
             "file": "frontend/ui/components/atoms/error-input/error-input.component.ts",
@@ -696,7 +775,7 @@
             "implements": [
                 "StepType"
             ],
-            "templateData": "<div class=\"content-global-step\">\n  <div\n    [ngClass]=\"{\n      'bg-primary': status === 'In Progress',\n      'bg-gray-2': status === 'Pending',\n      'bg-success': status === 'Completed',\n      'content-step': true\n    }\"\n  >\n    <div class=\"content-inner-step\">\n      <ng-container [ngSwitch]=\"logo\">\n        <div *ngSwitchCase=\"'basic'\">\n          <icon-basic [status]=\"status\" />\n        </div>\n        <div *ngSwitchCase=\"'pass'\">\n          <icon-pass [status]=\"status\" />\n        </div>\n        <div *ngSwitchCase=\"'area'\">\n          <icon-area [status]=\"status\" />\n        </div>\n        <div *ngSwitchCase=\"'check'\">\n          <svg\n            width=\"19\"\n            height=\"14\"\n            viewBox=\"0 0 19 14\"\n            fill=\"none\"\n            xmlns=\"http://www.w3.org/2000/svg\"\n          >\n            <path\n              [ngClass]=\"{\n                'stroke-success': status === 'Completed'\n              }\"\n              d=\"M2 7L7 12L17 2\"\n              stroke-width=\"4\"\n              stroke-linecap=\"round\"\n              stroke-linejoin=\"round\"\n            />\n          </svg>\n        </div>\n      </ng-container>\n    </div>\n  </div>\n  <p *ngIf=\"logo === 'basic'\" class=\"body-small\">Basic data</p>\n  <p *ngIf=\"logo === 'pass'\" class=\"body-small\">Password</p>\n  <p *ngIf=\"logo === 'area'\" class=\"body-small\">Area of Interest</p>\n  <p\n    [ngClass]=\"{\n      'text-primary': status === 'In Progress',\n      'text-gray-2': status === 'Pending',\n      'text-success': status === 'Completed',\n      'font-body text-body-3 font-normal': true\n    }\"\n  >\n    {{ status }}\n  </p>\n</div>\n"
+            "templateData": "<div class=\"content-global-step\">\n  <div\n    [ngClass]=\"{\n      'bg-primary': status === 'In Progress',\n      'bg-gray-2': status === 'Pending',\n      'bg-success': status === 'Completed',\n      'content-step': true\n    }\"\n  >\n    <div class=\"content-inner-step\">\n      <div *ngIf=\"status === 'Completed'\">\n        <svg\n          width=\"19\"\n          height=\"14\"\n          viewBox=\"0 0 19 14\"\n          fill=\"none\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n        >\n          <path\n            [ngClass]=\"{\n              'stroke-success': status === 'Completed'\n            }\"\n            d=\"M2 7L7 12L17 2\"\n            stroke-width=\"4\"\n            stroke-linecap=\"round\"\n            stroke-linejoin=\"round\"\n          />\n        </svg>\n      </div>\n\n      <ng-container *ngIf=\"status !== 'Completed'\" [ngSwitch]=\"logo\">\n        <div *ngSwitchCase=\"'basic'\">\n          <icon-basic [status]=\"status\" />\n        </div>\n        <div *ngSwitchCase=\"'pass'\">\n          <icon-pass [status]=\"status\" />\n        </div>\n        <div *ngSwitchCase=\"'area'\">\n          <icon-area [status]=\"status\" />\n        </div>\n      </ng-container>\n    </div>\n  </div>\n  <p\n    *ngIf=\"\n      (logo === 'basic' && status !== 'Completed') ||\n      (logo === 'basic' && status === 'Completed')\n    \"\n    class=\"body-small\"\n  >\n    Basic data\n  </p>\n\n  <p\n    *ngIf=\"\n      (logo === 'pass' && status !== 'Completed') ||\n      (logo === 'pass' && status === 'Completed')\n    \"\n    class=\"body-small\"\n  >\n    Password\n  </p>\n\n  <p\n    *ngIf=\"\n      (logo === 'area' && status !== 'Completed') ||\n      (logo === 'area' && status === 'Completed')\n    \"\n    class=\"body-small\"\n  >\n    Area of Interest\n  </p>\n\n  <p\n    [ngClass]=\"{\n      'text-primary': status === 'In Progress',\n      'text-gray-2': status === 'Pending',\n      'text-success': status === 'Completed',\n      'font-body text-body-3 font-normal': true\n    }\"\n  >\n    {{ status }}\n  </p>\n</div>\n"
         },
         {
             "name": "TitleComponent",
@@ -774,6 +853,16 @@
     "miscellaneous": {
         "variables": [
             {
+                "name": "AreaStepCheck",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    logo: 'area',\n    status: 'Completed',\n  },\n}"
+            },
+            {
                 "name": "AreaStepPending",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -792,6 +881,16 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\n  args: {\n    logo: 'area',\n    status: 'In Progress',\n  },\n}"
+            },
+            {
+                "name": "BasicStepCompleted",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    logo: 'basic',\n    status: 'Completed',\n  },\n}"
             },
             {
                 "name": "BasicStepPending",
@@ -814,16 +913,6 @@
                 "defaultValue": "{\n  args: {\n    logo: 'basic',\n    status: 'In Progress',\n  },\n}"
             },
             {
-                "name": "CheckStep",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  args: {\n    logo: 'check',\n    status: 'Completed',\n  },\n}"
-            },
-            {
                 "name": "config",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -832,6 +921,26 @@
                 "deprecationMessage": "",
                 "type": "StorybookConfig",
                 "defaultValue": "{\n  stories: ['../stories/**/*.stories.@(js|jsx|ts|tsx)'],\n  addons: [\n    '@storybook/addon-links',\n    '@storybook/addon-essentials',\n    {\n      name: '@storybook/addon-styling',\n      options: {\n        // Check out https://github.com/storybookjs/addon-styling/blob/main/docs/api.md\n        // For more details on this addon's options.\n        /* postCss: {\n          implementation: require.resolve('postcss'),\n        }, */\n      }, // * no options for Angular,\n    },\n  ],\n  framework: {\n    name: '@storybook/angular',\n    options: {},\n  },\n  docs: {\n    autodocs: true,\n    defaultName: 'Docs',\n  },\n  // staticDirs: ['../public'],\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<StoryType>",
+                "defaultValue": "{\n  title: 'Components/Atoms/Label',\n  component: LabelComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-label [css]=\"css\">\n          ${text}\n        </c-label>\n      `,\n    };\n  },\n  argTypes: {\n    css: {\n      type: 'string',\n    },\n    text: {\n      type: 'string',\n    },\n    for: {\n      type: 'string',\n    },\n  },\n  args: {\n    css: 'label-primary' || 'label-secondary' || 'label-tertiary',\n    text: '',\n    for: '',\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<StoryType>",
+                "defaultValue": "{\n  title: 'Components/Atoms/Title',\n  component: TitleComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-title [css]=\"css\" [color]=\"color\">\n          ${text}\n        </c-title>\n      `,\n    };\n  },\n  argTypes: {\n    css: {\n      control: {\n        type: 'select',\n        options: [\n          'title-xs',\n          'title-sm',\n          'title-base',\n          'title-xl',\n          'title-2xl',\n        ],\n      },\n    },\n    color: {\n      control: { type: 'radio', options: ['t-white', 't-black'] },\n    },\n    text: {\n      control: { type: 'text' },\n    },\n  },\n  args: {\n    css: 'title-xs',\n    color: 't-black',\n    text: 'Title Text',\n  },\n}"
             },
             {
                 "name": "meta",
@@ -861,27 +970,27 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<StoryComponent>",
-                "defaultValue": "{\n  title: 'Components/Molecules/Step',\n  component: StepComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        StepComponent,\n        IconAreaComponent,\n        IconPassComponent,\n        IconBasicComponent,\n      ],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  argTypes: {\n    status: {\n      options: ['In Progress', 'Completed', 'Pending'],\n      control: { type: 'radio' },\n    },\n    logo: {\n      options: ['basic', 'pass', 'area', 'check'],\n      control: { type: 'radio' },\n    },\n  },\n  parameters: {\n    //👇 Runs a function before the story is rendered\n    before: (args: any, { argTypes }: any) => {\n      if (args.logo === 'check') {\n        //👇 Resets the status to 'Completed' if it's 'In Progress' and the logo is 'check'\n        args.status = 'Completed';\n      }\n      return args;\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { logo, status } = args;\n\n    return {\n      props: { logo, status },\n      template: `\n        <c-step\n        [status]=\"status\"\n        [logo]=\"logo\"\n        />\n      `,\n    };\n  },\n}"
+                "defaultValue": "{\n  title: 'Components/Molecules/Step',\n  component: StepComponent,\n  // ? Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        StepComponent,\n        IconAreaComponent,\n        IconPassComponent,\n        IconBasicComponent,\n      ],\n      imports: [CommonModule],\n    }),\n    /* // ? Decorator to handle logic related to args\n    (Story, context) => {\n      // ? If the logo is 'check', set the status to 'Completed'\n      if (context.args.logo === 'check') {\n        context.args.status = 'Completed';\n      }\n\n      return Story(context);\n    }, */\n  ],\n  argTypes: {\n    status: {\n      options: ['Pending', 'In Progress', 'Completed'],\n      control: { type: 'radio' },\n    },\n    logo: {\n      options: ['basic', 'pass', 'area'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { logo, status } = args;\n\n    return {\n      props: { logo, status },\n      template: `\n        <c-step\n        [status]=\"status\"\n        [logo]=\"logo\"\n        />\n      `,\n    };\n  },\n}"
             },
             {
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+                "file": "frontend/ui/stories/organism/container-step/container-step.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<StoryType>",
-                "defaultValue": "{\n  title: 'Components/Atoms/Label',\n  component: LabelComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-label [css]=\"css\">\n          ${text}\n        </c-label>\n      `,\n    };\n  },\n  argTypes: {\n    css: {\n      type: 'string',\n    },\n    text: {\n      type: 'string',\n    },\n    for: {\n      type: 'string',\n    },\n  },\n  args: {\n    css: 'label-primary' || 'label-secondary' || 'label-tertiary',\n    text: '',\n    for: '',\n  },\n}"
+                "type": "Meta<StoryComponent>",
+                "defaultValue": "{\n  title: 'Components/Organism/ContainerStep',\n  component: ContainerStepComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [ContainerStepComponent, StepComponent],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  /* argTypes: {\n    css: {\n      options: ['input-primary', 'input-secondary', 'input-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'radio' },\n    },\n    type: {\n      options: ['number', 'text', 'email', 'password'],\n      control: { type: 'radio' },\n    },\n  }, */\n  render: (args: StoryComponent) => {\n    const { containerStatus, steps } = args;\n\n    const stepsTemplate = steps\n      .map(\n        (step) => `<c-step [status]=\"${step.status}\" [logo]=\"${step.logo}\" />`\n      )\n      .join('');\n\n    return {\n      props: { containerStatus },\n      template: `\n      <c-container-step [containerStatus]=\"containerStatus\">\n        ${stepsTemplate}\n      </c-container-step>\n      `,\n    };\n  },\n}"
             },
             {
-                "name": "meta",
+                "name": "PasswordStepCompleted",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
+                "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<StoryType>",
-                "defaultValue": "{\n  title: 'Components/Atoms/Title',\n  component: TitleComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-title [css]=\"css\" [color]=\"color\">\n          ${text}\n        </c-title>\n      `,\n    };\n  },\n  argTypes: {\n    css: {\n      control: {\n        type: 'select',\n        options: [\n          'title-xs',\n          'title-sm',\n          'title-base',\n          'title-xl',\n          'title-2xl',\n        ],\n      },\n    },\n    color: {\n      control: { type: 'radio', options: ['t-white', 't-black'] },\n    },\n    text: {\n      control: { type: 'text' },\n    },\n  },\n  args: {\n    css: 'title-xs',\n    color: 't-black',\n    text: 'Title Text',\n  },\n}"
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    logo: 'pass',\n    status: 'Completed',\n  },\n}"
             },
             {
                 "name": "PasswordStepPending",
@@ -942,10 +1051,42 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\n  args: {\n    css: 'input-primary',\n    type: 'text',\n    placeholder: 'Entry text',\n    disabled: false,\n    name: 'example',\n    label: {\n      css: 'label-primary',\n      text: 'Label text',\n    },\n  },\n}"
+            },
+            {
+                "name": "StepOneContainerStep",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/organism/container-step/container-step.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    containerStatus: 'Pending',\n    steps: [\n      {\n        logo: 'basic',\n        status: 'In Progress',\n      },\n      {\n        logo: 'pass',\n        status: 'Pending',\n      },\n      {\n        logo: 'area',\n        status: 'Pending',\n      },\n    ],\n  },\n}"
             }
         ],
         "functions": [],
         "typealiases": [
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<StoryType>",
+                "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 180
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<StoryType>",
+                "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 180
+            },
             {
                 "name": "Story",
                 "ctype": "miscellaneous",
@@ -983,19 +1124,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<StoryType>",
-                "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 180
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj<StoryType>",
-                "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
+                "rawtype": "StoryObj<StoryComponent>",
+                "file": "frontend/ui/stories/organism/container-step/container-step.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1033,6 +1163,17 @@
                 "deprecationMessage": "",
                 "description": "",
                 "kind": 180
+            },
+            {
+                "name": "StoryComponent",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "literal type",
+                "file": "frontend/ui/stories/organism/container-step/container-step.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
             },
             {
                 "name": "StoryDetails",
@@ -1083,6 +1224,16 @@
         "groupedVariables": {
             "frontend/ui/stories/molecules/step/step.component.stories.ts": [
                 {
+                    "name": "AreaStepCheck",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    logo: 'area',\n    status: 'Completed',\n  },\n}"
+                },
+                {
                     "name": "AreaStepPending",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
@@ -1101,6 +1252,16 @@
                     "deprecationMessage": "",
                     "type": "Story",
                     "defaultValue": "{\n  args: {\n    logo: 'area',\n    status: 'In Progress',\n  },\n}"
+                },
+                {
+                    "name": "BasicStepCompleted",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    logo: 'basic',\n    status: 'Completed',\n  },\n}"
                 },
                 {
                     "name": "BasicStepPending",
@@ -1123,16 +1284,6 @@
                     "defaultValue": "{\n  args: {\n    logo: 'basic',\n    status: 'In Progress',\n  },\n}"
                 },
                 {
-                    "name": "CheckStep",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    logo: 'check',\n    status: 'Completed',\n  },\n}"
-                },
-                {
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
@@ -1140,7 +1291,17 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<StoryComponent>",
-                    "defaultValue": "{\n  title: 'Components/Molecules/Step',\n  component: StepComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        StepComponent,\n        IconAreaComponent,\n        IconPassComponent,\n        IconBasicComponent,\n      ],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  argTypes: {\n    status: {\n      options: ['In Progress', 'Completed', 'Pending'],\n      control: { type: 'radio' },\n    },\n    logo: {\n      options: ['basic', 'pass', 'area', 'check'],\n      control: { type: 'radio' },\n    },\n  },\n  parameters: {\n    //👇 Runs a function before the story is rendered\n    before: (args: any, { argTypes }: any) => {\n      if (args.logo === 'check') {\n        //👇 Resets the status to 'Completed' if it's 'In Progress' and the logo is 'check'\n        args.status = 'Completed';\n      }\n      return args;\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { logo, status } = args;\n\n    return {\n      props: { logo, status },\n      template: `\n        <c-step\n        [status]=\"status\"\n        [logo]=\"logo\"\n        />\n      `,\n    };\n  },\n}"
+                    "defaultValue": "{\n  title: 'Components/Molecules/Step',\n  component: StepComponent,\n  // ? Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        StepComponent,\n        IconAreaComponent,\n        IconPassComponent,\n        IconBasicComponent,\n      ],\n      imports: [CommonModule],\n    }),\n    /* // ? Decorator to handle logic related to args\n    (Story, context) => {\n      // ? If the logo is 'check', set the status to 'Completed'\n      if (context.args.logo === 'check') {\n        context.args.status = 'Completed';\n      }\n\n      return Story(context);\n    }, */\n  ],\n  argTypes: {\n    status: {\n      options: ['Pending', 'In Progress', 'Completed'],\n      control: { type: 'radio' },\n    },\n    logo: {\n      options: ['basic', 'pass', 'area'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { logo, status } = args;\n\n    return {\n      props: { logo, status },\n      template: `\n        <c-step\n        [status]=\"status\"\n        [logo]=\"logo\"\n        />\n      `,\n    };\n  },\n}"
+                },
+                {
+                    "name": "PasswordStepCompleted",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    logo: 'pass',\n    status: 'Completed',\n  },\n}"
                 },
                 {
                     "name": "PasswordStepPending",
@@ -1173,6 +1334,50 @@
                     "deprecationMessage": "",
                     "type": "StorybookConfig",
                     "defaultValue": "{\n  stories: ['../stories/**/*.stories.@(js|jsx|ts|tsx)'],\n  addons: [\n    '@storybook/addon-links',\n    '@storybook/addon-essentials',\n    {\n      name: '@storybook/addon-styling',\n      options: {\n        // Check out https://github.com/storybookjs/addon-styling/blob/main/docs/api.md\n        // For more details on this addon's options.\n        /* postCss: {\n          implementation: require.resolve('postcss'),\n        }, */\n      }, // * no options for Angular,\n    },\n  ],\n  framework: {\n    name: '@storybook/angular',\n    options: {},\n  },\n  docs: {\n    autodocs: true,\n    defaultName: 'Docs',\n  },\n  // staticDirs: ['../public'],\n}"
+                }
+            ],
+            "frontend/ui/stories/atoms/label/label.component.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<StoryType>",
+                    "defaultValue": "{\n  title: 'Components/Atoms/Label',\n  component: LabelComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-label [css]=\"css\">\n          ${text}\n        </c-label>\n      `,\n    };\n  },\n  argTypes: {\n    css: {\n      type: 'string',\n    },\n    text: {\n      type: 'string',\n    },\n    for: {\n      type: 'string',\n    },\n  },\n  args: {\n    css: 'label-primary' || 'label-secondary' || 'label-tertiary',\n    text: '',\n    for: '',\n  },\n}"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    css: 'label-primary',\n    text: 'Label Text',\n  },\n}"
+                }
+            ],
+            "frontend/ui/stories/atoms/title/title.component.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<StoryType>",
+                    "defaultValue": "{\n  title: 'Components/Atoms/Title',\n  component: TitleComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-title [css]=\"css\" [color]=\"color\">\n          ${text}\n        </c-title>\n      `,\n    };\n  },\n  argTypes: {\n    css: {\n      control: {\n        type: 'select',\n        options: [\n          'title-xs',\n          'title-sm',\n          'title-base',\n          'title-xl',\n          'title-2xl',\n        ],\n      },\n    },\n    color: {\n      control: { type: 'radio', options: ['t-white', 't-black'] },\n    },\n    text: {\n      control: { type: 'text' },\n    },\n  },\n  args: {\n    css: 'title-xs',\n    color: 't-black',\n    text: 'Title Text',\n  },\n}"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    color: 't-black',\n    css: 'title-2xl',\n    text: 'Title Text',\n  },\n}"
                 }
             ],
             "frontend/ui/stories/molecules/button/button.component.stories.ts": [
@@ -1219,54 +1424,80 @@
                     "defaultValue": "{\n  args: {\n    css: 'input-primary',\n    type: 'text',\n    placeholder: 'Entry text',\n    disabled: false,\n    name: 'example',\n    label: {\n      css: 'label-primary',\n      text: 'Label text',\n    },\n  },\n}"
                 }
             ],
-            "frontend/ui/stories/atoms/label/label.component.stories.ts": [
+            "frontend/ui/stories/organism/container-step/container-step.component.stories.ts": [
                 {
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+                    "file": "frontend/ui/stories/organism/container-step/container-step.component.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Meta<StoryType>",
-                    "defaultValue": "{\n  title: 'Components/Atoms/Label',\n  component: LabelComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-label [css]=\"css\">\n          ${text}\n        </c-label>\n      `,\n    };\n  },\n  argTypes: {\n    css: {\n      type: 'string',\n    },\n    text: {\n      type: 'string',\n    },\n    for: {\n      type: 'string',\n    },\n  },\n  args: {\n    css: 'label-primary' || 'label-secondary' || 'label-tertiary',\n    text: '',\n    for: '',\n  },\n}"
+                    "type": "Meta<StoryComponent>",
+                    "defaultValue": "{\n  title: 'Components/Organism/ContainerStep',\n  component: ContainerStepComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [ContainerStepComponent, StepComponent],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  /* argTypes: {\n    css: {\n      options: ['input-primary', 'input-secondary', 'input-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'radio' },\n    },\n    type: {\n      options: ['number', 'text', 'email', 'password'],\n      control: { type: 'radio' },\n    },\n  }, */\n  render: (args: StoryComponent) => {\n    const { containerStatus, steps } = args;\n\n    const stepsTemplate = steps\n      .map(\n        (step) => `<c-step [status]=\"${step.status}\" [logo]=\"${step.logo}\" />`\n      )\n      .join('');\n\n    return {\n      props: { containerStatus },\n      template: `\n      <c-container-step [containerStatus]=\"containerStatus\">\n        ${stepsTemplate}\n      </c-container-step>\n      `,\n    };\n  },\n}"
                 },
                 {
-                    "name": "Primary",
+                    "name": "StepOneContainerStep",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+                    "file": "frontend/ui/stories/organism/container-step/container-step.component.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    css: 'label-primary',\n    text: 'Label Text',\n  },\n}"
-                }
-            ],
-            "frontend/ui/stories/atoms/title/title.component.stories.ts": [
-                {
-                    "name": "meta",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<StoryType>",
-                    "defaultValue": "{\n  title: 'Components/Atoms/Title',\n  component: TitleComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-title [css]=\"css\" [color]=\"color\">\n          ${text}\n        </c-title>\n      `,\n    };\n  },\n  argTypes: {\n    css: {\n      control: {\n        type: 'select',\n        options: [\n          'title-xs',\n          'title-sm',\n          'title-base',\n          'title-xl',\n          'title-2xl',\n        ],\n      },\n    },\n    color: {\n      control: { type: 'radio', options: ['t-white', 't-black'] },\n    },\n    text: {\n      control: { type: 'text' },\n    },\n  },\n  args: {\n    css: 'title-xs',\n    color: 't-black',\n    text: 'Title Text',\n  },\n}"
-                },
-                {
-                    "name": "Primary",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    color: 't-black',\n    css: 'title-2xl',\n    text: 'Title Text',\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    containerStatus: 'Pending',\n    steps: [\n      {\n        logo: 'basic',\n        status: 'In Progress',\n      },\n      {\n        logo: 'pass',\n        status: 'Pending',\n      },\n      {\n        logo: 'area',\n        status: 'Pending',\n      },\n    ],\n  },\n}"
                 }
             ]
         },
         "groupedFunctions": {},
         "groupedEnumerations": {},
         "groupedTypeAliases": {
+            "frontend/ui/stories/atoms/label/label.component.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<StoryType>",
+                    "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 180
+                },
+                {
+                    "name": "StoryType",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "",
+                    "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 190
+                }
+            ],
+            "frontend/ui/stories/atoms/title/title.component.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<StoryType>",
+                    "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 180
+                },
+                {
+                    "name": "StoryType",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "",
+                    "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 190
+                }
+            ],
             "frontend/ui/stories/molecules/button/button.component.stories.ts": [
                 {
                     "name": "Story",
@@ -1361,52 +1592,28 @@
                     "kind": 180
                 }
             ],
-            "frontend/ui/stories/atoms/label/label.component.stories.ts": [
+            "frontend/ui/stories/organism/container-step/container-step.component.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
-                    "rawtype": "StoryObj<StoryType>",
-                    "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+                    "rawtype": "StoryObj<StoryComponent>",
+                    "file": "frontend/ui/stories/organism/container-step/container-step.component.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
                     "kind": 180
                 },
                 {
-                    "name": "StoryType",
+                    "name": "StoryComponent",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
-                    "rawtype": "",
-                    "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+                    "rawtype": "literal type",
+                    "file": "frontend/ui/stories/organism/container-step/container-step.component.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 190
-                }
-            ],
-            "frontend/ui/stories/atoms/title/title.component.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<StoryType>",
-                    "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 180
-                },
-                {
-                    "name": "StoryType",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "",
-                    "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 190
+                    "kind": 184
                 }
             ]
         }
@@ -1508,6 +1715,15 @@
                 "status": "low"
             },
             {
+                "filePath": "frontend/ui/components/organism/container-step/container-step.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ContainerStepComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
                 "filePath": "frontend/ui/stories/atoms/label/label.component.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
@@ -1592,6 +1808,16 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
+                "name": "AreaStepCheck",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
                 "name": "AreaStepPending",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
@@ -1603,6 +1829,16 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "AreaStepProgess",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/step/step.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "BasicStepCompleted",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -1632,7 +1868,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "CheckStep",
+                "name": "meta",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -1642,7 +1878,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "meta",
+                "name": "PasswordStepCompleted",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -1663,6 +1899,26 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "PasswordStepProgess",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/organism/container-step/container-step.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/organism/container-step/container-step.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "StepOneContainerStep",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

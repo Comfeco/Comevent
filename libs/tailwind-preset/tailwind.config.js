@@ -27,8 +27,8 @@ module.exports = {
           darkMode: '#FFDA77',
         },
         white: {
-          1: '#FFFFFF',
-          2: '#F9F9F9',
+          1: '#F9F9F9',
+          2: '#FFFFFF',
         },
         black: {
           1: '#2E2E2E',
@@ -61,10 +61,10 @@ module.exports = {
       },
     },
     boxShadow: {
-      'nutral-level1': '0 2px 4px rgba(0, 0, 0, 0.10)',
-      'nutral-level2': '0 4px 8px rgba(0, 0, 0, 0.10)',
-      'nutral-level3': '0 10px 18px rgba(0, 0, 0, 0.10)',
-      'nutral-level4': '0 12px 24px rgba(0, 0, 0, 0.10)',
+      'neutral-level1': '0 2px 4px rgba(0, 0, 0, 0.10)',
+      'neutral-level2': '0 4px 8px rgba(0, 0, 0, 0.10)',
+      'neutral-level3': '0 10px 18px rgba(0, 0, 0, 0.10)',
+      'neutral-level4': '0 12px 24px rgba(0, 0, 0, 0.10)',
       'material-level1': '0 2px 4px rgba(140, 68, 204, 0.30)',
     },
     fontFamily: {
