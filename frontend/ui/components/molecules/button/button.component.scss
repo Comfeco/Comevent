@@ -1,5 +1,5 @@
 .button {
-  @apply outline-none rounded-md w-auto font-title text-title-6 font-semibold px-4;
+  @apply outline-none rounded-md w-auto font-title text-title-6 font-semibold px-4 h-9;
 }
 
 .click-button {
@@ -7,7 +7,7 @@
 }
 
 .button-base {
-  @apply bg-primary text-white-1 h-9;
+  @apply bg-primary text-white-1;
 }
 
 .button-base:hover {
@@ -16,6 +16,10 @@
 
 .button:disabled {
   @apply bg-gray-2 text-white-1;
+}
+
+.button-ghost {
+  @apply border-solid border-2 border-primary bg-transparent;
 }
 
 .content-container {

@@ -27,7 +27,7 @@ type EventsProps = {
 };
 
 type RequiredInputType = {
-  button: 'button-base' | 'button-disabled';
+  button: 'button-base' | 'button-disabled' | 'button-ghost';
 };
 
 type OptionalInputType = {
