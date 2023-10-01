@@ -6,12 +6,13 @@ import {
   ViewEncapsulation,
 } from '@angular/core';
 import { TitleComponent } from '../../atoms';
+import { IconLoadingComponent } from '../../atoms/icons';
 import { ButtonType } from './button.interface';
 
 @Component({
   standalone: true,
   selector: 'c-button',
-  imports: [CommonModule, TitleComponent],
+  imports: [CommonModule, TitleComponent, IconLoadingComponent],
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss'],
   encapsulation: ViewEncapsulation.Emulated,
@@ -21,4 +22,5 @@ export class ButtonComponent implements ButtonType {
   @Input() type: ButtonType['type'] = 'button';
   @Input() disabled: ButtonType['disabled'] = false;
   @Input() button!: ButtonType['button'];
+  @Input() loading = false;
 }

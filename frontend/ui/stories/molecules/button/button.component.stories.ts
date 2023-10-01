@@ -38,13 +38,13 @@ const meta: Meta<StoryComponent> = {
     },
   },
   render: (args: StoryComponent) => {
-    const { button, disabled, title, type } = args;
+    const { button, disabled, title, type, loading } = args;
     const { text, color } = title;
 
     return {
-      props: { button, disabled, text, type, color },
+      props: { button, disabled, text, type, color, loading },
       template: `
-      <c-button [button]="button" [disabled]="disabled" [type]="type" [title]="title">
+      <c-button [button]="button" [disabled]="disabled" [type]="type" [title]="title" [loading]="loading">
       <c-title [text]="text" [color]="color"> Text example </c-title>
     </c-button>
       `,
@@ -67,6 +67,18 @@ export const DisabledButton: Story = {
   args: {
     button: 'button-base',
     disabled: true,
+    title: {
+      text: 'body-medium-accent',
+      color: 'white',
+    },
+  },
+};
+
+export const LoadingDisabledButton: Story = {
+  args: {
+    button: 'button-base',
+    disabled: true,
+    loading: true,
     title: {
       text: 'body-medium-accent',
       color: 'white',

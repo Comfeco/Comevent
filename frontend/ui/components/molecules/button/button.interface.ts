@@ -34,6 +34,7 @@ type OptionalInputType = {
   type: 'button' | 'reset' | 'submit';
   disabled: boolean;
   events: EventsProps;
+  loading: boolean;
 };
 
 export type ButtonType = RequiredInputType & Partial<OptionalInputType>;

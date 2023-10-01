@@ -9,6 +9,7 @@
   [disabled]="disabled"
 >
   <div class="content-container">
+    <icon-loading *ngIf="loading" />
     <ng-content></ng-content>
   </div>
 </button>
