@@ -115,3 +115,14 @@ export const GhostLoadingDisabledButton: Story = {
     },
   },
 };
+
+export const GhostDisabledButton: Story = {
+  args: {
+    button: 'button-ghost',
+    disabled: true,
+    title: {
+      text: 'body-medium-accent',
+      color: '',
+    },
+  },
+};
