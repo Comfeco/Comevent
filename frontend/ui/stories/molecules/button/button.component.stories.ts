@@ -59,3 +59,15 @@ export const BaseButton: Story = {
     },
   },
 };
+
+export const DisabledButton: Story = {
+  args: {
+    css: 'button-base',
+    disabled: true,
+    title: {
+      css: 'title-base',
+      color: 't-white',
+      text: 'Text button',
+    },
+  },
+};

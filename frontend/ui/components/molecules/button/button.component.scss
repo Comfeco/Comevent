@@ -1,11 +1,19 @@
 .button {
-  @apply outline-none rounded-md w-auto font-title text-title-6 font-semibold px-4 duration-100 transition-shadow shadow-neutral-level1 active:transform active:scale-95;
+  @apply outline-none rounded-md w-auto font-title text-title-6 font-semibold px-4;
+}
+
+.click-button {
+  @apply duration-100 transition-shadow shadow-neutral-level1 active:transform active:scale-95;
 }
 
 .button-base {
-  @apply bg-primary text-white-1 h-[38px];
+  @apply bg-primary text-white-1 h-9;
 }
 
 .button-base:hover {
   @apply bg-primary-dark;
+}
+
+.button:disabled {
+  @apply bg-gray-2 text-white-1;
 }
