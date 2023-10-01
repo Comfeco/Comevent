@@ -25,7 +25,12 @@ const meta: Meta<StoryComponent> = {
   ],
   argTypes: {
     button: {
-      options: ['button-base', 'button-disabled', 'button-ghost'],
+      options: [
+        'button-base',
+        'button-disabled',
+        'button-ghost',
+        'button-accent',
+      ],
       control: { type: 'select' },
     },
     disabled: {
@@ -123,6 +128,16 @@ export const GhostDisabledButton: Story = {
     title: {
       text: 'body-medium-accent',
       color: '',
+    },
+  },
+};
+
+export const AccentButton: Story = {
+  args: {
+    button: 'button-accent',
+    title: {
+      text: 'body-medium-accent',
+      color: 'primary',
     },
   },
 };
