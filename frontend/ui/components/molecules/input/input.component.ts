@@ -14,6 +14,7 @@ import {
 import { ErrorInputComponent } from '../../atoms/error-input/error-input.component';
 import { ControlValueAccesorDirective } from '../../shared/directives/control-value-accesor.directive';
 import { InputType } from './input.interface';
+import { LabelComponent } from '../../atoms';
 
 @Component({
   standalone: true,
@@ -23,6 +24,7 @@ import { InputType } from './input.interface';
     FormsModule,
     ReactiveFormsModule,
     ErrorInputComponent,
+    LabelComponent,
   ],
   providers: [
     {
@@ -41,7 +43,7 @@ export class InputComponent<T>
   implements InputType
 {
   @Input() id = '';
-  @Input() css: InputType['css'] = 'input-primary';
+  @Input() css: InputType['css'] = 'input-base';
   @Input() placeholder?: string | undefined;
   @Input() value?: string | number | undefined;
   @Input() customErrorMessages: Record<string, string> = {};

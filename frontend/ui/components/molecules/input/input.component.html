@@ -1,15 +1,23 @@
-<div *ngIf="control" class="content-input">
-  <input
-    [ngClass]="{ input: true, 'input-primary': css === 'input-primary' }"
-    [placeholder]="placeholder"
-    [type]="type"
-    [attr.value]="value || null"
-    [attr.id]="id || null"
-    [formControl]="control"
-  />
-  <c-error-input
-    *ngIf="!isValid()"
-    [formContained]="control"
-    [controlName]="name"
-  ></c-error-input>
-</div>
+<c-label css="label-primary" [for]="id">
+  <div *ngIf="control" class="content-input">
+    <input
+      [ngClass]="{
+        'input body-medium': true,
+        'input-base': css === 'input-base',
+        'border-success': isValid() && !isUntouched(),
+        'border-error': !isValid() && !isUntouched(),
+        'border-black-1': isUntouched(),
+      }"
+      [placeholder]="placeholder"
+      [type]="type"
+      [attr.value]="value || null"
+      [attr.id]="id || null"
+      [formControl]="control"
+    />
+    <c-error-input
+      *ngIf="!isValid()"
+      [formContained]="control"
+      [controlName]="name"
+    ></c-error-input>
+  </div>
+</c-label>

@@ -152,4 +152,12 @@ export class ControlValueAccesorDirective<T>
 
     return this.control.valid;
   }
+
+  protected isUntouched(): boolean {
+    if (!this.control) {
+      return false;
+    }
+
+    return !this.control.touched;
+  }
 }

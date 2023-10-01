@@ -11,10 +11,11 @@ import {
   InputComponent,
   InputType,
   LabelComponent,
+  LabelType,
 } from '../../../components';
 
 type StoryDetails = {
-  label: LabelComponent & { text: string };
+  label: LabelType;
 };
 
 type StoryComponent = InputType & StoryDetails;
@@ -35,7 +36,7 @@ const meta: Meta<StoryComponent> = {
   ],
   argTypes: {
     css: {
-      options: ['input-primary', 'input-secondary', 'input-tertiary'],
+      options: ['input-base', 'input-secondary', 'input-tertiary'],
       control: { type: 'select' },
     },
     disabled: {
@@ -49,21 +50,22 @@ const meta: Meta<StoryComponent> = {
   },
   render: (args: StoryComponent) => {
     const { label, ...inputProps } = args;
-    const { text, ...inputLabel } = label;
+    const { css, ...labelProps } = label;
 
     const sharedFormControl = new FormControl('', Validators.required);
 
     return {
-      props: { inputProps, inputLabel, sharedFormControl },
+      props: { inputProps, css, labelProps, sharedFormControl },
       template: `
-      <c-label [css]="inputLabel.css">
-        ${text}
+      <c-label [css]="css" [for]="inputProps.id">
+        Label text
         <c-input
         [css]="inputProps.css"
         [type]="inputProps.type"
         [placeholder]="inputProps.placeholder"
         [formControl]="sharedFormControl"
         [disabled]="inputProps.disabled"
+        [id]="inputProps.id"
         [name]="inputProps.name"></c-input>
       </c-label>
 
@@ -75,14 +77,14 @@ export default meta;
 
 export const PrimaryInput: Story = {
   args: {
-    css: 'input-primary',
+    css: 'input-base',
     type: 'text',
     placeholder: 'Entry text',
     disabled: false,
     name: 'example',
+    id: 'example',
     label: {
       css: 'label-primary',
-      text: 'Label text',
     },
   },
 };
