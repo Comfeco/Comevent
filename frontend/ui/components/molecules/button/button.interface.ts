@@ -27,13 +27,15 @@ type EventsProps = {
 };
 
 type RequiredInputType = {
-  css: 'button-primary' | 'button-secondary' | 'button-tertiary';
+  button: 'button-base' | 'button-disabled' | 'button-ghost' | 'button-accent';
 };
 
 type OptionalInputType = {
   type: 'button' | 'reset' | 'submit';
   disabled: boolean;
   events: EventsProps;
+  loading: boolean;
+  colorLoading: 'white' | 'disabled';
 };
 
 export type ButtonType = RequiredInputType & Partial<OptionalInputType>;

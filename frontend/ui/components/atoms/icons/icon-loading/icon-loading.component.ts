@@ -5,18 +5,17 @@ import {
   Input,
   ViewEncapsulation,
 } from '@angular/core';
-import { TitleType } from './title.interface';
+import { LoadingType } from '.';
 
 @Component({
   standalone: true,
-  selector: 'c-title',
+  selector: 'icon-loading',
   imports: [CommonModule],
-  templateUrl: './title.component.html',
-  styleUrls: ['./title.component.scss'],
+  templateUrl: './icon-loading.component.html',
+  styleUrls: ['./icon-loading.component.scss'],
   encapsulation: ViewEncapsulation.Emulated,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TitleComponent implements TitleType {
-  @Input() text!: TitleType['text'];
-  @Input() color!: TitleType['color'];
+export class IconLoadingComponent implements LoadingType {
+  @Input() color: LoadingType['color'] = 'white';
 }

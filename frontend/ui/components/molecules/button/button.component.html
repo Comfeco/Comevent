@@ -1,14 +1,17 @@
 <button
   [ngClass]="{
     button: true,
-    'button-primary': css === 'button-primary' && !disabled,
-    'button-secondary': css === 'button-secondary',
-    'button-tertiary': css === 'button-tertiary',
-    'transition-all h-9': disabled
+    'button-base': button === 'button-base' && !disabled,
+    'button-ghost': button === 'button-ghost',
+    'button-accent': button === 'button-accent',
+    'transition-all h-9': disabled,
+    'click-button': !disabled
   }"
   [type]="type"
-  [class]="css"
   [disabled]="disabled"
 >
-  <ng-content></ng-content>
+  <div class="content-container">
+    <icon-loading *ngIf="loading" [color]="colorLoading" />
+    <ng-content></ng-content>
+  </div>
 </button>

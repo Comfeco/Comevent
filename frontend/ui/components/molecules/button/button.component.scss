@@ -1,0 +1,50 @@
+.button {
+  @apply outline-none rounded-md w-auto font-title text-title-6 font-semibold px-4 h-9;
+}
+.click-button {
+  @apply duration-100 transition-shadow shadow-neutral-level1 active:transform active:scale-95;
+}
+.button-base {
+  @apply bg-primary text-white-1;
+}
+.button-base:hover {
+  @apply bg-primary-dark;
+}
+.button:disabled {
+  @apply bg-gray-2 text-white-1;
+}
+.button-ghost {
+  @apply border-solid border-2 border-primary bg-transparent;
+}
+
+.button-ghost:hover {
+  @apply border-primary-dark text-primary;
+}
+
+.button-ghost:disabled {
+  @apply border-solid border-2 border-gray-2 bg-transparent;
+}
+
+.content-container {
+  @apply flex flex-row gap-2;
+}
+
+.button-ghost ::ng-deep p {
+  @apply text-primary;
+}
+
+.button-ghost:hover ::ng-deep p {
+  @apply text-primary-dark;
+}
+
+.button-ghost:disabled ::ng-deep p {
+  @apply text-primary-dark;
+}
+
+.button-ghost:disabled ::ng-deep p {
+  @apply text-gray-2;
+}
+
+.button-accent {
+  @apply bg-accent;
+}

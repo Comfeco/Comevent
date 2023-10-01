@@ -9,7 +9,7 @@
     "components": [
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-25c5571d235a861345f4e4c2a866c28f3619cee54bc5fc491e63203e81680d0eec2d442c4c5db45e8d5dceaba3e607199c4f92034471839f8887ceff630c03b5",
+            "id": "component-ButtonComponent-0d7d6d39a0ad17f0923795b2e1c1aaf86806c5af42896e3658979be28b33c4fc38b537985bdd72bf1d84a01d29f6ebec38a3b600724945091bd0ee7ef5c0aef8",
             "file": "frontend/ui/components/molecules/button/button.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -31,10 +31,10 @@
             "hostDirectives": [],
             "inputsClass": [
                 {
-                    "name": "css",
+                    "name": "button",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 22,
+                    "line": 23,
                     "type": "",
                     "decorators": []
                 },
@@ -43,7 +43,7 @@
                     "defaultValue": "false",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 21,
+                    "line": 22,
                     "type": "",
                     "decorators": []
                 },
@@ -52,7 +52,7 @@
                     "defaultValue": "'button'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 20,
+                    "line": 21,
                     "type": "",
                     "decorators": []
                 }
@@ -69,16 +69,20 @@
                 {
                     "name": "CommonModule",
                     "type": "module"
+                },
+                {
+                    "name": "TitleComponent",
+                    "type": "component"
                 }
             ],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { ButtonType } from './button.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-button',\n  imports: [CommonModule],\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ButtonComponent implements ButtonType {\n  @Input() type: ButtonType['type'] = 'button';\n  @Input() disabled: ButtonType['disabled'] = false;\n  @Input() css!: ButtonType['css'];\n}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { TitleComponent } from '../../atoms';\nimport { ButtonType } from './button.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-button',\n  imports: [CommonModule, TitleComponent],\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ButtonComponent implements ButtonType {\n  @Input() type: ButtonType['type'] = 'button';\n  @Input() disabled: ButtonType['disabled'] = false;\n  @Input() button!: ButtonType['button'];\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "",
+                    "data": ".button {\r\n  @apply outline-none rounded-md w-auto font-title text-title-6 font-semibold px-4;\r\n}\r\n\r\n.click-button {\r\n  @apply duration-100 transition-shadow shadow-neutral-level1 active:transform active:scale-95;\r\n}\r\n\r\n.button-base {\r\n  @apply bg-primary text-white-1 h-9;\r\n}\r\n\r\n.button-base:hover {\r\n  @apply bg-primary-dark;\r\n}\r\n\r\n.button:disabled {\r\n  @apply bg-gray-2 text-white-1;\r\n}\r\n\r\ndiv.content-container > *:nth-child(2):last-child {\r\n  display: flex;\r\n  flex-direction: row;\r\n  gap: 2;\r\n}\r\n",
                     "styleUrl": "./button.component.scss"
                 }
             ],
@@ -86,11 +90,11 @@
             "implements": [
                 "ButtonType"
             ],
-            "templateData": "<button\n  [ngClass]=\"{\n    button: true,\n    'button-primary': css === 'button-primary' && !disabled,\n    'button-secondary': css === 'button-secondary',\n    'button-tertiary': css === 'button-tertiary',\n    'transition-all h-9': disabled\n  }\"\n  [type]=\"type\"\n  [class]=\"css\"\n  [disabled]=\"disabled\"\n>\n  <ng-content></ng-content>\n</button>\n"
+            "templateData": "<button\n  [ngClass]=\"{\n    button: true,\n    'button-base': button === 'button-base' && !disabled,\n    'transition-all h-9': disabled,\n    'click-button': !disabled\n  }\"\n  [type]=\"type\"\n  [disabled]=\"disabled\"\n>\n  <div class=\"content-container\">\n    <ng-content></ng-content>\n  </div>\n</button>\n"
         },
         {
             "name": "ContainerStepComponent",
-            "id": "component-ContainerStepComponent-73cc89a87845909a40bf7e48910ed8c68a4c800413219dd956a0b979f8486ea450dc0c57d0835d95a4581514600ce95f1e33485383dd46a112b00fcf4a76e817",
+            "id": "component-ContainerStepComponent-3ea51c2d214242426be302a263a132705527516d673ee2b82427fbdff2512637f97b2fef1e0a13f8725be1fb22e73ac6be2cd8d127999290e2c6cd1b07e24247",
             "file": "frontend/ui/components/organism/container-step/container-step.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -110,30 +114,9 @@
             ],
             "viewProviders": [],
             "hostDirectives": [],
-            "inputsClass": [
-                {
-                    "name": "containerStatus",
-                    "defaultValue": "'Pending'",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 22,
-                    "type": "",
-                    "decorators": []
-                }
-            ],
+            "inputsClass": [],
             "outputsClass": [],
-            "propertiesClass": [
-                {
-                    "name": "steps",
-                    "defaultValue": "[\n    {\n      logo: 'basic',\n      status: 'In Progress',\n    },\n    {\n      logo: 'pass',\n      status: 'Pending',\n    },\n    {\n      logo: 'area',\n      status: 'Pending',\n    },\n  ]",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "StepType[]",
-                    "optional": false,
-                    "description": "",
-                    "line": 24
-                }
-            ],
+            "propertiesClass": [],
             "methodsClass": [],
             "deprecated": false,
             "deprecationMessage": "",
@@ -153,19 +136,16 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { StepType } from '../..';\nimport { StepComponent } from '../../molecules/step/step.component';\nimport { ContainerStepType } from './container-step.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-container-step',\n  imports: [CommonModule, StepComponent],\n  templateUrl: './container-step.component.html',\n  styleUrls: ['./container-step.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ContainerStepComponent implements ContainerStepType {\n  @Input() containerStatus: ContainerStepType['containerStatus'] = 'Pending';\n\n  steps: StepType[] = [\n    {\n      logo: 'basic',\n      status: 'In Progress',\n    },\n    {\n      logo: 'pass',\n      status: 'Pending',\n    },\n    {\n      logo: 'area',\n      status: 'Pending',\n    },\n  ];\n}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { StepComponent } from '../../molecules/step/step.component';\n\n@Component({\n  standalone: true,\n  selector: 'c-container-step',\n  imports: [CommonModule, StepComponent],\n  templateUrl: './container-step.component.html',\n  styleUrls: ['./container-step.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ContainerStepComponent {}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".content-container-step {\n  @apply flex flex-col gap-2 items-center;\n}\n",
+                    "data": ".content-container-step {\n  @apply flex flex-row gap-2 items-center p-4 bg-white-2 rounded-[10px] h-max w-max justify-center shadow-neutral-level1;\n}\n",
                     "styleUrl": "./container-step.component.scss"
                 }
             ],
             "stylesData": "",
-            "implements": [
-                "ContainerStepType"
-            ],
-            "templateData": "<div class=\"content-container-step\">\n  <ng-container *ngFor=\"let step of steps\">\n    <c-step [logo]=\"step.logo\" [status]=\"step.status\" />\n  </ng-container>\n</div>\n"
+            "templateData": "<div class=\"content-container-step\">\n  <c-step logo=\"basic\" status=\"In Progress\" />\n  <div class=\"h-1 rounded-full bg-gray-2 w-[80px] mb-12 mx-7\"></div>\n  <c-step logo=\"pass\" status=\"Pending\" />\n  <div class=\"h-1 rounded-full bg-gray-2 w-[80px] mb-12 mx-7\"></div>\n  <c-step logo=\"area\" status=\"Pending\" />\n</div>\n"
         },
         {
             "name": "ErrorInputComponent",
@@ -399,6 +379,57 @@
                 "IconType"
             ],
             "templateData": "<svg\n  width=\"25\"\n  height=\"24\"\n  viewBox=\"0 0 25 24\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    [ngClass]=\"{\n      'stroke-primary': status === 'In Progress',\n      'stroke-gray-2': status === 'Pending'\n    }\"\n    d=\"M8.5 5H6.5C5.96957 5 5.46086 5.21071 5.08579 5.58579C4.71071 5.96086 4.5 6.46957 4.5 7V19C4.5 19.5304 4.71071 20.0391 5.08579 20.4142C5.46086 20.7893 5.96957 21 6.5 21H12.197\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      'stroke-primary': status === 'In Progress',\n      'stroke-gray-2': status === 'Pending'\n    }\"\n    d=\"M18.5 12V7C18.5 6.46957 18.2893 5.96086 17.9142 5.58579C17.5391 5.21071 17.0304 5 16.5 5H14.5\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      'stroke-primary': status === 'In Progress',\n      'stroke-gray-2': status === 'Pending'\n    }\"\n    d=\"M8.5 5C8.5 4.46957 8.71071 3.96086 9.08579 3.58579C9.46086 3.21071 9.96957 3 10.5 3H12.5C13.0304 3 13.5391 3.21071 13.9142 3.58579C14.2893 3.96086 14.5 4.46957 14.5 5C14.5 5.53043 14.2893 6.03914 13.9142 6.41421C13.5391 6.78929 13.0304 7 12.5 7H10.5C9.96957 7 9.46086 6.78929 9.08579 6.41421C8.71071 6.03914 8.5 5.53043 8.5 5Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      'stroke-primary': status === 'In Progress',\n      'stroke-gray-2': status === 'Pending'\n    }\"\n    d=\"M8.5 11H12.5\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      'stroke-primary': status === 'In Progress',\n      'stroke-gray-2': status === 'Pending'\n    }\"\n    d=\"M8.5 15H11.5\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      'stroke-primary': status === 'In Progress',\n      'stroke-gray-2': status === 'Pending'\n    }\"\n    d=\"M14.5 17.5C14.5 18.163 14.7634 18.7989 15.2322 19.2678C15.7011 19.7366 16.337 20 17 20C17.663 20 18.2989 19.7366 18.7678 19.2678C19.2366 18.7989 19.5 18.163 19.5 17.5C19.5 16.837 19.2366 16.2011 18.7678 15.7322C18.2989 15.2634 17.663 15 17 15C16.337 15 15.7011 15.2634 15.2322 15.7322C14.7634 16.2011 14.5 16.837 14.5 17.5Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      'stroke-primary': status === 'In Progress',\n      'stroke-gray-2': status === 'Pending'\n    }\"\n    d=\"M19 19.5L21.5 22\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
+        },
+        {
+            "name": "IconLoadingComponent",
+            "id": "component-IconLoadingComponent-59c5efc9ded8289c841953d70876ba2b04f36d6c9f40372c56bb0e5b510ef3d453d9cf6263ac9d3751319a769ec8b9f2bfa821a958817d2efd37bd3075fe0ac9",
+            "file": "frontend/ui/components/atoms/icons/icon-loading/icon-loading.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-loading",
+            "styleUrls": [
+                "./icon-loading.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon-loading.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-loading',\n  imports: [CommonModule],\n  templateUrl: './icon-loading.component.html',\n  styleUrls: ['./icon-loading.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconLoadingComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@keyframes spin {\r\n  0% {\r\n    transform: rotate(0deg);\r\n  }\r\n  100% {\r\n    transform: rotate(360deg);\r\n  }\r\n}\r\n\r\n.spin-icon {\r\n  animation: spin 1s linear infinite;\r\n}\r\n",
+                    "styleUrl": "./icon-loading.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<svg\n  class=\"spin-icon\"\n  width=\"24\"\n  height=\"24\"\n  viewBox=\"0 0 24 24\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <g clip-path=\"url(#clip0_59_655)\">\n    <path\n      d=\"M12 3C10.22 3 8.47991 3.52784 6.99987 4.51677C5.51983 5.50571 4.36628 6.91131 3.68509 8.55585C3.0039 10.2004 2.82567 12.01 3.17294 13.7558C3.5202 15.5016 4.37737 17.1053 5.63604 18.364C6.89472 19.6226 8.49836 20.4798 10.2442 20.8271C11.99 21.1743 13.7996 20.9961 15.4442 20.3149C17.0887 19.6337 18.4943 18.4802 19.4832 17.0001C20.4722 15.5201 21 13.78 21 12\"\n      stroke=\"#F9F9F9\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n  </g>\n  <defs>\n    <clipPath id=\"clip0_59_655\">\n      <rect width=\"24\" height=\"24\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>\n"
         },
         {
             "name": "IconPassComponent",
@@ -767,7 +798,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".content-global-step {\n  @apply flex flex-col gap-2 items-center;\n}\n\n.content-step {\n  @apply flex justify-center items-center h-[46px] w-[46px] rounded-full;\n}\n\n.content-inner-step {\n  @apply flex justify-center items-center h-[38px] w-[38px] bg-white-1 rounded-full border-transparent border-2;\n}\n",
+                    "data": ".content-global-step {\n  @apply flex flex-col gap-1 items-center;\n}\n\n.content-step {\n  @apply flex justify-center items-center h-[46px] w-[46px] rounded-full;\n}\n\n.content-inner-step {\n  @apply flex justify-center items-center h-[38px] w-[38px] bg-white-1 rounded-full border-transparent border-2;\n}\n",
                     "styleUrl": "./step.component.scss"
                 }
             ],
@@ -779,7 +810,7 @@
         },
         {
             "name": "TitleComponent",
-            "id": "component-TitleComponent-f821fe895e6a6a7d3e5dcb36ff9d8aa69daceb9de7468136828f38f6d2e71e36ff71067c4e86513e3d925fac7f74e3b2a7468d0b45e2054535ab5747d648ed1a",
+            "id": "component-TitleComponent-c09eef63d2de8d56fadd7f51cca7ce7f7cfe60418812909a15249caa193ac3d71c693a7583dc56f50839d51aac0a8db6cea26d8d0707c07d91458d44c5236787",
             "file": "frontend/ui/components/atoms/title/title.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -801,15 +832,7 @@
             "hostDirectives": [],
             "inputsClass": [
                 {
-                    "name": "color",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 22,
-                    "type": "",
-                    "decorators": []
-                },
-                {
-                    "name": "css",
+                    "name": "text",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 20,
@@ -834,11 +857,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { TitleType } from './title.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-title',\n  imports: [CommonModule],\n  templateUrl: './title.component.html',\n  styleUrls: ['./title.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class TitleComponent implements TitleType {\n  @Input() css!: TitleType['css'];\n\n  @Input() color!: TitleType['color'];\n}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { TitleType } from './title.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-title',\n  imports: [CommonModule],\n  templateUrl: './title.component.html',\n  styleUrls: ['./title.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class TitleComponent implements TitleType {\n  @Input() text!: TitleType['text'];\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "",
+                    "data": ".title-h1,\r\n.title-h2,\r\n.title-h3,\r\n.title-h4,\r\n.title-h5,\r\n.title-h6 {\r\n  @apply font-title text-black-1;\r\n}\r\n\r\n.title-h2,\r\n.title-h3,\r\n.title-h4,\r\n.title-h5,\r\n.title-h6 {\r\n  @apply font-semibold;\r\n}\r\n\r\n.title-h1 {\r\n  @apply text-title-1 font-bold;\r\n}\r\n\r\n.title-h2 {\r\n  @apply text-title-2;\r\n}\r\n\r\n.title-h3 {\r\n  @apply text-title-3;\r\n}\r\n\r\n.title-h4 {\r\n  @apply text-title-4;\r\n}\r\n\r\n.title-h5 {\r\n  @apply text-title-5;\r\n}\r\n\r\n.title-h6 {\r\n  @apply text-title-6;\r\n}\r\n\r\n.body-bigger,\r\n.body-medium,\r\n.body-small,\r\n.body-medium-accent,\r\n.body-smaller {\r\n  @apply font-body text-black-1;\r\n}\r\n\r\n.body-bigger,\r\n.body-medium,\r\n.body-small,\r\n.body-smaller {\r\n  @apply font-normal;\r\n}\r\n\r\n.body-bigger {\r\n  @apply text-body-1;\r\n}\r\n\r\n.body-medium {\r\n  @apply text-body-2;\r\n}\r\n\r\n.body-medium-accent {\r\n  @apply text-body-2 font-bold;\r\n}\r\n\r\n.body-small {\r\n  @apply text-body-3;\r\n}\r\n\r\n.body-smaller {\r\n  @apply text-body-4;\r\n}\r\n",
                     "styleUrl": "./title.component.scss"
                 }
             ],
@@ -846,7 +869,7 @@
             "implements": [
                 "TitleType"
             ],
-            "templateData": "<p\n  [ngClass]=\"{\n    title: true,\n    'title-xs': css === 'title-xs',\n    'title-sm': css === 'title-sm',\n    'title-base': css === 'title-base',\n    'title-xl': css === 'title-xl',\n    'title-2xl': css === 'title-2xl',\n    't-white': color === 't-white',\n    't-black': color === 't-black'\n  }\"\n>\n  <ng-content></ng-content>\n</p>\n"
+            "templateData": "<p\n  [ngClass]=\"{\n    title: true,\n    'title-h1': text === 'title-h1',\n    'title-h2': text === 'title-h2',\n    'title-h3': text === 'title-h3',\n    'title-h4': text === 'title-h4',\n    'title-h5': text === 'title-h5',\n    'title-h6': text === 'title-h6',\n    'body-bigger': text === 'body-bigger',\n    'body-medium': text === 'body-medium',\n    'body-medium-accent': text === 'body-medium-accent',\n    'body-small': text === 'body-small',\n    'body-smaller': text === 'body-smaller'\n  }\"\n>\n  <ng-content></ng-content>\n</p>\n"
         }
     ],
     "modules": [],
@@ -881,6 +904,16 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\n  args: {\n    logo: 'area',\n    status: 'In Progress',\n  },\n}"
+            },
+            {
+                "name": "BaseButton",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    button: 'button-base',\n    title: {\n      text: 'body-medium',\n    },\n  },\n}"
             },
             {
                 "name": "BasicStepCompleted",
@@ -923,6 +956,16 @@
                 "defaultValue": "{\n  stories: ['../stories/**/*.stories.@(js|jsx|ts|tsx)'],\n  addons: [\n    '@storybook/addon-links',\n    '@storybook/addon-essentials',\n    {\n      name: '@storybook/addon-styling',\n      options: {\n        // Check out https://github.com/storybookjs/addon-styling/blob/main/docs/api.md\n        // For more details on this addon's options.\n        /* postCss: {\n          implementation: require.resolve('postcss'),\n        }, */\n      }, // * no options for Angular,\n    },\n  ],\n  framework: {\n    name: '@storybook/angular',\n    options: {},\n  },\n  docs: {\n    autodocs: true,\n    defaultName: 'Docs',\n  },\n  // staticDirs: ['../public'],\n}"
             },
             {
+                "name": "DisabledButton",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    button: 'button-base',\n    disabled: true,\n    title: {\n      text: 'body-medium',\n    },\n  },\n}"
+            },
+            {
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -940,7 +983,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<StoryType>",
-                "defaultValue": "{\n  title: 'Components/Atoms/Title',\n  component: TitleComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-title [css]=\"css\" [color]=\"color\">\n          ${text}\n        </c-title>\n      `,\n    };\n  },\n  argTypes: {\n    css: {\n      control: {\n        type: 'select',\n        options: [\n          'title-xs',\n          'title-sm',\n          'title-base',\n          'title-xl',\n          'title-2xl',\n        ],\n      },\n    },\n    color: {\n      control: { type: 'radio', options: ['t-white', 't-black'] },\n    },\n    text: {\n      control: { type: 'text' },\n    },\n  },\n  args: {\n    css: 'title-xs',\n    color: 't-black',\n    text: 'Title Text',\n  },\n}"
+                "defaultValue": "{\n  title: 'Components/Atoms/Title',\n  component: TitleComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-title [css]=\"css\" [color]=\"color\">\n          ${text}\n        </c-title>\n      `,\n    };\n  },\n  argTypes: {\n    text: {\n      control: {\n        type: 'select',\n        options: [\n          'title-h1',\n          'title-h2',\n          'title-h3',\n          'title-h4',\n          'title-h5',\n          'title-h6',\n          'body-bigger',\n          'body-medium',\n          'body-small',\n          'body-medium-accent',\n          'body-smaller',\n        ],\n      },\n    },\n  },\n  args: {\n    text: 'title-h1',\n  },\n}"
             },
             {
                 "name": "meta",
@@ -950,7 +993,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<StoryComponent>",
-                "defaultValue": "{\n  title: 'Components/Molecules/Button',\n  component: ButtonComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [ButtonComponent, TitleComponent],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  argTypes: {\n    css: {\n      options: ['button-primary', 'button-secondary', 'button-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'radio' },\n    },\n    type: {\n      options: ['button', 'reset', 'submit'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { title, ...buttonProps } = args;\n    const { text, ...titleProps } = title;\n\n    return {\n      props: { buttonProps, titleProps },\n      template: `\n      <c-button [css]=\"buttonProps.css\" [disabled]=\"buttonProps.disabled\" [type]=\"buttonProps.type\">\n      <c-title [css]=\"titleProps.css\" [color]=\"titleProps.color\">${text}</c-title>\n    </c-button>\n      `,\n    };\n  },\n}"
+                "defaultValue": "{\n  title: 'Components/Molecules/Button',\n  component: ButtonComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [ButtonComponent, TitleComponent, IconLoadingComponent],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  argTypes: {\n    button: {\n      options: ['button-base', 'button-disabled'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'radio' },\n    },\n    type: {\n      options: ['button', 'reset', 'submit'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { button, disabled, title, type } = args;\n    const { text } = title;\n\n    return {\n      props: { button, disabled, text, type },\n      template: `\n      <c-button [button]=\"button\" [disabled]=\"disabled\" [type]=\"type [title]=\"title\">\n      <c-title [text]=\"text\"> Text example </c-title>\n    </c-button>\n      `,\n    };\n  },\n}"
             },
             {
                 "name": "meta",
@@ -980,7 +1023,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<StoryComponent>",
-                "defaultValue": "{\n  title: 'Components/Organism/ContainerStep',\n  component: ContainerStepComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [ContainerStepComponent, StepComponent],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  /* argTypes: {\n    css: {\n      options: ['input-primary', 'input-secondary', 'input-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'radio' },\n    },\n    type: {\n      options: ['number', 'text', 'email', 'password'],\n      control: { type: 'radio' },\n    },\n  }, */\n  render: (args: StoryComponent) => {\n    const { containerStatus, steps } = args;\n\n    const stepsTemplate = steps\n      .map(\n        (step) => `<c-step [status]=\"${step.status}\" [logo]=\"${step.logo}\" />`\n      )\n      .join('');\n\n    return {\n      props: { containerStatus },\n      template: `\n      <c-container-step [containerStatus]=\"containerStatus\">\n        ${stepsTemplate}\n      </c-container-step>\n      `,\n    };\n  },\n}"
+                "defaultValue": "{\n  title: 'Components/Organism/ContainerStep',\n  component: ContainerStepComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        ContainerStepComponent,\n        StepComponent,\n        IconAreaComponent,\n        IconPassComponent,\n        IconBasicComponent,\n      ],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  render: (args: StoryComponent) => {\n    const { steps } = args;\n\n    const stepsTemplate = steps\n      .map((step) => `<c-step [status]=\"${step.status}\" [logo]=\"${step.logo}\">`)\n      .join('');\n\n    return {\n      props: {},\n      template: `\n      <c-container-step [containerStatus]=\"containerStatus\">\n        ${{ stepsTemplate }}\n      </c-container-step>\n      `,\n    };\n  },\n}"
             },
             {
                 "name": "PasswordStepCompleted",
@@ -1023,26 +1066,6 @@
                 "defaultValue": "{\n  args: {\n    css: 'label-primary',\n    text: 'Label Text',\n  },\n}"
             },
             {
-                "name": "Primary",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  args: {\n    color: 't-black',\n    css: 'title-2xl',\n    text: 'Title Text',\n  },\n}"
-            },
-            {
-                "name": "PrimaryButton",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  args: {\n    css: 'button-primary',\n    title: {\n      css: 'title-base',\n      color: 't-white',\n      text: 'Text button',\n    },\n  },\n}"
-            },
-            {
                 "name": "PrimaryInput",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1060,7 +1083,17 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    containerStatus: 'Pending',\n    steps: [\n      {\n        logo: 'basic',\n        status: 'In Progress',\n      },\n      {\n        logo: 'pass',\n        status: 'Pending',\n      },\n      {\n        logo: 'area',\n        status: 'Pending',\n      },\n    ],\n  },\n}"
+                "defaultValue": "{\n  args: {\n    steps: [\n      {\n        logo: 'basic',\n        status: 'In Progress',\n      },\n      {\n        logo: 'pass',\n        status: 'Pending',\n      },\n      {\n        logo: 'area',\n        status: 'Pending',\n      },\n    ],\n  },\n}"
+            },
+            {
+                "name": "TitleH1",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    text: 'title-h1',\n  },\n}"
             }
         ],
         "functions": [],
@@ -1185,17 +1218,6 @@
                 "deprecationMessage": "",
                 "description": "",
                 "kind": 184
-            },
-            {
-                "name": "StoryTitle",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "",
-                "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 190
             },
             {
                 "name": "StoryType",
@@ -1324,6 +1346,38 @@
                     "defaultValue": "{\n  args: {\n    logo: 'pass',\n    status: 'In Progress',\n  },\n}"
                 }
             ],
+            "frontend/ui/stories/molecules/button/button.component.stories.ts": [
+                {
+                    "name": "BaseButton",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    button: 'button-base',\n    title: {\n      text: 'body-medium',\n    },\n  },\n}"
+                },
+                {
+                    "name": "DisabledButton",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    button: 'button-base',\n    disabled: true,\n    title: {\n      text: 'body-medium',\n    },\n  },\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<StoryComponent>",
+                    "defaultValue": "{\n  title: 'Components/Molecules/Button',\n  component: ButtonComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [ButtonComponent, TitleComponent, IconLoadingComponent],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  argTypes: {\n    button: {\n      options: ['button-base', 'button-disabled'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'radio' },\n    },\n    type: {\n      options: ['button', 'reset', 'submit'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { button, disabled, title, type } = args;\n    const { text } = title;\n\n    return {\n      props: { button, disabled, text, type },\n      template: `\n      <c-button [button]=\"button\" [disabled]=\"disabled\" [type]=\"type [title]=\"title\">\n      <c-title [text]=\"text\"> Text example </c-title>\n    </c-button>\n      `,\n    };\n  },\n}"
+                }
+            ],
             "frontend/ui/.storybook/main.ts": [
                 {
                     "name": "config",
@@ -1367,39 +1421,17 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<StoryType>",
-                    "defaultValue": "{\n  title: 'Components/Atoms/Title',\n  component: TitleComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-title [css]=\"css\" [color]=\"color\">\n          ${text}\n        </c-title>\n      `,\n    };\n  },\n  argTypes: {\n    css: {\n      control: {\n        type: 'select',\n        options: [\n          'title-xs',\n          'title-sm',\n          'title-base',\n          'title-xl',\n          'title-2xl',\n        ],\n      },\n    },\n    color: {\n      control: { type: 'radio', options: ['t-white', 't-black'] },\n    },\n    text: {\n      control: { type: 'text' },\n    },\n  },\n  args: {\n    css: 'title-xs',\n    color: 't-black',\n    text: 'Title Text',\n  },\n}"
+                    "defaultValue": "{\n  title: 'Components/Atoms/Title',\n  component: TitleComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-title [css]=\"css\" [color]=\"color\">\n          ${text}\n        </c-title>\n      `,\n    };\n  },\n  argTypes: {\n    text: {\n      control: {\n        type: 'select',\n        options: [\n          'title-h1',\n          'title-h2',\n          'title-h3',\n          'title-h4',\n          'title-h5',\n          'title-h6',\n          'body-bigger',\n          'body-medium',\n          'body-small',\n          'body-medium-accent',\n          'body-smaller',\n        ],\n      },\n    },\n  },\n  args: {\n    text: 'title-h1',\n  },\n}"
                 },
                 {
-                    "name": "Primary",
+                    "name": "TitleH1",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    color: 't-black',\n    css: 'title-2xl',\n    text: 'Title Text',\n  },\n}"
-                }
-            ],
-            "frontend/ui/stories/molecules/button/button.component.stories.ts": [
-                {
-                    "name": "meta",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<StoryComponent>",
-                    "defaultValue": "{\n  title: 'Components/Molecules/Button',\n  component: ButtonComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [ButtonComponent, TitleComponent],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  argTypes: {\n    css: {\n      options: ['button-primary', 'button-secondary', 'button-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'radio' },\n    },\n    type: {\n      options: ['button', 'reset', 'submit'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { title, ...buttonProps } = args;\n    const { text, ...titleProps } = title;\n\n    return {\n      props: { buttonProps, titleProps },\n      template: `\n      <c-button [css]=\"buttonProps.css\" [disabled]=\"buttonProps.disabled\" [type]=\"buttonProps.type\">\n      <c-title [css]=\"titleProps.css\" [color]=\"titleProps.color\">${text}</c-title>\n    </c-button>\n      `,\n    };\n  },\n}"
-                },
-                {
-                    "name": "PrimaryButton",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    css: 'button-primary',\n    title: {\n      css: 'title-base',\n      color: 't-white',\n      text: 'Text button',\n    },\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    text: 'title-h1',\n  },\n}"
                 }
             ],
             "frontend/ui/stories/molecules/input/input.component.stories.ts": [
@@ -1433,7 +1465,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<StoryComponent>",
-                    "defaultValue": "{\n  title: 'Components/Organism/ContainerStep',\n  component: ContainerStepComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [ContainerStepComponent, StepComponent],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  /* argTypes: {\n    css: {\n      options: ['input-primary', 'input-secondary', 'input-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'radio' },\n    },\n    type: {\n      options: ['number', 'text', 'email', 'password'],\n      control: { type: 'radio' },\n    },\n  }, */\n  render: (args: StoryComponent) => {\n    const { containerStatus, steps } = args;\n\n    const stepsTemplate = steps\n      .map(\n        (step) => `<c-step [status]=\"${step.status}\" [logo]=\"${step.logo}\" />`\n      )\n      .join('');\n\n    return {\n      props: { containerStatus },\n      template: `\n      <c-container-step [containerStatus]=\"containerStatus\">\n        ${stepsTemplate}\n      </c-container-step>\n      `,\n    };\n  },\n}"
+                    "defaultValue": "{\n  title: 'Components/Organism/ContainerStep',\n  component: ContainerStepComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        ContainerStepComponent,\n        StepComponent,\n        IconAreaComponent,\n        IconPassComponent,\n        IconBasicComponent,\n      ],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  render: (args: StoryComponent) => {\n    const { steps } = args;\n\n    const stepsTemplate = steps\n      .map((step) => `<c-step [status]=\"${step.status}\" [logo]=\"${step.logo}\">`)\n      .join('');\n\n    return {\n      props: {},\n      template: `\n      <c-container-step [containerStatus]=\"containerStatus\">\n        ${{ stepsTemplate }}\n      </c-container-step>\n      `,\n    };\n  },\n}"
                 },
                 {
                     "name": "StepOneContainerStep",
@@ -1443,7 +1475,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    containerStatus: 'Pending',\n    steps: [\n      {\n        logo: 'basic',\n        status: 'In Progress',\n      },\n      {\n        logo: 'pass',\n        status: 'Pending',\n      },\n      {\n        logo: 'area',\n        status: 'Pending',\n      },\n    ],\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    steps: [\n      {\n        logo: 'basic',\n        status: 'In Progress',\n      },\n      {\n        logo: 'pass',\n        status: 'Pending',\n      },\n      {\n        logo: 'area',\n        status: 'Pending',\n      },\n    ],\n  },\n}"
                 }
             ]
         },
@@ -1512,17 +1544,6 @@
                 },
                 {
                     "name": "StoryComponent",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "",
-                    "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 190
-                },
-                {
-                    "name": "StoryTitle",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
                     "rawtype": "",
@@ -1661,6 +1682,15 @@
                 "status": "low"
             },
             {
+                "filePath": "frontend/ui/components/atoms/icons/icon-loading/icon-loading.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconLoadingComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "frontend/ui/components/atoms/icons/icon-pass/icon-pass.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -1684,7 +1714,7 @@
                 "linktype": "component",
                 "name": "TitleComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/3",
+                "coverageCount": "0/2",
                 "status": "low"
             },
             {
@@ -1720,7 +1750,7 @@
                 "linktype": "component",
                 "name": "ContainerStepComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/3",
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
@@ -1758,7 +1788,27 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Primary",
+                "name": "TitleH1",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "BaseButton",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/button/button.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "DisabledButton",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -1769,16 +1819,6 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "meta",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "frontend/ui/stories/molecules/button/button.component.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "PrimaryButton",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
