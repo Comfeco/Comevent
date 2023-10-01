@@ -18,39 +18,35 @@ const meta: Meta<StoryType> = {
     };
   },
   argTypes: {
-    css: {
+    text: {
       control: {
         type: 'select',
         options: [
-          'title-xs',
-          'title-sm',
-          'title-base',
-          'title-xl',
-          'title-2xl',
+          'title-h1',
+          'title-h2',
+          'title-h3',
+          'title-h4',
+          'title-h5',
+          'title-h6',
+          'body-bigger',
+          'body-medium',
+          'body-small',
+          'body-medium-accent',
+          'body-smaller',
         ],
       },
     },
-    color: {
-      control: { type: 'radio', options: ['t-white', 't-black'] },
-    },
-    text: {
-      control: { type: 'text' },
-    },
   },
   args: {
-    css: 'title-xs',
-    color: 't-black',
-    text: 'Title Text',
+    text: 'title-h1',
   },
 };
 export default meta;
 
 type Story = StoryObj<StoryType>;
 
-export const Primary: Story = {
+export const TitleH1: Story = {
   args: {
-    color: 't-black',
-    css: 'title-2xl',
-    text: 'Title Text',
+    text: 'title-h1',
   },
 };

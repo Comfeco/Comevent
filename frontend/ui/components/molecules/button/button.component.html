@@ -1,15 +1,14 @@
 <button
   [ngClass]="{
     button: true,
-    'button-base': css === 'button-base' && !disabled,
-    'button-secondary': css === 'button-secondary',
-    'button-tertiary': css === 'button-tertiary',
+    'button-base': button === 'button-base' && !disabled,
     'transition-all h-9': disabled,
     'click-button': !disabled
   }"
   [type]="type"
-  [class]="css"
   [disabled]="disabled"
 >
-  <ng-content></ng-content>
+  <div class="content-container">
+    <ng-content></ng-content>
+  </div>
 </button>

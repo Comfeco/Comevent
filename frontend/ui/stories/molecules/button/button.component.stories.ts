@@ -1,11 +1,15 @@
 import { Meta, StoryObj, moduleMetadata } from '@storybook/angular';
 //import { action } from '@storybook/addon-actions';
 import { CommonModule } from '@angular/common';
-import { ButtonComponent, TitleComponent } from '../../../components';
+import {
+  ButtonComponent,
+  IconLoadingComponent,
+  TitleComponent,
+  TitleType,
+} from '../../../components';
 
-type StoryTitle = TitleComponent & { text: string };
-type Story = StoryObj<ButtonComponent & { title: StoryTitle }>;
-type StoryComponent = ButtonComponent & { title: StoryTitle };
+type Story = StoryObj<ButtonComponent & { title: TitleType }>;
+type StoryComponent = ButtonComponent & { title: TitleType };
 
 const meta: Meta<StoryComponent> = {
   title: 'Components/Molecules/Button',
@@ -13,15 +17,15 @@ const meta: Meta<StoryComponent> = {
   //👇 Import both components to allow component compositing with Storybook
   decorators: [
     moduleMetadata({
-      declarations: [ButtonComponent, TitleComponent],
+      declarations: [ButtonComponent, TitleComponent, IconLoadingComponent],
       imports: [CommonModule],
     }),
     //👇 Wrap our stories with a decorator (optional)
     // componentWrapperDecorator(story => `<div style="margin: 3em">${story}</div>`),
   ],
   argTypes: {
-    css: {
-      options: ['button-primary', 'button-secondary', 'button-tertiary'],
+    button: {
+      options: ['button-base', 'button-disabled'],
       control: { type: 'select' },
     },
     disabled: {
@@ -34,14 +38,14 @@ const meta: Meta<StoryComponent> = {
     },
   },
   render: (args: StoryComponent) => {
-    const { title, ...buttonProps } = args;
-    const { text, ...titleProps } = title;
+    const { button, disabled, title, type } = args;
+    const { text, color } = title;
 
     return {
-      props: { buttonProps, titleProps },
+      props: { button, disabled, text, type, color },
       template: `
-      <c-button [css]="buttonProps.css" [disabled]="buttonProps.disabled" [type]="buttonProps.type">
-      <c-title [css]="titleProps.css" [color]="titleProps.color">${text}</c-title>
+      <c-button [button]="button" [disabled]="disabled" [type]="type" [title]="title">
+      <c-title [text]="text" [color]="color"> Text example </c-title>
     </c-button>
       `,
     };
@@ -51,23 +55,21 @@ export default meta;
 
 export const BaseButton: Story = {
   args: {
-    css: 'button-base',
+    button: 'button-base',
     title: {
-      css: 'title-base',
-      color: 't-white',
-      text: 'Text button',
+      text: 'body-medium-accent',
+      color: 'white',
     },
   },
 };
 
 export const DisabledButton: Story = {
   args: {
-    css: 'button-base',
+    button: 'button-base',
     disabled: true,
     title: {
-      css: 'title-base',
-      color: 't-white',
-      text: 'Text button',
+      text: 'body-medium-accent',
+      color: 'white',
     },
   },
 };
