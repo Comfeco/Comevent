@@ -98,7 +98,7 @@ export const GhostButton: Story = {
     button: 'button-ghost',
     title: {
       text: 'body-medium-accent',
-      color: 'primary',
+      color: '',
     },
   },
 };
