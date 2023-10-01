@@ -2,7 +2,7 @@
   [ngClass]="{
     button: true,
     'button-base': button === 'button-base' && !disabled,
-    'button-ghost': button === 'button-ghost' && !disabled,
+    'button-ghost': button === 'button-ghost',
     'transition-all h-9': disabled,
     'click-button': !disabled
   }"
@@ -10,7 +10,7 @@
   [disabled]="disabled"
 >
   <div class="content-container">
-    <icon-loading *ngIf="loading" />
+    <icon-loading *ngIf="loading" [color]="colorLoading" />
     <ng-content></ng-content>
   </div>
 </button>

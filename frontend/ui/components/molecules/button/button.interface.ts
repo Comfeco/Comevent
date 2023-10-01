@@ -35,6 +35,7 @@ type OptionalInputType = {
   disabled: boolean;
   events: EventsProps;
   loading: boolean;
+  colorLoading: 'white' | 'disabled';
 };
 
 export type ButtonType = RequiredInputType & Partial<OptionalInputType>;

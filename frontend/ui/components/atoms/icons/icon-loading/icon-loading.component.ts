@@ -2,8 +2,10 @@ import { CommonModule } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
+  Input,
   ViewEncapsulation,
 } from '@angular/core';
+import { LoadingType } from '.';
 
 @Component({
   standalone: true,
@@ -14,4 +16,6 @@ import {
   encapsulation: ViewEncapsulation.Emulated,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class IconLoadingComponent {}
+export class IconLoadingComponent implements LoadingType {
+  @Input() color: LoadingType['color'] = 'white';
+}

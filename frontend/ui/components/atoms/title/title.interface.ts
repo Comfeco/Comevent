@@ -11,5 +11,5 @@ export type TitleType = {
     | 'body-small'
     | 'body-medium-accent'
     | 'body-smaller';
-  color: 'white' | 'black' | 'primary';
+  color: 'white' | 'black' | 'primary' | 'disabled';
 };

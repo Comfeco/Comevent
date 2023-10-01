@@ -23,4 +23,5 @@ export class ButtonComponent implements ButtonType {
   @Input() disabled: ButtonType['disabled'] = false;
   @Input() button!: ButtonType['button'];
   @Input() loading = false;
+  @Input() colorLoading: 'white' | 'disabled' = 'white';
 }

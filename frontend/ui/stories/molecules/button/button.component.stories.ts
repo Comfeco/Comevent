@@ -38,13 +38,19 @@ const meta: Meta<StoryComponent> = {
     },
   },
   render: (args: StoryComponent) => {
-    const { button, disabled, title, type, loading } = args;
+    const { button, disabled, title, type, loading, colorLoading } = args;
     const { text, color } = title;
 
     return {
-      props: { button, disabled, text, type, color, loading },
+      props: { button, disabled, text, type, color, loading, colorLoading },
       template: `
-      <c-button [button]="button" [disabled]="disabled" [type]="type" [title]="title" [loading]="loading">
+      <c-button
+      [button]="button"
+      [disabled]="disabled"
+      [type]="type"
+      [title]="title"
+      [loading]="loading"
+      [colorLoading]="colorLoading">
       <c-title [text]="text" [color]="color"> Text example </c-title>
     </c-button>
       `,
@@ -79,6 +85,7 @@ export const LoadingDisabledButton: Story = {
     button: 'button-base',
     disabled: true,
     loading: true,
+    colorLoading: 'white',
     title: {
       text: 'body-medium-accent',
       color: 'white',
@@ -92,6 +99,19 @@ export const GhostButton: Story = {
     title: {
       text: 'body-medium-accent',
       color: 'primary',
+    },
+  },
+};
+
+export const GhostLoadingDisabledButton: Story = {
+  args: {
+    button: 'button-ghost',
+    disabled: true,
+    loading: true,
+    colorLoading: 'disabled',
+    title: {
+      text: 'body-medium-accent',
+      color: 'disabled',
     },
   },
 };
