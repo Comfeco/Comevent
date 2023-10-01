@@ -49,9 +49,9 @@ const meta: Meta<StoryComponent> = {
 };
 export default meta;
 
-export const PrimaryButton: Story = {
+export const BaseButton: Story = {
   args: {
-    css: 'button-primary',
+    css: 'button-base',
     title: {
       css: 'title-base',
       color: 't-white',

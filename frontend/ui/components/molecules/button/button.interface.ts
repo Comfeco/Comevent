@@ -27,7 +27,7 @@ type EventsProps = {
 };
 
 type RequiredInputType = {
-  css: 'button-primary' | 'button-secondary' | 'button-tertiary';
+  css: 'button-base' | 'button-secondary' | 'button-tertiary';
 };
 
 type OptionalInputType = {
