@@ -1,22 +1,40 @@
 <c-label css="label-primary" [for]="id">
-  <div *ngIf="control" class="content-input relative">
-    <input
-      [ngClass]="{
+  <div *ngIf="control" class="content-input">
+    <div class="content-input relative">
+      <input
+        [ngClass]="{
         'input body-medium': true,
         'input-base': css === 'input-base',
         'border-success': isValid() && !isUntouched(),
         'border-error': !isValid() && !isUntouched(),
         'border-black-1': isUntouched(),
       }"
-      [placeholder]="placeholder"
-      [type]="type"
-      [attr.value]="value || null"
-      [attr.id]="id || null"
-      [formControl]="control"
-    />
-    <button *ngIf="control.value" (click)="clearInput()" class="clear-button">
-      <icon-clear />
-    </button>
+        [placeholder]="placeholder"
+        [type]="inputType"
+        [attr.value]="value || null"
+        [attr.id]="id || null"
+        [formControl]="control"
+      />
+      <button
+        *ngIf="type === 'password'"
+        (click)="togglePasswordVisibility()"
+        class="icon-pass"
+        [ngClass]="{
+          'right-4': !control.value,
+          'right-10': control.value !== ''
+        }"
+      >
+        <icon-hidden-pass *ngIf="showPassword" />
+        <icon-show-pass *ngIf="!showPassword" />
+      </button>
+      <button
+        *ngIf="control.value !== ''"
+        (click)="clearInput()"
+        class="clear-button"
+      >
+        <icon-clear />
+      </button>
+    </div>
     <c-error-input
       *ngIf="!isValid()"
       [formContained]="control"

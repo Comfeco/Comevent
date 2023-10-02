@@ -9,6 +9,8 @@ import { Meta, StoryObj, moduleMetadata } from '@storybook/angular';
 import {
   ErrorInputComponent,
   IconClearComponent,
+  IconHiddenPassComponent,
+  IconShowPassComponent,
   InputComponent,
   InputType,
   LabelComponent,
@@ -34,11 +36,11 @@ const meta: Meta<StoryComponent> = {
         LabelComponent,
         ErrorInputComponent,
         IconClearComponent,
+        IconShowPassComponent,
+        IconHiddenPassComponent,
       ],
       imports: [CommonModule, FormsModule, ReactiveFormsModule],
     }),
-    //👇 Wrap our stories with a decorator (optional)
-    // componentWrapperDecorator(story => `<div style="margin: 3em">${story}</div>`),
   ],
   argTypes: {
     css: {
@@ -72,6 +74,7 @@ const meta: Meta<StoryComponent> = {
         [formControl]="sharedFormControl"
         [disabled]="inputProps.disabled"
         [id]="inputProps.id"
+        [showPassword]="inputProps.showPassword"
         [name]="inputProps.name"></c-input>
       </c-label>
 
@@ -89,6 +92,7 @@ export const PrimaryInput: Story = {
     disabled: false,
     name: 'example',
     id: 'example',
+    showPassword: false,
     label: {
       css: 'label-primary',
     },

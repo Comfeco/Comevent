@@ -13,6 +13,7 @@ type OptionalInputType = {
   formControl: FormControl;
   placeholder: string;
   disabled?: boolean;
+  showPassword: boolean;
 };
 
 export type InputType = RequiredInputType & Partial<OptionalInputType>;

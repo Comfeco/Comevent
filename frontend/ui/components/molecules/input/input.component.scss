@@ -18,12 +18,28 @@
   position: relative;
 }
 
-.clear-button {
+.clear-button,
+.icon-pass {
   position: absolute;
-  right: 16px;
   top: 50%;
   transform: translateY(-50%);
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.clear-button {
+  right: 16px;
+}
+
+/* Chrome, Safari y Opera */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
 }
