@@ -13,3 +13,17 @@
 .input-base {
   @apply focus:placeholder-transparent h-10 border-2 text-black-1 focus:outline-none focus:border-primary transition-all w-auto;
 }
+
+.position-relative {
+  position: relative;
+}
+
+.clear-button {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

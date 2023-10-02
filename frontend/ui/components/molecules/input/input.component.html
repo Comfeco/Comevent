@@ -1,5 +1,5 @@
 <c-label css="label-primary" [for]="id">
-  <div *ngIf="control" class="content-input">
+  <div *ngIf="control" class="content-input relative">
     <input
       [ngClass]="{
         'input body-medium': true,
@@ -14,6 +14,9 @@
       [attr.id]="id || null"
       [formControl]="control"
     />
+    <button *ngIf="control.value" (click)="clearInput()" class="clear-button">
+      <icon-clear />
+    </button>
     <c-error-input
       *ngIf="!isValid()"
       [formContained]="control"

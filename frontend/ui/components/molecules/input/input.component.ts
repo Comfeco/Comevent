@@ -11,10 +11,11 @@ import {
   NG_VALUE_ACCESSOR,
   ReactiveFormsModule,
 } from '@angular/forms';
+import { IconClearComponent } from '../..';
+import { LabelComponent } from '../../atoms';
 import { ErrorInputComponent } from '../../atoms/error-input/error-input.component';
 import { ControlValueAccesorDirective } from '../../shared/directives/control-value-accesor.directive';
 import { InputType } from './input.interface';
-import { LabelComponent } from '../../atoms';
 
 @Component({
   standalone: true,
@@ -25,6 +26,7 @@ import { LabelComponent } from '../../atoms';
     ReactiveFormsModule,
     ErrorInputComponent,
     LabelComponent,
+    IconClearComponent,
   ],
   providers: [
     {
@@ -51,5 +53,14 @@ export class InputComponent<T>
   @Input()
   set disabled(value: boolean) {
     this.setDisabledState(value);
+  }
+
+  clearInput() {
+    console.log('Control value before clear:', this.control?.value);
+
+    if (this.control) {
+      this.control.setValue('');
+      console.log('Control value after clear:', this.control.value);
+    }
   }
 }

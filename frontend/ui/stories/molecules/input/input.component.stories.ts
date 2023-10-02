@@ -8,6 +8,7 @@ import {
 import { Meta, StoryObj, moduleMetadata } from '@storybook/angular';
 import {
   ErrorInputComponent,
+  IconClearComponent,
   InputComponent,
   InputType,
   LabelComponent,
@@ -28,7 +29,12 @@ const meta: Meta<StoryComponent> = {
   //👇 Import both components to allow component compositing with Storybook
   decorators: [
     moduleMetadata({
-      declarations: [InputComponent, LabelComponent, ErrorInputComponent],
+      declarations: [
+        InputComponent,
+        LabelComponent,
+        ErrorInputComponent,
+        IconClearComponent,
+      ],
       imports: [CommonModule, FormsModule, ReactiveFormsModule],
     }),
     //👇 Wrap our stories with a decorator (optional)

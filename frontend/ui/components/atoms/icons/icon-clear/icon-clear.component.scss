@@ -1,0 +1,15 @@
+.close-hover {
+  @apply stroke-error;
+}
+
+.content-hover {
+  @apply fill-transparent stroke-error;
+}
+
+.icon-clear:hover .close-hover {
+  @apply stroke-white-1;
+}
+
+.icon-clear:hover .content-hover {
+  @apply fill-error;
+}
