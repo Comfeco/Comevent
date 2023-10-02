@@ -7,14 +7,23 @@
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
-    class="content-hover"
+    [ngClass]="{
+      'content-hover-error': color === 'error',
+      'content-hover-gray': color === 'gray',
+      'content-fill-error': color === 'error' && type === 'solid',
+      'content-fill-gray': color === 'gray' && type === 'solid',
+      'content-fill-transparent': type === 'outlined',
+    }"
     d="M9 1C15.4 1 17 2.6 17 9C17 15.4 15.4 17 9 17C2.6 17 1 15.4 1 9C1 2.6 2.6 1 9 1Z"
     stroke-width="1.77778"
     stroke-linecap="round"
     stroke-linejoin="round"
   />
   <path
-    class="close-hover"
+    [ngClass]="{
+      'close-hover-solid': type === 'solid',
+      'close-hover-outlined': type === 'outlined'
+    }"
     d="M7.22229 7.22192L10.7778 10.7775M10.7778 7.22192L7.22229 10.7775"
     stroke-width="1.77778"
     stroke-linecap="round"
