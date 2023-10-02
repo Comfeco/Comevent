@@ -11,6 +11,12 @@ import {
   NG_VALUE_ACCESSOR,
   ReactiveFormsModule,
 } from '@angular/forms';
+import {
+  IconClearComponent,
+  IconHiddenPassComponent,
+  IconShowPassComponent,
+} from '../..';
+import { LabelComponent } from '../../atoms';
 import { ErrorInputComponent } from '../../atoms/error-input/error-input.component';
 import { ControlValueAccesorDirective } from '../../shared/directives/control-value-accesor.directive';
 import { InputType } from './input.interface';
@@ -23,6 +29,10 @@ import { InputType } from './input.interface';
     FormsModule,
     ReactiveFormsModule,
     ErrorInputComponent,
+    LabelComponent,
+    IconClearComponent,
+    IconShowPassComponent,
+    IconHiddenPassComponent,
   ],
   providers: [
     {
@@ -41,13 +51,34 @@ export class InputComponent<T>
   implements InputType
 {
   @Input() id = '';
-  @Input() css: InputType['css'] = 'input-primary';
+  @Input() css: InputType['css'] = 'input-base';
   @Input() placeholder?: string | undefined;
   @Input() value?: string | number | undefined;
   @Input() customErrorMessages: Record<string, string> = {};
   @Input() name!: string;
+  @Input() showPassword = false;
   @Input()
   set disabled(value: boolean) {
     this.setDisabledState(value);
+  }
+
+  get inputType(): string {
+    if (this.type === 'password' && this.showPassword) {
+      return 'text';
+    }
+    return this.type;
+  }
+
+  clearInput() {
+    console.log('Control value before clear:', this.control?.value);
+
+    if (this.control) {
+      this.control.setValue('');
+      console.log('Control value after clear:', this.control.value);
+    }
+  }
+
+  togglePasswordVisibility(): void {
+    this.showPassword = !this.showPassword;
   }
 }

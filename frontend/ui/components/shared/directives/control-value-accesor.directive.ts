@@ -32,7 +32,7 @@ export class ControlValueAccesorDirective<T>
   @Input() additionalValidators: ValidatorFn[] = [];
 
   control: FormControl | undefined;
-  protected _isDisabled!: boolean;
+  protected _isDisabled = false;
   private _destroy$ = new Subject<void>();
   private _onTouched!: () => T;
 
@@ -68,11 +68,10 @@ export class ControlValueAccesorDirective<T>
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (
-      changes?.['type'] ||
-      (changes?.['additionalValidators'] && this.control)
-    ) {
-      this.updateValidators();
+    if (changes?.['type'] || changes?.['additionalValidators']) {
+      if (this.control) {
+        this.updateValidators();
+      }
     }
   }
 
@@ -103,19 +102,21 @@ export class ControlValueAccesorDirective<T>
             .form as FormControl;
           break;
       }
-      this.setDisabledState(this._isDisabled);
     } catch (err) {
       this.control = new FormControl();
     }
 
+    this.setDisabledState(this._isDisabled);
     // ? Debug
     //this.observeValueChanges();
   }
 
   writeValue(value: T): void {
-    this.control
-      ? this.control.setValue(value)
-      : (this.control = new FormControl(value));
+    if (this.control?.value !== value) {
+      this.control
+        ? this.control.setValue(value, { emitEvent: false })
+        : (this.control = new FormControl(value));
+    }
   }
 
   registerOnChange(fn: (val: T | null) => T): void {
@@ -134,10 +135,19 @@ export class ControlValueAccesorDirective<T>
   }
 
   setDisabledState(isDisabled: boolean): void {
+    if (this._isDisabled === isDisabled) return;
     this._isDisabled = isDisabled;
 
     if (this.control) {
-      isDisabled ? this.control.disable() : this.control.enable();
+      if (isDisabled) {
+        // ? Here we delete the input value
+        this.control.setValue('');
+
+        // ? We disable the control
+        this.control.disable();
+      } else {
+        this.control.enable();
+      }
     }
   }
 
@@ -151,5 +161,13 @@ export class ControlValueAccesorDirective<T>
     }
 
     return this.control.valid;
+  }
+
+  protected isUntouched(): boolean {
+    if (!this.control) {
+      return false;
+    }
+
+    return !this.control.touched;
   }
 }

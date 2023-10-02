@@ -1,5 +1,5 @@
 .error {
-  @apply w-full rounded-md h-auto p-1 bg-red-200 gap-2 items-center flex text-red-500 flex-wrap justify-center font-semibold;
+  @apply w-full rounded-md h-auto p-1 bg-error-light gap-2 items-center flex flex-wrap justify-start font-semibold px-4;
 }
 
 .size-icon {

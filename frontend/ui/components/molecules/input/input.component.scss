@@ -3,13 +3,43 @@
 }
 
 .input {
-  @apply outline-none rounded w-auto px-4;
+  @apply outline-none rounded-md w-auto px-4;
 }
 
-.error {
-  @apply border-red-500 text-red-400;
+.input::placeholder {
+  @apply placeholder:text-gray-2 placeholder:text-body-2 placeholder:font-normal;
 }
 
-.input-primary {
-  @apply focus:placeholder-transparent placeholder-gray-200 h-10 w-full border-b-2 text-gray-600 focus:outline-none focus:border-purple-400 transition-all placeholder:font-semibold;
+.input-base {
+  @apply focus:placeholder-transparent h-10 border-2 text-black-1 focus:outline-none focus:border-primary transition-all w-auto;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.clear-button,
+.icon-pass {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.clear-button {
+  right: 16px;
+}
+
+/* Chrome, Safari y Opera */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
 }

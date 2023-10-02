@@ -1,0 +1,15 @@
+.background-icon {
+  @apply fill-transparent;
+}
+
+.hover-global:hover .background-icon {
+  @apply fill-gray-0;
+}
+
+.eye-icon {
+  @apply stroke-black-1;
+}
+
+.hover-global:hover .eye-icon {
+  @apply stroke-primary;
+}
