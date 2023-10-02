@@ -25,6 +25,8 @@ type StoryComponent = InputType & StoryDetails;
 
 type Story = StoryObj<StoryComponent>;
 
+const sharedFormControl = new FormControl('', Validators.required);
+
 const meta: Meta<StoryComponent> = {
   title: 'Components/Molecules/Input',
   component: InputComponent,
@@ -49,7 +51,7 @@ const meta: Meta<StoryComponent> = {
     },
     disabled: {
       options: [true, false],
-      control: { type: 'radio' },
+      control: { type: 'boolean' },
     },
     type: {
       options: ['number', 'text', 'email', 'password'],
@@ -59,8 +61,6 @@ const meta: Meta<StoryComponent> = {
   render: (args: StoryComponent) => {
     const { label, ...inputProps } = args;
     const { css, ...labelProps } = label;
-
-    const sharedFormControl = new FormControl('', Validators.required);
 
     return {
       props: { inputProps, css, labelProps, sharedFormControl },
@@ -89,10 +89,10 @@ export const PrimaryInput: Story = {
     css: 'input-base',
     type: 'text',
     placeholder: 'Entry text',
-    disabled: false,
     name: 'example',
     id: 'example',
     showPassword: false,
+    disabled: false,
     label: {
       css: 'label-primary',
     },
