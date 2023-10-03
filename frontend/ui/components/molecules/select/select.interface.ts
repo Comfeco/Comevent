@@ -7,6 +7,7 @@ type RequiredSelectType<T> = {
 
 type OptionalSelectType = {
   disabled: boolean;
+  variant: 'select-base';
 };
 
 export type SelectType<T> = RequiredSelectType<T> & Partial<OptionalSelectType>;

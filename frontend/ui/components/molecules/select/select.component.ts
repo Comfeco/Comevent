@@ -52,5 +52,9 @@ export class SelectComponent<T>
   @Input() id = '';
   @Input() name = '';
   @Input() placeholder = '';
-  @Input() disabled = false;
+  @Input() variant: SelectType<T>['variant'] = 'select-base';
+  @Input()
+  set disabled(value: boolean) {
+    this.setDisabledState(value);
+  }
 }

@@ -1,7 +1,13 @@
 <div *ngIf="control" class="content-select-master">
   <select
-    class="content-select"
-    class=""
+    [ngClass]="{
+      'select body-medium': true,
+      'select-base': variant === 'select-base',
+      'border-success': isValid() && !isUntouched() && !control!.disabled,
+      'border-error': !isValid() && !isUntouched() && !control!.disabled,
+      'border-black-1': isUntouched() && !control!.disabled,
+      'border-gray-2': control!.disabled
+    }"
     [formControl]="control"
     name=""
     [id]="id"
