@@ -70,11 +70,8 @@ export class InputComponent<T>
   }
 
   clearInput() {
-    console.log('Control value before clear:', this.control?.value);
-
     if (this.control) {
       this.control.setValue('');
-      console.log('Control value after clear:', this.control.value);
     }
   }
 

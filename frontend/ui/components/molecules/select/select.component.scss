@@ -1,0 +1,15 @@
+.content-select-master {
+  @apply flex flex-col gap-1;
+}
+
+.select {
+  @apply outline-none rounded-md w-auto px-4;
+}
+
+.select::placeholder {
+  @apply placeholder:text-gray-2 placeholder:text-body-2 placeholder:font-normal;
+}
+
+.select-base {
+  @apply focus:placeholder-transparent h-9 border-2 focus:outline-none focus:border-primary transition-all w-auto;
+}

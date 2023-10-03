@@ -11,7 +11,7 @@
 }
 
 .input-base {
-  @apply focus:placeholder-transparent h-10 border-2 text-black-1 focus:outline-none focus:border-primary transition-all w-auto;
+  @apply focus:placeholder-transparent h-9 border-2 text-black-1 focus:outline-none focus:border-primary transition-all w-auto;
 }
 
 .position-relative {
