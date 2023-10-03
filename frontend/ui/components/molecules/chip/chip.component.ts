@@ -34,6 +34,7 @@ export class ChipComponent implements ChipType {
   @Input() icon = false;
   @Input() close = true;
   @Input() hover = true;
+  @Input() avatar = false;
 
   @HostListener('mouseenter') onMouseEnter() {
     if (!this.disabled) {

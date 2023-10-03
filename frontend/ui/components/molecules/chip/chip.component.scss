@@ -1,5 +1,9 @@
 .content-chip {
-  @apply h-[35px] rounded-2xl bg-primary-light-2 w-max flex flex-row gap-2 px-2 items-center cursor-default;
+  @apply h-[36px] rounded-2xl bg-primary-light-2 w-max flex flex-row gap-2 items-center cursor-default;
+}
+
+:host {
+  @apply flex w-max;
 }
 
 .content-chip-hover:not(.content-chip-disabled):hover {

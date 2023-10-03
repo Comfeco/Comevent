@@ -21,6 +21,7 @@ type OptionalChipType = {
   icon: boolean;
   close: boolean;
   hover: boolean;
+  avatar: boolean;
 };
 
 export type ChipType = RequiredChipType & Partial<OptionalChipType>;

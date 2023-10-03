@@ -1,10 +1,13 @@
 <div
   [ngClass]="{
     'content-chip-disabled': disabled,
-    'content-chip-hover': hover
+    'content-chip-hover': hover,
+    'px-2': !avatar,
+    'pr-2': avatar
   }"
   class="content-chip"
 >
+  <img class="h-[36px] w-[36px]" *ngIf="avatar" src="avatar.png" alt="" />
   <icon-user *ngIf="icon" />
   <c-title text="body-medium" [color]="!disabled ? 'primary' : 'white'">
     Text example

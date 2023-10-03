@@ -59,10 +59,21 @@ const meta: Meta<StoryComponent> = {
       icon,
       close = true,
       hover = true,
+      avatar = false,
     } = args;
 
     return {
-      props: { colorIcon, colorText, text, type, disabled, icon, close, hover },
+      props: {
+        colorIcon,
+        colorText,
+        text,
+        type,
+        disabled,
+        icon,
+        close,
+        hover,
+        avatar,
+      },
       template: `
       <c-chip
         [colorIcon]="colorIcon"
@@ -72,6 +83,7 @@ const meta: Meta<StoryComponent> = {
         [icon]="icon"
         [close]="close"
         [hover]="hover"
+        [avatar]="avatar"
       />
       `,
     };
@@ -101,5 +113,15 @@ export const BaseChipIcon: Story = {
     icon: true,
     close: false,
     hover: false,
+  },
+};
+
+export const BaseChipAvatar: Story = {
+  args: {
+    ...BaseChip.args,
+    icon: false,
+    close: false,
+    hover: false,
+    avatar: true,
   },
 };
