@@ -115,6 +115,224 @@
             "templateData": "<button\n  [ngClass]=\"{\n    button: true,\n    'button-base': button === 'button-base' && !disabled,\n    'button-ghost': button === 'button-ghost',\n    'button-accent': button === 'button-accent',\n    'transition-all h-9': disabled,\n    'click-button': !disabled\n  }\"\n  [type]=\"type\"\n  [disabled]=\"disabled\"\n>\n  <div class=\"content-container\">\n    <icon-loading *ngIf=\"loading\" [color]=\"colorLoading\" />\n    <ng-content></ng-content>\n  </div>\n</button>\n"
         },
         {
+            "name": "ChipComponent",
+            "id": "component-ChipComponent-7f131cdd732e03533aeb6482c7e30fac36a27cbe7356dc86aad774ba8051a0b685a611fe9b7b9fdd69f9cbeb2922f38f3df0e6ec03aa6ea77478d0d0cbba771c",
+            "file": "frontend/ui/components/molecules/chip/chip.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "c-chip",
+            "styleUrls": [
+                "./chip.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./chip.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "avatar",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 37,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "close",
+                    "defaultValue": "true",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 35,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "colorIcon",
+                    "defaultValue": "'error'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 31,
+                    "type": "",
+                    "decorators": []
+                },
+                {
+                    "name": "colorText",
+                    "defaultValue": "'black'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 30,
+                    "type": "",
+                    "decorators": []
+                },
+                {
+                    "name": "disabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 33,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "hover",
+                    "defaultValue": "true",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 36,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "icon",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 34,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "text",
+                    "defaultValue": "'body-medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 29,
+                    "type": "",
+                    "decorators": []
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "'outlined'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 32,
+                    "type": "",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "isHovered",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 28,
+                    "modifierKind": [
+                        123
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "onMouseEnter",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 39,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "decorators": [
+                        {
+                            "name": "HostListener",
+                            "stringifiedArguments": "'mouseenter'"
+                        }
+                    ],
+                    "modifierKind": [
+                        167
+                    ]
+                },
+                {
+                    "name": "onMouseLeave",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 45,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "decorators": [
+                        {
+                            "name": "HostListener",
+                            "stringifiedArguments": "'mouseleave'"
+                        }
+                    ],
+                    "modifierKind": [
+                        167
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [
+                {
+                    "name": "mouseenter",
+                    "args": [],
+                    "argsDecorator": [],
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 39
+                },
+                {
+                    "name": "mouseleave",
+                    "args": [],
+                    "argsDecorator": [],
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 45
+                }
+            ],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "IconClearComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "TitleComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "IconUserComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  HostListener,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { ChipType } from '.';\nimport { TitleComponent } from '../../atoms';\nimport { IconClearComponent, IconUserComponent } from '../../atoms/icons';\n\n@Component({\n  standalone: true,\n  selector: 'c-chip',\n  imports: [\n    CommonModule,\n    IconClearComponent,\n    TitleComponent,\n    IconUserComponent,\n  ],\n  templateUrl: './chip.component.html',\n  styleUrls: ['./chip.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ChipComponent implements ChipType {\n  public isHovered = false;\n  @Input() text: ChipType['text'] = 'body-medium';\n  @Input() colorText: ChipType['colorText'] = 'black';\n  @Input() colorIcon: ChipType['colorIcon'] = 'error';\n  @Input() type: ChipType['type'] = 'outlined';\n  @Input() disabled = false;\n  @Input() icon = false;\n  @Input() close = true;\n  @Input() hover = true;\n  @Input() avatar = false;\n\n  @HostListener('mouseenter') onMouseEnter() {\n    if (!this.disabled) {\n      this.isHovered = true;\n    }\n  }\n\n  @HostListener('mouseleave') onMouseLeave() {\n    if (!this.disabled) {\n      this.isHovered = false;\n    }\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".content-chip {\r\n  @apply h-[35px] rounded-2xl bg-primary-light-2 w-max flex flex-row gap-2 px-2 items-center cursor-default;\r\n}\r\n\r\n.content-chip-hover:not(.content-chip-disabled):hover {\r\n  @apply bg-white-2 shadow-material-level1 cursor-pointer;\r\n}\r\n\r\n.content-chip-disabled {\r\n  @apply cursor-default bg-gray-2 pointer-events-none;\r\n}\r\n",
+                    "styleUrl": "./chip.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "implements": [
+                "ChipType"
+            ],
+            "templateData": "<div\n  [ngClass]=\"{\n    'content-chip-disabled': disabled,\n    'content-chip-hover': hover\n  }\"\n  class=\"content-chip\"\n>\n  <img *ngIf=\"avatar\" src=\"/assets/ui/avatar.png\" alt=\"\" />\n  <icon-user *ngIf=\"icon\" />\n  <c-title text=\"body-medium\" [color]=\"!disabled ? 'primary' : 'white'\">\n    Text example\n  </c-title>\n  <icon-clear\n    *ngIf=\"close\"\n    [parentHovered]=\"isHovered\"\n    color=\"gray\"\n    type=\"solid\"\n  />\n</div>\n"
+        },
+        {
             "name": "ContainerStepComponent",
             "id": "component-ContainerStepComponent-3ea51c2d214242426be302a263a132705527516d673ee2b82427fbdff2512637f97b2fef1e0a13f8725be1fb22e73ac6be2cd8d127999290e2c6cd1b07e24247",
             "file": "frontend/ui/components/organism/container-step/container-step.component.ts",
@@ -261,7 +479,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".error {\n  @apply w-full rounded-md h-auto p-1 bg-red-200 gap-2 items-center flex text-red-500 flex-wrap justify-center font-semibold;\n}\n\n.size-icon {\n  @apply h-4 w-4;\n}\n",
+                    "data": ".error {\n  @apply w-full rounded-md h-auto p-1 bg-error-light gap-2 items-center flex flex-wrap justify-start font-semibold px-4;\n}\n\n.size-icon {\n  @apply h-4 w-4;\n}\n",
                     "styleUrl": "./error-input.component.scss"
                 }
             ],
@@ -286,7 +504,7 @@
                     }
                 }
             },
-            "templateData": "<span>\n  <div class=\"error\">\n    <img class=\"size-icon\" src=\"/assets/ui/icon-error.svg\" alt=\"icon error\" />\n    <span class=\"text-center\">{{ error }}</span>\n  </div>\n</span>\n"
+            "templateData": "<span>\n  <div class=\"error\">\n    <!-- <img class=\"size-icon\" src=\"/assets/ui/icon-error.svg\" alt=\"icon error\" /> -->\n    <span class=\"text-start font-body text-error text-body-3 font-normal\">{{\n      error\n    }}</span>\n  </div>\n</span>\n"
         },
         {
             "name": "IconAreaComponent",
@@ -401,6 +619,139 @@
                 "IconType"
             ],
             "templateData": "<svg\n  width=\"25\"\n  height=\"24\"\n  viewBox=\"0 0 25 24\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    [ngClass]=\"{\n      'stroke-primary': status === 'In Progress',\n      'stroke-gray-2': status === 'Pending'\n    }\"\n    d=\"M8.5 5H6.5C5.96957 5 5.46086 5.21071 5.08579 5.58579C4.71071 5.96086 4.5 6.46957 4.5 7V19C4.5 19.5304 4.71071 20.0391 5.08579 20.4142C5.46086 20.7893 5.96957 21 6.5 21H12.197\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      'stroke-primary': status === 'In Progress',\n      'stroke-gray-2': status === 'Pending'\n    }\"\n    d=\"M18.5 12V7C18.5 6.46957 18.2893 5.96086 17.9142 5.58579C17.5391 5.21071 17.0304 5 16.5 5H14.5\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      'stroke-primary': status === 'In Progress',\n      'stroke-gray-2': status === 'Pending'\n    }\"\n    d=\"M8.5 5C8.5 4.46957 8.71071 3.96086 9.08579 3.58579C9.46086 3.21071 9.96957 3 10.5 3H12.5C13.0304 3 13.5391 3.21071 13.9142 3.58579C14.2893 3.96086 14.5 4.46957 14.5 5C14.5 5.53043 14.2893 6.03914 13.9142 6.41421C13.5391 6.78929 13.0304 7 12.5 7H10.5C9.96957 7 9.46086 6.78929 9.08579 6.41421C8.71071 6.03914 8.5 5.53043 8.5 5Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      'stroke-primary': status === 'In Progress',\n      'stroke-gray-2': status === 'Pending'\n    }\"\n    d=\"M8.5 11H12.5\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      'stroke-primary': status === 'In Progress',\n      'stroke-gray-2': status === 'Pending'\n    }\"\n    d=\"M8.5 15H11.5\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      'stroke-primary': status === 'In Progress',\n      'stroke-gray-2': status === 'Pending'\n    }\"\n    d=\"M14.5 17.5C14.5 18.163 14.7634 18.7989 15.2322 19.2678C15.7011 19.7366 16.337 20 17 20C17.663 20 18.2989 19.7366 18.7678 19.2678C19.2366 18.7989 19.5 18.163 19.5 17.5C19.5 16.837 19.2366 16.2011 18.7678 15.7322C18.2989 15.2634 17.663 15 17 15C16.337 15 15.7011 15.2634 15.2322 15.7322C14.7634 16.2011 14.5 16.837 14.5 17.5Z\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      'stroke-primary': status === 'In Progress',\n      'stroke-gray-2': status === 'Pending'\n    }\"\n    d=\"M19 19.5L21.5 22\"\n    stroke-width=\"2\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
+        },
+        {
+            "name": "IconClearComponent",
+            "id": "component-IconClearComponent-7b6b404c8c8ee511404444773550686bc1c50a79f61e9ee3d8360b993b6bb0e31a48d2128d5631d95557aced9bc806d6101dfa5a470d32cb2222e730467b495d",
+            "file": "frontend/ui/components/atoms/icons/icon-clear/icon-clear.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-clear",
+            "styleUrls": [
+                "./icon-clear.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon-clear.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "color",
+                    "defaultValue": "'error'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 20,
+                    "type": "",
+                    "decorators": []
+                },
+                {
+                    "name": "parentHovered",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 22,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "'outlined'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 21,
+                    "type": "",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { IconClearType } from '.';\n\n@Component({\n  standalone: true,\n  selector: 'icon-clear',\n  imports: [CommonModule],\n  templateUrl: './icon-clear.component.html',\n  styleUrls: ['./icon-clear.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconClearComponent implements IconClearType {\n  @Input() color: IconClearType['color'] = 'error';\n  @Input() type: IconClearType['type'] = 'outlined';\n  @Input() parentHovered = false;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".icon-clear {\n  @apply cursor-pointer;\n}\n\n.close-hover-solid {\n  @apply stroke-white-1;\n}\n\n.close-hover-outlined {\n  @apply stroke-error;\n}\n\n.content-hover-error {\n  @apply stroke-error;\n}\n\n.content-fill-error {\n  @apply fill-error;\n}\n\n.content-hover-gray {\n  @apply stroke-gray-3;\n}\n\n.content-fill-gray {\n  @apply fill-gray-3;\n}\n\n.content-fill-transparent {\n  @apply fill-transparent;\n}\n\n.icon-clear:hover .close-hover-outlined {\n  @apply stroke-white-1;\n}\n\n.icon-clear:hover .content-fill-transparent {\n  @apply fill-error;\n}\n\n.icon-clear:hover .content-fill-gray {\n  @apply fill-error;\n}\n\n.icon-clear:hover .content-hover-gray {\n  @apply stroke-error;\n}\n\n.icon-clear.hovered .close-hover-outlined {\n  @apply stroke-white-1;\n}\n\n.icon-clear.hovered .content-fill-transparent {\n  @apply fill-error;\n}\n\n.icon-clear.hovered .content-fill-gray {\n  @apply fill-error;\n}\n\n.icon-clear.hovered .content-hover-gray {\n  @apply stroke-error;\n}\n",
+                    "styleUrl": "./icon-clear.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "implements": [
+                "IconClearType"
+            ],
+            "templateData": "<svg\n  [class.hovered]=\"parentHovered\"\n  class=\"icon-clear\"\n  width=\"18\"\n  height=\"18\"\n  viewBox=\"0 0 18 18\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    [ngClass]=\"{\n      'content-hover-error': (color === 'error'),\n      'content-hover-gray': color === 'gray',\n      'content-fill-error': color === 'error' && type === 'solid',\n      'content-fill-gray': color === 'gray' && type === 'solid',\n      'content-fill-transparent': type === 'outlined',\n    }\"\n    d=\"M9 1C15.4 1 17 2.6 17 9C17 15.4 15.4 17 9 17C2.6 17 1 15.4 1 9C1 2.6 2.6 1 9 1Z\"\n    stroke-width=\"1.77778\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      'close-hover-solid': type === 'solid',\n      'close-hover-outlined': type === 'outlined'\n    }\"\n    d=\"M7.22229 7.22192L10.7778 10.7775M10.7778 7.22192L7.22229 10.7775\"\n    stroke-width=\"1.77778\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
+        },
+        {
+            "name": "IconHiddenPassComponent",
+            "id": "component-IconHiddenPassComponent-4fcec1a9b4ad563c865cd538896a2f47545d1fe697809df5a85baeaf937defd494777d276b5ef1492b5e74916e31c8bccc203b4bda76b3f2df4b07b668641fc4",
+            "file": "frontend/ui/components/atoms/icons/icon-hidden-pass/icon-hidden-pass.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-hidden-pass",
+            "styleUrls": [
+                "./icon-hidden-pass.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon-hidden-pass.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-hidden-pass',\n  imports: [CommonModule],\n  templateUrl: './icon-hidden-pass.component.html',\n  styleUrls: ['./icon-hidden-pass.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconHiddenPassComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".background-icon {\n  @apply fill-transparent;\n}\n\n.hover-global:hover .background-icon {\n  @apply fill-gray-0;\n}\n\n.eye-icon {\n  @apply stroke-black-1;\n}\n\n.hover-global:hover .eye-icon {\n  @apply stroke-primary;\n}\n",
+                    "styleUrl": "./icon-hidden-pass.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<svg\n  class=\"hover-global\"\n  width=\"20\"\n  height=\"20\"\n  viewBox=\"0 0 20 20\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    class=\"background-icon\"\n    d=\"M10 0C18 0 20 2 20 10C20 18 18 20 10 20C2 20 0 18 0 10C0 2 2 0 10 0Z\"\n  />\n  <path\n    class=\"eye-icon\"\n    d=\"M18 6.55542C15.8667 8.92609 13.2 10.111 10 10.111C6.8 10.111 4.13333 8.92609 2 6.55542\"\n    stroke-width=\"1.18519\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    class=\"eye-icon\"\n    d=\"M2 11.8888L4.22222 8.51099\"\n    stroke-width=\"1.18519\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    class=\"eye-icon\"\n    d=\"M18 11.8674L15.7849 8.51099\"\n    stroke-width=\"1.18519\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    class=\"eye-icon\"\n    d=\"M7.33337 13.6666L7.77782 10.1111\"\n    stroke-width=\"1.18519\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    class=\"eye-icon\"\n    d=\"M12.6667 13.6666L12.2223 10.1111\"\n    stroke-width=\"1.18519\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
         },
         {
             "name": "IconLoadingComponent",
@@ -524,8 +875,103 @@
             "templateData": "<svg\n  width=\"24\"\n  height=\"24\"\n  viewBox=\"0 0 24 24\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <g clip-path=\"url(#clip0_21_327)\">\n    <path\n      [ngClass]=\"{\n        'stroke-primary': status === 'In Progress',\n        'stroke-gray-2': status === 'Pending'\n      }\"\n      d=\"M12 17V21\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        'stroke-primary': status === 'In Progress',\n        'stroke-gray-2': status === 'Pending'\n      }\"\n      d=\"M10 20L14 18\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        'stroke-primary': status === 'In Progress',\n        'stroke-gray-2': status === 'Pending'\n      }\"\n      d=\"M10 18L14 20\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        'stroke-primary': status === 'In Progress',\n        'stroke-gray-2': status === 'Pending'\n      }\"\n      d=\"M5 17V21\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        'stroke-primary': status === 'In Progress',\n        'stroke-gray-2': status === 'Pending'\n      }\"\n      d=\"M3 20L7 18\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        'stroke-primary': status === 'In Progress',\n        'stroke-gray-2': status === 'Pending'\n      }\"\n      d=\"M3 18L7 20\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        'stroke-primary': status === 'In Progress',\n        'stroke-gray-2': status === 'Pending'\n      }\"\n      d=\"M19 17V21\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        'stroke-primary': status === 'In Progress',\n        'stroke-gray-2': status === 'Pending'\n      }\"\n      d=\"M17 20L21 18\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        'stroke-primary': status === 'In Progress',\n        'stroke-gray-2': status === 'Pending'\n      }\"\n      d=\"M17 18L21 20\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        'stroke-primary': status === 'In Progress',\n        'stroke-gray-2': status === 'Pending'\n      }\"\n      d=\"M9 6C9 6.79565 9.31607 7.55871 9.87868 8.12132C10.4413 8.68393 11.2044 9 12 9C12.7956 9 13.5587 8.68393 14.1213 8.12132C14.6839 7.55871 15 6.79565 15 6C15 5.20435 14.6839 4.44129 14.1213 3.87868C13.5587 3.31607 12.7956 3 12 3C11.2044 3 10.4413 3.31607 9.87868 3.87868C9.31607 4.44129 9 5.20435 9 6Z\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n    <path\n      [ngClass]=\"{\n        'stroke-primary': status === 'In Progress',\n        'stroke-gray-2': status === 'Pending'\n      }\"\n      d=\"M7 14C7 13.4696 7.21071 12.9609 7.58579 12.5858C7.96086 12.2107 8.46957 12 9 12H15C15.5304 12 16.0391 12.2107 16.4142 12.5858C16.7893 12.9609 17 13.4696 17 14\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n  </g>\n  <defs>\n    <clipPath id=\"clip0_21_327\">\n      <rect width=\"24\" height=\"24\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>\n"
         },
         {
+            "name": "IconShowPassComponent",
+            "id": "component-IconShowPassComponent-c1f8bf9521dac3f8b001665066e6ef93d7502d3f40b5f8fcf6100bf00d2fc9c89483ec432427bd190fca13a0695a426ea50d37202a4d7359d260e211027cdc2c",
+            "file": "frontend/ui/components/atoms/icons/icon-show-pass/icon-show-pass.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-show-pass",
+            "styleUrls": [
+                "./icon-show-pass.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon-show-pass.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-show-pass',\n  imports: [CommonModule],\n  templateUrl: './icon-show-pass.component.html',\n  styleUrls: ['./icon-show-pass.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconShowPassComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".background-icon {\n  @apply fill-transparent;\n}\n\n.hover-global:hover .background-icon {\n  @apply fill-gray-0;\n}\n\n.eye-icon {\n  @apply stroke-black-1;\n}\n\n.hover-global:hover .eye-icon {\n  @apply stroke-primary;\n}\n",
+                    "styleUrl": "./icon-show-pass.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<svg\n  class=\"hover-global\"\n  width=\"20\"\n  height=\"20\"\n  viewBox=\"0 0 20 20\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    class=\"background-icon\"\n    d=\"M10 0C18 0 20 2 20 10C20 18 18 20 10 20C2 20 0 18 0 10C0 2 2 0 10 0Z\"\n  />\n  <path\n    class=\"eye-icon\"\n    d=\"M8.33325 9.99968C8.33325 10.4417 8.50885 10.8656 8.82141 11.1782C9.13397 11.4908 9.5579 11.6664 9.99992 11.6664C10.442 11.6664 10.8659 11.4908 11.1784 11.1782C11.491 10.8656 11.6666 10.4417 11.6666 9.99968C11.6666 9.55765 11.491 9.13373 11.1784 8.82117C10.8659 8.5086 10.442 8.33301 9.99992 8.33301C9.5579 8.33301 9.13397 8.5086 8.82141 8.82117C8.50885 9.13373 8.33325 9.55765 8.33325 9.99968Z\"\n    stroke-width=\"1.11112\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    class=\"eye-icon\"\n    d=\"M17.5001 10C15.5 13.3334 13 15 10 15C7.00002 15 4.50001 13.3334 2.5 10C4.50001 6.66667 7.00002 5 10 5C13 5 15.5 6.66667 17.5001 10Z\"\n    stroke-width=\"1.11112\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
+        },
+        {
+            "name": "IconUserComponent",
+            "id": "component-IconUserComponent-818ca7b716dd2d84034726a1138cfb58f8635e71945af54468011c93de9b6883fd21fc6cc0ba211912695d0323b2050f5c947297a1872bbe27af1a4eb058affd",
+            "file": "frontend/ui/components/atoms/icons/icon-user/icon-user.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-user",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./icon-user.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-user',\n  imports: [CommonModule],\n  templateUrl: './icon-user.component.html',\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconUserComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "templateData": "<svg\n  width=\"20\"\n  height=\"20\"\n  viewBox=\"0 0 20 20\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    class=\"fill-transparent\"\n    d=\"M10 0C18 0 20 2 20 10C20 18 18 20 10 20C2 20 0 18 0 10C0 2 2 0 10 0Z\"\n  />\n  <path\n    d=\"M10 10.889C10.7073 10.889 11.3856 10.608 11.8857 10.1079C12.3858 9.60785 12.6667 8.92957 12.6667 8.22233C12.6667 7.51509 12.3858 6.83681 11.8857 6.33671C11.3856 5.83662 10.7073 5.55566 10 5.55566C9.2928 5.55566 8.61452 5.83662 8.11442 6.33671C7.61433 6.83681 7.33337 7.51509 7.33337 8.22233C7.33337 8.92957 7.61433 9.60785 8.11442 10.1079C8.61452 10.608 9.2928 10.889 10 10.889Z\"\n    stroke=\"#8C44CC\"\n    stroke-width=\"1.19\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    d=\"M10 2C16.4 2 18 3.6 18 10C18 16.4 16.4 18 10 18C3.6 18 2 16.4 2 10C2 3.6 3.6 2 10 2Z\"\n    stroke=\"#8C44CC\"\n    stroke-width=\"1.19\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    d=\"M4.66663 17.1557V17.1112C4.66663 16.1682 5.04123 15.2639 5.70802 14.5971C6.37482 13.9303 7.27919 13.5557 8.22218 13.5557H11.7777C12.7207 13.5557 13.6251 13.9303 14.2919 14.5971C14.9587 15.2639 15.3333 16.1682 15.3333 17.1112V17.1557\"\n    stroke=\"#8C44CC\"\n    stroke-width=\"1.19\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
+        },
+        {
             "name": "InputComponent",
-            "id": "component-InputComponent-a0342a5d55ed1377359874d2f8c4658d213b41cf7060f0b01342e0200e92c618eed66aa254059b883d2d24ffa68db927d85a1e2d69c5473a2f9e26c0a6cc262f",
+            "id": "component-InputComponent-01a669a8e605da2b94547fa74b8c5af036b2c279ffd1013ec97d1422bf7585e17d669660801b80bb9e261937884e22217596e2431316d963474976389f454b2d",
             "file": "frontend/ui/components/molecules/input/input.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -553,10 +999,10 @@
             "inputsClass": [
                 {
                     "name": "css",
-                    "defaultValue": "'input-primary'",
+                    "defaultValue": "'input-base'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 44,
+                    "line": 54,
                     "type": "",
                     "decorators": []
                 },
@@ -565,7 +1011,7 @@
                     "defaultValue": "{}",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 47,
+                    "line": 57,
                     "type": "Record<string | string>",
                     "decorators": []
                 },
@@ -573,7 +1019,7 @@
                     "name": "disabled",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 50,
+                    "line": 61,
                     "type": "boolean",
                     "decorators": []
                 },
@@ -582,7 +1028,7 @@
                     "defaultValue": "''",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 43,
+                    "line": 53,
                     "type": "string",
                     "decorators": []
                 },
@@ -590,7 +1036,7 @@
                     "name": "name",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 48,
+                    "line": 58,
                     "type": "string",
                     "decorators": []
                 },
@@ -598,22 +1044,52 @@
                     "name": "placeholder",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 45,
+                    "line": 55,
                     "type": "string | undefined",
+                    "decorators": []
+                },
+                {
+                    "name": "showPassword",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 59,
+                    "type": "boolean",
                     "decorators": []
                 },
                 {
                     "name": "value",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 46,
+                    "line": 56,
                     "type": "string | number | undefined",
                     "decorators": []
                 }
             ],
             "outputsClass": [],
             "propertiesClass": [],
-            "methodsClass": [],
+            "methodsClass": [
+                {
+                    "name": "clearInput",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 72,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "togglePasswordVisibility",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 81,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
@@ -635,16 +1111,32 @@
                 {
                     "name": "ErrorInputComponent",
                     "type": "component"
+                },
+                {
+                    "name": "LabelComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "IconClearComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "IconShowPassComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "IconHiddenPassComponent",
+                    "type": "component"
                 }
             ],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n  forwardRef,\n} from '@angular/core';\nimport {\n  FormsModule,\n  NG_VALUE_ACCESSOR,\n  ReactiveFormsModule,\n} from '@angular/forms';\nimport { ErrorInputComponent } from '../../atoms/error-input/error-input.component';\nimport { ControlValueAccesorDirective } from '../../shared/directives/control-value-accesor.directive';\nimport { InputType } from './input.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-input',\n  imports: [\n    CommonModule,\n    FormsModule,\n    ReactiveFormsModule,\n    ErrorInputComponent,\n  ],\n  providers: [\n    {\n      provide: NG_VALUE_ACCESSOR,\n      useExisting: forwardRef(() => InputComponent),\n      multi: true,\n    },\n  ],\n  templateUrl: './input.component.html',\n  styleUrls: ['./input.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class InputComponent<T>\n  extends ControlValueAccesorDirective<T>\n  implements InputType\n{\n  @Input() id = '';\n  @Input() css: InputType['css'] = 'input-primary';\n  @Input() placeholder?: string | undefined;\n  @Input() value?: string | number | undefined;\n  @Input() customErrorMessages: Record<string, string> = {};\n  @Input() name!: string;\n  @Input()\n  set disabled(value: boolean) {\n    this.setDisabledState(value);\n  }\n}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n  forwardRef,\n} from '@angular/core';\nimport {\n  FormsModule,\n  NG_VALUE_ACCESSOR,\n  ReactiveFormsModule,\n} from '@angular/forms';\nimport {\n  IconClearComponent,\n  IconHiddenPassComponent,\n  IconShowPassComponent,\n} from '../..';\nimport { LabelComponent } from '../../atoms';\nimport { ErrorInputComponent } from '../../atoms/error-input/error-input.component';\nimport { ControlValueAccesorDirective } from '../../shared/directives/control-value-accesor.directive';\nimport { InputType } from './input.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-input',\n  imports: [\n    CommonModule,\n    FormsModule,\n    ReactiveFormsModule,\n    ErrorInputComponent,\n    LabelComponent,\n    IconClearComponent,\n    IconShowPassComponent,\n    IconHiddenPassComponent,\n  ],\n  providers: [\n    {\n      provide: NG_VALUE_ACCESSOR,\n      useExisting: forwardRef(() => InputComponent),\n      multi: true,\n    },\n  ],\n  templateUrl: './input.component.html',\n  styleUrls: ['./input.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class InputComponent<T>\n  extends ControlValueAccesorDirective<T>\n  implements InputType\n{\n  @Input() id = '';\n  @Input() css: InputType['css'] = 'input-base';\n  @Input() placeholder?: string | undefined;\n  @Input() value?: string | number | undefined;\n  @Input() customErrorMessages: Record<string, string> = {};\n  @Input() name!: string;\n  @Input() showPassword = false;\n  @Input()\n  set disabled(value: boolean) {\n    this.setDisabledState(value);\n  }\n\n  get inputType(): string {\n    if (this.type === 'password' && this.showPassword) {\n      return 'text';\n    }\n    return this.type;\n  }\n\n  clearInput() {\n    console.log('Control value before clear:', this.control?.value);\n\n    if (this.control) {\n      this.control.setValue('');\n      console.log('Control value after clear:', this.control.value);\n    }\n  }\n\n  togglePasswordVisibility(): void {\n    this.showPassword = !this.showPassword;\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".content-input {\n  @apply flex flex-col gap-1;\n}\n\n.input {\n  @apply outline-none rounded w-auto px-4;\n}\n\n.error {\n  @apply border-red-500 text-red-400;\n}\n\n.input-primary {\n  @apply focus:placeholder-transparent placeholder-gray-200 h-10 w-full border-b-2 text-gray-600 focus:outline-none focus:border-purple-400 transition-all placeholder:font-semibold;\n}\n",
+                    "data": ".content-input {\n  @apply flex flex-col gap-1;\n}\n\n.input {\n  @apply outline-none rounded-md w-auto px-4;\n}\n\n.input::placeholder {\n  @apply placeholder:text-gray-2 placeholder:text-body-2 placeholder:font-normal;\n}\n\n.input-base {\n  @apply focus:placeholder-transparent h-10 border-2 text-black-1 focus:outline-none focus:border-primary transition-all w-auto;\n}\n\n.position-relative {\n  position: relative;\n}\n\n.clear-button,\n.icon-pass {\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  background-color: transparent;\n  border: none;\n  cursor: pointer;\n}\n\n.clear-button {\n  right: 16px;\n}\n\n/* Chrome, Safari y Opera */\ninput[type='number']::-webkit-inner-spin-button,\ninput[type='number']::-webkit-outer-spin-button {\n  -webkit-appearance: none;\n  margin: 0;\n}\n\n/* Firefox */\ninput[type='number'] {\n  -moz-appearance: textfield;\n}\n",
                     "styleUrl": "./input.component.scss"
                 }
             ],
@@ -670,7 +1162,7 @@
                             }
                         ],
                         "returnType": "void",
-                        "line": 50,
+                        "line": 61,
                         "jsdoctags": [
                             {
                                 "name": "value",
@@ -683,9 +1175,18 @@
                             }
                         ]
                     }
+                },
+                "inputType": {
+                    "name": "inputType",
+                    "getSignature": {
+                        "name": "inputType",
+                        "type": "string",
+                        "returnType": "string",
+                        "line": 65
+                    }
                 }
             },
-            "templateData": "<div *ngIf=\"control\" class=\"content-input\">\n  <input\n    [ngClass]=\"{ input: true, 'input-primary': css === 'input-primary' }\"\n    [placeholder]=\"placeholder\"\n    [type]=\"type\"\n    [attr.value]=\"value || null\"\n    [attr.id]=\"id || null\"\n    [formControl]=\"control\"\n  />\n  <c-error-input\n    *ngIf=\"!isValid()\"\n    [formContained]=\"control\"\n    [controlName]=\"name\"\n  ></c-error-input>\n</div>\n"
+            "templateData": "<div *ngIf=\"control\" class=\"content-input\">\n  <div class=\"content-input relative\">\n    <input\n      [ngClass]=\"{\n        'input body-medium': true,\n        'input-base': css === 'input-base',\n        'border-success': isValid() && !isUntouched() && !control!.disabled,\n        'border-error': !isValid() && !isUntouched() && !control!.disabled,\n        'border-black-1': isUntouched() && !control!.disabled,\n        'border-gray-2': control!.disabled\n      }\"\n      [placeholder]=\"placeholder\"\n      [type]=\"inputType\"\n      [attr.value]=\"value || null\"\n      [attr.id]=\"id || null\"\n      [formControl]=\"control\"\n      [disabled]=\"control!.disabled\"\n    />\n    <button\n      *ngIf=\"type === 'password' && !control!.disabled\"\n      (click)=\"togglePasswordVisibility()\"\n      class=\"icon-pass\"\n      [ngClass]=\"{\n        'right-4': !control.value,\n        'right-10': control.value !== ''\n      }\"\n    >\n      <icon-hidden-pass *ngIf=\"showPassword\" />\n      <icon-show-pass *ngIf=\"!showPassword\" />\n    </button>\n    <button\n      *ngIf=\"control.value !== ''\"\n      (click)=\"clearInput()\"\n      class=\"clear-button\"\n    >\n      <icon-clear />\n    </button>\n  </div>\n  <c-error-input\n    *ngIf=\"!isValid() && !control!.disabled\"\n    [formContained]=\"control\"\n    [controlName]=\"name\"\n  ></c-error-input>\n</div>\n"
         },
         {
             "name": "LabelComponent",
@@ -756,7 +1257,7 @@
             "implements": [
                 "LabelType"
             ],
-            "templateData": "<label\n  [ngClass]=\"{\n    label: true,\n    'label-primary': css === 'label-primary'\n  }\"\n>\n  <ng-content></ng-content>\n</label>\n"
+            "templateData": "<label\n  [ngClass]=\"{\n    'label title-h6 focus-within:text-primary': true,\n    'label-primary': css === 'label-primary'\n  }\"\n>\n  <ng-content></ng-content>\n</label>\n"
         },
         {
             "name": "StepComponent",
@@ -969,6 +1470,46 @@
                 "defaultValue": "{\n  args: {\n    button: 'button-base',\n    title: {\n      text: 'body-medium-accent',\n      color: 'white',\n    },\n  },\n}"
             },
             {
+                "name": "BaseChip",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/chip/chip.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    colorText: 'primary',\n    text: 'body-medium',\n    colorIcon: 'gray',\n    type: 'solid',\n  },\n}"
+            },
+            {
+                "name": "BaseChipAvatar",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/chip/chip.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    ...BaseChip.args,\n    icon: false,\n    close: false,\n    hover: false,\n    avatar: true,\n  },\n}"
+            },
+            {
+                "name": "BaseChipDisabled",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/chip/chip.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    ...BaseChip.args,\n    disabled: true,\n  },\n}"
+            },
+            {
+                "name": "BaseChipIcon",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/chip/chip.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    ...BaseChip.args,\n    icon: true,\n    close: false,\n    hover: false,\n  },\n}"
+            },
+            {
                 "name": "BasicStepCompleted",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1006,7 +1547,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "StorybookConfig",
-                "defaultValue": "{\n  stories: ['../stories/**/*.stories.@(js|jsx|ts|tsx)'],\n  addons: [\n    '@storybook/addon-links',\n    '@storybook/addon-essentials',\n    {\n      name: '@storybook/addon-styling',\n      options: {\n        // Check out https://github.com/storybookjs/addon-styling/blob/main/docs/api.md\n        // For more details on this addon's options.\n        /* postCss: {\n          implementation: require.resolve('postcss'),\n        }, */\n      }, // * no options for Angular,\n    },\n  ],\n  framework: {\n    name: '@storybook/angular',\n    options: {},\n  },\n  docs: {\n    autodocs: true,\n    defaultName: 'Docs',\n  },\n  // staticDirs: ['../public'],\n}"
+                "defaultValue": "{\n  stories: ['../stories/**/*.stories.@(js|jsx|ts|tsx)'],\n  addons: [\n    '@storybook/addon-links',\n    '@storybook/addon-essentials',\n    {\n      name: '@storybook/addon-styling',\n      options: {\n        // Check out https://github.com/storybookjs/addon-styling/blob/main/docs/api.md\n        // For more details on this addon's options.\n        /* postCss: {\n          implementation: require.resolve('postcss'),\n        }, */\n      }, // * no options for Angular,\n    },\n  ],\n  framework: {\n    name: '@storybook/angular',\n    options: {},\n  },\n  docs: {\n    autodocs: true,\n    defaultName: 'Docs',\n  },\n  staticDirs: ['../assets'],\n}"
             },
             {
                 "name": "DisabledButton",
@@ -1092,11 +1633,21 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/chip/chip.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<StoryComponent>",
+                "defaultValue": "{\n  title: 'Components/Molecules/Chip',\n  component: ChipComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        ChipComponent,\n        TitleComponent,\n        IconClearComponent,\n        IconUserComponent,\n      ],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  /* argTypes: {\n    disabled: {\n      control: 'boolean',\n    },\n    colorText: {\n      options: ['', 'white', 'black', 'primary', 'disabled'],\n      control: 'select',\n    },\n    text: {\n      control: 'text',\n    },\n    colorIcon: {\n      options: ['error', 'gray'],\n      control: 'select',\n    },\n    type: {\n      options: ['outlined', 'solid'],\n      control: 'select',\n    },\n  }, */\n  render: (args: StoryComponent) => {\n    const {\n      colorIcon,\n      colorText,\n      text,\n      type,\n      disabled,\n      icon,\n      close = true,\n      hover = true,\n      avatar = false,\n    } = args;\n\n    return {\n      props: {\n        colorIcon,\n        colorText,\n        text,\n        type,\n        disabled,\n        icon,\n        close,\n        hover,\n        avatar,\n      },\n      template: `\n      <c-chip\n        [colorIcon]=\"colorIcon\"\n        [colorText]=\"colorText\"\n        [text]=\"text\" [type]=\"type\"\n        [disabled]=\"disabled\"\n        [icon]=\"icon\"\n        [close]=\"close\"\n        [hover]=\"hover\"\n        [avatar]=\"avatar\"\n      />\n      `,\n    };\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<StoryComponent>",
-                "defaultValue": "{\n  title: 'Components/Molecules/Input',\n  component: InputComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [InputComponent, LabelComponent, ErrorInputComponent],\n      imports: [CommonModule, FormsModule, ReactiveFormsModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  argTypes: {\n    css: {\n      options: ['input-primary', 'input-secondary', 'input-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'radio' },\n    },\n    type: {\n      options: ['number', 'text', 'email', 'password'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { label, ...inputProps } = args;\n    const { text, ...inputLabel } = label;\n\n    const sharedFormControl = new FormControl('', Validators.required);\n\n    return {\n      props: { inputProps, inputLabel, sharedFormControl },\n      template: `\n      <c-label [css]=\"inputLabel.css\">\n        ${text}\n        <c-input\n        [css]=\"inputProps.css\"\n        [type]=\"inputProps.type\"\n        [placeholder]=\"inputProps.placeholder\"\n        [formControl]=\"sharedFormControl\"\n        [disabled]=\"inputProps.disabled\"\n        [name]=\"inputProps.name\"></c-input>\n      </c-label>\n\n      `,\n    };\n  },\n}"
+                "defaultValue": "{\n  title: 'Components/Molecules/Input',\n  component: InputComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        InputComponent,\n        LabelComponent,\n        ErrorInputComponent,\n        IconClearComponent,\n        IconShowPassComponent,\n        IconHiddenPassComponent,\n      ],\n      imports: [CommonModule, FormsModule, ReactiveFormsModule],\n    }),\n  ],\n  argTypes: {\n    css: {\n      options: ['input-base', 'input-secondary', 'input-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'boolean' },\n    },\n    type: {\n      options: ['number', 'text', 'email', 'password'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { label, ...inputProps } = args;\n    const { css, ...labelProps } = label;\n\n    return {\n      props: { inputProps, css, labelProps, sharedFormControl },\n      template: `\n      <c-label [css]=\"css\" [for]=\"inputProps.id\">\n        Label text\n        <c-input\n        [css]=\"inputProps.css\"\n        [type]=\"inputProps.type\"\n        [placeholder]=\"inputProps.placeholder\"\n        [formControl]=\"sharedFormControl\"\n        [disabled]=\"inputProps.disabled\"\n        [id]=\"inputProps.id\"\n        [showPassword]=\"inputProps.showPassword\"\n        [name]=\"inputProps.name\"></c-input>\n      </c-label>\n\n      `,\n    };\n  },\n}"
             },
             {
                 "name": "meta",
@@ -1166,7 +1717,17 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    css: 'input-primary',\n    type: 'text',\n    placeholder: 'Entry text',\n    disabled: false,\n    name: 'example',\n    label: {\n      css: 'label-primary',\n      text: 'Label text',\n    },\n  },\n}"
+                "defaultValue": "{\n  args: {\n    css: 'input-base',\n    type: 'text',\n    placeholder: 'Entry text',\n    name: 'example',\n    id: 'example',\n    showPassword: false,\n    disabled: false,\n    label: {\n      css: 'label-primary',\n    },\n  },\n}"
+            },
+            {
+                "name": "sharedFormControl",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "new FormControl('', Validators.required)"
             },
             {
                 "name": "StepOneContainerStep",
@@ -1228,6 +1789,17 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
+                "rawtype": "StoryObj<ChipType>",
+                "file": "frontend/ui/stories/molecules/chip/chip.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 180
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
                 "rawtype": "StoryObj<StoryComponent>",
                 "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
                 "deprecated": false,
@@ -1267,6 +1839,17 @@
                 "deprecationMessage": "",
                 "description": "",
                 "kind": 190
+            },
+            {
+                "name": "StoryComponent",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "ChipType",
+                "file": "frontend/ui/stories/molecules/chip/chip.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 180
             },
             {
                 "name": "StoryComponent",
@@ -1521,6 +2104,58 @@
                     "defaultValue": "{\n  args: {\n    logo: 'pass',\n    status: 'In Progress',\n  },\n}"
                 }
             ],
+            "frontend/ui/stories/molecules/chip/chip.component.stories.ts": [
+                {
+                    "name": "BaseChip",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/chip/chip.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    colorText: 'primary',\n    text: 'body-medium',\n    colorIcon: 'gray',\n    type: 'solid',\n  },\n}"
+                },
+                {
+                    "name": "BaseChipAvatar",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/chip/chip.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    ...BaseChip.args,\n    icon: false,\n    close: false,\n    hover: false,\n    avatar: true,\n  },\n}"
+                },
+                {
+                    "name": "BaseChipDisabled",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/chip/chip.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    ...BaseChip.args,\n    disabled: true,\n  },\n}"
+                },
+                {
+                    "name": "BaseChipIcon",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/chip/chip.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    ...BaseChip.args,\n    icon: true,\n    close: false,\n    hover: false,\n  },\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/chip/chip.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<StoryComponent>",
+                    "defaultValue": "{\n  title: 'Components/Molecules/Chip',\n  component: ChipComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        ChipComponent,\n        TitleComponent,\n        IconClearComponent,\n        IconUserComponent,\n      ],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  /* argTypes: {\n    disabled: {\n      control: 'boolean',\n    },\n    colorText: {\n      options: ['', 'white', 'black', 'primary', 'disabled'],\n      control: 'select',\n    },\n    text: {\n      control: 'text',\n    },\n    colorIcon: {\n      options: ['error', 'gray'],\n      control: 'select',\n    },\n    type: {\n      options: ['outlined', 'solid'],\n      control: 'select',\n    },\n  }, */\n  render: (args: StoryComponent) => {\n    const {\n      colorIcon,\n      colorText,\n      text,\n      type,\n      disabled,\n      icon,\n      close = true,\n      hover = true,\n      avatar = false,\n    } = args;\n\n    return {\n      props: {\n        colorIcon,\n        colorText,\n        text,\n        type,\n        disabled,\n        icon,\n        close,\n        hover,\n        avatar,\n      },\n      template: `\n      <c-chip\n        [colorIcon]=\"colorIcon\"\n        [colorText]=\"colorText\"\n        [text]=\"text\" [type]=\"type\"\n        [disabled]=\"disabled\"\n        [icon]=\"icon\"\n        [close]=\"close\"\n        [hover]=\"hover\"\n        [avatar]=\"avatar\"\n      />\n      `,\n    };\n  },\n}"
+                }
+            ],
             "frontend/ui/.storybook/main.ts": [
                 {
                     "name": "config",
@@ -1530,7 +2165,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "StorybookConfig",
-                    "defaultValue": "{\n  stories: ['../stories/**/*.stories.@(js|jsx|ts|tsx)'],\n  addons: [\n    '@storybook/addon-links',\n    '@storybook/addon-essentials',\n    {\n      name: '@storybook/addon-styling',\n      options: {\n        // Check out https://github.com/storybookjs/addon-styling/blob/main/docs/api.md\n        // For more details on this addon's options.\n        /* postCss: {\n          implementation: require.resolve('postcss'),\n        }, */\n      }, // * no options for Angular,\n    },\n  ],\n  framework: {\n    name: '@storybook/angular',\n    options: {},\n  },\n  docs: {\n    autodocs: true,\n    defaultName: 'Docs',\n  },\n  // staticDirs: ['../public'],\n}"
+                    "defaultValue": "{\n  stories: ['../stories/**/*.stories.@(js|jsx|ts|tsx)'],\n  addons: [\n    '@storybook/addon-links',\n    '@storybook/addon-essentials',\n    {\n      name: '@storybook/addon-styling',\n      options: {\n        // Check out https://github.com/storybookjs/addon-styling/blob/main/docs/api.md\n        // For more details on this addon's options.\n        /* postCss: {\n          implementation: require.resolve('postcss'),\n        }, */\n      }, // * no options for Angular,\n    },\n  ],\n  framework: {\n    name: '@storybook/angular',\n    options: {},\n  },\n  docs: {\n    autodocs: true,\n    defaultName: 'Docs',\n  },\n  staticDirs: ['../assets'],\n}"
                 }
             ],
             "frontend/ui/stories/atoms/label/label.component.stories.ts": [
@@ -1586,7 +2221,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<StoryComponent>",
-                    "defaultValue": "{\n  title: 'Components/Molecules/Input',\n  component: InputComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [InputComponent, LabelComponent, ErrorInputComponent],\n      imports: [CommonModule, FormsModule, ReactiveFormsModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  argTypes: {\n    css: {\n      options: ['input-primary', 'input-secondary', 'input-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'radio' },\n    },\n    type: {\n      options: ['number', 'text', 'email', 'password'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { label, ...inputProps } = args;\n    const { text, ...inputLabel } = label;\n\n    const sharedFormControl = new FormControl('', Validators.required);\n\n    return {\n      props: { inputProps, inputLabel, sharedFormControl },\n      template: `\n      <c-label [css]=\"inputLabel.css\">\n        ${text}\n        <c-input\n        [css]=\"inputProps.css\"\n        [type]=\"inputProps.type\"\n        [placeholder]=\"inputProps.placeholder\"\n        [formControl]=\"sharedFormControl\"\n        [disabled]=\"inputProps.disabled\"\n        [name]=\"inputProps.name\"></c-input>\n      </c-label>\n\n      `,\n    };\n  },\n}"
+                    "defaultValue": "{\n  title: 'Components/Molecules/Input',\n  component: InputComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        InputComponent,\n        LabelComponent,\n        ErrorInputComponent,\n        IconClearComponent,\n        IconShowPassComponent,\n        IconHiddenPassComponent,\n      ],\n      imports: [CommonModule, FormsModule, ReactiveFormsModule],\n    }),\n  ],\n  argTypes: {\n    css: {\n      options: ['input-base', 'input-secondary', 'input-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'boolean' },\n    },\n    type: {\n      options: ['number', 'text', 'email', 'password'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { label, ...inputProps } = args;\n    const { css, ...labelProps } = label;\n\n    return {\n      props: { inputProps, css, labelProps, sharedFormControl },\n      template: `\n      <c-label [css]=\"css\" [for]=\"inputProps.id\">\n        Label text\n        <c-input\n        [css]=\"inputProps.css\"\n        [type]=\"inputProps.type\"\n        [placeholder]=\"inputProps.placeholder\"\n        [formControl]=\"sharedFormControl\"\n        [disabled]=\"inputProps.disabled\"\n        [id]=\"inputProps.id\"\n        [showPassword]=\"inputProps.showPassword\"\n        [name]=\"inputProps.name\"></c-input>\n      </c-label>\n\n      `,\n    };\n  },\n}"
                 },
                 {
                     "name": "PrimaryInput",
@@ -1596,7 +2231,17 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    css: 'input-primary',\n    type: 'text',\n    placeholder: 'Entry text',\n    disabled: false,\n    name: 'example',\n    label: {\n      css: 'label-primary',\n      text: 'Label text',\n    },\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    css: 'input-base',\n    type: 'text',\n    placeholder: 'Entry text',\n    name: 'example',\n    id: 'example',\n    showPassword: false,\n    disabled: false,\n    label: {\n      css: 'label-primary',\n    },\n  },\n}"
+                },
+                {
+                    "name": "sharedFormControl",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "new FormControl('', Validators.required)"
                 }
             ],
             "frontend/ui/stories/organism/container-step/container-step.component.stories.ts": [
@@ -1695,6 +2340,30 @@
                     "deprecationMessage": "",
                     "description": "",
                     "kind": 190
+                }
+            ],
+            "frontend/ui/stories/molecules/chip/chip.component.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<ChipType>",
+                    "file": "frontend/ui/stories/molecules/chip/chip.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 180
+                },
+                {
+                    "name": "StoryComponent",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "ChipType",
+                    "file": "frontend/ui/stories/molecules/chip/chip.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 180
                 }
             ],
             "frontend/ui/stories/molecules/input/input.component.stories.ts": [
@@ -1825,6 +2494,24 @@
                 "status": "low"
             },
             {
+                "filePath": "frontend/ui/components/atoms/icons/icon-clear/icon-clear.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconClearComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/atoms/icons/icon-hidden-pass/icon-hidden-pass.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconHiddenPassComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "frontend/ui/components/atoms/icons/icon-loading/icon-loading.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -1840,6 +2527,24 @@
                 "name": "IconPassComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/atoms/icons/icon-show-pass/icon-show-pass.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconShowPassComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/atoms/icons/icon-user/icon-user.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconUserComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
@@ -1870,12 +2575,21 @@
                 "status": "low"
             },
             {
+                "filePath": "frontend/ui/components/molecules/chip/chip.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ChipComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/15",
+                "status": "low"
+            },
+            {
                 "filePath": "frontend/ui/components/molecules/input/input.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "InputComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/8",
+                "coverageCount": "0/11",
                 "status": "low"
             },
             {
@@ -2017,6 +2731,56 @@
                 "status": "low"
             },
             {
+                "filePath": "frontend/ui/stories/molecules/chip/chip.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "BaseChip",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/chip/chip.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "BaseChipAvatar",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/chip/chip.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "BaseChipDisabled",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/chip/chip.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "BaseChipIcon",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/chip/chip.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "frontend/ui/stories/molecules/input/input.component.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
@@ -2032,6 +2796,16 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "PrimaryInput",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "sharedFormControl",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

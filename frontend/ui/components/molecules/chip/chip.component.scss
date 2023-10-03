@@ -1,0 +1,19 @@
+.content-chip {
+  @apply h-[36px] rounded-2xl bg-primary-light-2 w-max flex flex-row gap-2 items-center cursor-default;
+}
+
+:host {
+  @apply flex w-max;
+}
+
+.content-chip-hover:not(.content-chip-disabled):hover {
+  @apply bg-white-2 shadow-material-level1 cursor-pointer;
+}
+
+.content-chip-disabled {
+  @apply cursor-default bg-gray-2 pointer-events-none;
+}
+
+.disabled-img {
+  filter: grayscale(100%);
+}

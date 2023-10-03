@@ -1,15 +1,63 @@
-.close-hover {
-  @apply stroke-error;
+.icon-clear {
+  @apply cursor-pointer;
 }
 
-.content-hover {
-  @apply fill-transparent stroke-error;
-}
-
-.icon-clear:hover .close-hover {
+.close-hover-solid {
   @apply stroke-white-1;
 }
 
-.icon-clear:hover .content-hover {
+.close-hover-outlined {
+  @apply stroke-error;
+}
+
+.content-hover-error {
+  @apply stroke-error;
+}
+
+.content-fill-error {
   @apply fill-error;
+}
+
+.content-hover-gray {
+  @apply stroke-gray-3;
+}
+
+.content-fill-gray {
+  @apply fill-gray-3;
+}
+
+.content-fill-transparent {
+  @apply fill-transparent;
+}
+
+.icon-clear:hover .close-hover-outlined {
+  @apply stroke-white-1;
+}
+
+.icon-clear:hover .content-fill-transparent {
+  @apply fill-error;
+}
+
+.icon-clear:hover .content-fill-gray {
+  @apply fill-error;
+}
+
+.icon-clear:hover .content-hover-gray {
+  @apply stroke-error;
+}
+
+.icon-clear.hovered .close-hover-outlined {
+  @apply stroke-white-1;
+}
+
+.icon-clear.hovered .content-fill-transparent {
+  @apply fill-error;
+}
+
+.icon-clear.hovered .content-fill-gray {
+  @apply fill-error;
+}
+
+.icon-clear.hovered .content-hover-gray {
+  @apply stroke-error;
 }
