@@ -1,4 +1,6 @@
-<div class="content-chip">
-  <c-title text="body-medium" color="primary"> Text example </c-title>
+<div [ngClass]="{ 'content-chip-disabled': disabled }" class="content-chip">
+  <c-title text="body-medium" [color]="!disabled ? 'primary' : 'white'">
+    Text example
+  </c-title>
   <icon-clear [parentHovered]="isHovered" color="gray" type="solid" />
 </div>

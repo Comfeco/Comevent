@@ -1,3 +1,11 @@
 .content-chip {
-  @apply h-[35px] rounded-2xl bg-primary-light-2 w-max flex flex-row gap-2 px-2 items-center cursor-pointer hover:bg-white-2 hover:shadow-material-level1;
+  @apply h-[35px] rounded-2xl bg-primary-light-2 w-max flex flex-row gap-2 px-2 items-center cursor-pointer;
+}
+
+.content-chip:not(.content-chip-disabled):hover {
+  @apply bg-white-2 shadow-material-level1;
+}
+
+.content-chip-disabled {
+  @apply cursor-default bg-gray-2 pointer-events-none;
 }

@@ -17,6 +17,7 @@ type RequiredChipType = {
 type OptionalChipType = {
   type: 'solid' | 'outlined';
   colorIcon: 'error' | 'gray';
+  disabled: boolean;
 };
 
 export type ChipType = RequiredChipType & Partial<OptionalChipType>;

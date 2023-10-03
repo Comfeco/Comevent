@@ -24,6 +24,9 @@ const meta: Meta<StoryComponent> = {
     // componentWrapperDecorator(story => `<div style="margin: 3em">${story}</div>`),
   ],
   /* argTypes: {
+    disabled: {
+      control: 'boolean',
+    },
     colorText: {
       options: ['', 'white', 'black', 'primary', 'disabled'],
       control: 'select',
@@ -41,12 +44,12 @@ const meta: Meta<StoryComponent> = {
     },
   }, */
   render: (args: StoryComponent) => {
-    const { colorIcon, colorText, text, type } = args;
+    const { colorIcon, colorText, text, type, disabled } = args;
 
     return {
-      props: { colorIcon, colorText, text, type },
+      props: { colorIcon, colorText, text, type, disabled },
       template: `
-      <c-chip [colorIcon]="colorIcon" [colorText]="colorText" [text]="text" [type]="type" />
+      <c-chip [colorIcon]="colorIcon" [colorText]="colorText" [text]="text" [type]="type" [disabled]="disabled" />
       `,
     };
   },
@@ -59,5 +62,12 @@ export const BaseChip: Story = {
     text: 'body-medium',
     colorIcon: 'gray',
     type: 'solid',
+  },
+};
+
+export const BaseChipDisabled: Story = {
+  args: {
+    ...BaseChip.args,
+    disabled: true,
   },
 };

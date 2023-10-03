@@ -25,12 +25,17 @@ export class ChipComponent implements ChipType {
   @Input() colorText: ChipType['colorText'] = 'black';
   @Input() colorIcon: ChipType['colorIcon'] = 'error';
   @Input() type: ChipType['type'] = 'outlined';
+  @Input() disabled = false;
 
   @HostListener('mouseenter') onMouseEnter() {
-    this.isHovered = true;
+    if (!this.disabled) {
+      this.isHovered = true;
+    }
   }
 
   @HostListener('mouseleave') onMouseLeave() {
-    this.isHovered = false;
+    if (!this.disabled) {
+      this.isHovered = false;
+    }
   }
 }
