@@ -13,3 +13,7 @@
 .content-chip-disabled {
   @apply cursor-default bg-gray-2 pointer-events-none;
 }
+
+.disabled-img {
+  filter: grayscale(100%);
+}

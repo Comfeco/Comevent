@@ -7,8 +7,14 @@
   }"
   class="content-chip"
 >
-  <img class="h-[36px] w-[36px]" *ngIf="avatar" src="avatar.png" alt="" />
-  <icon-user *ngIf="icon" />
+  <img
+    class="h-[36px] w-[36px]"
+    *ngIf="avatar"
+    src="avatar.png"
+    alt="avatar"
+    [ngClass]="{ 'disabled-img': disabled }"
+  />
+  <icon-user *ngIf="icon" [color]="!disabled ? 'primary' : 'white'" />
   <c-title text="body-medium" [color]="!disabled ? 'primary' : 'white'">
     Text example
   </c-title>

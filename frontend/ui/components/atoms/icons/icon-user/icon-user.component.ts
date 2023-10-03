@@ -2,8 +2,10 @@ import { CommonModule } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
+  Input,
   ViewEncapsulation,
 } from '@angular/core';
+import { IconUserType } from './icon-user.interface';
 
 @Component({
   standalone: true,
@@ -13,4 +15,6 @@ import {
   encapsulation: ViewEncapsulation.Emulated,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class IconUserComponent {}
+export class IconUserComponent implements IconUserType {
+  @Input() color: IconUserType['color'] = 'primary';
+}

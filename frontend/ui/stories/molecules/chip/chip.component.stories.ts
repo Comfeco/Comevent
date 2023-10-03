@@ -55,7 +55,7 @@ const meta: Meta<StoryComponent> = {
       colorText,
       text,
       type,
-      disabled,
+      disabled = false,
       icon,
       close = true,
       hover = true,
@@ -116,6 +116,16 @@ export const BaseChipIcon: Story = {
   },
 };
 
+export const BaseChipIconDisabled: Story = {
+  args: {
+    ...BaseChip.args,
+    icon: true,
+    close: false,
+    hover: false,
+    disabled: true,
+  },
+};
+
 export const BaseChipAvatar: Story = {
   args: {
     ...BaseChip.args,
@@ -123,5 +133,16 @@ export const BaseChipAvatar: Story = {
     close: false,
     hover: false,
     avatar: true,
+  },
+};
+
+export const BaseChipAvatarDisabled: Story = {
+  args: {
+    ...BaseChip.args,
+    icon: false,
+    close: false,
+    hover: false,
+    avatar: true,
+    disabled: true,
   },
 };
