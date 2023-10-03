@@ -18,7 +18,7 @@ const meta: Meta<StoryType> = {
     };
   },
   argTypes: {
-    css: {
+    variant: {
       type: 'string',
     },
     text: {
@@ -29,7 +29,7 @@ const meta: Meta<StoryType> = {
     },
   },
   args: {
-    css: 'label-primary' || 'label-secondary' || 'label-tertiary',
+    variant: 'label-base',
     text: '',
     for: '',
   },
@@ -40,7 +40,7 @@ type Story = StoryObj<StoryType>;
 
 export const Primary: Story = {
   args: {
-    css: 'label-primary',
+    variant: 'label-base',
     text: 'Label Text',
   },
 };

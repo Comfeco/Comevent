@@ -1,4 +1,4 @@
 export type LabelType = {
-  css: 'label-primary' | 'label-secondary' | 'label-tertiary';
+  variant: 'label-base';
   for?: string;
 };

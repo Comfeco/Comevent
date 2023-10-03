@@ -60,15 +60,15 @@ const meta: Meta<StoryComponent> = {
   },
   render: (args: StoryComponent) => {
     const { label, ...inputProps } = args;
-    const { css, ...labelProps } = label;
+    const { variant, ...labelProps } = label;
 
     return {
-      props: { inputProps, css, labelProps, sharedFormControl },
+      props: { inputProps, labelProps, sharedFormControl, variant },
       template: `
-      <c-label [css]="css" [for]="inputProps.id">
+      <c-label [variant]="variant" [for]="inputProps.id">
         Label text
         <c-input
-        [variant]="inputProps.css"
+        [variant]="inputProps.variant"
         [type]="inputProps.type"
         [placeholder]="inputProps.placeholder"
         [formControl]="sharedFormControl"
@@ -94,7 +94,7 @@ export const PrimaryInput: Story = {
     showPassword: false,
     disabled: false,
     label: {
-      css: 'label-primary',
+      variant: 'label-base',
     },
   },
 };

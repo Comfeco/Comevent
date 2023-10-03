@@ -48,3 +48,7 @@
 .button-accent {
   @apply bg-accent;
 }
+
+.button-disabled {
+  @apply transition-all h-9;
+}

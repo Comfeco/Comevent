@@ -54,14 +54,14 @@ const meta: Meta<StoryComponent<number>> = {
   },
   render: (args: StoryComponent<number>) => {
     const { label, id, name, options, placeholder, disabled } = args;
-    const { css, ...labelProps } = label;
+    const { variant, ...labelProps } = label;
 
     return {
       props: {
         id,
         name,
         options,
-        css,
+        variant,
         labelProps,
         sharedFormControl,
         placeholder,
@@ -69,7 +69,7 @@ const meta: Meta<StoryComponent<number>> = {
         disabled,
       },
       template: `
-      <c-label [css]="css" [for]="id">
+      <c-label [variant]="variant" [for]="id">
         Label text
         <c-select
         [placeholder]="placeholder"
@@ -93,7 +93,7 @@ export const BaseSelect: Story<number> = {
     placeholder: 'Select some option',
     disabled: false,
     label: {
-      css: 'label-primary',
+      variant: 'label-base',
     },
   },
 };

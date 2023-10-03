@@ -7,11 +7,11 @@ const meta: Meta<StoryType> = {
   title: 'Components/Atoms/Title',
   component: TitleComponent,
   render: (args) => {
-    const { text, ...props } = args;
+    const { text, variant, color } = args;
     return {
-      props,
+      props: { variant, color },
       template: `
-        <c-title [css]="css" [color]="color">
+        <c-title [variant]="variant" [color]="color">
           ${text}
         </c-title>
       `,
@@ -37,9 +37,6 @@ const meta: Meta<StoryType> = {
       },
     },
   },
-  args: {
-    text: 'title-h1',
-  },
 };
 export default meta;
 
@@ -47,6 +44,8 @@ type Story = StoryObj<StoryType>;
 
 export const TitleH1: Story = {
   args: {
-    text: 'title-h1',
+    text: 'Text example',
+    color: 'black',
+    variant: 'title-h1',
   },
 };
