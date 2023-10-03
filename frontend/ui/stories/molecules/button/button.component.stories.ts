@@ -44,10 +44,9 @@ const meta: Meta<StoryComponent> = {
   },
   render: (args: StoryComponent) => {
     const { variant, disabled, title, type, loading, colorLoading } = args;
-    const { text, color } = title;
 
     return {
-      props: { variant, disabled, text, type, color, loading, colorLoading },
+      props: { variant, disabled, type, title, loading, colorLoading },
       template: `
       <c-button
       [variant]="variant"
@@ -56,7 +55,7 @@ const meta: Meta<StoryComponent> = {
       [title]="title"
       [loading]="loading"
       [colorLoading]="colorLoading">
-      <c-title [text]="text" [color]="color"> Text example </c-title>
+      <c-title [variant]="title.variant" [color]="title.color"> Text example </c-title>
     </c-button>
       `,
     };
@@ -68,7 +67,7 @@ export const BaseButton: Story = {
   args: {
     variant: 'button-base',
     title: {
-      text: 'body-medium-accent',
+      variant: 'body-medium-accent',
       color: 'white',
     },
   },
@@ -79,7 +78,7 @@ export const DisabledButton: Story = {
     variant: 'button-base',
     disabled: true,
     title: {
-      text: 'body-medium-accent',
+      variant: 'body-medium-accent',
       color: 'white',
     },
   },
@@ -92,7 +91,7 @@ export const LoadingDisabledButton: Story = {
     loading: true,
     colorLoading: 'white',
     title: {
-      text: 'body-medium-accent',
+      variant: 'body-medium-accent',
       color: 'white',
     },
   },
@@ -102,7 +101,7 @@ export const GhostButton: Story = {
   args: {
     variant: 'button-ghost',
     title: {
-      text: 'body-medium-accent',
+      variant: 'body-medium-accent',
       color: '',
     },
   },
@@ -115,7 +114,7 @@ export const GhostLoadingDisabledButton: Story = {
     loading: true,
     colorLoading: 'disabled',
     title: {
-      text: 'body-medium-accent',
+      variant: 'body-medium-accent',
       color: 'disabled',
     },
   },
@@ -126,7 +125,7 @@ export const GhostDisabledButton: Story = {
     variant: 'button-ghost',
     disabled: true,
     title: {
-      text: 'body-medium-accent',
+      variant: 'body-medium-accent',
       color: '',
     },
   },
@@ -136,7 +135,7 @@ export const AccentButton: Story = {
   args: {
     variant: 'button-accent',
     title: {
-      text: 'body-medium-accent',
+      variant: 'body-medium-accent',
       color: 'primary',
     },
   },
