@@ -116,7 +116,7 @@
         },
         {
             "name": "ChipComponent",
-            "id": "component-ChipComponent-4cc914f62115344ef56001d26785a7949a6e70aba70c82abd679883e7967bd65b47ed4d00b0b5cecfccdd173d6739ac6e2649ca9e0b4aca9cd92e582728f2c71",
+            "id": "component-ChipComponent-6aab5d6ae19e23f4eedbd2f252ac567ba07ee204561454675ae568b9ba0658b2f1ec40792f3f8e391e1c48b565f367597d6d985c969c2cfb1947c478666cc977",
             "file": "frontend/ui/components/molecules/chip/chip.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -136,14 +136,121 @@
             ],
             "viewProviders": [],
             "hostDirectives": [],
-            "inputsClass": [],
+            "inputsClass": [
+                {
+                    "name": "colorIcon",
+                    "defaultValue": "'error'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 26,
+                    "type": "",
+                    "decorators": []
+                },
+                {
+                    "name": "colorText",
+                    "defaultValue": "'black'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 25,
+                    "type": "",
+                    "decorators": []
+                },
+                {
+                    "name": "text",
+                    "defaultValue": "'body-medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 24,
+                    "type": "",
+                    "decorators": []
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "'outlined'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 27,
+                    "type": "",
+                    "decorators": []
+                }
+            ],
             "outputsClass": [],
-            "propertiesClass": [],
-            "methodsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "isHovered",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 23,
+                    "modifierKind": [
+                        123
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "onMouseOut",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 33,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "decorators": [
+                        {
+                            "name": "HostListener",
+                            "stringifiedArguments": "'mouseout'"
+                        }
+                    ],
+                    "modifierKind": [
+                        167
+                    ]
+                },
+                {
+                    "name": "onMouseOver",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 29,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "decorators": [
+                        {
+                            "name": "HostListener",
+                            "stringifiedArguments": "'mouseover'"
+                        }
+                    ],
+                    "modifierKind": [
+                        167
+                    ]
+                }
+            ],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
-            "hostListeners": [],
+            "hostListeners": [
+                {
+                    "name": "mouseout",
+                    "args": [],
+                    "argsDecorator": [],
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 33
+                },
+                {
+                    "name": "mouseover",
+                    "args": [],
+                    "argsDecorator": [],
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 29
+                }
+            ],
             "standalone": true,
             "imports": [
                 {
@@ -162,16 +269,19 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { TitleComponent } from '../../atoms';\nimport { IconClearComponent } from '../../atoms/icons';\n\n@Component({\n  standalone: true,\n  selector: 'c-chip',\n  imports: [CommonModule, IconClearComponent, TitleComponent],\n  templateUrl: './chip.component.html',\n  styleUrls: ['./chip.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ChipComponent {}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  HostListener,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { ChipType } from '.';\nimport { TitleComponent } from '../../atoms';\nimport { IconClearComponent } from '../../atoms/icons';\n\n@Component({\n  standalone: true,\n  selector: 'c-chip',\n  imports: [CommonModule, IconClearComponent, TitleComponent],\n  templateUrl: './chip.component.html',\n  styleUrls: ['./chip.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ChipComponent implements ChipType {\n  public isHovered = false;\n  @Input() text: ChipType['text'] = 'body-medium';\n  @Input() colorText: ChipType['colorText'] = 'black';\n  @Input() colorIcon: ChipType['colorIcon'] = 'error';\n  @Input() type: ChipType['type'] = 'outlined';\n\n  @HostListener('mouseover') onMouseOver() {\n    this.isHovered = true;\n  }\n\n  @HostListener('mouseout') onMouseOut() {\n    this.isHovered = false;\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".content-chip {\r\n  @apply h-[35px] rounded-2xl bg-primary-light-2 w-auto flex flex-row gap-2 px-2;\r\n}\r\n",
+                    "data": ".content-chip {\r\n  @apply h-[35px] rounded-2xl bg-primary-light-2 w-max flex flex-row gap-2 px-2 items-center cursor-pointer;\r\n}\r\n\r\n/* .content-chip ::ng-deep .icon-clear .content-hover-error {\r\n  @apply stroke-gray-3;\r\n}\r\n\r\n.content-chip:hover ::ng-deep .icon-clear .content-hover-error {\r\n  @apply stroke-error;\r\n}\r\n\r\n.content-chip:hover ::ng-deep .icon-clear .content-fill-transparent {\r\n  @apply fill-error;\r\n}\r\n\r\n.content-chip:hover ::ng-deep .icon-clear .close-hover-outlined {\r\n  @apply stroke-white-1;\r\n} */\r\n",
                     "styleUrl": "./chip.component.scss"
                 }
             ],
             "stylesData": "",
-            "templateData": "<div class=\"content-chip\">\n  <!-- <c-title [color]=\"'primary'\" />\n  <icon-clear /> -->\n  <ng-content></ng-content>\n</div>\n"
+            "implements": [
+                "ChipType"
+            ],
+            "templateData": "<div class=\"content-chip\">\n  <c-title text=\"body-medium\" color=\"primary\"> Text example </c-title>\n  <icon-clear [parentHovered]=\"isHovered\" color=\"gray\" type=\"solid\" />\n</div>\n"
         },
         {
             "name": "ContainerStepComponent",
@@ -463,7 +573,7 @@
         },
         {
             "name": "IconClearComponent",
-            "id": "component-IconClearComponent-036094bd556c9f7bc365ec52d48028ffc1701b2cbc94f6c7fde4d8f8dee4169c78d6d9e6efb3e89a12d8f2c293154de0f9b2a84e822ab34c666753ace25b9ed6",
+            "id": "component-IconClearComponent-7b6b404c8c8ee511404444773550686bc1c50a79f61e9ee3d8360b993b6bb0e31a48d2128d5631d95557aced9bc806d6101dfa5a470d32cb2222e730467b495d",
             "file": "frontend/ui/components/atoms/icons/icon-clear/icon-clear.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -483,7 +593,35 @@
             ],
             "viewProviders": [],
             "hostDirectives": [],
-            "inputsClass": [],
+            "inputsClass": [
+                {
+                    "name": "color",
+                    "defaultValue": "'error'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 20,
+                    "type": "",
+                    "decorators": []
+                },
+                {
+                    "name": "parentHovered",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 22,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "'outlined'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 21,
+                    "type": "",
+                    "decorators": []
+                }
+            ],
             "outputsClass": [],
             "propertiesClass": [],
             "methodsClass": [],
@@ -501,16 +639,19 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-clear',\n  imports: [CommonModule],\n  templateUrl: './icon-clear.component.html',\n  styleUrls: ['./icon-clear.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconClearComponent {}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { IconClearType } from '.';\n\n@Component({\n  standalone: true,\n  selector: 'icon-clear',\n  imports: [CommonModule],\n  templateUrl: './icon-clear.component.html',\n  styleUrls: ['./icon-clear.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconClearComponent implements IconClearType {\n  @Input() color: IconClearType['color'] = 'error';\n  @Input() type: IconClearType['type'] = 'outlined';\n  @Input() parentHovered = false;\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".close-hover {\n  @apply stroke-error;\n}\n\n.content-hover {\n  @apply fill-transparent stroke-error;\n}\n\n.icon-clear:hover .close-hover {\n  @apply stroke-white-1;\n}\n\n.icon-clear:hover .content-hover {\n  @apply fill-error;\n}\n",
+                    "data": ".icon-clear {\n  @apply cursor-pointer;\n}\n\n.close-hover-solid {\n  @apply stroke-white-1;\n}\n\n.close-hover-outlined {\n  @apply stroke-error;\n}\n\n.content-hover-error {\n  @apply stroke-error;\n}\n\n.content-fill-error {\n  @apply fill-error;\n}\n\n.content-hover-gray {\n  @apply stroke-gray-3;\n}\n\n.content-fill-gray {\n  @apply fill-gray-3;\n}\n\n.content-fill-transparent {\n  @apply fill-transparent;\n}\n\n.icon-clear:hover .close-hover-outlined {\n  @apply stroke-white-1;\n}\n\n.icon-clear:hover .content-fill-transparent {\n  @apply fill-error;\n}\n\n.icon-clear:hover .content-fill-gray {\n  @apply fill-error;\n}\n\n.icon-clear:hover .content-hover-gray {\n  @apply stroke-error;\n}\n\n.icon-clear.hovered .close-hover-outlined {\n  @apply stroke-white-1;\n}\n\n.icon-clear.hovered .content-fill-transparent {\n  @apply fill-error;\n}\n\n.icon-clear.hovered .content-fill-gray {\n  @apply fill-error;\n}\n\n.icon-clear.hovered .content-hover-gray {\n  @apply stroke-error;\n}\n",
                     "styleUrl": "./icon-clear.component.scss"
                 }
             ],
             "stylesData": "",
-            "templateData": "<svg\n  class=\"icon-clear\"\n  width=\"18\"\n  height=\"18\"\n  viewBox=\"0 0 18 18\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    class=\"content-hover\"\n    d=\"M9 1C15.4 1 17 2.6 17 9C17 15.4 15.4 17 9 17C2.6 17 1 15.4 1 9C1 2.6 2.6 1 9 1Z\"\n    stroke-width=\"1.77778\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    class=\"close-hover\"\n    d=\"M7.22229 7.22192L10.7778 10.7775M10.7778 7.22192L7.22229 10.7775\"\n    stroke-width=\"1.77778\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
+            "implements": [
+                "IconClearType"
+            ],
+            "templateData": "<svg\n  [class.hovered]=\"parentHovered\"\n  class=\"icon-clear\"\n  width=\"18\"\n  height=\"18\"\n  viewBox=\"0 0 18 18\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    [ngClass]=\"{\n      'content-hover-error': (color === 'error'),\n      'content-hover-gray': color === 'gray',\n      'content-fill-error': color === 'error' && type === 'solid',\n      'content-fill-gray': color === 'gray' && type === 'solid',\n      'content-fill-transparent': type === 'outlined',\n    }\"\n    d=\"M9 1C15.4 1 17 2.6 17 9C17 15.4 15.4 17 9 17C2.6 17 1 15.4 1 9C1 2.6 2.6 1 9 1Z\"\n    stroke-width=\"1.77778\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      'close-hover-solid': type === 'solid',\n      'close-hover-outlined': type === 'outlined'\n    }\"\n    d=\"M7.22229 7.22192L10.7778 10.7775M10.7778 7.22192L7.22229 10.7775\"\n    stroke-width=\"1.77778\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
         },
         {
             "name": "IconHiddenPassComponent",
@@ -1243,7 +1384,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    title: {\n      text: 'body-medium',\n      color: 'primary',\n    },\n  },\n}"
+                "defaultValue": "{\n  args: {\n    colorText: 'primary',\n    text: 'body-medium',\n    colorIcon: 'gray',\n    type: 'solid',\n  },\n}"
             },
             {
                 "name": "BasicStepCompleted",
@@ -1339,26 +1480,6 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<StoryType>",
-                "defaultValue": "{\n  title: 'Components/Atoms/Label',\n  component: LabelComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-label [css]=\"css\">\n          ${text}\n        </c-label>\n      `,\n    };\n  },\n  argTypes: {\n    css: {\n      type: 'string',\n    },\n    text: {\n      type: 'string',\n    },\n    for: {\n      type: 'string',\n    },\n  },\n  args: {\n    css: 'label-primary' || 'label-secondary' || 'label-tertiary',\n    text: '',\n    for: '',\n  },\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<StoryType>",
-                "defaultValue": "{\n  title: 'Components/Atoms/Title',\n  component: TitleComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-title [css]=\"css\" [color]=\"color\">\n          ${text}\n        </c-title>\n      `,\n    };\n  },\n  argTypes: {\n    text: {\n      control: {\n        type: 'select',\n        options: [\n          'title-h1',\n          'title-h2',\n          'title-h3',\n          'title-h4',\n          'title-h5',\n          'title-h6',\n          'body-bigger',\n          'body-medium',\n          'body-small',\n          'body-medium-accent',\n          'body-smaller',\n        ],\n      },\n    },\n  },\n  args: {\n    text: 'title-h1',\n  },\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -1373,7 +1494,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<StoryComponent>",
-                "defaultValue": "{\n  title: 'Components/Molecules/Button',\n  component: ChipComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [ChipComponent, TitleComponent, IconClearComponent],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  /* argTypes: {\n\n  }, */\n  render: (args: StoryComponent) => {\n    const { title } = args;\n    const { text, color } = title;\n\n    return {\n      props: { text, color },\n      template: `\n      <c-chip>\n      <c-title [text]=\"text\" [color]=\"color\"> Text example </c-title>\n      <icon-clear />\n    </c-chip>\n      `,\n    };\n  },\n}"
+                "defaultValue": "{\n  title: 'Components/Molecules/Chip',\n  component: ChipComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [ChipComponent, TitleComponent, IconClearComponent],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  /* argTypes: {\n\n  }, */\n  render: (args: StoryComponent) => {\n    const { colorIcon, colorText, text, type } = args;\n\n    return {\n      props: { colorIcon, colorText, text, type },\n      template: `\n      <c-chip [colorIcon]=\"colorIcon\" [colorText]=\"colorText\" [text]=\"text\" [type]=\"type\" />\n      `,\n    };\n  },\n}"
             },
             {
                 "name": "meta",
@@ -1404,6 +1525,26 @@
                 "deprecationMessage": "",
                 "type": "Meta<StoryComponent>",
                 "defaultValue": "{\n  title: 'Components/Organism/ContainerStep',\n  component: ContainerStepComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        ContainerStepComponent,\n        StepComponent,\n        IconAreaComponent,\n        IconPassComponent,\n        IconBasicComponent,\n      ],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  render: (args: StoryComponent) => {\n    const { steps } = args;\n\n    const stepsTemplate = steps\n      .map((step) => `<c-step [status]=\"${step.status}\" [logo]=\"${step.logo}\">`)\n      .join('');\n\n    return {\n      props: {},\n      template: `\n      <c-container-step [containerStatus]=\"containerStatus\">\n        ${{ stepsTemplate }}\n      </c-container-step>\n      `,\n    };\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<StoryType>",
+                "defaultValue": "{\n  title: 'Components/Atoms/Label',\n  component: LabelComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-label [css]=\"css\">\n          ${text}\n        </c-label>\n      `,\n    };\n  },\n  argTypes: {\n    css: {\n      type: 'string',\n    },\n    text: {\n      type: 'string',\n    },\n    for: {\n      type: 'string',\n    },\n  },\n  args: {\n    css: 'label-primary' || 'label-secondary' || 'label-tertiary',\n    text: '',\n    for: '',\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<StoryType>",
+                "defaultValue": "{\n  title: 'Components/Atoms/Title',\n  component: TitleComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-title [css]=\"css\" [color]=\"color\">\n          ${text}\n        </c-title>\n      `,\n    };\n  },\n  argTypes: {\n    text: {\n      control: {\n        type: 'select',\n        options: [\n          'title-h1',\n          'title-h2',\n          'title-h3',\n          'title-h4',\n          'title-h5',\n          'title-h6',\n          'body-bigger',\n          'body-medium',\n          'body-small',\n          'body-medium-accent',\n          'body-smaller',\n        ],\n      },\n    },\n  },\n  args: {\n    text: 'title-h1',\n  },\n}"
             },
             {
                 "name": "PasswordStepCompleted",
@@ -1492,28 +1633,6 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<StoryType>",
-                "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 180
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj<StoryType>",
-                "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 180
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
                 "rawtype": "StoryObj<>",
                 "file": "frontend/ui/stories/molecules/button/button.component.stories.ts",
                 "deprecated": false,
@@ -1525,7 +1644,7 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<>",
+                "rawtype": "StoryObj<ChipType>",
                 "file": "frontend/ui/stories/molecules/chip/chip.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -1566,6 +1685,28 @@
                 "kind": 180
             },
             {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<StoryType>",
+                "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 180
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<StoryType>",
+                "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 180
+            },
+            {
                 "name": "StoryComponent",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
@@ -1580,12 +1721,12 @@
                 "name": "StoryComponent",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "",
+                "rawtype": "ChipType",
                 "file": "frontend/ui/stories/molecules/chip/chip.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 190
+                "kind": 180
             },
             {
                 "name": "StoryComponent",
@@ -1849,7 +1990,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    title: {\n      text: 'body-medium',\n      color: 'primary',\n    },\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    colorText: 'primary',\n    text: 'body-medium',\n    colorIcon: 'gray',\n    type: 'solid',\n  },\n}"
                 },
                 {
                     "name": "meta",
@@ -1859,7 +2000,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<StoryComponent>",
-                    "defaultValue": "{\n  title: 'Components/Molecules/Button',\n  component: ChipComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [ChipComponent, TitleComponent, IconClearComponent],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  /* argTypes: {\n\n  }, */\n  render: (args: StoryComponent) => {\n    const { title } = args;\n    const { text, color } = title;\n\n    return {\n      props: { text, color },\n      template: `\n      <c-chip>\n      <c-title [text]=\"text\" [color]=\"color\"> Text example </c-title>\n      <icon-clear />\n    </c-chip>\n      `,\n    };\n  },\n}"
+                    "defaultValue": "{\n  title: 'Components/Molecules/Chip',\n  component: ChipComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [ChipComponent, TitleComponent, IconClearComponent],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  /* argTypes: {\n\n  }, */\n  render: (args: StoryComponent) => {\n    const { colorIcon, colorText, text, type } = args;\n\n    return {\n      props: { colorIcon, colorText, text, type },\n      template: `\n      <c-chip [colorIcon]=\"colorIcon\" [colorText]=\"colorText\" [text]=\"text\" [type]=\"type\" />\n      `,\n    };\n  },\n}"
                 }
             ],
             "frontend/ui/.storybook/main.ts": [
@@ -1872,50 +2013,6 @@
                     "deprecationMessage": "",
                     "type": "StorybookConfig",
                     "defaultValue": "{\n  stories: ['../stories/**/*.stories.@(js|jsx|ts|tsx)'],\n  addons: [\n    '@storybook/addon-links',\n    '@storybook/addon-essentials',\n    {\n      name: '@storybook/addon-styling',\n      options: {\n        // Check out https://github.com/storybookjs/addon-styling/blob/main/docs/api.md\n        // For more details on this addon's options.\n        /* postCss: {\n          implementation: require.resolve('postcss'),\n        }, */\n      }, // * no options for Angular,\n    },\n  ],\n  framework: {\n    name: '@storybook/angular',\n    options: {},\n  },\n  docs: {\n    autodocs: true,\n    defaultName: 'Docs',\n  },\n  // staticDirs: ['../public'],\n}"
-                }
-            ],
-            "frontend/ui/stories/atoms/label/label.component.stories.ts": [
-                {
-                    "name": "meta",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<StoryType>",
-                    "defaultValue": "{\n  title: 'Components/Atoms/Label',\n  component: LabelComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-label [css]=\"css\">\n          ${text}\n        </c-label>\n      `,\n    };\n  },\n  argTypes: {\n    css: {\n      type: 'string',\n    },\n    text: {\n      type: 'string',\n    },\n    for: {\n      type: 'string',\n    },\n  },\n  args: {\n    css: 'label-primary' || 'label-secondary' || 'label-tertiary',\n    text: '',\n    for: '',\n  },\n}"
-                },
-                {
-                    "name": "Primary",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    css: 'label-primary',\n    text: 'Label Text',\n  },\n}"
-                }
-            ],
-            "frontend/ui/stories/atoms/title/title.component.stories.ts": [
-                {
-                    "name": "meta",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<StoryType>",
-                    "defaultValue": "{\n  title: 'Components/Atoms/Title',\n  component: TitleComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-title [css]=\"css\" [color]=\"color\">\n          ${text}\n        </c-title>\n      `,\n    };\n  },\n  argTypes: {\n    text: {\n      control: {\n        type: 'select',\n        options: [\n          'title-h1',\n          'title-h2',\n          'title-h3',\n          'title-h4',\n          'title-h5',\n          'title-h6',\n          'body-bigger',\n          'body-medium',\n          'body-small',\n          'body-medium-accent',\n          'body-smaller',\n        ],\n      },\n    },\n  },\n  args: {\n    text: 'title-h1',\n  },\n}"
-                },
-                {
-                    "name": "TitleH1",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    text: 'title-h1',\n  },\n}"
                 }
             ],
             "frontend/ui/stories/molecules/input/input.component.stories.ts": [
@@ -1971,59 +2068,55 @@
                     "type": "Story",
                     "defaultValue": "{\n  args: {\n    steps: [\n      {\n        logo: 'basic',\n        status: 'In Progress',\n      },\n      {\n        logo: 'pass',\n        status: 'Pending',\n      },\n      {\n        logo: 'area',\n        status: 'Pending',\n      },\n    ],\n  },\n}"
                 }
+            ],
+            "frontend/ui/stories/atoms/label/label.component.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<StoryType>",
+                    "defaultValue": "{\n  title: 'Components/Atoms/Label',\n  component: LabelComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-label [css]=\"css\">\n          ${text}\n        </c-label>\n      `,\n    };\n  },\n  argTypes: {\n    css: {\n      type: 'string',\n    },\n    text: {\n      type: 'string',\n    },\n    for: {\n      type: 'string',\n    },\n  },\n  args: {\n    css: 'label-primary' || 'label-secondary' || 'label-tertiary',\n    text: '',\n    for: '',\n  },\n}"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    css: 'label-primary',\n    text: 'Label Text',\n  },\n}"
+                }
+            ],
+            "frontend/ui/stories/atoms/title/title.component.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<StoryType>",
+                    "defaultValue": "{\n  title: 'Components/Atoms/Title',\n  component: TitleComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-title [css]=\"css\" [color]=\"color\">\n          ${text}\n        </c-title>\n      `,\n    };\n  },\n  argTypes: {\n    text: {\n      control: {\n        type: 'select',\n        options: [\n          'title-h1',\n          'title-h2',\n          'title-h3',\n          'title-h4',\n          'title-h5',\n          'title-h6',\n          'body-bigger',\n          'body-medium',\n          'body-small',\n          'body-medium-accent',\n          'body-smaller',\n        ],\n      },\n    },\n  },\n  args: {\n    text: 'title-h1',\n  },\n}"
+                },
+                {
+                    "name": "TitleH1",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    text: 'title-h1',\n  },\n}"
+                }
             ]
         },
         "groupedFunctions": {},
         "groupedEnumerations": {},
         "groupedTypeAliases": {
-            "frontend/ui/stories/atoms/label/label.component.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<StoryType>",
-                    "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 180
-                },
-                {
-                    "name": "StoryType",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "",
-                    "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 190
-                }
-            ],
-            "frontend/ui/stories/atoms/title/title.component.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<StoryType>",
-                    "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 180
-                },
-                {
-                    "name": "StoryType",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "",
-                    "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 190
-                }
-            ],
             "frontend/ui/stories/molecules/button/button.component.stories.ts": [
                 {
                     "name": "Story",
@@ -2053,7 +2146,7 @@
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
-                    "rawtype": "StoryObj<>",
+                    "rawtype": "StoryObj<ChipType>",
                     "file": "frontend/ui/stories/molecules/chip/chip.component.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
@@ -2064,12 +2157,12 @@
                     "name": "StoryComponent",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
-                    "rawtype": "",
+                    "rawtype": "ChipType",
                     "file": "frontend/ui/stories/molecules/chip/chip.component.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 190
+                    "kind": 180
                 }
             ],
             "frontend/ui/stories/molecules/input/input.component.stories.ts": [
@@ -2154,6 +2247,54 @@
                     "description": "",
                     "kind": 184
                 }
+            ],
+            "frontend/ui/stories/atoms/label/label.component.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<StoryType>",
+                    "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 180
+                },
+                {
+                    "name": "StoryType",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "",
+                    "file": "frontend/ui/stories/atoms/label/label.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 190
+                }
+            ],
+            "frontend/ui/stories/atoms/title/title.component.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<StoryType>",
+                    "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 180
+                },
+                {
+                    "name": "StoryType",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "",
+                    "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 190
+                }
             ]
         }
     },
@@ -2205,7 +2346,7 @@
                 "linktype": "component",
                 "name": "IconClearComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/1",
+                "coverageCount": "0/4",
                 "status": "low"
             },
             {
@@ -2277,7 +2418,7 @@
                 "linktype": "component",
                 "name": "ChipComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/1",
+                "coverageCount": "0/10",
                 "status": "low"
             },
             {

@@ -45,3 +45,19 @@
 .icon-clear:hover .content-hover-gray {
   @apply stroke-error;
 }
+
+.icon-clear.hovered .close-hover-outlined {
+  @apply stroke-white-1;
+}
+
+.icon-clear.hovered .content-fill-transparent {
+  @apply fill-error;
+}
+
+.icon-clear.hovered .content-fill-gray {
+  @apply fill-error;
+}
+
+.icon-clear.hovered .content-hover-gray {
+  @apply stroke-error;
+}

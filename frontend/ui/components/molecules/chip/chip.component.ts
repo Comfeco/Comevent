@@ -2,8 +2,11 @@ import { CommonModule } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
+  HostListener,
+  Input,
   ViewEncapsulation,
 } from '@angular/core';
+import { ChipType } from '.';
 import { TitleComponent } from '../../atoms';
 import { IconClearComponent } from '../../atoms/icons';
 
@@ -16,4 +19,18 @@ import { IconClearComponent } from '../../atoms/icons';
   encapsulation: ViewEncapsulation.Emulated,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ChipComponent {}
+export class ChipComponent implements ChipType {
+  public isHovered = false;
+  @Input() text: ChipType['text'] = 'body-medium';
+  @Input() colorText: ChipType['colorText'] = 'black';
+  @Input() colorIcon: ChipType['colorIcon'] = 'error';
+  @Input() type: ChipType['type'] = 'outlined';
+
+  @HostListener('mouseenter') onMouseEnter() {
+    this.isHovered = true;
+  }
+
+  @HostListener('mouseleave') onMouseLeave() {
+    this.isHovered = false;
+  }
+}

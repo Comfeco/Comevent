@@ -19,4 +19,5 @@ import { IconClearType } from '.';
 export class IconClearComponent implements IconClearType {
   @Input() color: IconClearType['color'] = 'error';
   @Input() type: IconClearType['type'] = 'outlined';
+  @Input() parentHovered = false;
 }

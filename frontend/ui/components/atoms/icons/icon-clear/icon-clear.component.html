@@ -1,4 +1,5 @@
 <svg
+  [class.hovered]="parentHovered"
   class="icon-clear"
   width="18"
   height="18"
@@ -8,7 +9,7 @@
 >
   <path
     [ngClass]="{
-      'content-hover-error': color === 'error',
+      'content-hover-error': (color === 'error'),
       'content-hover-gray': color === 'gray',
       'content-fill-error': color === 'error' && type === 'solid',
       'content-fill-gray': color === 'gray' && type === 'solid',

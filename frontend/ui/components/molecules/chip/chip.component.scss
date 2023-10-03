@@ -1,3 +1,3 @@
 .content-chip {
-  @apply h-[35px] rounded-2xl bg-primary-light-2 w-max flex flex-row gap-2 px-2 items-center;
+  @apply h-[35px] rounded-2xl bg-primary-light-2 w-max flex flex-row gap-2 px-2 items-center cursor-pointer hover:bg-white-2 hover:shadow-material-level1;
 }

@@ -3,19 +3,13 @@ import { Meta, StoryObj, moduleMetadata } from '@storybook/angular';
 import { CommonModule } from '@angular/common';
 import {
   ChipComponent,
+  ChipType,
   IconClearComponent,
-  IconClearType,
   TitleComponent,
-  TitleType,
 } from '../../../components';
 
-type Story = StoryObj<
-  ChipComponent & { title: TitleType; iconClear: IconClearType }
->;
-type StoryComponent = ChipComponent & {
-  title: TitleType;
-  iconClear: IconClearType;
-};
+type Story = StoryObj<ChipType>;
+type StoryComponent = ChipType;
 
 const meta: Meta<StoryComponent> = {
   title: 'Components/Molecules/Chip',
@@ -30,19 +24,29 @@ const meta: Meta<StoryComponent> = {
     // componentWrapperDecorator(story => `<div style="margin: 3em">${story}</div>`),
   ],
   /* argTypes: {
-
+    colorText: {
+      options: ['', 'white', 'black', 'primary', 'disabled'],
+      control: 'select',
+    },
+    text: {
+      control: 'text',
+    },
+    colorIcon: {
+      options: ['error', 'gray'],
+      control: 'select',
+    },
+    type: {
+      options: ['outlined', 'solid'],
+      control: 'select',
+    },
   }, */
   render: (args: StoryComponent) => {
-    const { title, iconClear } = args;
-    const { text, color } = title;
+    const { colorIcon, colorText, text, type } = args;
 
     return {
-      props: { text, color, iconClear },
+      props: { colorIcon, colorText, text, type },
       template: `
-      <c-chip>
-      <c-title [text]="text" [color]="color"> Text example </c-title>
-      <icon-clear [color]="iconClear.color" [type]="iconClear.type" />
-    </c-chip>
+      <c-chip [colorIcon]="colorIcon" [colorText]="colorText" [text]="text" [type]="type" />
       `,
     };
   },
@@ -51,13 +55,9 @@ export default meta;
 
 export const BaseChip: Story = {
   args: {
-    title: {
-      text: 'body-medium',
-      color: 'primary',
-    },
-    iconClear: {
-      color: 'gray',
-      type: 'solid',
-    },
+    colorText: 'primary',
+    text: 'body-medium',
+    colorIcon: 'gray',
+    type: 'solid',
   },
 };
