@@ -51,7 +51,7 @@ export class InputComponent<T>
   implements InputType
 {
   @Input() id = '';
-  @Input() css: InputType['css'] = 'input-base';
+  @Input() variant: InputType['variant'] = 'input-base';
   @Input() placeholder?: string | undefined;
   @Input() value?: string | number | undefined;
   @Input() customErrorMessages: Record<string, string> = {};

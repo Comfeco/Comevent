@@ -3,7 +3,7 @@
 }
 
 .input {
-  @apply outline-none rounded-md w-auto px-4;
+  @apply outline-none rounded-md w-auto px-4 body-medium;
 }
 
 .input::placeholder {
@@ -42,4 +42,28 @@ input[type='number']::-webkit-outer-spin-button {
 /* Firefox */
 input[type='number'] {
   -moz-appearance: textfield;
+}
+
+.b-success {
+  @apply border-success;
+}
+
+.b-error {
+  @apply border-error;
+}
+
+.b-neutral {
+  @apply border-black-1;
+}
+
+.b-disabled {
+  @apply border-gray-2;
+}
+
+.r-4 {
+  @apply right-4;
+}
+
+.r-10 {
+  @apply right-10;
 }

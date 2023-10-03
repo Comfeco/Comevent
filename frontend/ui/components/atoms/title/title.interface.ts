@@ -1,5 +1,5 @@
 export type TitleType = {
-  text:
+  variant:
     | 'title-h1'
     | 'title-h2'
     | 'title-h3'

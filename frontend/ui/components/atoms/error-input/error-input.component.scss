@@ -2,6 +2,10 @@
   @apply w-full rounded-md h-auto p-1 bg-error-light gap-2 items-center flex flex-wrap justify-start font-semibold px-4;
 }
 
+.text-error-content {
+  @apply text-start font-body text-error text-body-3 font-normal;
+}
+
 .size-icon {
   @apply h-4 w-4;
 }

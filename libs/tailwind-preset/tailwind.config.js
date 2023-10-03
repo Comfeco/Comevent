@@ -27,8 +27,8 @@ module.exports = {
           darkMode: '#FFDA77',
         },
         white: {
-          1: '#F9F9F9',
-          2: '#FFFFFF',
+          1: '#FFFFFF',
+          2: '#F9F9F9',
         },
         black: {
           1: '#2E2E2E',
@@ -88,5 +88,53 @@ module.exports = {
       'body-4': '12px',
     },
   },
-  plugins: [],
+  plugins: [
+    ({ addUtilities }) => {
+      addUtilities({
+        '.title-h1': {
+          '@apply text-title-1 font-bold font-title': {},
+        },
+
+        '.title-h2': {
+          '@apply text-title-2 font-semibold font-title': {},
+        },
+
+        '.title-h3': {
+          '@apply text-title-3 font-semibold font-title': {},
+        },
+
+        '.title-h4': {
+          '@apply text-title-4 font-semibold font-title': {},
+        },
+
+        '.title-h5': {
+          '@apply text-title-5 font-semibold font-title': {},
+        },
+
+        '.title-h6': {
+          '@apply text-title-6 font-semibold font-title': {},
+        },
+
+        '.body-bigger': {
+          '@apply text-body-1 font-normal font-body': {},
+        },
+
+        '.body-medium': {
+          '@apply text-body-2 font-normal font-body': {},
+        },
+
+        '.body-medium-accent': {
+          '@apply text-body-2 font-bold font-body': {},
+        },
+
+        '.body-small': {
+          '@apply text-body-3 font-normal font-body': {},
+        },
+
+        '.body-smaller': {
+          '@apply text-body-4 font-normal font-body': {},
+        },
+      });
+    },
+  ],
 };

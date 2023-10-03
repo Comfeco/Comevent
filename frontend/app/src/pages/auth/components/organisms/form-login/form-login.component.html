@@ -3,50 +3,63 @@
   (ngSubmit)="onSubmit()"
   class="w-full flex flex-col gap-6 items-center"
 >
-  <div class="flex flex-col justify-center gap-4 items-center">
-    <c-title css="title-2xl">Login</c-title>
-    <div class="w-full flex flex-col gap-4">
-      <div class="relative">
-        <c-label>
-          Email
-          <c-input
-            css="input-primary"
-            type="email"
-            placeholder="jhonDoe@example.com"
-            formControlName="email"
-            name="email"
-            [additionalValidators]="
-              formUtilities.getValidators(formLogin, 'email')
-            "
-          />
-        </c-label>
-      </div>
-      <div class="relative">
-        <c-label>
-          Pasword
-          <c-input
-            css="input-primary"
-            type="password"
-            placeholder="*******"
-            formControlName="password"
-            name="password"
-          />
-        </c-label>
-      </div>
-      <a class="underline" routerLink="/auth/recover">
-        have you forgotten your password ?
-      </a>
+  <div class="flex flex-col gap-6 my-14 w-[400px]">
+    <div class="relative">
+      <c-label variant="label-base" for="email">
+        Email
+        <c-input
+          variant="input-base"
+          type="email"
+          placeholder="jhonDoe@example.com"
+          formControlName="email"
+          name="email"
+          id="email"
+          [additionalValidators]="
+            formUtilities.getValidators(formLogin, 'email')
+          "
+        />
+      </c-label>
     </div>
-    <div class="relative w-full">
-      <c-button
-        class="w-full"
-        css="button-primary"
-        color="t-white"
-        type="submit"
-        [disabled]="!formLogin.valid"
-      >
-        <c-title css="title-base">Login</c-title>
-      </c-button>
+    <div class="relative">
+      <c-label>
+        Pasword
+        <c-input
+          variant="input-base"
+          type="password"
+          placeholder="*******"
+          formControlName="password"
+          name="password"
+        />
+      </c-label>
     </div>
+    <a
+      class="title-h6 text-primary text-center hover:underline"
+      routerLink="/auth/recover"
+    >
+      have you forgotten your password ?
+    </a>
+
+    <div class="flex flex-col gap-4">
+      <c-title variant="title-h6">Or use your networks</c-title>
+      <div class="flex flex-grow gap-6">
+        <c-button class="flex-1" variant="button-ghost" type="submit">
+          <div class="flex justify-center w-full gap-2 items-center">
+            <icon-facebook />
+            <c-title variant="title-h6" color="primary">Facebook</c-title>
+          </div>
+        </c-button>
+        <c-button class="flex-1" variant="button-ghost" type="submit">
+          <div class="flex justify-center w-full gap-2 items-center">
+            <icon-google />
+            <c-title variant="title-h6" color="primary">Google</c-title>
+          </div>
+        </c-button>
+      </div>
+    </div>
+  </div>
+  <div class="flex relative w-full justify-end">
+    <c-button variant="button-base" type="submit" [disabled]="!formLogin.valid">
+      <c-title variant="title-h6" color="white">Login</c-title>
+    </c-button>
   </div>
 </form>

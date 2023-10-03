@@ -1,10 +1,10 @@
 <button
   [ngClass]="{
     button: true,
-    'button-base': button === 'button-base' && !disabled,
-    'button-ghost': button === 'button-ghost',
-    'button-accent': button === 'button-accent',
-    'transition-all h-9': disabled,
+    'button-base': variant === 'button-base' && !disabled,
+    'button-ghost': variant === 'button-ghost',
+    'button-accent': variant === 'button-accent',
+    'button-disabled': disabled,
     'click-button': !disabled
   }"
   [type]="type"

@@ -4,6 +4,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import {
   ButtonComponent,
+  IconFacebookComponent,
+  IconGoogleComponent,
   InputComponent,
   LabelComponent,
   TitleComponent,
@@ -27,6 +29,8 @@ const routes: Routes = [
     InputComponent,
     LabelComponent,
     ButtonComponent,
+    IconGoogleComponent,
+    IconFacebookComponent,
   ],
   exports: [FormLoginComponent],
 })

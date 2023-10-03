@@ -26,9 +26,9 @@ type EventsProps = {
   // Others...
 };
 
-type RequiredInputType = {
-  button: 'button-base' | 'button-disabled' | 'button-ghost' | 'button-accent';
-};
+/* type RequiredInputType = {
+  variant: 'button-base' | 'button-disabled' | 'button-ghost' | 'button-accent';
+}; */
 
 type OptionalInputType = {
   type: 'button' | 'reset' | 'submit';
@@ -36,6 +36,7 @@ type OptionalInputType = {
   events: EventsProps;
   loading: boolean;
   colorLoading: 'white' | 'disabled';
+  variant: 'button-base' | 'button-disabled' | 'button-ghost' | 'button-accent';
 };
 
-export type ButtonType = RequiredInputType & Partial<OptionalInputType>;
+export type ButtonType = Partial<OptionalInputType>;

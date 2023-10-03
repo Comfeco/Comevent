@@ -21,7 +21,7 @@ import { ButtonType } from './button.interface';
 export class ButtonComponent implements ButtonType {
   @Input() type: ButtonType['type'] = 'button';
   @Input() disabled: ButtonType['disabled'] = false;
-  @Input() button!: ButtonType['button'];
+  @Input() variant: ButtonType['variant'] = 'button-base';
   @Input() loading = false;
   @Input() colorLoading: 'white' | 'disabled' = 'white';
 }
