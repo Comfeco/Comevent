@@ -3,7 +3,7 @@
     <input
       [ngClass]="{
         'input body-medium': true,
-        'input-base': css === 'input-base',
+        'input-base': variant === 'input-base',
         'border-success': isValid() && !isUntouched() && !control!.disabled,
         'border-error': !isValid() && !isUntouched() && !control!.disabled,
         'border-black-1': isUntouched() && !control!.disabled,

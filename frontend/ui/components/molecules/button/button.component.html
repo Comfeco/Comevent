@@ -1,9 +1,9 @@
 <button
   [ngClass]="{
     button: true,
-    'button-base': button === 'button-base' && !disabled,
-    'button-ghost': button === 'button-ghost',
-    'button-accent': button === 'button-accent',
+    'button-base': variant === 'button-base' && !disabled,
+    'button-ghost': variant === 'button-ghost',
+    'button-accent': variant === 'button-accent',
     'transition-all h-9': disabled,
     'click-button': !disabled
   }"

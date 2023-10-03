@@ -24,7 +24,7 @@ const meta: Meta<StoryComponent> = {
     // componentWrapperDecorator(story => `<div style="margin: 3em">${story}</div>`),
   ],
   argTypes: {
-    button: {
+    variant: {
       options: [
         'button-base',
         'button-disabled',
@@ -43,14 +43,14 @@ const meta: Meta<StoryComponent> = {
     },
   },
   render: (args: StoryComponent) => {
-    const { button, disabled, title, type, loading, colorLoading } = args;
+    const { variant, disabled, title, type, loading, colorLoading } = args;
     const { text, color } = title;
 
     return {
-      props: { button, disabled, text, type, color, loading, colorLoading },
+      props: { variant, disabled, text, type, color, loading, colorLoading },
       template: `
       <c-button
-      [button]="button"
+      [variant]="variant"
       [disabled]="disabled"
       [type]="type"
       [title]="title"
@@ -66,7 +66,7 @@ export default meta;
 
 export const BaseButton: Story = {
   args: {
-    button: 'button-base',
+    variant: 'button-base',
     title: {
       text: 'body-medium-accent',
       color: 'white',
@@ -76,7 +76,7 @@ export const BaseButton: Story = {
 
 export const DisabledButton: Story = {
   args: {
-    button: 'button-base',
+    variant: 'button-base',
     disabled: true,
     title: {
       text: 'body-medium-accent',
@@ -87,7 +87,7 @@ export const DisabledButton: Story = {
 
 export const LoadingDisabledButton: Story = {
   args: {
-    button: 'button-base',
+    variant: 'button-base',
     disabled: true,
     loading: true,
     colorLoading: 'white',
@@ -100,7 +100,7 @@ export const LoadingDisabledButton: Story = {
 
 export const GhostButton: Story = {
   args: {
-    button: 'button-ghost',
+    variant: 'button-ghost',
     title: {
       text: 'body-medium-accent',
       color: '',
@@ -110,7 +110,7 @@ export const GhostButton: Story = {
 
 export const GhostLoadingDisabledButton: Story = {
   args: {
-    button: 'button-ghost',
+    variant: 'button-ghost',
     disabled: true,
     loading: true,
     colorLoading: 'disabled',
@@ -123,7 +123,7 @@ export const GhostLoadingDisabledButton: Story = {
 
 export const GhostDisabledButton: Story = {
   args: {
-    button: 'button-ghost',
+    variant: 'button-ghost',
     disabled: true,
     title: {
       text: 'body-medium-accent',
@@ -134,7 +134,7 @@ export const GhostDisabledButton: Story = {
 
 export const AccentButton: Story = {
   args: {
-    button: 'button-accent',
+    variant: 'button-accent',
     title: {
       text: 'body-medium-accent',
       color: 'primary',
