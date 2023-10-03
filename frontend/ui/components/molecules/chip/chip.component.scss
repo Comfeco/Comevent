@@ -1,9 +1,9 @@
 .content-chip {
-  @apply h-[35px] rounded-2xl bg-primary-light-2 w-max flex flex-row gap-2 px-2 items-center cursor-pointer;
+  @apply h-[35px] rounded-2xl bg-primary-light-2 w-max flex flex-row gap-2 px-2 items-center cursor-default;
 }
 
-.content-chip:not(.content-chip-disabled):hover {
-  @apply bg-white-2 shadow-material-level1;
+.content-chip-hover:not(.content-chip-disabled):hover {
+  @apply bg-white-2 shadow-material-level1 cursor-pointer;
 }
 
 .content-chip-disabled {

@@ -5,6 +5,7 @@ import {
   ChipComponent,
   ChipType,
   IconClearComponent,
+  IconUserComponent,
   TitleComponent,
 } from '../../../components';
 
@@ -17,7 +18,12 @@ const meta: Meta<StoryComponent> = {
   //👇 Import both components to allow component compositing with Storybook
   decorators: [
     moduleMetadata({
-      declarations: [ChipComponent, TitleComponent, IconClearComponent],
+      declarations: [
+        ChipComponent,
+        TitleComponent,
+        IconClearComponent,
+        IconUserComponent,
+      ],
       imports: [CommonModule],
     }),
     //👇 Wrap our stories with a decorator (optional)
@@ -44,12 +50,29 @@ const meta: Meta<StoryComponent> = {
     },
   }, */
   render: (args: StoryComponent) => {
-    const { colorIcon, colorText, text, type, disabled } = args;
+    const {
+      colorIcon,
+      colorText,
+      text,
+      type,
+      disabled,
+      icon,
+      close = true,
+      hover = true,
+    } = args;
 
     return {
-      props: { colorIcon, colorText, text, type, disabled },
+      props: { colorIcon, colorText, text, type, disabled, icon, close, hover },
       template: `
-      <c-chip [colorIcon]="colorIcon" [colorText]="colorText" [text]="text" [type]="type" [disabled]="disabled" />
+      <c-chip
+        [colorIcon]="colorIcon"
+        [colorText]="colorText"
+        [text]="text" [type]="type"
+        [disabled]="disabled"
+        [icon]="icon"
+        [close]="close"
+        [hover]="hover"
+      />
       `,
     };
   },
@@ -69,5 +92,14 @@ export const BaseChipDisabled: Story = {
   args: {
     ...BaseChip.args,
     disabled: true,
+  },
+};
+
+export const BaseChipIcon: Story = {
+  args: {
+    ...BaseChip.args,
+    icon: true,
+    close: false,
+    hover: false,
   },
 };

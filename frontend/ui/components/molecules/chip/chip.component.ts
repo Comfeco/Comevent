@@ -8,12 +8,17 @@ import {
 } from '@angular/core';
 import { ChipType } from '.';
 import { TitleComponent } from '../../atoms';
-import { IconClearComponent } from '../../atoms/icons';
+import { IconClearComponent, IconUserComponent } from '../../atoms/icons';
 
 @Component({
   standalone: true,
   selector: 'c-chip',
-  imports: [CommonModule, IconClearComponent, TitleComponent],
+  imports: [
+    CommonModule,
+    IconClearComponent,
+    TitleComponent,
+    IconUserComponent,
+  ],
   templateUrl: './chip.component.html',
   styleUrls: ['./chip.component.scss'],
   encapsulation: ViewEncapsulation.Emulated,
@@ -26,6 +31,9 @@ export class ChipComponent implements ChipType {
   @Input() colorIcon: ChipType['colorIcon'] = 'error';
   @Input() type: ChipType['type'] = 'outlined';
   @Input() disabled = false;
+  @Input() icon = false;
+  @Input() close = true;
+  @Input() hover = true;
 
   @HostListener('mouseenter') onMouseEnter() {
     if (!this.disabled) {

@@ -1,6 +1,18 @@
-<div [ngClass]="{ 'content-chip-disabled': disabled }" class="content-chip">
+<div
+  [ngClass]="{
+    'content-chip-disabled': disabled,
+    'content-chip-hover': hover
+  }"
+  class="content-chip"
+>
+  <icon-user *ngIf="icon" />
   <c-title text="body-medium" [color]="!disabled ? 'primary' : 'white'">
     Text example
   </c-title>
-  <icon-clear [parentHovered]="isHovered" color="gray" type="solid" />
+  <icon-clear
+    *ngIf="close"
+    [parentHovered]="isHovered"
+    color="gray"
+    type="solid"
+  />
 </div>

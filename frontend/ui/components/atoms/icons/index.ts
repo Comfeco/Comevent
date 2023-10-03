@@ -5,4 +5,5 @@ export * from './icon-hidden-pass';
 export * from './icon-loading';
 export * from './icon-pass/icon-pass.component';
 export * from './icon-show-pass';
+export * from './icon-user';
 export * from './icon.interface';
