@@ -11,13 +11,13 @@ import {
   NG_VALUE_ACCESSOR,
   ReactiveFormsModule,
 } from '@angular/forms';
-import { ControlValueAccesorDirective } from '../..';
 import {
   ErrorInputComponent,
   LabelComponent,
   TitleComponent,
 } from '../../atoms';
 import { IconLoadingComponent } from '../../atoms/icons';
+import { ControlValueAccesorDirective } from '../../shared/directives/control-value-accesor.directive';
 import { SelectType } from './select.interface';
 
 @Component({
@@ -51,4 +51,6 @@ export class SelectComponent<T>
   @Input() options: T[] = [];
   @Input() id = '';
   @Input() name = '';
+  @Input() placeholder = '';
+  @Input() disabled = false;
 }

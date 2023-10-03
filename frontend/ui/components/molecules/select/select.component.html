@@ -1,5 +1,12 @@
-<div *ngIf="control" class="content-select">
-  <select [formControl]="control" name="" [id]="id">
+<div *ngIf="control" class="content-select-master">
+  <select
+    class="content-select"
+    class=""
+    [formControl]="control"
+    name=""
+    [id]="id"
+  >
+    <option value="" disabled selected hidden>{{ placeholder }}</option>
     <option *ngFor="let option of options" [value]="option">
       {{ option }}
     </option>

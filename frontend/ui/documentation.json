@@ -1274,7 +1274,7 @@
         },
         {
             "name": "SelectComponent",
-            "id": "component-SelectComponent-ef2bb4db67a121ebbd33eee03e130aff95047c48d98373d68e801806aa7b9deb197a23428702d072ca3b8a296b0c2318a8ac2890a12008b7062cf47b0f0399c5",
+            "id": "component-SelectComponent-cc4dbeb366daa7b653f13afa76f5b876f98350415d287ef029a4a0a42531115fb3487d24e67566fe5cf10946857ce786f69d9079cc493d29a45d8deab28a9de4",
             "file": "frontend/ui/components/molecules/select/select.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -1301,11 +1301,29 @@
             "hostDirectives": [],
             "inputsClass": [
                 {
+                    "name": "disabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 55,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
                     "name": "id",
                     "defaultValue": "''",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 46,
+                    "line": 52,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "name",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 53,
                     "type": "string",
                     "decorators": []
                 },
@@ -1314,8 +1332,17 @@
                     "defaultValue": "[]",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 45,
+                    "line": 51,
                     "type": "T[]",
+                    "decorators": []
+                },
+                {
+                    "name": "placeholder",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 54,
+                    "type": "string",
                     "decorators": []
                 }
             ],
@@ -1330,6 +1357,14 @@
             "imports": [
                 {
                     "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "FormsModule",
+                    "type": "module"
+                },
+                {
+                    "name": "ReactiveFormsModule",
                     "type": "module"
                 },
                 {
@@ -1352,7 +1387,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n  forwardRef,\n} from '@angular/core';\nimport { NG_VALUE_ACCESSOR } from '@angular/forms';\nimport { ControlValueAccesorDirective } from '../..';\nimport {\n  ErrorInputComponent,\n  LabelComponent,\n  TitleComponent,\n} from '../../atoms';\nimport { IconLoadingComponent } from '../../atoms/icons';\nimport { SelectType } from './select.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-select',\n  imports: [\n    CommonModule,\n    TitleComponent,\n    IconLoadingComponent,\n    LabelComponent,\n    ErrorInputComponent,\n  ],\n  templateUrl: './select.component.html',\n  styleUrls: ['./select.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  providers: [\n    {\n      provide: NG_VALUE_ACCESSOR,\n      useExisting: forwardRef(() => SelectComponent),\n      multi: true,\n    },\n  ],\n})\nexport class SelectComponent<T>\n  extends ControlValueAccesorDirective<T>\n  implements SelectType<T>\n{\n  @Input() options: T[] = [];\n  @Input() id = '';\n}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n  forwardRef,\n} from '@angular/core';\nimport {\n  FormsModule,\n  NG_VALUE_ACCESSOR,\n  ReactiveFormsModule,\n} from '@angular/forms';\nimport { ControlValueAccesorDirective } from '../..';\nimport {\n  ErrorInputComponent,\n  LabelComponent,\n  TitleComponent,\n} from '../../atoms';\nimport { IconLoadingComponent } from '../../atoms/icons';\nimport { SelectType } from './select.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-select',\n  imports: [\n    CommonModule,\n    FormsModule,\n    ReactiveFormsModule,\n    TitleComponent,\n    IconLoadingComponent,\n    LabelComponent,\n    ErrorInputComponent,\n  ],\n  templateUrl: './select.component.html',\n  styleUrls: ['./select.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  providers: [\n    {\n      provide: NG_VALUE_ACCESSOR,\n      useExisting: forwardRef(() => SelectComponent),\n      multi: true,\n    },\n  ],\n})\nexport class SelectComponent<T>\n  extends ControlValueAccesorDirective<T>\n  implements SelectType<T>\n{\n  @Input() options: T[] = [];\n  @Input() id = '';\n  @Input() name = '';\n  @Input() placeholder = '';\n  @Input() disabled = false;\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -1365,7 +1400,7 @@
             "implements": [
                 "SelectType"
             ],
-            "templateData": "<div *ngIf=\"control\" class=\"content-select\">\n  <select name=\"\" [id]=\"id\">\n    <option *ngFor=\"let option of options\" [value]=\"option\">\n      {{ option }}\n    </option>\n  </select>\n  <c-error-input></c-error-input>\n</div>\n"
+            "templateData": "<div *ngIf=\"control\" class=\"content-select\">\n  <select [formControl]=\"control\" name=\"\" [id]=\"id\">\n    <option value=\"\" disabled selected hidden>{{ placeholder }}</option>\n    <option *ngFor=\"let option of options\" [value]=\"option\">\n      {{ option }}\n    </option>\n  </select>\n  <c-error-input\n    *ngIf=\"!isValid() && !control!.disabled\"\n    [formContained]=\"control\"\n    [controlName]=\"name\"\n  ></c-error-input>\n</div>\n"
         },
         {
             "name": "StepComponent",
@@ -1638,6 +1673,16 @@
                 "defaultValue": "{\n  args: {\n    ...BaseChip.args,\n    icon: true,\n    close: false,\n    hover: false,\n    disabled: true,\n  },\n}"
             },
             {
+                "name": "BaseSelect",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<number>",
+                "defaultValue": "{\n  args: {\n    id: '0',\n    name: 'select',\n    options: numbers,\n    placeholder: 'Select some option',\n    disabled: false,\n    label: {\n      css: 'label-primary',\n    },\n  },\n}"
+            },
+            {
                 "name": "BasicStepCompleted",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1791,11 +1836,31 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<StoryComponent<number>>",
+                "defaultValue": "{\n  title: 'Components/Molecules/Select',\n  component: SelectComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [SelectComponent, LabelComponent, ErrorInputComponent],\n      imports: [CommonModule, FormsModule, ReactiveFormsModule],\n    }),\n  ],\n  argTypes: {\n    options: {\n      control: { type: 'select', options: numbers },\n    },\n    id: {\n      control: 'text',\n    },\n    name: {\n      control: 'text',\n    },\n    placeholder: {\n      control: 'text',\n    },\n    disabled: {\n      control: 'boolean',\n    },\n  },\n  render: (args: StoryComponent<number>) => {\n    const { label, id, name, options, placeholder, disabled } = args;\n    const { css, ...labelProps } = label;\n\n    return {\n      props: {\n        id,\n        name,\n        options,\n        css,\n        labelProps,\n        sharedFormControl,\n        placeholder,\n        numbers,\n        disabled,\n      },\n      template: `\n      <c-label [css]=\"css\" [for]=\"id\">\n        Label text\n        <c-select\n        [placeholder]=\"placeholder\"\n        [formControl]=\"sharedFormControl\"\n        [disabled]=\"disabled\"\n        [options]=\"numbers\"\n        [id]=\"id\"\n        [name]=\"name\"></c-select>\n      </c-label>\n      `,\n    };\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<StoryComponent>",
                 "defaultValue": "{\n  title: 'Components/Molecules/Step',\n  component: StepComponent,\n  // ? Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        StepComponent,\n        IconAreaComponent,\n        IconPassComponent,\n        IconBasicComponent,\n      ],\n      imports: [CommonModule],\n    }),\n    /* // ? Decorator to handle logic related to args\n    (Story, context) => {\n      // ? If the logo is 'check', set the status to 'Completed'\n      if (context.args.logo === 'check') {\n        context.args.status = 'Completed';\n      }\n\n      return Story(context);\n    }, */\n  ],\n  argTypes: {\n    status: {\n      options: ['Pending', 'In Progress', 'Completed'],\n      control: { type: 'radio' },\n    },\n    logo: {\n      options: ['basic', 'pass', 'area'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { logo, status } = args;\n\n    return {\n      props: { logo, status },\n      template: `\n        <c-step\n        [status]=\"status\"\n        [logo]=\"logo\"\n        />\n      `,\n    };\n  },\n}"
+            },
+            {
+                "name": "numbers",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[0, 1, 2, 3]"
             },
             {
                 "name": "PasswordStepCompleted",
@@ -1852,6 +1917,16 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "new FormControl('', Validators.required)"
+            },
+            {
+                "name": "sharedFormControl",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1950,6 +2025,17 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
+                "rawtype": "StoryObj<StoryComponent<T>>",
+                "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 180
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
                 "rawtype": "StoryObj<StoryComponent>",
                 "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
                 "deprecated": false,
@@ -2005,6 +2091,17 @@
                 "name": "StoryComponent",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
+                "rawtype": "",
+                "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 190
+            },
+            {
+                "name": "StoryComponent",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
                 "rawtype": "StepType",
                 "file": "frontend/ui/stories/molecules/step/step.component.stories.ts",
                 "deprecated": false,
@@ -2018,6 +2115,17 @@
                 "subtype": "typealias",
                 "rawtype": "literal type",
                 "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "StoryDetails",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "literal type",
+                "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -2304,6 +2412,48 @@
                     "defaultValue": "{\n  title: 'Components/Molecules/Chip',\n  component: ChipComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        ChipComponent,\n        TitleComponent,\n        IconClearComponent,\n        IconUserComponent,\n      ],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  /* argTypes: {\n    disabled: {\n      control: 'boolean',\n    },\n    colorText: {\n      options: ['', 'white', 'black', 'primary', 'disabled'],\n      control: 'select',\n    },\n    text: {\n      control: 'text',\n    },\n    colorIcon: {\n      options: ['error', 'gray'],\n      control: 'select',\n    },\n    type: {\n      options: ['outlined', 'solid'],\n      control: 'select',\n    },\n  }, */\n  render: (args: StoryComponent) => {\n    const {\n      colorIcon,\n      colorText,\n      text,\n      type,\n      disabled = false,\n      icon,\n      close = true,\n      hover = true,\n      avatar = false,\n    } = args;\n\n    return {\n      props: {\n        colorIcon,\n        colorText,\n        text,\n        type,\n        disabled,\n        icon,\n        close,\n        hover,\n        avatar,\n      },\n      template: `\n      <c-chip\n        [colorIcon]=\"colorIcon\"\n        [colorText]=\"colorText\"\n        [text]=\"text\" [type]=\"type\"\n        [disabled]=\"disabled\"\n        [icon]=\"icon\"\n        [close]=\"close\"\n        [hover]=\"hover\"\n        [avatar]=\"avatar\"\n      />\n      `,\n    };\n  },\n}"
                 }
             ],
+            "frontend/ui/stories/molecules/select/select.component.stories.ts": [
+                {
+                    "name": "BaseSelect",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<number>",
+                    "defaultValue": "{\n  args: {\n    id: '0',\n    name: 'select',\n    options: numbers,\n    placeholder: 'Select some option',\n    disabled: false,\n    label: {\n      css: 'label-primary',\n    },\n  },\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<StoryComponent<number>>",
+                    "defaultValue": "{\n  title: 'Components/Molecules/Select',\n  component: SelectComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [SelectComponent, LabelComponent, ErrorInputComponent],\n      imports: [CommonModule, FormsModule, ReactiveFormsModule],\n    }),\n  ],\n  argTypes: {\n    options: {\n      control: { type: 'select', options: numbers },\n    },\n    id: {\n      control: 'text',\n    },\n    name: {\n      control: 'text',\n    },\n    placeholder: {\n      control: 'text',\n    },\n    disabled: {\n      control: 'boolean',\n    },\n  },\n  render: (args: StoryComponent<number>) => {\n    const { label, id, name, options, placeholder, disabled } = args;\n    const { css, ...labelProps } = label;\n\n    return {\n      props: {\n        id,\n        name,\n        options,\n        css,\n        labelProps,\n        sharedFormControl,\n        placeholder,\n        numbers,\n        disabled,\n      },\n      template: `\n      <c-label [css]=\"css\" [for]=\"id\">\n        Label text\n        <c-select\n        [placeholder]=\"placeholder\"\n        [formControl]=\"sharedFormControl\"\n        [disabled]=\"disabled\"\n        [options]=\"numbers\"\n        [id]=\"id\"\n        [name]=\"name\"></c-select>\n      </c-label>\n      `,\n    };\n  },\n}"
+                },
+                {
+                    "name": "numbers",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "defaultValue": "[0, 1, 2, 3]"
+                },
+                {
+                    "name": "sharedFormControl",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "new FormControl('', Validators.required)"
+                }
+            ],
             "frontend/ui/.storybook/main.ts": [
                 {
                     "name": "config",
@@ -2573,6 +2723,41 @@
                     "kind": 184
                 }
             ],
+            "frontend/ui/stories/molecules/select/select.component.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<StoryComponent<T>>",
+                    "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 180
+                },
+                {
+                    "name": "StoryComponent",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "",
+                    "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 190
+                },
+                {
+                    "name": "StoryDetails",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "literal type",
+                    "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
             "frontend/ui/stories/molecules/step/step.component.stories.ts": [
                 {
                     "name": "Story",
@@ -2746,7 +2931,7 @@
                 "linktype": "component",
                 "name": "SelectComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/3",
+                "coverageCount": "0/6",
                 "status": "low"
             },
             {
@@ -2979,6 +3164,46 @@
             },
             {
                 "filePath": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "sharedFormControl",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/select/select.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "BaseSelect",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/select/select.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/select/select.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "numbers",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/stories/molecules/select/select.component.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
