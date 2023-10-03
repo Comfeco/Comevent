@@ -45,7 +45,7 @@ const meta: Meta<StoryComponent> = {
     }),
   ],
   argTypes: {
-    css: {
+    variant: {
       options: ['input-base', 'input-secondary', 'input-tertiary'],
       control: { type: 'select' },
     },
@@ -68,7 +68,7 @@ const meta: Meta<StoryComponent> = {
       <c-label [css]="css" [for]="inputProps.id">
         Label text
         <c-input
-        [css]="inputProps.css"
+        [variant]="inputProps.css"
         [type]="inputProps.type"
         [placeholder]="inputProps.placeholder"
         [formControl]="sharedFormControl"
@@ -86,7 +86,7 @@ export default meta;
 
 export const PrimaryInput: Story = {
   args: {
-    css: 'input-base',
+    variant: 'input-base',
     type: 'text',
     placeholder: 'Entry text',
     name: 'example',

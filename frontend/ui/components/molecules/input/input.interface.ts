@@ -1,7 +1,7 @@
 import { FormControl, FormGroup } from '@angular/forms';
 
 type RequiredInputType = {
-  css: 'input-base' | 'input-secondary' | 'input-tertiary';
+  variant: 'input-base' | 'input-secondary' | 'input-tertiary';
   name: string;
   type: 'number' | 'text' | 'email' | 'password';
   id: string;
