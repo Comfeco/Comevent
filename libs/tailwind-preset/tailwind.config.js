@@ -27,8 +27,8 @@ module.exports = {
           darkMode: '#FFDA77',
         },
         white: {
-          1: '#F9F9F9',
-          2: '#FFFFFF',
+          1: '#FFFFFF',
+          2: '#F9F9F9',
         },
         black: {
           1: '#2E2E2E',

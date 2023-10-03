@@ -1,7 +1,7 @@
-.text-custom {
-  @apply text-secondary-dark;
+.active {
+  @apply bg-primary-light-2 text-primary;
 }
 
-.active {
-  @apply flex justify-center p-4 bg-blue-200 rounded-md font-bold text-blue-700;
+:host {
+  @apply flex w-screen h-screen justify-center items-center;
 }

@@ -6,46 +6,37 @@ import {
   withComponentInputBinding,
 } from '@angular/router';
 import { ResetPasswordGuard } from '../../common/guards';
-import { LayoutLoginComponent } from '../../common/layouts';
 import { LayoutAuthComponent } from './components/layout/layout-auth.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: LayoutLoginComponent,
+    component: LayoutAuthComponent,
     children: [
       {
-        path: '',
-        component: LayoutAuthComponent,
-        children: [
-          {
-            path: 'login',
-            loadChildren: () =>
-              import('./').then((module) => module.LoginModule),
-          },
-          {
-            path: 'register',
-            loadChildren: () =>
-              import('./').then((module) => module.RegisterModule),
-          },
-          {
-            path: '',
-            redirectTo: 'login',
-            pathMatch: 'full',
-          },
-        ],
+        path: 'login',
+        loadChildren: () => import('./').then((module) => module.LoginModule),
       },
       {
-        path: 'recover',
-        loadChildren: () => import('./').then((module) => module.RecoverModule),
-      },
-      {
-        path: 'reset-password',
+        path: 'register',
         loadChildren: () =>
-          import('./').then((module) => module.ResetPassModule),
-        canActivate: [ResetPasswordGuard],
+          import('./').then((module) => module.RegisterModule),
+      },
+      {
+        path: '',
+        redirectTo: 'login',
+        pathMatch: 'full',
       },
     ],
+  },
+  {
+    path: 'recover',
+    loadChildren: () => import('./').then((module) => module.RecoverModule),
+  },
+  {
+    path: 'reset-password',
+    loadChildren: () => import('./').then((module) => module.ResetPassModule),
+    canActivate: [ResetPasswordGuard],
   },
 ];
 
