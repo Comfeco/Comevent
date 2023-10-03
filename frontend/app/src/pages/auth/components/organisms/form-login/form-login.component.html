@@ -3,7 +3,7 @@
   (ngSubmit)="onSubmit()"
   class="w-full flex flex-col gap-6 items-center"
 >
-  <div class="w-full flex flex-col gap-4 my-14">
+  <div class="flex flex-col gap-6 my-14 w-[400px]">
     <div class="relative">
       <c-label variant="label-base" for="email">
         Email
@@ -32,9 +32,30 @@
         />
       </c-label>
     </div>
-    <a class="underline" routerLink="/auth/recover">
+    <a
+      class="title-h6 text-primary text-center hover:underline"
+      routerLink="/auth/recover"
+    >
       have you forgotten your password ?
     </a>
+
+    <div class="flex flex-col gap-4">
+      <c-title variant="title-h6">Or use your networks</c-title>
+      <div class="flex flex-grow gap-6">
+        <c-button class="flex-1" variant="button-ghost" type="submit">
+          <div class="flex justify-center w-full gap-2 items-center">
+            <icon-facebook />
+            <c-title variant="title-h6" color="primary">Facebook</c-title>
+          </div>
+        </c-button>
+        <c-button class="flex-1" variant="button-ghost" type="submit">
+          <div class="flex justify-center w-full gap-2 items-center">
+            <icon-google />
+            <c-title variant="title-h6" color="primary">Google</c-title>
+          </div>
+        </c-button>
+      </div>
+    </div>
   </div>
   <div class="flex relative w-full justify-end">
     <c-button variant="button-base" type="submit" [disabled]="!formLogin.valid">
