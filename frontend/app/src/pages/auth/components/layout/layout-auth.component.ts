@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'layout-auth',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./layout-auth.component.scss'],
 })
 export class LayoutAuthComponent {
-  title = 'frontend-app';
+  protected router = inject(Router);
+
+  get isRegisterRoute(): boolean {
+    return this.router.url === '/auth/register';
+  }
 }

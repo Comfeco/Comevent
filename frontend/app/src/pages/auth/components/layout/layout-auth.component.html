@@ -1,25 +1,28 @@
-<div
-  class="flex flex-col bg-white-1 p-4 rounded-xl shadow-neutral-level1 h-auto w-[560px]"
->
-  <div class="flex flex-grow gap-4">
-    <a
-      class="flex justify-center items-center bg-transparent rounded-tl-xl flex-1 title-h4 h-[78px]"
-      href=""
-      routerLink="/auth/login"
-      routerLinkActive="active"
-    >
-      Log in
-    </a>
-    <a
-      class="flex justify-center items-center bg-transparent rounded-tr-xl flex-1 title-h4 h-[78px]"
-      href=""
-      routerLink="/auth/register"
-      routerLinkActive="active"
-    >
-      Register
-    </a>
-  </div>
+<div class="flex gap-4 flex-col w-[589px]">
+  <c-container-step *ngIf="isRegisterRoute" />
+  <div
+    class="flex flex-col bg-white-1 p-4 rounded-xl shadow-neutral-level1 h-auto w-full"
+  >
+    <div class="flex flex-grow gap-4">
+      <a
+        class="flex justify-center items-center bg-transparent rounded-tl-xl flex-1 title-h4 h-[78px]"
+        href=""
+        routerLink="/auth/login"
+        routerLinkActive="active"
+      >
+        Log in
+      </a>
+      <a
+        class="flex justify-center items-center bg-transparent rounded-tr-xl flex-1 title-h4 h-[78px]"
+        href=""
+        routerLink="/auth/register"
+        routerLinkActive="active"
+      >
+        Register
+      </a>
+    </div>
 
-  <div class="bg-gray-1 w-full border-2 rounded-full mt-2"></div>
-  <router-outlet></router-outlet>
+    <div class="bg-gray-1 w-full border-2 rounded-full mt-2"></div>
+    <router-outlet></router-outlet>
+  </div>
 </div>

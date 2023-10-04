@@ -4,7 +4,7 @@ import {
   Component,
   ViewEncapsulation,
 } from '@angular/core';
-import { StepComponent } from '../../molecules/step/step.component';
+import { StepComponent } from '@ui/components';
 
 @Component({
   standalone: true,
