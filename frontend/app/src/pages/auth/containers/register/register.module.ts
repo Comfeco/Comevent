@@ -9,6 +9,7 @@ import {
   TitleComponent,
 } from '@ui/components';
 import { FormRegisterStepOneModule } from '../../components/organisms/register-step-one';
+import { FormRegisterStepTwoModule } from '../../components/organisms/register-step-two/register-step-two.module';
 import { RegisterComponent } from './register.component';
 
 const routes: Routes = [
@@ -25,6 +26,7 @@ const routes: Routes = [
     ReactiveFormsModule,
     RouterModule.forChild(routes),
     FormRegisterStepOneModule,
+    FormRegisterStepTwoModule,
     TitleComponent,
     InputComponent,
     LabelComponent,

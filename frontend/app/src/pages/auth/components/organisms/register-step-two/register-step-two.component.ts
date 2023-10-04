@@ -1,7 +1,5 @@
-import { Component, OnInit, inject } from '@angular/core';
-import { FormBuilder, FormGroup, ValidatorFn } from '@angular/forms';
-import { ValidatorsService } from '@utils';
-import { RegisterStateService } from '../../../service/state/register.state.service';
+import { Component, Input } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 /* interface IRegisterStepTwo {
   password: string;
@@ -13,15 +11,20 @@ import { RegisterStateService } from '../../../service/state/register.state.serv
   templateUrl: './register-step-two.component.html',
   styleUrls: ['./register-step-two.component.scss'],
 })
-export class FormRegisterStepTwoComponent implements OnInit {
-  private formBuilder = inject(FormBuilder);
+export class FormRegisterStepTwoComponent {
+  @Input({ required: true }) parentForm!: FormGroup;
+  /* private formBuilder = inject(FormBuilder);
   private registerService = inject(RegisterStateService);
   protected validatorsService = inject(ValidatorsService);
 
   formRegisterStepTwo!: FormGroup;
-  customValidator!: ValidatorFn;
+  customValidator!: ValidatorFn; */
 
-  ngOnInit(): void {
+  get stepTwoForm(): FormGroup {
+    return this.parentForm.get('stepTwo') as FormGroup;
+  }
+
+  /* ngOnInit(): void {
     this.customValidator = this.validatorsService.similarInputs(
       'password',
       'passRepeat'
@@ -42,5 +45,5 @@ export class FormRegisterStepTwoComponent implements OnInit {
     if (!this.formRegisterStepTwo.valid) return;
 
     this.registerService.onRegister(this.formRegisterStepTwo);
-  }
+  } */
 }

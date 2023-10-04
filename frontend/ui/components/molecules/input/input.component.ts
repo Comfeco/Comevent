@@ -1,11 +1,5 @@
 import { CommonModule } from '@angular/common';
-import {
-  ChangeDetectionStrategy,
-  Component,
-  Input,
-  ViewEncapsulation,
-  forwardRef,
-} from '@angular/core';
+import { Component, Input, ViewEncapsulation, forwardRef } from '@angular/core';
 import {
   FormsModule,
   NG_VALUE_ACCESSOR,
@@ -44,7 +38,6 @@ import { InputType } from './input.interface';
   templateUrl: './input.component.html',
   styleUrls: ['./input.component.scss'],
   encapsulation: ViewEncapsulation.Emulated,
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class InputComponent<T>
   extends ControlValueAccesorDirective<T>

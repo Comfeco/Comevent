@@ -37,7 +37,7 @@
     </button>
   </div>
   <c-error-input
-    *ngIf="!isValid() && !control!.disabled"
+    *ngIf="!isValid() && !control!.disabled && control!.touched"
     [formContained]="control"
     [controlName]="name"
   ></c-error-input>

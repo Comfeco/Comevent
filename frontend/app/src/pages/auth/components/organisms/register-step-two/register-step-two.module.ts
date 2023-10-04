@@ -11,18 +11,10 @@ import {
 } from '@ui/components';
 import { FormRegisterStepTwoComponent } from './register-step-two.component';
 
-/* const routes: Routes = [
-  {
-    path: '',
-    component: FormRegisterStepTwoComponent,
-  },
-]; */
-
 @NgModule({
   declarations: [FormRegisterStepTwoComponent],
   imports: [
     CommonModule,
-    /* RouterModule.forChild(routes), */
     ReactiveFormsModule,
     TitleComponent,
     InputComponent,

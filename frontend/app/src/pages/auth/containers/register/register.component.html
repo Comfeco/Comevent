@@ -1,8 +1,38 @@
-<div class="w-full flex-col gap-6 items-center">
-  <register-step-one></register-step-one>
-  <div class="flex relative w-full justify-end">
-    <c-button variant="button-base" type="submit">
+<form (submit)="submit()" class="w-full flex-col gap-6 items-center">
+  <register-step-one
+    [parentForm]="formRegister"
+    *ngIf="step === 1"
+  ></register-step-one>
+  <register-step-two
+    [parentForm]="formRegister"
+    *ngIf="step === 2"
+  ></register-step-two>
+  <div
+    [ngClass]="{
+      'justify-between': step > 1,
+      'justify-end': step === 1,
+      'flex relative w-full': true
+    }"
+  >
+    <!-- Botón de Previous -->
+    <c-button
+      *ngIf="step > 1"
+      (click)="previous()"
+      variant="button-base"
+      type="button"
+    >
+      <c-title variant="title-h6" color="white">Previous</c-title>
+    </c-button>
+
+    <!-- Botón de Next -->
+    <c-button
+      (click)="next()"
+      variant="button-base"
+      type="submit"
+      type="button"
+      [disabled]="!isCurrentStepValid()"
+    >
       <c-title variant="title-h6" color="white">Next</c-title>
     </c-button>
   </div>
-</div>
+</form>

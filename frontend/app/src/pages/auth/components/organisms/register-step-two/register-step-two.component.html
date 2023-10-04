@@ -1,15 +1,11 @@
-<form
-  [formGroup]="formRegisterStepTwo"
-  (ngSubmit)="onRegister()"
-  class="w-full flex flex-col gap-6 items-center"
->
+<form [formGroup]="stepTwoForm" class="w-full flex flex-col gap-6 items-center">
   <div class="flex flex-col gap-6 my-14 w-[400px]">
     <c-label variant="label-base" for="password">
       Password
       <c-input
         variant="input-base"
         type="password"
-        placeholder="Jhon Doe"
+        placeholder="*******"
         formControlName="password"
         name="password"
         id="password"
@@ -20,20 +16,11 @@
       <c-input
         variant="input-base"
         type="password"
-        placeholder="jhonDoe@example.com"
+        placeholder="*******"
         formControlName="passRepeat"
         name="passRepeat"
         id="passRepeat"
       />
     </c-label>
-  </div>
-  <div class="flex relative w-full justify-end">
-    <c-button
-      variant="button-base"
-      type="submit"
-      [disabled]="!formRegisterStepTwo.valid"
-    >
-      <c-title variant="title-h6" color="white">Next</c-title>
-    </c-button>
   </div>
 </form>
