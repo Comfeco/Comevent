@@ -3,8 +3,10 @@ import {
   ChangeDetectionStrategy,
   Component,
   ViewEncapsulation,
+  inject,
 } from '@angular/core';
 import { StepComponent } from '@ui/components';
+import { RegisterUtilsService } from '../../../service/utils';
 
 @Component({
   standalone: true,
@@ -15,4 +17,6 @@ import { StepComponent } from '@ui/components';
   encapsulation: ViewEncapsulation.Emulated,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ContainerStepComponent {}
+export class ContainerStepComponent {
+  protected registerService = inject(RegisterUtilsService);
+}

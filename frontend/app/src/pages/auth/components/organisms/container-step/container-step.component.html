@@ -1,7 +1,40 @@
 <div class="content-container-step">
-  <c-step logo="basic" status="In Progress" />
-  <div class="h-1 rounded-full bg-gray-2 w-[80px] mb-12 mx-7"></div>
-  <c-step logo="pass" status="Pending" />
-  <div class="h-1 rounded-full bg-gray-2 w-[80px] mb-12 mx-7"></div>
-  <c-step logo="area" status="Pending" />
+  <c-step
+    logo="basic"
+    [status]="this.registerService.step() === 1 ? 'In Progress' : 'Completed'"
+  />
+  <div
+    [ngClass]="{
+      'bg-gray-2': this.registerService.step() < 2,
+      'bg-success': this.registerService.step() > 1,
+      'h-1 rounded-full w-[80px] mb-12 mx-7': true
+    }"
+  ></div>
+  <c-step
+    logo="pass"
+    [status]="
+      this.registerService.step() === 2
+        ? 'In Progress'
+        : this.registerService.step() > 2
+        ? 'Completed'
+        : 'Pending'
+    "
+  />
+  <div
+    [ngClass]="{
+      'bg-gray-2': this.registerService.step() < 3,
+      'bg-success': this.registerService.step() > 2,
+      'h-1 rounded-full w-[80px] mb-12 mx-7': true
+    }"
+  ></div>
+  <c-step
+    logo="area"
+    [status]="
+      this.registerService.step() === 3
+        ? 'In Progress'
+        : this.registerService.step() > 3
+        ? 'Completed'
+        : 'Pending'
+    "
+  />
 </div>

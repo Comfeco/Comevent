@@ -6,6 +6,7 @@ import {
   ValidatorFn,
 } from '@angular/forms';
 import { ValidatorsService } from '@utils';
+import { RegisterUtilsService } from '../../service/utils';
 
 interface IRegisterUser {
   stepOne: FormControl<boolean>;
@@ -25,9 +26,9 @@ interface IRegisterStepOne {
 export class RegisterComponent {
   private _formBuilder = inject(NonNullableFormBuilder);
   protected validatorsService = inject(ValidatorsService);
+  protected registerService = inject(RegisterUtilsService);
   formRegister!: FormGroup;
   customValidator!: ValidatorFn;
-  step = 1;
 
   ngOnInit(): void {
     this.customValidator = this.validatorsService.similarInputs(
@@ -37,13 +38,13 @@ export class RegisterComponent {
 
     this.formRegister = this._formBuilder.group({
       stepOne: this._formBuilder.group({
-        nick: [''],
-        email: [''],
+        nick: ['doe'],
+        email: ['doe@example.com'],
       }),
       stepTwo: this._formBuilder.group(
         {
-          password: [''],
-          passRepeat: [''],
+          password: ['123456'],
+          passRepeat: ['123456'],
         },
         {
           validators: this.customValidator,
@@ -69,8 +70,8 @@ export class RegisterComponent {
   } */
 
   previous() {
-    if (this.step > 1) {
-      this.step--;
+    if (this.registerService.step() > 1) {
+      this.registerService.step.update((value) => --value);
     }
   }
 
@@ -91,24 +92,24 @@ export class RegisterComponent {
   }
 
   next() {
-    if (this.step === 1) {
+    if (this.registerService.step() === 1) {
       if (!this.formRegister.get('stepOne')?.valid) {
         this.markAllAsTouched(this.formRegister.get('stepOne') as FormGroup);
         return;
       }
-      this.step++;
-    } else if (this.step === 2) {
+      this.registerService.step.update((value) => ++value);
+    } else if (this.registerService.step() === 2) {
       if (!this.formRegister.get('stepTwo')?.valid) {
         this.markAllAsTouched(this.formRegister.get('stepTwo') as FormGroup);
         return;
       }
-      this.step++;
+      this.registerService.step.update((value) => ++value);
     }
     // ... y así sucesivamente para otros pasos
   }
 
   isCurrentStepValid(): boolean {
-    switch (this.step) {
+    switch (this.registerService.step()) {
       case 1:
         return this.formRegister.get('stepOne')?.valid || false;
       case 2:
