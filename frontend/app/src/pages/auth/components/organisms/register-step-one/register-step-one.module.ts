@@ -10,18 +10,17 @@ import {
   LabelComponent,
   TitleComponent,
 } from '@ui/components';
-import { FormRegisterStepComponentModule } from '../register-step-one';
-import { FormRegisterComponent } from './form-register.component';
+import { FormRegisterStepOneComponent } from './register-step-one.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: FormRegisterComponent,
+    component: FormRegisterStepOneComponent,
   },
 ];
 
 @NgModule({
-  declarations: [FormRegisterComponent],
+  declarations: [FormRegisterStepOneComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
@@ -32,8 +31,7 @@ const routes: Routes = [
     ButtonComponent,
     IconGoogleComponent,
     IconFacebookComponent,
-    FormRegisterStepComponentModule,
   ],
-  exports: [FormRegisterComponent],
+  exports: [FormRegisterStepOneComponent],
 })
-export class FormRegisterModule {}
+export class FormRegisterStepComponentModule {}

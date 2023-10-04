@@ -1,5 +1,6 @@
 export * from './layout/layout-auth.component';
 export * from './layout/layout-auth.module';
+export * from './organisms/container-step/container-step.component';
 export * from './organisms/form-login/form-login.component';
 export * from './organisms/form-login/form-login.module';
 export * from './organisms/form-recover/form-recover.component';
