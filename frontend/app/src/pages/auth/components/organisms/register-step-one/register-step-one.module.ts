@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
-import { RouterModule, Routes } from '@angular/router';
 import {
   ButtonComponent,
   IconFacebookComponent,
@@ -12,18 +11,18 @@ import {
 } from '@ui/components';
 import { FormRegisterStepOneComponent } from './register-step-one.component';
 
-const routes: Routes = [
+/* const routes: Routes = [
   {
     path: '',
     component: FormRegisterStepOneComponent,
   },
-];
+]; */
 
 @NgModule({
   declarations: [FormRegisterStepOneComponent],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes),
+    /* RouterModule.forChild(routes), */
     ReactiveFormsModule,
     TitleComponent,
     InputComponent,
@@ -34,4 +33,4 @@ const routes: Routes = [
   ],
   exports: [FormRegisterStepOneComponent],
 })
-export class FormRegisterStepComponentModule {}
+export class FormRegisterStepOneModule {}

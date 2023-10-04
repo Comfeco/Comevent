@@ -5,6 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss'],
 })
-export class RegisterComponent {
-  title = 'frontend-app';
-}
+export class RegisterComponent {}

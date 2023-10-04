@@ -4,32 +4,28 @@
   class="w-full flex flex-col gap-6 items-center"
 >
   <div class="flex flex-col gap-6 my-14 w-[400px]">
-    <div class="relative">
-      <c-label variant="label-base" for="email">
-        Email
-        <c-input
-          variant="input-base"
-          type="email"
-          placeholder="jhonDoe@example.com"
-          formControlName="email"
-          name="email"
-          id="email"
-        />
-      </c-label>
-    </div>
-    <div class="relative">
-      <c-label variant="label-base" for="password">
-        Pasword
-        <c-input
-          variant="input-base"
-          type="password"
-          placeholder="*******"
-          formControlName="password"
-          name="password"
-          id="password"
-        />
-      </c-label>
-    </div>
+    <c-label variant="label-base" for="email">
+      Email
+      <c-input
+        variant="input-base"
+        type="email"
+        placeholder="jhonDoe@example.com"
+        formControlName="email"
+        name="email"
+        id="email"
+      />
+    </c-label>
+    <c-label variant="label-base" for="password">
+      Pasword
+      <c-input
+        variant="input-base"
+        type="password"
+        placeholder="*******"
+        formControlName="password"
+        name="password"
+        id="password"
+      />
+    </c-label>
     <a
       class="title-h6 text-primary text-center hover:underline"
       routerLink="/auth/recover"
