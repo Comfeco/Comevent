@@ -14,14 +14,11 @@
           formControlName="email"
           name="email"
           id="email"
-          [additionalValidators]="
-            formUtilities.getValidators(formLogin, 'email')
-          "
         />
       </c-label>
     </div>
     <div class="relative">
-      <c-label>
+      <c-label variant="label-base" for="password">
         Pasword
         <c-input
           variant="input-base"
@@ -29,6 +26,7 @@
           placeholder="*******"
           formControlName="password"
           name="password"
+          id="password"
         />
       </c-label>
     </div>
