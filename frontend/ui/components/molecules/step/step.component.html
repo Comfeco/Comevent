@@ -1,9 +1,9 @@
 <div class="content-global-step">
   <div
     [ngClass]="{
-      'bg-primary': status === 'In Progress',
-      'bg-gray-2': status === 'Pending',
-      'bg-success': status === 'Completed',
+      progress: status === 'In Progress',
+      pending: status === 'Pending',
+      success: status === 'Completed',
       'content-step': true
     }"
   >
@@ -18,7 +18,7 @@
         >
           <path
             [ngClass]="{
-              'stroke-success': status === 'Completed'
+              's-success': status === 'Completed'
             }"
             d="M2 7L7 12L17 2"
             stroke-width="4"
@@ -46,7 +46,7 @@
       (logo === 'basic' && status !== 'Completed') ||
       (logo === 'basic' && status === 'Completed')
     "
-    class="body-small"
+    class="style-body-small"
   >
     Basic data
   </p>
@@ -56,7 +56,7 @@
       (logo === 'pass' && status !== 'Completed') ||
       (logo === 'pass' && status === 'Completed')
     "
-    class="body-small"
+    class="style-body-small"
   >
     Password
   </p>
@@ -66,17 +66,17 @@
       (logo === 'area' && status !== 'Completed') ||
       (logo === 'area' && status === 'Completed')
     "
-    class="body-small"
+    class="style-body-small"
   >
     Area of Interest
   </p>
 
   <p
     [ngClass]="{
-      'text-primary': status === 'In Progress',
-      'text-gray-2': status === 'Pending',
-      'text-success': status === 'Completed',
-      'font-body text-body-3 font-normal': true
+      't-progress': status === 'In Progress',
+      't-pending': status === 'Pending',
+      't-success': status === 'Completed',
+      'style-body-small': true
     }"
   >
     {{ status }}

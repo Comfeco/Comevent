@@ -12,6 +12,7 @@ import { IconType } from '../icon.interface';
   selector: 'icon-pass',
   imports: [CommonModule],
   templateUrl: './icon-pass.component.html',
+  styleUrls: ['./icon-pass.component.scss'],
   encapsulation: ViewEncapsulation.Emulated,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
