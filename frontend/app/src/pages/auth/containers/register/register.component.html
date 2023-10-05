@@ -1,4 +1,4 @@
-<form (submit)="submit()" class="w-full flex-col gap-6 items-center">
+<form (submit)="submit($event)" class="w-full flex-col gap-6 items-center">
   <register-step-one
     [parentForm]="formRegister"
     *ngIf="this.registerUtils.step() === 1"
@@ -32,11 +32,10 @@
     <c-button
       (click)="next()"
       variant="button-base"
-      type="submit"
-      type="button"
+      [type]="this.registerUtils.step() === 3 ? 'submit' : 'button'"
       [disabled]="!isCurrentStepValid()"
     >
-      <c-title variant="title-h6" color="white">Next</c-title>
+      <c-title variant="title-h6" color="white">{{ getButtonText() }}</c-title>
     </c-button>
   </div>
 </form>

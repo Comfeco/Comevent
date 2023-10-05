@@ -38,21 +38,15 @@ export class RegisterComponent {
       'passRepeat'
     );
 
-    /* this.minSelectedValidator =
-      this.validatorsService.minItemsSelectedValidator(
-        () => this.registerUtils.areasSelected(),
-        1
-      ); */
-
     this.formRegister = this._formBuilder.group({
       stepOne: this._formBuilder.group({
-        nick: ['doe'],
-        email: ['doe@example.com'],
+        nick: [''],
+        email: [''],
       }),
       stepTwo: this._formBuilder.group(
         {
-          password: ['123456'],
-          passRepeat: ['123456'],
+          password: [''],
+          passRepeat: [''],
         },
         {
           validators: this.customValidator,
@@ -118,15 +112,24 @@ export class RegisterComponent {
         return this.formRegister.get('stepOne')?.valid || false;
       case 2:
         return this.formRegister.get('stepTwo')?.valid || false;
-      // ... y así sucesivamente para otros pasos
+      case 3:
+        return this.formRegister.get('stepThree')?.valid || false;
       default:
         return false;
     }
   }
 
-  submit() {
-    if (this.formRegister.valid) {
-      // Procesa el registro aquí
+  getButtonText(): string {
+    if (this.registerUtils.step() === 3) {
+      return 'Submit';
     }
+    return 'Next';
+  }
+
+  submit(event: Event) {
+    if (this.formRegister.valid) {
+      console.log(this.formRegister.getRawValue());
+    }
+    event.preventDefault();
   }
 }
