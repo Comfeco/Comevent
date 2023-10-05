@@ -45,8 +45,9 @@ export class ControlValueAccesorDirective<T>
       case 'password':
         return [Validators.required, Validators.minLength(6)];
       case 'text':
+        return [Validators.maxLength(300)];
       default:
-        return [Validators.required];
+        return null;
     }
   }
 

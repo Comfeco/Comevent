@@ -3,26 +3,28 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import {
   ButtonComponent,
+  ChipComponent,
   IconFacebookComponent,
   IconGoogleComponent,
-  InputComponent,
   LabelComponent,
+  SelectComponent,
   TitleComponent,
 } from '@ui/components';
-import { FormRegisterStepOneComponent } from './register-step-one.component';
+import { FormRegisterStepThreeComponent } from './register-step-three.component';
 
 @NgModule({
-  declarations: [FormRegisterStepOneComponent],
+  declarations: [FormRegisterStepThreeComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,
     TitleComponent,
-    InputComponent,
+    SelectComponent,
     LabelComponent,
     ButtonComponent,
     IconGoogleComponent,
     IconFacebookComponent,
+    ChipComponent,
   ],
-  exports: [FormRegisterStepOneComponent],
+  exports: [FormRegisterStepThreeComponent],
 })
-export class FormRegisterStepOneModule {}
+export class FormRegisterStepThreeModule {}

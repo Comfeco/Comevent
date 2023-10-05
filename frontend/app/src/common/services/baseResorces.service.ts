@@ -9,31 +9,75 @@ type ResourceType<T> = T & IResourceBaseObject;
 @Injectable({
   providedIn: 'root',
 })
-export class ResourceService<T> {
-  resources = signal<ResourceType<T>[]>([]);
+export abstract class BaseResourceService<T> {
+  protected resources = signal<ResourceType<T>[]>([]);
 
-  // * common stock manager with: GET, POST, PUT, DELETE
-
-  protected setResource = (resources: ResourceType<T>[]) => {
+  protected setResources(resources: ResourceType<T>[]) {
     this.resources.set(resources);
-  };
+  }
 
-  protected insertResource = (post: ResourceType<T>) => {
-    const index = this.resources().findIndex(
-      (resource) => resource.id === post.id
-    );
+  public insertResource(item: ResourceType<T>, targetSignal = this.resources) {
+    if (this.isStringResource(item)) {
+      if (!targetSignal().includes(item as any)) {
+        targetSignal.set([...targetSignal(), item]);
+      }
+    } else {
+      const post = item;
+      const index = targetSignal().findIndex(
+        (resource: any) => resource.id === post.id
+      );
 
-    if (index !== -1) {
-      this.resources.set([...this.resources(), post]);
-      return;
+      if (index !== -1) {
+        const updatedResources = [...targetSignal()];
+        updatedResources[index] = post;
+        targetSignal.set(updatedResources);
+        return;
+      }
+
+      targetSignal.set([...targetSignal(), post]);
     }
+  }
 
-    this.resources.mutate((resource) => (resource[index] = post));
-  };
+  private isStringResource(item: T): boolean {
+    return typeof item === 'string';
+  }
 
-  protected removeResource = (id: number) => {
+  private insertStringResource(item: string) {
+    if (!this.resources().includes(item as unknown as ResourceType<T>)) {
+      this.resources.set([
+        ...this.resources(),
+        item as unknown as ResourceType<T>,
+      ]);
+    }
+  }
+
+  private insertObjectResource(item: T) {
+    const resourceItem = item as ResourceType<T>;
+    const index = this.findResourceIndex(resourceItem.id!);
+    if (index !== -1) {
+      this.updateResourceAtIndex(resourceItem, index);
+    } else {
+      this.appendResource(resourceItem);
+    }
+  }
+
+  private findResourceIndex(id: number): number {
+    return this.resources().findIndex((resource: any) => resource.id === id);
+  }
+
+  private updateResourceAtIndex(resource: ResourceType<T>, index: number) {
+    const updatedResources = [...this.resources()];
+    updatedResources[index] = resource;
+    this.resources.set(updatedResources);
+  }
+
+  private appendResource(resource: ResourceType<T>) {
+    this.resources.set([...this.resources(), resource]);
+  }
+
+  public removeResource(id: number) {
     this.resources.mutate((resources) =>
-      resources.filter((resource) => resource.id !== id)
+      resources.filter((resource: any) => resource.id !== id)
     );
-  };
+  }
 }

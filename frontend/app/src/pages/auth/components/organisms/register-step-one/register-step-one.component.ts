@@ -8,25 +8,8 @@ import { FormGroup } from '@angular/forms';
 })
 export class FormRegisterStepOneComponent {
   @Input({ required: true }) parentForm!: FormGroup;
-  /* private formBuilder = inject(FormBuilder);
-  private registerService = inject(RegisterStateService);
-
-  formRegisterStepOne!: FormGroup; */
 
   get stepOneForm(): FormGroup {
     return this.parentForm.get('stepOne') as FormGroup;
   }
-
-  /* ngOnInit(): void {
-    this.formRegisterStepOne = this.formBuilder.group({
-      nick: [''],
-      email: [''],
-    });
-  }
-
-  onRegister() {
-    if (!this.formRegisterStepOne.valid) return;
-
-    this.registerService.onRegister(this.formRegisterStepOne);
-  } */
 }

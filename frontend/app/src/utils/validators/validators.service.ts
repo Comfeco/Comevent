@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { AbstractControl, ValidationErrors } from '@angular/forms';
+import { AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
 
 @Injectable({
   providedIn: 'root',
@@ -34,6 +34,38 @@ export class ValidatorsService {
           }
         }
         return null;
+      }
+    };
+  }
+
+  minItemsSelectedValidator(
+    getSelectedItemsFn: () => any[],
+    minRequired: number
+  ): ValidatorFn {
+    console.log('minItemsSelectedValidator called');
+
+    return (control: AbstractControl): ValidationErrors | null => {
+      const selectedItems = getSelectedItemsFn();
+      console.log('Selected items:', getSelectedItemsFn());
+
+      if (selectedItems.length >= minRequired) {
+        console.log('Enough items selected');
+        // If there are enough items selected, remove the notEnoughItemsSelected error
+        // but keep other errors
+        if (control.errors && control.errors['notEnoughItemsSelected']) {
+          delete control.errors['notEnoughItemsSelected'];
+          if (!Object.keys(control.errors).length) {
+            control.setErrors(null);
+          }
+        }
+        return null;
+      } else {
+        console.log('Not enough items selected');
+        // If not enough items are selected, add the notEnoughItemsSelected error
+        // without modifying other existing errors
+        const existingErrors = control.errors || {};
+        control.setErrors({ ...existingErrors, notEnoughItemsSelected: true });
+        return { notEnoughItemsSelected: true };
       }
     };
   }

@@ -2,13 +2,13 @@
   [ngClass]="{
     'content-chip-disabled': disabled,
     'content-chip-hover': hover,
-    'px-2': !avatar,
-    'pr-2': avatar
+    'with-both-padding': !avatar,
+    'with-right-padding': avatar
   }"
   class="content-chip"
 >
   <img
-    class="h-[36px] w-[36px]"
+    class="image-size"
     *ngIf="avatar"
     src="avatar.png"
     alt="avatar"
@@ -16,7 +16,7 @@
   />
   <icon-user *ngIf="icon" [color]="!disabled ? 'primary' : 'white'" />
   <c-title text="body-medium" [color]="!disabled ? 'primary' : 'white'">
-    Text example
+    {{ label }}
   </c-title>
   <icon-clear
     *ngIf="close"

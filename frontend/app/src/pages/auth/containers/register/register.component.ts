@@ -18,6 +18,7 @@ interface IRegisterStepOne {
   nick: FormControl<string>;
   email: FormControl<string>;
 }
+
 @Component({
   selector: 'register',
   templateUrl: './register.component.html',
@@ -26,15 +27,22 @@ interface IRegisterStepOne {
 export class RegisterComponent {
   private _formBuilder = inject(NonNullableFormBuilder);
   protected validatorsService = inject(ValidatorsService);
-  protected registerService = inject(RegisterUtilsService);
+  protected registerUtils = inject(RegisterUtilsService);
   formRegister!: FormGroup;
   customValidator!: ValidatorFn;
+  minSelectedValidator!: ValidatorFn;
 
   ngOnInit(): void {
     this.customValidator = this.validatorsService.similarInputs(
       'password',
       'passRepeat'
     );
+
+    this.minSelectedValidator =
+      this.validatorsService.minItemsSelectedValidator(
+        () => this.registerUtils.areasSelected(),
+        1
+      );
 
     this.formRegister = this._formBuilder.group({
       stepOne: this._formBuilder.group({
@@ -50,28 +58,20 @@ export class RegisterComponent {
           validators: this.customValidator,
         }
       ),
+      stepThree: this._formBuilder.group(
+        {
+          areaOfInterest: [''],
+        },
+        {
+          validators: this.minSelectedValidator,
+        }
+      ),
     });
   }
 
-  /* formGroup = this._formBuilder.group<IRegisterUser>({
-    stepOne: this._formBuilder.control(false),
-    stepTwo: this._formBuilder.control(false),
-    stepThree: this._formBuilder.control(false),
-  }); */
-
-  /* ngOnInit(): void {
-    this.parentFormGroup.addControl(
-      this.controlKey,
-      this._formBuilder.group<IRegisterStepOne>({
-        nick: this._formBuilder.control(''),
-        email: this._formBuilder.control(''),
-      })
-    );
-  } */
-
   previous() {
-    if (this.registerService.step() > 1) {
-      this.registerService.step.update((value) => --value);
+    if (this.registerUtils.step() > 1) {
+      this.registerUtils.step.update((value) => --value);
     }
   }
 
@@ -92,24 +92,24 @@ export class RegisterComponent {
   }
 
   next() {
-    if (this.registerService.step() === 1) {
+    if (this.registerUtils.step() === 1) {
       if (!this.formRegister.get('stepOne')?.valid) {
         this.markAllAsTouched(this.formRegister.get('stepOne') as FormGroup);
         return;
       }
-      this.registerService.step.update((value) => ++value);
-    } else if (this.registerService.step() === 2) {
+      this.registerUtils.step.update((value) => ++value);
+    } else if (this.registerUtils.step() === 2) {
       if (!this.formRegister.get('stepTwo')?.valid) {
         this.markAllAsTouched(this.formRegister.get('stepTwo') as FormGroup);
         return;
       }
-      this.registerService.step.update((value) => ++value);
+      this.registerUtils.step.update((value) => ++value);
     }
     // ... y así sucesivamente para otros pasos
   }
 
   isCurrentStepValid(): boolean {
-    switch (this.registerService.step()) {
+    switch (this.registerUtils.step()) {
       case 1:
         return this.formRegister.get('stepOne')?.valid || false;
       case 2:

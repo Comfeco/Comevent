@@ -12,6 +12,7 @@ type RequiredChipType = {
     | 'body-medium-accent'
     | 'body-smaller';
   colorText: 'white' | 'black' | 'primary' | 'disabled' | '';
+  label: string;
 };
 
 type OptionalChipType = {

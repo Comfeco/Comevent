@@ -13,5 +13,8 @@ export const DefaultErrorMessages: Record<string, ErrorFunction> = {
   maxlength: (booleanValue: BooleanValue = { requiredLength: 50 }) =>
     `The field must have a maximum of ${booleanValue.requiredLength} characters.`,
   noSimilar: () => 'Passwords do not match.',
+  notEnoughItemsSelected: (
+    booleanValue: BooleanValue = { requiredLength: 1 }
+  ) => `You need to select at least ${booleanValue.requiredLength} item(s).`,
   // ... other errors can be added here
 };
