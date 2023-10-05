@@ -42,16 +42,11 @@ export class ValidatorsService {
     getSelectedItemsFn: () => any[],
     minRequired: number
   ): ValidatorFn {
-    console.log('minItemsSelectedValidator called');
-
     return (control: AbstractControl): ValidationErrors | null => {
       const selectedItems = getSelectedItemsFn();
-      console.log('Selected items:', getSelectedItemsFn());
 
       if (selectedItems.length >= minRequired) {
-        console.log('Enough items selected');
-        // If there are enough items selected, remove the notEnoughItemsSelected error
-        // but keep other errors
+        // Si hay suficientes elementos seleccionados, elimina el error notEnoughItemsSelected
         if (control.errors && control.errors['notEnoughItemsSelected']) {
           delete control.errors['notEnoughItemsSelected'];
           if (!Object.keys(control.errors).length) {
@@ -60,9 +55,7 @@ export class ValidatorsService {
         }
         return null;
       } else {
-        console.log('Not enough items selected');
-        // If not enough items are selected, add the notEnoughItemsSelected error
-        // without modifying other existing errors
+        // Si no hay suficientes elementos seleccionados, añade el error notEnoughItemsSelected
         const existingErrors = control.errors || {};
         control.setErrors({ ...existingErrors, notEnoughItemsSelected: true });
         return { notEnoughItemsSelected: true };

@@ -75,8 +75,36 @@ export abstract class BaseResourceService<T> {
     this.resources.set([...this.resources(), resource]);
   }
 
-  public removeResource(id: number) {
-    this.resources.mutate((resources) =>
+  public removeResource(
+    item: ResourceType<T> | string,
+    targetSignal = this.resources
+  ) {
+    if (typeof item === 'string') {
+      this.removeStringResource(item, targetSignal);
+    } else {
+      if (item.id !== undefined) {
+        this.removeObjectResource(item.id, targetSignal);
+      }
+    }
+  }
+
+  private removeStringResource(
+    item: string,
+    targetSignal: typeof this.resources
+  ) {
+    const index = targetSignal().indexOf(item as unknown as ResourceType<T>);
+    if (index > -1) {
+      const updatedResources = [...targetSignal()];
+      updatedResources.splice(index, 1);
+      targetSignal.set(updatedResources);
+    }
+  }
+
+  private removeObjectResource(
+    id: number,
+    targetSignal: typeof this.resources
+  ) {
+    targetSignal.mutate((resources) =>
       resources.filter((resource: any) => resource.id !== id)
     );
   }

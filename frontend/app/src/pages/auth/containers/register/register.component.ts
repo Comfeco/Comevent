@@ -38,11 +38,11 @@ export class RegisterComponent {
       'passRepeat'
     );
 
-    this.minSelectedValidator =
+    /* this.minSelectedValidator =
       this.validatorsService.minItemsSelectedValidator(
         () => this.registerUtils.areasSelected(),
         1
-      );
+      ); */
 
     this.formRegister = this._formBuilder.group({
       stepOne: this._formBuilder.group({
@@ -58,14 +58,18 @@ export class RegisterComponent {
           validators: this.customValidator,
         }
       ),
-      stepThree: this._formBuilder.group(
-        {
-          areaOfInterest: [''],
-        },
-        {
-          validators: this.minSelectedValidator,
-        }
-      ),
+      stepThree: this._formBuilder.group({
+        actualAreaOfInterest: [
+          null,
+          [
+            this.validatorsService.minItemsSelectedValidator(
+              this.registerUtils.areasSelected,
+              1
+            ),
+          ],
+        ],
+        areaOfInterest: [null],
+      }),
     });
   }
 

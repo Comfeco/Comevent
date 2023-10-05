@@ -11,4 +11,8 @@ export class RegisterUtilsService extends BaseResourceService<string> {
   insertToAreasSelected(item: string) {
     this.insertResource(item, this.areasSelected);
   }
+
+  removeFromAreasSelected(area: string): void {
+    this.removeResource(area, this.areasSelected);
+  }
 }

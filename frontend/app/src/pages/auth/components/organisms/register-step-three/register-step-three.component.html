@@ -18,6 +18,9 @@
         formControlName="areaOfInterest"
         name="areaOfInterest"
         id="areaOfInterest"
+        [additionalValidators]="
+          formUtilities.getValidators(stepThreeForm, 'actualAreaOfInterest')
+        "
       />
     </c-label>
     <ng-container *ngIf="registerUtils.areasSelected().length > 0">
@@ -26,6 +29,7 @@
       >
         <c-chip
           *ngFor="let area of registerUtils.areasSelected()"
+          (click)="removeSelectedArea(area)"
           colorText="primary"
           text="body-medium"
           colorIcon="gray"

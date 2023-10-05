@@ -46,14 +46,21 @@ export class FormRegisterStepThreeComponent {
 
     this.registerUtils.insertToAreasSelected(selectedValue);
 
-    // Remove selected area from available options
+    // ? Remove selected area from available options
     const index = this.availableAreasNames.indexOf(selectedValue);
     if (index > -1) {
       this.availableAreasNames.splice(index, 1);
     }
 
-    /* this.stepThreeForm.controls['areaOfInterest'].setValue(null);
-    this.stepThreeForm.controls['areaOfInterest'].updateValueAndValidity();
-    console.log(this.stepThreeForm?.get('areaOfInterest')?.errors); */
+    this.stepThreeForm.controls['actualAreaOfInterest'].setValue(selectedValue);
+    this.stepThreeForm.controls['areaOfInterest'].setValue(null);
+  }
+
+  removeSelectedArea(area: string): void {
+    // ? Add the area back to the available options
+    this.availableAreasNames.push(area);
+
+    // ? Remove area from selected areas
+    this.registerUtils.removeFromAreasSelected(area);
   }
 }
