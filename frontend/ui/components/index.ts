@@ -22,5 +22,4 @@ export * from './molecules/input/input.interface';
 export * from './molecules/select';
 export * from './molecules/step/step.component';
 export * from './molecules/step/step.interface';
-export * from './organism/container-step/container-step.component';
 export * from './shared/directives/control-value-accesor.directive';

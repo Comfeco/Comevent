@@ -25,3 +25,8 @@ export interface IUserResponse {
 export interface IRegisterResponse {
   Register_User: IUser;
 }
+
+export interface IAreaOfInterest {
+  id: number;
+  name: string;
+}

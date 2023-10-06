@@ -12,6 +12,7 @@ import { IconType } from '../icon.interface';
   selector: 'icon-basic',
   imports: [CommonModule],
   templateUrl: './icon-basic.component.html',
+  styleUrls: ['./icon-basic.component.scss'],
   encapsulation: ViewEncapsulation.Emulated,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

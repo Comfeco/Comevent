@@ -9,7 +9,7 @@
     "components": [
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-a552f068ed9e995f49ec36c30e66c01e99a0114a623e4a63898970941a3bdfd0f9ec0de3cc612b0b29f29119275842a338be2877540f0129180905b265fb7e24",
+            "id": "component-ButtonComponent-725bcd80e7178b8f56a06d7af05e0bf306a1447aee352b097a0f2080866849480ef24957bb5f1ce08f3b5a885fa3cdf47245ed06e8cd863cc23d9e9b5af9972a",
             "file": "frontend/ui/components/molecules/button/button.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -30,14 +30,6 @@
             "viewProviders": [],
             "hostDirectives": [],
             "inputsClass": [
-                {
-                    "name": "button",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 24,
-                    "type": "",
-                    "decorators": []
-                },
                 {
                     "name": "colorLoading",
                     "defaultValue": "'white'",
@@ -73,6 +65,15 @@
                     "line": 22,
                     "type": "",
                     "decorators": []
+                },
+                {
+                    "name": "variant",
+                    "defaultValue": "'button-base'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 24,
+                    "type": "",
+                    "decorators": []
                 }
             ],
             "outputsClass": [],
@@ -100,11 +101,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { TitleComponent } from '../../atoms';\nimport { IconLoadingComponent } from '../../atoms/icons';\nimport { ButtonType } from './button.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-button',\n  imports: [CommonModule, TitleComponent, IconLoadingComponent],\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ButtonComponent implements ButtonType {\n  @Input() type: ButtonType['type'] = 'button';\n  @Input() disabled: ButtonType['disabled'] = false;\n  @Input() button!: ButtonType['button'];\n  @Input() loading = false;\n  @Input() colorLoading: 'white' | 'disabled' = 'white';\n}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { TitleComponent } from '../../atoms';\nimport { IconLoadingComponent } from '../../atoms/icons';\nimport { ButtonType } from './button.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-button',\n  imports: [CommonModule, TitleComponent, IconLoadingComponent],\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ButtonComponent implements ButtonType {\n  @Input() type: ButtonType['type'] = 'button';\n  @Input() disabled: ButtonType['disabled'] = false;\n  @Input() variant: ButtonType['variant'] = 'button-base';\n  @Input() loading = false;\n  @Input() colorLoading: 'white' | 'disabled' = 'white';\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".button {\r\n  @apply outline-none rounded-md w-auto font-title text-title-6 font-semibold px-4 h-9;\r\n}\r\n.click-button {\r\n  @apply duration-100 transition-shadow shadow-neutral-level1 active:transform active:scale-95;\r\n}\r\n.button-base {\r\n  @apply bg-primary text-white-1;\r\n}\r\n.button-base:hover {\r\n  @apply bg-primary-dark;\r\n}\r\n.button:disabled {\r\n  @apply bg-gray-2 text-white-1;\r\n}\r\n.button-ghost {\r\n  @apply border-solid border-2 border-primary bg-transparent;\r\n}\r\n\r\n.button-ghost:hover {\r\n  @apply border-primary-dark text-primary;\r\n}\r\n\r\n.button-ghost:disabled {\r\n  @apply border-solid border-2 border-gray-2 bg-transparent;\r\n}\r\n\r\n.content-container {\r\n  @apply flex flex-row gap-2;\r\n}\r\n\r\n.button-ghost ::ng-deep p {\r\n  @apply text-primary;\r\n}\r\n\r\n.button-ghost:hover ::ng-deep p {\r\n  @apply text-primary-dark;\r\n}\r\n\r\n.button-ghost:disabled ::ng-deep p {\r\n  @apply text-primary-dark;\r\n}\r\n\r\n.button-ghost:disabled ::ng-deep p {\r\n  @apply text-gray-2;\r\n}\r\n\r\n.button-accent {\r\n  @apply bg-accent;\r\n}\r\n",
+                    "data": ".button {\r\n  @apply outline-none rounded-md w-full font-title text-title-6 font-semibold px-4 h-9;\r\n}\r\n\r\n.click-button {\r\n  @apply duration-100 transition-shadow shadow-neutral-level1 active:transform active:scale-95;\r\n}\r\n\r\n.button-base {\r\n  @apply bg-primary text-white-1;\r\n}\r\n\r\n.button-base:hover {\r\n  @apply bg-primary-dark;\r\n}\r\n\r\n.button:disabled {\r\n  @apply bg-gray-2 text-white-1;\r\n}\r\n\r\n.button-ghost {\r\n  @apply border-solid border-2 border-primary bg-transparent;\r\n}\r\n\r\n.button-ghost:hover {\r\n  @apply bg-primary-light-2;\r\n}\r\n\r\n.button-ghost:disabled {\r\n  @apply border-solid border-2 border-gray-2 bg-transparent;\r\n}\r\n\r\n.content-container {\r\n  @apply flex flex-row gap-2;\r\n}\r\n\r\n.button-ghost ::ng-deep p {\r\n  @apply text-primary;\r\n}\r\n\r\n.button-ghost:hover ::ng-deep p {\r\n  @apply text-primary-dark;\r\n}\r\n\r\n.button-ghost:disabled ::ng-deep p {\r\n  @apply text-primary-dark;\r\n}\r\n\r\n.button-ghost:disabled ::ng-deep p {\r\n  @apply text-gray-2;\r\n}\r\n\r\n.button-accent {\r\n  @apply bg-accent;\r\n}\r\n\r\n.button-disabled {\r\n  @apply transition-all h-9;\r\n}\r\n",
                     "styleUrl": "./button.component.scss"
                 }
             ],
@@ -112,7 +113,7 @@
             "implements": [
                 "ButtonType"
             ],
-            "templateData": "<button\n  [ngClass]=\"{\n    button: true,\n    'button-base': button === 'button-base' && !disabled,\n    'button-ghost': button === 'button-ghost',\n    'button-accent': button === 'button-accent',\n    'transition-all h-9': disabled,\n    'click-button': !disabled\n  }\"\n  [type]=\"type\"\n  [disabled]=\"disabled\"\n>\n  <div class=\"content-container\">\n    <icon-loading *ngIf=\"loading\" [color]=\"colorLoading\" />\n    <ng-content></ng-content>\n  </div>\n</button>\n"
+            "templateData": "<button\n  [ngClass]=\"{\n    button: true,\n    'button-base': variant === 'button-base' && !disabled,\n    'button-ghost': variant === 'button-ghost',\n    'button-accent': variant === 'button-accent',\n    'button-disabled': disabled,\n    'click-button': !disabled\n  }\"\n  [type]=\"type\"\n  [disabled]=\"disabled\"\n>\n  <div class=\"content-container\">\n    <icon-loading *ngIf=\"loading\" [color]=\"colorLoading\" />\n    <ng-content></ng-content>\n  </div>\n</button>\n"
         },
         {
             "name": "ChipComponent",
@@ -333,61 +334,6 @@
             "templateData": "<div\n  [ngClass]=\"{\n    'content-chip-disabled': disabled,\n    'content-chip-hover': hover,\n    'px-2': !avatar,\n    'pr-2': avatar\n  }\"\n  class=\"content-chip\"\n>\n  <img\n    class=\"h-[36px] w-[36px]\"\n    *ngIf=\"avatar\"\n    src=\"avatar.png\"\n    alt=\"avatar\"\n    [ngClass]=\"{ 'disabled-img': disabled }\"\n  />\n  <icon-user *ngIf=\"icon\" [color]=\"!disabled ? 'primary' : 'white'\" />\n  <c-title text=\"body-medium\" [color]=\"!disabled ? 'primary' : 'white'\">\n    Text example\n  </c-title>\n  <icon-clear\n    *ngIf=\"close\"\n    [parentHovered]=\"isHovered\"\n    color=\"gray\"\n    type=\"solid\"\n  />\n</div>\n"
         },
         {
-            "name": "ContainerStepComponent",
-            "id": "component-ContainerStepComponent-3ea51c2d214242426be302a263a132705527516d673ee2b82427fbdff2512637f97b2fef1e0a13f8725be1fb22e73ac6be2cd8d127999290e2c6cd1b07e24247",
-            "file": "frontend/ui/components/organism/container-step/container-step.component.ts",
-            "changeDetection": "ChangeDetectionStrategy.OnPush",
-            "encapsulation": [
-                "ViewEncapsulation.Emulated"
-            ],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "c-container-step",
-            "styleUrls": [
-                "./container-step.component.scss"
-            ],
-            "styles": [],
-            "templateUrl": [
-                "./container-step.component.html"
-            ],
-            "viewProviders": [],
-            "hostDirectives": [],
-            "inputsClass": [],
-            "outputsClass": [],
-            "propertiesClass": [],
-            "methodsClass": [],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "standalone": true,
-            "imports": [
-                {
-                    "name": "CommonModule",
-                    "type": "module"
-                },
-                {
-                    "name": "StepComponent",
-                    "type": "component"
-                }
-            ],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { StepComponent } from '../../molecules/step/step.component';\n\n@Component({\n  standalone: true,\n  selector: 'c-container-step',\n  imports: [CommonModule, StepComponent],\n  templateUrl: './container-step.component.html',\n  styleUrls: ['./container-step.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ContainerStepComponent {}\n",
-            "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": ".content-container-step {\n  @apply flex flex-row gap-2 items-center p-4 bg-white-2 rounded-[10px] h-max w-max justify-center shadow-neutral-level1;\n}\n",
-                    "styleUrl": "./container-step.component.scss"
-                }
-            ],
-            "stylesData": "",
-            "templateData": "<div class=\"content-container-step\">\n  <c-step logo=\"basic\" status=\"In Progress\" />\n  <div class=\"h-1 rounded-full bg-gray-2 w-[80px] mb-12 mx-7\"></div>\n  <c-step logo=\"pass\" status=\"Pending\" />\n  <div class=\"h-1 rounded-full bg-gray-2 w-[80px] mb-12 mx-7\"></div>\n  <c-step logo=\"area\" status=\"Pending\" />\n</div>\n"
-        },
-        {
             "name": "ErrorInputComponent",
             "id": "component-ErrorInputComponent-315e29372e122a690481f1fb9bd58f0829c8a68d25cc3c3d8adc3a2dbffb6ca6dfef5a1a0600e492435a55abf2df36562ccab811af482bd0474477d9361f8966",
             "file": "frontend/ui/components/atoms/error-input/error-input.component.ts",
@@ -479,7 +425,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".error {\n  @apply w-full rounded-md h-auto p-1 bg-error-light gap-2 items-center flex flex-wrap justify-start font-semibold px-4;\n}\n\n.size-icon {\n  @apply h-4 w-4;\n}\n",
+                    "data": ".error {\n  @apply w-full rounded-md h-auto p-1 bg-error-light gap-2 items-center flex flex-wrap justify-start font-semibold px-4;\n}\n\n.text-error-content {\n  @apply text-start font-body text-error text-body-3 font-normal;\n}\n\n.size-icon {\n  @apply h-4 w-4;\n}\n",
                     "styleUrl": "./error-input.component.scss"
                 }
             ],
@@ -504,7 +450,7 @@
                     }
                 }
             },
-            "templateData": "<span>\n  <div class=\"error\">\n    <!-- <img class=\"size-icon\" src=\"/assets/ui/icon-error.svg\" alt=\"icon error\" /> -->\n    <span class=\"text-start font-body text-error text-body-3 font-normal\">{{\n      error\n    }}</span>\n  </div>\n</span>\n"
+            "templateData": "<span>\n  <div class=\"error\">\n    <!-- <img class=\"size-icon\" src=\"/assets/ui/icon-error.svg\" alt=\"icon error\" /> -->\n    <span class=\"text-error-content\">{{ error }}</span>\n  </div>\n</span>\n"
         },
         {
             "name": "IconAreaComponent",
@@ -701,6 +647,94 @@
                 "IconClearType"
             ],
             "templateData": "<svg\n  [class.hovered]=\"parentHovered\"\n  class=\"icon-clear\"\n  width=\"18\"\n  height=\"18\"\n  viewBox=\"0 0 18 18\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    [ngClass]=\"{\n      'content-hover-error': (color === 'error'),\n      'content-hover-gray': color === 'gray',\n      'content-fill-error': color === 'error' && type === 'solid',\n      'content-fill-gray': color === 'gray' && type === 'solid',\n      'content-fill-transparent': type === 'outlined',\n    }\"\n    d=\"M9 1C15.4 1 17 2.6 17 9C17 15.4 15.4 17 9 17C2.6 17 1 15.4 1 9C1 2.6 2.6 1 9 1Z\"\n    stroke-width=\"1.77778\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      'close-hover-solid': type === 'solid',\n      'close-hover-outlined': type === 'outlined'\n    }\"\n    d=\"M7.22229 7.22192L10.7778 10.7775M10.7778 7.22192L7.22229 10.7775\"\n    stroke-width=\"1.77778\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
+        },
+        {
+            "name": "IconFacebookComponent",
+            "id": "component-IconFacebookComponent-c559f4dd9b87b2a08d6828f558a1c209471f734dfaa38b5ab573ede96812ed95492a684a15accb85de4e2ef1d9d1cd767a395616d24ab0251ab31b8d0b46fa96",
+            "file": "frontend/ui/components/atoms/icons/icon-facebook/icon-facebook.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-facebook",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./icon-facebook.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-facebook',\n  imports: [CommonModule],\n  templateUrl: './icon-facebook.component.html',\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconFacebookComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "templateData": "<svg\n  width=\"20\"\n  height=\"20\"\n  viewBox=\"0 0 20 20\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    d=\"M20 10C20 4.47719 15.5228 0 10 0C4.47719 0 0 4.47711 0 10C0 14.9913 3.65687 19.1284 8.4375 19.8785V12.8906H5.89844V10H8.4375V7.79688C8.4375 5.29063 9.93047 3.90625 12.2146 3.90625C13.3088 3.90625 14.4531 4.10156 14.4531 4.10156V6.5625H13.1922C11.9498 6.5625 11.5625 7.33336 11.5625 8.12422V10H14.3359L13.8926 12.8906H11.5625V19.8785C16.3431 19.1284 20 14.9913 20 10Z\"\n    fill=\"#1877F2\"\n  />\n  <path\n    d=\"M13.8926 12.8906L14.3359 10H11.5625V8.12422C11.5625 7.33328 11.9499 6.5625 13.1922 6.5625H14.4531V4.10156C14.4531 4.10156 13.3088 3.90625 12.2146 3.90625C9.93047 3.90625 8.4375 5.29063 8.4375 7.79688V10H5.89844V12.8906H8.4375V19.8785C8.95439 19.9595 9.4768 20.0001 10 20C10.5232 20.0002 11.0456 19.9595 11.5625 19.8785V12.8906H13.8926Z\"\n    fill=\"white\"\n  />\n</svg>\n"
+        },
+        {
+            "name": "IconGoogleComponent",
+            "id": "component-IconGoogleComponent-af50c80cd4dced8717a551827417aee14ee2654f541801ed9aef332940eceb6de40a12ab14bc1bc45ba807b5fb6b4c3920df7e8a6373d2688d8f79d9bbad5bbb",
+            "file": "frontend/ui/components/atoms/icons/icon-google/icon-google.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-google",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./icon-google.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-google',\n  imports: [CommonModule],\n  templateUrl: './icon-google.component.html',\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconGoogleComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "templateData": "<svg\n  width=\"20\"\n  height=\"20\"\n  viewBox=\"0 0 20 20\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    d=\"M19.8055 8.0415H19V8H10V12H15.6515C14.827 14.3285 12.6115 16 10 16C6.6865 16 4 13.3135 4 10C4 6.6865 6.6865 4 10 4C11.5295 4 12.921 4.577 13.9805 5.5195L16.809 2.691C15.023 1.0265 12.634 0 10 0C4.4775 0 0 4.4775 0 10C0 15.5225 4.4775 20 10 20C15.5225 20 20 15.5225 20 10C20 9.3295 19.931 8.675 19.8055 8.0415Z\"\n    fill=\"#FFC107\"\n  />\n  <path\n    d=\"M1.15308 5.3455L4.43858 7.755C5.32758 5.554 7.48058 4 10.0001 4C11.5296 4 12.9211 4.577 13.9806 5.5195L16.8091 2.691C15.0231 1.0265 12.6341 0 10.0001 0C6.15908 0 2.82808 2.1685 1.15308 5.3455Z\"\n    fill=\"#FF3D00\"\n  />\n  <path\n    d=\"M10 19.9999C12.583 19.9999 14.93 19.0114 16.7045 17.4039L13.6095 14.7849C12.5718 15.574 11.3038 16.0009 10 15.9999C7.39903 15.9999 5.19053 14.3414 4.35853 12.0269L1.09753 14.5394C2.75253 17.7779 6.11353 19.9999 10 19.9999Z\"\n    fill=\"#4CAF50\"\n  />\n  <path\n    d=\"M19.8055 8.0415H19V8H10V12H15.6515C15.2571 13.1082 14.5467 14.0766 13.608 14.7855L13.6095 14.7845L16.7045 17.4035C16.4855 17.6025 20 15 20 10C20 9.3295 19.931 8.675 19.8055 8.0415Z\"\n    fill=\"#1976D2\"\n  />\n</svg>\n"
         },
         {
             "name": "IconHiddenPassComponent",
@@ -984,7 +1018,7 @@
         },
         {
             "name": "InputComponent",
-            "id": "component-InputComponent-01a669a8e605da2b94547fa74b8c5af036b2c279ffd1013ec97d1422bf7585e17d669660801b80bb9e261937884e22217596e2431316d963474976389f454b2d",
+            "id": "component-InputComponent-7a4834775e6d9297bbe873b14e61cbe5c9755c3b10212a15c95c71c907fa98949c8e559ddc46c872f723de8f6cee9a08a648056994677b5100a3691355246ce7",
             "file": "frontend/ui/components/molecules/input/input.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -1010,15 +1044,6 @@
             "viewProviders": [],
             "hostDirectives": [],
             "inputsClass": [
-                {
-                    "name": "css",
-                    "defaultValue": "'input-base'",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 54,
-                    "type": "",
-                    "decorators": []
-                },
                 {
                     "name": "customErrorMessages",
                     "defaultValue": "{}",
@@ -1077,6 +1102,15 @@
                     "line": 56,
                     "type": "string | number | undefined",
                     "decorators": []
+                },
+                {
+                    "name": "variant",
+                    "defaultValue": "'input-base'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 54,
+                    "type": "",
+                    "decorators": []
                 }
             ],
             "outputsClass": [],
@@ -1098,7 +1132,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 81,
+                    "line": 78,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -1145,11 +1179,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n  forwardRef,\n} from '@angular/core';\nimport {\n  FormsModule,\n  NG_VALUE_ACCESSOR,\n  ReactiveFormsModule,\n} from '@angular/forms';\nimport {\n  IconClearComponent,\n  IconHiddenPassComponent,\n  IconShowPassComponent,\n} from '../..';\nimport { LabelComponent } from '../../atoms';\nimport { ErrorInputComponent } from '../../atoms/error-input/error-input.component';\nimport { ControlValueAccesorDirective } from '../../shared/directives/control-value-accesor.directive';\nimport { InputType } from './input.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-input',\n  imports: [\n    CommonModule,\n    FormsModule,\n    ReactiveFormsModule,\n    ErrorInputComponent,\n    LabelComponent,\n    IconClearComponent,\n    IconShowPassComponent,\n    IconHiddenPassComponent,\n  ],\n  providers: [\n    {\n      provide: NG_VALUE_ACCESSOR,\n      useExisting: forwardRef(() => InputComponent),\n      multi: true,\n    },\n  ],\n  templateUrl: './input.component.html',\n  styleUrls: ['./input.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class InputComponent<T>\n  extends ControlValueAccesorDirective<T>\n  implements InputType\n{\n  @Input() id = '';\n  @Input() css: InputType['css'] = 'input-base';\n  @Input() placeholder?: string | undefined;\n  @Input() value?: string | number | undefined;\n  @Input() customErrorMessages: Record<string, string> = {};\n  @Input() name!: string;\n  @Input() showPassword = false;\n  @Input()\n  set disabled(value: boolean) {\n    this.setDisabledState(value);\n  }\n\n  get inputType(): string {\n    if (this.type === 'password' && this.showPassword) {\n      return 'text';\n    }\n    return this.type;\n  }\n\n  clearInput() {\n    console.log('Control value before clear:', this.control?.value);\n\n    if (this.control) {\n      this.control.setValue('');\n      console.log('Control value after clear:', this.control.value);\n    }\n  }\n\n  togglePasswordVisibility(): void {\n    this.showPassword = !this.showPassword;\n  }\n}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n  forwardRef,\n} from '@angular/core';\nimport {\n  FormsModule,\n  NG_VALUE_ACCESSOR,\n  ReactiveFormsModule,\n} from '@angular/forms';\nimport {\n  IconClearComponent,\n  IconHiddenPassComponent,\n  IconShowPassComponent,\n} from '../..';\nimport { LabelComponent } from '../../atoms';\nimport { ErrorInputComponent } from '../../atoms/error-input/error-input.component';\nimport { ControlValueAccesorDirective } from '../../shared/directives/control-value-accesor.directive';\nimport { InputType } from './input.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-input',\n  imports: [\n    CommonModule,\n    FormsModule,\n    ReactiveFormsModule,\n    ErrorInputComponent,\n    LabelComponent,\n    IconClearComponent,\n    IconShowPassComponent,\n    IconHiddenPassComponent,\n  ],\n  providers: [\n    {\n      provide: NG_VALUE_ACCESSOR,\n      useExisting: forwardRef(() => InputComponent),\n      multi: true,\n    },\n  ],\n  templateUrl: './input.component.html',\n  styleUrls: ['./input.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class InputComponent<T>\n  extends ControlValueAccesorDirective<T>\n  implements InputType\n{\n  @Input() id = '';\n  @Input() variant: InputType['variant'] = 'input-base';\n  @Input() placeholder?: string | undefined;\n  @Input() value?: string | number | undefined;\n  @Input() customErrorMessages: Record<string, string> = {};\n  @Input() name!: string;\n  @Input() showPassword = false;\n  @Input()\n  set disabled(value: boolean) {\n    this.setDisabledState(value);\n  }\n\n  get inputType(): string {\n    if (this.type === 'password' && this.showPassword) {\n      return 'text';\n    }\n    return this.type;\n  }\n\n  clearInput() {\n    if (this.control) {\n      this.control.setValue('');\n    }\n  }\n\n  togglePasswordVisibility(): void {\n    this.showPassword = !this.showPassword;\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".content-input {\n  @apply flex flex-col gap-1;\n}\n\n.input {\n  @apply outline-none rounded-md w-auto px-4;\n}\n\n.input::placeholder {\n  @apply placeholder:text-gray-2 placeholder:text-body-2 placeholder:font-normal;\n}\n\n.input-base {\n  @apply focus:placeholder-transparent h-10 border-2 text-black-1 focus:outline-none focus:border-primary transition-all w-auto;\n}\n\n.position-relative {\n  position: relative;\n}\n\n.clear-button,\n.icon-pass {\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  background-color: transparent;\n  border: none;\n  cursor: pointer;\n}\n\n.clear-button {\n  right: 16px;\n}\n\n/* Chrome, Safari y Opera */\ninput[type='number']::-webkit-inner-spin-button,\ninput[type='number']::-webkit-outer-spin-button {\n  -webkit-appearance: none;\n  margin: 0;\n}\n\n/* Firefox */\ninput[type='number'] {\n  -moz-appearance: textfield;\n}\n",
+                    "data": ".content-input {\n  @apply flex flex-col gap-1;\n}\n\n.input {\n  @apply outline-none rounded-md w-auto px-4 body-medium;\n}\n\n.input::placeholder {\n  @apply placeholder:text-gray-2 placeholder:text-body-2 placeholder:font-normal;\n}\n\n.input-base {\n  @apply focus:placeholder-transparent h-9 border-2 text-black-1 focus:outline-none focus:border-primary transition-all w-auto;\n}\n\n.position-relative {\n  position: relative;\n}\n\n.clear-button,\n.icon-pass {\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  background-color: transparent;\n  border: none;\n  cursor: pointer;\n}\n\n.clear-button {\n  right: 16px;\n}\n\n/* Chrome, Safari y Opera */\ninput[type='number']::-webkit-inner-spin-button,\ninput[type='number']::-webkit-outer-spin-button {\n  -webkit-appearance: none;\n  margin: 0;\n}\n\n/* Firefox */\ninput[type='number'] {\n  -moz-appearance: textfield;\n}\n\n.b-success {\n  @apply border-success;\n}\n\n.b-error {\n  @apply border-error;\n}\n\n.b-neutral {\n  @apply border-black-1;\n}\n\n.b-disabled {\n  @apply border-gray-2;\n}\n\n.r-4 {\n  @apply right-4;\n}\n\n.r-10 {\n  @apply right-10;\n}\n",
                     "styleUrl": "./input.component.scss"
                 }
             ],
@@ -1199,11 +1233,11 @@
                     }
                 }
             },
-            "templateData": "<div *ngIf=\"control\" class=\"content-input\">\n  <div class=\"content-input relative\">\n    <input\n      [ngClass]=\"{\n        'input body-medium': true,\n        'input-base': css === 'input-base',\n        'border-success': isValid() && !isUntouched() && !control!.disabled,\n        'border-error': !isValid() && !isUntouched() && !control!.disabled,\n        'border-black-1': isUntouched() && !control!.disabled,\n        'border-gray-2': control!.disabled\n      }\"\n      [placeholder]=\"placeholder\"\n      [type]=\"inputType\"\n      [attr.value]=\"value || null\"\n      [attr.id]=\"id || null\"\n      [formControl]=\"control\"\n      [disabled]=\"control!.disabled\"\n    />\n    <button\n      *ngIf=\"type === 'password' && !control!.disabled\"\n      (click)=\"togglePasswordVisibility()\"\n      class=\"icon-pass\"\n      [ngClass]=\"{\n        'right-4': !control.value,\n        'right-10': control.value !== ''\n      }\"\n    >\n      <icon-hidden-pass *ngIf=\"showPassword\" />\n      <icon-show-pass *ngIf=\"!showPassword\" />\n    </button>\n    <button\n      *ngIf=\"control.value !== ''\"\n      (click)=\"clearInput()\"\n      class=\"clear-button\"\n    >\n      <icon-clear />\n    </button>\n  </div>\n  <c-error-input\n    *ngIf=\"!isValid() && !control!.disabled\"\n    [formContained]=\"control\"\n    [controlName]=\"name\"\n  ></c-error-input>\n</div>\n"
+            "templateData": "<div *ngIf=\"control\" class=\"content-input\">\n  <div class=\"content-input relative\">\n    <input\n      [ngClass]=\"{\n        input: true,\n        'input-base': variant === 'input-base',\n        'b-success': isValid() && !isUntouched() && !control!.disabled,\n        'b-error': !isValid() && !isUntouched() && !control!.disabled,\n        'b-neutral': isUntouched() && !control!.disabled,\n        'b-disabled': control!.disabled\n      }\"\n      [placeholder]=\"placeholder\"\n      [type]=\"inputType\"\n      [attr.value]=\"value || null\"\n      [attr.id]=\"id || null\"\n      [formControl]=\"control\"\n      [disabled]=\"control!.disabled\"\n    />\n    <button\n      *ngIf=\"type === 'password' && !control!.disabled\"\n      (click)=\"togglePasswordVisibility()\"\n      class=\"icon-pass\"\n      [ngClass]=\"{\n        'r-4': !control.value,\n        'r-10': control.value !== ''\n      }\"\n    >\n      <icon-hidden-pass *ngIf=\"showPassword\" />\n      <icon-show-pass *ngIf=\"!showPassword\" />\n    </button>\n    <button\n      *ngIf=\"control.value !== ''\"\n      (click)=\"clearInput()\"\n      class=\"clear-button\"\n    >\n      <icon-clear />\n    </button>\n  </div>\n  <c-error-input\n    *ngIf=\"!isValid() && !control!.disabled\"\n    [formContained]=\"control\"\n    [controlName]=\"name\"\n  ></c-error-input>\n</div>\n"
         },
         {
             "name": "LabelComponent",
-            "id": "component-LabelComponent-e8ab10543c78185bb66e9d3e9b6a087649d07a6d981e11f07acb06a7668a0faed9870391eb32c0cb74627005d2b53bab264e1443f38a84e2f363d79feeea5ad3",
+            "id": "component-LabelComponent-1ff0fe43e83d900c1ed2f6f3dad060d1bc2096ac074cdb101ebd7e940251a593ba4b2c13bc49417c92081a29e645de4593460327241069cbe7bcf0345b666b9c",
             "file": "frontend/ui/components/atoms/label/label.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -1225,19 +1259,20 @@
             "hostDirectives": [],
             "inputsClass": [
                 {
-                    "name": "css",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 20,
-                    "type": "\"label-primary\" | \"label-secondary\" | \"label-tertiary\"",
-                    "decorators": []
-                },
-                {
                     "name": "for",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 21,
                     "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "variant",
+                    "defaultValue": "'label-base'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 20,
+                    "type": "",
                     "decorators": []
                 }
             ],
@@ -1258,11 +1293,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { LabelType } from './label.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-label',\n  imports: [CommonModule],\n  templateUrl: './label.component.html',\n  styleUrls: ['./label.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class LabelComponent implements LabelType {\n  @Input() css!: 'label-primary' | 'label-secondary' | 'label-tertiary';\n  @Input() for?: string;\n}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { LabelType } from './label.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-label',\n  imports: [CommonModule],\n  templateUrl: './label.component.html',\n  styleUrls: ['./label.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class LabelComponent implements LabelType {\n  @Input() variant: LabelType['variant'] = 'label-base';\n  @Input() for?: string;\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "",
+                    "data": ".label {\r\n  @apply title-h6 focus-within:text-primary;\r\n}\r\n",
                     "styleUrl": "./label.component.scss"
                 }
             ],
@@ -1270,11 +1305,11 @@
             "implements": [
                 "LabelType"
             ],
-            "templateData": "<label\n  [ngClass]=\"{\n    'label title-h6 focus-within:text-primary': true,\n    'label-primary': css === 'label-primary'\n  }\"\n>\n  <ng-content></ng-content>\n</label>\n"
+            "templateData": "<label\n  [ngClass]=\"{\n    label: true,\n    'label-primary': variant === 'label-base'\n  }\"\n>\n  <ng-content></ng-content>\n</label>\n"
         },
         {
             "name": "SelectComponent",
-            "id": "component-SelectComponent-cc4dbeb366daa7b653f13afa76f5b876f98350415d287ef029a4a0a42531115fb3487d24e67566fe5cf10946857ce786f69d9079cc493d29a45d8deab28a9de4",
+            "id": "component-SelectComponent-002d7240c1d062f010285e98990258f0d6ee2ad00c29328cc3b3f13bbeb0cde9a21e4956acd44179da600e2e85c2f0eebf24af1c5c481db2f4dfe7668a61c88f",
             "file": "frontend/ui/components/molecules/select/select.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -1302,10 +1337,9 @@
             "inputsClass": [
                 {
                     "name": "disabled",
-                    "defaultValue": "false",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 55,
+                    "line": 57,
                     "type": "boolean",
                     "decorators": []
                 },
@@ -1343,6 +1377,15 @@
                     "deprecationMessage": "",
                     "line": 54,
                     "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "variant",
+                    "defaultValue": "'select-base'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 55,
+                    "type": "",
                     "decorators": []
                 }
             ],
@@ -1387,11 +1430,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n  forwardRef,\n} from '@angular/core';\nimport {\n  FormsModule,\n  NG_VALUE_ACCESSOR,\n  ReactiveFormsModule,\n} from '@angular/forms';\nimport { ControlValueAccesorDirective } from '../..';\nimport {\n  ErrorInputComponent,\n  LabelComponent,\n  TitleComponent,\n} from '../../atoms';\nimport { IconLoadingComponent } from '../../atoms/icons';\nimport { SelectType } from './select.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-select',\n  imports: [\n    CommonModule,\n    FormsModule,\n    ReactiveFormsModule,\n    TitleComponent,\n    IconLoadingComponent,\n    LabelComponent,\n    ErrorInputComponent,\n  ],\n  templateUrl: './select.component.html',\n  styleUrls: ['./select.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  providers: [\n    {\n      provide: NG_VALUE_ACCESSOR,\n      useExisting: forwardRef(() => SelectComponent),\n      multi: true,\n    },\n  ],\n})\nexport class SelectComponent<T>\n  extends ControlValueAccesorDirective<T>\n  implements SelectType<T>\n{\n  @Input() options: T[] = [];\n  @Input() id = '';\n  @Input() name = '';\n  @Input() placeholder = '';\n  @Input() disabled = false;\n}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n  forwardRef,\n} from '@angular/core';\nimport {\n  FormsModule,\n  NG_VALUE_ACCESSOR,\n  ReactiveFormsModule,\n} from '@angular/forms';\nimport {\n  ErrorInputComponent,\n  LabelComponent,\n  TitleComponent,\n} from '../../atoms';\nimport { IconLoadingComponent } from '../../atoms/icons';\nimport { ControlValueAccesorDirective } from '../../shared/directives/control-value-accesor.directive';\nimport { SelectType } from './select.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-select',\n  imports: [\n    CommonModule,\n    FormsModule,\n    ReactiveFormsModule,\n    TitleComponent,\n    IconLoadingComponent,\n    LabelComponent,\n    ErrorInputComponent,\n  ],\n  templateUrl: './select.component.html',\n  styleUrls: ['./select.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  providers: [\n    {\n      provide: NG_VALUE_ACCESSOR,\n      useExisting: forwardRef(() => SelectComponent),\n      multi: true,\n    },\n  ],\n})\nexport class SelectComponent<T>\n  extends ControlValueAccesorDirective<T>\n  implements SelectType<T>\n{\n  @Input() options: T[] = [];\n  @Input() id = '';\n  @Input() name = '';\n  @Input() placeholder = '';\n  @Input() variant: SelectType<T>['variant'] = 'select-base';\n  @Input()\n  set disabled(value: boolean) {\n    this.setDisabledState(value);\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".content-select {\r\n  @apply flex flex-col gap-1;\r\n}\r\n",
+                    "data": ".content-select-master {\r\n  @apply flex flex-col gap-1;\r\n}\r\n\r\n.select {\r\n  @apply outline-none rounded-md w-auto px-4;\r\n}\r\n\r\n.select::placeholder {\r\n  @apply placeholder:text-gray-2 placeholder:text-body-2 placeholder:font-normal;\r\n}\r\n\r\n.select-base {\r\n  @apply focus:placeholder-transparent h-9 border-2 focus:outline-none focus:border-primary transition-all w-auto;\r\n}\r\n",
                     "styleUrl": "./select.component.scss"
                 }
             ],
@@ -1400,7 +1443,39 @@
             "implements": [
                 "SelectType"
             ],
-            "templateData": "<div *ngIf=\"control\" class=\"content-select\">\n  <select [formControl]=\"control\" name=\"\" [id]=\"id\">\n    <option value=\"\" disabled selected hidden>{{ placeholder }}</option>\n    <option *ngFor=\"let option of options\" [value]=\"option\">\n      {{ option }}\n    </option>\n  </select>\n  <c-error-input\n    *ngIf=\"!isValid() && !control!.disabled\"\n    [formContained]=\"control\"\n    [controlName]=\"name\"\n  ></c-error-input>\n</div>\n"
+            "accessors": {
+                "disabled": {
+                    "name": "disabled",
+                    "setSignature": {
+                        "name": "disabled",
+                        "type": "void",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "args": [
+                            {
+                                "name": "value",
+                                "type": "boolean",
+                                "deprecated": false,
+                                "deprecationMessage": ""
+                            }
+                        ],
+                        "returnType": "void",
+                        "line": 57,
+                        "jsdoctags": [
+                            {
+                                "name": "value",
+                                "type": "boolean",
+                                "deprecated": false,
+                                "deprecationMessage": "",
+                                "tagName": {
+                                    "text": "param"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "templateData": "<div *ngIf=\"control\" class=\"content-select-master\">\n  <select\n    [ngClass]=\"{\n      'select body-medium': true,\n      'select-base': variant === 'select-base',\n      'border-success': isValid() && !isUntouched() && !control!.disabled,\n      'border-error': !isValid() && !isUntouched() && !control!.disabled,\n      'border-black-1': isUntouched() && !control!.disabled,\n      'border-gray-2': control!.disabled\n    }\"\n    [formControl]=\"control\"\n    name=\"\"\n    [id]=\"id\"\n  >\n    <option value=\"\" disabled selected hidden>{{ placeholder }}</option>\n    <option *ngFor=\"let option of options\" [value]=\"option\">\n      {{ option }}\n    </option>\n  </select>\n  <c-error-input\n    *ngIf=\"!isValid() && !control!.disabled\"\n    [formContained]=\"control\"\n    [controlName]=\"name\"\n  ></c-error-input>\n</div>\n"
         },
         {
             "name": "StepComponent",
@@ -1477,7 +1552,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".content-global-step {\n  @apply flex flex-col gap-1 items-center;\n}\n\n.content-step {\n  @apply flex justify-center items-center h-[46px] w-[46px] rounded-full;\n}\n\n.content-inner-step {\n  @apply flex justify-center items-center h-[38px] w-[38px] bg-white-1 rounded-full border-transparent border-2;\n}\n",
+                    "data": ".content-global-step {\n  @apply flex flex-col gap-1 items-center;\n}\n\n.content-step {\n  @apply flex justify-center items-center h-[46px] w-[46px] rounded-full;\n}\n\n.content-inner-step {\n  @apply flex justify-center items-center h-[38px] w-[38px] bg-white-1 rounded-full border-transparent border-2;\n}\n\n.progress {\n  @apply bg-primary;\n}\n\n.pending {\n  @apply bg-gray-2;\n}\n\n.success {\n  @apply bg-success;\n}\n\n.t-progress {\n  @apply text-primary;\n}\n\n.t-pending {\n  @apply text-gray-2;\n}\n\n.t-success {\n  @apply text-success;\n}\n\n.s-success {\n  @apply stroke-success;\n}\n",
                     "styleUrl": "./step.component.scss"
                 }
             ],
@@ -1485,11 +1560,11 @@
             "implements": [
                 "StepType"
             ],
-            "templateData": "<div class=\"content-global-step\">\n  <div\n    [ngClass]=\"{\n      'bg-primary': status === 'In Progress',\n      'bg-gray-2': status === 'Pending',\n      'bg-success': status === 'Completed',\n      'content-step': true\n    }\"\n  >\n    <div class=\"content-inner-step\">\n      <div *ngIf=\"status === 'Completed'\">\n        <svg\n          width=\"19\"\n          height=\"14\"\n          viewBox=\"0 0 19 14\"\n          fill=\"none\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n        >\n          <path\n            [ngClass]=\"{\n              'stroke-success': status === 'Completed'\n            }\"\n            d=\"M2 7L7 12L17 2\"\n            stroke-width=\"4\"\n            stroke-linecap=\"round\"\n            stroke-linejoin=\"round\"\n          />\n        </svg>\n      </div>\n\n      <ng-container *ngIf=\"status !== 'Completed'\" [ngSwitch]=\"logo\">\n        <div *ngSwitchCase=\"'basic'\">\n          <icon-basic [status]=\"status\" />\n        </div>\n        <div *ngSwitchCase=\"'pass'\">\n          <icon-pass [status]=\"status\" />\n        </div>\n        <div *ngSwitchCase=\"'area'\">\n          <icon-area [status]=\"status\" />\n        </div>\n      </ng-container>\n    </div>\n  </div>\n  <p\n    *ngIf=\"\n      (logo === 'basic' && status !== 'Completed') ||\n      (logo === 'basic' && status === 'Completed')\n    \"\n    class=\"body-small\"\n  >\n    Basic data\n  </p>\n\n  <p\n    *ngIf=\"\n      (logo === 'pass' && status !== 'Completed') ||\n      (logo === 'pass' && status === 'Completed')\n    \"\n    class=\"body-small\"\n  >\n    Password\n  </p>\n\n  <p\n    *ngIf=\"\n      (logo === 'area' && status !== 'Completed') ||\n      (logo === 'area' && status === 'Completed')\n    \"\n    class=\"body-small\"\n  >\n    Area of Interest\n  </p>\n\n  <p\n    [ngClass]=\"{\n      'text-primary': status === 'In Progress',\n      'text-gray-2': status === 'Pending',\n      'text-success': status === 'Completed',\n      'font-body text-body-3 font-normal': true\n    }\"\n  >\n    {{ status }}\n  </p>\n</div>\n"
+            "templateData": "<div class=\"content-global-step\">\n  <div\n    [ngClass]=\"{\n      progress: status === 'In Progress',\n      pending: status === 'Pending',\n      success: status === 'Completed',\n      'content-step': true\n    }\"\n  >\n    <div class=\"content-inner-step\">\n      <div *ngIf=\"status === 'Completed'\">\n        <svg\n          width=\"19\"\n          height=\"14\"\n          viewBox=\"0 0 19 14\"\n          fill=\"none\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n        >\n          <path\n            [ngClass]=\"{\n              's-success': status === 'Completed'\n            }\"\n            d=\"M2 7L7 12L17 2\"\n            stroke-width=\"4\"\n            stroke-linecap=\"round\"\n            stroke-linejoin=\"round\"\n          />\n        </svg>\n      </div>\n\n      <ng-container *ngIf=\"status !== 'Completed'\" [ngSwitch]=\"logo\">\n        <div *ngSwitchCase=\"'basic'\">\n          <icon-basic [status]=\"status\" />\n        </div>\n        <div *ngSwitchCase=\"'pass'\">\n          <icon-pass [status]=\"status\" />\n        </div>\n        <div *ngSwitchCase=\"'area'\">\n          <icon-area [status]=\"status\" />\n        </div>\n      </ng-container>\n    </div>\n  </div>\n  <p\n    *ngIf=\"\n      (logo === 'basic' && status !== 'Completed') ||\n      (logo === 'basic' && status === 'Completed')\n    \"\n    class=\"body-small\"\n  >\n    Basic data\n  </p>\n\n  <p\n    *ngIf=\"\n      (logo === 'pass' && status !== 'Completed') ||\n      (logo === 'pass' && status === 'Completed')\n    \"\n    class=\"body-small\"\n  >\n    Password\n  </p>\n\n  <p\n    *ngIf=\"\n      (logo === 'area' && status !== 'Completed') ||\n      (logo === 'area' && status === 'Completed')\n    \"\n    class=\"body-small\"\n  >\n    Area of Interest\n  </p>\n\n  <p\n    [ngClass]=\"{\n      't-progress': status === 'In Progress',\n      't-pending': status === 'Pending',\n      't-success': status === 'Completed',\n      'font-body text-body-3 font-normal': true\n    }\"\n  >\n    {{ status }}\n  </p>\n</div>\n"
         },
         {
             "name": "TitleComponent",
-            "id": "component-TitleComponent-5b18d6d5cb4e5243f004bbd7ab7b5be2d4d17e704a39481acf565d55eba022c78cf766d773277258a6fda538aaa21df8af22883253d295db900f300a8066f683",
+            "id": "component-TitleComponent-056ad4bade3cdcf5ca4216af2fccdc7382cfd61895ed6a980ee6b9dbc79201c1f7d97812a07450f0fad6a430139ab2d371dc25bb01fd165d906a8e81e76f659f",
             "file": "frontend/ui/components/atoms/title/title.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -1512,6 +1587,7 @@
             "inputsClass": [
                 {
                     "name": "color",
+                    "defaultValue": "'black'",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 21,
@@ -1519,7 +1595,7 @@
                     "decorators": []
                 },
                 {
-                    "name": "text",
+                    "name": "variant",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 20,
@@ -1544,11 +1620,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { TitleType } from './title.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-title',\n  imports: [CommonModule],\n  templateUrl: './title.component.html',\n  styleUrls: ['./title.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class TitleComponent implements TitleType {\n  @Input() text!: TitleType['text'];\n  @Input() color!: TitleType['color'];\n}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { TitleType } from './title.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-title',\n  imports: [CommonModule],\n  templateUrl: './title.component.html',\n  styleUrls: ['./title.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class TitleComponent implements TitleType {\n  @Input() variant!: TitleType['variant'];\n  @Input() color: TitleType['color'] = 'black';\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".title-h1,\r\n.title-h2,\r\n.title-h3,\r\n.title-h4,\r\n.title-h5,\r\n.title-h6 {\r\n  @apply font-title;\r\n}\r\n\r\n.title-h2,\r\n.title-h3,\r\n.title-h4,\r\n.title-h5,\r\n.title-h6 {\r\n  @apply font-semibold;\r\n}\r\n\r\n.title-h1 {\r\n  @apply text-title-1 font-bold;\r\n}\r\n\r\n.title-h2 {\r\n  @apply text-title-2;\r\n}\r\n\r\n.title-h3 {\r\n  @apply text-title-3;\r\n}\r\n\r\n.title-h4 {\r\n  @apply text-title-4;\r\n}\r\n\r\n.title-h5 {\r\n  @apply text-title-5;\r\n}\r\n\r\n.title-h6 {\r\n  @apply text-title-6;\r\n}\r\n\r\n.body-bigger,\r\n.body-medium,\r\n.body-small,\r\n.body-medium-accent,\r\n.body-smaller {\r\n  @apply font-body;\r\n}\r\n\r\n.body-bigger,\r\n.body-medium,\r\n.body-small,\r\n.body-smaller {\r\n  @apply font-normal;\r\n}\r\n\r\n.body-bigger {\r\n  @apply text-body-1;\r\n}\r\n\r\n.body-medium {\r\n  @apply text-body-2;\r\n}\r\n\r\n.body-medium-accent {\r\n  @apply text-body-2 font-bold;\r\n}\r\n\r\n.body-small {\r\n  @apply text-body-3;\r\n}\r\n\r\n.body-smaller {\r\n  @apply text-body-4;\r\n}\r\n\r\n.color-black {\r\n  @apply text-black-1;\r\n}\r\n\r\n.color-white {\r\n  @apply text-white-1;\r\n}\r\n\r\n.color-primary {\r\n  @apply text-primary;\r\n}\r\n\r\n.color-disabled {\r\n  @apply text-gray-2;\r\n}\r\n",
+                    "data": ".color-black {\r\n  @apply text-black-1;\r\n}\r\n\r\n.color-white {\r\n  @apply text-white-1;\r\n}\r\n\r\n.color-primary {\r\n  @apply text-primary;\r\n}\r\n\r\n.color-disabled {\r\n  @apply text-gray-2;\r\n}\r\n\r\n.style-h1 {\r\n  @apply title-h1;\r\n}\r\n\r\n.style-h2 {\r\n  @apply title-h2;\r\n}\r\n\r\n.style-h3 {\r\n  @apply title-h3;\r\n}\r\n\r\n.style-h4 {\r\n  @apply title-h4;\r\n}\r\n\r\n.style-h5 {\r\n  @apply title-h5;\r\n}\r\n\r\n.style-h6 {\r\n  @apply title-h6;\r\n}\r\n\r\n.style-body-bigger {\r\n  @apply body-bigger;\r\n}\r\n\r\n.style-body-medium {\r\n  @apply body-medium;\r\n}\r\n\r\n.style-body-medium-accent {\r\n  @apply body-medium-accent;\r\n}\r\n\r\n.style-body-small {\r\n  @apply body-small;\r\n}\r\n\r\n.style-body-smaller {\r\n  @apply body-smaller;\r\n}\r\n",
                     "styleUrl": "./title.component.scss"
                 }
             ],
@@ -1556,7 +1632,7 @@
             "implements": [
                 "TitleType"
             ],
-            "templateData": "<p\n  [ngClass]=\"{\n    title: true,\n    'title-h1': text === 'title-h1',\n    'title-h2': text === 'title-h2',\n    'title-h3': text === 'title-h3',\n    'title-h4': text === 'title-h4',\n    'title-h5': text === 'title-h5',\n    'title-h6': text === 'title-h6',\n    'body-bigger': text === 'body-bigger',\n    'body-medium': text === 'body-medium',\n    'body-medium-accent': text === 'body-medium-accent',\n    'body-small': text === 'body-small',\n    'body-smaller': text === 'body-smaller',\n    'color-white': color === 'white',\n    'color-black': color === 'black',\n    'color-primary': color === 'primary',\n    'color-disabled': color === 'disabled',\n    none: color === ''\n  }\"\n>\n  <ng-content></ng-content>\n</p>\n"
+            "templateData": "<p\n  [ngClass]=\"{\n    'style-h1': variant === 'title-h1',\n    'style-h2': variant === 'title-h2',\n    'style-h3': variant === 'title-h3',\n    'style-h4': variant === 'title-h4',\n    'style-h5': variant === 'title-h5',\n    'style-h6': variant === 'title-h6',\n    'style-body-bigger': variant === 'body-bigger',\n    'style-body-medium': variant === 'body-medium',\n    'style-body-medium-accent': variant === 'body-medium-accent',\n    'style-body-small': variant === 'body-small',\n    'style-body-smaller': variant === 'body-smaller',\n    'color-white': color === 'white',\n    'color-black': color === 'black',\n    'color-primary': color === 'primary',\n    'color-disabled': color === 'disabled',\n    none: color === ''\n  }\"\n>\n  <ng-content></ng-content>\n</p>\n"
         }
     ],
     "modules": [],
@@ -1570,7 +1646,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    button: 'button-accent',\n    title: {\n      text: 'body-medium-accent',\n      color: 'primary',\n    },\n  },\n}"
+                "defaultValue": "{\n  args: {\n    variant: 'button-accent',\n    title: {\n      variant: 'body-medium-accent',\n      color: 'primary',\n    },\n  },\n}"
             },
             {
                 "name": "AreaStepCheck",
@@ -1610,7 +1686,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    button: 'button-base',\n    title: {\n      text: 'body-medium-accent',\n      color: 'white',\n    },\n  },\n}"
+                "defaultValue": "{\n  args: {\n    variant: 'button-base',\n    title: {\n      variant: 'body-medium-accent',\n      color: 'white',\n    },\n  },\n}"
             },
             {
                 "name": "BaseChip",
@@ -1680,7 +1756,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<number>",
-                "defaultValue": "{\n  args: {\n    id: '0',\n    name: 'select',\n    options: numbers,\n    placeholder: 'Select some option',\n    disabled: false,\n    label: {\n      css: 'label-primary',\n    },\n  },\n}"
+                "defaultValue": "{\n  args: {\n    id: '0',\n    name: 'select',\n    options: numbers,\n    placeholder: 'Select some option',\n    disabled: false,\n    label: {\n      variant: 'label-base',\n    },\n  },\n}"
             },
             {
                 "name": "BasicStepCompleted",
@@ -1730,7 +1806,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    button: 'button-base',\n    disabled: true,\n    title: {\n      text: 'body-medium-accent',\n      color: 'white',\n    },\n  },\n}"
+                "defaultValue": "{\n  args: {\n    variant: 'button-base',\n    disabled: true,\n    title: {\n      variant: 'body-medium-accent',\n      color: 'white',\n    },\n  },\n}"
             },
             {
                 "name": "GhostButton",
@@ -1740,7 +1816,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    button: 'button-ghost',\n    title: {\n      text: 'body-medium-accent',\n      color: '',\n    },\n  },\n}"
+                "defaultValue": "{\n  args: {\n    variant: 'button-ghost',\n    title: {\n      variant: 'body-medium-accent',\n      color: '',\n    },\n  },\n}"
             },
             {
                 "name": "GhostDisabledButton",
@@ -1750,7 +1826,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    button: 'button-ghost',\n    disabled: true,\n    title: {\n      text: 'body-medium-accent',\n      color: '',\n    },\n  },\n}"
+                "defaultValue": "{\n  args: {\n    variant: 'button-ghost',\n    disabled: true,\n    title: {\n      variant: 'body-medium-accent',\n      color: '',\n    },\n  },\n}"
             },
             {
                 "name": "GhostLoadingDisabledButton",
@@ -1760,7 +1836,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    button: 'button-ghost',\n    disabled: true,\n    loading: true,\n    colorLoading: 'disabled',\n    title: {\n      text: 'body-medium-accent',\n      color: 'disabled',\n    },\n  },\n}"
+                "defaultValue": "{\n  args: {\n    variant: 'button-ghost',\n    disabled: true,\n    loading: true,\n    colorLoading: 'disabled',\n    title: {\n      variant: 'body-medium-accent',\n      color: 'disabled',\n    },\n  },\n}"
             },
             {
                 "name": "LoadingDisabledButton",
@@ -1770,7 +1846,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    button: 'button-base',\n    disabled: true,\n    loading: true,\n    colorLoading: 'white',\n    title: {\n      text: 'body-medium-accent',\n      color: 'white',\n    },\n  },\n}"
+                "defaultValue": "{\n  args: {\n    variant: 'button-base',\n    disabled: true,\n    loading: true,\n    colorLoading: 'white',\n    title: {\n      variant: 'body-medium-accent',\n      color: 'white',\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -1780,7 +1856,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<StoryType>",
-                "defaultValue": "{\n  title: 'Components/Atoms/Label',\n  component: LabelComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-label [css]=\"css\">\n          ${text}\n        </c-label>\n      `,\n    };\n  },\n  argTypes: {\n    css: {\n      type: 'string',\n    },\n    text: {\n      type: 'string',\n    },\n    for: {\n      type: 'string',\n    },\n  },\n  args: {\n    css: 'label-primary' || 'label-secondary' || 'label-tertiary',\n    text: '',\n    for: '',\n  },\n}"
+                "defaultValue": "{\n  title: 'Components/Atoms/Label',\n  component: LabelComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-label [css]=\"css\">\n          ${text}\n        </c-label>\n      `,\n    };\n  },\n  argTypes: {\n    variant: {\n      type: 'string',\n    },\n    text: {\n      type: 'string',\n    },\n    for: {\n      type: 'string',\n    },\n  },\n  args: {\n    variant: 'label-base',\n    text: '',\n    for: '',\n  },\n}"
             },
             {
                 "name": "meta",
@@ -1790,17 +1866,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<StoryType>",
-                "defaultValue": "{\n  title: 'Components/Atoms/Title',\n  component: TitleComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-title [css]=\"css\" [color]=\"color\">\n          ${text}\n        </c-title>\n      `,\n    };\n  },\n  argTypes: {\n    text: {\n      control: {\n        type: 'select',\n        options: [\n          'title-h1',\n          'title-h2',\n          'title-h3',\n          'title-h4',\n          'title-h5',\n          'title-h6',\n          'body-bigger',\n          'body-medium',\n          'body-small',\n          'body-medium-accent',\n          'body-smaller',\n        ],\n      },\n    },\n  },\n  args: {\n    text: 'title-h1',\n  },\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "frontend/ui/stories/organism/container-step/container-step.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<StoryComponent>",
-                "defaultValue": "{\n  title: 'Components/Organism/ContainerStep',\n  component: ContainerStepComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        ContainerStepComponent,\n        StepComponent,\n        IconAreaComponent,\n        IconPassComponent,\n        IconBasicComponent,\n      ],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  render: (args: StoryComponent) => {\n    const { steps } = args;\n\n    const stepsTemplate = steps\n      .map((step) => `<c-step [status]=\"${step.status}\" [logo]=\"${step.logo}\">`)\n      .join('');\n\n    return {\n      props: {},\n      template: `\n      <c-container-step [containerStatus]=\"containerStatus\">\n        ${{ stepsTemplate }}\n      </c-container-step>\n      `,\n    };\n  },\n}"
+                "defaultValue": "{\n  title: 'Components/Atoms/Title',\n  component: TitleComponent,\n  render: (args) => {\n    const { text, variant, color } = args;\n    return {\n      props: { variant, color },\n      template: `\n        <c-title [variant]=\"variant\" [color]=\"color\">\n          ${text}\n        </c-title>\n      `,\n    };\n  },\n  argTypes: {\n    text: {\n      control: {\n        type: 'select',\n        options: [\n          'title-h1',\n          'title-h2',\n          'title-h3',\n          'title-h4',\n          'title-h5',\n          'title-h6',\n          'body-bigger',\n          'body-medium',\n          'body-small',\n          'body-medium-accent',\n          'body-smaller',\n        ],\n      },\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -1810,7 +1876,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<StoryComponent>",
-                "defaultValue": "{\n  title: 'Components/Molecules/Button',\n  component: ButtonComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [ButtonComponent, TitleComponent, IconLoadingComponent],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  argTypes: {\n    button: {\n      options: [\n        'button-base',\n        'button-disabled',\n        'button-ghost',\n        'button-accent',\n      ],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'radio' },\n    },\n    type: {\n      options: ['button', 'reset', 'submit'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { button, disabled, title, type, loading, colorLoading } = args;\n    const { text, color } = title;\n\n    return {\n      props: { button, disabled, text, type, color, loading, colorLoading },\n      template: `\n      <c-button\n      [button]=\"button\"\n      [disabled]=\"disabled\"\n      [type]=\"type\"\n      [title]=\"title\"\n      [loading]=\"loading\"\n      [colorLoading]=\"colorLoading\">\n      <c-title [text]=\"text\" [color]=\"color\"> Text example </c-title>\n    </c-button>\n      `,\n    };\n  },\n}"
+                "defaultValue": "{\n  title: 'Components/Molecules/Button',\n  component: ButtonComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [ButtonComponent, TitleComponent, IconLoadingComponent],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  argTypes: {\n    variant: {\n      options: [\n        'button-base',\n        'button-disabled',\n        'button-ghost',\n        'button-accent',\n      ],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'radio' },\n    },\n    type: {\n      options: ['button', 'reset', 'submit'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { variant, disabled, title, type, loading, colorLoading } = args;\n\n    return {\n      props: { variant, disabled, type, title, loading, colorLoading },\n      template: `\n      <c-button\n      [variant]=\"variant\"\n      [disabled]=\"disabled\"\n      [type]=\"type\"\n      [title]=\"title\"\n      [loading]=\"loading\"\n      [colorLoading]=\"colorLoading\">\n      <c-title [variant]=\"title.variant\" [color]=\"title.color\"> Text example </c-title>\n    </c-button>\n      `,\n    };\n  },\n}"
             },
             {
                 "name": "meta",
@@ -1830,7 +1896,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<StoryComponent>",
-                "defaultValue": "{\n  title: 'Components/Molecules/Input',\n  component: InputComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        InputComponent,\n        LabelComponent,\n        ErrorInputComponent,\n        IconClearComponent,\n        IconShowPassComponent,\n        IconHiddenPassComponent,\n      ],\n      imports: [CommonModule, FormsModule, ReactiveFormsModule],\n    }),\n  ],\n  argTypes: {\n    css: {\n      options: ['input-base', 'input-secondary', 'input-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'boolean' },\n    },\n    type: {\n      options: ['number', 'text', 'email', 'password'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { label, ...inputProps } = args;\n    const { css, ...labelProps } = label;\n\n    return {\n      props: { inputProps, css, labelProps, sharedFormControl },\n      template: `\n      <c-label [css]=\"css\" [for]=\"inputProps.id\">\n        Label text\n        <c-input\n        [css]=\"inputProps.css\"\n        [type]=\"inputProps.type\"\n        [placeholder]=\"inputProps.placeholder\"\n        [formControl]=\"sharedFormControl\"\n        [disabled]=\"inputProps.disabled\"\n        [id]=\"inputProps.id\"\n        [showPassword]=\"inputProps.showPassword\"\n        [name]=\"inputProps.name\"></c-input>\n      </c-label>\n\n      `,\n    };\n  },\n}"
+                "defaultValue": "{\n  title: 'Components/Molecules/Input',\n  component: InputComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        InputComponent,\n        LabelComponent,\n        ErrorInputComponent,\n        IconClearComponent,\n        IconShowPassComponent,\n        IconHiddenPassComponent,\n      ],\n      imports: [CommonModule, FormsModule, ReactiveFormsModule],\n    }),\n  ],\n  argTypes: {\n    variant: {\n      options: ['input-base', 'input-secondary', 'input-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'boolean' },\n    },\n    type: {\n      options: ['number', 'text', 'email', 'password'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { label, ...inputProps } = args;\n    const { variant, ...labelProps } = label;\n\n    return {\n      props: { inputProps, labelProps, sharedFormControl, variant },\n      template: `\n      <c-label [variant]=\"variant\" [for]=\"inputProps.id\">\n        Label text\n        <c-input\n        [variant]=\"inputProps.variant\"\n        [type]=\"inputProps.type\"\n        [placeholder]=\"inputProps.placeholder\"\n        [formControl]=\"sharedFormControl\"\n        [disabled]=\"inputProps.disabled\"\n        [id]=\"inputProps.id\"\n        [showPassword]=\"inputProps.showPassword\"\n        [name]=\"inputProps.name\"></c-input>\n      </c-label>\n\n      `,\n    };\n  },\n}"
             },
             {
                 "name": "meta",
@@ -1840,7 +1906,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<StoryComponent<number>>",
-                "defaultValue": "{\n  title: 'Components/Molecules/Select',\n  component: SelectComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [SelectComponent, LabelComponent, ErrorInputComponent],\n      imports: [CommonModule, FormsModule, ReactiveFormsModule],\n    }),\n  ],\n  argTypes: {\n    options: {\n      control: { type: 'select', options: numbers },\n    },\n    id: {\n      control: 'text',\n    },\n    name: {\n      control: 'text',\n    },\n    placeholder: {\n      control: 'text',\n    },\n    disabled: {\n      control: 'boolean',\n    },\n  },\n  render: (args: StoryComponent<number>) => {\n    const { label, id, name, options, placeholder, disabled } = args;\n    const { css, ...labelProps } = label;\n\n    return {\n      props: {\n        id,\n        name,\n        options,\n        css,\n        labelProps,\n        sharedFormControl,\n        placeholder,\n        numbers,\n        disabled,\n      },\n      template: `\n      <c-label [css]=\"css\" [for]=\"id\">\n        Label text\n        <c-select\n        [placeholder]=\"placeholder\"\n        [formControl]=\"sharedFormControl\"\n        [disabled]=\"disabled\"\n        [options]=\"numbers\"\n        [id]=\"id\"\n        [name]=\"name\"></c-select>\n      </c-label>\n      `,\n    };\n  },\n}"
+                "defaultValue": "{\n  title: 'Components/Molecules/Select',\n  component: SelectComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [SelectComponent, LabelComponent, ErrorInputComponent],\n      imports: [CommonModule, FormsModule, ReactiveFormsModule],\n    }),\n  ],\n  argTypes: {\n    options: {\n      control: { type: 'select', options: numbers },\n    },\n    id: {\n      control: 'text',\n    },\n    name: {\n      control: 'text',\n    },\n    placeholder: {\n      control: 'text',\n    },\n    disabled: {\n      control: 'boolean',\n    },\n  },\n  render: (args: StoryComponent<number>) => {\n    const { label, id, name, options, placeholder, disabled } = args;\n    const { variant, ...labelProps } = label;\n\n    return {\n      props: {\n        id,\n        name,\n        options,\n        variant,\n        labelProps,\n        sharedFormControl,\n        placeholder,\n        numbers,\n        disabled,\n      },\n      template: `\n      <c-label [variant]=\"variant\" [for]=\"id\">\n        Label text\n        <c-select\n        [placeholder]=\"placeholder\"\n        [formControl]=\"sharedFormControl\"\n        [disabled]=\"disabled\"\n        [options]=\"numbers\"\n        [id]=\"id\"\n        [name]=\"name\"></c-select>\n      </c-label>\n      `,\n    };\n  },\n}"
             },
             {
                 "name": "meta",
@@ -1900,7 +1966,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    css: 'label-primary',\n    text: 'Label Text',\n  },\n}"
+                "defaultValue": "{\n  args: {\n    variant: 'label-base',\n    text: 'Label Text',\n  },\n}"
             },
             {
                 "name": "PrimaryInput",
@@ -1910,7 +1976,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    css: 'input-base',\n    type: 'text',\n    placeholder: 'Entry text',\n    name: 'example',\n    id: 'example',\n    showPassword: false,\n    disabled: false,\n    label: {\n      css: 'label-primary',\n    },\n  },\n}"
+                "defaultValue": "{\n  args: {\n    variant: 'input-base',\n    type: 'text',\n    placeholder: 'Entry text',\n    name: 'example',\n    id: 'example',\n    showPassword: false,\n    disabled: false,\n    label: {\n      variant: 'label-base',\n    },\n  },\n}"
             },
             {
                 "name": "sharedFormControl",
@@ -1933,16 +1999,6 @@
                 "defaultValue": "new FormControl('', Validators.required)"
             },
             {
-                "name": "StepOneContainerStep",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "frontend/ui/stories/organism/container-step/container-step.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  args: {\n    steps: [\n      {\n        logo: 'basic',\n        status: 'In Progress',\n      },\n      {\n        logo: 'pass',\n        status: 'Pending',\n      },\n      {\n        logo: 'area',\n        status: 'Pending',\n      },\n    ],\n  },\n}"
-            },
-            {
                 "name": "TitleH1",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1950,7 +2006,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    text: 'title-h1',\n  },\n}"
+                "defaultValue": "{\n  args: {\n    text: 'Text example',\n    color: 'black',\n    variant: 'title-h1',\n  },\n}"
             }
         ],
         "functions": [],
@@ -1972,17 +2028,6 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<StoryType>",
                 "file": "frontend/ui/stories/atoms/title/title.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 180
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj<StoryComponent>",
-                "file": "frontend/ui/stories/organism/container-step/container-step.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -2042,17 +2087,6 @@
                 "deprecationMessage": "",
                 "description": "",
                 "kind": 180
-            },
-            {
-                "name": "StoryComponent",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "literal type",
-                "file": "frontend/ui/stories/organism/container-step/container-step.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 184
             },
             {
                 "name": "StoryComponent",
@@ -2165,7 +2199,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    button: 'button-accent',\n    title: {\n      text: 'body-medium-accent',\n      color: 'primary',\n    },\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    variant: 'button-accent',\n    title: {\n      variant: 'body-medium-accent',\n      color: 'primary',\n    },\n  },\n}"
                 },
                 {
                     "name": "BaseButton",
@@ -2175,7 +2209,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    button: 'button-base',\n    title: {\n      text: 'body-medium-accent',\n      color: 'white',\n    },\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    variant: 'button-base',\n    title: {\n      variant: 'body-medium-accent',\n      color: 'white',\n    },\n  },\n}"
                 },
                 {
                     "name": "DisabledButton",
@@ -2185,7 +2219,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    button: 'button-base',\n    disabled: true,\n    title: {\n      text: 'body-medium-accent',\n      color: 'white',\n    },\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    variant: 'button-base',\n    disabled: true,\n    title: {\n      variant: 'body-medium-accent',\n      color: 'white',\n    },\n  },\n}"
                 },
                 {
                     "name": "GhostButton",
@@ -2195,7 +2229,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    button: 'button-ghost',\n    title: {\n      text: 'body-medium-accent',\n      color: '',\n    },\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    variant: 'button-ghost',\n    title: {\n      variant: 'body-medium-accent',\n      color: '',\n    },\n  },\n}"
                 },
                 {
                     "name": "GhostDisabledButton",
@@ -2205,7 +2239,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    button: 'button-ghost',\n    disabled: true,\n    title: {\n      text: 'body-medium-accent',\n      color: '',\n    },\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    variant: 'button-ghost',\n    disabled: true,\n    title: {\n      variant: 'body-medium-accent',\n      color: '',\n    },\n  },\n}"
                 },
                 {
                     "name": "GhostLoadingDisabledButton",
@@ -2215,7 +2249,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    button: 'button-ghost',\n    disabled: true,\n    loading: true,\n    colorLoading: 'disabled',\n    title: {\n      text: 'body-medium-accent',\n      color: 'disabled',\n    },\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    variant: 'button-ghost',\n    disabled: true,\n    loading: true,\n    colorLoading: 'disabled',\n    title: {\n      variant: 'body-medium-accent',\n      color: 'disabled',\n    },\n  },\n}"
                 },
                 {
                     "name": "LoadingDisabledButton",
@@ -2225,7 +2259,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    button: 'button-base',\n    disabled: true,\n    loading: true,\n    colorLoading: 'white',\n    title: {\n      text: 'body-medium-accent',\n      color: 'white',\n    },\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    variant: 'button-base',\n    disabled: true,\n    loading: true,\n    colorLoading: 'white',\n    title: {\n      variant: 'body-medium-accent',\n      color: 'white',\n    },\n  },\n}"
                 },
                 {
                     "name": "meta",
@@ -2235,7 +2269,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<StoryComponent>",
-                    "defaultValue": "{\n  title: 'Components/Molecules/Button',\n  component: ButtonComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [ButtonComponent, TitleComponent, IconLoadingComponent],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  argTypes: {\n    button: {\n      options: [\n        'button-base',\n        'button-disabled',\n        'button-ghost',\n        'button-accent',\n      ],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'radio' },\n    },\n    type: {\n      options: ['button', 'reset', 'submit'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { button, disabled, title, type, loading, colorLoading } = args;\n    const { text, color } = title;\n\n    return {\n      props: { button, disabled, text, type, color, loading, colorLoading },\n      template: `\n      <c-button\n      [button]=\"button\"\n      [disabled]=\"disabled\"\n      [type]=\"type\"\n      [title]=\"title\"\n      [loading]=\"loading\"\n      [colorLoading]=\"colorLoading\">\n      <c-title [text]=\"text\" [color]=\"color\"> Text example </c-title>\n    </c-button>\n      `,\n    };\n  },\n}"
+                    "defaultValue": "{\n  title: 'Components/Molecules/Button',\n  component: ButtonComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [ButtonComponent, TitleComponent, IconLoadingComponent],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  argTypes: {\n    variant: {\n      options: [\n        'button-base',\n        'button-disabled',\n        'button-ghost',\n        'button-accent',\n      ],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'radio' },\n    },\n    type: {\n      options: ['button', 'reset', 'submit'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { variant, disabled, title, type, loading, colorLoading } = args;\n\n    return {\n      props: { variant, disabled, type, title, loading, colorLoading },\n      template: `\n      <c-button\n      [variant]=\"variant\"\n      [disabled]=\"disabled\"\n      [type]=\"type\"\n      [title]=\"title\"\n      [loading]=\"loading\"\n      [colorLoading]=\"colorLoading\">\n      <c-title [variant]=\"title.variant\" [color]=\"title.color\"> Text example </c-title>\n    </c-button>\n      `,\n    };\n  },\n}"
                 }
             ],
             "frontend/ui/stories/molecules/step/step.component.stories.ts": [
@@ -2421,7 +2455,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<number>",
-                    "defaultValue": "{\n  args: {\n    id: '0',\n    name: 'select',\n    options: numbers,\n    placeholder: 'Select some option',\n    disabled: false,\n    label: {\n      css: 'label-primary',\n    },\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    id: '0',\n    name: 'select',\n    options: numbers,\n    placeholder: 'Select some option',\n    disabled: false,\n    label: {\n      variant: 'label-base',\n    },\n  },\n}"
                 },
                 {
                     "name": "meta",
@@ -2431,7 +2465,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<StoryComponent<number>>",
-                    "defaultValue": "{\n  title: 'Components/Molecules/Select',\n  component: SelectComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [SelectComponent, LabelComponent, ErrorInputComponent],\n      imports: [CommonModule, FormsModule, ReactiveFormsModule],\n    }),\n  ],\n  argTypes: {\n    options: {\n      control: { type: 'select', options: numbers },\n    },\n    id: {\n      control: 'text',\n    },\n    name: {\n      control: 'text',\n    },\n    placeholder: {\n      control: 'text',\n    },\n    disabled: {\n      control: 'boolean',\n    },\n  },\n  render: (args: StoryComponent<number>) => {\n    const { label, id, name, options, placeholder, disabled } = args;\n    const { css, ...labelProps } = label;\n\n    return {\n      props: {\n        id,\n        name,\n        options,\n        css,\n        labelProps,\n        sharedFormControl,\n        placeholder,\n        numbers,\n        disabled,\n      },\n      template: `\n      <c-label [css]=\"css\" [for]=\"id\">\n        Label text\n        <c-select\n        [placeholder]=\"placeholder\"\n        [formControl]=\"sharedFormControl\"\n        [disabled]=\"disabled\"\n        [options]=\"numbers\"\n        [id]=\"id\"\n        [name]=\"name\"></c-select>\n      </c-label>\n      `,\n    };\n  },\n}"
+                    "defaultValue": "{\n  title: 'Components/Molecules/Select',\n  component: SelectComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [SelectComponent, LabelComponent, ErrorInputComponent],\n      imports: [CommonModule, FormsModule, ReactiveFormsModule],\n    }),\n  ],\n  argTypes: {\n    options: {\n      control: { type: 'select', options: numbers },\n    },\n    id: {\n      control: 'text',\n    },\n    name: {\n      control: 'text',\n    },\n    placeholder: {\n      control: 'text',\n    },\n    disabled: {\n      control: 'boolean',\n    },\n  },\n  render: (args: StoryComponent<number>) => {\n    const { label, id, name, options, placeholder, disabled } = args;\n    const { variant, ...labelProps } = label;\n\n    return {\n      props: {\n        id,\n        name,\n        options,\n        variant,\n        labelProps,\n        sharedFormControl,\n        placeholder,\n        numbers,\n        disabled,\n      },\n      template: `\n      <c-label [variant]=\"variant\" [for]=\"id\">\n        Label text\n        <c-select\n        [placeholder]=\"placeholder\"\n        [formControl]=\"sharedFormControl\"\n        [disabled]=\"disabled\"\n        [options]=\"numbers\"\n        [id]=\"id\"\n        [name]=\"name\"></c-select>\n      </c-label>\n      `,\n    };\n  },\n}"
                 },
                 {
                     "name": "numbers",
@@ -2475,7 +2509,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<StoryType>",
-                    "defaultValue": "{\n  title: 'Components/Atoms/Label',\n  component: LabelComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-label [css]=\"css\">\n          ${text}\n        </c-label>\n      `,\n    };\n  },\n  argTypes: {\n    css: {\n      type: 'string',\n    },\n    text: {\n      type: 'string',\n    },\n    for: {\n      type: 'string',\n    },\n  },\n  args: {\n    css: 'label-primary' || 'label-secondary' || 'label-tertiary',\n    text: '',\n    for: '',\n  },\n}"
+                    "defaultValue": "{\n  title: 'Components/Atoms/Label',\n  component: LabelComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-label [css]=\"css\">\n          ${text}\n        </c-label>\n      `,\n    };\n  },\n  argTypes: {\n    variant: {\n      type: 'string',\n    },\n    text: {\n      type: 'string',\n    },\n    for: {\n      type: 'string',\n    },\n  },\n  args: {\n    variant: 'label-base',\n    text: '',\n    for: '',\n  },\n}"
                 },
                 {
                     "name": "Primary",
@@ -2485,7 +2519,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    css: 'label-primary',\n    text: 'Label Text',\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    variant: 'label-base',\n    text: 'Label Text',\n  },\n}"
                 }
             ],
             "frontend/ui/stories/atoms/title/title.component.stories.ts": [
@@ -2497,7 +2531,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<StoryType>",
-                    "defaultValue": "{\n  title: 'Components/Atoms/Title',\n  component: TitleComponent,\n  render: (args) => {\n    const { text, ...props } = args;\n    return {\n      props,\n      template: `\n        <c-title [css]=\"css\" [color]=\"color\">\n          ${text}\n        </c-title>\n      `,\n    };\n  },\n  argTypes: {\n    text: {\n      control: {\n        type: 'select',\n        options: [\n          'title-h1',\n          'title-h2',\n          'title-h3',\n          'title-h4',\n          'title-h5',\n          'title-h6',\n          'body-bigger',\n          'body-medium',\n          'body-small',\n          'body-medium-accent',\n          'body-smaller',\n        ],\n      },\n    },\n  },\n  args: {\n    text: 'title-h1',\n  },\n}"
+                    "defaultValue": "{\n  title: 'Components/Atoms/Title',\n  component: TitleComponent,\n  render: (args) => {\n    const { text, variant, color } = args;\n    return {\n      props: { variant, color },\n      template: `\n        <c-title [variant]=\"variant\" [color]=\"color\">\n          ${text}\n        </c-title>\n      `,\n    };\n  },\n  argTypes: {\n    text: {\n      control: {\n        type: 'select',\n        options: [\n          'title-h1',\n          'title-h2',\n          'title-h3',\n          'title-h4',\n          'title-h5',\n          'title-h6',\n          'body-bigger',\n          'body-medium',\n          'body-small',\n          'body-medium-accent',\n          'body-smaller',\n        ],\n      },\n    },\n  },\n}"
                 },
                 {
                     "name": "TitleH1",
@@ -2507,29 +2541,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    text: 'title-h1',\n  },\n}"
-                }
-            ],
-            "frontend/ui/stories/organism/container-step/container-step.component.stories.ts": [
-                {
-                    "name": "meta",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "frontend/ui/stories/organism/container-step/container-step.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<StoryComponent>",
-                    "defaultValue": "{\n  title: 'Components/Organism/ContainerStep',\n  component: ContainerStepComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        ContainerStepComponent,\n        StepComponent,\n        IconAreaComponent,\n        IconPassComponent,\n        IconBasicComponent,\n      ],\n      imports: [CommonModule],\n    }),\n    //👇 Wrap our stories with a decorator (optional)\n    // componentWrapperDecorator(story => `<div style=\"margin: 3em\">${story}</div>`),\n  ],\n  render: (args: StoryComponent) => {\n    const { steps } = args;\n\n    const stepsTemplate = steps\n      .map((step) => `<c-step [status]=\"${step.status}\" [logo]=\"${step.logo}\">`)\n      .join('');\n\n    return {\n      props: {},\n      template: `\n      <c-container-step [containerStatus]=\"containerStatus\">\n        ${{ stepsTemplate }}\n      </c-container-step>\n      `,\n    };\n  },\n}"
-                },
-                {
-                    "name": "StepOneContainerStep",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "frontend/ui/stories/organism/container-step/container-step.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    steps: [\n      {\n        logo: 'basic',\n        status: 'In Progress',\n      },\n      {\n        logo: 'pass',\n        status: 'Pending',\n      },\n      {\n        logo: 'area',\n        status: 'Pending',\n      },\n    ],\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    text: 'Text example',\n    color: 'black',\n    variant: 'title-h1',\n  },\n}"
                 }
             ],
             "frontend/ui/stories/molecules/input/input.component.stories.ts": [
@@ -2541,7 +2553,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<StoryComponent>",
-                    "defaultValue": "{\n  title: 'Components/Molecules/Input',\n  component: InputComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        InputComponent,\n        LabelComponent,\n        ErrorInputComponent,\n        IconClearComponent,\n        IconShowPassComponent,\n        IconHiddenPassComponent,\n      ],\n      imports: [CommonModule, FormsModule, ReactiveFormsModule],\n    }),\n  ],\n  argTypes: {\n    css: {\n      options: ['input-base', 'input-secondary', 'input-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'boolean' },\n    },\n    type: {\n      options: ['number', 'text', 'email', 'password'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { label, ...inputProps } = args;\n    const { css, ...labelProps } = label;\n\n    return {\n      props: { inputProps, css, labelProps, sharedFormControl },\n      template: `\n      <c-label [css]=\"css\" [for]=\"inputProps.id\">\n        Label text\n        <c-input\n        [css]=\"inputProps.css\"\n        [type]=\"inputProps.type\"\n        [placeholder]=\"inputProps.placeholder\"\n        [formControl]=\"sharedFormControl\"\n        [disabled]=\"inputProps.disabled\"\n        [id]=\"inputProps.id\"\n        [showPassword]=\"inputProps.showPassword\"\n        [name]=\"inputProps.name\"></c-input>\n      </c-label>\n\n      `,\n    };\n  },\n}"
+                    "defaultValue": "{\n  title: 'Components/Molecules/Input',\n  component: InputComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        InputComponent,\n        LabelComponent,\n        ErrorInputComponent,\n        IconClearComponent,\n        IconShowPassComponent,\n        IconHiddenPassComponent,\n      ],\n      imports: [CommonModule, FormsModule, ReactiveFormsModule],\n    }),\n  ],\n  argTypes: {\n    variant: {\n      options: ['input-base', 'input-secondary', 'input-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'boolean' },\n    },\n    type: {\n      options: ['number', 'text', 'email', 'password'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { label, ...inputProps } = args;\n    const { variant, ...labelProps } = label;\n\n    return {\n      props: { inputProps, labelProps, sharedFormControl, variant },\n      template: `\n      <c-label [variant]=\"variant\" [for]=\"inputProps.id\">\n        Label text\n        <c-input\n        [variant]=\"inputProps.variant\"\n        [type]=\"inputProps.type\"\n        [placeholder]=\"inputProps.placeholder\"\n        [formControl]=\"sharedFormControl\"\n        [disabled]=\"inputProps.disabled\"\n        [id]=\"inputProps.id\"\n        [showPassword]=\"inputProps.showPassword\"\n        [name]=\"inputProps.name\"></c-input>\n      </c-label>\n\n      `,\n    };\n  },\n}"
                 },
                 {
                     "name": "PrimaryInput",
@@ -2551,7 +2563,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    css: 'input-base',\n    type: 'text',\n    placeholder: 'Entry text',\n    name: 'example',\n    id: 'example',\n    showPassword: false,\n    disabled: false,\n    label: {\n      css: 'label-primary',\n    },\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    variant: 'input-base',\n    type: 'text',\n    placeholder: 'Entry text',\n    name: 'example',\n    id: 'example',\n    showPassword: false,\n    disabled: false,\n    label: {\n      variant: 'label-base',\n    },\n  },\n}"
                 },
                 {
                     "name": "sharedFormControl",
@@ -2614,30 +2626,6 @@
                     "deprecationMessage": "",
                     "description": "",
                     "kind": 190
-                }
-            ],
-            "frontend/ui/stories/organism/container-step/container-step.component.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<StoryComponent>",
-                    "file": "frontend/ui/stories/organism/container-step/container-step.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 180
-                },
-                {
-                    "name": "StoryComponent",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "literal type",
-                    "file": "frontend/ui/stories/organism/container-step/container-step.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
                 }
             ],
             "frontend/ui/stories/molecules/button/button.component.stories.ts": [
@@ -2836,6 +2824,24 @@
                 "status": "low"
             },
             {
+                "filePath": "frontend/ui/components/atoms/icons/icon-facebook/icon-facebook.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconFacebookComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/atoms/icons/icon-google/icon-google.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconGoogleComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "frontend/ui/components/atoms/icons/icon-hidden-pass/icon-hidden-pass.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -2931,7 +2937,7 @@
                 "linktype": "component",
                 "name": "SelectComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/6",
+                "coverageCount": "0/7",
                 "status": "low"
             },
             {
@@ -2941,15 +2947,6 @@
                 "name": "StepComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/3",
-                "status": "low"
-            },
-            {
-                "filePath": "frontend/ui/components/organism/container-step/container-step.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "ContainerStepComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
                 "status": "low"
             },
             {
@@ -3308,26 +3305,6 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "PasswordStepProgess",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "frontend/ui/stories/organism/container-step/container-step.component.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "meta",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "frontend/ui/stories/organism/container-step/container-step.component.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "StepOneContainerStep",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

@@ -8,8 +8,6 @@ export * from './components/organisms/form-login/form-login.component';
 export * from './components/organisms/form-login/form-login.module';
 export * from './components/organisms/form-recover/form-recover.component';
 export * from './components/organisms/form-recover/form-recover.module';
-export * from './components/organisms/form-register/form-register.component';
-export * from './components/organisms/form-register/form-register.module';
 export * from './components/organisms/form-reset-pass/form-reset-pass.component';
 export * from './containers';
 export * from './containers/login/login.component';

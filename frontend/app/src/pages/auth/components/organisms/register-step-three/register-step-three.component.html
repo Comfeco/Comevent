@@ -1,0 +1,42 @@
+<form
+  [formGroup]="stepThreeForm"
+  class="w-full flex flex-col gap-6 items-center"
+>
+  <div class="flex flex-col gap-6 my-14 w-[400px]">
+    <img
+      class="object-cover w-full h-[115px] rounded-md"
+      src="/assets/png/area-of-interest.png"
+      alt="area-of-interest"
+    />
+    <c-label variant="label-base" for="areaOfInterest">
+      Select areas of interest
+      <c-select
+        (change)="onAreaSelected($event)"
+        variant="select-base"
+        [options]="availableAreasNames"
+        placeholder="Select the areas you are interested in"
+        formControlName="areaOfInterest"
+        name="areaOfInterest"
+        id="areaOfInterest"
+        [additionalValidators]="
+          formUtilities.getValidators(stepThreeForm, 'actualAreaOfInterest')
+        "
+      />
+    </c-label>
+    <ng-container *ngIf="registerUtils.areasSelected().length > 0">
+      <div
+        class="w-full p-4 shadow-neutral-level1 bg-white-2 flex flex-wrap gap-2 justify-center"
+      >
+        <c-chip
+          *ngFor="let area of registerUtils.areasSelected()"
+          (click)="removeSelectedArea(area)"
+          colorText="primary"
+          text="body-medium"
+          colorIcon="gray"
+          type="solid"
+          [label]="area"
+        />
+      </div>
+    </ng-container>
+  </div>
+</form>

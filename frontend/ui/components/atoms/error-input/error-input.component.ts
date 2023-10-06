@@ -31,6 +31,8 @@ export class ErrorInputComponent {
   }
 
   private getErrorMessage(errors: Record<string, any>): string {
+    console.log(errors);
+
     const [errorName] = Object.keys(errors);
     const errorFunction = DefaultErrorMessages[errorName];
     if (errorFunction) {

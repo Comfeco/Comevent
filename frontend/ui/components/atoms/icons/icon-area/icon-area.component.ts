@@ -12,6 +12,7 @@ import { IconType } from '../icon.interface';
   selector: 'icon-area',
   imports: [CommonModule],
   templateUrl: './icon-area.component.html',
+  styleUrls: ['./icon-area.component.scss'],
   encapsulation: ViewEncapsulation.Emulated,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

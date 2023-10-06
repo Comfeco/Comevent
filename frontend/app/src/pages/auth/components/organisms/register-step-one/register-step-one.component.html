@@ -1,9 +1,16 @@
-<form
-  [formGroup]="formLogin"
-  (ngSubmit)="onSubmit()"
-  class="w-full flex flex-col gap-6 items-center"
->
+<form [formGroup]="stepOneForm" class="w-full flex flex-col gap-6 items-center">
   <div class="flex flex-col gap-6 my-14 w-[400px]">
+    <c-label variant="label-base" for="nick">
+      Nick
+      <c-input
+        variant="input-base"
+        type="text"
+        placeholder="Jhon Doe"
+        formControlName="nick"
+        name="nick"
+        id="nick"
+      />
+    </c-label>
     <c-label variant="label-base" for="email">
       Email
       <c-input
@@ -15,23 +22,6 @@
         id="email"
       />
     </c-label>
-    <c-label variant="label-base" for="password">
-      Pasword
-      <c-input
-        variant="input-base"
-        type="password"
-        placeholder="*******"
-        formControlName="password"
-        name="password"
-        id="password"
-      />
-    </c-label>
-    <a
-      class="title-h6 text-primary text-center hover:underline"
-      routerLink="/auth/recover"
-    >
-      have you forgotten your password ?
-    </a>
 
     <div class="flex flex-col gap-4">
       <c-title variant="title-h6">Or use your networks</c-title>
@@ -50,10 +40,5 @@
         </c-button>
       </div>
     </div>
-  </div>
-  <div class="flex relative w-full justify-end">
-    <c-button variant="button-base" type="submit" [disabled]="!formLogin.valid">
-      <c-title variant="title-h6" color="white">Login</c-title>
-    </c-button>
   </div>
 </form>

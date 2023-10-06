@@ -9,3 +9,35 @@
 .content-inner-step {
   @apply flex justify-center items-center h-[38px] w-[38px] bg-white-1 rounded-full border-transparent border-2;
 }
+
+.progress {
+  @apply bg-primary;
+}
+
+.pending {
+  @apply bg-gray-2;
+}
+
+.success {
+  @apply bg-success;
+}
+
+.t-progress {
+  @apply text-primary;
+}
+
+.t-pending {
+  @apply text-gray-2;
+}
+
+.t-success {
+  @apply text-success;
+}
+
+.s-success {
+  @apply stroke-success;
+}
+
+.style-body-small {
+  @apply body-small;
+}

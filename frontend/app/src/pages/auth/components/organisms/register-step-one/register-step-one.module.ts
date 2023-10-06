@@ -1,33 +1,28 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
-import { RouterModule, Routes } from '@angular/router';
 import {
   ButtonComponent,
+  IconFacebookComponent,
+  IconGoogleComponent,
   InputComponent,
   LabelComponent,
   TitleComponent,
 } from '@ui/components';
-import { FormRegisterComponent } from './form-register.component';
-
-const routes: Routes = [
-  {
-    path: '',
-    component: FormRegisterComponent,
-  },
-];
+import { FormRegisterStepOneComponent } from './register-step-one.component';
 
 @NgModule({
-  declarations: [FormRegisterComponent],
+  declarations: [FormRegisterStepOneComponent],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes),
     ReactiveFormsModule,
     TitleComponent,
     InputComponent,
     LabelComponent,
     ButtonComponent,
+    IconGoogleComponent,
+    IconFacebookComponent,
   ],
-  exports: [FormRegisterComponent],
+  exports: [FormRegisterStepOneComponent],
 })
-export class FormRegisterModule {}
+export class FormRegisterStepOneModule {}
