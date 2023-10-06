@@ -1,15 +1,15 @@
 import { ACCES_LEVEL } from '@db/constants';
 import { Column, Entity, ManyToOne } from 'typeorm';
-import { BaseEntity, Project, User } from './';
+import { BaseEntity, Community, User } from './';
 
 @Entity({ name: 'users_projects' })
-export class UsersProjects extends BaseEntity {
+export class UsersCommunities extends BaseEntity {
   @Column({ type: 'enum', enum: ACCES_LEVEL })
   accesLevel!: ACCES_LEVEL;
 
-  @ManyToOne(() => User, (user) => user.projectsIncludes)
+  @ManyToOne(() => User, (user) => user.communitiesIncludes)
   user!: User;
 
-  @ManyToOne(() => Project, (project) => project.usersIncludes)
-  project!: Project;
+  @ManyToOne(() => Community, (community) => community.usersIncludes)
+  community!: Community;
 }

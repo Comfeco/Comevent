@@ -1,10 +1,14 @@
 import { BLOCKED_TIME, ROLES } from '@db/constants';
 import { Exclude } from 'class-transformer';
-import { Column, Entity, OneToMany } from 'typeorm';
+import { Column, Entity, ManyToOne, OneToMany } from 'typeorm';
 import { LastUpdatedBy } from '../../decorators/lastUpdateBy.decorator';
 import { IUser } from '../interfaces/user.interface';
-import { UsersProjects } from './';
 import { BaseEntity } from './base.entity';
+import { Country } from './country.entity';
+import { SocialNetwork } from './socialNetwork.entity';
+import { Specialty } from './specialty.entity';
+import { UserArea } from './userArea.entity';
+import { UsersCommunities } from './usersProjects.entity';
 
 // extends Base
 @Entity({ name: 'users' })
@@ -27,9 +31,18 @@ export class User extends BaseEntity implements IUser {
   @Column({ type: 'text', unique: true })
   username!: string;
 
-  /* @Field(() => String, {
-    description: 'User password',
-  }) */
+  @Column({ type: 'text', nullable: true })
+  avatar?: string;
+
+  @Column({ type: 'text', nullable: true })
+  description?: string;
+
+  @Column({ type: 'date', nullable: true })
+  bornDate?: Date;
+
+  @Column({ type: 'text', nullable: true })
+  gender?: string;
+
   @Exclude()
   @Column({ type: 'text' })
   password!: string;
@@ -46,8 +59,23 @@ export class User extends BaseEntity implements IUser {
   @Column({ type: 'text', default: [ROLES.USER], array: true })
   roles!: ROLES[];
 
-  @OneToMany(() => UsersProjects, (usersProjects) => usersProjects.user)
-  projectsIncludes!: UsersProjects[];
+  @OneToMany(
+    () => UsersCommunities,
+    (usersCommunities) => usersCommunities.user
+  )
+  communitiesIncludes!: UsersCommunities[];
+
+  @ManyToOne(() => Country, (country) => country.users)
+  country!: Country;
+
+  @OneToMany(() => SocialNetwork, (socialNetwork) => socialNetwork.user)
+  socialNetworks!: SocialNetwork[];
+
+  @OneToMany(() => UserArea, (userArea) => userArea.user)
+  userAreas!: UserArea[];
+
+  @ManyToOne(() => Specialty, (specialty) => specialty.users)
+  specialty!: Specialty;
 
   @LastUpdatedBy(User)
   lastUpdateBy!: User;

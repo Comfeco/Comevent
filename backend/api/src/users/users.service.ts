@@ -1,5 +1,5 @@
 import { ROLES } from '@db/constants';
-import { User, UsersProjects } from '@db/entities';
+import { User, UsersCommunities } from '@db/entities';
 import { HASH_SALT } from '@environments';
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
@@ -12,8 +12,8 @@ import { CreateUserDTO, UpdateUserDTO, UserToProjectDTO } from './dto';
 export class UsersService {
   constructor(
     @InjectRepository(User) private readonly userRepository: Repository<User>,
-    @InjectRepository(UsersProjects)
-    private readonly userProjectRepository: Repository<UsersProjects>
+    @InjectRepository(UsersCommunities)
+    private readonly userProjectRepository: Repository<UsersCommunities>
   ) {}
 
   public async registerUser(registerUser: CreateUserDTO) {
