@@ -1,4 +1,4 @@
-import { UsersProjects } from '@db/entities';
+import { UsersCommunities } from '@db/entities';
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
@@ -7,17 +7,17 @@ import { Resp } from '../utils';
 @Injectable()
 export class UsersProjectsService {
   constructor(
-    @InjectRepository(UsersProjects)
-    private readonly usersProjectsRepository: Repository<UsersProjects>
+    @InjectRepository(UsersCommunities)
+    private readonly usersProjectsRepository: Repository<UsersCommunities>
   ) {}
 
-  public async findAll(): Promise<UsersProjects[]> {
+  public async findAll(): Promise<UsersCommunities[]> {
     return await this.usersProjectsRepository.find({
       relations: ['user', 'project'],
     });
   }
 
-  public async findProjectsByUser(userId: string): Promise<UsersProjects[]> {
+  public async findProjectsByUser(userId: string): Promise<UsersCommunities[]> {
     const result = await this.usersProjectsRepository.find({
       where: { user: { id: userId } },
       relations: ['user', 'project'],

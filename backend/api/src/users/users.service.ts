@@ -1,10 +1,10 @@
 import { ROLES } from '@db/constants';
-import { User, UsersCommunities } from '@db/entities';
+import { Area, User, UserArea, UsersCommunities } from '@db/entities';
 import { HASH_SALT } from '@environments';
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import * as bcrypt from 'bcrypt';
-import { Repository } from 'typeorm';
+import { In, Repository } from 'typeorm';
 import { Resp } from '../utils/response.manager';
 import { CreateUserDTO, UpdateUserDTO, UserToProjectDTO } from './dto';
 
@@ -13,11 +13,15 @@ export class UsersService {
   constructor(
     @InjectRepository(User) private readonly userRepository: Repository<User>,
     @InjectRepository(UsersCommunities)
-    private readonly userProjectRepository: Repository<UsersCommunities>
+    private readonly userProjectRepository: Repository<UsersCommunities>,
+    @InjectRepository(Area)
+    private readonly areaRepository: Repository<Area>,
+    @InjectRepository(UserArea)
+    private readonly userAreaRepository: Repository<UserArea>
   ) {}
 
   public async registerUser(registerUser: CreateUserDTO) {
-    const { email, username } = registerUser;
+    const { email, username, areasOfInterest } = registerUser;
 
     const findUserbyEmail = await this.userRepository.findOneBy({ email });
 
@@ -40,13 +44,39 @@ export class UsersService {
     }
 
     const { password } = registerUser;
+
     try {
+      // ? Validar las áreas de interés
+      let validAreas: Area[] = [];
+      if (areasOfInterest) {
+        validAreas = await this.areaRepository.findBy({
+          id: In(areasOfInterest),
+        });
+        if (validAreas.length !== areasOfInterest.length) {
+          return Resp.Error(
+            'BAD_REQUEST',
+            'Some areas of interest are invalid'
+          );
+        }
+      }
+
       const newUser = await this.userRepository.create({
         ...registerUser,
         password: bcrypt.hashSync(password, HASH_SALT),
       });
 
       const user = await this.userRepository.save(newUser);
+
+      // ? Establecer las relaciones con las áreas de interés
+      if (areasOfInterest) {
+        for (const area of validAreas) {
+          const userArea = new UserArea();
+          userArea.user = user;
+          userArea.area = area;
+          userArea.type = 'INTEREST';
+          await this.userAreaRepository.save(userArea);
+        }
+      }
 
       return Resp.Success<User>(user, 'CREATED', 'User created successfully');
     } catch (error) {
