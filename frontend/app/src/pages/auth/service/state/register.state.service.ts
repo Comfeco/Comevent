@@ -24,6 +24,7 @@ export class RegisterStateService {
         next: ({ data, response }) => {
           this.registerUtils.step.set(1);
           this.registerUtils.areasSelected.set([]);
+          this.registerUtils.formRegister.reset();
           this.router.navigateByUrl('auth/login');
           Swal.success(response.message, true);
         },
