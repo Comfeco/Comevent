@@ -1,9 +1,9 @@
 import { setSeederFactory } from 'typeorm-extension';
 import { ACCES_LEVEL } from '../src/constants/interfaces.entities';
-import { UsersProjects } from '../src/lib/entities/usersProjects.entity';
+import { UsersCommunities } from '../src/lib/entities/usersCommunities.entity';
 
-export default setSeederFactory(UsersProjects, async (faker) => {
-  const usersProject = new UsersProjects();
+export default setSeederFactory(UsersCommunities, async (faker) => {
+  const usersProject = new UsersCommunities();
 
   usersProject.accesLevel = faker.helpers.arrayElement([
     ACCES_LEVEL.OWNER,

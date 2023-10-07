@@ -78,7 +78,13 @@ export class UsersService {
         }
       }
 
-      return Resp.Success<User>(user, 'CREATED', 'User created successfully');
+      const responseData = {
+        id: user.id,
+        email: user.email,
+        username: user.username,
+      };
+
+      return Resp.Success(responseData, 'CREATED', 'User created successfully');
     } catch (error) {
       throw Resp.Error('BAD_REQUEST', 'Something went wrong');
     }

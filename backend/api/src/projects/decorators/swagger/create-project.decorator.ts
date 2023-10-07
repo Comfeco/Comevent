@@ -1,4 +1,4 @@
-import { UsersProjects } from '@db/entities';
+import { UsersCommunities } from '@db/entities';
 import { applyDecorators } from '@nestjs/common';
 import {
   ApiBadRequestResponse,
@@ -17,7 +17,7 @@ export function CreateProjectDoc() {
     ApiUnauthorizedResponse({ description: 'Unauthorized' }),
     ApiCreatedResponse({
       description: 'The project has been successfully created.',
-      type: UsersProjects,
+      type: UsersCommunities,
     })
   );
 }

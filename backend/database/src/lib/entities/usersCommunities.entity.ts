@@ -1,6 +1,6 @@
 import { ACCES_LEVEL } from '@db/constants';
 import { Column, Entity, ManyToOne } from 'typeorm';
-import { BaseEntity, Community, User } from './';
+import { BaseEntity, Community, User } from '.';
 
 @Entity({ name: 'users_projects' })
 export class UsersCommunities extends BaseEntity {

@@ -1,8 +1,8 @@
 import { setSeederFactory } from 'typeorm-extension';
-import { Project } from '../src/lib/entities';
+import { Community } from '../src/lib/entities';
 
-export default setSeederFactory(Project, async (faker) => {
-  const project = new Project();
+export default setSeederFactory(Community, async (faker) => {
+  const project = new Community();
 
   project.name = faker.commerce.productName();
   project.description = faker.commerce.productDescription();

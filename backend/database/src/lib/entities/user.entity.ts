@@ -8,7 +8,7 @@ import { Country } from './country.entity';
 import { SocialNetwork } from './socialNetwork.entity';
 import { Specialty } from './specialty.entity';
 import { UserArea } from './userArea.entity';
-import { UsersCommunities } from './usersProjects.entity';
+import { UsersCommunities } from './usersCommunities.entity';
 
 // extends Base
 @Entity({ name: 'users' })

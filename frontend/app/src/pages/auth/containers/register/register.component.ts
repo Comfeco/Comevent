@@ -1,23 +1,9 @@
 import { Component, inject } from '@angular/core';
-import {
-  FormControl,
-  FormGroup,
-  NonNullableFormBuilder,
-  ValidatorFn,
-} from '@angular/forms';
+import { FormGroup, NonNullableFormBuilder, ValidatorFn } from '@angular/forms';
 import { ValidatorsService } from '@utils';
+import { RegisterStateService } from '../../service/state';
 import { RegisterUtilsService } from '../../service/utils';
-
-interface IRegisterUser {
-  stepOne: FormControl<boolean>;
-  stepTwo: FormControl<boolean>;
-  stepThree: FormControl<boolean>;
-}
-
-interface IRegisterStepOne {
-  nick: FormControl<string>;
-  email: FormControl<string>;
-}
+import { IRegisterData } from '../../types';
 
 @Component({
   selector: 'register',
@@ -28,6 +14,7 @@ export class RegisterComponent {
   private _formBuilder = inject(NonNullableFormBuilder);
   protected validatorsService = inject(ValidatorsService);
   protected registerUtils = inject(RegisterUtilsService);
+  protected registerState = inject(RegisterStateService);
   formRegister!: FormGroup;
   customValidator!: ValidatorFn;
   minSelectedValidator!: ValidatorFn;
@@ -40,13 +27,13 @@ export class RegisterComponent {
 
     this.formRegister = this._formBuilder.group({
       stepOne: this._formBuilder.group({
-        nick: [''],
-        email: [''],
+        nick: '',
+        email: '',
       }),
       stepTwo: this._formBuilder.group(
         {
-          password: [''],
-          passRepeat: [''],
+          password: '',
+          passRepeat: '',
         },
         {
           validators: this.customValidator,
@@ -128,8 +115,23 @@ export class RegisterComponent {
 
   submit(event: Event) {
     if (this.formRegister.valid) {
-      console.log(this.formRegister.getRawValue());
+      const formData = this.formRegister.getRawValue();
+      const registerData: IRegisterData = {
+        username: formData.stepOne.nick,
+        email: formData.stepOne.email,
+        password: formData.stepTwo.password,
+        areasOfInterest: formData.stepThree.areaOfInterest,
+      };
+      this.registerState.onRegister(registerData);
+      this.formRegister.reset();
     }
-    event.preventDefault();
+  }
+
+  onButtonClick(event: Event): void {
+    if (this.registerUtils.step() === 3) {
+      this.submit(event);
+    } else {
+      this.next();
+    }
   }
 }

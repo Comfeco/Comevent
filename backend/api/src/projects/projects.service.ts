@@ -1,5 +1,5 @@
 import { ACCES_LEVEL } from '@db/constants';
-import { Project, UsersProjects } from '@db/entities';
+import { Community, UsersCommunities } from '@db/entities';
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
@@ -10,17 +10,17 @@ import { CreateProjectDTO, ProjectUpdateDTO } from './dto';
 @Injectable()
 export class ProjectsService {
   constructor(
-    @InjectRepository(Project)
-    private readonly projectRepository: Repository<Project>,
-    @InjectRepository(UsersProjects)
-    private readonly userProjectRepository: Repository<UsersProjects>,
+    @InjectRepository(Community)
+    private readonly projectRepository: Repository<Community>,
+    @InjectRepository(UsersCommunities)
+    private readonly userProjectRepository: Repository<UsersCommunities>,
     private readonly userService: UsersService
   ) {}
 
   public async createProject(
     createProject: CreateProjectDTO,
     userId: string
-  ): Promise<UsersProjects> {
+  ): Promise<UsersCommunities> {
     try {
       const user = await this.userService.findUserById(userId);
       const project = await this.projectRepository.save(createProject);
@@ -41,7 +41,7 @@ export class ProjectsService {
     limit: number,
     offset: number,
     search: string
-  ): Promise<Project[]> {
+  ): Promise<Community[]> {
     try {
       const queryBuilder = await this.projectRepository
         .createQueryBuilder()
@@ -65,7 +65,7 @@ export class ProjectsService {
     }
   }
 
-  public async findProjectById(id: string): Promise<Project> {
+  public async findProjectById(id: string): Promise<Community> {
     try {
       const project = await this.projectRepository
         .createQueryBuilder('project')
@@ -88,7 +88,7 @@ export class ProjectsService {
   public async updateProject(
     projectUpdate: ProjectUpdateDTO,
     id: string
-  ): Promise<Project> {
+  ): Promise<Community> {
     try {
       await this.projectRepository.update(id, projectUpdate);
 
@@ -106,7 +106,7 @@ export class ProjectsService {
     }
   }
 
-  public async deleteProject(id: string): Promise<Project> {
+  public async deleteProject(id: string): Promise<Community> {
     try {
       const project = await this.findProjectById(id);
       await this.userProjectRepository

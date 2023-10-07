@@ -13,37 +13,13 @@ export const RegisterAdapter = (
     return managerError(resp);
   }
 
-  const {
-    id,
-    age,
-    email,
-    firstName,
-    lastName,
-    username,
-    isActive,
-    isBlocked,
-    timeBlocked,
-    roles,
-    createdAt,
-    deletedAt,
-    updatedAt,
-  } = data as IUserResponse;
+  const { id, email, username } = data as IUserResponse;
 
   return {
     data: {
       id,
       email,
       username,
-      age,
-      firstName,
-      lastName,
-      isActive,
-      isBlocked,
-      timeBlocked,
-      roles,
-      createdAt,
-      deletedAt,
-      updatedAt,
     },
     response: {
       status,
