@@ -1,4 +1,4 @@
-import { Project } from '@db/entities';
+import { Community } from '@db/entities';
 import { applyDecorators } from '@nestjs/common';
 import {
   ApiBody,
@@ -15,7 +15,7 @@ export function EditProjectDoc() {
     ApiParam({ name: 'id', required: true }),
     ApiOkResponse({
       description: 'The project has been successfully updated.',
-      type: Project,
+      type: Community,
     })
   );
 }

@@ -1,14 +1,14 @@
 import { DataSource } from 'typeorm';
 import { Seeder, SeederFactoryManager } from 'typeorm-extension';
 import { SEED_DATA } from '../../../config/constants';
-import { Project, Task } from '../src/lib/entities';
+import { Community, Task } from '../src/lib/entities';
 
 export default class TaskSeeder implements Seeder {
   public async run(
     dataSource: DataSource,
     factoryManager: SeederFactoryManager
   ): Promise<any> {
-    const repository = dataSource.getRepository(Project);
+    const repository = dataSource.getRepository(Community);
     const allProjects = await repository.find();
 
     if (allProjects.length === 0) {

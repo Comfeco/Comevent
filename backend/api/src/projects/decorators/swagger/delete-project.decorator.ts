@@ -1,4 +1,4 @@
-import { Project } from '@db/entities';
+import { Community } from '@db/entities';
 import { applyDecorators } from '@nestjs/common';
 import { ApiOkResponse, ApiOperation, ApiParam } from '@nestjs/swagger';
 
@@ -8,7 +8,7 @@ export function DeleteProjectDoc() {
     ApiParam({ name: 'id', required: true }),
     ApiOkResponse({
       description: 'The project has been successfully deleted.',
-      type: Project,
+      type: Community,
     })
   );
 }

@@ -1,4 +1,4 @@
-import { Project } from '@db/entities';
+import { Community } from '@db/entities';
 import { applyDecorators } from '@nestjs/common';
 import { ApiOkResponse, ApiOperation, ApiQuery } from '@nestjs/swagger';
 
@@ -10,7 +10,7 @@ export function ProjectsDoc() {
     ApiQuery({ name: 'search', required: false }),
     ApiOkResponse({
       description: 'Successfully retrieved projects.',
-      type: [Project],
+      type: [Community],
     })
   );
 }

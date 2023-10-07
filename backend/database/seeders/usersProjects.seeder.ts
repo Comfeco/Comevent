@@ -1,7 +1,7 @@
 import { DataSource } from 'typeorm';
 import { Seeder, SeederFactoryManager } from 'typeorm-extension';
 import { SEED_DATA } from '../../../config/constants';
-import { Project, User, UsersProjects } from '../src/lib/entities';
+import { Community, User, UsersCommunities } from '../src/lib/entities';
 
 export default class UsersProjectsSeeder implements Seeder {
   public async run(
@@ -9,8 +9,8 @@ export default class UsersProjectsSeeder implements Seeder {
     factoryManager: SeederFactoryManager
   ): Promise<any> {
     const userRepository = dataSource.getRepository(User);
-    const projectRepository = dataSource.getRepository(Project);
-    const usersProjectsRepository = dataSource.getRepository(UsersProjects);
+    const projectRepository = dataSource.getRepository(Community);
+    const usersProjectsRepository = dataSource.getRepository(UsersCommunities);
 
     const allUsers = await userRepository.find();
     const allProjects = await projectRepository.find();
@@ -19,7 +19,7 @@ export default class UsersProjectsSeeder implements Seeder {
       throw new Error('No users or projects exist');
     }
 
-    const usersProjectsFactory = await factoryManager.get(UsersProjects);
+    const usersProjectsFactory = await factoryManager.get(UsersCommunities);
     for (let i = 0; i < SEED_DATA; i++) {
       // selecciona un usuario y un proyecto aleatorios
       const randomUser = allUsers[Math.floor(Math.random() * allUsers.length)];
@@ -29,7 +29,7 @@ export default class UsersProjectsSeeder implements Seeder {
       // crea un nuevo UsersProjects y lo guarda en la base de datos
       const usersProject = await usersProjectsFactory.make();
       usersProject.user = randomUser;
-      usersProject.project = randomProject;
+      usersProject.community = randomProject;
 
       await usersProjectsRepository.save(usersProject);
     }

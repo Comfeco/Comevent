@@ -1,4 +1,4 @@
-import { UsersProjects } from '@db/entities';
+import { UsersCommunities } from '@db/entities';
 import { Controller, Get, Param, UseGuards } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
 import { JwtAuthGuard } from '../auth/guards';
@@ -13,7 +13,7 @@ export class UsersProjectsController {
 
   @Get()
   @UsersProjectsDoc()
-  async getUsersProjects(): Promise<UsersProjects[]> {
+  async getUsersProjects(): Promise<UsersCommunities[]> {
     return this.usersProjectsService.findAll();
   }
 

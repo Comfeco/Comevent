@@ -1,27 +1,27 @@
-<form (submit)="submit($event)" class="w-full flex-col gap-6 items-center">
+<form class="w-full flex-col gap-6 items-center">
   <register-step-one
     [parentForm]="formRegister"
-    *ngIf="this.registerUtils.step() === 1"
+    *ngIf="registerUtils.step() === 1"
   ></register-step-one>
   <register-step-two
     [parentForm]="formRegister"
-    *ngIf="this.registerUtils.step() === 2"
+    *ngIf="registerUtils.step() === 2"
   ></register-step-two>
   <register-step-three
     [parentForm]="formRegister"
-    *ngIf="this.registerUtils.step() === 3"
+    *ngIf="registerUtils.step() === 3"
   ></register-step-three>
   <div
     [ngClass]="{
-      'justify-between': this.registerUtils.step() > 1,
-      'justify-end': this.registerUtils.step() === 1,
+      'justify-between': registerUtils.step() > 1,
+      'justify-end': registerUtils.step() === 1,
       'flex relative w-full': true
     }"
   >
     <!-- Botón de Previous -->
     <c-button
-      *ngIf="this.registerUtils.step() > 1"
-      (click)="previous()"
+      *ngIf="registerUtils.step() > 1"
+      (click)="registerUtils.previous()"
       variant="button-base"
       type="button"
     >
@@ -30,12 +30,14 @@
 
     <!-- Botón de Next -->
     <c-button
-      (click)="next()"
+      (click)="onButtonClick($event)"
       variant="button-base"
-      [type]="this.registerUtils.step() === 3 ? 'submit' : 'button'"
-      [disabled]="!isCurrentStepValid()"
+      type="button"
+      [disabled]="!registerUtils.isCurrentStepValid()"
     >
-      <c-title variant="title-h6" color="white">{{ getButtonText() }}</c-title>
+      <c-title variant="title-h6" color="white">{{
+        registerUtils.getButtonText()
+      }}</c-title>
     </c-button>
   </div>
 </form>

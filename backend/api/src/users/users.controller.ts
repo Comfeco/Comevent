@@ -1,5 +1,5 @@
 import { ROLES } from '@db/constants';
-import { User, UsersProjects } from '@db/entities';
+import { User, UsersCommunities } from '@db/entities';
 import {
   Body,
   Controller,
@@ -94,7 +94,7 @@ export class UsersController {
   public async userInProject(
     @Body() body: UserToProjectDTO,
     @CurrentUser([ROLES.CREATOR]) user: User
-  ): Promise<UserToProjectDTO & UsersProjects> {
+  ): Promise<UserToProjectDTO & UsersCommunities> {
     return await this.usersService.relationToProject(body);
   }
 

@@ -1,4 +1,4 @@
-import { Project, User } from '@db/entities';
+import { Community, User } from '@db/entities';
 import { ApiPropertyOptional } from '@nestjs/swagger';
 import { ACCES_LEVEL } from 'backend/database/src/constants/interfaces.entities';
 import { IsEnum, IsOptional, IsUUID } from 'class-validator';
@@ -20,7 +20,7 @@ export class UserToProjectDTO {
   })
   @IsOptional()
   @IsUUID()
-  project: Project;
+  project: Community;
 
   @ApiPropertyOptional({
     description: 'Access level of the user in the project',

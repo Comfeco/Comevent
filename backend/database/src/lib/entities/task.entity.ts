@@ -1,6 +1,6 @@
 import { STATUS_TASK } from '@db/constants';
 import { Column, Entity, JoinColumn, ManyToOne } from 'typeorm';
-import { Project } from '.';
+import { Community } from '.';
 import { BaseEntity } from './base.entity';
 
 // extends Base
@@ -18,9 +18,9 @@ export class Task extends BaseEntity {
   @Column()
   responsableName!: string;
 
-  @ManyToOne(() => Project, (project) => project.tasks)
+  @ManyToOne(() => Community, (community) => community.tasks)
   @JoinColumn({
     name: 'project-id',
   })
-  project!: Project;
+  project!: Community;
 }
