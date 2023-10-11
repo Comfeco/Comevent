@@ -9,6 +9,7 @@ import { UsersModule } from '../users/users.module';
 import { UsersService } from '../users/users.service';
 import { AuthController } from './auth.controller';
 import { AuthService } from './auth.service';
+import { GoogleStrategy } from './strategies/google.strategy';
 import { JwtStrategy } from './strategies/jwt.strategy';
 
 @Global()
@@ -29,8 +30,8 @@ import { JwtStrategy } from './strategies/jwt.strategy';
     UsersModule,
     TypeOrmModule.forFeature([Token]),
   ],
-  providers: [AuthService, UsersService, JwtStrategy],
+  providers: [AuthService, UsersService, JwtStrategy, GoogleStrategy],
   controllers: [AuthController],
-  exports: [JwtStrategy, PassportModule, JwtModule],
+  exports: [JwtStrategy, PassportModule, JwtModule, GoogleStrategy],
 })
 export class AuthModule {}

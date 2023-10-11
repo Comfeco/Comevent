@@ -13,6 +13,15 @@ import { UsersCommunities } from './usersCommunities.entity';
 // extends Base
 @Entity({ name: 'users' })
 export class User extends BaseEntity implements IUser {
+  @Column({ type: 'text', nullable: true, unique: true })
+  googleId?: string;
+
+  @Column({ type: 'text', nullable: true, unique: true })
+  facebookId?: string;
+
+  @Column({ type: 'text', nullable: true, unique: true })
+  discordId?: string;
+
   @Column({ type: 'text', nullable: true })
   firstName!: string;
 

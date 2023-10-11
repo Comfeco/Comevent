@@ -3,6 +3,33 @@ import { IsNotEmpty, IsOptional, IsString, MaxLength } from 'class-validator';
 
 export class CreateUserDTO {
   @ApiProperty({
+    description: 'The Google ID of the user.',
+    required: false,
+    example: '12345678901234567890',
+  })
+  @IsOptional()
+  @IsString()
+  googleId?: string;
+
+  @ApiProperty({
+    description: 'The Facebook ID of the user.',
+    required: false,
+    example: '12345678901234567890',
+  })
+  @IsOptional()
+  @IsString()
+  facebookId?: string;
+
+  @ApiProperty({
+    description: 'The Discord ID of the user.',
+    required: false,
+    example: '12345678901234567890',
+  })
+  @IsOptional()
+  @IsString()
+  discordId?: string;
+
+  @ApiProperty({
     description: 'The email of the user.',
     maxLength: 100,
     example: 'user@example.com',

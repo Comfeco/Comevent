@@ -15,6 +15,7 @@ import {
 import { AuthDTO, ChangePassDTO, LoginDTO } from './dto';
 import { JwtAuthGuard } from './guards';
 import { AuthGuard } from './guards/auth.guard';
+import { GoogleAuthGuard } from './guards/google.guard';
 
 @ApiTags('auth')
 @Controller('auth')
@@ -31,6 +32,18 @@ export class AuthController {
   @LoginDoc()
   async login(@Body() loginInput: LoginDTO) {
     return this.authService.login(loginInput);
+  }
+
+  @Get('google/login')
+  @UseGuards(GoogleAuthGuard)
+  handleLogin() {
+    return Resp.Success({}, 'OK', 'Google Authentication');
+  }
+
+  @Get('google/redirect')
+  @UseGuards(GoogleAuthGuard)
+  handleRedirect() {
+    return Resp.Success({}, 'OK', 'ok');
   }
 
   @Get('revalidate')

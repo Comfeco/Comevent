@@ -6,7 +6,12 @@ import { InjectRepository } from '@nestjs/typeorm';
 import * as bcrypt from 'bcrypt';
 import { In, Repository } from 'typeorm';
 import { Resp } from '../utils/response.manager';
-import { CreateUserDTO, UpdateUserDTO, UserToProjectDTO } from './dto';
+import {
+  CreateUserDTO,
+  CreateUserWithGoogleDTO,
+  UpdateUserDTO,
+  UserToProjectDTO,
+} from './dto';
 
 @Injectable()
 export class UsersService {
@@ -90,6 +95,37 @@ export class UsersService {
     }
   }
 
+  public async registerWithGoogle({
+    email,
+    googleId,
+    username,
+    firstName,
+    lastName,
+    avatar,
+  }: CreateUserWithGoogleDTO) {
+    const user = await this.userRepository.findOne({
+      where: [{ googleId }, { email }],
+    });
+
+    if (user) {
+      return Resp.Error('BAD_REQUEST', 'The user is already registered');
+    }
+
+    // Registrar un nuevo usuario con la información de Google
+    const newUser = this.userRepository.create({
+      email,
+      username,
+      googleId,
+      firstName,
+      lastName,
+      avatar,
+    });
+
+    const savedUser = await this.userRepository.save(user);
+
+    return Resp.Success(savedUser, 'CREATED', 'User registered successfully');
+  }
+
   public async findAll(): Promise<User[]> {
     try {
       const users: User[] = await this.userRepository.find({
@@ -120,6 +156,20 @@ export class UsersService {
   public async findUserById(id: string): Promise<User> {
     try {
       const user: User = await this.userRepository.findOneBy({ id });
+
+      if (!user) {
+        throw Resp.Error('NOT_FOUND', 'custom error message');
+      }
+
+      return user;
+    } catch (error) {
+      throw Resp.Error(error);
+    }
+  }
+
+  public async findUserByGoogleId(id: string): Promise<User> {
+    try {
+      const user: User = await this.userRepository.findOneBy({ googleId: id });
 
       if (!user) {
         throw Resp.Error('NOT_FOUND', 'custom error message');
