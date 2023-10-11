@@ -2,11 +2,17 @@ import { GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, GOOGLE_URL } from '@config';
 import { Injectable } from '@nestjs/common';
 import { PassportStrategy } from '@nestjs/passport';
 import { Profile, Strategy } from 'passport-google-oauth20';
+import { CreateUserWithGoogleDTO } from '../../users/dto';
 import { UsersService } from '../../users/users.service';
+import { Resp } from '../../utils';
+import { AuthService } from '../auth.service';
 
 @Injectable()
 export class GoogleStrategy extends PassportStrategy(Strategy) {
-  constructor(private readonly usersService: UsersService) {
+  constructor(
+    private readonly usersService: UsersService,
+    private readonly authService: AuthService
+  ) {
     super({
       clientID: GOOGLE_CLIENT_ID,
       clientSecret: GOOGLE_CLIENT_SECRET,
@@ -20,7 +26,7 @@ export class GoogleStrategy extends PassportStrategy(Strategy) {
     console.log('refreshToken: ', refreshToken);
     console.log('profile: ', profile);
 
-    /* const { id, _json } = profile;
+    const { id, _json } = profile;
     const { given_name, family_name, email, picture } = _json;
 
     const usernameUnique = `${given_name}_${id}`;
@@ -34,17 +40,18 @@ export class GoogleStrategy extends PassportStrategy(Strategy) {
       avatar: picture,
     };
 
-    const existingUser = await this.usersService.findUserByGoogleId(id);
+    const existingUser =
+      await this.usersService.isUserRegisteredExternalProvider(id, email);
+
     if (existingUser) {
       return Resp.Error('BAD_REQUEST', 'The user is already registered');
     }
 
     const newUser = await this.usersService.registerWithGoogle(user);
 
-    if (newUser) {
-      return newUser;
-    }
+    console.log('Validate');
+    console.log(newUser);
 
-    return Resp.Error('INTERNAL_SERVER_ERROR'); */
+    return newUser || null;
   }
 }

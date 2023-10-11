@@ -171,7 +171,7 @@ export class AuthService {
     const user = await this.userService.findUserById(id);
 
     if (!user.isActive) {
-      throw Resp.Error(
+      Resp.Error(
         'UNAUTHORIZED',
         'The user is inactive, talk to support to try to find a solution'
       );
@@ -179,14 +179,14 @@ export class AuthService {
 
     if (user.isBlocked) {
       if (user.timeBlocked === BLOCKED_TIME.PERMANENT) {
-        throw Resp.Error(
+        Resp.Error(
           'UNAUTHORIZED',
           'You cannot access you are permanently banned'
         );
       }
 
       const now = dayjs().valueOf();
-      throw Resp.Error(
+      Resp.Error(
         'UNAUTHORIZED',
         `You cannot access you are banned until ${dayjs(
           now + user.timeBlocked

@@ -95,35 +95,12 @@ export class UsersService {
     }
   }
 
-  public async registerWithGoogle({
-    email,
-    googleId,
-    username,
-    firstName,
-    lastName,
-    avatar,
-  }: CreateUserWithGoogleDTO) {
-    const user = await this.userRepository.findOne({
-      where: [{ googleId }, { email }],
-    });
+  public async registerWithGoogle(user: CreateUserWithGoogleDTO) {
+    console.log('entro a register with google');
 
-    if (user) {
-      return Resp.Error('BAD_REQUEST', 'The user is already registered');
-    }
+    const newUser = this.userRepository.create(user);
 
-    // Registrar un nuevo usuario con la información de Google
-    const newUser = this.userRepository.create({
-      email,
-      username,
-      googleId,
-      firstName,
-      lastName,
-      avatar,
-    });
-
-    const savedUser = await this.userRepository.save(user);
-
-    return Resp.Success(savedUser, 'CREATED', 'User registered successfully');
+    return await this.userRepository.save(newUser);
   }
 
   public async findAll(): Promise<User[]> {
@@ -141,6 +118,14 @@ export class UsersService {
     } catch (error) {
       throw Resp.Error(error.message);
     }
+  }
+
+  async isUserRegisteredExternalProvider(idProvider: string, email: string) {
+    const user = await this.userRepository.findOne({
+      where: [{ googleId: idProvider }, { email }],
+    });
+
+    return user;
   }
 
   async findAllArgs(roles: ROLES[]): Promise<User[]> {

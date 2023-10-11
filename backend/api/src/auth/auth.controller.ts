@@ -34,7 +34,7 @@ export class AuthController {
     return this.authService.login(loginInput);
   }
 
-  @Get('google/login')
+  @Get('google/register')
   @UseGuards(GoogleAuthGuard)
   handleLogin() {
     return Resp.Success({}, 'OK', 'Google Authentication');

@@ -53,7 +53,7 @@ export class User extends BaseEntity implements IUser {
   gender?: string;
 
   @Exclude()
-  @Column({ type: 'text' })
+  @Column({ type: 'text', nullable: true })
   password!: string;
 
   @Column({ type: 'boolean', default: true })
