@@ -5,10 +5,10 @@ import {
   ValidationPipe,
 } from '@nestjs/common';
 import { NestFactory, Reflector } from '@nestjs/core';
-import * as cookieParser from 'cookie-parser';
+import cookieParser from 'cookie-parser';
 import session from 'express-session';
 import morgan from 'morgan';
-import * as passport from 'passport';
+import passport from 'passport';
 import { AppModule } from './app.module';
 import { initSwagger } from './app.swagger';
 import { CORS } from './constants';
