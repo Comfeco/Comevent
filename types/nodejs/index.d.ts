@@ -19,5 +19,7 @@ declare namespace NodeJS {
     GOOGLE_CLIENT_ID: string;
     GOOGLE_CLIENT_SECRET: string;
     GOOGLE_URL: string;
+    SECURE: boolean;
+    MAX_AGE: number;
   }
 }
