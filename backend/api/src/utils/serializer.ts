@@ -15,10 +15,16 @@ export class SessionSerializer extends PassportSerializer {
     done(null, user.id);
   }
 
-  async deserializeUser(id: any, done: Function) {
+  async deserializeUser(partialUser: any, done: Function) {
     try {
-      const user = await await this.usersService.findUserById(id); // Esta función debe buscar al usuario por su ID en tu base de datos
-      done(null, user);
+      const user = await this.usersService.findUserById(partialUser.id);
+      const retrievedUser = {
+        id: user.id,
+        email: user.email,
+        username: user.username,
+      };
+
+      done(null, retrievedUser);
     } catch (err) {
       done(err);
     }

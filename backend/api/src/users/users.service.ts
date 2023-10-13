@@ -100,7 +100,15 @@ export class UsersService {
 
     const newUser = this.userRepository.create(user);
 
-    return await this.userRepository.save(newUser);
+    const userCreate = await this.userRepository.save(newUser);
+
+    const responseData = {
+      id: userCreate.id,
+      email: userCreate.email,
+      username: userCreate.username,
+    };
+
+    return responseData;
   }
 
   public async findAll(): Promise<User[]> {

@@ -1,6 +1,7 @@
 import { User } from '@db/entities';
-import { Body, Controller, Get, Post, UseGuards } from '@nestjs/common';
+import { Body, Controller, Get, Post, Req, UseGuards } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
+import { Request } from 'express';
 import { Resp } from '../utils';
 import { AuthService } from './auth.service';
 import {
@@ -36,14 +37,15 @@ export class AuthController {
 
   @Get('google/register')
   @UseGuards(GoogleAuthGuard)
-  handleLogin() {
-    return Resp.Success({}, 'OK', 'Google Authentication');
-  }
+  handleLogin() {}
 
   @Get('google/redirect')
   @UseGuards(GoogleAuthGuard)
-  handleRedirect() {
-    return Resp.Success({}, 'OK', 'ok');
+  handleRedirect(@Req() req: Request) {
+    if (!req.user) {
+      return Resp.Error('BAD_REQUEST', 'Failed to authenticate with Google');
+    }
+    return Resp.Success(req.user, 'CREATED', 'Successfully registered user');
   }
 
   @Get('revalidate')
