@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { Observable, catchError, of, switchMap, throwError } from 'rxjs';
 import { BaseResponse } from '../../../../common';
 import { environment } from '../../../../environments/environment';
+import { makeRandomValue } from '../../../../utils';
 import { LoginAdapter, RevalidateAdapter } from '../../adapters';
 import {
   ILogin,
@@ -73,4 +74,25 @@ export class LoginApiService {
         })
       );
   }
+
+  loginWithProvider(provider: string) {
+    const codeVerifier = makeRandomValue(10);
+    localStorage.setItem('code_verifier', codeVerifier);
+    location.href = `${this.BASE_API}/auth/${provider}?redirect_url=${encodeURI(
+      'http://' + location.host + '/auth/identity-providers-callback'
+    )}&code_challenge=${encodeURI(codeVerifier)}`;
+  }
+
+  /* verifyGoogleAuthentication(): Observable<BaseResponse<ILogin | undefined>> {
+    return this.http
+      .get<BaseResponse<IUser | undefined>>(
+        `${this.BASE_API}/auth/google/verify`
+      )
+      .pipe(
+        switchMap((res) => of(LoginAdapter(res))),
+        catchError(({ error }) => {
+          throw error;
+        })
+      );
+  } */
 }

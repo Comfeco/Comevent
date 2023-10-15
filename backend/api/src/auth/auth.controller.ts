@@ -1,8 +1,18 @@
 import { User } from '@db/entities';
-import { Body, Controller, Get, Post, Req, UseGuards } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Get,
+  Post,
+  Req,
+  Res,
+  UseGuards,
+} from '@nestjs/common';
+import { AuthGuard as PassportAuthGuard } from '@nestjs/passport';
 import { ApiTags } from '@nestjs/swagger';
-import { Request } from 'express';
-import { Resp } from '../utils';
+import { Request, Response } from 'express';
+import { UsersService } from '../users/users.service';
+import { PKCEUtils, Resp, encryptionUtils } from '../utils';
 import { AuthService } from './auth.service';
 import {
   ChangePassDoc,
@@ -14,14 +24,17 @@ import {
   SignupDoc,
 } from './decorators';
 import { AuthDTO, ChangePassDTO, LoginDTO } from './dto';
-import { JwtAuthGuard } from './guards';
+import { JwtAuthGuard, PkceGuard } from './guards';
 import { AuthGuard } from './guards/auth.guard';
 import { GoogleAuthGuard } from './guards/google.guard';
 
 @ApiTags('auth')
 @Controller('auth')
 export class AuthController {
-  constructor(private readonly authService: AuthService) {}
+  constructor(
+    private readonly authService: AuthService,
+    private readonly userService: UsersService
+  ) {}
 
   @Post('signup')
   @SignupDoc()
@@ -35,17 +48,69 @@ export class AuthController {
     return this.authService.login(loginInput);
   }
 
-  @Get('google/register')
-  @UseGuards(GoogleAuthGuard)
-  handleLogin() {}
+  @Get('/google')
+  @UseGuards(PkceGuard, PassportAuthGuard('google'))
+  googleAuth() {}
 
-  @Get('google/redirect')
+  @Get('google/callback')
   @UseGuards(GoogleAuthGuard)
-  handleRedirect(@Req() req: Request) {
-    if (!req.user) {
-      return Resp.Error('BAD_REQUEST', 'Failed to authenticate with Google');
+  handleRedirect(@Req() req: Request, @Res() res: Response) {
+    const cookiesData = PKCEUtils.parseCookiesFromReq(req);
+
+    console.log('cookiesData: ', cookiesData);
+
+    if (!cookiesData.codeChallenge || !cookiesData.redirectUrl) {
+      return Resp.Error('INTERNAL_SERVER_ERROR');
     }
-    return Resp.Success(req.user, 'CREATED', 'Successfully registered user');
+
+    console.log('req.user: ', req.user);
+
+    if (req.user) {
+      const userFromRequest: IUserAuthResponse = req.user;
+      return res.redirect(
+        `${cookiesData.redirectUrl}?code=${encodeURIComponent(
+          userFromRequest['providerToken']
+        )}&provider=${userFromRequest['providerName']}&userId=${
+          userFromRequest['user']['id']
+        }`
+      );
+    }
+
+    return res.redirect(
+      `${cookiesData.redirectUrl}?message=An error has been occurred`
+    );
+  }
+
+  @Post('token')
+  async claimSession(@Req() req: Request, @Res() res: Response) {
+    const clientData = PKCEUtils.parseCookiesFromReq(req);
+    PKCEUtils.deletePkceCookies(res);
+    const { code_verifier, token, userId, provider } = req.body;
+
+    const codeChallenge = clientData.codeChallenge;
+
+    if (encryptionUtils.HashString(code_verifier) === codeChallenge) {
+      const tokenIsValid = await this.authService.checkIdentityProviderToken(
+        token,
+        userId,
+        provider
+      );
+
+      const user = await this.userService.findUserById(userId);
+
+      if (tokenIsValid && user) {
+        const userClaims = this.userService.getUserClaims(user);
+
+        const jwt = this.authService.getJwtToken({
+          id: user.id,
+          claims: userClaims,
+        });
+
+        return Resp.Success(jwt, 'OK');
+      }
+
+      return Resp.Error('BAD_REQUEST', 'Invalid token');
+    }
   }
 
   @Get('revalidate')

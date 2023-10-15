@@ -13,6 +13,9 @@ import { UsersCommunities } from './usersCommunities.entity';
 // extends Base
 @Entity({ name: 'users' })
 export class User extends BaseEntity implements IUser {
+  @Column({ type: 'varchar', nullable: true })
+  securityStamp?: string;
+
   @Column({ type: 'text', nullable: true, unique: true })
   googleId?: string;
 

@@ -1,3 +1,4 @@
+import { claimTypes } from '@config';
 import { ROLES } from '@db/constants';
 import { Area, User, UserArea, UsersCommunities } from '@db/entities';
 import { HASH_SALT } from '@environments';
@@ -5,6 +6,8 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import * as bcrypt from 'bcrypt';
 import { In, Repository } from 'typeorm';
+import { IClaimType } from '../interface/claimTypes';
+import { encryptionUtils } from '../utils';
 import { Resp } from '../utils/response.manager';
 import {
   CreateUserDTO,
@@ -98,7 +101,14 @@ export class UsersService {
   public async registerWithGoogle(user: CreateUserWithGoogleDTO) {
     console.log('entro a register with google');
 
-    const newUser = this.userRepository.create(user);
+    user.email = user.email.toLowerCase();
+
+    const securityStamp = encryptionUtils.generateSecurityStamp();
+
+    const newUser = this.userRepository.create({
+      ...user,
+      securityStamp,
+    });
 
     const userCreate = await this.userRepository.save(newUser);
 
@@ -308,5 +318,27 @@ export class UsersService {
     const hashedPassword = await bcrypt.hash(newPassword, HASH_SALT);
     user.password = hashedPassword;
     await this.userRepository.save(user);
+  }
+
+  async getSecurityStamp(id: string): Promise<string | null> {
+    const user = await this.userRepository.findOne({
+      where: { id: id },
+      select: ['securityStamp'],
+    });
+
+    console.log('user stamp: ', user);
+
+    return user?.securityStamp || null;
+  }
+
+  getUserClaims(user: User) {
+    const claims: IClaimType[] = [
+      {
+        name: claimTypes.Username,
+        value: user.username,
+      },
+    ];
+
+    return claims;
   }
 }

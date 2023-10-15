@@ -4,7 +4,6 @@ import { PassportStrategy } from '@nestjs/passport';
 import { Profile, Strategy } from 'passport-google-oauth20';
 import { CreateUserWithGoogleDTO } from '../../users/dto';
 import { UsersService } from '../../users/users.service';
-import { Resp } from '../../utils';
 import { AuthService } from '../auth.service';
 
 @Injectable()
@@ -43,15 +42,26 @@ export class GoogleStrategy extends PassportStrategy(Strategy) {
     const existingUser =
       await this.usersService.isUserRegisteredExternalProvider(id, email);
 
+    let userToReturn;
+
     if (existingUser) {
-      return Resp.Error('BAD_REQUEST', 'The user is already registered');
+      userToReturn = existingUser;
+    } else {
+      userToReturn = await this.usersService.registerWithGoogle(user);
     }
 
-    const newUser = await this.usersService.registerWithGoogle(user);
+    const providerToken = await this.authService.generateProviderToken(
+      userToReturn.id,
+      'google'
+    );
 
     console.log('Validate');
-    console.log(newUser);
+    console.log(userToReturn);
 
-    return newUser || null;
+    return {
+      user: userToReturn,
+      providerToken,
+      providerName: 'google',
+    };
   }
 }

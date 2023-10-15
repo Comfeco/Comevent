@@ -28,20 +28,4 @@ export class RegisterApiService {
         })
       );
   }
-
-  registerUserWithGoogle(
-    registerData: IRegisterData
-  ): Observable<BaseResponse<IRegisterData | undefined>> {
-    return this.http
-      .post<BaseResponse<IUser | undefined>>(
-        `${this.BASE_API}/auth/google/register`,
-        registerData
-      )
-      .pipe(
-        switchMap((res) => of(RegisterAdapter(res))),
-        catchError(({ error }) => {
-          throw error;
-        })
-      );
-  }
 }

@@ -10,7 +10,7 @@ import * as jwt from 'jsonwebtoken';
 import { Repository } from 'typeorm';
 import { BLOCKED_TIME } from '../../../database/src/constants/interfaces.entities';
 import { UsersService } from '../users/users.service';
-import { sendEmail } from '../utils';
+import { dateUtils, encryptionUtils, sendEmail } from '../utils';
 import { emailRecoverPassHTML } from '../utils/handlebars/recoverPassword';
 import { emailRecoverPassSuccessHTML } from '../utils/handlebars/recoverPasswordSuccess';
 import { generateResetLink } from '../utils/linkUtils';
@@ -28,7 +28,7 @@ export class AuthService {
     private readonly jwtService: JwtService
   ) {}
 
-  private getJwtToken(payload: IJwtPayload) {
+  public getJwtToken(payload: IJwtPayload) {
     return this.jwtService.sign(payload);
   }
 
@@ -207,5 +207,91 @@ export class AuthService {
       user,
     };
     return Resp.Success(revalidateUser, 'OK');
+  }
+
+  getPurpose(identityProvider: string) {
+    return `identityProviderCode${identityProvider}`;
+  }
+
+  async checkUserToken(
+    token: string,
+    validPurpose: string,
+    validUserId: string
+  ): Promise<boolean> {
+    try {
+      const securityStamp = await this.userService.getSecurityStamp(
+        validUserId
+      );
+
+      if (!securityStamp) {
+        return false;
+      }
+
+      const tokenValue = encryptionUtils.decryptString(token, securityStamp);
+
+      if (!tokenValue) {
+        return false;
+      }
+
+      const { purpose, expiration, userId } = JSON.parse(tokenValue);
+
+      if (!purpose || !expiration || !userId) {
+        return false;
+      }
+      if (
+        purpose !== validPurpose ||
+        validUserId !== userId ||
+        Date.parse(new Date().toString()) > Date.parse(expiration)
+      ) {
+        return false;
+      }
+      return true;
+    } catch (err) {
+      return false;
+    }
+  }
+
+  async checkIdentityProviderToken(
+    token: string,
+    userId: string,
+    provider: string
+  ) {
+    const purpose = this.getPurpose(provider);
+    return this.checkUserToken(token, purpose, userId);
+  }
+
+  async generateUserToken(
+    purpose: string,
+    expiration: Date,
+    userId: string
+  ): Promise<string> {
+    const securityStamp = await this.userService.getSecurityStamp(userId);
+
+    console.log('securityStamp: ', securityStamp);
+
+    if (!securityStamp) {
+      Resp.Error('BAD_REQUEST', 'not valid user Id');
+    }
+
+    const info = {
+      purpose,
+      expiration,
+      userId,
+    };
+
+    const tokenValue = JSON.stringify(info);
+    const token = encryptionUtils.encryptString(tokenValue, securityStamp);
+
+    return token;
+  }
+
+  async generateProviderToken(
+    userId: string,
+    provider: string
+  ): Promise<string> {
+    const purpose = this.getPurpose(provider);
+    const expiration = dateUtils.addMinutesToDate(new Date(), 5);
+
+    return this.generateUserToken(purpose, expiration, userId);
   }
 }

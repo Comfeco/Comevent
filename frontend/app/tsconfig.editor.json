@@ -1,6 +1,10 @@
 {
   "extends": "./tsconfig.json",
-  "include": ["src/**/*.ts", "common/types/auth/index.ts"],
+  "include": [
+    "src/**/*.ts",
+    "common/types/auth/index.ts",
+    "../../backend/api/src/auth/guards/pkce.guard.ts"
+  ],
   "compilerOptions": {
     "types": ["jest", "node"]
   }

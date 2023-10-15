@@ -14,12 +14,12 @@ export class TransformInterceptor implements NestInterceptor {
     return next.handle().pipe(
       map((data) => {
         return {
-          data: data.data,
+          data: data?.data,
           response: {
-            status: data.status,
-            message: data.message,
-            success: data.success,
-            code: data.code,
+            status: data?.status,
+            message: data?.message,
+            success: data?.success,
+            code: data?.code,
           } as unknown as BaseResponse<typeof data.data | undefined>,
         };
       })
