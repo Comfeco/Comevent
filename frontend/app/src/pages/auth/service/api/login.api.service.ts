@@ -82,17 +82,4 @@ export class LoginApiService {
       'http://' + location.host + '/auth/identity-providers-callback'
     )}&code_challenge=${encodeURI(codeVerifier)}`;
   }
-
-  /* verifyGoogleAuthentication(): Observable<BaseResponse<ILogin | undefined>> {
-    return this.http
-      .get<BaseResponse<IUser | undefined>>(
-        `${this.BASE_API}/auth/google/verify`
-      )
-      .pipe(
-        switchMap((res) => of(LoginAdapter(res))),
-        catchError(({ error }) => {
-          throw error;
-        })
-      );
-  } */
 }

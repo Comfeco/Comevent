@@ -19,13 +19,13 @@ export class LoginStateService {
   loginService = inject(LoginApiService);
   router = inject(Router);
   private _currentUser = signal<ILogin | object>({});
-  private _authStatus = signal<AuthStatus>(AuthStatus.CHECKING);
+  _authStatus = signal<AuthStatus>(AuthStatus.CHECKING);
   BASE_API: string = environment.baseUrl;
 
   public currentUser = computed(() => this._currentUser());
   public authStatus = computed(() => this._authStatus());
 
-  private setAuthtication(
+  setAuthtication(
     data: (object | IRevalidateTokenResponse) | (object | ILogin)
   ): boolean {
     this._currentUser.set(data);

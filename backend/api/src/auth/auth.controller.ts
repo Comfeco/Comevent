@@ -85,18 +85,18 @@ export class AuthController {
   async claimSession(@Req() req: Request, @Res() res: Response) {
     const clientData = PKCEUtils.parseCookiesFromReq(req);
     PKCEUtils.deletePkceCookies(res);
-    const { code_verifier, token, userId, provider } = req.body;
+    const { codeVerifier, token, id, provider } = req.body;
 
     const codeChallenge = clientData.codeChallenge;
 
-    if (encryptionUtils.HashString(code_verifier) === codeChallenge) {
+    if (encryptionUtils.HashString(codeVerifier) === codeChallenge) {
       const tokenIsValid = await this.authService.checkIdentityProviderToken(
         token,
-        userId,
+        id,
         provider
       );
 
-      const user = await this.userService.findUserById(userId);
+      const user = await this.userService.findUserById(id);
 
       if (tokenIsValid && user) {
         const userClaims = this.userService.getUserClaims(user);
