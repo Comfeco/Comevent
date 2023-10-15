@@ -5,7 +5,7 @@ import { Observable, Subject, catchError, of, switchMap, tap } from 'rxjs';
 import { BaseResponse } from '../../../../common';
 import { environment } from '../../../../environments/environment';
 import { RegisterAdapter } from '../../adapters';
-import { IClaimsInfo, IRegisterData, ITokenResponse, IUser } from '../../types';
+import { IClaimsInfo, IRegisterData, IUser } from '../../types';
 import { decodeAndGetPayload } from '../utils/jwtUtils';
 
 @Injectable({
@@ -82,18 +82,9 @@ export class RegisterApiService {
     this._tokenExpiration = value;
   }
 
-  private interceptAuthResponse(
-    request: Observable<ITokenResponse>
-  ): Observable<ITokenResponse> {
-    return request.pipe(
-      tap((r) => {
-        this.proccessTokenResponse(r);
-        this.router.navigate(['/profile/user-profile']);
-      })
-    );
-  }
+  private proccessTokenResponse(tokenResponse: IUser) {
+    console.log('tokenResponse', tokenResponse);
 
-  private proccessTokenResponse(tokenResponse: ITokenResponse) {
     if (tokenResponse) {
       this._onLoginStatusChanged.next(true);
       this.token = tokenResponse.token;
@@ -101,8 +92,28 @@ export class RegisterApiService {
     }
   }
 
+  private interceptAuthResponse(
+    request: Observable<BaseResponse<IUser | undefined>>
+  ): Observable<BaseResponse<IUser | undefined>> {
+    return request.pipe(
+      tap((r) => {
+        console.log('Response received:', r);
+        this.proccessTokenResponse(r.data as IUser);
+        console.log('Token processed');
+        this.router.navigateByUrl('/dashboard');
+        console.log('Redirected to dashboard');
+      }),
+      catchError((err) => {
+        console.error('Error in interceptAuthResponse:', err);
+        throw err; // re-throw the error to be handled by subscribers
+      })
+    );
+  }
+
   private tryDecodeTokenClaims() {
     const token = this.token;
+    console.log('token: ', token);
+
     if (token) {
       const payload = decodeAndGetPayload(token);
       const expiration = Number.parseInt(
@@ -122,20 +133,23 @@ export class RegisterApiService {
   }
 
   public claimToken(token: string, id: string, provider: string) {
+    console.log('Claiming token...');
     const codeVerifier = localStorage.getItem('code_verifier');
 
+    console.log('codeVerifier...', codeVerifier);
+
+    const body = {
+      token,
+      id,
+      provider,
+      codeVerifier,
+    };
+
     return this.interceptAuthResponse(
-      this.http.post<ITokenResponse>(
+      this.http.post<BaseResponse<IUser | undefined>>(
         `${this.BASE_API}/auth/token`,
-        {
-          token,
-          id,
-          provider,
-          codeVerifier,
-        },
-        {
-          withCredentials: true,
-        }
+        body,
+        { withCredentials: true }
       )
     );
   }

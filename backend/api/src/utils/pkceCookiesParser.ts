@@ -4,6 +4,9 @@ export class PKCEUtils {
   static parseCookiesFromReq(request: Request): IPKCEClientData {
     const redirectUrl = request.cookies['redirect_url'];
     const codeChallenge = request.cookies['code_challenge'];
+    console.log('Desde parseCookie redirectUrl: ', redirectUrl);
+    console.log('Desde parseCookie codeChallenge: ', codeChallenge);
+
     return {
       redirectUrl,
       codeChallenge,

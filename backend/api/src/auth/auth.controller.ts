@@ -48,7 +48,7 @@ export class AuthController {
     return this.authService.login(loginInput);
   }
 
-  @Get('/google')
+  @Get('google')
   @UseGuards(PkceGuard, PassportAuthGuard('google'))
   googleAuth() {}
 
@@ -65,7 +65,7 @@ export class AuthController {
 
     console.log('req.user: ', req.user);
 
-    if (req.user) {
+    if (req.isAuthenticated()) {
       const userFromRequest: IUserAuthResponse = req.user;
       return res.redirect(
         `${cookiesData.redirectUrl}?code=${encodeURIComponent(
@@ -74,11 +74,21 @@ export class AuthController {
           userFromRequest['user']['id']
         }`
       );
+
+      /* const userResponse = {
+        id: userFromRequest['user']['id'],
+        email: userFromRequest['user']['email'],
+        username: userFromRequest['user']['username'],
+      };
+
+      return Resp.Success(userResponse, 'OK'); */
     }
 
     return res.redirect(
       `${cookiesData.redirectUrl}?message=An error has been occurred`
     );
+
+    // return Resp.Error('BAD_REQUEST', 'An error has been occurred');
   }
 
   @Post('token')
@@ -89,28 +99,71 @@ export class AuthController {
 
     const codeChallenge = clientData.codeChallenge;
 
-    if (encryptionUtils.HashString(codeVerifier) === codeChallenge) {
-      const tokenIsValid = await this.authService.checkIdentityProviderToken(
-        token,
-        id,
-        provider
-      );
+    console.log('codeVerifier:', codeVerifier);
+    console.log('codeChallenge (from cookie):', codeChallenge);
+    console.log(
+      'Hashed codeVerifier:',
+      encryptionUtils.HashString(codeVerifier)
+    );
 
-      const user = await this.userService.findUserById(id);
-
-      if (tokenIsValid && user) {
-        const userClaims = this.userService.getUserClaims(user);
-
-        const jwt = this.authService.getJwtToken({
-          id: user.id,
-          claims: userClaims,
-        });
-
-        return Resp.Success(jwt, 'OK');
-      }
-
-      return Resp.Error('BAD_REQUEST', 'Invalid token');
+    if (encryptionUtils.HashString(codeVerifier) !== codeChallenge) {
+      console.error('Invalid code verifier');
+      return Resp.Error('BAD_REQUEST', 'Invalid code verifier');
     }
+
+    const tokenIsValid = await this.authService.checkIdentityProviderToken(
+      token,
+      id,
+      provider
+    );
+    if (!tokenIsValid) {
+      console.error('Invalid identity provider token');
+      return Resp.Error('BAD_REQUEST', 'Invalid identity provider token');
+    }
+
+    const user = await this.userService.findUserById(id);
+
+    if (!user) {
+      console.error('User not found');
+      return Resp.Error('NOT_FOUND', 'User not found');
+    }
+
+    const { email, username, isActive, isBlocked, roles } = user;
+
+    const userClaims = this.userService.getUserClaims(user);
+    const jwt = this.authService.getJwtToken({
+      id: user.id,
+      claims: userClaims,
+    });
+
+    return res.status(200).json({
+      data: {
+        token: jwt,
+        id: user.id,
+        email,
+        username,
+        isActive,
+        isBlocked,
+        roles,
+      },
+      response: {
+        status: 'OK',
+        message: 'You have started correctly',
+        success: true,
+        code: 200,
+      },
+    });
+
+    /* const responseData = {
+      token: jwt,
+      id: user.id,
+      email: user.email,
+      username: user.username,
+      isActive: user.isActive,
+      isBlocked: user.isBlocked,
+      roles: user.roles,
+    };
+    return Resp.Success(responseData, 'OK'); */
   }
 
   @Get('revalidate')

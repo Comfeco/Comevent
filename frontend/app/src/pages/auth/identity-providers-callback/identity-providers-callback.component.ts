@@ -2,7 +2,6 @@ import { Component, OnInit, inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { RegisterApiService } from '../service/api';
 import { LoginStateService } from '../service/state';
-import { AuthStatus } from '../types';
 
 @Component({
   selector: 'app-identity-providers-callback',
@@ -28,19 +27,22 @@ export class IdentityProvidersCallbackComponent implements OnInit {
 
     if (code && provider && id) {
       this.registerApi.claimToken(code, id, provider).subscribe({
-        next: () => {
-          this.loginState._authStatus.set(AuthStatus.AUTHENTICATED);
-          console.log('Entro a next');
+        next: ({ data, response }) => {
+          console.log('data user', data);
 
-          localStorage.setItem('token', code);
-
-          this.router.navigateByUrl('/dashboard');
+          this.loginState.setAuthtication(data);
         },
         error: (err: any) => {
+          console.error('Error during claimToken:', err);
           this.router.navigateByUrl('/auth/login');
+        },
+        complete: () => {
+          console.log('Completed without error and without data');
         },
       });
     } else {
+      console.log('salto acá');
+
       this.router.navigateByUrl('/');
     }
   }

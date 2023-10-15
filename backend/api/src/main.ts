@@ -1,4 +1,4 @@
-import { JWT_SECRET, MAX_AGE, PORT, SECURE } from '@environments';
+import { JWT_SECRET, PORT, SECURE } from '@environments';
 import {
   ClassSerializerInterceptor,
   Logger,
@@ -25,7 +25,6 @@ async function bootstrap() {
       saveUninitialized: false,
       resave: false,
       cookie: {
-        maxAge: MAX_AGE,
         secure: SECURE,
       },
     })

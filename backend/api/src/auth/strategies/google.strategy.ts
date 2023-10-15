@@ -16,7 +16,11 @@ export class GoogleStrategy extends PassportStrategy(Strategy) {
       clientID: GOOGLE_CLIENT_ID,
       clientSecret: GOOGLE_CLIENT_SECRET,
       callbackURL: GOOGLE_URL,
-      scope: ['email', 'profile'],
+      scope: [
+        'https://www.googleapis.com/auth/userinfo.profile',
+        'https://www.googleapis.com/auth/userinfo.email',
+        'openid',
+      ],
     });
   }
 
@@ -25,22 +29,24 @@ export class GoogleStrategy extends PassportStrategy(Strategy) {
     console.log('refreshToken: ', refreshToken);
     console.log('profile: ', profile);
 
-    const { id, _json } = profile;
-    const { given_name, family_name, email, picture } = _json;
+    const { id, name, photos, emails } = profile;
 
-    const usernameUnique = `${given_name}_${id}`;
+    const usernameUnique = `${name.givenName}_${id}`;
 
     const user: CreateUserWithGoogleDTO = {
       googleId: id,
-      email: email,
+      email: emails[0].value,
       username: usernameUnique,
-      firstName: given_name,
-      lastName: family_name,
-      avatar: picture,
+      firstName: name.givenName,
+      lastName: name.familyName,
+      avatar: photos[0].value,
     };
 
     const existingUser =
-      await this.usersService.isUserRegisteredExternalProvider(id, email);
+      await this.usersService.isUserRegisteredExternalProvider(
+        id,
+        emails[0].value
+      );
 
     let userToReturn;
 

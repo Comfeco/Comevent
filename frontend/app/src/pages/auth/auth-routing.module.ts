@@ -27,11 +27,11 @@ const routes: Routes = [
         path: 'identity-providers-callback',
         component: IdentityProvidersCallbackComponent,
       },
-      {
+      /* {
         path: '',
         redirectTo: 'login',
         pathMatch: 'full',
-      },
+      }, */
     ],
   },
   {

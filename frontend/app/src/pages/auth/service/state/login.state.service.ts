@@ -19,7 +19,7 @@ export class LoginStateService {
   loginService = inject(LoginApiService);
   router = inject(Router);
   private _currentUser = signal<ILogin | object>({});
-  _authStatus = signal<AuthStatus>(AuthStatus.CHECKING);
+  private _authStatus = signal<AuthStatus>(AuthStatus.CHECKING);
   BASE_API: string = environment.baseUrl;
 
   public currentUser = computed(() => this._currentUser());
