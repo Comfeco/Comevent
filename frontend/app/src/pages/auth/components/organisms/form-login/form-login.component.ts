@@ -1,6 +1,7 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { FormUtilitiesService } from '@utils';
+import { LoginApiService } from '../../../service/api';
 import { LoginStateService } from '../../../service/state';
 
 @Component({
@@ -9,6 +10,7 @@ import { LoginStateService } from '../../../service/state';
   styleUrls: ['./form-login.component.scss'],
 })
 export class FormLoginComponent implements OnInit {
+  registerApi = inject(LoginApiService);
   private formBuilder = inject(FormBuilder);
   private loginService = inject(LoginStateService);
   protected formUtilities = inject(FormUtilitiesService);

@@ -58,7 +58,7 @@ export class AppComponent implements OnInit {
           !allowedPublicRoutes.includes(currentRoute) &&
           !isChangePasswordRoute(currentRoute)
         ) {
-          //this.router.navigateByUrl('/auth/login');
+          this.router.navigateByUrl('/auth/login');
         }
         break;
       case AuthStatus.RESETTING_PASSWORD:

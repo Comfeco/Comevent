@@ -42,7 +42,12 @@
             <c-title variant="title-h6" color="primary">Facebook</c-title>
           </div>
         </c-button>
-        <c-button class="flex-1" variant="button-ghost" type="submit">
+        <c-button
+          (click)="registerApi.loginWithProvider('google')"
+          class="flex-1"
+          variant="button-ghost"
+          type="submit"
+        >
           <div class="flex justify-center w-full gap-2 items-center">
             <icon-google />
             <c-title variant="title-h6" color="primary">Google</c-title>
