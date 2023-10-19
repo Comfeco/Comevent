@@ -7,6 +7,14 @@
   }
 }
 
+.color-white {
+  @apply stroke-white-1;
+}
+
+.color-disabled {
+  @apply stroke-gray-2;
+}
+
 .spin-icon {
   animation: spin 1s linear infinite;
 }

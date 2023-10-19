@@ -12,11 +12,13 @@ import {
   IRevalidateTokenResponse,
   IUser,
 } from '../../types';
+import { RegisterUtilsService } from '../utils';
 
 @Injectable({
   providedIn: 'root',
 })
 export class LoginApiService {
+  private registerUtils = inject(RegisterUtilsService);
   private http = inject(HttpClient);
   router = inject(Router);
   BASE_API: string = environment.baseUrl;
@@ -76,6 +78,7 @@ export class LoginApiService {
   }
 
   loginWithProvider(provider: string) {
+    this.registerUtils.isLoadingProvider.set(true);
     const codeVerifier = makeRandomValue(10);
     localStorage.setItem('code_verifier', codeVerifier);
     location.href = `${this.BASE_API}/auth/${provider}?redirect_url=${encodeURI(

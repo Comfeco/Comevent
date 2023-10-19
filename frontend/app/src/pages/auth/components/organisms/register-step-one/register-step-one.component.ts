@@ -2,6 +2,7 @@ import { Component, Input, inject } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { environment } from '../../../../../environments/environment';
 import { LoginApiService } from '../../../service/api';
+import { RegisterUtilsService } from '../../../service/utils';
 
 @Component({
   selector: 'register-step-one',
@@ -9,7 +10,8 @@ import { LoginApiService } from '../../../service/api';
   styleUrls: ['./register-step-one.component.scss'],
 })
 export class FormRegisterStepOneComponent {
-  registerApi = inject(LoginApiService);
+  protected registerUtils = inject(RegisterUtilsService);
+  protected registerApi = inject(LoginApiService);
   BASE_API: string = environment.baseUrl;
 
   @Input({ required: true }) parentForm!: FormGroup;

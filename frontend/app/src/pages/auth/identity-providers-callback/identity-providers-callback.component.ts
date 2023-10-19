@@ -2,6 +2,7 @@ import { Component, OnInit, inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { RegisterApiService } from '../service/api';
 import { LoginStateService } from '../service/state';
+import { RegisterUtilsService } from '../service/utils';
 
 @Component({
   selector: 'app-identity-providers-callback',
@@ -9,6 +10,7 @@ import { LoginStateService } from '../service/state';
   styleUrls: ['./identity-providers-callback.component.scss'],
 })
 export class IdentityProvidersCallbackComponent implements OnInit {
+  private registerUtils = inject(RegisterUtilsService);
   private activatedRoute = inject(ActivatedRoute);
   private loginState = inject(LoginStateService);
   private registerApi = inject(RegisterApiService);
@@ -31,6 +33,7 @@ export class IdentityProvidersCallbackComponent implements OnInit {
           console.log('data user', data);
 
           this.loginState.setAuthtication(data);
+          this.registerUtils.isLoadingProvider.set(false);
         },
         error: (err: any) => {
           console.error('Error during claimToken:', err);

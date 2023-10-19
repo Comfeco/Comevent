@@ -47,9 +47,16 @@
           class="flex-1"
           variant="button-ghost"
           type="submit"
+          [disabled]="registerUtils.isLoadingProvider()"
+          [loading]="registerUtils.isLoadingProvider()"
+          colorLoading="disabled"
         >
-          <div class="flex justify-center w-full gap-2 items-center">
-            <icon-google />
+          <div
+            [ngClass]="{
+              'gap-2 flex items-center': !registerUtils.isLoadingProvider(),
+            }"
+          >
+            <icon-google *ngIf="!registerUtils.isLoadingProvider()" />
             <c-title variant="title-h6" color="primary">Google</c-title>
           </div>
         </c-button>
