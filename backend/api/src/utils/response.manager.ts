@@ -17,6 +17,7 @@ export class Resp extends Error {
     customMessage?: string
   ) {
     const response = this.createResponse<T>(data, type, true, customMessage);
+
     return { data, ...response };
   }
 

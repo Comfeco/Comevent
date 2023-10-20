@@ -7,6 +7,7 @@ import {
 } from '@angular/router';
 import { ResetPasswordGuard } from '../../common/guards';
 import { LayoutAuthComponent } from './components/layout/layout-auth.component';
+import { IdentityProvidersCallbackComponent } from './identity-providers-callback/identity-providers-callback.component';
 
 const routes: Routes = [
   {
@@ -23,10 +24,14 @@ const routes: Routes = [
           import('./').then((module) => module.RegisterModule),
       },
       {
+        path: 'identity-providers-callback',
+        component: IdentityProvidersCallbackComponent,
+      },
+      /* {
         path: '',
         redirectTo: 'login',
         pathMatch: 'full',
-      },
+      }, */
     ],
   },
   {

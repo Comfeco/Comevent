@@ -28,3 +28,9 @@ export interface IUseToken {
   sub: string;
   isExpired: boolean;
 }
+
+export interface IUserAuthResponse {
+  id: string;
+  email: string;
+  username: string;
+}

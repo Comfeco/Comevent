@@ -15,5 +15,11 @@ declare namespace NodeJS {
     NODEMAILER_USER: string;
     PASS_GMAIL: string;
     BASE_API: string;
+    JWT_EXPIRATION: string;
+    GOOGLE_CLIENT_ID: string;
+    GOOGLE_CLIENT_SECRET: string;
+    GOOGLE_URL: string;
+    SECURE: boolean;
+    MAX_AGE: number;
   }
 }

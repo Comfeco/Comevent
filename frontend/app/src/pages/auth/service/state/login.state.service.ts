@@ -25,7 +25,7 @@ export class LoginStateService {
   public currentUser = computed(() => this._currentUser());
   public authStatus = computed(() => this._authStatus());
 
-  private setAuthtication(
+  setAuthtication(
     data: (object | IRevalidateTokenResponse) | (object | ILogin)
   ): boolean {
     this._currentUser.set(data);

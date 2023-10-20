@@ -1,3 +1,4 @@
+import { claimTypes } from '@config';
 import { ROLES } from '@db/constants';
 import { Area, User, UserArea, UsersCommunities } from '@db/entities';
 import { HASH_SALT } from '@environments';
@@ -5,8 +6,15 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import * as bcrypt from 'bcrypt';
 import { In, Repository } from 'typeorm';
+import { IClaimType } from '../interface/claimTypes';
+import { encryptionUtils } from '../utils';
 import { Resp } from '../utils/response.manager';
-import { CreateUserDTO, UpdateUserDTO, UserToProjectDTO } from './dto';
+import {
+  CreateUserDTO,
+  CreateUserWithGoogleDTO,
+  UpdateUserDTO,
+  UserToProjectDTO,
+} from './dto';
 
 @Injectable()
 export class UsersService {
@@ -90,6 +98,29 @@ export class UsersService {
     }
   }
 
+  public async registerWithGoogle(user: CreateUserWithGoogleDTO) {
+    console.log('entro a register with google');
+
+    user.email = user.email.toLowerCase();
+
+    const securityStamp = encryptionUtils.generateSecurityStamp();
+
+    const newUser = this.userRepository.create({
+      ...user,
+      securityStamp,
+    });
+
+    const userCreate = await this.userRepository.save(newUser);
+
+    const responseData = {
+      id: userCreate.id,
+      email: userCreate.email,
+      username: userCreate.username,
+    };
+
+    return responseData;
+  }
+
   public async findAll(): Promise<User[]> {
     try {
       const users: User[] = await this.userRepository.find({
@@ -107,6 +138,14 @@ export class UsersService {
     }
   }
 
+  async isUserRegisteredExternalProvider(idProvider: string, email: string) {
+    const user = await this.userRepository.findOne({
+      where: [{ googleId: idProvider }, { email }],
+    });
+
+    return user;
+  }
+
   async findAllArgs(roles: ROLES[]): Promise<User[]> {
     if (!roles) return this.userRepository.find();
 
@@ -120,6 +159,20 @@ export class UsersService {
   public async findUserById(id: string): Promise<User> {
     try {
       const user: User = await this.userRepository.findOneBy({ id });
+
+      if (!user) {
+        throw Resp.Error('NOT_FOUND', 'custom error message');
+      }
+
+      return user;
+    } catch (error) {
+      throw Resp.Error(error);
+    }
+  }
+
+  public async findUserByGoogleId(id: string): Promise<User> {
+    try {
+      const user: User = await this.userRepository.findOneBy({ googleId: id });
 
       if (!user) {
         throw Resp.Error('NOT_FOUND', 'custom error message');
@@ -265,5 +318,27 @@ export class UsersService {
     const hashedPassword = await bcrypt.hash(newPassword, HASH_SALT);
     user.password = hashedPassword;
     await this.userRepository.save(user);
+  }
+
+  async getSecurityStamp(id: string): Promise<string | null> {
+    const user = await this.userRepository.findOne({
+      where: { id: id },
+      select: ['securityStamp'],
+    });
+
+    console.log('user stamp: ', user);
+
+    return user?.securityStamp || null;
+  }
+
+  getUserClaims(user: User) {
+    const claims: IClaimType[] = [
+      {
+        name: claimTypes.Username,
+        value: user.username,
+      },
+    ];
+
+    return claims;
   }
 }

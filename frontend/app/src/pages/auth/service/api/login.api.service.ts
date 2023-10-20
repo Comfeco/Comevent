@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { Observable, catchError, of, switchMap, throwError } from 'rxjs';
 import { BaseResponse } from '../../../../common';
 import { environment } from '../../../../environments/environment';
+import { makeRandomValue } from '../../../../utils';
 import { LoginAdapter, RevalidateAdapter } from '../../adapters';
 import {
   ILogin,
@@ -11,11 +12,13 @@ import {
   IRevalidateTokenResponse,
   IUser,
 } from '../../types';
+import { RegisterUtilsService } from '../utils';
 
 @Injectable({
   providedIn: 'root',
 })
 export class LoginApiService {
+  private registerUtils = inject(RegisterUtilsService);
   private http = inject(HttpClient);
   router = inject(Router);
   BASE_API: string = environment.baseUrl;
@@ -72,5 +75,14 @@ export class LoginApiService {
           throw error;
         })
       );
+  }
+
+  loginWithProvider(provider: string) {
+    this.registerUtils.isLoadingProvider.set(true);
+    const codeVerifier = makeRandomValue(10);
+    localStorage.setItem('code_verifier', codeVerifier);
+    location.href = `${this.BASE_API}/auth/${provider}?redirect_url=${encodeURI(
+      'http://' + location.host + '/auth/identity-providers-callback'
+    )}&code_challenge=${encodeURI(codeVerifier)}`;
   }
 }

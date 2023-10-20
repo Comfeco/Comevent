@@ -4,6 +4,10 @@ import { SocialNetwork } from '../entities/socialNetwork.entity';
 import { Specialty } from '../entities/specialty.entity';
 
 export interface IUser {
+  securityStamp?: string;
+  googleId?: string;
+  facebookId?: string;
+  discordId?: string;
   firstName: string;
   lastName: string;
   age: number;

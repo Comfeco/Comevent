@@ -24,13 +24,6 @@ import {
   DB_USER,
 } from './constants';
 
-console.log('DB_HOST:', DB_HOST);
-console.log('DB_PORT:', DB_PORT);
-console.log('DB_NAME:', DB_NAME);
-console.log('DB_USER:', DB_USER);
-console.log('DB_PASS:', DB_PASS);
-console.log('DB_SYNC:', DB_SYNC);
-
 export const options = {
   type: 'postgres',
   host: DB_HOST,
@@ -65,8 +58,6 @@ export const options = {
   //logging: false,
   //logger: 'file'
 };
-
-console.log('Options:', options);
 
 export const dataSource = new DataSource(
   options as DataSourceOptions & SeederOptions

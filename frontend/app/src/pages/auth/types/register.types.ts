@@ -20,3 +20,13 @@ export interface IAreaOfInterest {
   id: number;
   name: string;
 }
+
+export interface ITokenResponse {
+  token: string;
+}
+
+export interface IClaimsInfo {
+  id: string;
+  email: string;
+  username: string;
+}

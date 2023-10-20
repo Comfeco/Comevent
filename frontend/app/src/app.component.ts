@@ -32,6 +32,7 @@ export class AppComponent implements OnInit {
       '/auth/login',
       '/auth/register',
       '/auth/recover',
+      '/auth/identity-providers-callback',
     ];
 
     const isChangePasswordRoute = (route: string): boolean => {

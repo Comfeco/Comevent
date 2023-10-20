@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Route, RouterModule } from '@angular/router';
-import { PrivateGuard, PublicGuard } from './common/guards';
+import { PrivateGuard, PublicGuard } from './common';
 
 export const routes: Route[] = [
   {
@@ -20,10 +20,10 @@ export const routes: Route[] = [
     loadChildren: () =>
       import('./pages/home').then((module) => module.HomeModule),
   },
-  {
+  /* {
     path: '**',
     redirectTo: '/',
-  },
+  }, */
 ];
 
 @NgModule({

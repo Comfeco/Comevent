@@ -7,8 +7,10 @@ import { PassportModule } from '@nestjs/passport';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsersModule } from '../users/users.module';
 import { UsersService } from '../users/users.service';
+import { SessionSerializer } from '../utils/serializer';
 import { AuthController } from './auth.controller';
 import { AuthService } from './auth.service';
+import { GoogleStrategy } from './strategies/google.strategy';
 import { JwtStrategy } from './strategies/jwt.strategy';
 
 @Global()
@@ -29,8 +31,14 @@ import { JwtStrategy } from './strategies/jwt.strategy';
     UsersModule,
     TypeOrmModule.forFeature([Token]),
   ],
-  providers: [AuthService, UsersService, JwtStrategy],
+  providers: [
+    AuthService,
+    UsersService,
+    JwtStrategy,
+    GoogleStrategy,
+    SessionSerializer,
+  ],
   controllers: [AuthController],
-  exports: [JwtStrategy, PassportModule, JwtModule],
+  exports: [JwtStrategy, PassportModule, JwtModule, GoogleStrategy],
 })
 export class AuthModule {}
