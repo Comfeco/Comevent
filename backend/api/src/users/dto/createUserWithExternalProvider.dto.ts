@@ -1,15 +1,25 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { IsNotEmpty, IsString, MaxLength } from 'class-validator';
+import { IsEnum, IsNotEmpty, IsString, MaxLength } from 'class-validator';
+import { AuthProvider } from '../../../../database/src/constants/interfaces.entities';
 
-export class CreateUserWithGoogleDTO {
+export class CreateUserWithExternalProviderDTO {
   @ApiProperty({
-    description: 'The Google ID of the user.',
+    description: 'The ID from the external provider.',
     required: true,
     example: '12345678901234567890',
   })
   @IsNotEmpty()
   @IsString()
-  googleId: string;
+  providerId: string;
+
+  @ApiProperty({
+    description: 'The provider type (e.g. google, facebook, etc.).',
+    enum: AuthProvider,
+    example: AuthProvider.GOOGLE,
+  })
+  @IsNotEmpty()
+  @IsEnum(AuthProvider)
+  provider: AuthProvider;
 
   @ApiProperty({
     description: 'The email of the user.',

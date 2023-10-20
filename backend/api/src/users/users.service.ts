@@ -1,6 +1,12 @@
 import { claimTypes } from '@config';
-import { ROLES } from '@db/constants';
-import { Area, User, UserArea, UsersCommunities } from '@db/entities';
+import { AuthProvider, ROLES } from '@db/constants';
+import {
+  Area,
+  User,
+  UserArea,
+  UserProvider,
+  UsersCommunities,
+} from '@db/entities';
 import { HASH_SALT } from '@environments';
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
@@ -11,7 +17,7 @@ import { encryptionUtils } from '../utils';
 import { Resp } from '../utils/response.manager';
 import {
   CreateUserDTO,
-  CreateUserWithGoogleDTO,
+  CreateUserWithExternalProviderDTO,
   UpdateUserDTO,
   UserToProjectDTO,
 } from './dto';
@@ -25,7 +31,9 @@ export class UsersService {
     @InjectRepository(Area)
     private readonly areaRepository: Repository<Area>,
     @InjectRepository(UserArea)
-    private readonly userAreaRepository: Repository<UserArea>
+    private readonly userAreaRepository: Repository<UserArea>,
+    @InjectRepository(UserProvider)
+    private readonly userProviderRepository: Repository<UserProvider>
   ) {}
 
   public async registerUser(registerUser: CreateUserDTO) {
@@ -98,7 +106,9 @@ export class UsersService {
     }
   }
 
-  public async registerWithGoogle(user: CreateUserWithGoogleDTO) {
+  public async registerWithExternalProvider(
+    user: CreateUserWithExternalProviderDTO
+  ) {
     console.log('entro a register with google');
 
     user.email = user.email.toLowerCase();
@@ -111,6 +121,13 @@ export class UsersService {
     });
 
     const userCreate = await this.userRepository.save(newUser);
+
+    const providerEntry = new UserProvider();
+    providerEntry.provider = user.provider;
+    providerEntry.providerId = user.providerId;
+    providerEntry.user = userCreate;
+
+    await this.userProviderRepository.save(providerEntry);
 
     const responseData = {
       id: userCreate.id,
@@ -138,12 +155,19 @@ export class UsersService {
     }
   }
 
-  async isUserRegisteredExternalProvider(idProvider: string, email: string) {
-    const user = await this.userRepository.findOne({
-      where: [{ googleId: idProvider }, { email }],
+  async isUserRegisteredExternalProvider(
+    provider: AuthProvider,
+    providerId: string
+  ): Promise<User> {
+    const userProviderEntry = await this.userProviderRepository.findOne({
+      where: {
+        provider,
+        providerId,
+      },
+      relations: ['user'],
     });
 
-    return user;
+    return userProviderEntry ? userProviderEntry.user : null;
   }
 
   async findAllArgs(roles: ROLES[]): Promise<User[]> {
@@ -170,15 +194,27 @@ export class UsersService {
     }
   }
 
-  public async findUserByGoogleId(id: string): Promise<User> {
+  public async findUserByProviderId(
+    provider: AuthProvider,
+    providerId: string
+  ): Promise<User> {
     try {
-      const user: User = await this.userRepository.findOneBy({ googleId: id });
+      const userProviderEntry = await this.userProviderRepository.findOne({
+        where: {
+          provider,
+          providerId,
+        },
+        relations: ['user'],
+      });
 
-      if (!user) {
-        throw Resp.Error('NOT_FOUND', 'custom error message');
+      if (!userProviderEntry) {
+        throw Resp.Error(
+          'NOT_FOUND',
+          'User not found with provided external provider ID.'
+        );
       }
 
-      return user;
+      return userProviderEntry.user;
     } catch (error) {
       throw Resp.Error(error);
     }

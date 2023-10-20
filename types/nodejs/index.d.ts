@@ -21,5 +21,8 @@ declare namespace NodeJS {
     GOOGLE_URL: string;
     SECURE: boolean;
     MAX_AGE: number;
+    FACEBOOK_CLIENT_ID: string;
+    FACEBOOK_CLIENT_SECRET: string;
+    FACEBOOK_URL: string;
   }
 }
