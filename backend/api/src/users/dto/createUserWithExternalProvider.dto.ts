@@ -1,5 +1,11 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { IsEnum, IsNotEmpty, IsString, MaxLength } from 'class-validator';
+import {
+  IsEnum,
+  IsNotEmpty,
+  IsOptional,
+  IsString,
+  MaxLength,
+} from 'class-validator';
 import { AuthProvider } from '../../../../database/src/constants/interfaces.entities';
 
 export class CreateUserWithExternalProviderDTO {
@@ -26,10 +32,10 @@ export class CreateUserWithExternalProviderDTO {
     maxLength: 100,
     example: 'user@example.com',
   })
-  @IsNotEmpty()
+  @IsOptional()
   @IsString()
   @MaxLength(100)
-  email: string;
+  email?: string;
 
   @ApiProperty({
     description: 'The username of the user.',

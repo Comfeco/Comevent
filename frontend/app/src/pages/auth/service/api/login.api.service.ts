@@ -1,5 +1,5 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Injectable, inject } from '@angular/core';
+import { Injectable, WritableSignal, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable, catchError, of, switchMap, throwError } from 'rxjs';
 import { AuthProvider } from '../../../../../../../backend/database/src/constants/interfaces.entities';
@@ -81,12 +81,13 @@ export class LoginApiService {
   loginWithProvider(provider: AuthProvider) {
     console.log(provider);
 
-    if (provider === AuthProvider.GOOGLE) {
-      this.registerUtils.isLoadingProviderGoogle.set(true);
-    }
+    const loadingStates: { [key in AuthProvider]?: WritableSignal<boolean> } = {
+      [AuthProvider.GOOGLE]: this.registerUtils.isLoadingProviderGoogle,
+      [AuthProvider.FACEBOOK]: this.registerUtils.isLoadingProviderFacebook,
+    };
 
-    if (provider === AuthProvider.FACEBOOK) {
-      this.registerUtils.isLoadingProviderFacebook.set(true);
+    if (loadingStates[provider]) {
+      loadingStates[provider]?.set(true);
     }
 
     const codeVerifier = makeRandomValue(10);

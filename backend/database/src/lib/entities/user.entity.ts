@@ -29,6 +29,7 @@ export class User extends BaseEntity implements IUser {
   @Column({
     type: 'text',
     unique: true,
+    nullable: true,
   })
   email!: string;
 

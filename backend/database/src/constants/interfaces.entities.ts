@@ -32,4 +32,5 @@ export enum AuthProvider {
   GOOGLE = 'google',
   FACEBOOK = 'facebook',
   DISCORD = 'discord',
+  GITHUB = 'github',
 }

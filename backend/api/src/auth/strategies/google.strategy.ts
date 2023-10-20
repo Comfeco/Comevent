@@ -59,7 +59,7 @@ export class GoogleStrategy extends PassportStrategy(Strategy) {
 
     const providerToken = await this.authService.generateProviderToken(
       userToReturn.id,
-      'google'
+      provider
     );
 
     console.log('Validate');

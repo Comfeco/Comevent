@@ -1,27 +1,27 @@
 import {
-  FACEBOOK_CLIENT_ID,
-  FACEBOOK_CLIENT_SECRET,
-  FACEBOOK_URL,
+  GITHUB_CALLBACK_URL,
+  GITHUB_CLIENT_ID,
+  GITHUB_CLIENT_SECRET,
 } from '@config';
 import { Injectable } from '@nestjs/common';
 import { PassportStrategy } from '@nestjs/passport';
-import { Profile, Strategy } from 'passport-facebook';
+import { Profile, Strategy } from 'passport-github';
 import { AuthProvider } from '../../../../database/src/constants/interfaces.entities';
 import { CreateUserWithExternalProviderDTO } from '../../users/dto';
 import { UsersService } from '../../users/users.service';
 import { AuthService } from '../auth.service';
 
 @Injectable()
-export class FacebookStrategy extends PassportStrategy(Strategy) {
+export class GithubStrategy extends PassportStrategy(Strategy, 'github') {
   constructor(
     private readonly usersService: UsersService,
     private readonly authService: AuthService
   ) {
     super({
-      clientID: FACEBOOK_CLIENT_ID,
-      clientSecret: FACEBOOK_CLIENT_SECRET,
-      callbackURL: FACEBOOK_URL,
-      profileFields: ['id', 'emails', 'name', 'photos'], // Los campos que deseas recuperar.
+      clientID: GITHUB_CLIENT_ID,
+      clientSecret: GITHUB_CLIENT_SECRET,
+      callbackURL: GITHUB_CALLBACK_URL,
+      scope: ['user:email'],
     });
   }
 
@@ -30,19 +30,19 @@ export class FacebookStrategy extends PassportStrategy(Strategy) {
     console.log('refreshToken: ', refreshToken);
     console.log('profile: ', profile);
 
-    const { id, name, photos } = profile;
+    const { id, username, photos, emails } = profile;
 
-    const usernameUnique = `${name.givenName}_${id}`;
+    const usernameUnique = `${username}_${id}`;
 
-    const provider = AuthProvider.FACEBOOK;
+    const provider = AuthProvider.GITHUB;
 
     const user: CreateUserWithExternalProviderDTO = {
       providerId: id,
       provider,
-      email: null,
+      email: emails[0].value,
       username: usernameUnique,
-      firstName: name.givenName,
-      lastName: name.familyName,
+      firstName: profile.name.givenName,
+      lastName: profile.name.familyName,
       avatar: photos[0].value,
     };
 
@@ -68,7 +68,7 @@ export class FacebookStrategy extends PassportStrategy(Strategy) {
     return {
       user: userToReturn,
       providerToken,
-      providerName: 'facebook',
+      providerName: 'github',
     };
   }
 }

@@ -111,7 +111,9 @@ export class UsersService {
   ) {
     console.log('entro a register with google');
 
-    user.email = user.email.toLowerCase();
+    if (user.email) {
+      user.email = user.email.toLowerCase();
+    }
 
     const securityStamp = encryptionUtils.generateSecurityStamp();
 
