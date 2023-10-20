@@ -11,7 +11,8 @@ export class RegisterUtilsService extends BaseResourceService<string> {
   private _formBuilder = inject(NonNullableFormBuilder);
   step = signal<number>(1);
   isLoadingProviderGoogle = signal<boolean>(false);
-  isLoadingProviderFacebook = signal<boolean>(false);
+  isLoadingProviderGithub = signal<boolean>(false);
+  //isLoadingProviderFacebook = signal<boolean>(false);
   formRegister!: FormGroup;
   areasSelected = signal<string[]>([]);
   customValidator!: ValidatorFn;

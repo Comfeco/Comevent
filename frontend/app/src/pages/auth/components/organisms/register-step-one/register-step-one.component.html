@@ -27,21 +27,21 @@
       <c-title variant="title-h6">Or use your networks</c-title>
       <div class="flex flex-grow gap-6">
         <c-button
-          (click)="registerApi.loginWithProvider(AuthProvider.FACEBOOK)"
+          (click)="registerApi.loginWithProvider(AuthProvider.GITHUB)"
           class="flex-1"
           variant="button-ghost"
           type="submit"
-          [disabled]="registerUtils.isLoadingProviderFacebook()"
-          [loading]="registerUtils.isLoadingProviderFacebook()"
+          [disabled]="registerUtils.isLoadingProviderGithub()"
+          [loading]="registerUtils.isLoadingProviderGithub()"
           colorLoading="disabled"
         >
           <div
             [ngClass]="{
-            'gap-2 flex items-center': !registerUtils.isLoadingProviderFacebook(),
+            'gap-2 flex items-center': !registerUtils.isLoadingProviderGithub(),
           }"
           >
-            <icon-facebook *ngIf="!registerUtils.isLoadingProviderFacebook()" />
-            <c-title variant="title-h6" color="primary">Facebook</c-title>
+            <icon-github *ngIf="!registerUtils.isLoadingProviderGithub()" />
+            <c-title variant="title-h6" color="primary">Github</c-title>
           </div>
         </c-button>
         <c-button

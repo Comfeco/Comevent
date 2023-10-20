@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import {
   ButtonComponent,
-  IconFacebookComponent,
+  IconGithubComponent,
   IconGoogleComponent,
   InputComponent,
   LabelComponent,
@@ -21,7 +21,7 @@ import { FormRegisterStepOneComponent } from './register-step-one.component';
     LabelComponent,
     ButtonComponent,
     IconGoogleComponent,
-    IconFacebookComponent,
+    IconGithubComponent,
   ],
   exports: [FormRegisterStepOneComponent],
 })

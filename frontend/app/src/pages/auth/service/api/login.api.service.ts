@@ -83,7 +83,8 @@ export class LoginApiService {
 
     const loadingStates: { [key in AuthProvider]?: WritableSignal<boolean> } = {
       [AuthProvider.GOOGLE]: this.registerUtils.isLoadingProviderGoogle,
-      [AuthProvider.FACEBOOK]: this.registerUtils.isLoadingProviderFacebook,
+      //[AuthProvider.FACEBOOK]: this.registerUtils.isLoadingProviderFacebook,
+      [AuthProvider.GITHUB]: this.registerUtils.isLoadingProviderGithub,
     };
 
     if (loadingStates[provider]) {

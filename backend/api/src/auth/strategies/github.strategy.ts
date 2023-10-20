@@ -30,19 +30,22 @@ export class GithubStrategy extends PassportStrategy(Strategy, 'github') {
     console.log('refreshToken: ', refreshToken);
     console.log('profile: ', profile);
 
-    const { id, username, photos, emails } = profile;
+    const { id, username, photos, displayName } = profile;
 
     const usernameUnique = `${username}_${id}`;
-
+    const names = displayName.split(' ');
+    const firstName = names[0];
+    const lastName = names.slice(1).join(' ');
     const provider = AuthProvider.GITHUB;
 
     const user: CreateUserWithExternalProviderDTO = {
       providerId: id,
       provider,
-      email: emails[0].value,
+      email:
+        profile.emails && profile.emails[0] ? profile.emails[0].value : null,
       username: usernameUnique,
-      firstName: profile.name.givenName,
-      lastName: profile.name.familyName,
+      firstName,
+      lastName,
       avatar: photos[0].value,
     };
 
