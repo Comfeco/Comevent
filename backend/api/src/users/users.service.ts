@@ -167,6 +167,8 @@ export class UsersService {
       relations: ['user'],
     });
 
+    console.log('userProviderEntry', userProviderEntry);
+
     return userProviderEntry ? userProviderEntry.user : null;
   }
 

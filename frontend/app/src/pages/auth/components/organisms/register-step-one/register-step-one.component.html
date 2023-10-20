@@ -26,27 +26,39 @@
     <div class="flex flex-col gap-4">
       <c-title variant="title-h6">Or use your networks</c-title>
       <div class="flex flex-grow gap-6">
-        <c-button class="flex-1" variant="button-ghost" type="submit">
-          <div class="flex justify-center w-full gap-2 items-center">
-            <icon-facebook />
-            <c-title variant="title-h6" color="primary">Facebook</c-title>
-          </div>
-        </c-button>
         <c-button
-          (click)="registerApi.loginWithProvider('google')"
+          (click)="registerApi.loginWithProvider(AuthProvider.FACEBOOK)"
           class="flex-1"
           variant="button-ghost"
           type="submit"
-          [disabled]="registerUtils.isLoadingProvider()"
-          [loading]="registerUtils.isLoadingProvider()"
+          [disabled]="registerUtils.isLoadingProviderFacebook()"
+          [loading]="registerUtils.isLoadingProviderFacebook()"
           colorLoading="disabled"
         >
           <div
             [ngClass]="{
-              'gap-2 flex items-center': !registerUtils.isLoadingProvider(),
+            'gap-2 flex items-center': !registerUtils.isLoadingProviderFacebook(),
+          }"
+          >
+            <icon-facebook *ngIf="!registerUtils.isLoadingProviderFacebook()" />
+            <c-title variant="title-h6" color="primary">Facebook</c-title>
+          </div>
+        </c-button>
+        <c-button
+          (click)="registerApi.loginWithProvider(AuthProvider.GOOGLE)"
+          class="flex-1"
+          variant="button-ghost"
+          type="submit"
+          [disabled]="registerUtils.isLoadingProviderGoogle()"
+          [loading]="registerUtils.isLoadingProviderGoogle()"
+          colorLoading="disabled"
+        >
+          <div
+            [ngClass]="{
+              'gap-2 flex items-center': !registerUtils.isLoadingProviderGoogle(),
             }"
           >
-            <icon-google *ngIf="!registerUtils.isLoadingProvider()" />
+            <icon-google *ngIf="!registerUtils.isLoadingProviderGoogle()" />
             <c-title variant="title-h6" color="primary">Google</c-title>
           </div>
         </c-button>

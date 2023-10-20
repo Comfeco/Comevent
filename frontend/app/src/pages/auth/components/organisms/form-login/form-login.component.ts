@@ -1,5 +1,6 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { AuthProvider } from '@db/constants';
 import { FormUtilitiesService } from '@utils';
 import { LoginApiService } from '../../../service/api';
 import { LoginStateService } from '../../../service/state';
@@ -17,6 +18,7 @@ export class FormLoginComponent implements OnInit {
   private loginService = inject(LoginStateService);
   protected formUtilities = inject(FormUtilitiesService);
 
+  AuthProvider = AuthProvider;
   formLogin!: FormGroup;
 
   ngOnInit(): void {

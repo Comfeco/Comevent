@@ -10,7 +10,8 @@ export class RegisterUtilsService extends BaseResourceService<string> {
   protected validatorsService = inject(ValidatorsService);
   private _formBuilder = inject(NonNullableFormBuilder);
   step = signal<number>(1);
-  isLoadingProvider = signal<boolean>(false);
+  isLoadingProviderGoogle = signal<boolean>(false);
+  isLoadingProviderFacebook = signal<boolean>(false);
   formRegister!: FormGroup;
   areasSelected = signal<string[]>([]);
   customValidator!: ValidatorFn;
