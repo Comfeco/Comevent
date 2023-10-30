@@ -12,13 +12,13 @@ module.exports = {
           darkMode: '#B76AFF',
         },
         secondary: {
-          DEFAULT: '#25D76B',
+          DEFAULT: '#FA4A86',
           light: {
-            1: '#4EE88A',
-            2: '#C4F7D8',
+            1: '#FF6C9E',
+            2: '#FEC5D8',
           },
-          dark: '#00B54A',
-          darkMode: '#4EE88A',
+          dark: '#C91250',
+          darkMode: '#FF9BBD',
         },
         accent: {
           DEFAULT: '#FFC107',

@@ -14,6 +14,15 @@
   @apply text-gray-2;
 }
 
+.color-gradient {
+  background: linear-gradient(
+    90deg,
+    #8c44cc 0%,
+    #fa4a86 52.27%,
+    #ffc107 94.74%
+  );
+}
+
 .style-h1 {
   @apply title-h1;
 }
