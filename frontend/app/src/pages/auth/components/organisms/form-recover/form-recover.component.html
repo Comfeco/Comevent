@@ -1,11 +1,13 @@
 <form
   [formGroup]="formRecover"
   (ngSubmit)="onRecoverPassword()"
-  class="w-full flex flex-col gap-6 items-center h-full justify-center"
+  class="flex flex-col gap-6 items-center h-full justify-center w-[560px]"
 >
-  <div class="flex flex-col justify-center gap-4 items-center">
-    <c-title css="title-2xl">Recover password</c-title>
-    <div class="relative">
+  <div
+    class="flex flex-col bg-white-1 p-4 rounded-xl shadow-neutral-level1 h-auto w-full"
+  >
+    <c-title variant="title-h4">Recover password</c-title>
+    <div class="py-6">
       <c-label>
         Email
         <c-input
@@ -25,7 +27,7 @@
         color="t-white"
         type="submit"
       >
-        <c-title css="title-base">Send</c-title>
+        <c-title css="title-base" color="white">Recover password</c-title>
       </c-button>
     </div>
   </div>
