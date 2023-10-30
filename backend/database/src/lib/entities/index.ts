@@ -8,4 +8,5 @@ export * from './task.entity';
 export * from './token.entity';
 export * from './user.entity';
 export * from './userArea.entity';
+export * from './userProviders';
 export * from './usersCommunities.entity';

@@ -1,6 +1,7 @@
 import { BLOCKED_TIME, ROLES } from '@db/constants';
 import { Exclude } from 'class-transformer';
 import { Column, Entity, ManyToOne, OneToMany } from 'typeorm';
+import { UserProvider } from '.';
 import { LastUpdatedBy } from '../../decorators/lastUpdateBy.decorator';
 import { IUser } from '../interfaces/user.interface';
 import { BaseEntity } from './base.entity';
@@ -16,15 +17,6 @@ export class User extends BaseEntity implements IUser {
   @Column({ type: 'varchar', nullable: true })
   securityStamp?: string;
 
-  @Column({ type: 'text', nullable: true, unique: true })
-  googleId?: string;
-
-  @Column({ type: 'text', nullable: true, unique: true })
-  facebookId?: string;
-
-  @Column({ type: 'text', nullable: true, unique: true })
-  discordId?: string;
-
   @Column({ type: 'text', nullable: true })
   firstName!: string;
 
@@ -37,6 +29,7 @@ export class User extends BaseEntity implements IUser {
   @Column({
     type: 'text',
     unique: true,
+    nullable: true,
   })
   email!: string;
 
@@ -88,6 +81,9 @@ export class User extends BaseEntity implements IUser {
 
   @ManyToOne(() => Specialty, (specialty) => specialty.users)
   specialty!: Specialty;
+
+  @OneToMany(() => UserProvider, (userProvider) => userProvider.user)
+  providers!: UserProvider[];
 
   @LastUpdatedBy(User)
   lastUpdateBy!: User;

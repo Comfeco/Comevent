@@ -36,3 +36,11 @@ export const GOOGLE_CLIENT_ID = String(process.env.GOOGLE_CLIENT_ID);
 export const GOOGLE_CLIENT_SECRET = String(process.env.GOOGLE_CLIENT_SECRET);
 export const GOOGLE_URL = String(process.env.GOOGLE_URL);
 export const MAX_AGE = parseInt(String(process.env.MAX_AGE));
+export const FACEBOOK_CLIENT_ID = String(process.env.FACEBOOK_CLIENT_ID);
+export const FACEBOOK_CLIENT_SECRET = String(
+  process.env.FACEBOOK_CLIENT_SECRET
+);
+export const FACEBOOK_URL = String(process.env.FACEBOOK_URL);
+export const GITHUB_CLIENT_ID = String(process.env.GITHUB_CLIENT_ID);
+export const GITHUB_CLIENT_SECRET = String(process.env.GITHUB_CLIENT_SECRET);
+export const GITHUB_CALLBACK_URL = String(process.env.GITHUB_CALLBACK_URL);

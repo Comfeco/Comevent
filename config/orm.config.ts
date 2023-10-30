@@ -8,6 +8,7 @@ import {
   Token,
   User,
   UserArea,
+  UserProvider,
   UsersCommunities,
 } from '@db/entities';
 import { join } from 'path';
@@ -42,6 +43,7 @@ export const options = {
     Specialty,
     UserArea,
     SocialNetwork,
+    UserProvider,
   ], // *works on windows
   // entities: [
   // join(__dirname, '/../backend/database/src/lib/entities/**/*.entity.ts'),

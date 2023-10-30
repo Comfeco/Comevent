@@ -10,6 +10,8 @@ import { UsersService } from '../users/users.service';
 import { SessionSerializer } from '../utils/serializer';
 import { AuthController } from './auth.controller';
 import { AuthService } from './auth.service';
+import { FacebookStrategy } from './strategies/facebook.strategy';
+import { GithubStrategy } from './strategies/github.strategy';
 import { GoogleStrategy } from './strategies/google.strategy';
 import { JwtStrategy } from './strategies/jwt.strategy';
 
@@ -36,9 +38,18 @@ import { JwtStrategy } from './strategies/jwt.strategy';
     UsersService,
     JwtStrategy,
     GoogleStrategy,
+    FacebookStrategy,
+    GithubStrategy,
     SessionSerializer,
   ],
   controllers: [AuthController],
-  exports: [JwtStrategy, PassportModule, JwtModule, GoogleStrategy],
+  exports: [
+    JwtStrategy,
+    PassportModule,
+    JwtModule,
+    GoogleStrategy,
+    FacebookStrategy,
+    GithubStrategy,
+  ],
 })
 export class AuthModule {}

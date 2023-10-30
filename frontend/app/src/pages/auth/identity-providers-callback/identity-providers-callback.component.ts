@@ -33,7 +33,9 @@ export class IdentityProvidersCallbackComponent implements OnInit {
           console.log('data user', data);
 
           this.loginState.setAuthtication(data);
-          this.registerUtils.isLoadingProvider.set(false);
+          this.registerUtils.isLoadingProviderGoogle.set(false);
+          // this.registerUtils.isLoadingProviderFacebook.set(false);
+          this.registerUtils.isLoadingProviderGithub.set(false);
         },
         error: (err: any) => {
           console.error('Error during claimToken:', err);

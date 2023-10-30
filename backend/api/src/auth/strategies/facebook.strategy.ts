@@ -1,27 +1,27 @@
-import { GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, GOOGLE_URL } from '@config';
+import {
+  FACEBOOK_CLIENT_ID,
+  FACEBOOK_CLIENT_SECRET,
+  FACEBOOK_URL,
+} from '@config';
 import { Injectable } from '@nestjs/common';
 import { PassportStrategy } from '@nestjs/passport';
-import { Profile, Strategy } from 'passport-google-oauth20';
+import { Profile, Strategy } from 'passport-facebook';
 import { AuthProvider } from '../../../../database/src/constants/interfaces.entities';
 import { CreateUserWithExternalProviderDTO } from '../../users/dto';
 import { UsersService } from '../../users/users.service';
 import { AuthService } from '../auth.service';
 
 @Injectable()
-export class GoogleStrategy extends PassportStrategy(Strategy) {
+export class FacebookStrategy extends PassportStrategy(Strategy) {
   constructor(
     private readonly usersService: UsersService,
     private readonly authService: AuthService
   ) {
     super({
-      clientID: GOOGLE_CLIENT_ID,
-      clientSecret: GOOGLE_CLIENT_SECRET,
-      callbackURL: GOOGLE_URL,
-      scope: [
-        'https://www.googleapis.com/auth/userinfo.profile',
-        'https://www.googleapis.com/auth/userinfo.email',
-        'openid',
-      ],
+      clientID: FACEBOOK_CLIENT_ID,
+      clientSecret: FACEBOOK_CLIENT_SECRET,
+      callbackURL: FACEBOOK_URL,
+      profileFields: ['id', 'emails', 'name', 'photos'], // Los campos que deseas recuperar.
     });
   }
 
@@ -30,16 +30,16 @@ export class GoogleStrategy extends PassportStrategy(Strategy) {
     console.log('refreshToken: ', refreshToken);
     console.log('profile: ', profile);
 
-    const { id, name, photos, emails } = profile;
+    const { id, name, photos } = profile;
 
     const usernameUnique = `${name.givenName}_${id}`;
 
-    const provider = AuthProvider.GOOGLE;
+    const provider = AuthProvider.FACEBOOK;
 
     const user: CreateUserWithExternalProviderDTO = {
       providerId: id,
       provider,
-      email: emails[0].value,
+      email: null,
       username: usernameUnique,
       firstName: name.givenName,
       lastName: name.familyName,
@@ -68,7 +68,7 @@ export class GoogleStrategy extends PassportStrategy(Strategy) {
     return {
       user: userToReturn,
       providerToken,
-      providerName: 'google',
+      providerName: 'facebook',
     };
   }
 }

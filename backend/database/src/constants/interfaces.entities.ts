@@ -27,3 +27,10 @@ export enum BLOCKED_TIME {
   ONE_WEEK = 604800000,
   PERMANENT = -1,
 }
+
+export enum AuthProvider {
+  GOOGLE = 'google',
+  FACEBOOK = 'facebook',
+  DISCORD = 'discord',
+  GITHUB = 'github',
+}

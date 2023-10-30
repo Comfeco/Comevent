@@ -2,6 +2,7 @@ export * from './icon-area/icon-area.component';
 export * from './icon-basic/icon-basic.component';
 export * from './icon-clear';
 export * from './icon-facebook';
+export * from './icon-github';
 export * from './icon-google';
 export * from './icon-hidden-pass';
 export * from './icon-loading';

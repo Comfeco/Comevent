@@ -1,3 +1,4 @@
+import { AuthProvider } from '@db/constants';
 import { User } from '@db/entities';
 import {
   Body,
@@ -24,9 +25,13 @@ import {
   SignupDoc,
 } from './decorators';
 import { AuthDTO, ChangePassDTO, LoginDTO } from './dto';
-import { JwtAuthGuard, PkceGuard } from './guards';
+import {
+  GithubAuthGuard,
+  GoogleAuthGuard,
+  JwtAuthGuard,
+  PkceGuard,
+} from './guards';
 import { AuthGuard } from './guards/auth.guard';
-import { GoogleAuthGuard } from './guards/google.guard';
 
 @ApiTags('auth')
 @Controller('auth')
@@ -48,48 +53,35 @@ export class AuthController {
     return this.authService.login(loginInput);
   }
 
-  @Get('google')
-  @UseGuards(PkceGuard, PassportAuthGuard('google'))
+  @Get(AuthProvider.GOOGLE)
+  @UseGuards(PkceGuard, PassportAuthGuard(AuthProvider.GOOGLE))
   googleAuth() {}
 
   @Get('google/callback')
   @UseGuards(GoogleAuthGuard)
-  handleRedirect(@Req() req: Request, @Res() res: Response) {
-    const cookiesData = PKCEUtils.parseCookiesFromReq(req);
-
-    console.log('cookiesData: ', cookiesData);
-
-    if (!cookiesData.codeChallenge || !cookiesData.redirectUrl) {
-      return Resp.Error('INTERNAL_SERVER_ERROR');
-    }
-
-    console.log('req.user: ', req.user);
-
-    if (req.isAuthenticated()) {
-      const userFromRequest: IUserAuthResponse = req.user;
-      return res.redirect(
-        `${cookiesData.redirectUrl}?code=${encodeURIComponent(
-          userFromRequest['providerToken']
-        )}&provider=${userFromRequest['providerName']}&userId=${
-          userFromRequest['user']['id']
-        }`
-      );
-
-      /* const userResponse = {
-        id: userFromRequest['user']['id'],
-        email: userFromRequest['user']['email'],
-        username: userFromRequest['user']['username'],
-      };
-
-      return Resp.Success(userResponse, 'OK'); */
-    }
-
-    return res.redirect(
-      `${cookiesData.redirectUrl}?message=An error has been occurred`
-    );
-
-    // return Resp.Error('BAD_REQUEST', 'An error has been occurred');
+  handleRedirectGoogle(@Req() req: Request, @Res() res: Response) {
+    return this.authService.handleRedirect(req, res);
   }
+
+  @Get(AuthProvider.GITHUB)
+  @UseGuards(PkceGuard, PassportAuthGuard(AuthProvider.GITHUB))
+  githubAuth() {}
+
+  @Get('github/callback')
+  @UseGuards(GithubAuthGuard)
+  handleRedirectGithub(@Req() req: Request, @Res() res: Response) {
+    return this.authService.handleRedirect(req, res);
+  }
+
+  /* @Get(AuthProvider.FACEBOOK)
+  @UseGuards(PkceGuard, PassportAuthGuard(AuthProvider.FACEBOOK))
+  facebookAuth() {}
+
+  @Get('facebook/callback')
+  @UseGuards(FacebookAuthGuard)
+  handleRedirectFacebook(@Req() req: Request, @Res() res: Response) {
+    return this.authService.handleRedirect(req, res);
+  } */
 
   @Post('token')
   async claimSession(@Req() req: Request, @Res() res: Response) {

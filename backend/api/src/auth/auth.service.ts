@@ -6,11 +6,12 @@ import { InjectRepository } from '@nestjs/typeorm';
 import * as bcrypt from 'bcrypt';
 import * as crypto from 'crypto';
 import dayjs from 'dayjs';
+import { Request, Response } from 'express';
 import * as jwt from 'jsonwebtoken';
 import { Repository } from 'typeorm';
 import { BLOCKED_TIME } from '../../../database/src/constants/interfaces.entities';
 import { UsersService } from '../users/users.service';
-import { dateUtils, encryptionUtils, sendEmail } from '../utils';
+import { PKCEUtils, dateUtils, encryptionUtils, sendEmail } from '../utils';
 import { emailRecoverPassHTML } from '../utils/handlebars/recoverPassword';
 import { emailRecoverPassSuccessHTML } from '../utils/handlebars/recoverPasswordSuccess';
 import { generateResetLink } from '../utils/linkUtils';
@@ -293,5 +294,28 @@ export class AuthService {
     const expiration = dateUtils.addMinutesToDate(new Date(), 5);
 
     return this.generateUserToken(purpose, expiration, userId);
+  }
+
+  handleRedirect(req: Request, res: Response) {
+    const cookiesData = PKCEUtils.parseCookiesFromReq(req);
+
+    if (!cookiesData.codeChallenge || !cookiesData.redirectUrl) {
+      return Resp.Error('INTERNAL_SERVER_ERROR');
+    }
+
+    if (req.isAuthenticated()) {
+      const userFromRequest: IUserAuthResponse = req.user;
+      return res.redirect(
+        `${cookiesData.redirectUrl}?code=${encodeURIComponent(
+          userFromRequest['providerToken']
+        )}&provider=${userFromRequest['providerName']}&userId=${
+          userFromRequest['user']['id']
+        }`
+      );
+    }
+
+    return res.redirect(
+      `${cookiesData.redirectUrl}?message=An error has been occurred`
+    );
   }
 }

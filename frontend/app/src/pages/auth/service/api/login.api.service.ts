@@ -1,7 +1,8 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Injectable, inject } from '@angular/core';
+import { Injectable, WritableSignal, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable, catchError, of, switchMap, throwError } from 'rxjs';
+import { AuthProvider } from '../../../../../../../backend/database/src/constants/interfaces.entities';
 import { BaseResponse } from '../../../../common';
 import { environment } from '../../../../environments/environment';
 import { makeRandomValue } from '../../../../utils';
@@ -77,8 +78,19 @@ export class LoginApiService {
       );
   }
 
-  loginWithProvider(provider: string) {
-    this.registerUtils.isLoadingProvider.set(true);
+  loginWithProvider(provider: AuthProvider) {
+    console.log(provider);
+
+    const loadingStates: { [key in AuthProvider]?: WritableSignal<boolean> } = {
+      [AuthProvider.GOOGLE]: this.registerUtils.isLoadingProviderGoogle,
+      //[AuthProvider.FACEBOOK]: this.registerUtils.isLoadingProviderFacebook,
+      [AuthProvider.GITHUB]: this.registerUtils.isLoadingProviderGithub,
+    };
+
+    if (loadingStates[provider]) {
+      loadingStates[provider]?.set(true);
+    }
+
     const codeVerifier = makeRandomValue(10);
     localStorage.setItem('code_verifier', codeVerifier);
     location.href = `${this.BASE_API}/auth/${provider}?redirect_url=${encodeURI(
