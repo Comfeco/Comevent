@@ -1,0 +1,175 @@
+.activated-one {
+  display: flex;
+  height: 50px;
+  width: 140px;
+  background: #337cff;
+  height: 50px;
+  border-radius: 50px;
+}
+
+@media (max-width: 600px) {
+  .activated-one {
+    width: auto;
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .activated-one {
+    width: auto;
+    padding: 0 8px;
+  }
+}
+
+.activated-two .hover-style-two {
+  display: flex;
+  height: 4px;
+  width: 140px;
+  background: #337cff;
+  height: 50px;
+  border-radius: 50px;
+}
+
+@media (max-width: 600px) {
+  .activated-two .hover-style-two {
+    width: auto;
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .activated-two .hover-style-two {
+    padding: 0 8px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+.ul-nav-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.list-menu-principal {
+  list-style: none;
+  width: 140px;
+}
+
+@media (max-width: 600px) {
+  .list-menu-principal {
+    width: auto;
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .list-menu-principal {
+    width: auto;
+    padding: 0 8px;
+  }
+}
+
+.icon-flag-translate {
+  width: 50px;
+  height: auto;
+}
+
+.icon-global {
+  width: 24px;
+  height: auto;
+}
+
+.select-lang {
+  display: flex;
+  bottom: 24px;
+}
+
+.selectbox {
+  width: 38px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.select {
+  background: #f4f4f4;
+  border-radius: 50%;
+  width: 38px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease all;
+  position: relative;
+  border: 2px solid transparent;
+  height: 38px;
+}
+
+.select.active,
+.select:hover {
+  @apply border-solid border-2 border-primary;
+}
+
+.icon-select-nav-principal {
+  color: #337cff;
+  font-size: 18px;
+}
+
+.options {
+  background: #f4f4f4;
+  border-radius: 50px;
+  max-height: 500px;
+  overflow: auto;
+  z-index: 10;
+  width: 38px;
+  margin-top: 50px;
+  position: absolute;
+  display: none;
+}
+
+.options.active {
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(-30px) scale(0.5);
+  }
+  to {
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.content-option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: 0.2s ease all;
+  height: 38px;
+}
+
+@media (max-width: 950px) {
+  .content-option {
+    height: 50px;
+  }
+}
+
+.options .content-option:hover {
+  background: #337cff;
+}
+
+.options .content-option {
+  padding: 8px;
+}
+
+.options .content-option:hover .title-lang {
+  color: #fafafa;
+}

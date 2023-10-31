@@ -16,16 +16,55 @@
     </li>
   </ul>
 
-  <div class="flex gap-2">
-    <c-button class="w-full" variant="button-ghost" routerLink="/auth/login">
-      <c-title variant="title-h6" color="white">Login</c-title>
-    </c-button>
-    <c-button
-      class="w-full"
-      variant="button-accent"
-      routerLink="/auth/register"
-    >
-      <c-title variant="title-h6" color="primary">Registrarse</c-title>
-    </c-button>
+  <div class="flex gap-4">
+    <div class="select-lang">
+      <div class="selectbox">
+        <div
+          class="select d-flex justify-content-center align-items-center"
+          #select
+        >
+          <div id="contentSelect" #contentSelect>
+            <img
+              class="icon-global"
+              src="../../../../../../assets/svg/world-icon.svg"
+              alt="world icon"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- opciones -->
+      <div class="options" #options>
+        <a
+          href="#"
+          class="option"
+          (click)="reciveData($event)"
+          *ngFor="let languaje of lang"
+        >
+          <div
+            class="content-option d-flex justify-content-center"
+            (click)="selectLang(languaje.languaje)"
+          >
+            <img
+              class="icon-flag-translate"
+              src="{{ languaje.img }}"
+              alt=" {{ languaje.description }}"
+            />
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="flex gap-2">
+      <c-button class="w-full" variant="button-ghost" routerLink="/auth/login">
+        <c-title variant="title-h6" color="white">Login</c-title>
+      </c-button>
+      <c-button
+        class="w-full"
+        variant="button-accent"
+        routerLink="/auth/register"
+      >
+        <c-title variant="title-h6" color="primary">Registrarse</c-title>
+      </c-button>
+    </div>
   </div>
 </nav>

@@ -1,7 +1,9 @@
 import { Component, OnInit, computed, effect, inject } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 import { LoginStateService } from './pages/auth/service/state';
 import { AuthStatus } from './pages/auth/types';
+import { supportLanguages } from './utils';
 
 @Component({
   selector: 'root',
@@ -9,7 +11,16 @@ import { AuthStatus } from './pages/auth/types';
   styleUrls: [],
 })
 export class AppComponent implements OnInit {
-  title = 'Template Angular';
+  title = 'Comevent';
+
+  constructor(private translateService: TranslateService) {
+    this.translateService.addLangs(supportLanguages);
+    this.translateService.setDefaultLang('en');
+    this.translateService.use('en');
+
+    /* const browserlang = this.translateService.getBrowserLang();
+	 this.translateService.use(browserlang); */
+  }
 
   private authService = inject(LoginStateService);
   private router = inject(Router);

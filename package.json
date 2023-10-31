@@ -117,6 +117,8 @@
     "@nestjs/platform-express": "^9.1.1",
     "@nestjs/swagger": "^6.3.0",
     "@nestjs/typeorm": "^9.0.1",
+    "@ngx-translate/core": "^15.0.0",
+    "@ngx-translate/http-loader": "^8.0.0",
     "axios": "^1.0.0",
     "bcrypt": "^5.1.0",
     "class-transformer": "^0.5.1",
