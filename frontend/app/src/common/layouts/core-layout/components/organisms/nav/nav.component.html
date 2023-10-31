@@ -1,0 +1,31 @@
+<nav
+  class="flex justify-between w-full items-center bg-white-1 shadow-neutral-level1 h-[60px] px-4"
+>
+  <div class="flex gap-2 flex-row items-center">
+    <icon-comevent />
+    <c-title variant="title-h4" color="gradient"> Comevent </c-title>
+  </div>
+
+  <ul>
+    <li routerLink="/" class="list-none cursor-pointer title-h6 text-black-1">
+      Inicio
+      <div
+        routerLinkActive="h-[4px] rounded-lg bg-secondary"
+        [routerLinkActiveOptions]="{ exact: true }"
+      ></div>
+    </li>
+  </ul>
+
+  <div class="flex gap-2">
+    <c-button class="w-full" variant="button-ghost" routerLink="/auth/login">
+      <c-title variant="title-h6" color="white">Login</c-title>
+    </c-button>
+    <c-button
+      class="w-full"
+      variant="button-accent"
+      routerLink="/auth/register"
+    >
+      <c-title variant="title-h6" color="primary">Registrarse</c-title>
+    </c-button>
+  </div>
+</nav>

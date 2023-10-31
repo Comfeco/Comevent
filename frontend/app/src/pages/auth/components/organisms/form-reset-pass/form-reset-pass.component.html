@@ -4,7 +4,7 @@
   class="w-full flex flex-col gap-6 items-center h-full justify-center"
 >
   <div class="flex flex-col justify-center gap-4 items-center">
-    <c-title css="title-2xl">Reset password</c-title>
+    <c-title variant="title-h4" color="black">Reset password</c-title>
     <div class="w-full flex flex-col gap-4">
       <div class="relative">
         <c-label>
@@ -34,12 +34,12 @@
     <div class="relative w-full">
       <c-button
         class="w-full"
-        css="button-primary"
+        variant="button-base"
         color="t-white"
         type="submit"
         [disabled]="!this.formReset.valid"
       >
-        <c-title css="title-base">Done</c-title>
+        <c-title variant="title-h6" color="white">Done</c-title>
       </c-button>
     </div>
   </div>

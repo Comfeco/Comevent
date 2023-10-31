@@ -21,6 +21,11 @@
     #fa4a86 52.27%,
     #ffc107 94.74%
   );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* Para navegadores que no soporten background-clip: text */
+  -webkit-text-fill-color: transparent;
 }
 
 .style-h1 {
