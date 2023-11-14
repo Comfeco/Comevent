@@ -173,3 +173,22 @@ a {
 .options .content-option:hover .title-lang {
   color: #fafafa;
 }
+
+.theme-switch {
+  @apply relative cursor-pointer p-12 rounded-full transition-colors duration-300;
+}
+
+.circle {
+  @apply w-32 h-32 bg-white-1 rounded-full overflow-hidden flex justify-center items-center relative z-10 transition-colors duration-500;
+}
+
+.inner-circle {
+  @apply w-24 h-24 bg-gray-900 rounded-full;
+}
+
+/* Modo oscuro */
+@media (prefers-color-scheme: dark) {
+  .circle {
+    @apply bg-black-2;
+  }
+}

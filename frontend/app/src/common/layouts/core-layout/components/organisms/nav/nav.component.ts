@@ -16,6 +16,7 @@ import {
   TitleComponent,
 } from '@ui/components';
 import { supportLanguages } from '../../../../../../utils';
+import { DarkModeComponent } from '../../atoms/darkMode.component';
 
 @Component({
   standalone: true,
@@ -27,6 +28,7 @@ import { supportLanguages } from '../../../../../../utils';
     RouterModule,
     ButtonComponent,
     TranslateModule,
+    DarkModeComponent,
   ],
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss'],
@@ -59,7 +61,7 @@ export class NavComponent {
     },
   ];
 
-  selectLang(lang: any) {
+  selectLang(lang: string) {
     this.translateService.use(lang);
   }
 
