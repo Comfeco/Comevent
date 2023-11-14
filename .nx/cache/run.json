@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx run frontend-ui:storybook",
+    "startTime": "2023-11-14T00:23:49.880Z",
+    "endTime": "2023-11-14T00:27:30.156Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "frontend-ui:storybook",
+      "target": "storybook",
+      "projectName": "frontend-ui",
+      "hash": "17083145367723511165",
+      "startTime": "2023-11-14T00:23:49.894Z",
+      "endTime": "2023-11-14T00:27:30.155Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}

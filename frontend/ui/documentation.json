@@ -9,7 +9,7 @@
     "components": [
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-725bcd80e7178b8f56a06d7af05e0bf306a1447aee352b097a0f2080866849480ef24957bb5f1ce08f3b5a885fa3cdf47245ed06e8cd863cc23d9e9b5af9972a",
+            "id": "component-ButtonComponent-89ae00a664c5ca4aab3694def27d8e038cd6d616aab073c81bc6d4a0df67cac0637c0bff2e844601ce3beea3ddb121dd3d2e9dc80541b29fab065496388e8c08",
             "file": "frontend/ui/components/molecules/button/button.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -67,10 +67,12 @@
                     "decorators": []
                 },
                 {
+                    "required": true,
                     "name": "variant",
                     "defaultValue": "'button-base'",
                     "deprecated": false,
                     "deprecationMessage": "",
+                    "optional": false,
                     "line": 24,
                     "type": "",
                     "decorators": []
@@ -101,15 +103,16 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { TitleComponent } from '../../atoms';\nimport { IconLoadingComponent } from '../../atoms/icons';\nimport { ButtonType } from './button.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-button',\n  imports: [CommonModule, TitleComponent, IconLoadingComponent],\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ButtonComponent implements ButtonType {\n  @Input() type: ButtonType['type'] = 'button';\n  @Input() disabled: ButtonType['disabled'] = false;\n  @Input() variant: ButtonType['variant'] = 'button-base';\n  @Input() loading = false;\n  @Input() colorLoading: 'white' | 'disabled' = 'white';\n}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { TitleComponent } from '../../atoms';\nimport { IconLoadingComponent } from '../../atoms/icons';\nimport { ButtonType } from './button.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-button',\n  imports: [CommonModule, TitleComponent, IconLoadingComponent],\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ButtonComponent implements ButtonType {\n  @Input() type: ButtonType['type'] = 'button';\n  @Input() disabled: ButtonType['disabled'] = false;\n  @Input({ required: true }) variant: ButtonType['variant'] = 'button-base';\n  @Input() loading = false;\n  @Input() colorLoading: 'white' | 'disabled' = 'white';\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".button {\r\n  @apply outline-none rounded-md w-full font-title text-title-6 font-semibold px-4 h-9;\r\n}\r\n\r\n.click-button {\r\n  @apply duration-100 transition-shadow shadow-neutral-level1 active:transform active:scale-95;\r\n}\r\n\r\n.button-base {\r\n  @apply bg-primary text-white-1;\r\n}\r\n\r\n.button-base:hover {\r\n  @apply bg-primary-dark;\r\n}\r\n\r\n.button:disabled {\r\n  @apply bg-gray-2 text-white-1;\r\n}\r\n\r\n.button-ghost {\r\n  @apply border-solid border-2 border-primary bg-transparent;\r\n}\r\n\r\n.button-ghost:hover {\r\n  @apply bg-primary-light-2;\r\n}\r\n\r\n.button-ghost:disabled {\r\n  @apply border-solid border-2 border-gray-2 bg-transparent;\r\n}\r\n\r\n.content-container {\r\n  @apply flex flex-row gap-2;\r\n}\r\n\r\n.button-ghost ::ng-deep p {\r\n  @apply text-primary;\r\n}\r\n\r\n.button-ghost:hover ::ng-deep p {\r\n  @apply text-primary-dark;\r\n}\r\n\r\n.button-ghost:disabled ::ng-deep p {\r\n  @apply text-primary-dark;\r\n}\r\n\r\n.button-ghost:disabled ::ng-deep p {\r\n  @apply text-gray-2;\r\n}\r\n\r\n.button-accent {\r\n  @apply bg-accent;\r\n}\r\n\r\n.button-disabled {\r\n  @apply transition-all h-9;\r\n}\r\n",
+                    "data": ".button {\r\n  @apply outline-none rounded-md w-full font-title text-title-6 font-semibold px-4 h-9 flex justify-center items-center flex-row;\r\n}\r\n\r\n.click-button {\r\n  @apply duration-100 transition-shadow shadow-neutral-level1 active:transform active:scale-95;\r\n}\r\n\r\n.button-base {\r\n  @apply bg-primary text-white-1;\r\n}\r\n\r\n.button-base:hover {\r\n  @apply bg-primary-dark;\r\n}\r\n\r\n.button:disabled {\r\n  @apply bg-gray-2 text-white-1;\r\n}\r\n\r\n.button-ghost {\r\n  @apply border-solid border-2 border-primary bg-transparent;\r\n}\r\n\r\n.button-ghost:hover {\r\n  @apply bg-primary-light-2;\r\n}\r\n\r\n.button-ghost:disabled {\r\n  @apply border-solid border-2 border-gray-2 bg-transparent;\r\n}\r\n\r\n.content-container {\r\n  @apply flex flex-row gap-2;\r\n}\r\n\r\n.button-ghost ::ng-deep p {\r\n  @apply text-primary;\r\n}\r\n\r\n.button-ghost:hover ::ng-deep p {\r\n  @apply text-primary-dark;\r\n}\r\n\r\n.button-ghost:disabled ::ng-deep p {\r\n  @apply text-primary-dark;\r\n}\r\n\r\n.button-ghost:disabled ::ng-deep p {\r\n  @apply text-gray-2;\r\n}\r\n\r\n.button-accent {\r\n  @apply bg-accent;\r\n}\r\n\r\n.button-disabled {\r\n  @apply transition-all h-9;\r\n}\r\n",
                     "styleUrl": "./button.component.scss"
                 }
             ],
             "stylesData": "",
+            "extends": [],
             "implements": [
                 "ButtonType"
             ],
@@ -242,7 +245,7 @@
                     "description": "",
                     "line": 28,
                     "modifierKind": [
-                        123
+                        125
                     ]
                 }
             ],
@@ -263,7 +266,7 @@
                         }
                     ],
                     "modifierKind": [
-                        167
+                        170
                     ]
                 },
                 {
@@ -282,7 +285,7 @@
                         }
                     ],
                     "modifierKind": [
-                        167
+                        170
                     ]
                 }
             ],
@@ -338,10 +341,11 @@
                 }
             ],
             "stylesData": "",
+            "extends": [],
             "implements": [
                 "ChipType"
             ],
-            "templateData": "<div\n  [ngClass]=\"{\n    'content-chip-disabled': disabled,\n    'content-chip-hover': hover,\n    'with-both-padding': !avatar,\n    'with-right-padding': avatar\n  }\"\n  class=\"content-chip\"\n>\n  <img\n    class=\"image-size\"\n    *ngIf=\"avatar\"\n    src=\"avatar.png\"\n    alt=\"avatar\"\n    [ngClass]=\"{ 'disabled-img': disabled }\"\n  />\n  <icon-user *ngIf=\"icon\" [color]=\"!disabled ? 'primary' : 'white'\" />\n  <c-title text=\"body-medium\" [color]=\"!disabled ? 'primary' : 'white'\">\n    {{ label }}\n  </c-title>\n  <icon-clear\n    *ngIf=\"close\"\n    [parentHovered]=\"isHovered\"\n    color=\"gray\"\n    type=\"solid\"\n  />\n</div>\n"
+            "templateData": "<div\n  [ngClass]=\"{\n    'content-chip-disabled': disabled,\n    'content-chip-hover': hover,\n    'with-both-padding': !avatar,\n    'with-right-padding': avatar\n  }\"\n  class=\"content-chip\"\n>\n  <img\n    class=\"image-size\"\n    *ngIf=\"avatar\"\n    src=\"avatar.png\"\n    alt=\"avatar\"\n    [ngClass]=\"{ 'disabled-img': disabled }\"\n  />\n  <icon-user *ngIf=\"icon\" [color]=\"!disabled ? 'primary' : 'white'\" />\n  <c-title variant=\"body-medium\" [color]=\"!disabled ? 'primary' : 'white'\">\n    {{ label }}\n  </c-title>\n  <icon-clear\n    *ngIf=\"close\"\n    [parentHovered]=\"isHovered\"\n    color=\"gray\"\n    type=\"solid\"\n  />\n</div>\n"
         },
         {
             "name": "ErrorInputComponent",
@@ -402,7 +406,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "modifierKind": [
-                        121
+                        123
                     ],
                     "jsdoctags": [
                         {
@@ -440,6 +444,7 @@
                 }
             ],
             "stylesData": "",
+            "extends": [],
             "accessors": {
                 "currentControl": {
                     "name": "currentControl",
@@ -521,6 +526,7 @@
                 }
             ],
             "stylesData": "",
+            "extends": [],
             "implements": [
                 "IconType"
             ],
@@ -585,6 +591,7 @@
                 }
             ],
             "stylesData": "",
+            "extends": [],
             "implements": [
                 "IconType"
             ],
@@ -667,10 +674,63 @@
                 }
             ],
             "stylesData": "",
+            "extends": [],
             "implements": [
                 "IconClearType"
             ],
             "templateData": "<svg\n  [class.hovered]=\"parentHovered\"\n  class=\"icon-clear\"\n  width=\"18\"\n  height=\"18\"\n  viewBox=\"0 0 18 18\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    [ngClass]=\"{\n      'content-hover-error': (color === 'error'),\n      'content-hover-gray': color === 'gray',\n      'content-fill-error': color === 'error' && type === 'solid',\n      'content-fill-gray': color === 'gray' && type === 'solid',\n      'content-fill-transparent': type === 'outlined',\n    }\"\n    d=\"M9 1C15.4 1 17 2.6 17 9C17 15.4 15.4 17 9 17C2.6 17 1 15.4 1 9C1 2.6 2.6 1 9 1Z\"\n    stroke-width=\"1.77778\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    [ngClass]=\"{\n      'close-hover-solid': type === 'solid',\n      'close-hover-outlined': type === 'outlined'\n    }\"\n    d=\"M7.22229 7.22192L10.7778 10.7775M10.7778 7.22192L7.22229 10.7775\"\n    stroke-width=\"1.77778\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
+        },
+        {
+            "name": "IconComeventComponent",
+            "id": "component-IconComeventComponent-be9d6e0e2c50f6e5412ec2e108857c9511ebc3d1c317da6d892ea5d269a606f44ae388d0172ef2c308d186f212513031521beb3f03bc96e2777fef734f06ee29",
+            "file": "frontend/ui/components/atoms/icons/icon-comevent/icon-comevent.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-comevent",
+            "styleUrls": [
+                "./icon-comevent.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon-comevent.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-comevent',\n  imports: [CommonModule],\n  templateUrl: './icon-comevent.component.html',\n  styleUrls: ['./icon-comevent.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconComeventComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./icon-comevent.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<svg\n  width=\"38\"\n  height=\"38\"\n  viewBox=\"0 0 38 38\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    d=\"M17.7316 0.481381C20.6967 -0.849797 27.6153 0.481419 28.0683 5.71109C23.3572 6.14811 15.734 9.12636 14.2723 15.5365C13.7024 18.0359 14.3333 20.6539 16.0431 24.4505C7.76553 24.0147 6.32416 17.9927 5.95352 16.7646C5.65562 15.3709 5.60461 14.0785 5.74704 12.8819C6.60872 5.64225 14.5509 1.90934 17.7316 0.481381Z\"\n    fill=\"url(#paint0_radial_134_1555)\"\n  />\n  <path\n    d=\"M20.3093 37.5186C17.3442 38.8498 10.4256 37.5186 9.97263 32.2889C14.6837 31.8519 22.3069 28.8736 23.7686 22.4635C24.3386 19.9641 23.7076 17.3461 21.9978 13.5495C30.2754 13.9853 31.7168 20.0073 32.0874 21.2354C32.3853 22.6291 32.4363 23.9215 32.2939 25.1181C31.4322 32.3577 23.49 36.0907 20.3093 37.5186Z\"\n    fill=\"url(#paint1_radial_134_1555)\"\n  />\n  <path\n    d=\"M20.9082 13.1136C31.2037 11.8458 32.851 20.8788 33.1393 22.3843C38.4655 18.5942 42.2781 10.743 28.6093 6.33893C23.8982 6.77595 16.275 9.7542 14.8133 16.1643C17.0722 14.5479 19.9216 13.2985 20.9082 13.1136Z\"\n    fill=\"url(#paint2_radial_134_1555)\"\n  />\n  <path\n    d=\"M17.0918 24.9113C6.79626 26.1791 5.14897 17.1461 4.8607 15.6406C-0.465516 19.4307 -4.27815 27.2819 9.39072 31.686C14.1018 31.2489 21.725 28.2707 23.1867 21.8606C20.9278 23.477 18.0784 24.7264 17.0918 24.9113Z\"\n    fill=\"url(#paint3_radial_134_1555)\"\n  />\n  <defs>\n    <radialGradient\n      id=\"paint0_radial_134_1555\"\n      cx=\"0\"\n      cy=\"0\"\n      r=\"1\"\n      gradientUnits=\"userSpaceOnUse\"\n      gradientTransform=\"translate(19.0151 19.0066) rotate(-38.1071) scale(25.2798 21.2199)\"\n    >\n      <stop stop-color=\"#8C44CC\" />\n      <stop offset=\"0.476094\" stop-color=\"#FA4A86\" />\n      <stop offset=\"1\" stop-color=\"#FFC107\" />\n    </radialGradient>\n    <radialGradient\n      id=\"paint1_radial_134_1555\"\n      cx=\"0\"\n      cy=\"0\"\n      r=\"1\"\n      gradientUnits=\"userSpaceOnUse\"\n      gradientTransform=\"translate(19.0151 19.0066) rotate(-38.1071) scale(25.2798 21.2199)\"\n    >\n      <stop stop-color=\"#8C44CC\" />\n      <stop offset=\"0.476094\" stop-color=\"#FA4A86\" />\n      <stop offset=\"1\" stop-color=\"#FFC107\" />\n    </radialGradient>\n    <radialGradient\n      id=\"paint2_radial_134_1555\"\n      cx=\"0\"\n      cy=\"0\"\n      r=\"1\"\n      gradientUnits=\"userSpaceOnUse\"\n      gradientTransform=\"translate(19.0151 19.0066) rotate(-38.1071) scale(25.2798 21.2199)\"\n    >\n      <stop stop-color=\"#8C44CC\" />\n      <stop offset=\"0.476094\" stop-color=\"#FA4A86\" />\n      <stop offset=\"1\" stop-color=\"#FFC107\" />\n    </radialGradient>\n    <radialGradient\n      id=\"paint3_radial_134_1555\"\n      cx=\"0\"\n      cy=\"0\"\n      r=\"1\"\n      gradientUnits=\"userSpaceOnUse\"\n      gradientTransform=\"translate(19.0151 19.0066) rotate(-38.1071) scale(25.2798 21.2199)\"\n    >\n      <stop stop-color=\"#8C44CC\" />\n      <stop offset=\"0.476094\" stop-color=\"#FA4A86\" />\n      <stop offset=\"1\" stop-color=\"#FFC107\" />\n    </radialGradient>\n  </defs>\n</svg>\n"
         },
         {
             "name": "IconFacebookComponent",
@@ -714,7 +774,53 @@
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
+            "extends": [],
             "templateData": "<svg\n  width=\"20\"\n  height=\"20\"\n  viewBox=\"0 0 20 20\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    d=\"M20 10C20 4.47719 15.5228 0 10 0C4.47719 0 0 4.47711 0 10C0 14.9913 3.65687 19.1284 8.4375 19.8785V12.8906H5.89844V10H8.4375V7.79688C8.4375 5.29063 9.93047 3.90625 12.2146 3.90625C13.3088 3.90625 14.4531 4.10156 14.4531 4.10156V6.5625H13.1922C11.9498 6.5625 11.5625 7.33336 11.5625 8.12422V10H14.3359L13.8926 12.8906H11.5625V19.8785C16.3431 19.1284 20 14.9913 20 10Z\"\n    fill=\"#1877F2\"\n  />\n  <path\n    d=\"M13.8926 12.8906L14.3359 10H11.5625V8.12422C11.5625 7.33328 11.9499 6.5625 13.1922 6.5625H14.4531V4.10156C14.4531 4.10156 13.3088 3.90625 12.2146 3.90625C9.93047 3.90625 8.4375 5.29063 8.4375 7.79688V10H5.89844V12.8906H8.4375V19.8785C8.95439 19.9595 9.4768 20.0001 10 20C10.5232 20.0002 11.0456 19.9595 11.5625 19.8785V12.8906H13.8926Z\"\n    fill=\"white\"\n  />\n</svg>\n"
+        },
+        {
+            "name": "IconGithubComponent",
+            "id": "component-IconGithubComponent-8c704d91239b59e625cce356019947b0540262b4c33ba710bf4a1535c2f2cd68eef485a10bb9a61d62a56b28f2b7eb58cea6175fd4e753c6db426377abd0e4ba",
+            "file": "frontend/ui/components/atoms/icons/icon-github/icon-github.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.Emulated"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "icon-github",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./icon-github.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  standalone: true,\n  selector: 'icon-github',\n  imports: [CommonModule],\n  templateUrl: './icon-github.component.html',\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class IconGithubComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<svg\n  width=\"21\"\n  height=\"20\"\n  viewBox=\"0 0 21 20\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    d=\"M10.2483 0C8.90245 0 7.5698 0.265079 6.32643 0.780103C5.08305 1.29513 3.95329 2.05001 3.00165 3.00165C1.07973 4.92357 0 7.53026 0 10.2483C0 14.778 2.94125 18.6211 7.00982 19.9841C7.52223 20.0661 7.6862 19.7484 7.6862 19.4717V17.7398C4.84743 18.3547 4.24278 16.3665 4.24278 16.3665C3.77136 15.1777 3.10523 14.86 3.10523 14.86C2.17263 14.2246 3.17696 14.2451 3.17696 14.2451C4.20179 14.3168 4.74495 15.3007 4.74495 15.3007C5.63655 16.8584 7.14304 16.3972 7.7272 16.1513C7.81943 15.4851 8.08589 15.0342 8.37284 14.778C6.09772 14.5218 3.70987 13.6404 3.70987 9.73586C3.70987 8.5983 4.09931 7.6862 4.76545 6.95858C4.66296 6.70237 4.30427 5.63655 4.86793 4.25303C4.86793 4.25303 5.72878 3.97633 7.6862 5.29836C8.49582 5.07289 9.37717 4.96016 10.2483 4.96016C11.1194 4.96016 12.0007 5.07289 12.8103 5.29836C14.7678 3.97633 15.6286 4.25303 15.6286 4.25303C16.1923 5.63655 15.8336 6.70237 15.7311 6.95858C16.3972 7.6862 16.7867 8.5983 16.7867 9.73586C16.7867 13.6507 14.3886 14.5116 12.1032 14.7678C12.4721 15.0855 12.8103 15.7106 12.8103 16.6637V19.4717C12.8103 19.7484 12.9743 20.0764 13.497 19.9841C17.5655 18.6109 20.4965 14.778 20.4965 10.2483C20.4965 8.90245 20.2315 7.5698 19.7164 6.32643C19.2014 5.08305 18.4465 3.95329 17.4949 3.00165C16.5433 2.05001 15.4135 1.29513 14.1701 0.780103C12.9267 0.265079 11.5941 0 10.2483 0Z\"\n    fill=\"black\"\n  />\n</svg>\n"
         },
         {
             "name": "IconGoogleComponent",
@@ -758,6 +864,7 @@
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
+            "extends": [],
             "templateData": "<svg\n  width=\"20\"\n  height=\"20\"\n  viewBox=\"0 0 20 20\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    d=\"M19.8055 8.0415H19V8H10V12H15.6515C14.827 14.3285 12.6115 16 10 16C6.6865 16 4 13.3135 4 10C4 6.6865 6.6865 4 10 4C11.5295 4 12.921 4.577 13.9805 5.5195L16.809 2.691C15.023 1.0265 12.634 0 10 0C4.4775 0 0 4.4775 0 10C0 15.5225 4.4775 20 10 20C15.5225 20 20 15.5225 20 10C20 9.3295 19.931 8.675 19.8055 8.0415Z\"\n    fill=\"#FFC107\"\n  />\n  <path\n    d=\"M1.15308 5.3455L4.43858 7.755C5.32758 5.554 7.48058 4 10.0001 4C11.5296 4 12.9211 4.577 13.9806 5.5195L16.8091 2.691C15.0231 1.0265 12.6341 0 10.0001 0C6.15908 0 2.82808 2.1685 1.15308 5.3455Z\"\n    fill=\"#FF3D00\"\n  />\n  <path\n    d=\"M10 19.9999C12.583 19.9999 14.93 19.0114 16.7045 17.4039L13.6095 14.7849C12.5718 15.574 11.3038 16.0009 10 15.9999C7.39903 15.9999 5.19053 14.3414 4.35853 12.0269L1.09753 14.5394C2.75253 17.7779 6.11353 19.9999 10 19.9999Z\"\n    fill=\"#4CAF50\"\n  />\n  <path\n    d=\"M19.8055 8.0415H19V8H10V12H15.6515C15.2571 13.1082 14.5467 14.0766 13.608 14.7855L13.6095 14.7845L16.7045 17.4035C16.4855 17.6025 20 15 20 10C20 9.3295 19.931 8.675 19.8055 8.0415Z\"\n    fill=\"#1976D2\"\n  />\n</svg>\n"
         },
         {
@@ -809,6 +916,7 @@
                 }
             ],
             "stylesData": "",
+            "extends": [],
             "templateData": "<svg\n  class=\"hover-global\"\n  width=\"20\"\n  height=\"20\"\n  viewBox=\"0 0 20 20\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    class=\"background-icon\"\n    d=\"M10 0C18 0 20 2 20 10C20 18 18 20 10 20C2 20 0 18 0 10C0 2 2 0 10 0Z\"\n  />\n  <path\n    class=\"eye-icon\"\n    d=\"M18 6.55542C15.8667 8.92609 13.2 10.111 10 10.111C6.8 10.111 4.13333 8.92609 2 6.55542\"\n    stroke-width=\"1.18519\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    class=\"eye-icon\"\n    d=\"M2 11.8888L4.22222 8.51099\"\n    stroke-width=\"1.18519\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    class=\"eye-icon\"\n    d=\"M18 11.8674L15.7849 8.51099\"\n    stroke-width=\"1.18519\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    class=\"eye-icon\"\n    d=\"M7.33337 13.6666L7.77782 10.1111\"\n    stroke-width=\"1.18519\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    class=\"eye-icon\"\n    d=\"M12.6667 13.6666L12.2223 10.1111\"\n    stroke-width=\"1.18519\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
         },
         {
@@ -865,15 +973,16 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "@keyframes spin {\r\n  0% {\r\n    transform: rotate(0deg);\r\n  }\r\n  100% {\r\n    transform: rotate(360deg);\r\n  }\r\n}\r\n\r\n.spin-icon {\r\n  animation: spin 1s linear infinite;\r\n}\r\n",
+                    "data": "@keyframes spin {\r\n  0% {\r\n    transform: rotate(0deg);\r\n  }\r\n  100% {\r\n    transform: rotate(360deg);\r\n  }\r\n}\r\n\r\n.color-white {\r\n  @apply stroke-white-1;\r\n}\r\n\r\n.color-disabled {\r\n  @apply stroke-gray-2;\r\n}\r\n\r\n.spin-icon {\r\n  animation: spin 1s linear infinite;\r\n}\r\n",
                     "styleUrl": "./icon-loading.component.scss"
                 }
             ],
             "stylesData": "",
+            "extends": [],
             "implements": [
                 "LoadingType"
             ],
-            "templateData": "<svg\n  class=\"spin-icon\"\n  width=\"24\"\n  height=\"24\"\n  viewBox=\"0 0 24 24\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <g clip-path=\"url(#clip0_59_655)\">\n    <path\n      [ngClass]=\"{\n        'stroke-white-1': color === 'white',\n        'stroke-gray-2': color === 'disabled'\n      }\"\n      d=\"M12 3C10.22 3 8.47991 3.52784 6.99987 4.51677C5.51983 5.50571 4.36628 6.91131 3.68509 8.55585C3.0039 10.2004 2.82567 12.01 3.17294 13.7558C3.5202 15.5016 4.37737 17.1053 5.63604 18.364C6.89472 19.6226 8.49836 20.4798 10.2442 20.8271C11.99 21.1743 13.7996 20.9961 15.4442 20.3149C17.0887 19.6337 18.4943 18.4802 19.4832 17.0001C20.4722 15.5201 21 13.78 21 12\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n  </g>\n  <defs>\n    <clipPath id=\"clip0_59_655\">\n      <rect width=\"24\" height=\"24\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>\n"
+            "templateData": "<svg\n  class=\"spin-icon\"\n  width=\"24\"\n  height=\"24\"\n  viewBox=\"0 0 24 24\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <g clip-path=\"url(#clip0_59_655)\">\n    <path\n      [ngClass]=\"{\n        'color-white': color === 'white',\n        'color-disabled': color === 'disabled'\n      }\"\n      d=\"M12 3C10.22 3 8.47991 3.52784 6.99987 4.51677C5.51983 5.50571 4.36628 6.91131 3.68509 8.55585C3.0039 10.2004 2.82567 12.01 3.17294 13.7558C3.5202 15.5016 4.37737 17.1053 5.63604 18.364C6.89472 19.6226 8.49836 20.4798 10.2442 20.8271C11.99 21.1743 13.7996 20.9961 15.4442 20.3149C17.0887 19.6337 18.4943 18.4802 19.4832 17.0001C20.4722 15.5201 21 13.78 21 12\"\n      stroke-width=\"2\"\n      stroke-linecap=\"round\"\n      stroke-linejoin=\"round\"\n    />\n  </g>\n  <defs>\n    <clipPath id=\"clip0_59_655\">\n      <rect width=\"24\" height=\"24\" fill=\"white\" />\n    </clipPath>\n  </defs>\n</svg>\n"
         },
         {
             "name": "IconPassComponent",
@@ -934,6 +1043,7 @@
                 }
             ],
             "stylesData": "",
+            "extends": [],
             "implements": [
                 "IconType"
             ],
@@ -988,6 +1098,7 @@
                 }
             ],
             "stylesData": "",
+            "extends": [],
             "templateData": "<svg\n  class=\"hover-global\"\n  width=\"20\"\n  height=\"20\"\n  viewBox=\"0 0 20 20\"\n  fill=\"none\"\n  xmlns=\"http://www.w3.org/2000/svg\"\n>\n  <path\n    class=\"background-icon\"\n    d=\"M10 0C18 0 20 2 20 10C20 18 18 20 10 20C2 20 0 18 0 10C0 2 2 0 10 0Z\"\n  />\n  <path\n    class=\"eye-icon\"\n    d=\"M8.33325 9.99968C8.33325 10.4417 8.50885 10.8656 8.82141 11.1782C9.13397 11.4908 9.5579 11.6664 9.99992 11.6664C10.442 11.6664 10.8659 11.4908 11.1784 11.1782C11.491 10.8656 11.6666 10.4417 11.6666 9.99968C11.6666 9.55765 11.491 9.13373 11.1784 8.82117C10.8659 8.5086 10.442 8.33301 9.99992 8.33301C9.5579 8.33301 9.13397 8.5086 8.82141 8.82117C8.50885 9.13373 8.33325 9.55765 8.33325 9.99968Z\"\n    stroke-width=\"1.11112\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n  <path\n    class=\"eye-icon\"\n    d=\"M17.5001 10C15.5 13.3334 13 15 10 15C7.00002 15 4.50001 13.3334 2.5 10C4.50001 6.66667 7.00002 5 10 5C13 5 15.5 6.66667 17.5001 10Z\"\n    stroke-width=\"1.11112\"\n    stroke-linecap=\"round\"\n    stroke-linejoin=\"round\"\n  />\n</svg>\n"
         },
         {
@@ -1042,6 +1153,7 @@
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
+            "extends": [],
             "implements": [
                 "IconUserType"
             ],
@@ -1218,7 +1330,9 @@
                 }
             ],
             "stylesData": "",
-            "extends": "ControlValueAccesorDirective",
+            "extends": [
+                "ControlValueAccesorDirective"
+            ],
             "implements": [
                 "InputType"
             ],
@@ -1332,6 +1446,7 @@
                 }
             ],
             "stylesData": "",
+            "extends": [],
             "implements": [
                 "LabelType"
             ],
@@ -1469,7 +1584,9 @@
                 }
             ],
             "stylesData": "",
-            "extends": "ControlValueAccesorDirective",
+            "extends": [
+                "ControlValueAccesorDirective"
+            ],
             "implements": [
                 "SelectType"
             ],
@@ -1587,6 +1704,7 @@
                 }
             ],
             "stylesData": "",
+            "extends": [],
             "implements": [
                 "StepType"
             ],
@@ -1594,7 +1712,7 @@
         },
         {
             "name": "TitleComponent",
-            "id": "component-TitleComponent-056ad4bade3cdcf5ca4216af2fccdc7382cfd61895ed6a980ee6b9dbc79201c1f7d97812a07450f0fad6a430139ab2d371dc25bb01fd165d906a8e81e76f659f",
+            "id": "component-TitleComponent-3fc6b8744a92d103e7e019cc98fd283dc30bf1d7e8ef120d5adcbd4a089cea6c9ab2f3daa13d023e477fe2ee1e9140373f6a4b229453d3266ad3eeb25f091547",
             "file": "frontend/ui/components/atoms/title/title.component.ts",
             "changeDetection": "ChangeDetectionStrategy.OnPush",
             "encapsulation": [
@@ -1616,18 +1734,22 @@
             "hostDirectives": [],
             "inputsClass": [
                 {
+                    "required": true,
                     "name": "color",
                     "defaultValue": "'black'",
                     "deprecated": false,
                     "deprecationMessage": "",
+                    "optional": false,
                     "line": 21,
                     "type": "",
                     "decorators": []
                 },
                 {
+                    "required": true,
                     "name": "variant",
                     "deprecated": false,
                     "deprecationMessage": "",
+                    "optional": false,
                     "line": 20,
                     "type": "",
                     "decorators": []
@@ -1650,19 +1772,20 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { TitleType } from './title.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-title',\n  imports: [CommonModule],\n  templateUrl: './title.component.html',\n  styleUrls: ['./title.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class TitleComponent implements TitleType {\n  @Input() variant!: TitleType['variant'];\n  @Input() color: TitleType['color'] = 'black';\n}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\nimport { TitleType } from './title.interface';\n\n@Component({\n  standalone: true,\n  selector: 'c-title',\n  imports: [CommonModule],\n  templateUrl: './title.component.html',\n  styleUrls: ['./title.component.scss'],\n  encapsulation: ViewEncapsulation.Emulated,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class TitleComponent implements TitleType {\n  @Input({ required: true }) variant!: TitleType['variant'];\n  @Input({ required: true }) color: TitleType['color'] = 'black';\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".color-black {\r\n  @apply text-black-1;\r\n}\r\n\r\n.color-white {\r\n  @apply text-white-1;\r\n}\r\n\r\n.color-primary {\r\n  @apply text-primary;\r\n}\r\n\r\n.color-disabled {\r\n  @apply text-gray-2;\r\n}\r\n\r\n.style-h1 {\r\n  @apply title-h1;\r\n}\r\n\r\n.style-h2 {\r\n  @apply title-h2;\r\n}\r\n\r\n.style-h3 {\r\n  @apply title-h3;\r\n}\r\n\r\n.style-h4 {\r\n  @apply title-h4;\r\n}\r\n\r\n.style-h5 {\r\n  @apply title-h5;\r\n}\r\n\r\n.style-h6 {\r\n  @apply title-h6;\r\n}\r\n\r\n.style-body-bigger {\r\n  @apply body-bigger;\r\n}\r\n\r\n.style-body-medium {\r\n  @apply body-medium;\r\n}\r\n\r\n.style-body-medium-accent {\r\n  @apply body-medium-accent;\r\n}\r\n\r\n.style-body-small {\r\n  @apply body-small;\r\n}\r\n\r\n.style-body-smaller {\r\n  @apply body-smaller;\r\n}\r\n",
+                    "data": ".color-black {\r\n  @apply text-black-1;\r\n}\r\n\r\n.color-white {\r\n  @apply text-white-1;\r\n}\r\n\r\n.color-primary {\r\n  @apply text-primary;\r\n}\r\n\r\n.color-disabled {\r\n  @apply text-gray-2;\r\n}\r\n\r\n.color-gradient {\r\n  background: linear-gradient(\r\n    90deg,\r\n    #8c44cc 0%,\r\n    #fa4a86 52.27%,\r\n    #ffc107 94.74%\r\n  );\r\n  -webkit-background-clip: text;\r\n  background-clip: text;\r\n  color: transparent;\r\n  /* Para navegadores que no soporten background-clip: text */\r\n  -webkit-text-fill-color: transparent;\r\n}\r\n\r\n.style-h1 {\r\n  @apply title-h1;\r\n}\r\n\r\n.style-h2 {\r\n  @apply title-h2;\r\n}\r\n\r\n.style-h3 {\r\n  @apply title-h3;\r\n}\r\n\r\n.style-h4 {\r\n  @apply title-h4;\r\n}\r\n\r\n.style-h5 {\r\n  @apply title-h5;\r\n}\r\n\r\n.style-h6 {\r\n  @apply title-h6;\r\n}\r\n\r\n.style-body-bigger {\r\n  @apply body-bigger;\r\n}\r\n\r\n.style-body-medium {\r\n  @apply body-medium;\r\n}\r\n\r\n.style-body-medium-accent {\r\n  @apply body-medium-accent;\r\n}\r\n\r\n.style-body-small {\r\n  @apply body-small;\r\n}\r\n\r\n.style-body-smaller {\r\n  @apply body-smaller;\r\n}\r\n",
                     "styleUrl": "./title.component.scss"
                 }
             ],
             "stylesData": "",
+            "extends": [],
             "implements": [
                 "TitleType"
             ],
-            "templateData": "<p\n  [ngClass]=\"{\n    'style-h1': variant === 'title-h1',\n    'style-h2': variant === 'title-h2',\n    'style-h3': variant === 'title-h3',\n    'style-h4': variant === 'title-h4',\n    'style-h5': variant === 'title-h5',\n    'style-h6': variant === 'title-h6',\n    'style-body-bigger': variant === 'body-bigger',\n    'style-body-medium': variant === 'body-medium',\n    'style-body-medium-accent': variant === 'body-medium-accent',\n    'style-body-small': variant === 'body-small',\n    'style-body-smaller': variant === 'body-smaller',\n    'color-white': color === 'white',\n    'color-black': color === 'black',\n    'color-primary': color === 'primary',\n    'color-disabled': color === 'disabled',\n    none: color === ''\n  }\"\n>\n  <ng-content></ng-content>\n</p>\n"
+            "templateData": "<p\n  [ngClass]=\"{\n    'style-h1': variant === 'title-h1',\n    'style-h2': variant === 'title-h2',\n    'style-h3': variant === 'title-h3',\n    'style-h4': variant === 'title-h4',\n    'style-h5': variant === 'title-h5',\n    'style-h6': variant === 'title-h6',\n    'style-body-bigger': variant === 'body-bigger',\n    'style-body-medium': variant === 'body-medium',\n    'style-body-medium-accent': variant === 'body-medium-accent',\n    'style-body-small': variant === 'body-small',\n    'style-body-smaller': variant === 'body-smaller',\n    'color-white': color === 'white',\n    'color-black': color === 'black',\n    'color-primary': color === 'primary',\n    'color-disabled': color === 'disabled',\n    'color-gradient': color === 'gradient',\n    none: color === ''\n  }\"\n>\n  <ng-content></ng-content>\n</p>\n"
         }
     ],
     "modules": [],
@@ -1912,16 +2035,6 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<StoryComponent>",
-                "defaultValue": "{\n  title: 'Components/Molecules/Input',\n  component: InputComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        InputComponent,\n        LabelComponent,\n        ErrorInputComponent,\n        IconClearComponent,\n        IconShowPassComponent,\n        IconHiddenPassComponent,\n      ],\n      imports: [CommonModule, FormsModule, ReactiveFormsModule],\n    }),\n  ],\n  argTypes: {\n    variant: {\n      options: ['input-base', 'input-secondary', 'input-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'boolean' },\n    },\n    type: {\n      options: ['number', 'text', 'email', 'password'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { label, ...inputProps } = args;\n    const { variant, ...labelProps } = label;\n\n    return {\n      props: { inputProps, labelProps, sharedFormControl, variant },\n      template: `\n      <c-label [variant]=\"variant\" [for]=\"inputProps.id\">\n        Label text\n        <c-input\n        [variant]=\"inputProps.variant\"\n        [type]=\"inputProps.type\"\n        [placeholder]=\"inputProps.placeholder\"\n        [formControl]=\"sharedFormControl\"\n        [disabled]=\"inputProps.disabled\"\n        [id]=\"inputProps.id\"\n        [showPassword]=\"inputProps.showPassword\"\n        [name]=\"inputProps.name\"></c-input>\n      </c-label>\n\n      `,\n    };\n  },\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "frontend/ui/stories/molecules/chip/chip.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -1937,6 +2050,16 @@
                 "deprecationMessage": "",
                 "type": "Meta<StoryComponent<number>>",
                 "defaultValue": "{\n  title: 'Components/Molecules/Select',\n  component: SelectComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [SelectComponent, LabelComponent, ErrorInputComponent],\n      imports: [CommonModule, FormsModule, ReactiveFormsModule],\n    }),\n  ],\n  argTypes: {\n    options: {\n      control: { type: 'select', options: numbers },\n    },\n    id: {\n      control: 'text',\n    },\n    name: {\n      control: 'text',\n    },\n    placeholder: {\n      control: 'text',\n    },\n    disabled: {\n      control: 'boolean',\n    },\n  },\n  render: (args: StoryComponent<number>) => {\n    const { label, id, name, options, placeholder, disabled } = args;\n    const { variant, ...labelProps } = label;\n\n    return {\n      props: {\n        id,\n        name,\n        options,\n        variant,\n        labelProps,\n        sharedFormControl,\n        placeholder,\n        numbers,\n        disabled,\n      },\n      template: `\n      <c-label [variant]=\"variant\" [for]=\"id\">\n        Label text\n        <c-select\n        [placeholder]=\"placeholder\"\n        [formControl]=\"sharedFormControl\"\n        [disabled]=\"disabled\"\n        [options]=\"numbers\"\n        [id]=\"id\"\n        [name]=\"name\"></c-select>\n      </c-label>\n      `,\n    };\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<StoryComponent>",
+                "defaultValue": "{\n  title: 'Components/Molecules/Input',\n  component: InputComponent,\n  //👇 Import both components to allow component compositing with Storybook\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        InputComponent,\n        LabelComponent,\n        ErrorInputComponent,\n        IconClearComponent,\n        IconShowPassComponent,\n        IconHiddenPassComponent,\n      ],\n      imports: [CommonModule, FormsModule, ReactiveFormsModule],\n    }),\n  ],\n  argTypes: {\n    variant: {\n      options: ['input-base', 'input-secondary', 'input-tertiary'],\n      control: { type: 'select' },\n    },\n    disabled: {\n      options: [true, false],\n      control: { type: 'boolean' },\n    },\n    type: {\n      options: ['number', 'text', 'email', 'password'],\n      control: { type: 'radio' },\n    },\n  },\n  render: (args: StoryComponent) => {\n    const { label, ...inputProps } = args;\n    const { variant, ...labelProps } = label;\n\n    return {\n      props: { inputProps, labelProps, sharedFormControl, variant },\n      template: `\n      <c-label [variant]=\"variant\" [for]=\"inputProps.id\">\n        Label text\n        <c-input\n        [variant]=\"inputProps.variant\"\n        [type]=\"inputProps.type\"\n        [placeholder]=\"inputProps.placeholder\"\n        [formControl]=\"sharedFormControl\"\n        [disabled]=\"inputProps.disabled\"\n        [id]=\"inputProps.id\"\n        [showPassword]=\"inputProps.showPassword\"\n        [name]=\"inputProps.name\"></c-input>\n      </c-label>\n\n      `,\n    };\n  },\n}"
             },
             {
                 "name": "meta",
@@ -2012,7 +2135,7 @@
                 "name": "sharedFormControl",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2022,7 +2145,7 @@
                 "name": "sharedFormControl",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "frontend/ui/stories/molecules/select/select.component.stories.ts",
+                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2050,7 +2173,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 180
+                "kind": 183
             },
             {
                 "name": "Story",
@@ -2061,7 +2184,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 180
+                "kind": 183
             },
             {
                 "name": "Story",
@@ -2072,18 +2195,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 180
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj<StoryComponent>",
-                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 180
+                "kind": 183
             },
             {
                 "name": "Story",
@@ -2094,7 +2206,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 180
+                "kind": 183
             },
             {
                 "name": "Story",
@@ -2105,7 +2217,18 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 180
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<StoryComponent>",
+                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
             },
             {
                 "name": "Story",
@@ -2116,7 +2239,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 180
+                "kind": 183
             },
             {
                 "name": "StoryComponent",
@@ -2127,18 +2250,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 190
-            },
-            {
-                "name": "StoryComponent",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "",
-                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 190
+                "kind": 193
             },
             {
                 "name": "StoryComponent",
@@ -2149,7 +2261,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 180
+                "kind": 183
             },
             {
                 "name": "StoryComponent",
@@ -2160,7 +2272,18 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 190
+                "kind": 193
+            },
+            {
+                "name": "StoryComponent",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "",
+                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 193
             },
             {
                 "name": "StoryComponent",
@@ -2171,18 +2294,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 180
-            },
-            {
-                "name": "StoryDetails",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "literal type",
-                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 184
+                "kind": 183
             },
             {
                 "name": "StoryDetails",
@@ -2193,7 +2305,18 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 184
+                "kind": 187
+            },
+            {
+                "name": "StoryDetails",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "literal type",
+                "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 187
             },
             {
                 "name": "StoryType",
@@ -2204,7 +2327,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 190
+                "kind": 193
             },
             {
                 "name": "StoryType",
@@ -2215,7 +2338,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
-                "kind": 190
+                "kind": 193
             }
         ],
         "enumerations": [],
@@ -2620,7 +2743,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 180
+                    "kind": 183
                 },
                 {
                     "name": "StoryType",
@@ -2631,7 +2754,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 190
+                    "kind": 193
                 }
             ],
             "frontend/ui/stories/atoms/title/title.component.stories.ts": [
@@ -2644,7 +2767,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 180
+                    "kind": 183
                 },
                 {
                     "name": "StoryType",
@@ -2655,7 +2778,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 190
+                    "kind": 193
                 }
             ],
             "frontend/ui/stories/molecules/button/button.component.stories.ts": [
@@ -2668,7 +2791,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 180
+                    "kind": 183
                 },
                 {
                     "name": "StoryComponent",
@@ -2679,42 +2802,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 190
-                }
-            ],
-            "frontend/ui/stories/molecules/input/input.component.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<StoryComponent>",
-                    "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 180
-                },
-                {
-                    "name": "StoryComponent",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "",
-                    "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 190
-                },
-                {
-                    "name": "StoryDetails",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "literal type",
-                    "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
+                    "kind": 193
                 }
             ],
             "frontend/ui/stories/molecules/chip/chip.component.stories.ts": [
@@ -2727,7 +2815,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 180
+                    "kind": 183
                 },
                 {
                     "name": "StoryComponent",
@@ -2738,7 +2826,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 180
+                    "kind": 183
                 }
             ],
             "frontend/ui/stories/molecules/select/select.component.stories.ts": [
@@ -2751,7 +2839,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 180
+                    "kind": 183
                 },
                 {
                     "name": "StoryComponent",
@@ -2762,7 +2850,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 190
+                    "kind": 193
                 },
                 {
                     "name": "StoryDetails",
@@ -2773,7 +2861,42 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 184
+                    "kind": 187
+                }
+            ],
+            "frontend/ui/stories/molecules/input/input.component.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<StoryComponent>",
+                    "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                },
+                {
+                    "name": "StoryComponent",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "",
+                    "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 193
+                },
+                {
+                    "name": "StoryDetails",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "literal type",
+                    "file": "frontend/ui/stories/molecules/input/input.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 187
                 }
             ],
             "frontend/ui/stories/molecules/step/step.component.stories.ts": [
@@ -2786,7 +2909,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 180
+                    "kind": 183
                 },
                 {
                     "name": "StoryComponent",
@@ -2797,7 +2920,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
-                    "kind": 180
+                    "kind": 183
                 }
             ]
         }
@@ -2854,10 +2977,28 @@
                 "status": "low"
             },
             {
+                "filePath": "frontend/ui/components/atoms/icons/icon-comevent/icon-comevent.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconComeventComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "frontend/ui/components/atoms/icons/icon-facebook/icon-facebook.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "IconFacebookComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "frontend/ui/components/atoms/icons/icon-github/icon-github.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconGithubComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

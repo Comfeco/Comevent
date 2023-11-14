@@ -1,7 +1,7 @@
 <form [formGroup]="stepOneForm" class="w-full flex flex-col gap-6 items-center">
   <div class="flex flex-col gap-6 my-14 w-[400px]">
     <c-label variant="label-base" for="nick">
-      Nick
+      {{ 'register.labelOne' | translate }}
       <c-input
         variant="input-base"
         type="text"
@@ -12,7 +12,7 @@
       />
     </c-label>
     <c-label variant="label-base" for="email">
-      Email
+      {{ 'register.labelTwo' | translate }}
       <c-input
         variant="input-base"
         type="email"
@@ -24,7 +24,9 @@
     </c-label>
 
     <div class="flex flex-col gap-4">
-      <c-title variant="title-h6" color="black">Or use your networks</c-title>
+      <c-title variant="title-h6" color="black">{{
+        'register.titleOne' | translate
+      }}</c-title>
       <div class="flex flex-grow gap-6">
         <c-button
           (click)="registerApi.loginWithProvider(AuthProvider.GITHUB)"

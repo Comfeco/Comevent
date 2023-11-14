@@ -9,12 +9,12 @@
       alt="area-of-interest"
     />
     <c-label variant="label-base" for="areaOfInterest">
-      Select areas of interest
+      {{ 'register.labelFour' | translate }}
       <c-select
         (change)="onAreaSelected($event)"
         variant="select-base"
         [options]="availableAreasNames"
-        placeholder="Select the areas you are interested in"
+        placeholder="{{ 'register.selectOptionOne' | translate }}"
         formControlName="areaOfInterest"
         name="areaOfInterest"
         id="areaOfInterest"
@@ -28,13 +28,13 @@
         class="w-full p-4 shadow-neutral-level1 bg-white-2 flex flex-wrap gap-2 justify-center"
       >
         <c-chip
-          *ngFor="let area of registerUtils.areasSelected()"
-          (click)="removeSelectedArea(area)"
+          *ngFor="let area of selectedAreas"
+          (click)="removeSelectedArea(area.name)"
           colorText="primary"
           text="body-medium"
           colorIcon="gray"
           type="solid"
-          [label]="area"
+          [label]="area.name"
         />
       </div>
     </ng-container>

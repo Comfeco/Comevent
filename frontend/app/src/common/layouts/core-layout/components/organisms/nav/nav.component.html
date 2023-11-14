@@ -8,7 +8,7 @@
 
   <ul>
     <li routerLink="/" class="list-none cursor-pointer title-h6 text-black-1">
-      Inicio
+      {{ 'nav.titleOne' | translate }}
       <div
         routerLinkActive="h-[4px] rounded-lg bg-secondary"
         [routerLinkActiveOptions]="{ exact: true }"
@@ -56,14 +56,18 @@
     </div>
     <div class="flex gap-2">
       <c-button class="w-full" variant="button-ghost" routerLink="/auth/login">
-        <c-title variant="title-h6" color="white">Login</c-title>
+        <c-title variant="title-h6" color="white">{{
+          'nav.buttonOne' | translate
+        }}</c-title>
       </c-button>
       <c-button
         class="w-full"
         variant="button-accent"
         routerLink="/auth/register"
       >
-        <c-title variant="title-h6" color="primary">Registrarse</c-title>
+        <c-title variant="title-h6" color="primary">{{
+          'nav.buttonTwo' | translate
+        }}</c-title>
       </c-button>
     </div>
   </div>

@@ -9,7 +9,7 @@ import {
   inject,
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import {
   ButtonComponent,
   IconComeventComponent,
@@ -26,6 +26,7 @@ import { supportLanguages } from '../../../../../../utils';
     TitleComponent,
     RouterModule,
     ButtonComponent,
+    TranslateModule,
   ],
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss'],

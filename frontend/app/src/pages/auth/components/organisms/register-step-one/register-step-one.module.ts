@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 import {
   ButtonComponent,
   IconGithubComponent,
@@ -22,6 +23,7 @@ import { FormRegisterStepOneComponent } from './register-step-one.component';
     ButtonComponent,
     IconGoogleComponent,
     IconGithubComponent,
+    TranslateModule,
   ],
   exports: [FormRegisterStepOneComponent],
 })

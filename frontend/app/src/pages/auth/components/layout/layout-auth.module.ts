@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterLinkActive, RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 import { ContainerStepComponent } from '../organisms/container-step/container-step.component';
 import { LayoutAuthComponent } from './layout-auth.component';
 
@@ -11,6 +12,7 @@ import { LayoutAuthComponent } from './layout-auth.component';
     RouterModule,
     RouterLinkActive,
     ContainerStepComponent,
+    TranslateModule,
   ],
   exports: [LayoutAuthComponent],
 })

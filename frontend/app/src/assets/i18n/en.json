@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "titleOne": "Home",
+    "buttonOne": "Login",
+    "buttonTwo": "Register"
+  },
+
+  "login": {
+    "labelOne": "Email",
+    "labelTwo": "Password",
+    "phraseOne": "have you forgotten your password ?",
+    "titleOne": "Or use your networks",
+    "buttonOne": "Login"
+  },
+
+  "register": {
+    "labelOne": "Nick",
+    "labelTwo": "Email",
+    "labelThree": "Password",
+    "labelFour": "Repeat Password",
+    "labelFive": "Select areas of interest",
+    "selectOptionOne": "Select the areas you are interested in",
+    "areas": {
+      "selectOptionTwo": "Programming",
+      "selectOptionThree": "3d animation",
+      "selectOptionFour": "Video game",
+      "selectOptionFive": "Illustration"
+    },
+    "titleOne": "Or use your networks",
+    "buttonTwo": "Previous",
+    "buttonOne": "Next"
+  },
+
+  "layoutAuth": {
+    "titleOne": "Login",
+    "titleTwo": "Register"
+  }
+}

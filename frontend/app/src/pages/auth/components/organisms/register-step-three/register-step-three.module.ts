@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 import {
   ButtonComponent,
   ChipComponent,
@@ -10,10 +11,11 @@ import {
   SelectComponent,
   TitleComponent,
 } from '@ui/components';
+import { TranslateAreasPipe } from '../../../../../utils/pipes';
 import { FormRegisterStepThreeComponent } from './register-step-three.component';
 
 @NgModule({
-  declarations: [FormRegisterStepThreeComponent],
+  declarations: [FormRegisterStepThreeComponent, TranslateAreasPipe],
   imports: [
     CommonModule,
     ReactiveFormsModule,
@@ -24,6 +26,7 @@ import { FormRegisterStepThreeComponent } from './register-step-three.component'
     IconGoogleComponent,
     IconFacebookComponent,
     ChipComponent,
+    TranslateModule,
   ],
   exports: [FormRegisterStepThreeComponent],
 })

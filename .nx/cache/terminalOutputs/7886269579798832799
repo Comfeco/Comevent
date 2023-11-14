@@ -1,0 +1,247 @@
+[1m[33mOption "browserTarget" is deprecated: Use 'buildTarget' instead.[39m[22m
+[36m⠋[39m Generating browser application bundles (phase: setup)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: setup)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m        [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mvendor.js[39m[37m          [2m | [22mvendor       [2m | [22m  [96m3.36 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain         [2m | [22m[96m346.68 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mpolyfills.js[39m[37m       [2m | [22mpolyfills    [2m | [22m[96m333.07 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mstyles.js[39m[37m          [2m | [22mstyles       [2m | [22m[96m243.71 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime      [2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1m [22m                  [2m | [22m[1mInitial Total[22m[2m | [22m  [1m4.27 MB[22m[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-14T00:01:47.202Z[39m[37m[22m - Hash: [1m[37md33c7897b595ff20[39m[37m[22m - Time: [1m[37m26906[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/styles.scss[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/common/layouts/auth-layouth/layout-login.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/common/layouts/core-layout/components/container/template-root/root.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/common/layouts/core-layout/components/organisms/nav/nav.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/pages/auth/components/layout/layout-auth.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/pages/auth/components/organisms/container-step/container-step.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_mod[39m[22m[1m[31mules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/pages/auth/components/organisms/form-login/form-login.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/pages/auth/components/organisms/form-recover/form-recover.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/pages/auth/components/organisms/form-reset-pass/form-reset-pass.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/pages/auth/components/organisms/register-step-one/register-step-one.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/pages/auth/components/organisms/register-step-three/register-step-three.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/pages/auth/components/organisms/register-step-two/register-step-two.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build fai[39m[22m[1m[31mled (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/pages/auth/containers/login/login.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/pages/auth/containers/recover/recover.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/pages/auth/containers/register/register.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/pages/auth/containers/reset-pass/reset-pass.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/pages/auth/identity-providers-callback/identity-providers-callback.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/pages/dashboard/components/organism/form-change-pass/form-change-pass.component[39m[22m[1m[31m.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/pages/dashboard/containers/panel/panel.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/pages/dashboard/containers/reset-pass/change-pass.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/pages/home/home.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/ui/components/atoms/error-input/error-input.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/ui/components/atoms/icons/icon-area/icon-area.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/ui/components/atoms/icons/icon-basic/icon-basic.component.scss[39m[22m[1m[31m?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/ui/components/atoms/icons/icon-clear/icon-clear.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/ui/components/atoms/icons/icon-comevent/icon-comevent.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/ui/components/atoms/icons/icon-hidden-pass/icon-hidden-pass.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/ui/components/atoms/icons/icon-loading/icon-loading.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/ui/components/atoms/icons/icon-pass/icon-pass.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/ui/components/atoms/icons/[39m[22m[1m[31micon-show-pass/icon-show-pass.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/ui/components/atoms/label/label.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/ui/components/atoms/title/title.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/ui/components/molecules/button/button.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/ui/components/molecules/chip/chip.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/ui/components/molecules/input/input.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/ui/components/molecules/select/select.component.scss?ngResource[39m[31m[[39m[22m[1m[31m0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/ui/components/molecules/step/step.component.scss?ngResource[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/styles.scss?ngGlobalStyle[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):[39m[22m
+[1m[31mHookWebpackError: Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/common/services/baseResorces.service.ts[0m:[93m107[0m:[93m18[0m - [91merror[0m[90m TS2339: [0mProperty 'mutate' does not exist on type 'WritableSignal<ResourceType<T>[]>'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m107[0m     targetSignal.mutate((resources) =>[39m[22m
+[1m[31m[7m   [0m [91m                 ~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/common/services/baseResorces.service.ts[0m:[93m107[0m:[93m26[0m - [91merror[0m[90m TS7006: [0mParameter 'resources' implicitly has an 'any' type.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m107[0m     targetSignal.mutate((resources) =>[39m[22m
+[1m[31m[7m   [0m [91m                         ~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **[39m
+[37m[39m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m346.68 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-14T00:07:53.784Z[39m[37m[22m - Hash: [1m[37mfe7fcada81cf049f[39m[37m[22m - Time: [1m[37m2729[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/styles.scss[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/styles.scss?ngGlobalStyle[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):[39m[22m
+[1m[31mHookWebpackError: Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):[39m[22m
+[1m[31mError: Cannot find module '@nx/js/src/utils/generate-globs'[39m[22m
+[1m[31mRequire stack:[39m[22m
+[1m[31m- C:\projects\Comevent\node_modules\@nx\angular\tailwind.js[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
