@@ -8,7 +8,7 @@
 }
 
 .circle {
-  @apply relative overflow-hidden bg-white-1 rounded-full z-[1];
+  @apply relative rounded-full z-[1];
   block-size: 24px; /* Diameter of the sun/moon */
   inline-size: 24px; /* Diameter of the sun/moon */
   transition: background-color 500ms ease-in-out;
@@ -19,49 +19,27 @@
   block-size: 18px; /* Diameter of the inner sun/moon */
   inline-size: 18px; /* Diameter of the inner sun/moon */
   transition: transform 600ms ease-in-out, background-color 600ms ease-in-out;
-  // transform: translate(8px, 0rem);
 }
 
 .dot {
-  @apply absolute inset-0 opacity-0;
-  transform: rotate(var(--angle)) translateX(7px);
+  @apply w-0 h-full;
   transition: transform 600ms ease-in-out, opacity 600ms ease-in-out;
+  transform: rotate(var(--angle)) translateX(50%);
 
   /* Pseudo-element for creating the visual appearance of the dots with customizable size */
   &:before {
     content: '';
-    @apply absolute inset-0 m-auto block w-2.5 h-5 bg-black-2 rounded-full z-[1];
-    transform: rotate(90deg);
-    z-index: -1;
+    @apply absolute w-[2px] h-[4px] bg-black-2 rounded-full z-[1];
+    top: 3px;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
 .star {
-  @apply absolute inset-0 z-[2] opacity-0 stroke-black-2;
-  transform: translate(var(--star-position)) rotate(-90deg);
-  inline-size: var(--star-size);
-  block-size: var(--star-size);
+  @apply absolute inset-0 z-[2] stroke-black-2;
+  inline-size: 24px;
   transition: transform 500ms ease-in-out, opacity 100ms ease-in-out;
-  transition-delay: var(--star-delay);
-  transform: translate(var(--star-position)) rotate(-90deg);
-}
-
-/* Modo oscuro */
-
-/* .inner-circle:dark {
-  transform: translate(10rem, -8rem);
-} */
-
-.dot:dark {
-  transform: rotate(var(--angle)) translateX(90px);
-  opacity: 1;
-}
-
-.circle:dark {
-  @apply bg-black-2;
-}
-
-.star:dark {
-  @apply opacity-100;
-  transform: rotate(15deg) translate(var(--star-position));
+  transition-delay: 200ms;
+  transform: translate((24px, 8px) rotate(-90deg));
 }

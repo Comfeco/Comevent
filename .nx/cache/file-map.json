@@ -2513,7 +2513,7 @@
         },
         {
           "file": "frontend/app/src/common/layouts/core-layout/components/organisms/nav/nav.component.ts",
-          "hash": "2766609906302059099",
+          "hash": "14209564152828315919",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -3371,16 +3371,24 @@
           "hash": "2927375835638640771"
         },
         {
-          "file": "frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts",
-          "hash": "205347197691130261",
+          "file": "frontend/app/src/common/layouts/core-layout/components/atoms/dark-mode/darkMode.component.html",
+          "hash": "13263451070763711502"
+        },
+        {
+          "file": "frontend/app/src/common/layouts/core-layout/components/atoms/dark-mode/darkMode.component.scss",
+          "hash": "9527945002274384107"
+        },
+        {
+          "file": "frontend/app/src/common/layouts/core-layout/components/atoms/dark-mode/darkMode.component.ts",
+          "hash": "5023071497580458267",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core"
           ]
         },
         {
-          "file": "frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss",
-          "hash": "7917317924091327459"
+          "file": "frontend/app/src/common/layouts/core-layout/components/atoms/index.ts",
+          "hash": "13431986343489197076"
         }
       ]
     }

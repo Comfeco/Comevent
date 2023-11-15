@@ -781,3 +781,635 @@ Error: Missing field `projectNodes`
 [NX Daemon Server] - 2023-11-14T19:51:59.299Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/organisms/nav/nav.component.scss
 [NX Daemon Server] - 2023-11-14T19:51:59.299Z - [REQUEST]: 
 [NX Daemon Server] - 2023-11-14T19:51:59.627Z - Time taken for 'hash changed files from watcher' 9.28319999575615ms
+[NX Daemon Server] - 2023-11-14T19:52:08.473Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T19:52:10.528Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T19:52:10.621Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T19:52:54.895Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/organisms/nav/nav.component.scss was modified
+[NX Daemon Server] - 2023-11-14T19:52:54.895Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T19:52:55.118Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T19:52:55.119Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/organisms/nav/nav.component.scss
+[NX Daemon Server] - 2023-11-14T19:52:55.119Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T19:52:55.218Z - Time taken for 'hash changed files from watcher' 0.9589999914169312ms
+[NX Daemon Server] - 2023-11-14T19:52:55.710Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T19:53:56.051Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T19:57:38.842Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts was created or restored
+[NX Daemon Server] - 2023-11-14T19:57:38.842Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T19:57:38.988Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T19:57:38.988Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts
+[NX Daemon Server] - 2023-11-14T19:57:38.989Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T19:57:39.243Z - Time taken for 'hash changed files from watcher' 0.9564999938011169ms
+[NX Daemon Server] - 2023-11-14T19:57:41.102Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T19:57:41.242Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:05:53.299Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:05:53.302Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was created or restored
+[NX Daemon Server] - 2023-11-14T20:05:53.448Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:05:53.448Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T20:05:53.448Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:05:53.607Z - Time taken for 'hash changed files from watcher' 1.3016999959945679ms
+[NX Daemon Server] - 2023-11-14T20:06:02.226Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts was modified
+[NX Daemon Server] - 2023-11-14T20:06:02.226Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:06:02.477Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:06:02.477Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts
+[NX Daemon Server] - 2023-11-14T20:06:02.477Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:06:02.716Z - Time taken for 'hash changed files from watcher' 1.3716000020503998ms
+[NX Daemon Server] - 2023-11-14T20:06:04.172Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:09:19.197Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:09:19.199Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:09:19.631Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:09:19.631Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T20:09:19.631Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:09:19.768Z - Time taken for 'hash changed files from watcher' 1.39410001039505ms
+[NX Daemon Server] - 2023-11-14T20:09:43.001Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:09:43.001Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:09:43.831Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:09:43.831Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T20:09:43.831Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:09:43.932Z - Time taken for 'hash changed files from watcher' 0.8362999856472015ms
+[NX Daemon Server] - 2023-11-14T20:09:44.749Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:10:02.397Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:10:02.399Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:10:04.039Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:10:04.039Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T20:10:04.039Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:10:04.127Z - Time taken for 'hash changed files from watcher' 0.7905000150203705ms
+[NX Daemon Server] - 2023-11-14T20:10:17.191Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:10:17.192Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:10:18.832Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:10:20.426Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:10:20.426Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T20:10:20.426Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:10:20.513Z - Time taken for 'hash changed files from watcher' 1.3033999800682068ms
+[NX Daemon Server] - 2023-11-14T20:10:30.140Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:10:30.142Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:10:33.254Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:10:33.255Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:10:34.740Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:10:36.579Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:10:36.579Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T20:10:36.579Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:10:36.676Z - Time taken for 'hash changed files from watcher' 0.825300008058548ms
+[NX Daemon Server] - 2023-11-14T20:10:40.655Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:10:40.656Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:10:44.069Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:10:44.070Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:10:47.091Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:10:47.091Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T20:10:47.091Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:10:47.181Z - Time taken for 'hash changed files from watcher' 1.2495999932289124ms
+[NX Daemon Server] - 2023-11-14T20:11:44.533Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:11:46.151Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:11:46.151Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:11:52.583Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:11:52.583Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T20:11:52.583Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:11:52.673Z - Time taken for 'hash changed files from watcher' 0.7936999797821045ms
+[NX Daemon Server] - 2023-11-14T20:12:46.824Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:15:01.219Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:15:01.221Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:15:07.652Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:15:07.652Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T20:15:07.652Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:15:07.747Z - Time taken for 'hash changed files from watcher' 1.32150000333786ms
+[NX Daemon Server] - 2023-11-14T20:16:01.913Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:16:46.826Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:16:46.826Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:16:48.570Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:16:53.248Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:16:53.249Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T20:16:53.249Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:16:53.339Z - Time taken for 'hash changed files from watcher' 1.4971000254154205ms
+[NX Daemon Server] - 2023-11-14T20:17:18.592Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:17:18.594Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:17:20.315Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:17:25.022Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:17:25.022Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T20:17:25.022Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:17:25.113Z - Time taken for 'hash changed files from watcher' 1.8384000062942505ms
+[NX Daemon Server] - 2023-11-14T20:20:31.643Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:20:31.644Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:20:33.396Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:20:38.067Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:20:38.067Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T20:20:38.067Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:20:38.153Z - Time taken for 'hash changed files from watcher' 1.3118000030517578ms
+[NX Daemon Server] - 2023-11-14T20:22:04.770Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:22:04.772Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:22:06.567Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:22:11.204Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:22:11.204Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T20:22:11.204Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:22:11.304Z - Time taken for 'hash changed files from watcher' 0.9276999831199646ms
+[NX Daemon Server] - 2023-11-14T20:23:19.661Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:23:19.664Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:23:21.363Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:23:26.096Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:23:26.096Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T20:23:26.096Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:23:26.182Z - Time taken for 'hash changed files from watcher' 1.1562000215053558ms
+[NX Daemon Server] - 2023-11-14T20:24:59.648Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:24:59.649Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:25:01.380Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:25:06.073Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:25:06.073Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T20:25:06.073Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:25:06.196Z - Time taken for 'hash changed files from watcher' 1.0995999872684479ms
+[NX Daemon Server] - 2023-11-14T20:27:46.522Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:27:46.525Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:27:48.265Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:27:52.958Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:27:52.958Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T20:27:52.958Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:27:53.048Z - Time taken for 'hash changed files from watcher' 1.1164999902248383ms
+[NX Daemon Server] - 2023-11-14T20:29:03.733Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:29:03.733Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:29:05.380Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:29:10.164Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:29:10.164Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T20:29:10.164Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:29:10.256Z - Time taken for 'hash changed files from watcher' 1.0464999973773956ms
+[NX Daemon Server] - 2023-11-14T20:30:13.619Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts was modified
+[NX Daemon Server] - 2023-11-14T20:30:13.619Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:30:15.384Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:30:20.054Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:30:20.054Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts
+[NX Daemon Server] - 2023-11-14T20:30:20.054Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:30:20.145Z - Time taken for 'hash changed files from watcher' 1.2312999963760376ms
+[NX Daemon Server] - 2023-11-14T20:33:34.223Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:33:34.225Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:33:37.377Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:33:40.659Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:33:40.659Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T20:33:40.659Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:33:40.771Z - Time taken for 'hash changed files from watcher' 1.2645999789237976ms
+[NX Daemon Server] - 2023-11-14T20:34:05.139Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:34:05.140Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts was modified
+[NX Daemon Server] - 2023-11-14T20:34:06.807Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:34:11.572Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:34:11.572Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts
+[NX Daemon Server] - 2023-11-14T20:34:11.572Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:34:11.676Z - Time taken for 'hash changed files from watcher' 1.0609000027179718ms
+[NX Daemon Server] - 2023-11-14T20:34:19.342Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:34:19.344Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts was modified
+[NX Daemon Server] - 2023-11-14T20:34:21.020Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:34:22.600Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts was modified
+[NX Daemon Server] - 2023-11-14T20:34:22.600Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:34:24.170Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:34:25.775Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:34:25.775Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts
+[NX Daemon Server] - 2023-11-14T20:34:25.775Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:34:25.833Z - Time taken for 'hash changed files from watcher' 1.3619000017642975ms
+[NX Daemon Server] - 2023-11-14T20:34:40.440Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/organisms/nav/nav.component.ts was modified
+[NX Daemon Server] - 2023-11-14T20:34:40.440Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:34:42.223Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:34:43.688Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:34:43.814Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:34:46.867Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:34:46.867Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/organisms/nav/nav.component.ts
+[NX Daemon Server] - 2023-11-14T20:34:46.867Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:34:46.961Z - Time taken for 'hash changed files from watcher' 1.0537999868392944ms
+[NX Daemon Server] - 2023-11-14T20:35:42.035Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/organisms/nav/nav.component.ts was modified
+[NX Daemon Server] - 2023-11-14T20:35:42.035Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:35:42.800Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:35:44.420Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:35:48.463Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:35:48.463Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/organisms/nav/nav.component.ts
+[NX Daemon Server] - 2023-11-14T20:35:48.463Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:35:48.558Z - Time taken for 'hash changed files from watcher' 1.1058000028133392ms
+[NX Daemon Server] - 2023-11-14T20:36:06.132Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:36:06.133Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/organisms/nav/nav.component.html was modified
+[NX Daemon Server] - 2023-11-14T20:36:07.035Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:36:07.160Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:36:08.423Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:36:12.568Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:36:12.568Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/organisms/nav/nav.component.html
+[NX Daemon Server] - 2023-11-14T20:36:12.568Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:36:12.681Z - Time taken for 'hash changed files from watcher' 1.2766999900341034ms
+[NX Daemon Server] - 2023-11-14T20:56:50.853Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:56:50.853Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:56:51.482Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:56:52.746Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:56:57.277Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:56:57.277Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T20:56:57.277Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:56:57.360Z - Time taken for 'hash changed files from watcher' 1.2297999858856201ms
+[NX Daemon Server] - 2023-11-14T20:57:32.173Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:57:32.174Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:57:32.682Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:57:33.930Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:57:38.605Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:57:38.605Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T20:57:38.605Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:57:38.691Z - Time taken for 'hash changed files from watcher' 0.7643000185489655ms
+[NX Daemon Server] - 2023-11-14T20:57:46.397Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:57:46.397Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:57:46.863Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:57:48.089Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:57:52.815Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:57:52.815Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T20:57:52.815Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:57:52.890Z - Time taken for 'hash changed files from watcher' 0.9191000163555145ms
+[NX Daemon Server] - 2023-11-14T20:57:58.905Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:57:58.905Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:57:59.322Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:58:00.621Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:58:05.330Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:58:05.330Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T20:58:05.330Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:58:05.410Z - Time taken for 'hash changed files from watcher' 0.9523999989032745ms
+[NX Daemon Server] - 2023-11-14T20:58:05.727Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:58:05.728Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:58:06.085Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:58:07.285Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:58:12.153Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:58:12.153Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T20:58:12.153Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:58:12.237Z - Time taken for 'hash changed files from watcher' 0.9848999977111816ms
+[NX Daemon Server] - 2023-11-14T20:58:14.457Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:58:14.459Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:58:16.150Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:58:20.889Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:58:20.889Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T20:58:20.889Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:58:20.983Z - Time taken for 'hash changed files from watcher' 1.2443999946117401ms
+[NX Daemon Server] - 2023-11-14T20:58:26.550Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:58:26.553Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:58:28.230Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:58:28.775Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:58:28.776Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:58:29.118Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:58:30.323Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:58:32.985Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:58:32.985Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T20:58:32.985Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:58:33.075Z - Time taken for 'hash changed files from watcher' 1.061599999666214ms
+[NX Daemon Server] - 2023-11-14T20:58:36.167Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:58:36.167Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:58:36.496Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:58:37.705Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:58:42.599Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:58:42.599Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T20:58:42.599Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:58:42.686Z - Time taken for 'hash changed files from watcher' 0.8360999822616577ms
+[NX Daemon Server] - 2023-11-14T20:59:20.692Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T20:59:20.692Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:59:22.487Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T20:59:27.116Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T20:59:27.116Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T20:59:27.116Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T20:59:27.195Z - Time taken for 'hash changed files from watcher' 0.976500004529953ms
+[NX Daemon Server] - 2023-11-14T21:00:59.544Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:00:59.546Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:01:00.043Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:01:01.290Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:01:05.977Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T21:01:05.977Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T21:01:05.977Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T21:01:06.058Z - Time taken for 'hash changed files from watcher' 0.9009999930858612ms
+[NX Daemon Server] - 2023-11-14T21:03:45.298Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts was modified
+[NX Daemon Server] - 2023-11-14T21:03:45.299Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:03:45.936Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:03:47.187Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:03:51.733Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T21:03:51.733Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts
+[NX Daemon Server] - 2023-11-14T21:03:51.733Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T21:03:51.842Z - Time taken for 'hash changed files from watcher' 1.4627000093460083ms
+[NX Daemon Server] - 2023-11-14T21:03:54.067Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:03:54.068Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts was modified
+[NX Daemon Server] - 2023-11-14T21:03:54.516Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:03:55.779Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:03:59.744Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:03:59.745Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts was modified
+[NX Daemon Server] - 2023-11-14T21:04:00.501Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T21:04:00.501Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts
+[NX Daemon Server] - 2023-11-14T21:04:00.501Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T21:04:00.556Z - Time taken for 'hash changed files from watcher' 0.8066999912261963ms
+[NX Daemon Server] - 2023-11-14T21:04:01.395Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:04:04.004Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:04:04.006Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts was modified
+[NX Daemon Server] - 2023-11-14T21:04:04.462Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:04:05.669Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:04:07.607Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts was modified
+[NX Daemon Server] - 2023-11-14T21:04:07.607Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:04:09.327Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:04:10.438Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T21:04:10.438Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts
+[NX Daemon Server] - 2023-11-14T21:04:10.438Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T21:04:10.497Z - Time taken for 'hash changed files from watcher' 1.3916999995708466ms
+[NX Daemon Server] - 2023-11-14T21:04:42.070Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:04:42.070Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:04:42.555Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:04:43.885Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:04:48.496Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T21:04:48.496Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T21:04:48.496Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T21:04:48.582Z - Time taken for 'hash changed files from watcher' 0.7166999876499176ms
+[NX Daemon Server] - 2023-11-14T21:04:58.738Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:04:58.739Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:04:59.265Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:05:00.503Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:05:02.366Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:05:02.367Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:05:02.724Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:05:04.007Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:05:05.166Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T21:05:05.166Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T21:05:05.166Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T21:05:05.246Z - Time taken for 'hash changed files from watcher' 1.2571000158786774ms
+[NX Daemon Server] - 2023-11-14T21:05:09.797Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:05:09.798Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:05:10.153Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:05:11.386Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:05:13.255Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:05:13.255Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:05:13.597Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:05:14.803Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:05:16.221Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T21:05:16.221Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T21:05:16.221Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T21:05:16.302Z - Time taken for 'hash changed files from watcher' 0.9844000041484833ms
+[NX Daemon Server] - 2023-11-14T21:05:24.871Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:05:24.872Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:05:25.370Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:05:26.608Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:05:30.358Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:05:30.359Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:05:30.716Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:05:31.293Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T21:05:31.293Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T21:05:31.293Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T21:05:31.380Z - Time taken for 'hash changed files from watcher' 0.8652999997138977ms
+[NX Daemon Server] - 2023-11-14T21:05:31.916Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:05:41.747Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:05:41.749Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:05:42.232Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:05:43.467Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:05:48.178Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T21:05:48.178Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T21:05:48.179Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T21:05:48.272Z - Time taken for 'hash changed files from watcher' 1.0860000252723694ms
+[NX Daemon Server] - 2023-11-14T21:05:49.643Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:05:49.644Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:05:50.005Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:05:51.245Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:05:56.079Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T21:05:56.079Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T21:05:56.079Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T21:05:56.159Z - Time taken for 'hash changed files from watcher' 1.2443999946117401ms
+[NX Daemon Server] - 2023-11-14T21:05:56.290Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:05:56.291Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:05:56.634Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:05:57.859Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:06:02.718Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T21:06:02.718Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T21:06:02.718Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T21:06:02.793Z - Time taken for 'hash changed files from watcher' 1.3772999942302704ms
+[NX Daemon Server] - 2023-11-14T21:06:03.496Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:06:03.497Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:06:03.838Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:06:05.056Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:06:09.924Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T21:06:09.924Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T21:06:09.924Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T21:06:10.006Z - Time taken for 'hash changed files from watcher' 1.3038000166416168ms
+[NX Daemon Server] - 2023-11-14T21:06:13.977Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:06:13.978Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:06:14.511Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:06:15.753Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:06:20.411Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T21:06:20.411Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T21:06:20.411Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T21:06:20.487Z - Time taken for 'hash changed files from watcher' 0.7908999919891357ms
+[NX Daemon Server] - 2023-11-14T21:06:26.006Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:06:26.008Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:06:26.364Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:06:27.602Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:06:30.765Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:06:30.765Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:06:31.105Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:06:32.317Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:06:32.430Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T21:06:32.430Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T21:06:32.430Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T21:06:32.520Z - Time taken for 'hash changed files from watcher' 1.0582000017166138ms
+[NX Daemon Server] - 2023-11-14T21:06:37.981Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:06:37.982Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:06:38.420Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:06:39.625Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:06:44.415Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T21:06:44.415Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T21:06:44.415Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T21:06:44.492Z - Time taken for 'hash changed files from watcher' 1.2025000154972076ms
+[NX Daemon Server] - 2023-11-14T21:06:45.554Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:06:45.555Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:06:45.899Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:06:47.152Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:06:49.746Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:06:49.747Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:06:50.106Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:06:51.316Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:06:51.983Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T21:06:51.983Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T21:06:51.983Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T21:06:52.064Z - Time taken for 'hash changed files from watcher' 1.1288000047206879ms
+[NX Daemon Server] - 2023-11-14T21:06:53.956Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:06:53.956Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:06:54.281Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:06:55.521Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:07:00.375Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T21:07:00.375Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T21:07:00.375Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T21:07:00.463Z - Time taken for 'hash changed files from watcher' 0.7910000085830688ms
+[NX Daemon Server] - 2023-11-14T21:07:55.973Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:07:55.973Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:07:56.444Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:07:57.785Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:08:02.401Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T21:08:02.401Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T21:08:02.401Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T21:08:02.486Z - Time taken for 'hash changed files from watcher' 0.9879000186920166ms
+[NX Daemon Server] - 2023-11-14T21:08:11.185Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:08:11.185Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:08:11.778Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:08:13.019Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:08:17.608Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T21:08:17.608Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T21:08:17.608Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T21:08:17.694Z - Time taken for 'hash changed files from watcher' 1.222000002861023ms
+[NX Daemon Server] - 2023-11-14T21:10:04.258Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:10:04.259Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:10:04.918Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:10:06.151Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:10:10.690Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T21:10:10.690Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T21:10:10.690Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T21:10:10.774Z - Time taken for 'hash changed files from watcher' 1.0502000153064728ms
+[NX Daemon Server] - 2023-11-14T21:10:26.708Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:10:26.710Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:10:27.220Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:10:28.590Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:10:31.723Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:10:31.724Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:10:32.082Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:10:33.131Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T21:10:33.131Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T21:10:33.131Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T21:10:33.217Z - Time taken for 'hash changed files from watcher' 1.2562000155448914ms
+[NX Daemon Server] - 2023-11-14T21:10:33.322Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:10:35.846Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:10:35.846Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:10:36.235Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:10:37.481Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:10:42.270Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T21:10:42.270Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T21:10:42.270Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T21:10:42.358Z - Time taken for 'hash changed files from watcher' 0.7612000107765198ms
+[NX Daemon Server] - 2023-11-14T21:11:28.614Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:11:28.615Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:11:29.159Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:11:30.454Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:11:34.130Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:11:34.131Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:11:34.554Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:11:35.038Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T21:11:35.039Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T21:11:35.039Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T21:11:35.124Z - Time taken for 'hash changed files from watcher' 1.027999997138977ms
+[NX Daemon Server] - 2023-11-14T21:11:35.789Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:14:27.575Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:14:27.577Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:14:28.089Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:14:29.463Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:14:34.010Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T21:14:34.010Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T21:14:34.010Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T21:14:34.098Z - Time taken for 'hash changed files from watcher' 1.1620000004768372ms
+[NX Daemon Server] - 2023-11-14T21:14:54.802Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:14:54.804Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:14:55.523Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:14:56.772Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:15:01.240Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T21:15:01.240Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T21:15:01.240Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T21:15:01.333Z - Time taken for 'hash changed files from watcher' 0.8809999823570251ms
+[NX Daemon Server] - 2023-11-14T21:15:24.408Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:15:24.410Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T21:15:24.969Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:15:26.250Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:15:30.849Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T21:15:30.849Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T21:15:30.849Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T21:15:30.939Z - Time taken for 'hash changed files from watcher' 1.1999000012874603ms
+[NX Daemon Server] - 2023-11-14T21:18:41.214Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts was modified
+[NX Daemon Server] - 2023-11-14T21:18:41.215Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:18:41.964Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:18:43.289Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T21:18:47.648Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T21:18:47.648Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts
+[NX Daemon Server] - 2023-11-14T21:18:47.648Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T21:18:47.737Z - Time taken for 'hash changed files from watcher' 1.1040000021457672ms
+[NX Daemon Server] - 2023-11-14T23:28:01.371Z - [WATCHER]: libs/tailwind-preset/tailwind.config.js was modified
+[NX Daemon Server] - 2023-11-14T23:28:01.380Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:28:06.005Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:28:07.818Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T23:28:07.818Z - [REQUEST]: libs/tailwind-preset/tailwind.config.js
+[NX Daemon Server] - 2023-11-14T23:28:07.818Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T23:28:07.906Z - Time taken for 'hash changed files from watcher' 1.0796000063419342ms
+[NX Daemon Server] - 2023-11-14T23:32:58.396Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T23:32:58.397Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:32:59.031Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:33:00.356Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:33:00.417Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:33:04.824Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T23:33:04.824Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T23:33:04.824Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T23:33:04.911Z - Time taken for 'hash changed files from watcher' 0.9793000221252441ms
+[NX Daemon Server] - 2023-11-14T23:33:17.484Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:33:17.485Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T23:33:17.996Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:33:19.214Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:33:23.909Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T23:33:23.909Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T23:33:23.909Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T23:33:23.989Z - Time taken for 'hash changed files from watcher' 0.7502000033855438ms
+[NX Daemon Server] - 2023-11-14T23:34:17.405Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:34:17.406Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T23:34:19.074Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:34:23.837Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T23:34:23.837Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T23:34:23.837Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T23:34:23.898Z - Time taken for 'hash changed files from watcher' 1.024399995803833ms
+[NX Daemon Server] - 2023-11-14T23:35:04.495Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:35:04.497Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts was modified
+[NX Daemon Server] - 2023-11-14T23:35:05.195Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:35:06.456Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:35:10.923Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T23:35:10.923Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts
+[NX Daemon Server] - 2023-11-14T23:35:10.923Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T23:35:11.016Z - Time taken for 'hash changed files from watcher' 0.7858999967575073ms
+[NX Daemon Server] - 2023-11-14T23:35:24.348Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T23:35:24.348Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:35:24.874Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:35:26.113Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:35:30.783Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T23:35:30.783Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T23:35:30.783Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T23:35:30.864Z - Time taken for 'hash changed files from watcher' 1.3855000138282776ms
+[NX Daemon Server] - 2023-11-14T23:35:55.814Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T23:35:55.815Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:35:57.520Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:36:02.244Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T23:36:02.244Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T23:36:02.244Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T23:36:02.306Z - Time taken for 'hash changed files from watcher' 0.7554999887943268ms
+[NX Daemon Server] - 2023-11-14T23:39:16.497Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T23:39:16.497Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:39:17.167Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:39:18.465Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:39:22.931Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T23:39:22.931Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T23:39:22.931Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T23:39:23.027Z - Time taken for 'hash changed files from watcher' 0.8663000166416168ms
+[NX Daemon Server] - 2023-11-14T23:42:54.786Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts was modified
+[NX Daemon Server] - 2023-11-14T23:42:54.786Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:42:55.540Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:42:56.807Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:43:01.215Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T23:43:01.215Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts
+[NX Daemon Server] - 2023-11-14T23:43:01.215Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T23:43:01.296Z - Time taken for 'hash changed files from watcher' 1.02360001206398ms
+[NX Daemon Server] - 2023-11-14T23:43:16.144Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T23:43:16.144Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:43:16.752Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:43:17.989Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:43:22.578Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T23:43:22.578Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T23:43:22.578Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T23:43:22.682Z - Time taken for 'hash changed files from watcher' 0.8197000026702881ms
+[NX Daemon Server] - 2023-11-14T23:45:19.037Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts was modified
+[NX Daemon Server] - 2023-11-14T23:45:19.037Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:45:19.706Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:45:21.033Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:45:25.469Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T23:45:25.469Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts
+[NX Daemon Server] - 2023-11-14T23:45:25.469Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T23:45:25.738Z - Time taken for 'hash changed files from watcher' 0.9340000152587891ms
+[NX Daemon Server] - 2023-11-14T23:47:02.288Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:47:02.289Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts was modified
+[NX Daemon Server] - 2023-11-14T23:47:02.957Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:47:04.205Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:47:08.724Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T23:47:08.724Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.ts
+[NX Daemon Server] - 2023-11-14T23:47:08.724Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T23:47:08.808Z - Time taken for 'hash changed files from watcher' 0.7653999924659729ms
+[NX Daemon Server] - 2023-11-14T23:48:38.986Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T23:48:38.987Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:48:39.455Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:48:40.749Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:48:45.049Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:48:45.050Z - [WATCHER]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss was modified
+[NX Daemon Server] - 2023-11-14T23:48:45.413Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-14T23:48:45.414Z - [REQUEST]: frontend/app/src/common/layouts/core-layout/components/atoms/darkMode.component.scss
+[NX Daemon Server] - 2023-11-14T23:48:45.414Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-14T23:48:45.510Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T23:48:45.511Z - Time taken for 'hash changed files from watcher' 0.9052000045776367ms
+[NX Daemon Server] - 2023-11-14T23:48:46.649Z - [WATCHER]: Processing file changes in outputs

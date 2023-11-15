@@ -16,7 +16,7 @@ import {
   TitleComponent,
 } from '@ui/components';
 import { supportLanguages } from '../../../../../../utils';
-import { DarkModeComponent } from '../../atoms/darkMode.component';
+import { DarkModeComponent } from '../../atoms';
 
 @Component({
   standalone: true,
