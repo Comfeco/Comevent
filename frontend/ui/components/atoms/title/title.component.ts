@@ -18,5 +18,5 @@ import { TitleType } from './title.interface';
 })
 export class TitleComponent implements TitleType {
   @Input({ required: true }) variant!: TitleType['variant'];
-  @Input({ required: true }) color: TitleType['color'] = 'black';
+  @Input({ required: false }) color!: TitleType['color'];
 }

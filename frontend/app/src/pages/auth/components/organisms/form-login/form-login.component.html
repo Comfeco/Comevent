@@ -53,7 +53,7 @@
           }"
           >
             <icon-github *ngIf="!registerUtils.isLoadingProviderGithub()" />
-            <c-title variant="title-h6" color="primary">Github</c-title>
+            <c-title variant="title-h6">Github</c-title>
           </div>
         </c-button>
         <c-button
@@ -71,7 +71,7 @@
             }"
           >
             <icon-google *ngIf="!registerUtils.isLoadingProviderGoogle()" />
-            <c-title variant="title-h6" color="primary">Google</c-title>
+            <c-title variant="title-h6">Google</c-title>
           </div>
         </c-button>
       </div>
@@ -79,9 +79,7 @@
   </div>
   <div class="flex relative w-full justify-end">
     <c-button variant="button-base" type="submit" [disabled]="!formLogin.valid">
-      <c-title variant="title-h6" color="white">{{
-        'login.buttonOne' | translate
-      }}</c-title>
+      <c-title variant="title-h6">{{ 'login.buttonOne' | translate }}</c-title>
     </c-button>
   </div>
 </form>

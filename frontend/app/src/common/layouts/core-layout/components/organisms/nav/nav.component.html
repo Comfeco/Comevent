@@ -1,13 +1,16 @@
 <nav
-  class="flex justify-between w-full items-center bg-white-1 shadow-neutral-level1 h-[60px] px-4"
+  class="flex justify-between w-full items-center bg-white-1 dark:bg-black-1 shadow-neutral-level1 h-[60px] px-4"
 >
-  <div class="flex gap-2 flex-row items-center">
+  <div routerLink="/" class="flex gap-2 flex-row items-center cursor-pointer">
     <icon-comevent />
     <c-title variant="title-h4" color="gradient"> Comevent </c-title>
   </div>
 
   <ul>
-    <li routerLink="/" class="list-none cursor-pointer title-h6 text-black-1">
+    <li
+      routerLink="/"
+      class="list-none cursor-pointer title-h6 text-black-1 dark:text-white-1"
+    >
       {{ 'nav.titleOne' | translate }}
       <div
         routerLinkActive="h-[4px] rounded-lg bg-secondary"
@@ -58,18 +61,14 @@
     </div>
     <div class="flex gap-2">
       <c-button class="w-full" variant="button-ghost" routerLink="/auth/login">
-        <c-title variant="title-h6" color="white">{{
-          'nav.buttonOne' | translate
-        }}</c-title>
+        <c-title variant="title-h6">{{ 'nav.buttonOne' | translate }}</c-title>
       </c-button>
       <c-button
         class="w-full"
         variant="button-accent"
         routerLink="/auth/register"
       >
-        <c-title variant="title-h6" color="primary">{{
-          'nav.buttonTwo' | translate
-        }}</c-title>
+        <c-title variant="title-h6">{{ 'nav.buttonTwo' | translate }}</c-title>
       </c-button>
     </div>
   </div>

@@ -3,7 +3,7 @@
 }
 
 .input {
-  @apply outline-none rounded-md w-auto px-4 body-medium;
+  @apply outline-none rounded-md w-auto px-4 body-medium bg-white-1 dark:bg-black-2;
 }
 
 .input::placeholder {
@@ -11,7 +11,7 @@
 }
 
 .input-base {
-  @apply focus:placeholder-transparent h-9 border-2 text-black-1 focus:outline-none focus:border-primary transition-all w-auto;
+  @apply focus:placeholder-transparent h-9 border-2 text-black-1 dark:text-white-1 focus:outline-none focus:border-primary dark:focus:border-primary-darkMode transition-all w-auto;
 }
 
 .position-relative {
@@ -45,15 +45,15 @@ input[type='number'] {
 }
 
 .b-success {
-  @apply border-success;
+  @apply border-success dark:border-success-darkMode;
 }
 
 .b-error {
-  @apply border-error;
+  @apply border-error dark:border-error-darkMode;
 }
 
 .b-neutral {
-  @apply border-black-1;
+  @apply border-black-1 dark:border-black-2;
 }
 
 .b-disabled {

@@ -7,11 +7,11 @@
 }
 
 .content-inner-step {
-  @apply flex justify-center items-center h-[38px] w-[38px] bg-white-1 rounded-full border-transparent border-2;
+  @apply flex justify-center items-center h-[38px] w-[38px] bg-white-1 dark:bg-black-2 rounded-full border-transparent border-2;
 }
 
 .progress {
-  @apply bg-primary;
+  @apply bg-primary dark:bg-primary-darkMode;
 }
 
 .pending {
@@ -19,11 +19,11 @@
 }
 
 .success {
-  @apply bg-success;
+  @apply bg-success dark:bg-success-darkMode;
 }
 
 .t-progress {
-  @apply text-primary;
+  @apply text-primary dark:text-primary-darkMode;
 }
 
 .t-pending {
@@ -31,13 +31,18 @@
 }
 
 .t-success {
-  @apply text-success;
+  @apply text-success dark:text-success-darkMode;
 }
 
 .s-success {
-  @apply stroke-success;
+  @apply stroke-success dark:stroke-success-darkMode;
 }
 
-.style-body-small {
+.style-body-small,
+.style-body-small-two {
   @apply body-small;
+}
+
+.style-body-small-two {
+  @apply text-black-1 dark:text-white-1;
 }

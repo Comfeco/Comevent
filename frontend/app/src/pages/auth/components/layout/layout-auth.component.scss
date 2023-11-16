@@ -1,5 +1,5 @@
 .active {
-  @apply bg-primary-light-2 text-primary;
+  @apply bg-primary-light-2 text-primary dark:text-primary-darkMode;
 }
 
 :host {

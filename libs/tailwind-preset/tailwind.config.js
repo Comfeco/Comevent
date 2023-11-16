@@ -32,8 +32,8 @@ module.exports = {
           2: '#F9F9F9',
         },
         black: {
-          1: '#2E2E2E',
-          2: '#20223A',
+          1: '#161B22',
+          2: '#010409',
         },
         success: {
           DEFAULT: '#25D76B',

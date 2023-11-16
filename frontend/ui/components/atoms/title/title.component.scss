@@ -1,13 +1,13 @@
 .color-black {
-  @apply text-black-1;
+  @apply text-black-1 dark:text-white-1;
 }
 
 .color-white {
-  @apply text-white-1;
+  @apply text-white-1 dark:text-black-1;
 }
 
 .color-primary {
-  @apply text-primary;
+  @apply text-primary dark:text-primary-darkMode;
 }
 
 .color-disabled {
