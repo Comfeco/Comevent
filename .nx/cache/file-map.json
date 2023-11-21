@@ -1277,7 +1277,7 @@
         },
         {
           "file": "frontend/app/src/common/layouts/core-layout/components/container/template-root/root.component.html",
-          "hash": "13083532610873369669"
+          "hash": "6361899251060501206"
         },
         {
           "file": "frontend/app/src/common/layouts/core-layout/components/container/template-root/root.component.scss",
@@ -1285,7 +1285,7 @@
         },
         {
           "file": "frontend/app/src/common/layouts/core-layout/components/container/template-root/root.component.ts",
-          "hash": "10575456169887818471",
+          "hash": "18068992371904125719",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -1424,7 +1424,7 @@
         },
         {
           "file": "frontend/app/src/pages/auth/components/layout/layout-auth.component.scss",
-          "hash": "17365442822096484660"
+          "hash": "17328371519586800137"
         },
         {
           "file": "frontend/app/src/pages/auth/components/layout/layout-auth.component.ts",
@@ -2162,6 +2162,49 @@
         {
           "file": "frontend/app/tsconfig.spec.json",
           "hash": "2927375835638640771"
+        },
+        {
+          "file": "frontend/app/src/common/layouts/core-layout/components/organisms/footer/footer.component.html",
+          "hash": "16839504101155474196"
+        },
+        {
+          "file": "frontend/app/src/common/layouts/core-layout/components/organisms/footer/footer.component.scss",
+          "hash": "7321170731172094711"
+        },
+        {
+          "file": "frontend/app/src/common/layouts/core-layout/components/organisms/footer/footer.component.ts",
+          "hash": "2604858377140455006",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@ngx-translate/core",
+            "frontend-ui"
+          ]
+        },
+        {
+          "file": "frontend/app/src/assets/svg/icon-community-code.svg",
+          "hash": "10392358612336022730"
+        },
+        {
+          "file": "frontend/app/src/assets/svg/icon-indie-creators.svg",
+          "hash": "15471407104564586208"
+        },
+        {
+          "file": "frontend/app/src/assets/svg/icon-comfeco.svg",
+          "hash": "9893049273452350891"
+        },
+        {
+          "file": "frontend/app/src/assets/svg/icon-twitter.svg",
+          "hash": "7365969291259039962"
+        },
+        {
+          "file": "frontend/app/src/assets/svg/icon-facebook.svg",
+          "hash": "11270838059574463757"
+        },
+        {
+          "file": "frontend/app/src/assets/svg/icon-linkedin.svg",
+          "hash": "17647553286086618355"
         }
       ],
       "api": [

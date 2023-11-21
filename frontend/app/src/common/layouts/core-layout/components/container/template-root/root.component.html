@@ -1,3 +1,7 @@
 <c-nav></c-nav>
 <router-outlet></router-outlet>
-<!-- <c-footer *ngIf="route.url === '/home' || route.url === '/communities' || route.url === '/auth/login' || route.url === '/auth/register' || route.url === '/auth/recover'"></c-footer> -->
+@if(route.url === '/' || route.url === '/communities' || route.url ===
+'/auth/login' || route.url === '/auth/register' || route.url ===
+'/auth/recover') {
+<c-footer />
+}

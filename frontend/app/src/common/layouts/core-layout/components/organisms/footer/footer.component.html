@@ -1,0 +1,43 @@
+<footer
+  class="flex items-center w-full font-lato bg-black-1 lg:h-[54px] sm:h-[120px] h-[250px]"
+>
+  <div
+    class="px-6 flex w-full justify-between items-center flex-col gap-6 sm:gap-0 sm:flex-row"
+  >
+    <div
+      class="flex lg:flex-row flex-col lg:items-center sm:items-start items-center gap-[12px]"
+    >
+      <p color="white" class="text-white-1 title-h6">Una iniciativa de:</p>
+
+      <div class="flex gap-3">
+        @for (sponsor of sponsors; track sponsor.description) {
+        <a [href]="sponsor.web" target="_blank">
+          <img
+            class="h-10 w-10"
+            [src]="sponsor.logo"
+            [alt]="sponsor.description"
+          />
+        </a>
+        }
+      </div>
+    </div>
+
+    <p color="white" class="text-white-1 title-h6">Copyright © 2024</p>
+
+    <div class="flex gap-4 lg:flex-row flex-col sm:items-start items-center">
+      <p color="white" class="text-white-1 title-h6">Siguenos:</p>
+
+      <div class="flex flex-row lg:items-center gap-3">
+        @for (network of networks; track network.description) {
+        <a [href]="network.web" target="_blank">
+          <img
+            class="w-6 h-6"
+            [src]="network.logo"
+            [alt]="network.description"
+          />
+        </a>
+        }
+      </div>
+    </div>
+  </div>
+</footer>
