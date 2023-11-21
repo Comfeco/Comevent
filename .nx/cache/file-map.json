@@ -230,15 +230,15 @@
       },
       {
         "file": ".nx/cache/d/daemon.log",
-        "hash": "16688595879592573302"
+        "hash": "18319535877563970433"
       },
       {
         "file": ".nx/cache/d/server-process.json",
-        "hash": "11754566108585546203"
+        "hash": "12481774004674464191"
       },
       {
         "file": ".nx/cache/file-map.json",
-        "hash": "3507263303592104357"
+        "hash": "8246217875053121226"
       },
       {
         "file": ".nx/cache/lockfile.hash",
@@ -250,7 +250,7 @@
       },
       {
         "file": ".nx/cache/project-graph.json",
-        "hash": "12317856262916423955"
+        "hash": "5087611140146839920"
       },
       {
         "file": ".nx/cache/run.json",
@@ -259,6 +259,10 @@
       {
         "file": ".nx/cache/terminalOutputs/12544164429257253518",
         "hash": "13962519916136269515"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/12962769272925578995",
+        "hash": "107055761576977861"
       },
       {
         "file": ".nx/cache/terminalOutputs/13844363471664053394",
@@ -273,6 +277,10 @@
         "hash": "1165764545246129857"
       },
       {
+        "file": ".nx/cache/terminalOutputs/2518516584252937120",
+        "hash": "15923350045608820829"
+      },
+      {
         "file": ".nx/cache/terminalOutputs/2720307375682562116",
         "hash": "13917716794799843"
       },
@@ -283,6 +291,10 @@
       {
         "file": ".nx/cache/terminalOutputs/7886269579798832799",
         "hash": "16523218419698578704"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/8144371023294591540",
+        "hash": "6949243977505625427"
       },
       {
         "file": ".prettierignore",
@@ -438,20 +450,6 @@
       }
     ],
     "projectFileMap": {
-      "tailwind-preset": [
-        {
-          "file": "libs/tailwind-preset/ng-package.json",
-          "hash": "11469096192323666953"
-        },
-        {
-          "file": "libs/tailwind-preset/project.json",
-          "hash": "10139954266306851421"
-        },
-        {
-          "file": "libs/tailwind-preset/tailwind.config.js",
-          "hash": "11937631992024065062"
-        }
-      ],
       "frontend-ui": [
         {
           "file": "frontend/ui/.eslintrc.json",
@@ -1361,11 +1359,11 @@
         },
         {
           "file": "frontend/app/src/favicon.ico",
-          "hash": "12553903449616027340"
+          "hash": "6325175828727982355"
         },
         {
           "file": "frontend/app/src/index.html",
-          "hash": "14670514939416870374"
+          "hash": "2665949246925175347"
         },
         {
           "file": "frontend/app/src/main.ts",
@@ -3389,6 +3387,20 @@
         {
           "file": "backend/database/tsconfig.spec.json",
           "hash": "17313551537729802733"
+        }
+      ],
+      "tailwind-preset": [
+        {
+          "file": "libs/tailwind-preset/ng-package.json",
+          "hash": "11469096192323666953"
+        },
+        {
+          "file": "libs/tailwind-preset/project.json",
+          "hash": "10139954266306851421"
+        },
+        {
+          "file": "libs/tailwind-preset/tailwind.config.js",
+          "hash": "11937631992024065062"
         }
       ]
     }

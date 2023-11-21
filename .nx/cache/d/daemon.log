@@ -4314,3 +4314,134 @@ Error: Missing field `projectNodes`
 [NX Daemon Server] - 2023-11-16T02:23:35.112Z - [REQUEST]: frontend/app/src/pages/home/home.component.html
 [NX Daemon Server] - 2023-11-16T02:23:35.112Z - [REQUEST]: 
 [NX Daemon Server] - 2023-11-16T02:23:35.200Z - Time taken for 'hash changed files from watcher' 1.171999990940094ms
+[NX Daemon Server] - 2023-11-16T02:24:29.725Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T02:24:29.804Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T02:24:29.962Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T02:24:30.088Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T02:25:37.760Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T02:25:37.761Z - [WATCHER]: frontend/app/src/index.html was modified
+[NX Daemon Server] - 2023-11-16T02:25:42.142Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T02:25:42.143Z - [WATCHER]: frontend/app/src/index.html was modified
+[NX Daemon Server] - 2023-11-16T02:25:44.191Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-16T02:25:44.191Z - [REQUEST]: frontend/app/src/index.html
+[NX Daemon Server] - 2023-11-16T02:25:44.191Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-16T02:25:44.283Z - Time taken for 'hash changed files from watcher' 1.086400032043457ms
+[NX Daemon Server] - 2023-11-16T02:26:42.550Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T02:28:21.944Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T02:28:21.945Z - [WATCHER]: frontend/app/src/comevent.svg was created or restored
+[NX Daemon Server] - 2023-11-16T02:28:22.080Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-16T02:28:22.080Z - [REQUEST]: frontend/app/src/comevent.svg
+[NX Daemon Server] - 2023-11-16T02:28:22.080Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-16T02:28:22.175Z - Time taken for 'hash changed files from watcher' 6.972699999809265ms
+[NX Daemon Server] - 2023-11-16T02:28:35.276Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T02:28:35.277Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-16T02:28:35.411Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-16T02:28:35.411Z - [REQUEST]: frontend/app/src/favicon (2).ico
+[NX Daemon Server] - 2023-11-16T02:28:35.411Z - [REQUEST]: frontend/app/src/comevent.svg
+[NX Daemon Server] - 2023-11-16T02:28:35.496Z - Time taken for 'hash changed files from watcher' 0.8886999487876892ms
+[NX Daemon Server] - 2023-11-16T02:28:37.852Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T02:28:37.853Z - [WATCHER]: frontend/app/src/favicon.ico was deleted
+[NX Daemon Server] - 2023-11-16T02:28:38.083Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-16T02:28:38.083Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-16T02:28:38.083Z - [REQUEST]: frontend/app/src/favicon.ico
+[NX Daemon Server] - 2023-11-16T02:28:38.148Z - Time taken for 'hash changed files from watcher' 1.1128000020980835ms
+[NX Daemon Server] - 2023-11-16T02:28:39.407Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T02:28:44.661Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T02:28:44.662Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-16T02:28:44.791Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-16T02:28:44.791Z - [REQUEST]: frontend/app/src/favicon.ico
+[NX Daemon Server] - 2023-11-16T02:28:44.791Z - [REQUEST]: frontend/app/src/favicon (2).ico
+[NX Daemon Server] - 2023-11-16T02:28:44.872Z - Time taken for 'hash changed files from watcher' 1.2081999778747559ms
+[NX Daemon Server] - 2023-11-16T02:29:23.983Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-16T02:29:23.983Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T02:29:24.111Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-16T02:29:24.111Z - [REQUEST]: frontend/app/src/favicon.svg
+[NX Daemon Server] - 2023-11-16T02:29:24.111Z - [REQUEST]: frontend/app/src/favicon.ico
+[NX Daemon Server] - 2023-11-16T02:29:24.209Z - Time taken for 'hash changed files from watcher' 1.2074999809265137ms
+[NX Daemon Server] - 2023-11-16T02:29:49.402Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T02:29:49.403Z - [WATCHER]: frontend/app/src/favicon (1).ico was created or restored
+[NX Daemon Server] - 2023-11-16T02:29:49.545Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-16T02:29:49.545Z - [REQUEST]: frontend/app/src/favicon (1).ico
+[NX Daemon Server] - 2023-11-16T02:29:49.545Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-16T02:29:49.642Z - Time taken for 'hash changed files from watcher' 12.564499974250793ms
+[NX Daemon Server] - 2023-11-16T02:29:50.965Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T02:29:56.252Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T02:29:56.253Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-16T02:29:56.380Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-16T02:29:56.381Z - [REQUEST]: frontend/app/src/favicon .ico
+[NX Daemon Server] - 2023-11-16T02:29:56.381Z - [REQUEST]: frontend/app/src/favicon (1).ico
+[NX Daemon Server] - 2023-11-16T02:29:56.475Z - Time taken for 'hash changed files from watcher' 0.8553000092506409ms
+[NX Daemon Server] - 2023-11-16T02:29:59.276Z - [WATCHER]: frontend/app/src/favicon.svg was deleted
+[NX Daemon Server] - 2023-11-16T02:29:59.276Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T02:29:59.500Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-16T02:29:59.500Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-16T02:29:59.500Z - [REQUEST]: frontend/app/src/favicon.svg
+[NX Daemon Server] - 2023-11-16T02:29:59.555Z - Time taken for 'hash changed files from watcher' 1.0562000274658203ms
+[NX Daemon Server] - 2023-11-16T02:30:18.370Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-16T02:30:18.853Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-16T02:30:32.017Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-16T02:30:32.017Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-16T02:30:32.018Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-16T02:30:32.020Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-16T02:30:32.020Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-16T02:30:32.022Z - Time taken for 'total for creating and serializing project graph' 0.16420000791549683ms
+[NX Daemon Server] - 2023-11-16T02:30:32.023Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-16T02:30:32.023Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX Daemon Server] - 2023-11-16T02:30:32.292Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2023-11-16T02:30:32.292Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2023-11-16T02:30:32.292Z - Handled HASH_TASKS. Handling time: 50. Response time: 0.
+[NX Daemon Server] - 2023-11-16T02:30:36.979Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2023-11-16T02:30:36.980Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-16T02:30:36.981Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2023-11-16T02:30:36.982Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-16T02:30:36.983Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-16T02:30:36.985Z - Time taken for 'total for creating and serializing project graph' 0.18540000915527344ms
+[NX Daemon Server] - 2023-11-16T02:30:36.985Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-16T02:30:36.985Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 2.
+[NX Daemon Server] - 2023-11-16T02:31:16.435Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T02:31:16.547Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T02:31:33.257Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-16T02:31:33.257Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T02:31:33.384Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-16T02:31:33.385Z - [REQUEST]: frontend/app/src/favicon.ico
+[NX Daemon Server] - 2023-11-16T02:31:33.385Z - [REQUEST]: frontend/app/src/favicon .ico
+[NX Daemon Server] - 2023-11-16T02:31:33.469Z - Time taken for 'hash changed files from watcher' 1.1890000104904175ms
+[NX Daemon Server] - 2023-11-16T02:31:38.377Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-16T02:31:38.378Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-16T02:31:41.145Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-16T02:31:41.145Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-16T02:31:41.146Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-16T02:31:41.148Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-16T02:31:41.148Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-16T02:31:41.150Z - Time taken for 'total for creating and serializing project graph' 0.13590002059936523ms
+[NX Daemon Server] - 2023-11-16T02:31:41.150Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-16T02:31:41.150Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2023-11-16T02:31:41.230Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2023-11-16T02:31:41.230Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2023-11-16T02:31:41.230Z - Handled HASH_TASKS. Handling time: 48. Response time: 0.
+[NX Daemon Server] - 2023-11-16T02:31:41.808Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2023-11-16T02:31:41.809Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-16T02:31:41.810Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2023-11-16T02:31:41.812Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-16T02:31:41.812Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-16T02:31:41.813Z - Time taken for 'total for creating and serializing project graph' 0.15460002422332764ms
+[NX Daemon Server] - 2023-11-16T02:31:41.814Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-16T02:31:41.814Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2023-11-16T02:31:50.944Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T02:31:51.054Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T02:32:06.738Z - [WATCHER]: frontend/app/src/index.html was modified
+[NX Daemon Server] - 2023-11-16T02:32:06.738Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T02:32:06.886Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-16T02:32:06.886Z - [REQUEST]: frontend/app/src/index.html
+[NX Daemon Server] - 2023-11-16T02:32:06.886Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-16T02:32:07.049Z - Time taken for 'hash changed files from watcher' 1.6787999868392944ms
+[NX Daemon Server] - 2023-11-16T02:32:09.344Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T02:32:09.405Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T03:19:40.442Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-16T03:19:40.443Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-21T19:41:50.410Z - Started listening on: \\.\pipe\nx\C:\Users\David\AppData\Local\Temp\1333570d747707fc9927\d.sock
+[NX Daemon Server] - 2023-11-21T19:41:50.434Z - [WATCHER]: Subscribed to changes within: c:\projects\Comevent (native)
+[NX Daemon Server] - 2023-11-21T19:41:50.436Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-21T19:41:50.438Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-21T19:41:50.441Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-21T19:41:50.443Z - [REQUEST]: Client Request for Project Graph Received
