@@ -4,9 +4,9 @@
   class="flex flex-col gap-6 items-center h-full justify-center w-[560px]"
 >
   <div
-    class="flex flex-col bg-white-1 p-4 rounded-xl shadow-neutral-level1 h-auto w-full"
+    class="flex flex-col bg-white-1 dark:bg-black-1 p-4 rounded-xl shadow-neutral-level1 h-auto w-full"
   >
-    <c-title variant="title-h4">Recover password</c-title>
+    <c-title variant="title-h4" color="black">Recover password</c-title>
     <div class="py-6">
       <c-label>
         Email
@@ -21,13 +21,13 @@
     </div>
     <div class="relative w-full">
       <c-button
-        [disabled]="!formRecover.value"
+        [disabled]="!formRecover.valid"
         class="w-full"
-        css="button-primary"
+        variant="button-base"
         color="t-white"
         type="submit"
       >
-        <c-title css="title-base" color="white">Recover password</c-title>
+        <c-title variant="title-h6">Recover password</c-title>
       </c-button>
     </div>
   </div>

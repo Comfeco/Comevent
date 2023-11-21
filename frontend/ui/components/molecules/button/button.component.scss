@@ -7,7 +7,7 @@
 }
 
 .button-base {
-  @apply bg-primary text-white-1;
+  @apply bg-primary dark:bg-primary-darkMode text-white-1;
 }
 
 .button-base:hover {
@@ -19,7 +19,7 @@
 }
 
 .button-ghost {
-  @apply border-solid border-2 border-primary bg-transparent;
+  @apply border-solid border-2 border-primary dark:border-primary-darkMode bg-transparent;
 }
 
 .button-ghost:hover {
@@ -34,8 +34,8 @@
   @apply flex flex-row gap-2;
 }
 
-.button-ghost ::ng-deep p {
-  @apply text-primary;
+.button-ghost ::ng-deep {
+  @apply text-primary dark:text-primary-darkMode;
 }
 
 .button-ghost:hover ::ng-deep p {
@@ -43,15 +43,23 @@
 }
 
 .button-ghost:disabled ::ng-deep p {
-  @apply text-primary-dark;
-}
-
-.button-ghost:disabled ::ng-deep p {
   @apply text-gray-2;
 }
 
+.button-accent ::ng-deep {
+  @apply text-primary dark:text-primary-darkMode;
+}
+
+.button-accent:hover ::ng-deep p {
+  @apply text-primary-dark;
+}
+
 .button-accent {
-  @apply bg-accent;
+  @apply bg-accent dark:bg-accent-darkMode;
+}
+
+.button-accent:hover {
+  @apply bg-accent-light dark:bg-accent;
 }
 
 .button-disabled {

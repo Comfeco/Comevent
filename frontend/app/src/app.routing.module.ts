@@ -1,29 +1,36 @@
 import { NgModule } from '@angular/core';
 import { Route, RouterModule } from '@angular/router';
 import { PrivateGuard, PublicGuard } from './common';
+import { LayoutRootComponent } from './common/layouts/core-layout/components/container/template-root/root.component';
 
 export const routes: Route[] = [
   {
-    path: 'auth',
-    canActivate: [PublicGuard],
-    loadChildren: () =>
-      import('./pages/auth').then((module) => module.AuthModule),
-  },
-  {
-    path: 'dashboard',
-    canActivate: [PrivateGuard],
-    loadChildren: () =>
-      import('./pages/dashboard').then((module) => module.DashboardModule),
-  },
-  {
     path: '',
-    loadChildren: () =>
-      import('./pages/home').then((module) => module.HomeModule),
+    component: LayoutRootComponent,
+    children: [
+      {
+        path: 'auth',
+        canActivate: [PublicGuard],
+        loadChildren: () =>
+          import('./pages/auth').then((module) => module.AuthModule),
+      },
+      {
+        path: 'dashboard',
+        canActivate: [PrivateGuard],
+        loadChildren: () =>
+          import('./pages/dashboard').then((module) => module.DashboardModule),
+      },
+      {
+        path: '',
+        loadChildren: () =>
+          import('./pages/home').then((module) => module.HomeModule),
+      },
+      /* {
+        path: '**',
+        redirectTo: '/',
+      }, */
+    ],
   },
-  /* {
-    path: '**',
-    redirectTo: '/',
-  }, */
 ];
 
 @NgModule({

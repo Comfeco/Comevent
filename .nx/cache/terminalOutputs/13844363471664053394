@@ -1,0 +1,87 @@
+
+[31;40mERR![0m[35m[0m Error: 
+[0m[31;40mERR![0m[35m[0m You installed esbuild for another platform than the one you're currently using.
+[0m[31;40mERR![0m[35m[0m This won't work because esbuild is written with native code and needs to
+[0m[31;40mERR![0m[35m[0m install a platform-specific binary executable.
+[0m[31;40mERR![0m[35m[0m 
+[0m[31;40mERR![0m[35m[0m Specifically the "@esbuild/linux-x64" package is present but this platform
+[0m[31;40mERR![0m[35m[0m needs the "@esbuild/win32-x64" package instead. People often get into this
+[0m[31;40mERR![0m[35m[0m situation by installing esbuild on Windows or macOS and copying "node_modules"
+[0m[31;40mERR![0m[35m[0m into a Docker image that runs Linux, or by copying "node_modules" between
+[0m[31;40mERR![0m[35m[0m Windows and WSL environments.
+[0m[31;40mERR![0m[35m[0m 
+[0m[31;40mERR![0m[35m[0m If you are installing with npm, you can try not copying the "node_modules"
+[0m[31;40mERR![0m[35m[0m directory when you copy the files over, and running "npm ci" or "npm install"
+[0m[31;40mERR![0m[35m[0m on the destination platform after the copy. Or you could consider using yarn
+[0m[31;40mERR![0m[35m[0m instead of npm which has built-in support for installing a package on multiple
+[0m[31;40mERR![0m[35m[0m platforms simultaneously.
+[0m[31;40mERR![0m[35m[0m 
+[0m[31;40mERR![0m[35m[0m If you are installing with yarn, you can try listing both this platform and the
+[0m[31;40mERR![0m[35m[0m other platform in your ".yarnrc.yml" file using the "supportedArchitectures"
+[0m[31;40mERR![0m[35m[0m feature: https://yarnpkg.com/configuration/yarnrc/#supportedArchitectures
+[0m[31;40mERR![0m[35m[0m Keep in mind that this means multiple copies of esbuild will be present.
+[0m[31;40mERR![0m[35m[0m 
+[0m[31;40mERR![0m[35m[0m Another alternative is to use the "esbuild-wasm" package instead, which works
+[0m[31;40mERR![0m[35m[0m the same way on all platforms. But it comes with a heavy performance cost and
+[0m[31;40mERR![0m[35m[0m can sometimes be 10x slower than the "esbuild" package, so you may also not
+[0m[31;40mERR![0m[35m[0m want to do that.
+[0m[31;40mERR![0m[35m[0m 
+[0m[31;40mERR![0m[35m[0m     at generateBinPath (C:\projects\Comevent\node_modules\esbuild\lib\main.js:1888:17)
+[0m[31;40mERR![0m[35m[0m     at esbuildCommandAndArgs (C:\projects\Comevent\node_modules\esbuild\lib\main.js:1969:33)
+[0m[31;40mERR![0m[35m[0m     at ensureServiceIsRunning (C:\projects\Comevent\node_modules\esbuild\lib\main.js:2133:25)
+[0m[31;40mERR![0m[35m[0m     at startSyncServiceWorker (C:\projects\Comevent\node_modules\esbuild\lib\main.js:2336:19)
+[0m[31;40mERR![0m[35m[0m     at Object.<anonymous> (C:\projects\Comevent\node_modules\esbuild\lib\main.js:2377:3)
+[0m[31;40mERR![0m[35m[0m     at Module._compile (node:internal/modules/cjs/loader:1254:14)
+[0m[31;40mERR![0m[35m[0m     at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+[0m[31;40mERR![0m[35m[0m     at Module.load (node:internal/modules/cjs/loader:1117:32)
+[0m[31;40mERR![0m[35m[0m     at Module._load (node:internal/modules/cjs/loader:958:12)
+[0m[31;40mERR![0m[35m[0m     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+[0m[31;40mERR![0m[35m[0m  Error: 
+[0m[31;40mERR![0m[35m[0m You installed esbuild for another platform than the one you're currently using.
+[0m[31;40mERR![0m[35m[0m This won't work because esbuild is written with native code and needs to
+[0m[31;40mERR![0m[35m[0m install a platform-specific binary executable.
+[0m[31;40mERR![0m[35m[0m 
+[0m[31;40mERR![0m[35m[0m Specifically the "@esbuild/linux-x64" package is present but this platform
+[0m[31;40mERR![0m[35m[0m needs the "@esbuild/win32-x64" package instead. People often get into this
+[0m[31;40mERR![0m[35m[0m situation by installing esbuild on Windows or macOS and copying "node_modules"
+[0m[31;40mERR![0m[35m[0m into a Docker image that runs Linux, or by copying "node_modules" between
+[0m[31;40mERR![0m[35m[0m Windows and WSL environments.
+[0m[31;40mERR![0m[35m[0m 
+[0m[31;40mERR![0m[35m[0m If you are installing with npm, you can try not copying the "node_modules"
+[0m[31;40mERR![0m[35m[0m directory when you copy the files over, and running "npm ci" or "npm install"
+[0m[31;40mERR![0m[35m[0m on the destination platform after the copy. Or you could consider using yarn
+[0m[31;40mERR![0m[35m[0m instead of npm which has built-in support for installing a package on multiple
+[0m[31;40mERR![0m[35m[0m platforms simultaneously.
+[0m[31;40mERR![0m[35m[0m 
+[0m[31;40mERR![0m[35m[0m If you are installing with yarn, you can try listing both this platform and the
+[0m[31;40mERR![0m[35m[0m other platform in your ".yarnrc.yml" file using the "supportedArchitectures"
+[0m[31;40mERR![0m[35m[0m feature: https://yarnpkg.com/configuration/yarnrc/#supportedArchitectures
+[0m[31;40mERR![0m[35m[0m Keep in mind that this means multiple copies of esbuild will be present.
+[0m[31;40mERR![0m[35m[0m 
+[0m[31;40mERR![0m[35m[0m Another alternative is to use the "esbuild-wasm" package instead, which works
+[0m[31;40mERR![0m[35m[0m the same way on all platforms. But it comes with a heavy performance cost and
+[0m[31;40mERR![0m[35m[0m can sometimes be 10x slower than the "esbuild" package, so you may also not
+[0m[31;40mERR![0m[35m[0m want to do that.
+[0m[31;40mERR![0m[35m[0m 
+[0m[31;40mERR![0m[35m[0m     at generateBinPath (C:\projects\Comevent\node_modules\esbuild\lib\main.js:1888:17)
+[0m[31;40mERR![0m[35m[0m     at esbuildCommandAndArgs (C:\projects\Comevent\node_modules\esbuild\lib\main.js:1969:33)
+[0m[31;40mERR![0m[35m[0m     at ensureServiceIsRunning (C:\projects\Comevent\node_modules\esbuild\lib\main.js:2133:25)
+[0m[31;40mERR![0m[35m[0m     at startSyncServiceWorker (C:\projects\Comevent\node_modules\esbuild\lib\main.js:2336:19)
+[0m[31;40mERR![0m[35m[0m     at Object.<anonymous> (C:\projects\Comevent\node_modules\esbuild\lib\main.js:2377:3)
+[0m[31;40mERR![0m[35m[0m     at Module._compile (node:internal/modules/cjs/loader:1254:14)
+[0m[31;40mERR![0m[35m[0m     at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+[0m[31;40mERR![0m[35m[0m     at Module.load (node:internal/modules/cjs/loader:1117:32)
+[0m[31;40mERR![0m[35m[0m     at Module._load (node:internal/modules/cjs/loader:958:12)
+[0m[31;40mERR![0m[35m[0m     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+[0m
+
+[35m[1mattention[22m[39m => Storybook now collects completely anonymous telemetry regarding usage.
+This information is used to shape Storybook's roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+[36mhttps://storybook.js.org/telemetry[39m
+
+
+ [31m>[39m [0m[7m[1m[31m NX [39m[22m[27m[0m  [31mBroken build, fix the error above.[39m
+
+   You may need to refresh the browser.
+

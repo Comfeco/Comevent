@@ -104,7 +104,7 @@ export abstract class BaseResourceService<T> {
     id: number,
     targetSignal: typeof this.resources
   ) {
-    targetSignal.mutate((resources) =>
+    targetSignal.update((resources) =>
       resources.filter((resource: any) => resource.id !== id)
     );
   }

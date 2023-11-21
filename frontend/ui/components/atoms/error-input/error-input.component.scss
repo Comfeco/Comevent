@@ -3,7 +3,7 @@
 }
 
 .text-error-content {
-  @apply text-start font-body text-error text-body-3 font-normal;
+  @apply text-start font-body text-error dark:text-error-darkMode text-body-3 font-normal;
 }
 
 .size-icon {

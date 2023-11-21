@@ -25,7 +25,7 @@
       variant="button-base"
       type="button"
     >
-      <c-title variant="title-h6" color="white">Previous</c-title>
+      <c-title variant="title-h6">Previous</c-title>
     </c-button>
 
     <!-- Botón de Next -->
@@ -35,9 +35,7 @@
       type="button"
       [disabled]="!registerUtils.isCurrentStepValid()"
     >
-      <c-title variant="title-h6" color="white">{{
-        registerUtils.getButtonText()
-      }}</c-title>
+      <c-title variant="title-h6">{{ registerUtils.getButtonText() }}</c-title>
     </c-button>
   </div>
 </form>

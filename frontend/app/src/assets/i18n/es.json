@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "titleOne": "Inicio",
+    "buttonOne": "Ingresar",
+    "buttonTwo": "Registrarse"
+  },
+
+  "login": {
+    "labelOne": "Correo",
+    "labelTwo": "Contraseña",
+    "phraseOne": "¿Has Olvidado tu contraseña?",
+    "titleOne": "O usa tus redes sociales",
+    "buttonOne": "Ingresar"
+  },
+
+  "register": {
+    "labelOne": "Apodo",
+    "labelTwo": "Correo",
+    "labelThree": "Contraseña",
+    "labelFour": "Repetir contraseña",
+    "labelFive": "Seleccione las areas de interes",
+    "selectOptionOne": "Seleccione las areas que te interesen",
+    "areas": {
+      "selectOptionTwo": "Programación",
+      "selectOptionThree": "Animación 3D",
+      "selectOptionFour": "Videojuegos",
+      "selectOptionFive": "Illustración"
+    },
+    "titleOne": "O usa tus redes sociales",
+    "buttonTwo": "Anterior",
+    "buttonOne": "Siguiente"
+  },
+
+  "layoutAuth": {
+    "titleOne": "Ingresar",
+    "titleTwo": "Registrarse"
+  }
+}

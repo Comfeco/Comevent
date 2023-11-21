@@ -17,6 +17,6 @@ import { TitleType } from './title.interface';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TitleComponent implements TitleType {
-  @Input() variant!: TitleType['variant'];
-  @Input() color: TitleType['color'] = 'black';
+  @Input({ required: true }) variant!: TitleType['variant'];
+  @Input({ required: false }) color!: TitleType['color'];
 }

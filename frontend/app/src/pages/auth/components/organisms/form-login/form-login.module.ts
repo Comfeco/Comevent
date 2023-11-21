@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 import {
   ButtonComponent,
   IconGithubComponent,
@@ -31,6 +32,7 @@ const routes: Routes = [
     ButtonComponent,
     IconGoogleComponent,
     IconGithubComponent,
+    TranslateModule,
   ],
   exports: [FormLoginComponent],
 })

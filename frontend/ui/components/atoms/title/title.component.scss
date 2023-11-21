@@ -1,17 +1,31 @@
 .color-black {
-  @apply text-black-1;
+  @apply text-black-1 dark:text-white-1;
 }
 
 .color-white {
-  @apply text-white-1;
+  @apply text-white-1 dark:text-black-1;
 }
 
 .color-primary {
-  @apply text-primary;
+  @apply text-primary dark:text-primary-darkMode;
 }
 
 .color-disabled {
   @apply text-gray-2;
+}
+
+.color-gradient {
+  background: linear-gradient(
+    90deg,
+    #8c44cc 0%,
+    #fa4a86 52.27%,
+    #ffc107 94.74%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* Para navegadores que no soporten background-clip: text */
+  -webkit-text-fill-color: transparent;
 }
 
 .style-h1 {

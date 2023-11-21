@@ -1,7 +1,7 @@
 <form [formGroup]="stepTwoForm" class="w-full flex flex-col gap-6 items-center">
   <div class="flex flex-col gap-6 my-14 w-[400px]">
     <c-label variant="label-base" for="password">
-      Password
+      {{ 'register.labelThree' | translate }}
       <c-input
         variant="input-base"
         type="password"
@@ -12,7 +12,7 @@
       />
     </c-label>
     <c-label variant="label-base" for="passRepeat">
-      Repeat password
+      {{ 'register.labelFour' | translate }}
       <c-input
         variant="input-base"
         type="password"

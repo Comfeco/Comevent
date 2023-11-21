@@ -6,7 +6,7 @@
   <div
     [ngClass]="{
       'bg-gray-2': this.registerService.step() < 2,
-      'bg-success': this.registerService.step() > 1,
+      'bg-success dark:bg-success-darkMode': this.registerService.step() > 1,
       'h-1 rounded-full w-[80px] mb-12 mx-7': true
     }"
   ></div>
@@ -23,7 +23,7 @@
   <div
     [ngClass]="{
       'bg-gray-2': this.registerService.step() < 3,
-      'bg-success': this.registerService.step() > 2,
+      'bg-success dark:bg-success-darkMode': this.registerService.step() > 2,
       'h-1 rounded-full w-[80px] mb-12 mx-7': true
     }"
   ></div>

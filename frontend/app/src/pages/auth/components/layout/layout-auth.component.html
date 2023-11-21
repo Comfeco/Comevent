@@ -1,24 +1,24 @@
 <div class="flex gap-4 flex-col w-[560px]">
   <c-container-step *ngIf="isRegisterRoute" />
   <div
-    class="flex flex-col bg-white-1 p-4 rounded-xl shadow-neutral-level1 h-auto w-full"
+    class="flex flex-col bg-white-1 dark:bg-black-1 p-4 rounded-xl shadow-neutral-level1 h-auto w-full"
   >
     <div class="flex flex-grow gap-4">
       <a
-        class="flex justify-center items-center bg-transparent rounded-tl-xl flex-1 title-h4 h-[78px]"
+        class="flex justify-center items-center bg-transparent rounded-tl-xl flex-1 title-h4 h-[78px] text-black-1 dark:text-white-1"
         href=""
         routerLink="/auth/login"
         routerLinkActive="active"
       >
-        Log in
+        {{ 'layoutAuth.titleOne' | translate }}
       </a>
       <a
-        class="flex justify-center items-center bg-transparent rounded-tr-xl flex-1 title-h4 h-[78px]"
+        class="flex justify-center items-center bg-transparent rounded-tr-xl flex-1 title-h4 h-[78px] text-black-1 dark:text-white-1"
         href=""
         routerLink="/auth/register"
         routerLinkActive="active"
       >
-        Register
+        {{ 'layoutAuth.titleTwo' | translate }}
       </a>
     </div>
 
