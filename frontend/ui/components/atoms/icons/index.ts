@@ -1,4 +1,5 @@
 export * from './icon-area/icon-area.component';
+export * from './icon-arrow-right/icon-arrow-right.component';
 export * from './icon-basic/icon-basic.component';
 export * from './icon-clear';
 export * from './icon-comevent/icon-comevent.component';

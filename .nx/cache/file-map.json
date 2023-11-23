@@ -722,7 +722,7 @@
         },
         {
           "file": "frontend/app/src/common/layouts/core-layout/components/organisms/footer/footer.component.html",
-          "hash": "5954350704958907905"
+          "hash": "16839504101155474196"
         },
         {
           "file": "frontend/app/src/common/layouts/core-layout/components/organisms/footer/footer.component.scss",
@@ -1446,7 +1446,7 @@
         },
         {
           "file": "frontend/app/src/modules/home/components/index.ts",
-          "hash": "9337759057200741968"
+          "hash": "11491701635506036944"
         },
         {
           "file": "frontend/app/src/modules/home/components/organisms/create-community/create-community.component.html",
@@ -1471,15 +1471,15 @@
         },
         {
           "file": "frontend/app/src/modules/home/pages/home/home.component.html",
-          "hash": "17214751467048131461"
+          "hash": "12554234890775015067"
         },
         {
           "file": "frontend/app/src/modules/home/pages/home/home.component.scss",
-          "hash": "6331767651382360604"
+          "hash": "12707054186667086927"
         },
         {
           "file": "frontend/app/src/modules/home/pages/home/home.component.ts",
-          "hash": "14964722908943612532",
+          "hash": "17844653569675962831",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core"
@@ -1624,7 +1624,7 @@
         },
         {
           "file": "frontend/app/src/modules/home/components/molecule/input-subscribe/input-subscribe.component.html",
-          "hash": "11307171082945539354"
+          "hash": "16191553688087055685"
         },
         {
           "file": "frontend/app/src/modules/home/components/molecule/input-subscribe/input-subscribe.component.scss",
@@ -1638,6 +1638,39 @@
             "npm:@angular/core",
             "frontend-ui"
           ]
+        },
+        {
+          "file": "frontend/app/src/modules/home/components/organisms/characteristics/characteristics.component.html",
+          "hash": "7172293391738854414"
+        },
+        {
+          "file": "frontend/app/src/modules/home/components/organisms/characteristics/characteristics.component.scss",
+          "hash": "16880406446003692290"
+        },
+        {
+          "file": "frontend/app/src/modules/home/components/organisms/characteristics/characteristics.component.ts",
+          "hash": "13724173689199728328",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "frontend-ui"
+          ]
+        },
+        {
+          "file": "frontend/app/src/assets/svg/icon-community.svg",
+          "hash": "15823763856053591375"
+        },
+        {
+          "file": "frontend/app/src/assets/svg/icon-merchandising.svg",
+          "hash": "4924005157866597290"
+        },
+        {
+          "file": "frontend/app/src/assets/svg/icon-events.svg",
+          "hash": "16594617588821734301"
+        },
+        {
+          "file": "frontend/app/src/assets/svg/icon-arrow-right.svg",
+          "hash": "4978537685501039787"
         }
       ],
       "tailwind-preset": [
@@ -1651,7 +1684,7 @@
         },
         {
           "file": "libs/tailwind-preset/tailwind.config.js",
-          "hash": "11937631992024065062"
+          "hash": "2126029252497363920"
         }
       ],
       "frontend-ui": [
@@ -1997,7 +2030,7 @@
         },
         {
           "file": "frontend/ui/components/atoms/icons/index.ts",
-          "hash": "902941028860030663"
+          "hash": "2758701813210062662"
         },
         {
           "file": "frontend/ui/components/atoms/index.ts",
@@ -2264,6 +2297,22 @@
         {
           "file": "frontend/ui/tsconfig.spec.json",
           "hash": "8246693900492800589"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-arrow-right/icon-arrow-right.component.html",
+          "hash": "6896285457490495323"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-arrow-right/icon-arrow-right.component.scss",
+          "hash": "3930956345753105449"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-arrow-right/icon-arrow-right.component.ts",
+          "hash": "2567141234702300815",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
         }
       ],
       "api": [

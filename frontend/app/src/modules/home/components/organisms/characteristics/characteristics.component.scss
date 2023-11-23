@@ -1,0 +1,15 @@
+.hover-parent:hover .hover-child-one {
+  @apply border-secondary dark:border-secondary-darkMode px-4 border-2;
+}
+
+.hover-parent:hover .hover-child-two {
+  @apply border-primary dark:border-primary-darkMode px-4 border-2;
+}
+
+.hover-parent:hover .hover-child-three {
+  @apply border-accent dark:border-accent-darkMode px-4 border-2;
+}
+
+.hover-parent:hover .icon-arrow-right {
+  transform: translateX(calc(100% + 150px));
+}

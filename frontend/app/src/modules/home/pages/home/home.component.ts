@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import {
+  CharacteristicsComponent,
   CreateCommunityComponent,
   EventsComponent,
   SubscribeComponent,
@@ -13,6 +14,7 @@ import {
     CreateCommunityComponent,
     EventsComponent,
     SubscribeComponent,
+    CharacteristicsComponent,
   ],
   selector: 'home',
   templateUrl: './home.component.html',
