@@ -713,7 +713,7 @@
         },
         {
           "file": "frontend/app/src/common/layouts/core-layout/components/container/template-root/root.component.ts",
-          "hash": "18068992371904125719",
+          "hash": "10487751840437386784",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -722,7 +722,7 @@
         },
         {
           "file": "frontend/app/src/common/layouts/core-layout/components/organisms/footer/footer.component.html",
-          "hash": "16839504101155474196"
+          "hash": "5954350704958907905"
         },
         {
           "file": "frontend/app/src/common/layouts/core-layout/components/organisms/footer/footer.component.scss",
@@ -730,7 +730,7 @@
         },
         {
           "file": "frontend/app/src/common/layouts/core-layout/components/organisms/footer/footer.component.ts",
-          "hash": "2604858377140455006",
+          "hash": "8427802868122734126",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -1446,7 +1446,7 @@
         },
         {
           "file": "frontend/app/src/modules/home/components/index.ts",
-          "hash": "15795405265861250383"
+          "hash": "9337759057200741968"
         },
         {
           "file": "frontend/app/src/modules/home/components/organisms/create-community/create-community.component.html",
@@ -1471,15 +1471,15 @@
         },
         {
           "file": "frontend/app/src/modules/home/pages/home/home.component.html",
-          "hash": "5713153493325969999"
+          "hash": "17214751467048131461"
         },
         {
           "file": "frontend/app/src/modules/home/pages/home/home.component.scss",
-          "hash": "10698473596429639386"
+          "hash": "6331767651382360604"
         },
         {
           "file": "frontend/app/src/modules/home/pages/home/home.component.ts",
-          "hash": "15466694168950683954",
+          "hash": "14964722908943612532",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core"
@@ -1604,6 +1604,40 @@
         {
           "file": "frontend/app/src/assets/png/background-events.png",
           "hash": "15562622448338632369"
+        },
+        {
+          "file": "frontend/app/src/modules/home/components/organisms/subscribe/subscribe.component.html",
+          "hash": "2853775831278850722"
+        },
+        {
+          "file": "frontend/app/src/modules/home/components/organisms/subscribe/subscribe.component.ts",
+          "hash": "14938833950089077370",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "frontend-ui"
+          ]
+        },
+        {
+          "file": "frontend/app/src/modules/home/components/organisms/subscribe/subscribe.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "frontend/app/src/modules/home/components/molecule/input-subscribe/input-subscribe.component.html",
+          "hash": "11307171082945539354"
+        },
+        {
+          "file": "frontend/app/src/modules/home/components/molecule/input-subscribe/input-subscribe.component.scss",
+          "hash": "13414298173773356051"
+        },
+        {
+          "file": "frontend/app/src/modules/home/components/molecule/input-subscribe/input-subscribe.component.ts",
+          "hash": "16205049008227958454",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "frontend-ui"
+          ]
         }
       ],
       "tailwind-preset": [
