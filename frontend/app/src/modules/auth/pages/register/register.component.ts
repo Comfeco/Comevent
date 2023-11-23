@@ -1,11 +1,34 @@
+import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
-import { FormGroup, ValidatorFn } from '@angular/forms';
+import { FormGroup, ReactiveFormsModule, ValidatorFn } from '@angular/forms';
+import {
+  ButtonComponent,
+  InputComponent,
+  LabelComponent,
+  TitleComponent,
+} from '@ui/components';
 import { ValidatorsService } from '@utils';
-import { RegisterStateService } from '../../service/state';
-import { RegisterUtilsService } from '../../service/utils';
+import { RegisterStateService, RegisterUtilsService } from '../..';
+import {
+  FormRegisterStepOneModule,
+  FormRegisterStepThreeModule,
+  FormRegisterStepTwoModule,
+} from '../../components';
 import { IRegisterData } from '../../types';
 
 @Component({
+  standalone: true,
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    FormRegisterStepOneModule,
+    FormRegisterStepTwoModule,
+    FormRegisterStepThreeModule,
+    TitleComponent,
+    InputComponent,
+    LabelComponent,
+    ButtonComponent,
+  ],
   selector: 'register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss'],

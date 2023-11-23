@@ -7,3 +7,8 @@ export * from './organisms/form-recover/form-recover.component';
 export * from './organisms/form-recover/form-recover.module';
 export * from './organisms/form-reset-pass/form-reset-pass.component';
 export * from './organisms/form-reset-pass/form-reset-pass.module';
+export * from './organisms/register-step-one';
+export * from './organisms/register-step-three/register-step-three.component';
+export * from './organisms/register-step-three/register-step-three.module';
+export * from './organisms/register-step-two/register-step-two.component';
+export * from './organisms/register-step-two/register-step-two.module';

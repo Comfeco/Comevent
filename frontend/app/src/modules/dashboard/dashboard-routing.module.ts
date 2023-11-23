@@ -10,7 +10,7 @@ const routes: Routes = [
       {
         path: '',
         loadChildren: () =>
-          import('./containers/panel').then((module) => module.PanelModule),
+          import('./pages/panel').then((module) => module.PanelModule),
       },
       {
         path: 'change-password',

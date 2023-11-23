@@ -1,8 +1,7 @@
 import { Component, OnInit, computed, effect, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
-import { LoginStateService } from './pages/auth/service/state';
-import { AuthStatus } from './pages/auth/types';
+import { AuthStatus, LoginStateService } from './modules/auth';
 import { supportLanguages } from './utils';
 
 @Component({

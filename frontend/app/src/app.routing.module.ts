@@ -11,19 +11,20 @@ export const routes: Route[] = [
       {
         path: 'auth',
         canActivate: [PublicGuard],
-        loadChildren: () =>
-          import('./pages/auth').then((module) => module.AuthModule),
+        loadChildren: () => import('./modules/auth/pages/routes'),
       },
       {
         path: 'dashboard',
         canActivate: [PrivateGuard],
         loadChildren: () =>
-          import('./pages/dashboard').then((module) => module.DashboardModule),
+          import('./modules/dashboard').then(
+            (module) => module.DashboardModule
+          ),
       },
       {
         path: '',
-        loadChildren: () =>
-          import('./pages/home').then((module) => module.HomeModule),
+        loadComponent: () =>
+          import('./modules/home').then((module) => module.HomeComponent),
       },
       /* {
         path: '**',
