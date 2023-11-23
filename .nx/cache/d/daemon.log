@@ -5743,3 +5743,122 @@ Error: EPERM: operation not permitted, rename 'c:\projects\Comevent\.nx\cache\pr
 [NX Daemon Server] - 2023-11-23T13:25:04.718Z - [REQUEST]: frontend/app/src/modules/home/pages/home/home.component.html
 [NX Daemon Server] - 2023-11-23T13:25:04.718Z - [REQUEST]: 
 [NX Daemon Server] - 2023-11-23T13:25:04.802Z - Time taken for 'hash changed files from watcher' 1.391899999929592ms
+[NX Daemon Server] - 2023-11-23T13:25:16.327Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-23T13:25:16.328Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-23T13:25:16.328Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-23T13:25:16.331Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-23T13:25:16.331Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-23T13:25:16.333Z - Time taken for 'total for creating and serializing project graph' 0.15319999994244426ms
+[NX Daemon Server] - 2023-11-23T13:25:16.334Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-23T13:25:16.334Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX Daemon Server] - 2023-11-23T13:25:16.442Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2023-11-23T13:25:16.442Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2023-11-23T13:25:16.442Z - Handled HASH_TASKS. Handling time: 61. Response time: 0.
+[NX Daemon Server] - 2023-11-23T13:25:20.445Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2023-11-23T13:25:20.446Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-23T13:25:20.447Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2023-11-23T13:25:20.449Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-23T13:25:20.449Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-23T13:25:20.451Z - Time taken for 'total for creating and serializing project graph' 0.16790000000037253ms
+[NX Daemon Server] - 2023-11-23T13:25:20.452Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-23T13:25:20.452Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX Daemon Server] - 2023-11-23T13:25:46.626Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:25:46.691Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:25:48.943Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:26:42.727Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:26:42.729Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/create-community/create-community.component.scss was modified
+[NX Daemon Server] - 2023-11-23T13:26:42.869Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-23T13:26:42.869Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/create-community/create-community.component.scss
+[NX Daemon Server] - 2023-11-23T13:26:42.869Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-23T13:26:42.971Z - Time taken for 'hash changed files from watcher' 1.0981000000610948ms
+[NX Daemon Server] - 2023-11-23T13:26:43.645Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:26:44.931Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:26:49.064Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:26:49.066Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/create-community/create-community.component.scss was modified
+[NX Daemon Server] - 2023-11-23T13:26:49.290Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-23T13:26:49.290Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/create-community/create-community.component.scss
+[NX Daemon Server] - 2023-11-23T13:26:49.290Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-23T13:26:49.389Z - Time taken for 'hash changed files from watcher' 0.9318999999668449ms
+[NX Daemon Server] - 2023-11-23T13:26:50.770Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:29:52.375Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/create-community/create-community.component.scss was modified
+[NX Daemon Server] - 2023-11-23T13:29:52.375Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:29:52.802Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-23T13:29:52.802Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/create-community/create-community.component.scss
+[NX Daemon Server] - 2023-11-23T13:29:52.802Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-23T13:29:52.927Z - Time taken for 'hash changed files from watcher' 1.0161000001244247ms
+[NX Daemon Server] - 2023-11-23T13:29:52.949Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:29:54.273Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:29:56.366Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:29:56.368Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/create-community/create-community.component.html was modified
+[NX Daemon Server] - 2023-11-23T13:29:57.194Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-23T13:29:57.194Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/create-community/create-community.component.html
+[NX Daemon Server] - 2023-11-23T13:29:57.194Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-23T13:29:57.253Z - Time taken for 'hash changed files from watcher' 0.9580000001005828ms
+[NX Daemon Server] - 2023-11-23T13:30:40.998Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:30:41.000Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/create-community/create-community.component.html was modified
+[NX Daemon Server] - 2023-11-23T13:30:41.502Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:30:42.628Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-23T13:30:42.628Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/create-community/create-community.component.html
+[NX Daemon Server] - 2023-11-23T13:30:42.628Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-23T13:30:42.716Z - Time taken for 'hash changed files from watcher' 0.8860999997705221ms
+[NX Daemon Server] - 2023-11-23T13:30:42.799Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:32:46.807Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:32:46.808Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/create-community/create-community.component.ts was modified
+[NX Daemon Server] - 2023-11-23T13:32:47.358Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:32:48.600Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:32:49.340Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:32:49.341Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/create-community/create-community.component.html was modified
+[NX Daemon Server] - 2023-11-23T13:32:49.763Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:32:50.047Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-23T13:32:50.047Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/create-community/create-community.component.ts,frontend/app/src/modules/home/components/organisms/create-community/create-community.component.html
+[NX Daemon Server] - 2023-11-23T13:32:50.047Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-23T13:32:50.164Z - Time taken for 'hash changed files from watcher' 2.0539000001735985ms
+[NX Daemon Server] - 2023-11-23T13:32:51.055Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:33:39.421Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/create-community/create-community.component.html was modified
+[NX Daemon Server] - 2023-11-23T13:33:39.422Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:33:39.891Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:33:41.148Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:33:45.850Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-23T13:33:45.850Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/create-community/create-community.component.html
+[NX Daemon Server] - 2023-11-23T13:33:45.850Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-23T13:33:45.943Z - Time taken for 'hash changed files from watcher' 1.1840999997220933ms
+[NX Daemon Server] - 2023-11-23T13:33:59.981Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/create-community/create-community.component.html was modified
+[NX Daemon Server] - 2023-11-23T13:33:59.981Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:34:00.451Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:34:01.763Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:34:06.412Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-23T13:34:06.412Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/create-community/create-community.component.html
+[NX Daemon Server] - 2023-11-23T13:34:06.412Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-23T13:34:06.492Z - Time taken for 'hash changed files from watcher' 0.9017000002786517ms
+[NX Daemon Server] - 2023-11-23T13:34:11.154Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:34:11.156Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/create-community/create-community.component.html was modified
+[NX Daemon Server] - 2023-11-23T13:34:11.533Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:34:12.802Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:34:17.575Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-23T13:34:17.575Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/create-community/create-community.component.html
+[NX Daemon Server] - 2023-11-23T13:34:17.575Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-23T13:34:17.651Z - Time taken for 'hash changed files from watcher' 1.0505000003613532ms
+[NX Daemon Server] - 2023-11-23T13:34:52.742Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:34:52.743Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/create-community/create-community.component.html was modified
+[NX Daemon Server] - 2023-11-23T13:34:53.218Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:34:54.506Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:34:59.182Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-23T13:34:59.182Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/create-community/create-community.component.html
+[NX Daemon Server] - 2023-11-23T13:34:59.182Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-23T13:34:59.267Z - Time taken for 'hash changed files from watcher' 1.320900000166148ms
+[NX Daemon Server] - 2023-11-23T13:35:45.093Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/create-community/create-community.component.html was modified
+[NX Daemon Server] - 2023-11-23T13:35:45.094Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:35:45.597Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:35:46.846Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:35:51.515Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-23T13:35:51.515Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/create-community/create-community.component.html
+[NX Daemon Server] - 2023-11-23T13:35:51.515Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-23T13:35:51.593Z - Time taken for 'hash changed files from watcher' 0.7763000000268221ms
+[NX Daemon Server] - 2023-11-23T13:36:36.632Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/create-community/create-community.component.html was modified
+[NX Daemon Server] - 2023-11-23T13:36:36.632Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:36:37.008Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:36:38.297Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-23T13:36:43.063Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-23T13:36:43.063Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/create-community/create-community.component.html
+[NX Daemon Server] - 2023-11-23T13:36:43.063Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-23T13:36:43.147Z - Time taken for 'hash changed files from watcher' 1.4490999998524785ms

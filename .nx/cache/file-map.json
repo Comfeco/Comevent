@@ -1446,11 +1446,11 @@
         },
         {
           "file": "frontend/app/src/modules/home/components/index.ts",
-          "hash": "9743657348180025306"
+          "hash": "15795405265861250383"
         },
         {
           "file": "frontend/app/src/modules/home/components/organisms/create-community/create-community.component.html",
-          "hash": "17064799247696769647"
+          "hash": "9968460195497716297"
         },
         {
           "file": "frontend/app/src/modules/home/components/organisms/create-community/create-community.component.scss",
@@ -1471,7 +1471,7 @@
         },
         {
           "file": "frontend/app/src/modules/home/pages/home/home.component.html",
-          "hash": "9118743785045068365"
+          "hash": "5713153493325969999"
         },
         {
           "file": "frontend/app/src/modules/home/pages/home/home.component.scss",
@@ -1479,7 +1479,7 @@
         },
         {
           "file": "frontend/app/src/modules/home/pages/home/home.component.ts",
-          "hash": "11267178809919309680",
+          "hash": "15466694168950683954",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core"
@@ -1583,6 +1583,27 @@
         {
           "file": "frontend/app/src/assets/png/background-create-community.png",
           "hash": "12362492235660611279"
+        },
+        {
+          "file": "frontend/app/src/modules/home/components/organisms/events/events.component.html",
+          "hash": "623632733836582359"
+        },
+        {
+          "file": "frontend/app/src/modules/home/components/organisms/events/events.component.scss",
+          "hash": "10516600993409958987"
+        },
+        {
+          "file": "frontend/app/src/modules/home/components/organisms/events/events.component.ts",
+          "hash": "6580435377570722757",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "frontend-ui"
+          ]
+        },
+        {
+          "file": "frontend/app/src/assets/png/background-events.png",
+          "hash": "15562622448338632369"
         }
       ],
       "tailwind-preset": [
