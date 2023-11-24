@@ -1,0 +1,20 @@
+import { CommonModule } from '@angular/common';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  Input,
+  ViewEncapsulation,
+} from '@angular/core';
+
+@Component({
+  standalone: true,
+  selector: 'icon-hexagon-number-one',
+  imports: [CommonModule],
+  templateUrl: './icon-hexagon-number-one.component.html',
+  styleUrls: ['./icon-hexagon-number-one.component.scss'],
+  encapsulation: ViewEncapsulation.Emulated,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class IconHexagonNumberOneComponent {
+  @Input({ required: true }) step!: number;
+}

@@ -342,7 +342,7 @@
       },
       {
         "file": "README.md",
-        "hash": "3270362270028454446"
+        "hash": "11214514904090681933"
       },
       {
         "file": "commitlint.config.cjs",
@@ -1467,11 +1467,11 @@
         },
         {
           "file": "frontend/app/src/modules/home/index.ts",
-          "hash": "14333671039822974330"
+          "hash": "17094541069637029419"
         },
         {
           "file": "frontend/app/src/modules/home/pages/home/home.component.html",
-          "hash": "12554234890775015067"
+          "hash": "7629855852888639789"
         },
         {
           "file": "frontend/app/src/modules/home/pages/home/home.component.scss",
@@ -1479,7 +1479,7 @@
         },
         {
           "file": "frontend/app/src/modules/home/pages/home/home.component.ts",
-          "hash": "17844653569675962831",
+          "hash": "11651956076334559076",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core"
@@ -1671,6 +1671,43 @@
         {
           "file": "frontend/app/src/assets/svg/icon-arrow-right.svg",
           "hash": "4978537685501039787"
+        },
+        {
+          "file": "frontend/app/src/assets/png/background-step-one.png",
+          "hash": "9867860113498691670"
+        },
+        {
+          "file": "frontend/app/src/modules/home/components/organisms/info/info.component.html",
+          "hash": "17658788418629892887"
+        },
+        {
+          "file": "frontend/app/src/modules/home/components/organisms/info/info.component.scss",
+          "hash": "7489984752387678799"
+        },
+        {
+          "file": "frontend/app/src/modules/home/components/organisms/info/info.component.ts",
+          "hash": "11890964252290779101",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "frontend-ui"
+          ]
+        },
+        {
+          "file": "frontend/app/src/assets/svg/icon-hexagon-number-1.svg",
+          "hash": "10169757700891689355"
+        },
+        {
+          "file": "frontend/app/src/assets/svg/icon-hexagon-number-2.svg",
+          "hash": "11378012388177147822"
+        },
+        {
+          "file": "frontend/app/src/assets/svg/icon-hexagon-number-3.svg",
+          "hash": "16189507681152494449"
+        },
+        {
+          "file": "frontend/app/src/assets/svg/icon-hexagon-number-4.svg",
+          "hash": "2593157275010757875"
         }
       ],
       "tailwind-preset": [
@@ -2308,6 +2345,22 @@
         },
         {
           "file": "frontend/ui/components/atoms/icons/icon-arrow-right/icon-arrow-right.component.ts",
+          "hash": "2567141234702300815",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-1/icon-arrow-right.component.scss",
+          "hash": "3930956345753105449"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-1/icon-hexagon-number-1.component.html",
+          "hash": "6896285457490495323"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-hexagon-number-1/icon-hexagon-number-one.component.ts",
           "hash": "2567141234702300815",
           "deps": [
             "npm:@angular/common",

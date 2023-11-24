@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { InfoComponent } from '../..';
 import {
   CharacteristicsComponent,
   CreateCommunityComponent,
@@ -15,6 +16,7 @@ import {
     EventsComponent,
     SubscribeComponent,
     CharacteristicsComponent,
+    InfoComponent,
   ],
   selector: 'home',
   templateUrl: './home.component.html',

@@ -362,6 +362,7 @@ Below is a detailed description of the configured scripts in the project:
 - [Reusable Input and Select component with Control Value Accessor in Angular](https://youtu.be/N2nOUBwBwyU?si=qmBskNlQHmSF_dzB)
 - [Get params from URL using inputs in Angular 16 | Enable withComponentInputBinding() in Angular 16](https://youtu.be/4Bc7rHcarOc?si=qMl5718Bk-K7NEAz)
 - [Angular ng-content and Content Projection: A Complete Guide - How To Use ng-content To Improve Component API Design](https://blog.angular-university.io/angular-ng-content/)
+- [Cómo usar los StandAlone Components en Angular - Garaje de ideas](https://youtu.be/DioXD75_t-Q?si=GwcVihmbX4yJq5PW)
 
 <br>
 
