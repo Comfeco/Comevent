@@ -9369,3 +9369,41 @@ Error: EPERM: operation not permitted, rename 'c:\projects\Comevent\.nx\cache\pr
 [NX Daemon Server] - 2023-11-24T14:02:09.476Z - [REQUEST]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.html
 [NX Daemon Server] - 2023-11-24T14:02:09.476Z - [REQUEST]: 
 [NX Daemon Server] - 2023-11-24T14:02:09.563Z - Time taken for 'hash changed files from watcher' 1.0810000002384186ms
+[NX Daemon Server] - 2023-11-24T14:02:15.528Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-24T14:02:15.529Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-24T14:02:15.529Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-24T14:02:15.532Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-24T14:02:15.532Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-24T14:02:15.534Z - Time taken for 'total for creating and serializing project graph' 0.15489999949932098ms
+[NX Daemon Server] - 2023-11-24T14:02:15.534Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-24T14:02:15.534Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2023-11-24T14:02:15.632Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2023-11-24T14:02:15.632Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2023-11-24T14:02:15.633Z - Handled HASH_TASKS. Handling time: 57. Response time: 1.
+[NX Daemon Server] - 2023-11-24T14:02:19.590Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2023-11-24T14:02:19.591Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-24T14:02:19.592Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2023-11-24T14:02:19.594Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-24T14:02:19.594Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-24T14:02:19.596Z - Time taken for 'total for creating and serializing project graph' 0.1289999932050705ms
+[NX Daemon Server] - 2023-11-24T14:02:19.596Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-24T14:02:19.596Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2023-11-24T14:02:47.074Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T14:02:47.140Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T14:02:49.454Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T14:09:03.265Z - [WATCHER]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.html was modified
+[NX Daemon Server] - 2023-11-24T14:09:03.266Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T14:09:03.395Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T14:09:03.395Z - [REQUEST]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.html
+[NX Daemon Server] - 2023-11-24T14:09:03.395Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T14:09:03.529Z - Time taken for 'hash changed files from watcher' 1.1075000017881393ms
+[NX Daemon Server] - 2023-11-24T14:09:04.474Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T14:09:05.826Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T14:09:06.845Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T14:09:06.846Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T14:09:07.072Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T14:09:07.072Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T14:09:07.072Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T14:09:07.187Z - Time taken for 'hash changed files from watcher' 1.1582999974489212ms
+[NX Daemon Server] - 2023-11-24T14:09:07.639Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T14:09:08.949Z - [WATCHER]: Processing file changes in outputs

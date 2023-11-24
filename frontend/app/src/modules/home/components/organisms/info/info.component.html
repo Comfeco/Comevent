@@ -7,30 +7,8 @@
     'flex flex-col h-[760px] w-full justify-between': true
   }"
 >
-  @switch (currentStep()) { @case (1) {
-  <description-info
-    title="Registrate en Comevent"
-    description="Crea tu cuenta en Comevent y accede al mundo de las comunidades y eventos.
-      ¡Tu próximo encuentro memorable comienza aquí!"
-  />
-  } @case (2) {
-  <description-info
-    title="Busca tu comunidad favorita"
-    description="Explora comunidades que resuenan contigo y conecta con personas que
-      comparten tus pasiones e intereses"
-  />
-  } @case (3) {
-  <description-info
-    title="Regístrate en un evento"
-    description="Elige entre una diversidad de eventos y asegura tu lugar. ¡La aventura y
-      el aprendizaje te esperan!"
-  />
-  } @case (4) {
-  <description-info
-    title="Únete a tu grupo y disfruta"
-    description="Forma parte de un grupo que te inspira, participa en actividades
-      exclusivas y disfruta cada momento junto a nosotros."
-  />
+  @for (info of infos; track info.id) { @if (info.id === currentStep()) {
+  <description-info [title]="info.title" [description]="info.description" />
   } }
 
   <div class="flex flex-row h-[150px] background-tab-step">

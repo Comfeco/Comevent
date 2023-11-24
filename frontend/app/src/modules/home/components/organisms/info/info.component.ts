@@ -48,6 +48,33 @@ export class InfoComponent {
     },
   ];
 
+  infos = [
+    {
+      id: 1,
+      title: 'Registrate en Comevent',
+      description:
+        'Crea tu cuenta en Comevent y accede al mundo de las comunidades y eventos. ¡Tu próximo encuentro memorable comienza aquí!',
+    },
+    {
+      id: 2,
+      title: 'Busca tu comunidad favorita',
+      description:
+        'Explora comunidades que resuenan contigo y conecta con personas que comparten tus pasiones e intereses',
+    },
+    {
+      id: 3,
+      title: 'Regístrate en un evento',
+      description:
+        'Elige entre una diversidad de eventos y asegura tu lugar. ¡La aventura y el aprendizaje te esperan!',
+    },
+    {
+      id: 4,
+      title: 'Únete a tu grupo y disfruta',
+      description:
+        'Forma parte de un grupo que te inspira, participa en actividades exclusivas y disfruta cada momento junto a nosotros.',
+    },
+  ];
+
   onStep = (step: number) => {
     this.currentStep.set(step);
   };

@@ -5,6 +5,7 @@ import {
   CharacteristicsComponent,
   CreateCommunityComponent,
   EventsComponent,
+  IncomeComponent,
   SubscribeComponent,
 } from '../../components';
 
@@ -17,6 +18,7 @@ import {
     SubscribeComponent,
     CharacteristicsComponent,
     InfoComponent,
+    IncomeComponent,
   ],
   selector: 'home',
   templateUrl: './home.component.html',

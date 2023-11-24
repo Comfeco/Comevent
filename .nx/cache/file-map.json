@@ -3393,7 +3393,7 @@
         },
         {
           "file": "frontend/app/src/modules/home/components/index.ts",
-          "hash": "3627969034505514613"
+          "hash": "12630642450919475572"
         },
         {
           "file": "frontend/app/src/modules/home/components/molecule/input-subscribe/input-subscribe.component.html",
@@ -3465,7 +3465,7 @@
         },
         {
           "file": "frontend/app/src/modules/home/components/organisms/info/info.component.html",
-          "hash": "11124465483257973415"
+          "hash": "4956609269294805306"
         },
         {
           "file": "frontend/app/src/modules/home/components/organisms/info/info.component.scss",
@@ -3473,7 +3473,7 @@
         },
         {
           "file": "frontend/app/src/modules/home/components/organisms/info/info.component.ts",
-          "hash": "8065548017855708633",
+          "hash": "11676605176794321356",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -3503,7 +3503,7 @@
         },
         {
           "file": "frontend/app/src/modules/home/pages/home/home.component.html",
-          "hash": "7629855852888639789"
+          "hash": "2873207475132903088"
         },
         {
           "file": "frontend/app/src/modules/home/pages/home/home.component.scss",
@@ -3511,7 +3511,7 @@
         },
         {
           "file": "frontend/app/src/modules/home/pages/home/home.component.ts",
-          "hash": "11651956076334559076",
+          "hash": "4601661411608212182",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core"
@@ -3628,6 +3628,35 @@
             "npm:@angular/core",
             "frontend-ui"
           ]
+        },
+        {
+          "file": "frontend/app/src/modules/home/components/organisms/income/income.component.html",
+          "hash": "1879923883175065289"
+        },
+        {
+          "file": "frontend/app/src/modules/home/components/organisms/income/income.component.scss",
+          "hash": "8584941096530488631"
+        },
+        {
+          "file": "frontend/app/src/modules/home/components/organisms/income/income.component.ts",
+          "hash": "17006369960527274279",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "frontend-ui"
+          ]
+        },
+        {
+          "file": "frontend/app/src/assets/png/background-income-three.png",
+          "hash": "785602029492970331"
+        },
+        {
+          "file": "frontend/app/src/assets/png/background-income-two.png",
+          "hash": "11562450250423517170"
+        },
+        {
+          "file": "frontend/app/src/assets/png/background-income-one.png",
+          "hash": "18397315522616744419"
         }
       ],
       "api-e2e": [
