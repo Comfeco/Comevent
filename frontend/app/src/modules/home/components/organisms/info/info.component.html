@@ -7,33 +7,31 @@
     'flex flex-col h-[760px] w-full justify-between': true
   }"
 >
-  <div class="flex flex-col gap-16 items-center w-full mt-10">
-    @switch (currentStep()) { @case (1) {
-    <h2 class="title-h1 text-white-1">Registrate en Comevent</h2>
-    <h5 class="title-h5 text-white-1 w-[662px] text-center">
-      Crea tu cuenta en Comevent y accede al mundo de las comunidades y eventos.
-      ¡Tu próximo encuentro memorable comienza aquí!
-    </h5>
-    } @case (2) {
-    <h2 class="title-h1 text-white-1">Busca tu comunidad favorita</h2>
-    <h5 class="title-h5 text-white-1 w-[662px] text-center">
-      Explora comunidades que resuenan contigo y conecta con personas que
-      comparten tus pasiones e intereses
-    </h5>
-    } @case (3) {
-    <h2 class="title-h1 text-white-1">Regístrate en un evento</h2>
-    <h5 class="title-h5 text-white-1 w-[662px] text-center">
-      Elige entre una diversidad de eventos y asegura tu lugar. ¡La aventura y
-      el aprendizaje te esperan!
-    </h5>
-    } @case (4) {
-    <h2 class="title-h1 text-white-1">Únete a tu grupo y disfruta</h2>
-    <h5 class="title-h5 text-white-1 w-[662px] text-center">
-      Forma parte de un grupo que te inspira, participa en actividades
-      exclusivas y disfruta cada momento junto a nosotros.
-    </h5>
-    } }
-  </div>
+  @switch (currentStep()) { @case (1) {
+  <description-info
+    title="Registrate en Comevent"
+    description="Crea tu cuenta en Comevent y accede al mundo de las comunidades y eventos.
+      ¡Tu próximo encuentro memorable comienza aquí!"
+  />
+  } @case (2) {
+  <description-info
+    title="Busca tu comunidad favorita"
+    description="Explora comunidades que resuenan contigo y conecta con personas que
+      comparten tus pasiones e intereses"
+  />
+  } @case (3) {
+  <description-info
+    title="Regístrate en un evento"
+    description="Elige entre una diversidad de eventos y asegura tu lugar. ¡La aventura y
+      el aprendizaje te esperan!"
+  />
+  } @case (4) {
+  <description-info
+    title="Únete a tu grupo y disfruta"
+    description="Forma parte de un grupo que te inspira, participa en actividades
+      exclusivas y disfruta cada momento junto a nosotros."
+  />
+  } }
 
   <div class="flex flex-row h-[150px] background-tab-step">
     @for(step of steps; track step.step) {

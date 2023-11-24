@@ -8,6 +8,7 @@ import {
   IconHexagonNumberTwoComponent,
   TitleComponent,
 } from '@ui/components';
+import { DescriptionInfoComponent } from '../..';
 
 @Component({
   standalone: true,
@@ -19,6 +20,7 @@ import {
     IconHexagonNumberTwoComponent,
     IconHexagonNumberThreeComponent,
     IconHexagonNumberFourComponent,
+    DescriptionInfoComponent,
   ],
   selector: 'info',
   templateUrl: './info.component.html',

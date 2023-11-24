@@ -8354,3 +8354,1018 @@ Error: EPERM: operation not permitted, rename 'c:\projects\Comevent\.nx\cache\pr
 [NX Daemon Server] - 2023-11-24T01:26:21.409Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
 [NX Daemon Server] - 2023-11-24T01:26:21.409Z - [REQUEST]: 
 [NX Daemon Server] - 2023-11-24T01:26:21.493Z - Time taken for 'hash changed files from watcher' 0.8779999986290932ms
+[NX Daemon Server] - 2023-11-24T01:29:32.276Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:29:32.278Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T01:29:34.073Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:29:36.454Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:29:36.455Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.ts was modified
+[NX Daemon Server] - 2023-11-24T01:29:37.988Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:29:38.703Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T01:29:38.703Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html,frontend/app/src/modules/home/components/organisms/info/info.component.ts
+[NX Daemon Server] - 2023-11-24T01:29:38.703Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T01:29:38.760Z - Time taken for 'hash changed files from watcher' 0.8908999934792519ms
+[NX Daemon Server] - 2023-11-24T01:32:28.921Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:32:28.923Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.ts was modified
+[NX Daemon Server] - 2023-11-24T01:32:29.702Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:32:32.500Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:32:35.359Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T01:32:35.359Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.ts
+[NX Daemon Server] - 2023-11-24T01:32:35.359Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T01:32:35.457Z - Time taken for 'hash changed files from watcher' 1.1359999999403954ms
+[NX Daemon Server] - 2023-11-24T01:32:35.861Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:32:35.862Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T01:32:36.539Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:32:37.919Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:32:37.976Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:32:42.280Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T01:32:42.280Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T01:32:42.280Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T01:32:42.366Z - Time taken for 'hash changed files from watcher' 1.1000000014901161ms
+[NX Daemon Server] - 2023-11-24T01:33:03.507Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T01:33:03.507Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:33:05.214Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:33:09.924Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T01:33:09.924Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T01:33:09.924Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T01:33:09.979Z - Time taken for 'hash changed files from watcher' 0.9598999992012978ms
+[NX Daemon Server] - 2023-11-24T01:33:51.659Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.scss was modified
+[NX Daemon Server] - 2023-11-24T01:33:51.660Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:33:53.331Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:33:53.332Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.ts was modified
+[NX Daemon Server] - 2023-11-24T01:33:54.903Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:33:58.083Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T01:33:58.083Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.scss,frontend/app/src/modules/home/components/organisms/info/info.component.ts
+[NX Daemon Server] - 2023-11-24T01:33:58.083Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T01:33:58.146Z - Time taken for 'hash changed files from watcher' 1.6623999997973442ms
+[NX Daemon Server] - 2023-11-24T01:36:01.549Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T01:36:01.549Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:36:02.097Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:36:03.390Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:36:07.987Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T01:36:07.987Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T01:36:07.987Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T01:36:08.082Z - Time taken for 'hash changed files from watcher' 1.0119000002741814ms
+[NX Daemon Server] - 2023-11-24T01:37:59.946Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:37:59.948Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T01:38:00.568Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:38:01.903Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:38:06.382Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T01:38:06.382Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T01:38:06.382Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T01:38:06.468Z - Time taken for 'hash changed files from watcher' 1.314400002360344ms
+[NX Daemon Server] - 2023-11-24T01:39:05.780Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:39:05.781Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T01:39:06.298Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:39:07.647Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:39:12.203Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T01:39:12.203Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T01:39:12.203Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T01:39:12.291Z - Time taken for 'hash changed files from watcher' 1.4889000058174133ms
+[NX Daemon Server] - 2023-11-24T01:39:38.387Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:39:38.388Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T01:39:39.034Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:39:40.294Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:39:44.811Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T01:39:44.811Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T01:39:44.811Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T01:39:44.911Z - Time taken for 'hash changed files from watcher' 0.8866999968886375ms
+[NX Daemon Server] - 2023-11-24T01:41:13.720Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.ts was modified
+[NX Daemon Server] - 2023-11-24T01:41:13.720Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:41:15.661Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:41:20.142Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T01:41:20.142Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.ts
+[NX Daemon Server] - 2023-11-24T01:41:20.142Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T01:41:20.205Z - Time taken for 'hash changed files from watcher' 1.1852000057697296ms
+[NX Daemon Server] - 2023-11-24T01:42:26.029Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T01:42:26.029Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:42:26.667Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:42:27.941Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:42:32.454Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T01:42:32.454Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T01:42:32.454Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T01:42:32.539Z - Time taken for 'hash changed files from watcher' 0.8526000007987022ms
+[NX Daemon Server] - 2023-11-24T01:43:24.299Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T01:43:24.299Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:43:24.770Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:43:26.048Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:43:30.731Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T01:43:30.731Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T01:43:30.731Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T01:43:30.820Z - Time taken for 'hash changed files from watcher' 1.0333999991416931ms
+[NX Daemon Server] - 2023-11-24T01:43:59.623Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:43:59.626Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T01:44:00.125Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:44:01.469Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:44:06.053Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T01:44:06.053Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T01:44:06.053Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T01:44:06.137Z - Time taken for 'hash changed files from watcher' 1.1312999948859215ms
+[NX Daemon Server] - 2023-11-24T01:44:25.718Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T01:44:25.718Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:44:26.263Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:44:27.549Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:44:32.144Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T01:44:32.144Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T01:44:32.144Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T01:44:32.221Z - Time taken for 'hash changed files from watcher' 1.1374000012874603ms
+[NX Daemon Server] - 2023-11-24T01:45:05.521Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T01:45:05.521Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:45:06.057Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:45:07.325Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:45:11.953Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T01:45:11.954Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T01:45:11.954Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T01:45:12.049Z - Time taken for 'hash changed files from watcher' 1.3476999998092651ms
+[NX Daemon Server] - 2023-11-24T01:45:16.038Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T01:45:16.039Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:45:16.477Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:45:17.726Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:45:22.461Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T01:45:22.461Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T01:45:22.461Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T01:45:22.534Z - Time taken for 'hash changed files from watcher' 1.1501000002026558ms
+[NX Daemon Server] - 2023-11-24T01:46:03.328Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.ts was modified
+[NX Daemon Server] - 2023-11-24T01:46:03.328Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:46:04.057Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:46:05.414Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:46:06.701Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T01:46:06.701Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:46:07.216Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:46:08.458Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:46:08.514Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:46:09.749Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T01:46:09.749Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.ts,frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T01:46:09.749Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T01:46:09.835Z - Time taken for 'hash changed files from watcher' 0.9495000019669533ms
+[NX Daemon Server] - 2023-11-24T01:48:08.076Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:48:08.077Z - [WATCHER]: README.md was modified
+[NX Daemon Server] - 2023-11-24T01:48:14.512Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T01:48:14.512Z - [REQUEST]: README.md
+[NX Daemon Server] - 2023-11-24T01:48:14.512Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T01:48:14.571Z - Time taken for 'hash changed files from watcher' 0.9778999984264374ms
+[NX Daemon Server] - 2023-11-24T01:48:34.470Z - [WATCHER]: README.md was modified
+[NX Daemon Server] - 2023-11-24T01:48:34.470Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:48:40.889Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T01:48:40.889Z - [REQUEST]: README.md
+[NX Daemon Server] - 2023-11-24T01:48:40.889Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T01:48:40.952Z - Time taken for 'hash changed files from watcher' 1.2992000058293343ms
+[NX Daemon Server] - 2023-11-24T01:49:29.766Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T01:49:29.767Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:49:30.363Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:49:31.667Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:49:36.188Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T01:49:36.188Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T01:49:36.188Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T01:49:36.273Z - Time taken for 'hash changed files from watcher' 0.8589000031352043ms
+[NX Daemon Server] - 2023-11-24T01:49:51.935Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T01:49:51.935Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:49:52.455Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:49:53.796Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:49:58.358Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T01:49:58.358Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T01:49:58.358Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T01:49:58.448Z - Time taken for 'hash changed files from watcher' 0.8390999957919121ms
+[NX Daemon Server] - 2023-11-24T01:50:03.068Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:50:03.069Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T01:50:03.603Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:50:04.835Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T01:50:09.491Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T01:50:09.491Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T01:50:09.491Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T01:50:09.579Z - Time taken for 'hash changed files from watcher' 0.7916000038385391ms
+[NX Daemon Server] - 2023-11-24T02:00:26.260Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:00:26.262Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:00:26.759Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:00:28.074Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:00:32.683Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:00:32.683Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T02:00:32.683Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:00:32.764Z - Time taken for 'hash changed files from watcher' 0.9257000014185905ms
+[NX Daemon Server] - 2023-11-24T02:01:31.346Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:01:31.346Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:01:31.847Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:01:33.113Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:01:37.766Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:01:37.766Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T02:01:37.766Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:01:37.838Z - Time taken for 'hash changed files from watcher' 1.5815999954938889ms
+[NX Daemon Server] - 2023-11-24T02:01:47.867Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:01:47.867Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:01:48.335Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:01:49.591Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:01:54.305Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:01:54.305Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T02:01:54.305Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:01:54.393Z - Time taken for 'hash changed files from watcher' 1.572900004684925ms
+[NX Daemon Server] - 2023-11-24T02:02:29.932Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:02:29.933Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:02:30.388Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:02:31.691Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:02:36.367Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:02:36.367Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T02:02:36.367Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:02:36.449Z - Time taken for 'hash changed files from watcher' 1.4949000030755997ms
+[NX Daemon Server] - 2023-11-24T02:06:16.778Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:06:16.778Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:06:17.282Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:06:18.588Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:06:23.202Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:06:23.202Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T02:06:23.202Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:06:23.294Z - Time taken for 'hash changed files from watcher' 1.3909000009298325ms
+[NX Daemon Server] - 2023-11-24T02:07:11.503Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:07:11.504Z - [WATCHER]: frontend/app/src/assets/svg/icon-hexagon-number-1.svg was deleted
+[NX Daemon Server] - 2023-11-24T02:07:11.628Z - [WATCHER]: frontend/app/src/assets/svg/icon-hexagon-number-1.svg was created or restored
+[NX Daemon Server] - 2023-11-24T02:07:11.628Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:07:13.670Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:07:17.934Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:07:17.934Z - [REQUEST]: frontend/app/src/assets/svg/icon-hexagon-number-1.svg
+[NX Daemon Server] - 2023-11-24T02:07:17.934Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:07:18.018Z - Time taken for 'hash changed files from watcher' 1.4623000025749207ms
+[NX Daemon Server] - 2023-11-24T02:08:21.156Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:08:21.157Z - [WATCHER]: frontend/app/src/assets/svg/icon-hexagon-number-2.svg was deleted
+[NX Daemon Server] - 2023-11-24T02:08:21.283Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:08:21.283Z - [WATCHER]: frontend/app/src/assets/svg/icon-hexagon-number-2.svg was created or restored
+[NX Daemon Server] - 2023-11-24T02:08:21.385Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:08:21.385Z - [REQUEST]: frontend/app/src/assets/svg/icon-hexagon-number-2.svg
+[NX Daemon Server] - 2023-11-24T02:08:21.385Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:08:21.477Z - Time taken for 'hash changed files from watcher' 1.2375999987125397ms
+[NX Daemon Server] - 2023-11-24T02:08:23.411Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:08:35.947Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:08:35.948Z - [WATCHER]: frontend/app/src/assets/svg/icon-hexagon-number-3.svg was deleted
+[NX Daemon Server] - 2023-11-24T02:08:36.056Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:08:36.057Z - [WATCHER]: frontend/app/src/assets/svg/icon-hexagon-number-3.svg was created or restored
+[NX Daemon Server] - 2023-11-24T02:08:36.170Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:08:36.170Z - [REQUEST]: frontend/app/src/assets/svg/icon-hexagon-number-3.svg
+[NX Daemon Server] - 2023-11-24T02:08:36.170Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:08:36.261Z - Time taken for 'hash changed files from watcher' 0.9870999976992607ms
+[NX Daemon Server] - 2023-11-24T02:08:38.206Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:08:55.325Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:08:55.326Z - [WATCHER]: frontend/app/src/assets/svg/icon-hexagon-number-4.svg was deleted
+[NX Daemon Server] - 2023-11-24T02:08:55.436Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:08:55.436Z - [WATCHER]: frontend/app/src/assets/svg/icon-hexagon-number-4.svg was created or restored
+[NX Daemon Server] - 2023-11-24T02:08:55.551Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:08:55.551Z - [REQUEST]: frontend/app/src/assets/svg/icon-hexagon-number-4.svg
+[NX Daemon Server] - 2023-11-24T02:08:55.551Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:08:55.648Z - Time taken for 'hash changed files from watcher' 0.9695000052452087ms
+[NX Daemon Server] - 2023-11-24T02:08:57.560Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:09:31.022Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:09:31.023Z - [WATCHER]: 3 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-24T02:09:31.154Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:09:31.155Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-1/icon-arrow-right.component.ts,frontend/ui/components/atoms/icons/icon-hexagon-number-1/icon-arrow-right.component.html,frontend/ui/components/atoms/icons/icon-hexagon-number-1/icon-arrow-right.component.scss
+[NX Daemon Server] - 2023-11-24T02:09:31.155Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:09:31.234Z - Time taken for 'hash changed files from watcher' 1.49719999730587ms
+[NX Daemon Server] - 2023-11-24T02:09:45.601Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:09:45.602Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-24T02:09:45.733Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:09:45.733Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-1/icon-hexagon-number-1.component.html
+[NX Daemon Server] - 2023-11-24T02:09:45.733Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-1/icon-arrow-right.component.html
+[NX Daemon Server] - 2023-11-24T02:09:45.810Z - Time taken for 'hash changed files from watcher' 1.2314999997615814ms
+[NX Daemon Server] - 2023-11-24T02:09:55.616Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:09:55.617Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-24T02:09:55.748Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:09:55.748Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-1/icon-hexagon-number-one.component.ts
+[NX Daemon Server] - 2023-11-24T02:09:55.748Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-1/icon-arrow-right.component.ts
+[NX Daemon Server] - 2023-11-24T02:09:55.840Z - Time taken for 'hash changed files from watcher' 0.9966999962925911ms
+[NX Daemon Server] - 2023-11-24T02:09:59.803Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:09:59.804Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-hexagon-number-1 was deleted
+[NX Daemon Server] - 2023-11-24T02:10:00.032Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:10:00.032Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:10:00.032Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-1
+[NX Daemon Server] - 2023-11-24T02:10:00.085Z - Time taken for 'hash changed files from watcher' 1.1387000009417534ms
+[NX Daemon Server] - 2023-11-24T02:10:07.770Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:10:07.772Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-24T02:10:07.900Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:10:07.900Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-hexagon-number-one.component.html
+[NX Daemon Server] - 2023-11-24T02:10:07.900Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-hexagon-number-1.component.html
+[NX Daemon Server] - 2023-11-24T02:10:07.934Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:10:07.934Z - Time taken for 'hash changed files from watcher' 1.5613999962806702ms
+[NX Daemon Server] - 2023-11-24T02:10:19.378Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-24T02:10:19.378Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:10:19.516Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:10:19.516Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-hexagon-number-one.component.scss
+[NX Daemon Server] - 2023-11-24T02:10:19.516Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-arrow-right.component.scss
+[NX Daemon Server] - 2023-11-24T02:10:19.551Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:10:19.552Z - Time taken for 'hash changed files from watcher' 1.4487000033259392ms
+[NX Daemon Server] - 2023-11-24T02:10:26.827Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-hexagon-number-one.component.ts was modified
+[NX Daemon Server] - 2023-11-24T02:10:26.827Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:10:27.067Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:10:27.067Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-hexagon-number-one.component.ts
+[NX Daemon Server] - 2023-11-24T02:10:27.067Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:10:27.120Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:10:27.121Z - Time taken for 'hash changed files from watcher' 1.4712000042200089ms
+[NX Daemon Server] - 2023-11-24T02:10:43.767Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:10:43.768Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-hexagon-number-one.component.ts was modified
+[NX Daemon Server] - 2023-11-24T02:10:44.199Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:10:44.199Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-hexagon-number-one.component.ts
+[NX Daemon Server] - 2023-11-24T02:10:44.199Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:10:44.245Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:10:44.246Z - Time taken for 'hash changed files from watcher' 1.3013999983668327ms
+[NX Daemon Server] - 2023-11-24T02:10:54.902Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:10:54.903Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-hexagon-number-one.component.ts was modified
+[NX Daemon Server] - 2023-11-24T02:10:55.746Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:10:55.746Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-hexagon-number-one.component.ts
+[NX Daemon Server] - 2023-11-24T02:10:55.746Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:10:55.806Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:10:55.808Z - Time taken for 'hash changed files from watcher' 1.4157999977469444ms
+[NX Daemon Server] - 2023-11-24T02:10:58.484Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-hexagon-number-one.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:10:58.484Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:11:00.115Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:11:00.115Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-hexagon-number-one.component.html
+[NX Daemon Server] - 2023-11-24T02:11:00.115Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:11:00.149Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:11:00.149Z - Time taken for 'hash changed files from watcher' 0.9015000015497208ms
+[NX Daemon Server] - 2023-11-24T02:11:02.043Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:11:02.044Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-hexagon-number-one.component.scss was modified
+[NX Daemon Server] - 2023-11-24T02:11:05.278Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:11:05.278Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-hexagon-number-one.component.scss
+[NX Daemon Server] - 2023-11-24T02:11:05.278Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:11:05.323Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:11:05.326Z - Time taken for 'hash changed files from watcher' 0.972800001502037ms
+[NX Daemon Server] - 2023-11-24T02:11:27.356Z - [WATCHER]: 3 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-24T02:11:27.356Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:11:27.494Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:11:27.494Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-two/icon-hexagon-number-one.component.scss,frontend/ui/components/atoms/icons/icon-hexagon-number-two/icon-hexagon-number-one.component.html,frontend/ui/components/atoms/icons/icon-hexagon-number-two/icon-hexagon-number-one.component.ts
+[NX Daemon Server] - 2023-11-24T02:11:27.494Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:11:27.534Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:11:27.534Z - Time taken for 'hash changed files from watcher' 1.5227000042796135ms
+[NX Daemon Server] - 2023-11-24T02:11:35.431Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-24T02:11:35.431Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:11:35.559Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:11:35.559Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-two/icon-hexagon-number-two.component.html
+[NX Daemon Server] - 2023-11-24T02:11:35.559Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-two/icon-hexagon-number-one.component.html
+[NX Daemon Server] - 2023-11-24T02:11:35.595Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:11:35.595Z - Time taken for 'hash changed files from watcher' 0.9008000046014786ms
+[NX Daemon Server] - 2023-11-24T02:11:40.955Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-24T02:11:40.955Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:11:41.085Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:11:41.085Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-two/icon-hexagon-number-two.component.ts
+[NX Daemon Server] - 2023-11-24T02:11:41.085Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-two/icon-hexagon-number-one.component.ts
+[NX Daemon Server] - 2023-11-24T02:11:41.134Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:11:41.137Z - Time taken for 'hash changed files from watcher' 1.3599999994039536ms
+[NX Daemon Server] - 2023-11-24T02:11:46.662Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-24T02:11:46.662Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:11:46.793Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:11:46.793Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-two/icon-hexagon-number-two.component.scss
+[NX Daemon Server] - 2023-11-24T02:11:46.793Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-two/icon-hexagon-number-one.component.scss
+[NX Daemon Server] - 2023-11-24T02:11:46.834Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:11:46.834Z - Time taken for 'hash changed files from watcher' 1.435300000011921ms
+[NX Daemon Server] - 2023-11-24T02:11:57.468Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-hexagon-number-two/icon-hexagon-number-two.component.ts was modified
+[NX Daemon Server] - 2023-11-24T02:11:57.469Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:11:57.694Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:11:57.694Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-two/icon-hexagon-number-two.component.ts
+[NX Daemon Server] - 2023-11-24T02:11:57.694Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:11:57.735Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:11:57.736Z - Time taken for 'hash changed files from watcher' 1.154399998486042ms
+[NX Daemon Server] - 2023-11-24T02:12:18.118Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:12:18.119Z - [WATCHER]: 3 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-24T02:12:18.251Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:12:18.251Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-three/icon-hexagon-number-two.component.html,frontend/ui/components/atoms/icons/icon-hexagon-number-three/icon-hexagon-number-two.component.scss,frontend/ui/components/atoms/icons/icon-hexagon-number-three/icon-hexagon-number-two.component.ts
+[NX Daemon Server] - 2023-11-24T02:12:18.251Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:12:18.295Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:12:18.296Z - Time taken for 'hash changed files from watcher' 1.3196000009775162ms
+[NX Daemon Server] - 2023-11-24T02:12:23.683Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:12:23.684Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-24T02:12:23.815Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:12:23.815Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-three/icon-hexagon-number-three.component.html
+[NX Daemon Server] - 2023-11-24T02:12:23.815Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-three/icon-hexagon-number-two.component.html
+[NX Daemon Server] - 2023-11-24T02:12:23.852Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:12:23.854Z - Time taken for 'hash changed files from watcher' 1.149499997496605ms
+[NX Daemon Server] - 2023-11-24T02:12:28.868Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:12:28.869Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-24T02:12:29.002Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:12:29.002Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-three/icon-hexagon-number-three.component.scss
+[NX Daemon Server] - 2023-11-24T02:12:29.002Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-three/icon-hexagon-number-two.component.scss
+[NX Daemon Server] - 2023-11-24T02:12:29.040Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:12:29.040Z - Time taken for 'hash changed files from watcher' 1.4244000017642975ms
+[NX Daemon Server] - 2023-11-24T02:12:35.588Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:12:35.589Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-24T02:12:35.720Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:12:35.720Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-three/icon-hexagon-number-three.component.ts
+[NX Daemon Server] - 2023-11-24T02:12:35.720Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-three/icon-hexagon-number-two.component.ts
+[NX Daemon Server] - 2023-11-24T02:12:35.763Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:12:35.765Z - Time taken for 'hash changed files from watcher' 1.0388000011444092ms
+[NX Daemon Server] - 2023-11-24T02:12:49.408Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-hexagon-number-three/icon-hexagon-number-three.component.ts was modified
+[NX Daemon Server] - 2023-11-24T02:12:49.408Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:12:49.632Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:12:49.632Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-three/icon-hexagon-number-three.component.ts
+[NX Daemon Server] - 2023-11-24T02:12:49.632Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:12:49.680Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:12:49.681Z - Time taken for 'hash changed files from watcher' 1.090599998831749ms
+[NX Daemon Server] - 2023-11-24T02:13:09.120Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:13:09.121Z - [WATCHER]: 3 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-24T02:13:09.255Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:13:09.255Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-four/icon-hexagon-number-three.component.ts,frontend/ui/components/atoms/icons/icon-hexagon-number-four/icon-hexagon-number-three.component.html,frontend/ui/components/atoms/icons/icon-hexagon-number-four/icon-hexagon-number-three.component.scss
+[NX Daemon Server] - 2023-11-24T02:13:09.255Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:13:09.307Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:13:09.309Z - Time taken for 'hash changed files from watcher' 1.5108999982476234ms
+[NX Daemon Server] - 2023-11-24T02:13:15.595Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-24T02:13:15.595Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:13:15.724Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:13:15.724Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-four/icon-hexagon-number-four.component.html
+[NX Daemon Server] - 2023-11-24T02:13:15.724Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-four/icon-hexagon-number-three.component.html
+[NX Daemon Server] - 2023-11-24T02:13:15.766Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:13:15.767Z - Time taken for 'hash changed files from watcher' 1.0907000005245209ms
+[NX Daemon Server] - 2023-11-24T02:13:21.474Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-24T02:13:21.474Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:13:21.600Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:13:21.600Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-four/icon-hexagon-number-four.component.scss
+[NX Daemon Server] - 2023-11-24T02:13:21.600Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-four/icon-hexagon-number-three.component.scss
+[NX Daemon Server] - 2023-11-24T02:13:21.635Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:13:21.635Z - Time taken for 'hash changed files from watcher' 1.4122999981045723ms
+[NX Daemon Server] - 2023-11-24T02:13:27.503Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:13:27.504Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-24T02:13:27.635Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:13:27.635Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-four/icon-hexagon-number-four.component.ts
+[NX Daemon Server] - 2023-11-24T02:13:27.635Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-four/icon-hexagon-number-three.component.ts
+[NX Daemon Server] - 2023-11-24T02:13:27.677Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:13:27.679Z - Time taken for 'hash changed files from watcher' 1.0151999965310097ms
+[NX Daemon Server] - 2023-11-24T02:13:39.116Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:13:39.117Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-hexagon-number-four/icon-hexagon-number-four.component.ts was modified
+[NX Daemon Server] - 2023-11-24T02:13:39.340Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:13:39.340Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-four/icon-hexagon-number-four.component.ts
+[NX Daemon Server] - 2023-11-24T02:13:39.340Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:13:39.385Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:13:39.386Z - Time taken for 'hash changed files from watcher' 1.2102999985218048ms
+[NX Daemon Server] - 2023-11-24T02:14:01.879Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-hexagon-number-one.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:14:01.879Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:14:02.302Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:14:02.302Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-hexagon-number-one.component.html
+[NX Daemon Server] - 2023-11-24T02:14:02.302Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:14:02.362Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:14:02.364Z - Time taken for 'hash changed files from watcher' 0.8879000023007393ms
+[NX Daemon Server] - 2023-11-24T02:14:16.853Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-hexagon-number-two/icon-hexagon-number-two.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:14:16.854Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:14:17.686Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:14:17.686Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-two/icon-hexagon-number-two.component.html
+[NX Daemon Server] - 2023-11-24T02:14:17.686Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:14:17.731Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:14:17.733Z - Time taken for 'hash changed files from watcher' 1.162600003182888ms
+[NX Daemon Server] - 2023-11-24T02:14:29.189Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:14:29.191Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-hexagon-number-three/icon-hexagon-number-three.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:14:30.813Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:14:30.813Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-three/icon-hexagon-number-three.component.html
+[NX Daemon Server] - 2023-11-24T02:14:30.813Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:14:30.854Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:14:30.855Z - Time taken for 'hash changed files from watcher' 0.8871999979019165ms
+[NX Daemon Server] - 2023-11-24T02:14:52.440Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:14:52.442Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-hexagon-number-four/icon-hexagon-number-four.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:14:55.661Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:14:55.661Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-four/icon-hexagon-number-four.component.html
+[NX Daemon Server] - 2023-11-24T02:14:55.661Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:14:55.703Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:14:55.703Z - Time taken for 'hash changed files from watcher' 0.9971999973058701ms
+[NX Daemon Server] - 2023-11-24T02:17:19.659Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:17:19.661Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-hexagon-number-one.component.ts was modified
+[NX Daemon Server] - 2023-11-24T02:17:26.095Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:17:26.095Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-hexagon-number-one.component.ts
+[NX Daemon Server] - 2023-11-24T02:17:26.095Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:17:26.141Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:17:26.142Z - Time taken for 'hash changed files from watcher' 1.6201999932527542ms
+[NX Daemon Server] - 2023-11-24T02:17:26.277Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-hexagon-number-four/icon-hexagon-number-four.component.ts was modified
+[NX Daemon Server] - 2023-11-24T02:17:26.277Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:17:32.700Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:17:32.700Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-four/icon-hexagon-number-four.component.ts
+[NX Daemon Server] - 2023-11-24T02:17:32.700Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:17:32.743Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:17:32.745Z - Time taken for 'hash changed files from watcher' 0.9698000028729439ms
+[NX Daemon Server] - 2023-11-24T02:17:37.164Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-hexagon-number-three/icon-hexagon-number-three.component.ts was modified
+[NX Daemon Server] - 2023-11-24T02:17:37.164Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:17:43.600Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:17:43.600Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-three/icon-hexagon-number-three.component.ts
+[NX Daemon Server] - 2023-11-24T02:17:43.600Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:17:43.643Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:17:43.643Z - Time taken for 'hash changed files from watcher' 1.1633000001311302ms
+[NX Daemon Server] - 2023-11-24T02:17:52.856Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-hexagon-number-two/icon-hexagon-number-two.component.ts was modified
+[NX Daemon Server] - 2023-11-24T02:17:52.857Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:17:59.293Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:17:59.293Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-two/icon-hexagon-number-two.component.ts
+[NX Daemon Server] - 2023-11-24T02:17:59.293Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:17:59.335Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:17:59.337Z - Time taken for 'hash changed files from watcher' 1.197000004351139ms
+[NX Daemon Server] - 2023-11-24T02:18:55.561Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-hexagon-number-one.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:18:55.562Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:19:01.992Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:19:01.992Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-one/icon-hexagon-number-one.component.html
+[NX Daemon Server] - 2023-11-24T02:19:01.992Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:19:02.037Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:19:02.039Z - Time taken for 'hash changed files from watcher' 1.2471000030636787ms
+[NX Daemon Server] - 2023-11-24T02:19:53.081Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:19:53.082Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-hexagon-number-two/icon-hexagon-number-two.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:19:59.513Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:19:59.513Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-two/icon-hexagon-number-two.component.html
+[NX Daemon Server] - 2023-11-24T02:19:59.513Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:19:59.555Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:19:59.556Z - Time taken for 'hash changed files from watcher' 1.5463000014424324ms
+[NX Daemon Server] - 2023-11-24T02:20:49.608Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-hexagon-number-three/icon-hexagon-number-three.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:20:49.609Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:20:53.793Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:20:53.794Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-hexagon-number-three/icon-hexagon-number-three.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:20:56.035Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:20:56.035Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-three/icon-hexagon-number-three.component.html
+[NX Daemon Server] - 2023-11-24T02:20:56.035Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:20:56.079Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:20:56.080Z - Time taken for 'hash changed files from watcher' 0.9923000037670135ms
+[NX Daemon Server] - 2023-11-24T02:21:49.475Z - [WATCHER]: frontend/ui/components/atoms/icons/icon-hexagon-number-four/icon-hexagon-number-four.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:21:49.475Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:21:55.923Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:21:55.923Z - [REQUEST]: frontend/ui/components/atoms/icons/icon-hexagon-number-four/icon-hexagon-number-four.component.html
+[NX Daemon Server] - 2023-11-24T02:21:55.923Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:21:55.997Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:21:56.000Z - Time taken for 'hash changed files from watcher' 1.8338000029325485ms
+[NX Daemon Server] - 2023-11-24T02:21:56.844Z - [WATCHER]: frontend/ui/components/atoms/icons/index.ts was modified
+[NX Daemon Server] - 2023-11-24T02:21:56.844Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:21:59.170Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:21:59.248Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:21:59.311Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:21:59.374Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:22:00.792Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:22:00.853Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:22:03.270Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:22:03.270Z - [REQUEST]: frontend/ui/components/atoms/icons/index.ts
+[NX Daemon Server] - 2023-11-24T02:22:03.270Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:22:03.312Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:22:03.314Z - Time taken for 'hash changed files from watcher' 1.3201000019907951ms
+[NX Daemon Server] - 2023-11-24T02:22:24.483Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:22:24.485Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.ts was modified
+[NX Daemon Server] - 2023-11-24T02:22:25.436Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:22:26.880Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:22:30.917Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:22:30.917Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.ts
+[NX Daemon Server] - 2023-11-24T02:22:30.917Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:22:30.961Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:22:30.962Z - Time taken for 'hash changed files from watcher' 1.4919999986886978ms
+[NX Daemon Server] - 2023-11-24T02:22:41.928Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.ts was modified
+[NX Daemon Server] - 2023-11-24T02:22:41.928Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:22:42.571Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:22:43.877Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:22:48.351Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:22:48.351Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.ts
+[NX Daemon Server] - 2023-11-24T02:22:48.351Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:22:48.398Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:22:48.400Z - Time taken for 'hash changed files from watcher' 0.92569999396801ms
+[NX Daemon Server] - 2023-11-24T02:22:54.581Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:22:54.583Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.ts was modified
+[NX Daemon Server] - 2023-11-24T02:22:55.244Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:22:56.548Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:23:01.011Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:23:01.011Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.ts
+[NX Daemon Server] - 2023-11-24T02:23:01.011Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:23:01.053Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:23:01.055Z - Time taken for 'hash changed files from watcher' 1.601600006222725ms
+[NX Daemon Server] - 2023-11-24T02:23:15.090Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:23:15.092Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.ts was modified
+[NX Daemon Server] - 2023-11-24T02:23:15.860Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:23:17.219Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:23:21.527Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:23:21.527Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.ts
+[NX Daemon Server] - 2023-11-24T02:23:21.527Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:23:21.575Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:23:21.575Z - Time taken for 'hash changed files from watcher' 1.3530000001192093ms
+[NX Daemon Server] - 2023-11-24T02:24:56.158Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:24:56.158Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:24:56.803Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:24:58.249Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:25:02.578Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:25:02.578Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T02:25:02.578Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:25:02.624Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:25:02.626Z - Time taken for 'hash changed files from watcher' 0.9737000018358231ms
+[NX Daemon Server] - 2023-11-24T02:25:36.218Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:25:36.219Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:25:36.818Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:25:38.129Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:25:42.653Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:25:42.653Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T02:25:42.653Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:25:42.697Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:25:42.698Z - Time taken for 'hash changed files from watcher' 1.5134999975562096ms
+[NX Daemon Server] - 2023-11-24T02:25:48.039Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:25:48.040Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:25:48.666Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:25:49.934Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:25:54.470Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:25:54.470Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T02:25:54.470Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:25:54.513Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:25:54.514Z - Time taken for 'hash changed files from watcher' 0.8821000009775162ms
+[NX Daemon Server] - 2023-11-24T02:25:59.555Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:25:59.555Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:26:00.102Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:26:01.379Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:26:05.984Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:26:05.984Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T02:26:05.984Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:26:06.025Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:26:06.025Z - Time taken for 'hash changed files from watcher' 0.936099998652935ms
+[NX Daemon Server] - 2023-11-24T02:26:25.124Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:26:25.125Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:26:25.689Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:26:27.032Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:26:31.553Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:26:31.553Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T02:26:31.553Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:26:31.598Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:26:31.600Z - Time taken for 'hash changed files from watcher' 1.0773999989032745ms
+[NX Daemon Server] - 2023-11-24T02:27:06.453Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:27:06.455Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:27:07.100Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:27:08.388Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:27:12.884Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:27:12.884Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T02:27:12.884Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:27:12.928Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:27:12.930Z - Time taken for 'hash changed files from watcher' 1.183299995958805ms
+[NX Daemon Server] - 2023-11-24T02:27:33.878Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:27:33.878Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:27:34.502Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:27:35.812Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:27:40.315Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:27:40.315Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T02:27:40.315Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:27:40.359Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:27:40.360Z - Time taken for 'hash changed files from watcher' 0.9528000056743622ms
+[NX Daemon Server] - 2023-11-24T02:27:41.198Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:27:41.199Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:27:41.633Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:27:42.893Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:27:46.378Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:27:46.379Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:27:47.625Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:27:47.625Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T02:27:47.625Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:27:47.677Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:27:47.679Z - Time taken for 'hash changed files from watcher' 1.1319999992847443ms
+[NX Daemon Server] - 2023-11-24T02:27:48.301Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:30:30.612Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:30:30.614Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:30:31.209Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:30:32.494Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:30:37.034Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:30:37.034Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T02:30:37.034Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:30:37.072Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:30:37.073Z - Time taken for 'hash changed files from watcher' 1.0639999955892563ms
+[NX Daemon Server] - 2023-11-24T02:30:49.470Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.scss was modified
+[NX Daemon Server] - 2023-11-24T02:30:49.470Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:30:50.333Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:30:51.604Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:30:55.896Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:30:55.896Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.scss
+[NX Daemon Server] - 2023-11-24T02:30:55.896Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:30:55.939Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:30:55.941Z - Time taken for 'hash changed files from watcher' 1.3811999931931496ms
+[NX Daemon Server] - 2023-11-24T02:33:48.622Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:33:48.622Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:33:49.372Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:33:51.208Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:33:55.045Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:33:55.045Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T02:33:55.045Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:33:55.091Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:33:55.093Z - Time taken for 'hash changed files from watcher' 0.9878999963402748ms
+[NX Daemon Server] - 2023-11-24T02:33:58.628Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:33:58.630Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:33:59.129Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:34:00.482Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:34:05.063Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:34:05.063Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T02:34:05.063Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:34:05.103Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:34:05.105Z - Time taken for 'hash changed files from watcher' 1.4501999989151955ms
+[NX Daemon Server] - 2023-11-24T02:35:19.881Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:35:19.883Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.scss was modified
+[NX Daemon Server] - 2023-11-24T02:35:20.665Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:35:21.945Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:35:26.302Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:35:26.302Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.scss
+[NX Daemon Server] - 2023-11-24T02:35:26.302Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:35:26.346Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:35:26.347Z - Time taken for 'hash changed files from watcher' 0.8993000015616417ms
+[NX Daemon Server] - 2023-11-24T02:36:17.652Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:36:17.654Z - [WATCHER]: frontend/app/src/assets/png/background-step-two.png was deleted
+[NX Daemon Server] - 2023-11-24T02:36:17.763Z - [WATCHER]: frontend/app/src/assets/png/background-step-two.png was created or restored
+[NX Daemon Server] - 2023-11-24T02:36:17.763Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:36:19.875Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:36:19.928Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:36:24.089Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:36:24.090Z - [REQUEST]: frontend/app/src/assets/png/background-step-two.png
+[NX Daemon Server] - 2023-11-24T02:36:24.090Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:36:24.133Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:36:24.134Z - Time taken for 'hash changed files from watcher' 2.7726000025868416ms
+[NX Daemon Server] - 2023-11-24T02:36:52.136Z - [WATCHER]: frontend/app/src/assets/png/background-step-three.png was deleted
+[NX Daemon Server] - 2023-11-24T02:36:52.136Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:36:52.261Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:36:52.262Z - [WATCHER]: frontend/app/src/assets/png/background-step-three.png was created or restored
+[NX Daemon Server] - 2023-11-24T02:36:52.362Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:36:52.362Z - [REQUEST]: frontend/app/src/assets/png/background-step-three.png
+[NX Daemon Server] - 2023-11-24T02:36:52.362Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:36:52.411Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:36:52.413Z - Time taken for 'hash changed files from watcher' 1.8845999985933304ms
+[NX Daemon Server] - 2023-11-24T02:36:54.459Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:37:22.405Z - [WATCHER]: frontend/app/src/assets/png/background-step-four.png was deleted
+[NX Daemon Server] - 2023-11-24T02:37:22.405Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:37:22.500Z - [WATCHER]: frontend/app/src/assets/png/background-step-four.png was created or restored
+[NX Daemon Server] - 2023-11-24T02:37:22.500Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:37:22.635Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:37:22.635Z - [REQUEST]: frontend/app/src/assets/png/background-step-four.png
+[NX Daemon Server] - 2023-11-24T02:37:22.635Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:37:22.684Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:37:22.685Z - Time taken for 'hash changed files from watcher' 2.098100006580353ms
+[NX Daemon Server] - 2023-11-24T02:37:24.142Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:37:24.143Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.scss was modified
+[NX Daemon Server] - 2023-11-24T02:37:24.384Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:37:24.384Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.scss
+[NX Daemon Server] - 2023-11-24T02:37:24.384Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:37:24.441Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:37:24.441Z - Time taken for 'hash changed files from watcher' 1.4575999975204468ms
+[NX Daemon Server] - 2023-11-24T02:37:26.107Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:37:26.173Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:38:30.890Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:38:30.890Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:38:31.318Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:38:31.318Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T02:38:31.318Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:38:31.364Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:38:31.364Z - Time taken for 'hash changed files from watcher' 1.3550999984145164ms
+[NX Daemon Server] - 2023-11-24T02:38:31.531Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:38:32.883Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:38:32.947Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:39:00.243Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.scss was modified
+[NX Daemon Server] - 2023-11-24T02:39:00.243Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:39:01.076Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:39:01.076Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.scss
+[NX Daemon Server] - 2023-11-24T02:39:01.076Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:39:01.137Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:39:01.138Z - Time taken for 'hash changed files from watcher' 1.3362000063061714ms
+[NX Daemon Server] - 2023-11-24T02:39:02.429Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:39:11.159Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:39:11.163Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:39:11.883Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:39:12.799Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:39:12.799Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T02:39:12.800Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:39:12.854Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:39:12.856Z - Time taken for 'hash changed files from watcher' 1.182099997997284ms
+[NX Daemon Server] - 2023-11-24T02:39:13.170Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:40:59.602Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T02:40:59.602Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:41:00.295Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:41:01.659Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T02:41:02.825Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T02:41:02.825Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T02:41:02.825Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T02:41:02.874Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\ui\\components\\atoms\\icons\\icon-hexagon-number-1\\icon-hexagon-number-one.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-24T02:41:02.875Z - Time taken for 'hash changed files from watcher' 1.5746999979019165ms
+[NX Daemon Server] - 2023-11-24T02:47:52.381Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-24T02:47:52.393Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-24T13:45:05.189Z - Started listening on: \\.\pipe\nx\C:\Users\David\AppData\Local\Temp\1333570d747707fc9927\d.sock
+[NX Daemon Server] - 2023-11-24T13:45:05.213Z - [WATCHER]: Subscribed to changes within: c:\projects\Comevent (native)
+[NX Daemon Server] - 2023-11-24T13:45:05.215Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-24T13:45:05.216Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-24T13:45:05.217Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-24T13:45:05.220Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-24T13:45:05.735Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T13:45:05.735Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T13:45:05.735Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T13:45:06.397Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-24T13:45:06.399Z - Time taken for 'total for creating and serializing project graph' 1176.8212999999523ms
+[NX Daemon Server] - 2023-11-24T13:45:06.400Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-24T13:45:06.400Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1177. Response time: 3.
+[NX Daemon Server] - 2023-11-24T13:45:06.405Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-24T13:45:06.406Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-24T13:45:06.406Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-24T13:45:06.407Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-24T13:45:06.411Z - [REQUEST]: Responding to the client. handleRequestFileData
+[NX Daemon Server] - 2023-11-24T13:45:06.411Z - Done responding to the client handleRequestFileData
+[NX Daemon Server] - 2023-11-24T13:45:06.411Z - Handled REQUEST_FILE_DATA. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2023-11-24T13:46:22.652Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T13:46:22.654Z - [WATCHER]: 2 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-24T13:46:22.733Z - [WATCHER]: frontend/app/src/modules/home/components/molecule/description-info/input-subscribe.component.ts was created or restored
+[NX Daemon Server] - 2023-11-24T13:46:22.733Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T13:46:22.798Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T13:46:22.799Z - [REQUEST]: frontend/app/src/modules/home/components/molecule/description-info/input-subscribe.component.html,frontend/app/src/modules/home/components/molecule/description-info/input-subscribe.component.scss,frontend/app/src/modules/home/components/molecule/description-info/input-subscribe.component.ts
+[NX Daemon Server] - 2023-11-24T13:46:22.799Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T13:46:22.929Z - Time taken for 'hash changed files from watcher' 6.1237000077962875ms
+[NX Daemon Server] - 2023-11-24T13:46:36.553Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T13:46:36.555Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-24T13:46:36.684Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T13:46:36.684Z - [REQUEST]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.html
+[NX Daemon Server] - 2023-11-24T13:46:36.684Z - [REQUEST]: frontend/app/src/modules/home/components/molecule/description-info/input-subscribe.component.html
+[NX Daemon Server] - 2023-11-24T13:46:36.771Z - Time taken for 'hash changed files from watcher' 0.8417000025510788ms
+[NX Daemon Server] - 2023-11-24T13:46:42.962Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T13:46:42.963Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-24T13:46:43.089Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T13:46:43.089Z - [REQUEST]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.scss
+[NX Daemon Server] - 2023-11-24T13:46:43.089Z - [REQUEST]: frontend/app/src/modules/home/components/molecule/description-info/input-subscribe.component.scss
+[NX Daemon Server] - 2023-11-24T13:46:43.172Z - Time taken for 'hash changed files from watcher' 1.1490999907255173ms
+[NX Daemon Server] - 2023-11-24T13:46:54.684Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-24T13:46:54.684Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T13:46:54.812Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T13:46:54.812Z - [REQUEST]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.ts
+[NX Daemon Server] - 2023-11-24T13:46:54.812Z - [REQUEST]: frontend/app/src/modules/home/components/molecule/description-info/input-subscribe.component.ts
+[NX Daemon Server] - 2023-11-24T13:46:54.912Z - Time taken for 'hash changed files from watcher' 0.9785999953746796ms
+[NX Daemon Server] - 2023-11-24T13:47:49.198Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T13:47:49.199Z - [WATCHER]: frontend/app/src/modules/home/components/molecule/input-subscribe/input-subscribe.component.ts was modified
+[NX Daemon Server] - 2023-11-24T13:47:49.420Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T13:47:49.420Z - [REQUEST]: frontend/app/src/modules/home/components/molecule/input-subscribe/input-subscribe.component.ts
+[NX Daemon Server] - 2023-11-24T13:47:49.420Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T13:47:49.502Z - Time taken for 'hash changed files from watcher' 0.9200999885797501ms
+[NX Daemon Server] - 2023-11-24T13:48:08.839Z - [WATCHER]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.html was modified
+[NX Daemon Server] - 2023-11-24T13:48:08.840Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T13:48:09.261Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T13:48:09.261Z - [REQUEST]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.html
+[NX Daemon Server] - 2023-11-24T13:48:09.261Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T13:48:09.346Z - Time taken for 'hash changed files from watcher' 1.2208999991416931ms
+[NX Daemon Server] - 2023-11-24T13:48:31.910Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T13:48:31.911Z - [WATCHER]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.html was modified
+[NX Daemon Server] - 2023-11-24T13:48:32.738Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T13:48:32.738Z - [REQUEST]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.html
+[NX Daemon Server] - 2023-11-24T13:48:32.738Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T13:48:32.801Z - Time taken for 'hash changed files from watcher' 0.8944000005722046ms
+[NX Daemon Server] - 2023-11-24T13:48:51.911Z - [WATCHER]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.ts was modified
+[NX Daemon Server] - 2023-11-24T13:48:51.911Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T13:48:53.539Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T13:48:53.539Z - [REQUEST]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.ts
+[NX Daemon Server] - 2023-11-24T13:48:53.539Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T13:48:53.622Z - Time taken for 'hash changed files from watcher' 1.2838999927043915ms
+[NX Daemon Server] - 2023-11-24T13:49:01.364Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T13:49:01.365Z - [WATCHER]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.ts was modified
+[NX Daemon Server] - 2023-11-24T13:49:04.595Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T13:49:04.595Z - [REQUEST]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.ts
+[NX Daemon Server] - 2023-11-24T13:49:04.595Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T13:49:04.677Z - Time taken for 'hash changed files from watcher' 1.1739999949932098ms
+[NX Daemon Server] - 2023-11-24T13:52:14.815Z - [WATCHER]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.ts was modified
+[NX Daemon Server] - 2023-11-24T13:52:14.815Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T13:52:21.238Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T13:52:21.238Z - [REQUEST]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.ts
+[NX Daemon Server] - 2023-11-24T13:52:21.238Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T13:52:21.324Z - Time taken for 'hash changed files from watcher' 0.9183000028133392ms
+[NX Daemon Server] - 2023-11-24T13:52:33.148Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T13:52:33.149Z - [WATCHER]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.ts was modified
+[NX Daemon Server] - 2023-11-24T13:52:39.580Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T13:52:39.580Z - [REQUEST]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.ts
+[NX Daemon Server] - 2023-11-24T13:52:39.580Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T13:52:39.668Z - Time taken for 'hash changed files from watcher' 0.9315000027418137ms
+[NX Daemon Server] - 2023-11-24T13:52:46.948Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T13:52:46.949Z - [WATCHER]: frontend/app/src/modules/home/components/molecule/input-subscribe/input-subscribe.component.ts was modified
+[NX Daemon Server] - 2023-11-24T13:52:53.383Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T13:52:53.383Z - [REQUEST]: frontend/app/src/modules/home/components/molecule/input-subscribe/input-subscribe.component.ts
+[NX Daemon Server] - 2023-11-24T13:52:53.383Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T13:52:53.481Z - Time taken for 'hash changed files from watcher' 1.1123999953269958ms
+[NX Daemon Server] - 2023-11-24T13:52:54.784Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T13:52:54.785Z - [WATCHER]: frontend/app/src/modules/home/components/molecule/input-subscribe/input-subscribe.component.ts was modified
+[NX Daemon Server] - 2023-11-24T13:53:01.220Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T13:53:01.220Z - [REQUEST]: frontend/app/src/modules/home/components/molecule/input-subscribe/input-subscribe.component.ts
+[NX Daemon Server] - 2023-11-24T13:53:01.220Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T13:53:01.305Z - Time taken for 'hash changed files from watcher' 1.5746999979019165ms
+[NX Daemon Server] - 2023-11-24T13:54:23.780Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T13:54:23.781Z - [WATCHER]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.html was modified
+[NX Daemon Server] - 2023-11-24T13:54:30.211Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T13:54:30.211Z - [REQUEST]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.html
+[NX Daemon Server] - 2023-11-24T13:54:30.211Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T13:54:30.295Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T13:54:30.296Z - [WATCHER]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.html was modified
+[NX Daemon Server] - 2023-11-24T13:54:30.296Z - Time taken for 'hash changed files from watcher' 0.8479999899864197ms
+[NX Daemon Server] - 2023-11-24T13:54:36.731Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T13:54:36.731Z - [REQUEST]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.html
+[NX Daemon Server] - 2023-11-24T13:54:36.731Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T13:54:36.796Z - Time taken for 'hash changed files from watcher' 1.468199998140335ms
+[NX Daemon Server] - 2023-11-24T13:55:19.032Z - [WATCHER]: frontend/app/src/modules/home/components/index.ts was modified
+[NX Daemon Server] - 2023-11-24T13:55:19.033Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T13:55:25.462Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T13:55:25.462Z - [REQUEST]: frontend/app/src/modules/home/components/index.ts
+[NX Daemon Server] - 2023-11-24T13:55:25.462Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T13:55:25.552Z - Time taken for 'hash changed files from watcher' 0.9882999956607819ms
+[NX Daemon Server] - 2023-11-24T13:55:30.396Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.ts was modified
+[NX Daemon Server] - 2023-11-24T13:55:30.396Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T13:55:36.823Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T13:55:36.823Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.ts
+[NX Daemon Server] - 2023-11-24T13:55:36.823Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T13:55:36.914Z - Time taken for 'hash changed files from watcher' 1.0177999883890152ms
+[NX Daemon Server] - 2023-11-24T13:56:20.291Z - [WATCHER]: frontend/app/src/modules/home/components/molecule/input-subscribe/input-subscribe.component.ts was modified
+[NX Daemon Server] - 2023-11-24T13:56:20.291Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T13:56:26.728Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T13:56:26.728Z - [REQUEST]: frontend/app/src/modules/home/components/molecule/input-subscribe/input-subscribe.component.ts
+[NX Daemon Server] - 2023-11-24T13:56:26.728Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T13:56:26.811Z - Time taken for 'hash changed files from watcher' 1.140400007367134ms
+[NX Daemon Server] - 2023-11-24T13:56:27.814Z - [WATCHER]: frontend/app/src/modules/home/components/molecule/input-subscribe/input-subscribe.component.ts was modified
+[NX Daemon Server] - 2023-11-24T13:56:27.814Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T13:56:34.245Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T13:56:34.245Z - [REQUEST]: frontend/app/src/modules/home/components/molecule/input-subscribe/input-subscribe.component.ts
+[NX Daemon Server] - 2023-11-24T13:56:34.245Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T13:56:34.304Z - Time taken for 'hash changed files from watcher' 0.8163999915122986ms
+[NX Daemon Server] - 2023-11-24T13:56:36.775Z - [WATCHER]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.ts was modified
+[NX Daemon Server] - 2023-11-24T13:56:36.775Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T13:56:43.206Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T13:56:43.206Z - [REQUEST]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.ts
+[NX Daemon Server] - 2023-11-24T13:56:43.206Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T13:56:43.292Z - Time taken for 'hash changed files from watcher' 0.9141000062227249ms
+[NX Daemon Server] - 2023-11-24T13:56:44.083Z - [WATCHER]: frontend/app/src/modules/home/components/index.ts was modified
+[NX Daemon Server] - 2023-11-24T13:56:44.083Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T13:56:50.506Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T13:56:50.506Z - [REQUEST]: frontend/app/src/modules/home/components/index.ts
+[NX Daemon Server] - 2023-11-24T13:56:50.506Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T13:56:50.559Z - Time taken for 'hash changed files from watcher' 1.469300001859665ms
+[NX Daemon Server] - 2023-11-24T13:57:02.655Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.ts was modified
+[NX Daemon Server] - 2023-11-24T13:57:02.655Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T13:57:09.109Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T13:57:09.110Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.ts
+[NX Daemon Server] - 2023-11-24T13:57:09.110Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T13:57:09.237Z - Time taken for 'hash changed files from watcher' 2.225599989295006ms
+[NX Daemon Server] - 2023-11-24T13:57:32.401Z - [WATCHER]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.ts was modified
+[NX Daemon Server] - 2023-11-24T13:57:32.401Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T13:57:38.835Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T13:57:38.835Z - [REQUEST]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.ts
+[NX Daemon Server] - 2023-11-24T13:57:38.835Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T13:57:38.923Z - Time taken for 'hash changed files from watcher' 1.201100006699562ms
+[NX Daemon Server] - 2023-11-24T13:59:44.523Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T13:59:44.524Z - [WATCHER]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.ts was modified
+[NX Daemon Server] - 2023-11-24T13:59:50.953Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T13:59:50.953Z - [REQUEST]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.ts
+[NX Daemon Server] - 2023-11-24T13:59:50.953Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T13:59:51.035Z - Time taken for 'hash changed files from watcher' 0.8682000041007996ms
+[NX Daemon Server] - 2023-11-24T13:59:51.109Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T13:59:51.110Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T13:59:57.543Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T13:59:57.543Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T13:59:57.543Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T13:59:57.626Z - Time taken for 'hash changed files from watcher' 0.8907999992370605ms
+[NX Daemon Server] - 2023-11-24T14:00:47.174Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T14:00:47.174Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T14:00:53.608Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T14:00:53.608Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T14:00:53.608Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T14:00:53.693Z - Time taken for 'hash changed files from watcher' 1.5720999985933304ms
+[NX Daemon Server] - 2023-11-24T14:01:17.780Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T14:01:17.780Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T14:01:24.207Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T14:01:24.207Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T14:01:24.207Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T14:01:24.287Z - Time taken for 'hash changed files from watcher' 1.1061999946832657ms
+[NX Daemon Server] - 2023-11-24T14:02:03.042Z - [WATCHER]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.html was modified
+[NX Daemon Server] - 2023-11-24T14:02:03.042Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T14:02:09.476Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T14:02:09.476Z - [REQUEST]: frontend/app/src/modules/home/components/molecule/description-info/description-info.component.html
+[NX Daemon Server] - 2023-11-24T14:02:09.476Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T14:02:09.563Z - Time taken for 'hash changed files from watcher' 1.0810000002384186ms

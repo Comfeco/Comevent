@@ -3660,3 +3660,1318 @@ ENOENT: no such file or directory, scandir 'C:\projects\Comevent\database'
 [1m[31m[39m[22m
 [37m[39m
 [37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m401.81 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T01:29:32.916Z[39m[37m[22m - Hash: [1m[37me1d47bf8dad3d0af[39m[37m[22m - Time: [1m[37m669[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m17[0m:[93m11[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m17[0m           currentStep() === 2,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m19[0m:[93m11[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m19[0m           currentStep() === 3,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m21[0m:[93m11[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m21[0m           currentStep() === 4,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T01:29:36.890Z[39m[37m[22m - Hash: [1m[37me1d47bf8dad3d0af[39m[37m[22m - Time: [1m[37m465[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m17[0m:[93m11[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m17[0m           currentStep() === 2,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m19[0m:[93m11[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m19[0m           currentStep() === 3,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m21[0m:[93m11[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m21[0m           currentStep() === 4,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m401.72 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T01:32:29.864Z[39m[37m[22m - Hash: [1m[37m15d1e86d4b4c5cb2[39m[37m[22m - Time: [1m[37m967[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m15[0m:[93m11[0m - [91merror[0m[90m TS2349: [0mThis expression is not callable.[39m[22m
+[1m[31m  Type 'Number' has no call signatures.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m15[0m           currentStep() === 1,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m17[0m:[93m11[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m17[0m           currentStep() === 2,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m17[0m:[93m11[0m - [91merror[0m[90m TS2349: [0mThis expression is not callable.[39m[22m
+[1m[31m  Type 'Number' has no call signatures.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m17[0m           currentStep() === 2,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m19[0m:[39m[22m[1m[31m[93m11[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m19[0m           currentStep() === 3,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m19[0m:[93m11[0m - [91merror[0m[90m TS2349: [0mThis expression is not callable.[39m[22m
+[1m[31m  Type 'Number' has no call signatures.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m19[0m           currentStep() === 3,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m21[0m:[93m11[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m21[0m           currentStep() === 4,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m21[0m:[93m11[0m - [91merror[0m[90m TS2349: [0mThis expression is not callable.[39m[22m
+[1m[31m  Type 'Number' has no call signatures.[39m[22m
+[1m[31m[39m[22m[1m[31m[39m[22m
+[1m[31m[7m21[0m           currentStep() === 4,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T01:32:30.818Z[39m[37m[22m - Hash: [1m[37m15d1e86d4b4c5cb2[39m[37m[22m - Time: [1m[37m735[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m15[0m:[93m11[0m - [91merror[0m[90m TS2349: [0mThis expression is not callable.[39m[22m
+[1m[31m  Type 'Number' has no call signatures.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m15[0m           currentStep() === 1,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m17[0m:[93m11[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m17[0m           currentStep() === 2,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m17[0m:[93m11[0m - [91merror[0m[90m TS2349: [0mThis expression is not callable.[39m[22m
+[1m[31m  Type 'Number' has no call signatures.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m17[0m           currentStep() === 2,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m19[0m:[39m[22m[1m[31m[93m11[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m19[0m           currentStep() === 3,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m19[0m:[93m11[0m - [91merror[0m[90m TS2349: [0mThis expression is not callable.[39m[22m
+[1m[31m  Type 'Number' has no call signatures.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m19[0m           currentStep() === 3,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m21[0m:[93m11[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m21[0m           currentStep() === 4,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m21[0m:[93m11[0m - [91merror[0m[90m TS2349: [0mThis expression is not callable.[39m[22m
+[1m[31m  Type 'Number' has no call signatures.[39m[22m
+[1m[31m[39m[22m[1m[31m[39m[22m
+[1m[31m[7m21[0m           currentStep() === 4,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T01:32:31.313Z[39m[37m[22m - Hash: [1m[37m15d1e86d4b4c5cb2[39m[37m[22m - Time: [1m[37m412[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m15[0m:[93m11[0m - [91merror[0m[90m TS2349: [0mThis expression is not callable.[39m[22m
+[1m[31m  Type 'Number' has no call signatures.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m15[0m           currentStep() === 1,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m17[0m:[93m11[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m17[0m           currentStep() === 2,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m17[0m:[93m11[0m - [91merror[0m[90m TS2349: [0mThis expression is not callable.[39m[22m
+[1m[31m  Type 'Number' has no call signatures.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m17[0m           currentStep() === 2,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m19[0m:[39m[22m[1m[31m[93m11[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m19[0m           currentStep() === 3,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m19[0m:[93m11[0m - [91merror[0m[90m TS2349: [0mThis expression is not callable.[39m[22m
+[1m[31m  Type 'Number' has no call signatures.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m19[0m           currentStep() === 3,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m21[0m:[93m11[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m21[0m           currentStep() === 4,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m21[0m:[93m11[0m - [91merror[0m[90m TS2349: [0mThis expression is not callable.[39m[22m
+[1m[31m  Type 'Number' has no call signatures.[39m[22m
+[1m[31m[39m[22m[1m[31m[39m[22m
+[1m[31m[7m21[0m           currentStep() === 4,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m401.72 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T01:32:36.762Z[39m[37m[22m - Hash: [1m[37m7088a561aa4e511e[39m[37m[22m - Time: [1m[37m914[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m17[0m:[93m11[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m17[0m           currentStep === 2,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m19[0m:[93m11[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m19[0m           currentStep === 3,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m21[0m:[93m11[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m21[0m           currentStep === 4,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m401.72 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T01:33:04.044Z[39m[37m[22m - Hash: [1m[37m49de8359e916d368[39m[37m[22m - Time: [1m[37m566[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m17[0m:[93m11[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m17[0m           currentStep === 2,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m19[0m:[93m11[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m19[0m           currentStep === 3,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m21[0m:[93m11[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m21[0m           currentStep === 4,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T01:33:52.315Z[39m[37m[22m - Hash: [1m[37m49de8359e916d368[39m[37m[22m - Time: [1m[37m670[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m17[0m:[93m11[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m17[0m           currentStep === 2,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m19[0m:[93m11[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m19[0m           currentStep === 3,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m21[0m:[93m11[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m21[0m           currentStep === 4,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T01:33:53.805Z[39m[37m[22m - Hash: [1m[37m49de8359e916d368[39m[37m[22m - Time: [1m[37m504[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m17[0m:[93m11[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m17[0m           currentStep === 2,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m19[0m:[93m11[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m19[0m           currentStep === 3,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m21[0m:[93m11[0m - [91merror[0m[90m TS1117: [0mAn object literal cannot have multiple properties with the same name.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m21[0m           currentStep === 4,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m401.45 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T01:36:02.209Z[39m[37m[22m - Hash: [1m[37m6eb30b7ccde546c1[39m[37m[22m - Time: [1m[37m692[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m401.47 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T01:38:00.692Z[39m[37m[22m - Hash: [1m[37m1122bd1649e9dc6a[39m[37m[22m - Time: [1m[37m773[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m401.47 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T01:39:06.509Z[39m[37m[22m - Hash: [1m[37m8ed3f1e99ebd3874[39m[37m[22m - Time: [1m[37m758[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m401.49 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T01:39:39.136Z[39m[37m[22m - Hash: [1m[37m9a7834d56a9a1f92[39m[37m[22m - Time: [1m[37m778[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m401.49 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T01:41:14.492Z[39m[37m[22m - Hash: [1m[37m7592d17007331503[39m[37m[22m - Time: [1m[37m803[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m401.49 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T01:42:26.775Z[39m[37m[22m - Hash: [1m[37m9c0d7df351b8c5dd[39m[37m[22m - Time: [1m[37m778[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m401.48 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T01:43:24.878Z[39m[37m[22m - Hash: [1m[37mff0c7c5ce3844752[39m[37m[22m - Time: [1m[37m610[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m401.48 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T01:44:00.315Z[39m[37m[22m - Hash: [1m[37m68ff25302ef4d5a0[39m[37m[22m - Time: [1m[37m705[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m401.47 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T01:44:26.392Z[39m[37m[22m - Hash: [1m[37m1ddee9d5b5f054f0[39m[37m[22m - Time: [1m[37m704[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m401.49 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T01:45:06.169Z[39m[37m[22m - Hash: [1m[37m2006c6c3e468a9f8[39m[37m[22m - Time: [1m[37m663[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m401.50 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T01:45:16.568Z[39m[37m[22m - Hash: [1m[37md2d6739d6d582850[39m[37m[22m - Time: [1m[37m544[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m401.59 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T01:46:04.243Z[39m[37m[22m - Hash: [1m[37m69a68df649936b70[39m[37m[22m - Time: [1m[37m929[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.html[0m:[93m17[0m:[93m11[0m - [91merror[0m[90m TS2367: [0mThis comparison appears to be unintentional because the types 'WritableSignal<number>' and 'number' have no overlap.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m17[0m           currentStep === step.step,[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m9[0m:[93m16[0m[39m[22m
+[1m[31m    [7m9[0m   templateUrl: './info.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component InfoComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m401.59 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T01:46:07.304Z[39m[37m[22m - Hash: [1m[37mdc30e70c2e8e0609[39m[37m[22m - Time: [1m[37m633[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m401.61 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T01:49:30.478Z[39m[37m[22m - Hash: [1m[37mb98a250e724698fa[39m[37m[22m - Time: [1m[37m726[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m401.62 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T01:49:52.647Z[39m[37m[22m - Hash: [1m[37m83487bf07332937b[39m[37m[22m - Time: [1m[37m743[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m401.64 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T01:50:03.687Z[39m[37m[22m - Hash: [1m[37m3f199df16836358b[39m[37m[22m - Time: [1m[37m649[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m401.69 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:00:26.926Z[39m[37m[22m - Hash: [1m[37m59061407acdcd517[39m[37m[22m - Time: [1m[37m694[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m401.69 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:01:31.955Z[39m[37m[22m - Hash: [1m[37mb4dd4c4198a011ff[39m[37m[22m - Time: [1m[37m623[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m401.68 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:01:48.459Z[39m[37m[22m - Hash: [1m[37m977a9204437d2999[39m[37m[22m - Time: [1m[37m622[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m401.68 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:02:30.537Z[39m[37m[22m - Hash: [1m[37m03a003747f793a0d[39m[37m[22m - Time: [1m[37m619[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m401.80 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:06:17.452Z[39m[37m[22m - Hash: [1m[37m638646c5448e4051[39m[37m[22m - Time: [1m[37m689[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:07:12.131Z[39m[37m[22m - Hash: [1m[37m638646c5448e4051[39m[37m[22m - Time: [1m[37m534[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:07:12.573Z[39m[37m[22m - Hash: [1m[37m638646c5448e4051[39m[37m[22m - Time: [1m[37m385[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:08:21.758Z[39m[37m[22m - Hash: [1m[37m638646c5448e4051[39m[37m[22m - Time: [1m[37m505[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:08:22.309Z[39m[37m[22m - Hash: [1m[37m638646c5448e4051[39m[37m[22m - Time: [1m[37m436[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:08:36.549Z[39m[37m[22m - Hash: [1m[37m638646c5448e4051[39m[37m[22m - Time: [1m[37m522[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:08:37.102Z[39m[37m[22m - Hash: [1m[37m638646c5448e4051[39m[37m[22m - Time: [1m[37m437[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:08:55.920Z[39m[37m[22m - Hash: [1m[37m638646c5448e4051[39m[37m[22m - Time: [1m[37m515[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:08:56.451Z[39m[37m[22m - Hash: [1m[37m638646c5448e4051[39m[37m[22m - Time: [1m[37m413[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m428.92 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:21:59.546Z[39m[37m[22m - Hash: [1m[37me8b2d7cc1cd53890[39m[37m[22m - Time: [1m[37m2731[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m425.66 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:22:25.716Z[39m[37m[22m - Hash: [1m[37mb4469b096ce8e559[39m[37m[22m - Time: [1m[37m1246[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m7[0m:[93m12[0m - [91merror[0m[90m NG1010: [0m'imports' must be an array of components, directives, pipes, or NgModules.[39m[22m
+[1m[31m  Value is of type '[CommonModule, TitleComponent, IconArrowRightComponent, (not statically analyzable), (not statically analyzable), (not statically analyzable), (not statically analyzable)]'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m  7[0m   imports: [[39m[22m
+[1m[31m[7m   [0m [91m           ~[0m[39m[22m
+[1m[31m[7m  8[0m     CommonModule,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m 14[0m     IconHexagonNumberOneComponent,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 15[0m   ],[39m[22m
+[1m[31m[7m   [0m [91m~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m7[0m:[93m12[0m - [91merror[0m[90m NG1010: [0m'imports' must be an array of components, directives, pipes, or NgModules.[39m[22m
+[1m[31m  Value is of type '[CommonModule, TitleComponent, IconArrowRightComponent, (not statically analyzable), (not statically analyzable), (not statically analyzable), (not statically analyzable)]'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m  7[0m   imports: [[39m[22m
+[1m[31m[7m   [0m [91m           ~[0m[39m[22m
+[1m[31m[7m  8[0m     CommonModule,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m 14[0m     IconHexagonNumberOneComponent,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 15[0m   ],[39m[22m
+[1m[31m[7m   [0m [91m~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m7[0m:[93m12[0m - [91merror[0m[90m NG1010: [0m'imports' must be an array of components, directives, pipes, or NgModules.[39m[22m
+[1m[31m  Value is of type '[CommonModule, TitleComponent, IconArrowRightComponent, (not statically analyzable), (not statically analyzable), (not statically analyzable), (not statically analyzable)]'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m  7[0m   imports: [[39m[22m
+[1m[31m[7m   [0m [91m           ~[0m[39m[22m
+[1m[31m[7m  8[0m     CommonModule,[39m[22m[1m[31m[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m 14[0m     IconHexagonNumberOneComponent,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 15[0m   ],[39m[22m
+[1m[31m[7m   [0m [91m~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m7[0m:[93m12[0m - [91merror[0m[90m NG1010: [0m'imports' must be an array of components, directives, pipes, or NgModules.[39m[22m
+[1m[31m  Value is of type '[CommonModule, TitleComponent, IconArrowRightComponent, (not statically analyzable), (not statically analyzable), (not statically analyzable), (not statically analyzable)]'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m  7[0m   imports: [[39m[22m
+[1m[31m[7m   [0m [91m           ~[0m[39m[22m
+[1m[31m[7m  8[0m     CommonModule,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m 14[0m     IconHexagonNumberOneComponent,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 15[0m   ],[39m[22m
+[1m[31m[7m   [0m [91m~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m11[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'IconHexagonNumberOneComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m11[0m     IconHexagonNumberOneComponent,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m12[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'IconHexagonNumberOneComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m12[0m     IconHexagonNumberOneComponent,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m13[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'IconHexagonNumberOneComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m     IconHexagonNumberOneComponent,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.co[39m[22m[1m[31mmponent.ts[0m:[93m14[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'IconHexagonNumberOneComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m14[0m     IconHexagonNumberOneComponent,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m425.66 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:22:42.740Z[39m[37m[22m - Hash: [1m[37m18f144a8d5f01dce[39m[37m[22m - Time: [1m[37m827[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m7[0m:[93m12[0m - [91merror[0m[90m NG1010: [0m'imports' must be an array of components, directives, pipes, or NgModules.[39m[22m
+[1m[31m  Value is of type '[CommonModule, TitleComponent, IconArrowRightComponent, (not statically analyzable), (not statically analyzable), (not statically analyzable), (not statically analyzable)]'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m  7[0m   imports: [[39m[22m
+[1m[31m[7m   [0m [91m           ~[0m[39m[22m
+[1m[31m[7m  8[0m     CommonModule,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m 14[0m     IconHexagonNumberFourComponent,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 15[0m   ],[39m[22m
+[1m[31m[7m   [0m [91m~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m7[0m:[93m12[0m - [91merror[0m[90m NG1010: [0m'imports' must be an array of components, directives, pipes, or NgModules.[39m[22m
+[1m[31m  Value is of type '[CommonModule, TitleComponent, IconArrowRightComponent, (not statically analyzable), (not statically analyzable), (not statically analyzable), (not statically analyzable)]'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m  7[0m   imports: [[39m[22m
+[1m[31m[7m   [0m [91m           ~[0m[39m[22m
+[1m[31m[7m  8[0m     CommonModule,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m 14[0m     IconHexagonNumberFourComponent,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 15[0m   ],[39m[22m
+[1m[31m[7m   [0m [91m~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m7[0m:[93m12[0m - [91merror[0m[90m NG1010: [0m'imports' must be an array of components, directives, pipes, or NgModules.[39m[22m
+[1m[31m  Value is of type '[CommonModule, TitleComponent, IconArrowRightComponent, (not statically analyzable), (not statically analyzable), (not statically analyzable), (not statically analyzable)]'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m  7[0m   imports: [[39m[22m
+[1m[31m[7m   [0m [91m           ~[0m[39m[22m
+[1m[31m[7m  8[0m     CommonModu[39m[22m[1m[31mle,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m 14[0m     IconHexagonNumberFourComponent,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 15[0m   ],[39m[22m
+[1m[31m[7m   [0m [91m~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m7[0m:[93m12[0m - [91merror[0m[90m NG1010: [0m'imports' must be an array of components, directives, pipes, or NgModules.[39m[22m
+[1m[31m  Value is of type '[CommonModule, TitleComponent, IconArrowRightComponent, (not statically analyzable), (not statically analyzable), (not statically analyzable), (not statically analyzable)]'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m  7[0m   imports: [[39m[22m
+[1m[31m[7m   [0m [91m           ~[0m[39m[22m
+[1m[31m[7m  8[0m     CommonModule,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m...[0m [39m[22m
+[1m[31m[7m 14[0m     IconHexagonNumberFourComponent,[39m[22m
+[1m[31m[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[7m 15[0m   ],[39m[22m
+[1m[31m[7m   [0m [91m~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m11[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'IconHexagonNumberOneComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m11[0m     IconHexagonNumberOneComponent,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m12[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'IconHexagonNumberTwoComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m12[0m     IconHexagonNumberTwoComponent,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organisms/info/info.component.ts[0m:[93m13[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'IconHexagonNumberThreeComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m     IconHexagonNumberThreeComponent,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/home/components/organism[39m[22m[1m[31ms/info/info.component.ts[0m:[93m14[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'IconHexagonNumberFourComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m14[0m     IconHexagonNumberFourComponent,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m428.92 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:22:55.368Z[39m[37m[22m - Hash: [1m[37m665720732aa1d2e2[39m[37m[22m - Time: [1m[37m800[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m428.81 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:23:16.025Z[39m[37m[22m - Hash: [1m[37mb02ab2c29af7369b[39m[37m[22m - Time: [1m[37m965[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m430.58 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:24:57.070Z[39m[37m[22m - Hash: [1m[37mb5ea511e7e21d728[39m[37m[22m - Time: [1m[37m943[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m430.60 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:25:36.949Z[39m[37m[22m - Hash: [1m[37mafa08ba0f4eadb24[39m[37m[22m - Time: [1m[37m760[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m430.60 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:25:48.772Z[39m[37m[22m - Hash: [1m[37md4b9e1ad565894a4[39m[37m[22m - Time: [1m[37m763[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m430.61 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:26:00.220Z[39m[37m[22m - Hash: [1m[37m67cd181d1f0a2472[39m[37m[22m - Time: [1m[37m696[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m430.62 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:26:25.843Z[39m[37m[22m - Hash: [1m[37m801a843453e94aa2[39m[37m[22m - Time: [1m[37m748[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m430.65 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:27:07.222Z[39m[37m[22m - Hash: [1m[37m2f1bf2335f82be5d[39m[37m[22m - Time: [1m[37m798[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m430.66 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:27:34.624Z[39m[37m[22m - Hash: [1m[37medd6baa005b39656[39m[37m[22m - Time: [1m[37m776[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m430.65 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:27:41.741Z[39m[37m[22m - Hash: [1m[37m887cfe8a9b68ae11[39m[37m[22m - Time: [1m[37m572[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m430.66 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:27:47.152Z[39m[37m[22m - Hash: [1m[37m9426f7149e45a477[39m[37m[22m - Time: [1m[37m788[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m430.85 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:30:31.323Z[39m[37m[22m - Hash: [1m[37mdc7d881c3ec6f32c[39m[37m[22m - Time: [1m[37m738[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m431.05 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:30:50.456Z[39m[37m[22m - Hash: [1m[37me37705c9c0dcb0a5[39m[37m[22m - Time: [1m[37m1001[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m431.40 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:33:49.510Z[39m[37m[22m - Hash: [1m[37mecbcc6e59a979181[39m[37m[22m - Time: [1m[37m920[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:33:50.040Z[39m[37m[22m - Hash: [1m[37mecbcc6e59a979181[39m[37m[22m - Time: [1m[37m477[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m431.37 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:33:59.334Z[39m[37m[22m - Hash: [1m[37m5d95e47125620d1d[39m[37m[22m - Time: [1m[37m736[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m433.09 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:35:20.777Z[39m[37m[22m - Hash: [1m[37mebfe7d769cfb219f[39m[37m[22m - Time: [1m[37m925[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:36:18.339Z[39m[37m[22m - Hash: [1m[37mebfe7d769cfb219f[39m[37m[22m - Time: [1m[37m607[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:36:18.777Z[39m[37m[22m - Hash: [1m[37mebfe7d769cfb219f[39m[37m[22m - Time: [1m[37m399[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:36:52.793Z[39m[37m[22m - Hash: [1m[37mebfe7d769cfb219f[39m[37m[22m - Time: [1m[37m562[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:36:53.358Z[39m[37m[22m - Hash: [1m[37mebfe7d769cfb219f[39m[37m[22m - Time: [1m[37m451[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:37:23.026Z[39m[37m[22m - Hash: [1m[37mebfe7d769cfb219f[39m[37m[22m - Time: [1m[37m558[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:37:23.698Z[39m[37m[22m - Hash: [1m[37mebfe7d769cfb219f[39m[37m[22m - Time: [1m[37m545[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m433.09 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:37:24.925Z[39m[37m[22m - Hash: [1m[37mfa0b2f2b8c0a4228[39m[37m[22m - Time: [1m[37m813[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m433.13 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:38:31.674Z[39m[37m[22m - Hash: [1m[37m8be9bcd47b1c68db[39m[37m[22m - Time: [1m[37m815[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m433.13 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:39:01.242Z[39m[37m[22m - Hash: [1m[37md04f2d03bc2b34c3[39m[37m[22m - Time: [1m[37m1031[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m433.07 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:39:11.988Z[39m[37m[22m - Hash: [1m[37m6eae4c45b78b9c7a[39m[37m[22m - Time: [1m[37m842[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m434.75 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-24T02:41:00.443Z[39m[37m[22m - Hash: [1m[37m2031d116ebe67238[39m[37m[22m - Time: [1m[37m871[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
