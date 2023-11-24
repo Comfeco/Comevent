@@ -11,8 +11,8 @@ import { DescriptionSubscribeComponent, InputSubscribeComponent } from '../..';
     InputSubscribeComponent,
     DescriptionSubscribeComponent,
   ],
-  selector: 'subscribe',
-  templateUrl: './subscribe.component.html',
-  styleUrls: ['./subscribe.component.scss'],
+  selector: 'subscribe-two',
+  templateUrl: './subscribe-two.component.html',
+  styleUrls: ['./subscribe-two.component.scss'],
 })
-export class SubscribeComponent {}
+export class SubscribeTwoComponent {}

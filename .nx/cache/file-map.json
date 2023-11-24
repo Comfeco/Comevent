@@ -3393,7 +3393,7 @@
         },
         {
           "file": "frontend/app/src/modules/home/components/index.ts",
-          "hash": "12630642450919475572"
+          "hash": "5758196037825336504"
         },
         {
           "file": "frontend/app/src/modules/home/components/molecule/input-subscribe/input-subscribe.component.html",
@@ -3482,7 +3482,7 @@
         },
         {
           "file": "frontend/app/src/modules/home/components/organisms/subscribe/subscribe.component.html",
-          "hash": "2853775831278850722"
+          "hash": "6079239641506467090"
         },
         {
           "file": "frontend/app/src/modules/home/components/organisms/subscribe/subscribe.component.scss",
@@ -3490,7 +3490,7 @@
         },
         {
           "file": "frontend/app/src/modules/home/components/organisms/subscribe/subscribe.component.ts",
-          "hash": "14938833950089077370",
+          "hash": "503766881545989519",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -3503,7 +3503,7 @@
         },
         {
           "file": "frontend/app/src/modules/home/pages/home/home.component.html",
-          "hash": "2873207475132903088"
+          "hash": "995138549406368304"
         },
         {
           "file": "frontend/app/src/modules/home/pages/home/home.component.scss",
@@ -3511,7 +3511,7 @@
         },
         {
           "file": "frontend/app/src/modules/home/pages/home/home.component.ts",
-          "hash": "4601661411608212182",
+          "hash": "11263127009316859998",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core"
@@ -3657,6 +3657,40 @@
         {
           "file": "frontend/app/src/assets/png/background-income-one.png",
           "hash": "18397315522616744419"
+        },
+        {
+          "file": "frontend/app/src/modules/home/components/organisms/subscribe-two/subscribe-two.component.html",
+          "hash": "10930619225729542938"
+        },
+        {
+          "file": "frontend/app/src/modules/home/components/organisms/subscribe-two/subscribe-two.component.ts",
+          "hash": "15334827012117076856",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "frontend-ui"
+          ]
+        },
+        {
+          "file": "frontend/app/src/modules/home/components/organisms/subscribe-two/subscribe-two.component.scss",
+          "hash": "8584941096530488631"
+        },
+        {
+          "file": "frontend/app/src/modules/home/components/molecule/description-subscribe/description-subscribe.component.html",
+          "hash": "8289037560982108260"
+        },
+        {
+          "file": "frontend/app/src/modules/home/components/molecule/description-subscribe/description-subscribe.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "frontend/app/src/modules/home/components/molecule/description-subscribe/description-subscribe.component.ts",
+          "hash": "18372827681728820174",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "frontend-ui"
+          ]
         }
       ],
       "api-e2e": [

@@ -1,0 +1,34 @@
+.background-income-one {
+  background-image: linear-gradient(
+      181deg,
+      #000 -10.13%,
+      rgba(0, 0, 0, 0) 102.29%
+    ),
+    url(/assets/png/background-income-one.png);
+}
+
+.background-income-two {
+  background-image: linear-gradient(
+      181deg,
+      #000 -10.13%,
+      rgba(0, 0, 0, 0) 102.29%
+    ),
+    url(/assets/png/background-income-two.png);
+}
+
+.background-income-three {
+  background-image: linear-gradient(
+      181deg,
+      #000 -10.13%,
+      rgba(0, 0, 0, 0) 102.29%
+    ),
+    url(/assets/png/background-income-three.png);
+}
+
+.background-income-one,
+.background-income-two,
+.background-income-three {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
