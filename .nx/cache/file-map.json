@@ -2459,11 +2459,11 @@
         },
         {
           "file": "frontend/app/src/assets/i18n/en.json",
-          "hash": "13333507474390925251"
+          "hash": "2284212487672061789"
         },
         {
           "file": "frontend/app/src/assets/i18n/es.json",
-          "hash": "7762265095391731906"
+          "hash": "5379869932743431433"
         },
         {
           "file": "frontend/app/src/assets/png/area-of-interest.png",
@@ -2696,7 +2696,7 @@
         },
         {
           "file": "frontend/app/src/common/layouts/core-layout/components/organisms/nav/nav.component.scss",
-          "hash": "7321170731172094711"
+          "hash": "9096297925502291916"
         },
         {
           "file": "frontend/app/src/common/layouts/core-layout/components/organisms/nav/nav.component.ts",
@@ -3397,7 +3397,7 @@
         },
         {
           "file": "frontend/app/src/modules/home/components/molecule/input-subscribe/input-subscribe.component.html",
-          "hash": "16191553688087055685"
+          "hash": "10931122674434784268"
         },
         {
           "file": "frontend/app/src/modules/home/components/molecule/input-subscribe/input-subscribe.component.scss",
@@ -3405,10 +3405,11 @@
         },
         {
           "file": "frontend/app/src/modules/home/components/molecule/input-subscribe/input-subscribe.component.ts",
-          "hash": "16205049008227958454",
+          "hash": "12643000475474874584",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
+            "npm:@ngx-translate/core",
             "frontend-ui"
           ]
         },
@@ -3431,7 +3432,7 @@
         },
         {
           "file": "frontend/app/src/modules/home/components/organisms/create-community/create-community.component.html",
-          "hash": "9968460195497716297"
+          "hash": "10762697630576618219"
         },
         {
           "file": "frontend/app/src/modules/home/components/organisms/create-community/create-community.component.scss",
@@ -3439,16 +3440,17 @@
         },
         {
           "file": "frontend/app/src/modules/home/components/organisms/create-community/create-community.component.ts",
-          "hash": "7521724603314590745",
+          "hash": "3756008185559518831",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
+            "npm:@ngx-translate/core",
             "frontend-ui"
           ]
         },
         {
           "file": "frontend/app/src/modules/home/components/organisms/events/events.component.html",
-          "hash": "623632733836582359"
+          "hash": "10271904230000036948"
         },
         {
           "file": "frontend/app/src/modules/home/components/organisms/events/events.component.scss",
@@ -3456,10 +3458,11 @@
         },
         {
           "file": "frontend/app/src/modules/home/components/organisms/events/events.component.ts",
-          "hash": "6580435377570722757",
+          "hash": "4615988356715753459",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
+            "npm:@ngx-translate/core",
             "frontend-ui"
           ]
         },
@@ -3677,7 +3680,7 @@
         },
         {
           "file": "frontend/app/src/modules/home/components/molecule/description-subscribe/description-subscribe.component.html",
-          "hash": "8289037560982108260"
+          "hash": "16891759947465791836"
         },
         {
           "file": "frontend/app/src/modules/home/components/molecule/description-subscribe/description-subscribe.component.scss",
@@ -3685,10 +3688,11 @@
         },
         {
           "file": "frontend/app/src/modules/home/components/molecule/description-subscribe/description-subscribe.component.ts",
-          "hash": "18372827681728820174",
+          "hash": "9918195323854979845",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
+            "npm:@ngx-translate/core",
             "frontend-ui"
           ]
         }

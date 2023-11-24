@@ -4,11 +4,11 @@
   <input
     type="text"
     class="flex-1 px-4 placeholder-subscribe bg-transparent title-h3 text-black-1 dark:text-white-1 outline-none"
-    placeholder="Ingresa tu email aquí"
+    [placeholder]="'home.section.header.placeholderOne' | translate"
   />
   <button
     class="outline-none border-none h-full max-w-max bg-secondary dark:bg-secondary-darkMode hover:bg-secondary-dark hover:dark:bg-secondary hover:dark:text-white-1 title-h6 text-white-1 dark:text-black-1 rounded-xl px-6"
   >
-    Suscríbete
+    {{ 'home.section.header.buttonThree' | translate }}
   </button>
 </div>
