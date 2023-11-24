@@ -2459,11 +2459,11 @@
         },
         {
           "file": "frontend/app/src/assets/i18n/en.json",
-          "hash": "2284212487672061789"
+          "hash": "17306235807127607208"
         },
         {
           "file": "frontend/app/src/assets/i18n/es.json",
-          "hash": "5379869932743431433"
+          "hash": "14374886543258835581"
         },
         {
           "file": "frontend/app/src/assets/png/area-of-interest.png",
@@ -3415,7 +3415,7 @@
         },
         {
           "file": "frontend/app/src/modules/home/components/organisms/characteristics/characteristics.component.html",
-          "hash": "7172293391738854414"
+          "hash": "16142365261771893016"
         },
         {
           "file": "frontend/app/src/modules/home/components/organisms/characteristics/characteristics.component.scss",
@@ -3423,10 +3423,11 @@
         },
         {
           "file": "frontend/app/src/modules/home/components/organisms/characteristics/characteristics.component.ts",
-          "hash": "13724173689199728328",
+          "hash": "16672191503261779886",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
+            "npm:@ngx-translate/core",
             "frontend-ui"
           ]
         },

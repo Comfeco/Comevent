@@ -48,6 +48,16 @@
         "descriptionTwo": "Permanece al tanto de lo último en eventos y noticias de la comunidad. Suscríbete ahora y asegúrate de recibir actualizaciones periódicas, ofertas exclusivas y contenido destacado directamente en tu bandeja de entrada.",
         "placeholderOne": "Ingresa tu email aquí",
         "buttonThree": "Suscríbete"
+      },
+      "characteristics": {
+        "titleOne": "Sumérgete y Comparte",
+        "subtitleOne": "Eventos",
+        "descriptionOne": "Descubre y participa en una amplia gama de eventos emocionantes. Desde proyectos hasta charlas, conecta con experiencias únicas que te inspiran y enriquecen.",
+        "subtitleTwo": "Comunidades",
+        "descriptionTwo": "Únete a nuestras comunidades vibrantes y encuentra personas con intereses comunes. Colabora, comparte ideas y crea lazos en un espacio acogedor y dinámico.",
+        "subtitleThree": "Comercialización",
+        "descriptionThree": "Lleva contigo un pedazo de la experiencia con nuestra exclusiva selección de merchandising. Productos de calidad que celebran tus eventos y comunidades favoritas.",
+        "buttonOne": "Descubrir"
       }
     }
   }

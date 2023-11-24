@@ -1,7 +1,9 @@
 <section
   class="flex flex-col h-[760px] gap-28 justify-center items-center p-16"
 >
-  <c-title variant="title-h2" color="black"> Sumérgete y Comparte </c-title>
+  <c-title variant="title-h2" color="black">
+    {{ 'home.section.characteristics.titleOne' | translate }}
+  </c-title>
 
   <div class="flex flex-row justify-between w-full">
     @for(characteristic of characteristics; track characteristic.id) {
@@ -15,11 +17,11 @@
           [alt]="characteristic.title"
         />
         <c-title variant="title-h3" color="black">{{
-          characteristic.title
+          characteristic.title | translate
         }}</c-title>
 
         <c-title variant="body-medium" color="black" class="leading-7">{{
-          characteristic.description
+          characteristic.description | translate
         }}</c-title>
       </div>
 
@@ -34,7 +36,7 @@
           'title-h6 border-transparent rounded-md items-center justify-start outline-none gap-4 w-full flex flex-row h-10': true
         }"
       >
-        Descubrir
+        {{ 'home.section.characteristics.buttonOne' | translate }}
         <icon-arrow-right
           class="icon-arrow-right transition-transform duration-300 ease-in-out"
           [index]="characteristic.id"

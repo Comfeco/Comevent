@@ -1,10 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 import { IconArrowRightComponent, TitleComponent } from '@ui/components';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, TitleComponent, IconArrowRightComponent],
+  imports: [
+    CommonModule,
+    TitleComponent,
+    IconArrowRightComponent,
+    TranslateModule,
+  ],
   selector: 'characteristics',
   templateUrl: './characteristics.component.html',
   styleUrls: ['./characteristics.component.scss'],
@@ -14,23 +20,20 @@ export class CharacteristicsComponent {
     {
       id: 0,
       icon: './assets/svg/icon-events.svg',
-      title: 'Eventos',
-      description:
-        'Descubre y participa en una amplia gama de eventos emocionantes. Desde proyectos hasta charlas, conecta con experiencias únicas que te inspiran y enriquecen.',
+      title: 'home.section.characteristics.subtitleOne',
+      description: 'home.section.characteristics.descriptionOne',
     },
     {
       id: 1,
       icon: './assets/svg/icon-community.svg',
-      title: 'Comunidades',
-      description:
-        'Únete a nuestras comunidades vibrantes y encuentra personas con intereses comunes. Colabora, comparte ideas y crea lazos en un espacio acogedor y dinámico.',
+      title: 'home.section.characteristics.subtitleTwo',
+      description: 'home.section.characteristics.descriptionTwo',
     },
     {
       id: 2,
       icon: './assets/svg/icon-merchandising.svg',
-      title: 'Comercialización',
-      description:
-        'Lleva contigo un pedazo de la experiencia con nuestra exclusiva selección de merchandising. Productos de calidad que celebran tus eventos y comunidades favoritas.',
+      title: 'home.section.characteristics.subtitleThree',
+      description: 'home.section.characteristics.descriptionThree',
     },
   ];
 }

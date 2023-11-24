@@ -48,6 +48,16 @@
         "descriptionTwo": "Stay up to date with the latest in community news and events. Subscribe now and be sure to receive regular updates, exclusive offers and featured content straight to your inbox.",
         "placeholderOne": "Enter your email here",
         "buttonThree": "Subscribe"
+      },
+      "characteristics": {
+        "titleOne": "Dive in and Share",
+        "subtitleOne": "Events",
+        "descriptionOne": "Discover and participate in a wide range of exciting events. From projects to talks, connect with unique experiences that inspire and enrich you.",
+        "subtitleTwo": "Communities",
+        "descriptionTwo": "Join our vibrant communities and find people with common interests. Collaborate, share ideas and create bonds in a welcoming and dynamic space.",
+        "subtitleThree": "Merchandising",
+        "descriptionThree": "Take a piece of the experience with you with our exclusive selection of merchandise. Quality products that celebrate your favorite events and communities.",
+        "buttonOne": "Discover"
       }
     }
   }
