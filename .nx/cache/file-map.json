@@ -2459,11 +2459,11 @@
         },
         {
           "file": "frontend/app/src/assets/i18n/en.json",
-          "hash": "17617006339615941478"
+          "hash": "18251831433824332373"
         },
         {
           "file": "frontend/app/src/assets/i18n/es.json",
-          "hash": "17646186615446161221"
+          "hash": "514610659497462081"
         },
         {
           "file": "frontend/app/src/assets/png/area-of-interest.png",
@@ -3469,7 +3469,7 @@
         },
         {
           "file": "frontend/app/src/modules/home/components/organisms/info/info.component.html",
-          "hash": "9603219011237871019"
+          "hash": "1103488285578751939"
         },
         {
           "file": "frontend/app/src/modules/home/components/organisms/info/info.component.scss",
@@ -3636,7 +3636,7 @@
         },
         {
           "file": "frontend/app/src/modules/home/components/organisms/income/income.component.html",
-          "hash": "1879923883175065289"
+          "hash": "934444364087855075"
         },
         {
           "file": "frontend/app/src/modules/home/components/organisms/income/income.component.scss",
@@ -3644,10 +3644,11 @@
         },
         {
           "file": "frontend/app/src/modules/home/components/organisms/income/income.component.ts",
-          "hash": "17006369960527274279",
+          "hash": "14411955542083741848",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
+            "npm:@ngx-translate/core",
             "frontend-ui"
           ]
         },

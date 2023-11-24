@@ -72,6 +72,17 @@
         "subtitleTwo": "Paso 2",
         "subtitleThree": "Paso 3",
         "subtitleFour": "Paso 4"
+      },
+      "income": {
+        "titleOne": "Obtén ingresos para tu comunidad",
+        "descriptionOne": "Maximiza el potencial de tu comunidad con múltiples flujos de ingresos. Desde suscripciones exclusivas hasta ventas de mercancía y eventos especiales, abre las puertas a nuevas oportunidades económicas mientras fortaleces el espíritu comunitario.",
+        "descriptionTwo": "Monetiza tu pasión creando una comunidad de suscripción. Ofrece contenido exclusivo y construye un flujo de ingresos sostenible.",
+        "descriptionThree": "Convierte tus ideas en productos y abre un nuevo canal de ingresos vendiendo mercancía única en nuestra tienda especializada.",
+        "descriptionFour": "Organiza eventos que cautiven y capitaliza tu talento. Obtén beneficios económicos mientras conectas con tu audiencia.",
+        "buttonOne": "Crear comunidad",
+        "subtitleOne": "Genera ingresos con las suscripciones de tu comunidad",
+        "subtitleTwo": "Vende objetos exclusivos en la tienda",
+        "subtitleThree": "Genere ingresos con eventos"
       }
     }
   }
