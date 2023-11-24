@@ -58,6 +58,20 @@
         "subtitleThree": "Merchandising",
         "descriptionThree": "Take a piece of the experience with you with our exclusive selection of merchandise. Quality products that celebrate your favorite events and communities.",
         "buttonOne": "Discover"
+      },
+      "steps": {
+        "titleOne": "Register at Comevent",
+        "titleTwo": "Find your favorite community",
+        "titleThree": "Register for an event",
+        "titleFour": "Join your group and enjoy",
+        "descriptionOne": "Create your Comevent account and access the world of communities and events. Your next memorable encounter starts here!",
+        "descriptionTwo": "Explore communities that resonate with you and connect with people who share your passions and interests",
+        "descriptionThree": "Choose from a variety of events and secure your place. Adventure and learning await you!",
+        "descriptionFour": "Be part of a group that inspires you, participate in exclusive activities and enjoy every moment with us.",
+        "subtitleOne": "Step 1",
+        "subtitleTwo": "Step 2",
+        "subtitleThree": "Step 3",
+        "subtitleFour": "Step 4"
       }
     }
   }

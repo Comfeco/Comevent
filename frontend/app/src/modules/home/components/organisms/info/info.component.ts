@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, signal } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 import {
   IconArrowRightComponent,
   IconHexagonNumberFourComponent,
@@ -21,6 +22,7 @@ import { DescriptionInfoComponent } from '../..';
     IconHexagonNumberThreeComponent,
     IconHexagonNumberFourComponent,
     DescriptionInfoComponent,
+    TranslateModule,
   ],
   selector: 'info',
   templateUrl: './info.component.html',
@@ -32,46 +34,42 @@ export class InfoComponent {
   steps = [
     {
       step: 1,
-      title: 'Paso 1',
+      title: 'home.section.steps.subtitleOne',
     },
     {
       step: 2,
-      title: 'Paso 2',
+      title: 'home.section.steps.subtitleTwo',
     },
     {
       step: 3,
-      title: 'Paso 3',
+      title: 'home.section.steps.subtitleThree',
     },
     {
       step: 4,
-      title: 'Paso 4',
+      title: 'home.section.steps.subtitleFour',
     },
   ];
 
   infos = [
     {
       id: 1,
-      title: 'Registrate en Comevent',
-      description:
-        'Crea tu cuenta en Comevent y accede al mundo de las comunidades y eventos. ¡Tu próximo encuentro memorable comienza aquí!',
+      title: 'home.section.steps.titleOne',
+      description: 'home.section.steps.descriptionOne',
     },
     {
       id: 2,
-      title: 'Busca tu comunidad favorita',
-      description:
-        'Explora comunidades que resuenan contigo y conecta con personas que comparten tus pasiones e intereses',
+      title: 'home.section.steps.titleTwo',
+      description: 'home.section.steps.descriptionTwo',
     },
     {
       id: 3,
-      title: 'Regístrate en un evento',
-      description:
-        'Elige entre una diversidad de eventos y asegura tu lugar. ¡La aventura y el aprendizaje te esperan!',
+      title: 'home.section.steps.titleThree',
+      description: 'home.section.steps.descriptionThree',
     },
     {
       id: 4,
-      title: 'Únete a tu grupo y disfruta',
-      description:
-        'Forma parte de un grupo que te inspira, participa en actividades exclusivas y disfruta cada momento junto a nosotros.',
+      title: 'home.section.steps.titleFour',
+      description: 'home.section.steps.descriptionFour',
     },
   ];
 

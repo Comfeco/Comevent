@@ -8,7 +8,10 @@
   }"
 >
   @for (info of infos; track info.id) { @if (info.id === currentStep()) {
-  <description-info [title]="info.title" [description]="info.description" />
+  <description-info
+    [title]="info.title | translate"
+    [description]="info.description | translate"
+  />
   } }
 
   <div class="flex flex-row h-[150px] background-tab-step">
@@ -37,7 +40,7 @@
           [ngClass]="{ 'text-shadow-step': currentStep() === step.step }"
           class="title-h2 text-white-1"
         >
-          {{ step.title }}
+          {{ step.title | translate }}
         </h2>
       </div>
     </div>

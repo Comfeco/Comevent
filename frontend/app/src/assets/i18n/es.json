@@ -58,6 +58,20 @@
         "subtitleThree": "Comercialización",
         "descriptionThree": "Lleva contigo un pedazo de la experiencia con nuestra exclusiva selección de merchandising. Productos de calidad que celebran tus eventos y comunidades favoritas.",
         "buttonOne": "Descubrir"
+      },
+      "steps": {
+        "titleOne": "Registrate en Comevent",
+        "titleTwo": "Busca tu comunidad favorita",
+        "titleThree": "Regístrate en un evento",
+        "titleFour": "Únete a tu grupo y disfruta",
+        "descriptionOne": "Crea tu cuenta en Comevent y accede al mundo de las comunidades y eventos. ¡Tu próximo encuentro memorable comienza aquí!",
+        "descriptionTwo": "Explora comunidades que resuenan contigo y conecta con personas que comparten tus pasiones e intereses",
+        "descriptionThree": "Elige entre una diversidad de eventos y asegura tu lugar. ¡La aventura y el aprendizaje te esperan!",
+        "descriptionFour": "Forma parte de un grupo que te inspira, participa en actividades exclusivas y disfruta cada momento junto a nosotros.",
+        "subtitleOne": "Paso 1",
+        "subtitleTwo": "Paso 2",
+        "subtitleThree": "Paso 3",
+        "subtitleFour": "Paso 4"
       }
     }
   }
