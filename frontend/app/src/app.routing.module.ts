@@ -14,12 +14,9 @@ export const routes: Route[] = [
         loadChildren: () => import('./modules/auth/pages/routes'),
       },
       {
-        path: 'dashboard',
+        path: 'user',
         canActivate: [PrivateGuard],
-        loadChildren: () =>
-          import('./modules/dashboard').then(
-            (module) => module.DashboardModule
-          ),
+        loadChildren: () => import('./modules/user-profile/pages/routes'),
       },
       {
         path: '',

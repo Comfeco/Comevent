@@ -60,7 +60,7 @@ export class AppComponent implements OnInit {
           allowedPublicRoutes.includes(currentRoute) ||
           isChangePasswordRoute(currentRoute)
         ) {
-          this.router.navigateByUrl('/dashboard');
+          this.router.navigateByUrl('/user/profile');
         }
         break;
       case AuthStatus.NOT_AUTHENTICATED:

@@ -1,0 +1,13 @@
+<nav
+  class="flex justify-center items-center bg-gray-0 dark:bg-black-1 w-full flex-row gap-14 h-[150px]"
+>
+  @for (route of routes; track route.icon) {
+  <button-header-profile
+    [icon]="route.icon"
+    [title]="route.title"
+    [link]="route.link"
+  />
+  }
+</nav>
+
+<router-outlet />

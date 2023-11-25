@@ -1,12 +1,13 @@
 export * from './components';
+export * from './components/molecules/button-header-profile/button-header-profile.component';
 export * from './components/organism';
 export * from './components/organism/form-change-pass/form-change-pass.component';
 export * from './components/organism/form-change-pass/form-change-pass.module';
-export * from './dashboard-routing.module';
-export * from './dashboard.module';
-export * from './pages/panel';
+export * from './components/organism/layout-profile/layout-profile.component';
+export * from './pages/profile/profile.component';
 export * from './pages/reset-pass/change-pass.component';
 export * from './pages/reset-pass/change-pass.module';
+export { default as routes } from './pages/routes';
 export * from './service/api';
 export * from './service/state';
 export * from './types';

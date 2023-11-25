@@ -10355,3 +10355,719 @@ Error: EPERM: operation not permitted, rename 'c:\projects\Comevent\.nx\cache\pr
 [NX Daemon Server] - 2023-11-24T22:23:16.988Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
 [NX Daemon Server] - 2023-11-24T22:23:16.988Z - [REQUEST]: 
 [NX Daemon Server] - 2023-11-24T22:23:17.083Z - Time taken for 'hash changed files from watcher' 1.2330999970436096ms
+[NX Daemon Server] - 2023-11-24T22:26:34.921Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T22:26:34.923Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/info/info.component.html was modified
+[NX Daemon Server] - 2023-11-24T22:26:35.450Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T22:26:36.838Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T22:26:41.350Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T22:26:41.350Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/info/info.component.html
+[NX Daemon Server] - 2023-11-24T22:26:41.350Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T22:26:41.429Z - Time taken for 'hash changed files from watcher' 1.6107999980449677ms
+[NX Daemon Server] - 2023-11-24T22:29:35.036Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/income/income.component.ts was modified
+[NX Daemon Server] - 2023-11-24T22:29:35.036Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T22:29:35.766Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T22:29:37.084Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T22:29:41.465Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T22:29:41.465Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/income/income.component.ts
+[NX Daemon Server] - 2023-11-24T22:29:41.465Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T22:29:41.546Z - Time taken for 'hash changed files from watcher' 1.059799998998642ms
+[NX Daemon Server] - 2023-11-24T22:32:33.402Z - [WATCHER]: frontend/app/src/assets/i18n/es.json was modified
+[NX Daemon Server] - 2023-11-24T22:32:33.403Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T22:32:35.126Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T22:32:39.829Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T22:32:39.829Z - [REQUEST]: frontend/app/src/assets/i18n/es.json
+[NX Daemon Server] - 2023-11-24T22:32:39.829Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T22:32:39.924Z - Time taken for 'hash changed files from watcher' 0.9905000030994415ms
+[NX Daemon Server] - 2023-11-24T22:34:04.823Z - [WATCHER]: frontend/app/src/assets/i18n/en.json was modified
+[NX Daemon Server] - 2023-11-24T22:34:04.823Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T22:34:06.643Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T22:34:11.256Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T22:34:11.256Z - [REQUEST]: frontend/app/src/assets/i18n/en.json
+[NX Daemon Server] - 2023-11-24T22:34:11.256Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T22:34:11.348Z - Time taken for 'hash changed files from watcher' 0.9690999984741211ms
+[NX Daemon Server] - 2023-11-24T22:36:24.837Z - [WATCHER]: frontend/app/src/modules/home/components/organisms/income/income.component.html was modified
+[NX Daemon Server] - 2023-11-24T22:36:24.838Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T22:36:26.097Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T22:36:27.433Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-24T22:36:31.276Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-24T22:36:31.276Z - [REQUEST]: frontend/app/src/modules/home/components/organisms/income/income.component.html
+[NX Daemon Server] - 2023-11-24T22:36:31.276Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-24T22:36:31.361Z - Time taken for 'hash changed files from watcher' 1.5377999991178513ms
+[NX Daemon Server] - 2023-11-25T01:36:24.855Z - There are 3 open connections. Reset inactivity timer.
+[NX Daemon Server] - 2023-11-25T01:50:35.163Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-25T01:50:35.230Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-25T20:52:05.981Z - Started listening on: \\.\pipe\nx\C:\Users\David\AppData\Local\Temp\1333570d747707fc9927\d.sock
+[NX Daemon Server] - 2023-11-25T20:52:05.993Z - [WATCHER]: Subscribed to changes within: c:\projects\Comevent (native)
+[NX Daemon Server] - 2023-11-25T20:52:05.994Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-25T20:52:05.995Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-25T20:52:05.996Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-25T20:52:05.998Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-25T20:52:06.741Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T20:52:06.742Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T20:52:06.742Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T20:52:06.829Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-25T20:52:06.832Z - Time taken for 'total for creating and serializing project graph' 830.8862000107765ms
+[NX Daemon Server] - 2023-11-25T20:52:06.832Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-25T20:52:06.832Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 831. Response time: 3.
+[NX Daemon Server] - 2023-11-25T20:52:06.838Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-25T20:52:06.839Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-25T20:52:06.839Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-25T20:52:06.839Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-25T20:52:06.844Z - [REQUEST]: Responding to the client. handleRequestFileData
+[NX Daemon Server] - 2023-11-25T20:52:06.844Z - Done responding to the client handleRequestFileData
+[NX Daemon Server] - 2023-11-25T20:52:06.844Z - Handled REQUEST_FILE_DATA. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2023-11-25T21:07:44.571Z - Started listening on: \\.\pipe\nx\C:\Users\David\AppData\Local\Temp\1333570d747707fc9927\d.sock
+[NX Daemon Server] - 2023-11-25T21:07:44.574Z - [WATCHER]: Subscribed to changes within: c:\projects\Comevent (native)
+[NX Daemon Server] - 2023-11-25T21:07:44.587Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-25T21:07:44.589Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-25T21:07:44.590Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-25T21:07:44.592Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-25T21:07:44.724Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:07:44.725Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:07:44.725Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:07:45.070Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-25T21:07:45.073Z - Time taken for 'total for creating and serializing project graph' 478.54629999399185ms
+[NX Daemon Server] - 2023-11-25T21:07:45.073Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-25T21:07:45.073Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 478. Response time: 3.
+[NX Daemon Server] - 2023-11-25T21:07:45.080Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-25T21:07:45.081Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-25T21:07:45.081Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-25T21:07:45.081Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-25T21:07:45.086Z - [REQUEST]: Responding to the client. handleRequestFileData
+[NX Daemon Server] - 2023-11-25T21:07:45.086Z - Done responding to the client handleRequestFileData
+[NX Daemon Server] - 2023-11-25T21:07:45.086Z - Handled REQUEST_FILE_DATA. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2023-11-25T21:08:12.287Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/panel was deleted
+[NX Daemon Server] - 2023-11-25T21:08:12.287Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:08:12.414Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:08:12.414Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:08:12.414Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/panel
+[NX Daemon Server] - 2023-11-25T21:08:12.469Z - Time taken for 'hash changed files from watcher' 1.625799983739853ms
+[NX Daemon Server] - 2023-11-25T21:09:14.278Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:09:14.279Z - [WATCHER]: 3 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-25T21:09:14.415Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:09:14.415Z - [REQUEST]: frontend/app/src/modules/user-profile/components/layout-profile/root.component.ts,frontend/app/src/modules/user-profile/components/layout-profile/root.component.html,frontend/app/src/modules/user-profile/components/layout-profile/root.component.scss
+[NX Daemon Server] - 2023-11-25T21:09:14.415Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:09:14.460Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:09:14.461Z - Time taken for 'hash changed files from watcher' 6.338699996471405ms
+[NX Daemon Server] - 2023-11-25T21:09:23.776Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:09:23.777Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-25T21:09:23.905Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:09:23.905Z - [REQUEST]: frontend/app/src/modules/user-profile/components/layout-profile/layout-profile.component.html
+[NX Daemon Server] - 2023-11-25T21:09:23.905Z - [REQUEST]: frontend/app/src/modules/user-profile/components/layout-profile/root.component.html
+[NX Daemon Server] - 2023-11-25T21:09:23.945Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:09:23.947Z - Time taken for 'hash changed files from watcher' 1.3183000087738037ms
+[NX Daemon Server] - 2023-11-25T21:09:28.582Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-25T21:09:28.582Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:09:28.707Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:09:28.707Z - [REQUEST]: frontend/app/src/modules/user-profile/components/layout-profile/layout-profile.component.scss
+[NX Daemon Server] - 2023-11-25T21:09:28.707Z - [REQUEST]: frontend/app/src/modules/user-profile/components/layout-profile/root.component.scss
+[NX Daemon Server] - 2023-11-25T21:09:28.748Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:09:28.749Z - Time taken for 'hash changed files from watcher' 0.8664999902248383ms
+[NX Daemon Server] - 2023-11-25T21:09:35.082Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:09:35.083Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-25T21:09:35.211Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:09:35.211Z - [REQUEST]: frontend/app/src/modules/user-profile/components/layout-profile/layout-profile.component.ts
+[NX Daemon Server] - 2023-11-25T21:09:35.211Z - [REQUEST]: frontend/app/src/modules/user-profile/components/layout-profile/root.component.ts
+[NX Daemon Server] - 2023-11-25T21:09:35.247Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:09:35.247Z - Time taken for 'hash changed files from watcher' 1.1712999939918518ms
+[NX Daemon Server] - 2023-11-25T21:10:19.197Z - [WATCHER]: frontend/app/src/modules/user-profile/components/layout-profile/layout-profile.component.ts was modified
+[NX Daemon Server] - 2023-11-25T21:10:19.197Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:10:19.420Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:10:19.420Z - [REQUEST]: frontend/app/src/modules/user-profile/components/layout-profile/layout-profile.component.ts
+[NX Daemon Server] - 2023-11-25T21:10:19.420Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:10:19.469Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:10:19.471Z - Time taken for 'hash changed files from watcher' 1.0333000123500824ms
+[NX Daemon Server] - 2023-11-25T21:11:02.878Z - [WATCHER]: frontend/app/src/modules/user-profile/components/layout-profile/layout-profile.component.ts was modified
+[NX Daemon Server] - 2023-11-25T21:11:02.878Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:11:03.301Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:11:03.301Z - [REQUEST]: frontend/app/src/modules/user-profile/components/layout-profile/layout-profile.component.ts
+[NX Daemon Server] - 2023-11-25T21:11:03.301Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:11:03.344Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:11:03.345Z - Time taken for 'hash changed files from watcher' 0.8620000183582306ms
+[NX Daemon Server] - 2023-11-25T21:12:36.545Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organisms was deleted
+[NX Daemon Server] - 2023-11-25T21:12:36.545Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:12:37.367Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:12:37.367Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:12:37.367Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organisms
+[NX Daemon Server] - 2023-11-25T21:12:37.407Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:12:37.408Z - Time taken for 'hash changed files from watcher' 0.7644000053405762ms
+[NX Daemon Server] - 2023-11-25T21:12:41.934Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:12:41.935Z - [WATCHER]: frontend/app/src/modules/user-profile/components/layout-profile was deleted
+[NX Daemon Server] - 2023-11-25T21:12:43.570Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:12:43.570Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:12:43.570Z - [REQUEST]: frontend/app/src/modules/user-profile/components/layout-profile
+[NX Daemon Server] - 2023-11-25T21:12:43.617Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:12:43.619Z - Time taken for 'hash changed files from watcher' 0.7919999957084656ms
+[NX Daemon Server] - 2023-11-25T21:13:28.755Z - [WATCHER]: 3 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-25T21:13:28.755Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:13:28.886Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:13:28.886Z - [REQUEST]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/layout-profile.component.html,frontend/app/src/modules/user-profile/components/molecules/button-header-profile/layout-profile.component.scss,frontend/app/src/modules/user-profile/components/molecules/button-header-profile/layout-profile.component.ts
+[NX Daemon Server] - 2023-11-25T21:13:28.886Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:13:28.938Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:13:28.938Z - Time taken for 'hash changed files from watcher' 1.150299996137619ms
+[NX Daemon Server] - 2023-11-25T21:13:38.981Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-25T21:13:38.981Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:13:39.113Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:13:39.114Z - [REQUEST]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.html
+[NX Daemon Server] - 2023-11-25T21:13:39.114Z - [REQUEST]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/layout-profile.component.html
+[NX Daemon Server] - 2023-11-25T21:13:39.157Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:13:39.158Z - Time taken for 'hash changed files from watcher' 1.006500005722046ms
+[NX Daemon Server] - 2023-11-25T21:13:43.338Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-25T21:13:43.338Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:13:43.462Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:13:43.462Z - [REQUEST]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.scss
+[NX Daemon Server] - 2023-11-25T21:13:43.462Z - [REQUEST]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/layout-profile.component.scss
+[NX Daemon Server] - 2023-11-25T21:13:43.497Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:13:43.497Z - Time taken for 'hash changed files from watcher' 0.8418999910354614ms
+[NX Daemon Server] - 2023-11-25T21:13:51.288Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:13:51.289Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-25T21:13:51.423Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:13:51.423Z - [REQUEST]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.ts
+[NX Daemon Server] - 2023-11-25T21:13:51.423Z - [REQUEST]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/layout-profile.component.ts
+[NX Daemon Server] - 2023-11-25T21:13:51.468Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:13:51.470Z - Time taken for 'hash changed files from watcher' 1.2540000081062317ms
+[NX Daemon Server] - 2023-11-25T21:14:16.302Z - [WATCHER]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.ts was modified
+[NX Daemon Server] - 2023-11-25T21:14:16.302Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:14:16.522Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:14:16.522Z - [REQUEST]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.ts
+[NX Daemon Server] - 2023-11-25T21:14:16.522Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:14:16.560Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:14:16.560Z - Time taken for 'hash changed files from watcher' 1.149399995803833ms
+[NX Daemon Server] - 2023-11-25T21:14:34.029Z - [WATCHER]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.html was modified
+[NX Daemon Server] - 2023-11-25T21:14:34.029Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:14:34.462Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:14:34.462Z - [REQUEST]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.html
+[NX Daemon Server] - 2023-11-25T21:14:34.462Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:14:34.509Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:14:34.509Z - Time taken for 'hash changed files from watcher' 1.3100999891757965ms
+[NX Daemon Server] - 2023-11-25T21:17:10.686Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:17:10.688Z - [WATCHER]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.ts was modified
+[NX Daemon Server] - 2023-11-25T21:17:11.513Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:17:11.513Z - [REQUEST]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.ts
+[NX Daemon Server] - 2023-11-25T21:17:11.513Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:17:11.559Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:17:11.561Z - Time taken for 'hash changed files from watcher' 1.434000015258789ms
+[NX Daemon Server] - 2023-11-25T21:20:07.025Z - [WATCHER]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.html was modified
+[NX Daemon Server] - 2023-11-25T21:20:07.025Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:20:08.645Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:20:08.645Z - [REQUEST]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.html
+[NX Daemon Server] - 2023-11-25T21:20:08.645Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:20:08.692Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:20:08.694Z - Time taken for 'hash changed files from watcher' 0.8625999987125397ms
+[NX Daemon Server] - 2023-11-25T21:21:28.297Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:21:28.298Z - [WATCHER]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.html was modified
+[NX Daemon Server] - 2023-11-25T21:21:31.529Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:21:31.529Z - [REQUEST]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.html
+[NX Daemon Server] - 2023-11-25T21:21:31.529Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:21:31.576Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:21:31.578Z - Time taken for 'hash changed files from watcher' 1.604200005531311ms
+[NX Daemon Server] - 2023-11-25T21:22:28.710Z - [WATCHER]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.html was modified
+[NX Daemon Server] - 2023-11-25T21:22:28.710Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:22:35.136Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:22:35.137Z - [REQUEST]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.html
+[NX Daemon Server] - 2023-11-25T21:22:35.137Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:22:35.183Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:22:35.185Z - Time taken for 'hash changed files from watcher' 1.243699997663498ms
+[NX Daemon Server] - 2023-11-25T21:22:51.287Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:22:51.289Z - [WATCHER]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.html was modified
+[NX Daemon Server] - 2023-11-25T21:22:57.716Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:22:57.716Z - [REQUEST]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.html
+[NX Daemon Server] - 2023-11-25T21:22:57.716Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:22:57.768Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:22:57.770Z - Time taken for 'hash changed files from watcher' 1.6562999784946442ms
+[NX Daemon Server] - 2023-11-25T21:23:12.671Z - [WATCHER]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.html was modified
+[NX Daemon Server] - 2023-11-25T21:23:12.672Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:23:19.106Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:23:19.106Z - [REQUEST]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.html
+[NX Daemon Server] - 2023-11-25T21:23:19.106Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:23:19.148Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:23:19.150Z - Time taken for 'hash changed files from watcher' 0.8844999969005585ms
+[NX Daemon Server] - 2023-11-25T21:24:06.728Z - [WATCHER]: frontend/app/src/modules/user-profile/components/index.ts was modified
+[NX Daemon Server] - 2023-11-25T21:24:06.729Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:24:13.159Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:24:13.160Z - [REQUEST]: frontend/app/src/modules/user-profile/components/index.ts
+[NX Daemon Server] - 2023-11-25T21:24:13.160Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:24:13.208Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:24:13.210Z - Time taken for 'hash changed files from watcher' 1.2466000020503998ms
+[NX Daemon Server] - 2023-11-25T21:24:13.548Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:24:13.549Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/layout-profile/layout-profile.component.ts was modified
+[NX Daemon Server] - 2023-11-25T21:24:19.977Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:24:19.977Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/layout-profile/layout-profile.component.ts
+[NX Daemon Server] - 2023-11-25T21:24:19.977Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:24:20.025Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:24:20.028Z - Time taken for 'hash changed files from watcher' 0.9519000053405762ms
+[NX Daemon Server] - 2023-11-25T21:27:00.527Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/layout-profile/layout-profile.component.ts was modified
+[NX Daemon Server] - 2023-11-25T21:27:00.527Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:27:06.951Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:27:06.951Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/layout-profile/layout-profile.component.ts
+[NX Daemon Server] - 2023-11-25T21:27:06.951Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:27:06.996Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:27:06.996Z - Time taken for 'hash changed files from watcher' 1.0380000174045563ms
+[NX Daemon Server] - 2023-11-25T21:28:00.632Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/layout-profile/layout-profile.component.ts was modified
+[NX Daemon Server] - 2023-11-25T21:28:00.632Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:28:07.057Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:28:07.057Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/layout-profile/layout-profile.component.ts
+[NX Daemon Server] - 2023-11-25T21:28:07.057Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:28:07.099Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:28:07.101Z - Time taken for 'hash changed files from watcher' 1.6019999980926514ms
+[NX Daemon Server] - 2023-11-25T21:30:26.449Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:30:26.450Z - [WATCHER]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.html was modified
+[NX Daemon Server] - 2023-11-25T21:30:32.878Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:30:32.878Z - [REQUEST]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.html
+[NX Daemon Server] - 2023-11-25T21:30:32.878Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:30:32.922Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:30:32.924Z - Time taken for 'hash changed files from watcher' 0.9927999973297119ms
+[NX Daemon Server] - 2023-11-25T21:31:28.620Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/layout-profile/layout-profile.component.ts was modified
+[NX Daemon Server] - 2023-11-25T21:31:28.620Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:31:35.042Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:31:35.042Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/layout-profile/layout-profile.component.ts
+[NX Daemon Server] - 2023-11-25T21:31:35.042Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:31:35.088Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:31:35.089Z - Time taken for 'hash changed files from watcher' 1.0947999954223633ms
+[NX Daemon Server] - 2023-11-25T21:35:32.195Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:35:32.197Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/layout-profile/layout-profile.component.ts was modified
+[NX Daemon Server] - 2023-11-25T21:35:38.630Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:35:38.630Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/layout-profile/layout-profile.component.ts
+[NX Daemon Server] - 2023-11-25T21:35:38.630Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:35:38.676Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:35:38.678Z - Time taken for 'hash changed files from watcher' 1.0230000019073486ms
+[NX Daemon Server] - 2023-11-25T21:36:33.808Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:36:33.809Z - [WATCHER]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.ts was modified
+[NX Daemon Server] - 2023-11-25T21:36:40.242Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:36:40.242Z - [REQUEST]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.ts
+[NX Daemon Server] - 2023-11-25T21:36:40.242Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:36:40.290Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:36:40.292Z - Time taken for 'hash changed files from watcher' 0.9268999993801117ms
+[NX Daemon Server] - 2023-11-25T21:36:46.097Z - [WATCHER]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.html was modified
+[NX Daemon Server] - 2023-11-25T21:36:46.097Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:36:52.524Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:36:52.524Z - [REQUEST]: frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.html
+[NX Daemon Server] - 2023-11-25T21:36:52.524Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:36:52.567Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:36:52.569Z - Time taken for 'hash changed files from watcher' 0.8999000191688538ms
+[NX Daemon Server] - 2023-11-25T21:37:12.898Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/layout-profile/layout-profile.component.html was modified
+[NX Daemon Server] - 2023-11-25T21:37:12.898Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:37:19.319Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:37:19.319Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/layout-profile/layout-profile.component.html
+[NX Daemon Server] - 2023-11-25T21:37:19.319Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:37:19.362Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:37:19.363Z - Time taken for 'hash changed files from watcher' 0.9080999791622162ms
+[NX Daemon Server] - 2023-11-25T21:38:58.029Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:38:58.030Z - [WATCHER]: frontend/app/src/modules/user-profile/components/organism/layout-profile/layout-profile.component.html was modified
+[NX Daemon Server] - 2023-11-25T21:39:04.461Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:39:04.461Z - [REQUEST]: frontend/app/src/modules/user-profile/components/organism/layout-profile/layout-profile.component.html
+[NX Daemon Server] - 2023-11-25T21:39:04.461Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:39:04.506Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:39:04.507Z - Time taken for 'hash changed files from watcher' 1.2953999936580658ms
+[NX Daemon Server] - 2023-11-25T21:40:03.547Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/routes.ts was created or restored
+[NX Daemon Server] - 2023-11-25T21:40:03.547Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:40:03.691Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:40:03.691Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/routes.ts
+[NX Daemon Server] - 2023-11-25T21:40:03.692Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:40:03.772Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:40:03.775Z - Time taken for 'hash changed files from watcher' 1.767300009727478ms
+[NX Daemon Server] - 2023-11-25T21:43:12.804Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:43:12.805Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-25T21:43:12.937Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:43:12.937Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/profile/profile.component.html
+[NX Daemon Server] - 2023-11-25T21:43:12.937Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/profile/panel.component.html
+[NX Daemon Server] - 2023-11-25T21:43:12.985Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:43:12.986Z - Time taken for 'hash changed files from watcher' 1.0825999975204468ms
+[NX Daemon Server] - 2023-11-25T21:43:19.853Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:43:19.855Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-25T21:43:19.981Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:43:19.981Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/profile/profile.component.scss
+[NX Daemon Server] - 2023-11-25T21:43:19.981Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/profile/panel.component.scss
+[NX Daemon Server] - 2023-11-25T21:43:20.024Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:43:20.026Z - Time taken for 'hash changed files from watcher' 0.8458000123500824ms
+[NX Daemon Server] - 2023-11-25T21:43:34.007Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:43:34.009Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-25T21:43:34.141Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:43:34.141Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/profile/profile.component.ts
+[NX Daemon Server] - 2023-11-25T21:43:34.141Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/profile/panel.component.ts
+[NX Daemon Server] - 2023-11-25T21:43:34.199Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:43:34.200Z - Time taken for 'hash changed files from watcher' 1.4424999952316284ms
+[NX Daemon Server] - 2023-11-25T21:45:22.303Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/profile/profile.component.ts was modified
+[NX Daemon Server] - 2023-11-25T21:45:22.303Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:45:22.539Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:45:22.540Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/profile/profile.component.ts
+[NX Daemon Server] - 2023-11-25T21:45:22.540Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:45:22.596Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:45:22.598Z - Time taken for 'hash changed files from watcher' 1.2393999993801117ms
+[NX Daemon Server] - 2023-11-25T21:45:31.795Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/profile/panel.module.ts was deleted
+[NX Daemon Server] - 2023-11-25T21:45:31.795Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:45:32.233Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:45:32.234Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:45:32.234Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/profile/panel.module.ts
+[NX Daemon Server] - 2023-11-25T21:45:32.306Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:45:32.309Z - Time taken for 'hash changed files from watcher' 1.5747999846935272ms
+[NX Daemon Server] - 2023-11-25T21:45:44.849Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/profile/index.ts was deleted
+[NX Daemon Server] - 2023-11-25T21:45:44.849Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:45:45.681Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:45:45.681Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:45:45.681Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/profile/index.ts
+[NX Daemon Server] - 2023-11-25T21:45:45.732Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:45:45.734Z - Time taken for 'hash changed files from watcher' 0.8120000064373016ms
+[NX Daemon Server] - 2023-11-25T21:45:58.166Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:45:58.167Z - [WATCHER]: frontend/app/src/modules/user-profile/index.ts was modified
+[NX Daemon Server] - 2023-11-25T21:45:59.799Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:45:59.799Z - [REQUEST]: frontend/app/src/modules/user-profile/index.ts
+[NX Daemon Server] - 2023-11-25T21:45:59.799Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:45:59.860Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:45:59.863Z - Time taken for 'hash changed files from watcher' 1.203599989414215ms
+[NX Daemon Server] - 2023-11-25T21:46:49.106Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/profile/profile.component.ts was modified
+[NX Daemon Server] - 2023-11-25T21:46:49.106Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:46:52.338Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:46:52.338Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/profile/profile.component.ts
+[NX Daemon Server] - 2023-11-25T21:46:52.338Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:46:52.385Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:46:52.387Z - Time taken for 'hash changed files from watcher' 1.2748999893665314ms
+[NX Daemon Server] - 2023-11-25T21:47:23.804Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/routes.ts was modified
+[NX Daemon Server] - 2023-11-25T21:47:23.804Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:47:30.239Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:47:30.239Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/routes.ts
+[NX Daemon Server] - 2023-11-25T21:47:30.239Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:47:30.284Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:47:30.286Z - Time taken for 'hash changed files from watcher' 0.9210000038146973ms
+[NX Daemon Server] - 2023-11-25T21:47:46.308Z - [WATCHER]: 3 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-25T21:47:46.308Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:47:46.457Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:47:46.457Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/badges/profile.component.html,frontend/app/src/modules/user-profile/pages/badges/profile.component.ts,frontend/app/src/modules/user-profile/pages/badges/profile.component.scss
+[NX Daemon Server] - 2023-11-25T21:47:46.457Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:47:46.534Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:47:46.537Z - Time taken for 'hash changed files from watcher' 9.079799979925156ms
+[NX Daemon Server] - 2023-11-25T21:47:56.866Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:47:56.867Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-25T21:47:57.003Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:47:57.003Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/badges/badges.component.html
+[NX Daemon Server] - 2023-11-25T21:47:57.003Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/badges/profile.component.html
+[NX Daemon Server] - 2023-11-25T21:47:57.047Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:47:57.048Z - Time taken for 'hash changed files from watcher' 1.255299985408783ms
+[NX Daemon Server] - 2023-11-25T21:48:01.621Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-25T21:48:01.621Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:48:01.755Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:48:01.755Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/badges/badges.component.scss
+[NX Daemon Server] - 2023-11-25T21:48:01.755Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/badges/profile.component.scss
+[NX Daemon Server] - 2023-11-25T21:48:01.794Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:48:01.794Z - Time taken for 'hash changed files from watcher' 1.2459999918937683ms
+[NX Daemon Server] - 2023-11-25T21:48:06.286Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:48:06.287Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-25T21:48:06.429Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:48:06.429Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/badges/badges.component.ts
+[NX Daemon Server] - 2023-11-25T21:48:06.429Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/badges/profile.component.ts
+[NX Daemon Server] - 2023-11-25T21:48:06.493Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:48:06.496Z - Time taken for 'hash changed files from watcher' 1.912200003862381ms
+[NX Daemon Server] - 2023-11-25T21:48:23.311Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/badges/badges.component.ts was modified
+[NX Daemon Server] - 2023-11-25T21:48:23.311Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:48:23.538Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:48:23.538Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/badges/badges.component.ts
+[NX Daemon Server] - 2023-11-25T21:48:23.538Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:48:23.584Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:48:23.584Z - Time taken for 'hash changed files from watcher' 1.7894000113010406ms
+[NX Daemon Server] - 2023-11-25T21:48:27.697Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/badges/badges.component.ts was modified
+[NX Daemon Server] - 2023-11-25T21:48:27.697Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:48:28.132Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:48:28.132Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/badges/badges.component.ts
+[NX Daemon Server] - 2023-11-25T21:48:28.132Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:48:28.188Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:48:28.189Z - Time taken for 'hash changed files from watcher' 1.4202000200748444ms
+[NX Daemon Server] - 2023-11-25T21:48:40.479Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/badges/badges.component.ts was modified
+[NX Daemon Server] - 2023-11-25T21:48:40.479Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:48:41.315Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:48:41.315Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/badges/badges.component.ts
+[NX Daemon Server] - 2023-11-25T21:48:41.315Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:48:41.386Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:48:41.388Z - Time taken for 'hash changed files from watcher' 1.1421000063419342ms
+[NX Daemon Server] - 2023-11-25T21:48:43.820Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/badges/badges.component.html was modified
+[NX Daemon Server] - 2023-11-25T21:48:43.820Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:48:45.442Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:48:45.442Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/badges/badges.component.html
+[NX Daemon Server] - 2023-11-25T21:48:45.442Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:48:45.482Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:48:45.482Z - Time taken for 'hash changed files from watcher' 0.9861000180244446ms
+[NX Daemon Server] - 2023-11-25T21:48:46.502Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/badges/badges.component.scss was modified
+[NX Daemon Server] - 2023-11-25T21:48:46.503Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:48:48.358Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:48:48.359Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/badges/badges.component.ts was modified
+[NX Daemon Server] - 2023-11-25T21:48:49.729Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:48:49.729Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/badges/badges.component.scss,frontend/app/src/modules/user-profile/pages/badges/badges.component.ts
+[NX Daemon Server] - 2023-11-25T21:48:49.729Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:48:49.767Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:48:49.767Z - Time taken for 'hash changed files from watcher' 1.093999981880188ms
+[NX Daemon Server] - 2023-11-25T21:48:50.222Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:48:50.224Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/badges/badges.component.html was modified
+[NX Daemon Server] - 2023-11-25T21:48:56.651Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:48:56.651Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/badges/badges.component.html
+[NX Daemon Server] - 2023-11-25T21:48:56.651Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:48:56.689Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:48:56.689Z - Time taken for 'hash changed files from watcher' 1.0223999917507172ms
+[NX Daemon Server] - 2023-11-25T21:49:01.308Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/badges/badges.component.html was modified
+[NX Daemon Server] - 2023-11-25T21:49:01.308Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:49:07.742Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:49:07.742Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/badges/badges.component.html
+[NX Daemon Server] - 2023-11-25T21:49:07.742Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:49:07.782Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:49:07.782Z - Time taken for 'hash changed files from watcher' 1.5974000096321106ms
+[NX Daemon Server] - 2023-11-25T21:49:11.558Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/badges/badges.component.html was modified
+[NX Daemon Server] - 2023-11-25T21:49:11.558Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:49:17.990Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:49:17.990Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/badges/badges.component.html
+[NX Daemon Server] - 2023-11-25T21:49:17.990Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:49:18.033Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:49:18.035Z - Time taken for 'hash changed files from watcher' 0.9057000279426575ms
+[NX Daemon Server] - 2023-11-25T21:49:20.407Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:49:20.408Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/badges/badges.component.html was modified
+[NX Daemon Server] - 2023-11-25T21:49:26.831Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:49:26.831Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/badges/badges.component.html
+[NX Daemon Server] - 2023-11-25T21:49:26.831Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:49:26.868Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:49:26.868Z - Time taken for 'hash changed files from watcher' 1.1938999891281128ms
+[NX Daemon Server] - 2023-11-25T21:49:36.857Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:49:36.858Z - [WATCHER]: 3 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-25T21:49:37.006Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:49:37.007Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/groups/badges.component.ts,frontend/app/src/modules/user-profile/pages/groups/badges.component.scss,frontend/app/src/modules/user-profile/pages/groups/badges.component.html
+[NX Daemon Server] - 2023-11-25T21:49:37.007Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:49:37.107Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:49:37.107Z - Time taken for 'hash changed files from watcher' 2.94310000538826ms
+[NX Daemon Server] - 2023-11-25T21:49:46.939Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:49:46.940Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-25T21:49:47.082Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:49:47.082Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/groups/groups.component.html
+[NX Daemon Server] - 2023-11-25T21:49:47.082Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/groups/badges.component.html
+[NX Daemon Server] - 2023-11-25T21:49:47.133Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:49:47.134Z - Time taken for 'hash changed files from watcher' 1.7466000020503998ms
+[NX Daemon Server] - 2023-11-25T21:49:51.946Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-25T21:49:51.947Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:49:52.084Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:49:52.084Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/groups/groups.component.ts
+[NX Daemon Server] - 2023-11-25T21:49:52.084Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/groups/badges.component.ts
+[NX Daemon Server] - 2023-11-25T21:49:52.145Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:49:52.145Z - Time taken for 'hash changed files from watcher' 1.712799996137619ms
+[NX Daemon Server] - 2023-11-25T21:49:55.778Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-25T21:49:55.779Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:49:55.924Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:49:55.924Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/groups/groups.component.scss
+[NX Daemon Server] - 2023-11-25T21:49:55.924Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/groups/badges.component.scss
+[NX Daemon Server] - 2023-11-25T21:49:55.977Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:49:55.978Z - Time taken for 'hash changed files from watcher' 1.910400003194809ms
+[NX Daemon Server] - 2023-11-25T21:50:12.523Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:50:12.524Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/groups/groups.component.ts was modified
+[NX Daemon Server] - 2023-11-25T21:50:12.749Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:50:12.749Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/groups/groups.component.ts
+[NX Daemon Server] - 2023-11-25T21:50:12.749Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:50:12.791Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:50:12.792Z - Time taken for 'hash changed files from watcher' 1.241899996995926ms
+[NX Daemon Server] - 2023-11-25T21:50:17.909Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/groups/groups.component.html was modified
+[NX Daemon Server] - 2023-11-25T21:50:17.909Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:50:18.338Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:50:18.338Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/groups/groups.component.html
+[NX Daemon Server] - 2023-11-25T21:50:18.338Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:50:18.381Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:50:18.381Z - Time taken for 'hash changed files from watcher' 1.5273000001907349ms
+[NX Daemon Server] - 2023-11-25T21:50:39.988Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:50:39.989Z - [WATCHER]: 3 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-25T21:50:40.139Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:50:40.139Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/events/groups.component.html,frontend/app/src/modules/user-profile/pages/events/groups.component.scss,frontend/app/src/modules/user-profile/pages/events/groups.component.ts
+[NX Daemon Server] - 2023-11-25T21:50:40.139Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:50:40.223Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:50:40.223Z - Time taken for 'hash changed files from watcher' 1.906599998474121ms
+[NX Daemon Server] - 2023-11-25T21:50:48.030Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-25T21:50:48.030Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:50:48.165Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:50:48.165Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/events/events.component.html
+[NX Daemon Server] - 2023-11-25T21:50:48.165Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/events/groups.component.html
+[NX Daemon Server] - 2023-11-25T21:50:48.214Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:50:48.214Z - Time taken for 'hash changed files from watcher' 1.117599993944168ms
+[NX Daemon Server] - 2023-11-25T21:50:52.751Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:50:52.752Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-25T21:50:52.880Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:50:52.880Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/events/events.component.scss
+[NX Daemon Server] - 2023-11-25T21:50:52.880Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/events/groups.component.scss
+[NX Daemon Server] - 2023-11-25T21:50:52.920Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:50:52.920Z - Time taken for 'hash changed files from watcher' 1.559000015258789ms
+[NX Daemon Server] - 2023-11-25T21:50:57.547Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:50:57.548Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-25T21:50:57.699Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:50:57.699Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/events/events.component.ts
+[NX Daemon Server] - 2023-11-25T21:50:57.699Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/events/groups.component.ts
+[NX Daemon Server] - 2023-11-25T21:50:57.782Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:50:57.782Z - Time taken for 'hash changed files from watcher' 1.8528000116348267ms
+[NX Daemon Server] - 2023-11-25T21:51:06.786Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:51:06.787Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/events/events.component.ts was modified
+[NX Daemon Server] - 2023-11-25T21:51:07.031Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:51:07.031Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/events/events.component.ts
+[NX Daemon Server] - 2023-11-25T21:51:07.031Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:51:07.080Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:51:07.080Z - Time taken for 'hash changed files from watcher' 1.478600025177002ms
+[NX Daemon Server] - 2023-11-25T21:51:48.932Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:51:48.933Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/events/events.component.ts was modified
+[NX Daemon Server] - 2023-11-25T21:51:49.356Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:51:49.356Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/events/events.component.ts
+[NX Daemon Server] - 2023-11-25T21:51:49.356Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:51:49.404Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:51:49.404Z - Time taken for 'hash changed files from watcher' 1.1375000178813934ms
+[NX Daemon Server] - 2023-11-25T21:51:58.370Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:51:58.371Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/events/events.component.html was modified
+[NX Daemon Server] - 2023-11-25T21:51:59.202Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:51:59.202Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/events/events.component.html
+[NX Daemon Server] - 2023-11-25T21:51:59.202Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:51:59.247Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:51:59.249Z - Time taken for 'hash changed files from watcher' 1.5449000000953674ms
+[NX Daemon Server] - 2023-11-25T21:52:12.739Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:52:12.741Z - [WATCHER]: 3 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-25T21:52:12.880Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:52:12.881Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/communities/events.component.html,frontend/app/src/modules/user-profile/pages/communities/events.component.scss,frontend/app/src/modules/user-profile/pages/communities/events.component.ts
+[NX Daemon Server] - 2023-11-25T21:52:12.881Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:52:12.959Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:52:12.963Z - Time taken for 'hash changed files from watcher' 1.7550999820232391ms
+[NX Daemon Server] - 2023-11-25T21:52:21.586Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-25T21:52:21.586Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:52:21.718Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:52:21.718Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/communities/communities.component.html
+[NX Daemon Server] - 2023-11-25T21:52:21.718Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/communities/events.component.html
+[NX Daemon Server] - 2023-11-25T21:52:21.770Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:52:21.772Z - Time taken for 'hash changed files from watcher' 1.3946999907493591ms
+[NX Daemon Server] - 2023-11-25T21:52:25.561Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:52:25.562Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-25T21:52:25.688Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:52:25.688Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/communities/communities.component.scss
+[NX Daemon Server] - 2023-11-25T21:52:25.688Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/communities/events.component.scss
+[NX Daemon Server] - 2023-11-25T21:52:25.731Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:52:25.731Z - Time taken for 'hash changed files from watcher' 1.0214000046253204ms
+[NX Daemon Server] - 2023-11-25T21:52:30.316Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:52:30.318Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-11-25T21:52:30.457Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:52:30.457Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/communities/communities.component.ts
+[NX Daemon Server] - 2023-11-25T21:52:30.457Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/communities/events.component.ts
+[NX Daemon Server] - 2023-11-25T21:52:30.511Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:52:30.513Z - Time taken for 'hash changed files from watcher' 2.020799994468689ms
+[NX Daemon Server] - 2023-11-25T21:52:44.100Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/communities/communities.component.ts was modified
+[NX Daemon Server] - 2023-11-25T21:52:44.100Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:52:44.330Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:52:44.330Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/communities/communities.component.ts
+[NX Daemon Server] - 2023-11-25T21:52:44.330Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:52:44.375Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:52:44.375Z - Time taken for 'hash changed files from watcher' 1.619599997997284ms
+[NX Daemon Server] - 2023-11-25T21:52:52.590Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:52:52.591Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/communities/communities.component.html was modified
+[NX Daemon Server] - 2023-11-25T21:52:53.024Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:52:53.025Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/communities/communities.component.html
+[NX Daemon Server] - 2023-11-25T21:52:53.025Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:52:53.073Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:52:53.073Z - Time taken for 'hash changed files from watcher' 2.0239999890327454ms
+[NX Daemon Server] - 2023-11-25T21:55:44.131Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T21:55:44.133Z - [WATCHER]: frontend/app/src/modules/user-profile/pages/routes.ts was modified
+[NX Daemon Server] - 2023-11-25T21:55:44.971Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T21:55:44.971Z - [REQUEST]: frontend/app/src/modules/user-profile/pages/routes.ts
+[NX Daemon Server] - 2023-11-25T21:55:44.971Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T21:55:45.015Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T21:55:45.017Z - Time taken for 'hash changed files from watcher' 1.0240000188350677ms
+[NX Daemon Server] - 2023-11-25T22:02:22.978Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-25T22:02:22.980Z - [WATCHER]: frontend/app/src/app.routing.module.ts was modified
+[NX Daemon Server] - 2023-11-25T22:02:24.605Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-25T22:02:24.605Z - [REQUEST]: frontend/app/src/app.routing.module.ts
+[NX Daemon Server] - 2023-11-25T22:02:24.605Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-25T22:02:24.654Z - Error detected when creating a project graph: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+[NX Daemon Server] - 2023-11-25T22:02:24.654Z - Time taken for 'hash changed files from watcher' 1.3192000091075897ms
+[NX Daemon Server] - 2023-11-25T22:02:52.262Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-25T22:02:52.263Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-25T22:02:52.264Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-25T22:02:52.265Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-25T22:02:52.266Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+Error: Failed to process project dependencies with "nx-js-graph-plugin".
+"Unable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\index.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\pages\\panel\\panel.module.ts: El sistema no puede encontrar la ruta especificada. (os error 3)\nUnable to load c:\\projects\\Comevent\\frontend\\app\\src\\modules\\user-profile\\components\\layout-profile\\layout-profile.component.ts: El sistema no puede encontrar la ruta especificada. (os error 3)"
+    at buildExplicitTypeScriptDependencies (c:\projects\Comevent\node_modules\nx\src\plugins\js\project-graph\build-dependencies\explicit-project-dependencies.js:61:21)
+    at buildExplicitDependencies (c:\projects\Comevent\node_modules\nx\src\plugins\js\project-graph\build-dependencies\build-dependencies.js:19:120)
+    at Object.createDependencies (c:\projects\Comevent\node_modules\nx\src\plugins\js\index.js:70:92)
+    at c:\projects\Comevent\node_modules\nx\src\project-graph\build-project-graph.js:180:47
+    at Array.map (<anonymous>)
+    at updateProjectGraphWithPlugins (c:\projects\Comevent\node_modules\nx\src\project-graph\build-project-graph.js:178:47)
+    at async buildProjectGraphUsingContext (c:\projects\Comevent\node_modules\nx\src\project-graph\build-project-graph.js:98:15)
+    at async buildProjectGraphUsingProjectFileMap (c:\projects\Comevent\node_modules\nx\src\project-graph\build-project-graph.js:62:24)
+    at async createAndSerializeProjectGraph (c:\projects\Comevent\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:171:55)
+    at async Timeout._onTimeout (c:\projects\Comevent\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:79:13) {
+  code: 'GenericFailure'
+}
+[NX Daemon Server] - 2023-11-25T22:02:52.269Z - Done responding to the client null
+[NX Daemon Server] - 2023-11-25T22:06:07.356Z - Started listening on: \\.\pipe\nx\C:\Users\David\AppData\Local\Temp\1333570d747707fc9927\d.sock
+[NX Daemon Server] - 2023-11-25T22:06:07.360Z - [WATCHER]: Subscribed to changes within: C:\projects\Comevent (native)
+[NX Daemon Server] - 2023-11-25T22:06:07.363Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-25T22:06:07.367Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-25T22:06:07.367Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-25T22:06:07.370Z - [REQUEST]: Client Request for Project Graph Received
