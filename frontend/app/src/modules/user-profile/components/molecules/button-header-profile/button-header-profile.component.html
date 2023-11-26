@@ -1,11 +1,44 @@
 <li
   [routerLink]="link"
-  class="flex flex-row justify-center items-center gap-6 outline-none h-[65px] rounded-md bg-transparent hover:bg-primary border-2 border-primary w-[264px]"
+  routerLinkActive="bg-primary text-white-1"
+  [routerLinkActiveOptions]="{ exact: true }"
+  class="flex flex-row justify-center cursor-pointer hover-parent text-primary hover:text-white-1 dark:text-primary-darkMode dark:hover:text-white-1 items-center gap-6 outline-none h-[65px] rounded-md hover:bg-primary border-2 border-primary w-[264px]"
 >
-  @switch (icon) { @case ('icon-profile') { } @case ('icon-badge') { } @case
-  ('icon-groups') { } @case ('icon-events') { } @case ('icon-communities') { } }
-  <span
-    class="title-h6 text-primary hover:text-white-1 dark:text-primary-darkMode dark:hover:text-white-1"
-    >{{ title }}</span
-  >
+  @switch (icon) { @case ('icon-profile') {
+  <icon-profile
+    [ngClass]="{
+      'stroke-white-1': route.url === link,
+      'stroke-primary hover-child': route.url !== link
+    }"
+  />
+  } @case ('icon-badges') {
+  <icon-badges
+    [ngClass]="{
+      'stroke-white-1': route.url === link,
+      'stroke-primary hover-child': route.url !== link
+    }"
+  />
+  } @case ('icon-groups') {
+  <icon-groups
+    [ngClass]="{
+      'stroke-white-1': route.url === link,
+      'stroke-primary hover-child': route.url !== link
+    }"
+  />
+  } @case ('icon-events') {
+  <icon-events
+    [ngClass]="{
+      'stroke-white-1': route.url === link,
+      'stroke-primary hover-child': route.url !== link
+    }"
+  />
+  } @case ('icon-communities') {
+  <icon-communities
+    [ngClass]="{
+      'stroke-white-1': route.url === link,
+      'stroke-primary hover-child': route.url !== link
+    }"
+  />
+  } }
+  <span class="title-h6">{{ title }}</span>
 </li>

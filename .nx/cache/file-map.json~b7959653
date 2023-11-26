@@ -2824,20 +2824,19 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.html",
-          "hash": "16421596363422897551"
+          "hash": "14220556342912624342"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.scss",
-          "hash": "3468717116409489774"
+          "hash": "3244421341483603138"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.ts",
-          "hash": "4273496891730801056",
+          "hash": "3446632213818035650",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
-            "npm:@angular/router",
-            "frontend-ui"
+            "npm:@angular/router"
           ]
         },
         {
@@ -3580,7 +3579,7 @@
         },
         {
           "file": "frontend/ui/components/atoms/icons/index.ts",
-          "hash": "4946518230675738272"
+          "hash": "10548210940556501357"
         },
         {
           "file": "frontend/ui/components/atoms/index.ts",
@@ -3850,7 +3849,7 @@
         },
         {
           "file": "frontend/ui/components/atoms/icons/icon-profile/icon-profile.component.html",
-          "hash": "5839743598337517377"
+          "hash": "6613217884096748188"
         },
         {
           "file": "frontend/ui/components/atoms/icons/icon-profile/icon-profile.component.ts",
@@ -3862,15 +3861,15 @@
         },
         {
           "file": "frontend/ui/components/atoms/icons/icon-profile/icon-profile.component.scss",
-          "hash": "3244421341483603138"
+          "hash": "16045361289177456665"
         },
         {
           "file": "frontend/ui/components/atoms/icons/icon-badges/icon-badges.component.html",
-          "hash": "4857317339052089666"
+          "hash": "14760930197402391846"
         },
         {
           "file": "frontend/ui/components/atoms/icons/icon-badges/icon-badges.component.scss",
-          "hash": "3244421341483603138"
+          "hash": "16045361289177456665"
         },
         {
           "file": "frontend/ui/components/atoms/icons/icon-badges/icon-badges.component.ts",
@@ -3882,7 +3881,7 @@
         },
         {
           "file": "frontend/ui/components/atoms/icons/icon-groups/icon-groups.component.html",
-          "hash": "2806517835489926479"
+          "hash": "16188302769727579164"
         },
         {
           "file": "frontend/ui/components/atoms/icons/icon-groups/icon-groups.component.ts",
@@ -3894,39 +3893,23 @@
         },
         {
           "file": "frontend/ui/components/atoms/icons/icon-groups/icon-groups.component.scss",
-          "hash": "3244421341483603138"
+          "hash": "16045361289177456665"
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-events/icon-events.component.html",
-          "hash": "7040807065693053422"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-events/icon-events.component.ts",
-          "hash": "17516962996037885892",
+          "file": "frontend/ui/components/atoms/icons/icon-events/icon-badges.component.ts",
+          "hash": "9561470033403834179",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core"
           ]
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-events/icon-events.component.scss",
-          "hash": "3244421341483603138"
+          "file": "frontend/ui/components/atoms/icons/icon-events/icon-badges.component.html",
+          "hash": "14760930197402391846"
         },
         {
-          "file": "frontend/ui/components/atoms/icons/icon-communities/icon-communities.component.html",
-          "hash": "16386569043435519896"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-communities/icon-communities.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "frontend/ui/components/atoms/icons/icon-communities/icon-communities.component.ts",
-          "hash": "2883433158991157861",
-          "deps": [
-            "npm:@angular/common",
-            "npm:@angular/core"
-          ]
+          "file": "frontend/ui/components/atoms/icons/icon-events/icon-badges.component.scss",
+          "hash": "16045361289177456665"
         }
       ]
     }

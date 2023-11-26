@@ -1,0 +1,39 @@
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 207 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (aedad3ddf6f128a1)
+[1m[31mDebugger listening on ws:[39m[22m
+[1m[31m//localhost:9229/494dcf79-b26f-4a04-aff1-8750babf2dfd[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/494dcf79-b26f-4a04-aff1-8750babf2dfd[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 17332  - [39m[31m26/11/2023, 4:47:45 p. m. [31m  ERROR[39m[31m [38;5;3m[ExceptionsHandler] [39m[31m[31mdata and hash arguments required[39m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31mError: data and hash arguments required[39m[22m
+[1m[31m    at Object.compareSync (C:\projects\Comevent\node_modules\bcrypt\bcrypt.js:166:15)[39m[22m
+[1m[31m    at AuthService.<anonymous> (C:\projects\Comevent\dist\backend\api\webpack:\src\auth\auth.service.ts:52:17)[39m[22m
+[1m[31m    at Generator.next (<anonymous>)[39m[22m
+[1m[31m    at fulfilled (C:\projects\Comevent\node_modules\tslib\tslib.js:166:62)[39m[22m
+[1m[31m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 207 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (53b901b6def4259d)
+[1m[31mDebugger listening on ws://localhost:9229/8f[39m[22m
+[1m[31me49b6b-7254-4db7-b8cd-73575247d4ed[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/8fe49b6b-7254-4db7-b8cd-73575247d4ed[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 13328  - [39m[31m26/11/2023, 4:51:09 p. m. [31m  ERROR[39m[31m [38;5;3m[ExceptionsHandler] [39m[31m[31mdata and hash arguments required[39m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31mError: data and hash arguments required[39m[22m
+[1m[31m    at Object.compareSync (C:\projects\Comevent\node_modules\bcrypt\bcrypt.js:166:15)[39m[22m
+[1m[31m    at AuthService.<anonymous> (C:\projects\Comevent\dist\backend\api\webpack:\src\auth\auth.service.ts:54:17)[39m[22m
+[1m[31m    at Generator.next (<anonymous>)[39m[22m
+[1m[31m    at fulfilled (C:\projects\Comevent\node_modules\tslib\tslib.js:166:62)[39m[22m
+[1m[31m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 207 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (901f9112872cb679)
+[1m[31mDebugger listening on ws://localh[39m[22m
+[1m[31most:9229/fc5b03b7-ecbd-4d97-8dc6-5542474a76c0[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/fc5b03b7-ecbd-4d97-8dc6-5542474a76c0[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m

@@ -49,6 +49,12 @@ export class AuthService {
   public async login({ email, password }: LoginDTO) {
     const user = await this.userService.findUserByEmail(email);
 
+    if (!password || !user.password) {
+      throw Resp.Error('BAD_REQUEST', "The user's password is wrong");
+    }
+
+    console.log('user', user);
+
     if (!bcrypt.compareSync(password, user.password)) {
       throw Resp.Error('BAD_REQUEST', 'Your password or email are incorrect');
     }
