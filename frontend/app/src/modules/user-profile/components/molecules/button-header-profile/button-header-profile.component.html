@@ -1,6 +1,6 @@
 <li
   [routerLink]="link"
-  routerLinkActive="bg-primary text-white-1"
+  routerLinkActive="bg-primary text-white-1 dark:text-white-1"
   [routerLinkActiveOptions]="{ exact: true }"
   class="flex flex-row justify-center cursor-pointer hover-parent text-primary hover:text-white-1 dark:text-primary-darkMode dark:hover:text-white-1 items-center gap-6 outline-none h-[65px] rounded-md hover:bg-primary border-2 border-primary w-[264px]"
 >
@@ -11,13 +11,13 @@
       'stroke-primary hover-child': route.url !== link
     }"
   />
-  } @case ('icon-badges') {
+  <!-- } @case ('icon-badges') {
   <icon-badges
     [ngClass]="{
       'stroke-white-1': route.url === link,
       'stroke-primary hover-child': route.url !== link
     }"
-  />
+  /> -->
   } @case ('icon-groups') {
   <icon-groups
     [ngClass]="{

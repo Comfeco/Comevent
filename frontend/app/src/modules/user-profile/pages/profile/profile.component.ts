@@ -2,7 +2,11 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit, computed, inject } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ButtonComponent, TitleComponent } from '@ui/components';
-import { CardProfileComponent, UserProfileStateService } from '../..';
+import {
+  CardProfileComponent,
+  CardWithoutNotificationsComponent,
+  UserProfileStateService,
+} from '../..';
 import { TokenService } from '../../../../common/services/token.service';
 import { ILogin } from '../../../auth';
 import { LoginStateService } from '../../../auth/service/state';
@@ -15,6 +19,7 @@ import { LoginStateService } from '../../../auth/service/state';
     ButtonComponent,
     TitleComponent,
     CardProfileComponent,
+    CardWithoutNotificationsComponent,
   ],
   selector: 'profile',
   templateUrl: './profile.component.html',

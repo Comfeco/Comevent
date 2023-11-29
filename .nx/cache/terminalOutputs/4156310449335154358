@@ -258,3 +258,6 @@ webpack compiled [1m[32msuccessfully[39m[22m (7713ac8324710d0d)
 [1m[31mDebugger listening on ws://localhost:9229/2dd851a6-6b2d-476d-9fc6-9f0e3e21b5ea[39m[22m
 [1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
 [1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 3221225786, waiting for changes to restart...[22m
+

@@ -26,11 +26,11 @@ export class LayoutProfileComponent {
       title: 'Mi perfil',
       link: '/user/profile',
     },
-    {
+    /* {
       icon: 'icon-badges',
       title: 'Insignias',
       link: '/user/badges',
-    },
+    }, */
     {
       icon: 'icon-groups',
       title: 'Grupos',
