@@ -4,6 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ButtonComponent, TitleComponent } from '@ui/components';
 import {
   CardProfileComponent,
+  CardWithoutEventsComponent,
   CardWithoutNotificationsComponent,
   UserProfileStateService,
 } from '../..';
@@ -20,6 +21,7 @@ import { LoginStateService } from '../../../auth/service/state';
     TitleComponent,
     CardProfileComponent,
     CardWithoutNotificationsComponent,
+    CardWithoutEventsComponent,
   ],
   selector: 'profile',
   templateUrl: './profile.component.html',

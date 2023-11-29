@@ -4,6 +4,7 @@ export * from './molecules/button-header-profile/button-header-profile.component
 export * from './molecules/card-without-notifications/card-without-notifications.component';
 export * from './organism';
 export * from './organism/card-profile/card-profile.component';
+export * from './organism/card-without-events/card-without-events.component';
 export * from './organism/form-change-pass/form-change-pass.component';
 export * from './organism/form-change-pass/form-change-pass.module';
 export * from './organism/layout-profile/layout-profile.component';

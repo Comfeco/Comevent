@@ -3800,7 +3800,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/index.ts",
-          "hash": "12237554088801925568"
+          "hash": "2277225167154376488"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/molecules/button-action/button-action.component.html",
@@ -3888,7 +3888,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/index.ts",
-          "hash": "4035368464433166112"
+          "hash": "14469163855996036926"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/layout-profile/layout-profile.component.html",
@@ -3977,7 +3977,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/pages/profile/profile.component.html",
-          "hash": "15848718314976057562"
+          "hash": "4720106214760225709"
         },
         {
           "file": "frontend/app/src/modules/user-profile/pages/profile/profile.component.scss",
@@ -3985,7 +3985,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/pages/profile/profile.component.ts",
-          "hash": "8795911115563622010",
+          "hash": "1667848786843047034",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
@@ -4201,6 +4201,27 @@
         {
           "file": "frontend/app/src/assets/svg/img-without-notifications.svg",
           "hash": "2772941904505021617"
+        },
+        {
+          "file": "frontend/app/src/modules/user-profile/components/organism/card-without-events/card-without-events.component.html",
+          "hash": "8132078469136862317"
+        },
+        {
+          "file": "frontend/app/src/modules/user-profile/components/organism/card-without-events/card-without-events.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "frontend/app/src/modules/user-profile/components/organism/card-without-events/card-without-events.component.ts",
+          "hash": "12331469816177365863",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "frontend-ui"
+          ]
+        },
+        {
+          "file": "frontend/app/src/assets/svg/img-without-events.svg",
+          "hash": "550742214687464186"
         }
       ],
       "api-e2e": [
