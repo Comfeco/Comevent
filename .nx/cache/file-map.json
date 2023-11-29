@@ -2728,11 +2728,11 @@
         },
         {
           "file": "frontend/app/src/assets/i18n/en.json",
-          "hash": "18251831433824332373"
+          "hash": "6626227066896835048"
         },
         {
           "file": "frontend/app/src/assets/i18n/es.json",
-          "hash": "514610659497462081"
+          "hash": "3552881129399900414"
         },
         {
           "file": "frontend/app/src/assets/png/area-of-interest.png",
@@ -3804,7 +3804,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/molecules/button-action/button-action.component.html",
-          "hash": "5044908302880604328"
+          "hash": "1590013505937429081"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/molecules/button-action/button-action.component.scss",
@@ -3812,17 +3812,18 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/molecules/button-action/button-action.component.ts",
-          "hash": "14988539351906823207",
+          "hash": "10564398622624023913",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
             "npm:@angular/router",
+            "npm:@ngx-translate/core",
             "frontend-ui"
           ]
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.html",
-          "hash": "4468097877640346985"
+          "hash": "10662634530041173811"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.scss",
@@ -3830,11 +3831,12 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/molecules/button-header-profile/button-header-profile.component.ts",
-          "hash": "4273496891730801056",
+          "hash": "17810657862626684755",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
             "npm:@angular/router",
+            "npm:@ngx-translate/core",
             "frontend-ui"
           ]
         },
@@ -3844,18 +3846,19 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/card-profile/card-profile.component.html",
-          "hash": "14634923595641843297"
+          "hash": "18166455337032181517"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/card-profile/card-profile.component.scss",
-          "hash": "16290442213212540172"
+          "hash": "6719113604322622374"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/card-profile/card-profile.component.ts",
-          "hash": "8098665277741149640",
+          "hash": "8020145412818065692",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
+            "npm:@ngx-translate/core",
             "frontend-ui"
           ]
         },
@@ -3900,11 +3903,12 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/layout-profile/layout-profile.component.ts",
-          "hash": "15549025539647729644",
+          "hash": "13834136467665838078",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
-            "npm:@angular/router"
+            "npm:@angular/router",
+            "npm:@ngx-translate/core"
           ]
         },
         {
@@ -3977,7 +3981,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/pages/profile/profile.component.html",
-          "hash": "4720106214760225709"
+          "hash": "11848231772534366375"
         },
         {
           "file": "frontend/app/src/modules/user-profile/pages/profile/profile.component.scss",
@@ -4064,7 +4068,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/service/state/user.state.service.ts",
-          "hash": "3039072413642243692",
+          "hash": "12446945677843755574",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router",
@@ -4183,7 +4187,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/molecules/card-without-notifications/card-without-notifications.component.html",
-          "hash": "2833259536276861781"
+          "hash": "12279983542737745302"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/molecules/card-without-notifications/card-without-notifications.component.scss",
@@ -4191,10 +4195,11 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/molecules/card-without-notifications/card-without-notifications.component.ts",
-          "hash": "7040024018438375159",
+          "hash": "6266008516545110758",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
+            "npm:@ngx-translate/core",
             "frontend-ui"
           ]
         },
@@ -4204,7 +4209,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/card-without-events/card-without-events.component.html",
-          "hash": "8132078469136862317"
+          "hash": "15618416126629143442"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/card-without-events/card-without-events.component.scss",
@@ -4212,16 +4217,21 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/card-without-events/card-without-events.component.ts",
-          "hash": "12331469816177365863",
+          "hash": "9564983285412676140",
           "deps": [
             "npm:@angular/common",
             "npm:@angular/core",
+            "npm:@ngx-translate/core",
             "frontend-ui"
           ]
         },
         {
           "file": "frontend/app/src/assets/svg/img-without-events.svg",
           "hash": "550742214687464186"
+        },
+        {
+          "file": "frontend/app/src/assets/png/avatar-default.png",
+          "hash": "7364419611654483380"
         }
       ],
       "api-e2e": [

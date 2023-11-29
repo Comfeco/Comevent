@@ -7,6 +7,7 @@ import {
   inject,
 } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 import {
   IconBadgesComponent,
   IconCommunitiesComponent,
@@ -25,6 +26,7 @@ import {
     IconGroupsComponent,
     IconEventsComponent,
     IconCommunitiesComponent,
+    TranslateModule,
   ],
   selector: 'button-header-profile',
   templateUrl: './button-header-profile.component.html',

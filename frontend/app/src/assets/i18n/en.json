@@ -85,5 +85,20 @@
         "subtitleThree": "Generate income with events"
       }
     }
+  },
+  "user": {
+    "section": {
+      "profile": {
+        "buttonOne": "Profile",
+        "buttonTwo": "Groups",
+        "buttonThree": "Events",
+        "buttonFour": "Communities",
+        "buttonFive": "Edit profile",
+        "buttonSix": "Discover events",
+        "titleOne": "Currently you have no notifications",
+        "titleTwo": "Events you participate in",
+        "descriptionOne": "Your next adventure awaits you! Explore and join exciting events now."
+      }
+    }
   }
 }

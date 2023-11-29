@@ -6,11 +6,17 @@ import {
   inject,
 } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 import { ButtonHeaderProfileComponent } from '../..';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, RouterModule, ButtonHeaderProfileComponent],
+  imports: [
+    CommonModule,
+    RouterModule,
+    ButtonHeaderProfileComponent,
+    TranslateModule,
+  ],
   selector: 'layout-profile',
   templateUrl: './layout-profile.component.html',
   styleUrls: ['./layout-profile.component.scss'],
@@ -23,7 +29,7 @@ export class LayoutProfileComponent {
   routes = [
     {
       icon: 'icon-profile',
-      title: 'Mi perfil',
+      title: 'user.section.profile.buttonOne',
       link: '/user/profile',
     },
     /* {
@@ -33,17 +39,17 @@ export class LayoutProfileComponent {
     }, */
     {
       icon: 'icon-groups',
-      title: 'Grupos',
+      title: 'user.section.profile.buttonTwo',
       link: '/user/groups',
     },
     {
       icon: 'icon-events',
-      title: 'Eventos',
+      title: 'user.section.profile.buttonThree',
       link: '/user/events',
     },
     {
       icon: 'icon-communities',
-      title: 'Comunidades',
+      title: 'user.section.profile.buttonFour',
       link: '/user/communities',
     },
   ];

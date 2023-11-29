@@ -4,11 +4,12 @@ import {
   Component,
   ViewEncapsulation,
 } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 import { TitleComponent } from '@ui/components';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, TitleComponent],
+  imports: [CommonModule, TitleComponent, TranslateModule],
   selector: 'card-without-notifications',
   templateUrl: './card-without-notifications.component.html',
   styleUrls: ['./card-without-notifications.component.scss'],

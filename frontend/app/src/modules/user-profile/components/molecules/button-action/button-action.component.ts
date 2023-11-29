@@ -6,11 +6,18 @@ import {
   ViewEncapsulation,
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 import { IconEditComponent, IconViewComponent } from '@ui/components';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, RouterModule, IconViewComponent, IconEditComponent],
+  imports: [
+    CommonModule,
+    RouterModule,
+    IconViewComponent,
+    IconEditComponent,
+    TranslateModule,
+  ],
   selector: 'c-button-action',
   templateUrl: './button-action.component.html',
   styleUrls: ['./button-action.component.scss'],

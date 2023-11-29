@@ -1,8 +1,8 @@
-<div
-  class="flex flex-col items-center gap-6 justify-center w-[400px] bg-white-1 dark:bg-black-1 shadow-neutral-level2 rounded-xl px-4 pb-4"
->
+@if (!loadingProfile) {
+
+<div class="card-profile">
   <c-button-action
-    title="Editar perfil"
+    [title]="'user.section.profile.buttonFive' | translate"
     icon="edit"
     buttonClass="rounded-button"
   />
@@ -10,7 +10,9 @@
   <div class="flex flex-shrink-0">
     <img
       class="w-24 h-24 md:w-40 md:h-40 border-2 border-secondary rounded-full flex-shrink-0"
-      [src]="dataProfile && dataProfile.avatar"
+      [src]="
+        (dataProfile && dataProfile.avatar) || 'assets/png/avatar-default.png'
+      "
       alt="avatar"
     />
   </div>
@@ -63,3 +65,18 @@
   </div>
   }
 </div>
+} @if (loadingProfile) {
+<div class="animate-pulse card-profile">
+  <div class="w-1/2 bg-gray-300 h-10 mb-4 rounded"></div>
+  <div class="w-24 h-24 md:w-40 md:h-40 bg-gray-300 rounded-full mb-4"></div>
+  <div class="w-[300px] h-6 bg-gray-300 mb-4 rounded"></div>
+  <div class="w-[250px] h-6 bg-gray-300 mb-4 rounded"></div>
+  <div class="w-full h-[2px] bg-gray-300 rounded-full mb-4"></div>
+  <!-- Simula los iconos de redes sociales -->
+  <div class="flex gap-2">
+    <div class="w-6 h-6 bg-gray-300 rounded-full"></div>
+    <div class="w-6 h-6 bg-gray-300 rounded-full"></div>
+    <div class="w-6 h-6 bg-gray-300 rounded-full"></div>
+  </div>
+</div>
+}

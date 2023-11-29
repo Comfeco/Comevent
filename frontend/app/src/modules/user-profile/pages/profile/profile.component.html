@@ -1,5 +1,8 @@
 <section class="flex flex-row gap-4 px-4 pt-10 w-full">
-  <card-profile [dataProfile]="userProfileStateService.dataUserProfile()" />
+  <card-profile
+    [dataProfile]="userProfileStateService.dataUserProfile()"
+    [loadingProfile]="userProfileStateService.loadingProfile()"
+  />
   <card-without-notifications class="flex-grow" />
   <card-without-events />
 </section>

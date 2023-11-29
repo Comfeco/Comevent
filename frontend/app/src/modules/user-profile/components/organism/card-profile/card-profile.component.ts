@@ -5,6 +5,7 @@ import {
   Input,
   ViewEncapsulation,
 } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 import {
   IconDiscordComponent,
   IconFacebookTwoComponent,
@@ -29,6 +30,7 @@ import { ButtonActionComponent } from '../../molecules';
     IconLinkedinTwoComponent,
     IconGithubTwoComponent,
     IconXComponent,
+    TranslateModule,
   ],
   selector: 'card-profile',
   templateUrl: './card-profile.component.html',
@@ -38,4 +40,5 @@ import { ButtonActionComponent } from '../../molecules';
 })
 export class CardProfileComponent {
   @Input({ required: true }) dataProfile!: IUserProfile;
+  @Input({ required: true }) loadingProfile!: boolean;
 }
