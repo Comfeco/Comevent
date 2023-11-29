@@ -1629,7 +1629,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/card-profile/card-profile.component.html",
-          "hash": "126734982979626373"
+          "hash": "14634923595641843297"
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/card-profile/card-profile.component.scss",
@@ -1637,10 +1637,11 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/components/organism/card-profile/card-profile.component.ts",
-          "hash": "1120617695820507776",
+          "hash": "8098665277741149640",
           "deps": [
             "npm:@angular/common",
-            "npm:@angular/core"
+            "npm:@angular/core",
+            "frontend-ui"
           ]
         },
         {
@@ -1951,7 +1952,7 @@
         },
         {
           "file": "frontend/app/src/modules/user-profile/types/user.types.ts",
-          "hash": "17676230657794258361",
+          "hash": "10484270548794623600",
           "deps": [
             "database"
           ]
@@ -1983,6 +1984,30 @@
         {
           "file": "frontend/app/src/common/types/payload.types.ts",
           "hash": "5443659207226465271"
+        },
+        {
+          "file": "frontend/app/src/assets/svg/icon-instagram-two.svg",
+          "hash": "738198466131987573"
+        },
+        {
+          "file": "frontend/app/src/assets/svg/icon-x.svg",
+          "hash": "1704726381086179832"
+        },
+        {
+          "file": "frontend/app/src/assets/svg/icon-discord.svg",
+          "hash": "14843645792392955949"
+        },
+        {
+          "file": "frontend/app/src/assets/svg/icon-facebook-two.svg",
+          "hash": "16231333607772889462"
+        },
+        {
+          "file": "frontend/app/src/assets/svg/icon-github.svg",
+          "hash": "15341099490256336925"
+        },
+        {
+          "file": "frontend/app/src/assets/svg/icon-linkedin-two.svg",
+          "hash": "3630165336521357922"
         }
       ],
       "api-e2e": [
@@ -2564,7 +2589,7 @@
         },
         {
           "file": "frontend/ui/components/atoms/icons/index.ts",
-          "hash": "8964420000069002139"
+          "hash": "460609739806225011"
         },
         {
           "file": "frontend/ui/components/atoms/index.ts",
@@ -2831,6 +2856,102 @@
         {
           "file": "frontend/ui/tsconfig.spec.json",
           "hash": "8246693900492800589"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-discord/icon-discord.component.html",
+          "hash": "12668607658334734730"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-discord/icon-discord.component.scss",
+          "hash": "12041313066837131384"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-discord/icon-discord.component.ts",
+          "hash": "9908766976092651877",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-facebook-two/icon-facebook-two.component.html",
+          "hash": "8775886309308285024"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-facebook-two/icon-facebook-two.component.scss",
+          "hash": "12041313066837131384"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-facebook-two/icon-facebook-two.component.ts",
+          "hash": "2973735716155934027",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-github-two/icon-github-two.component.html",
+          "hash": "4784413321544012590"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-github-two/icon-github-two.component.scss",
+          "hash": "12041313066837131384"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-github-two/icon-github-two.component.ts",
+          "hash": "15013600126485015343",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-instagram-two/icon-instagram-two.component.html",
+          "hash": "5138041851479453554"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-instagram-two/icon-instagram-two.component.scss",
+          "hash": "12041313066837131384"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-instagram-two/icon-instagram-two.component.ts",
+          "hash": "2480307068508721067",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-linkedin-two/icon-linkedin-two.component.html",
+          "hash": "17137742762394809140"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-linkedin-two/icon-linkedin-two.component.scss",
+          "hash": "12041313066837131384"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-linkedin-two/icon-linkedin-two.component.ts",
+          "hash": "4097169469264653949",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-x/icon-x.component.html",
+          "hash": "13394682967142501042"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-x/icon-x.component.scss",
+          "hash": "12041313066837131384"
+        },
+        {
+          "file": "frontend/ui/components/atoms/icons/icon-x/icon-x.component.ts",
+          "hash": "582441261784673326",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
         }
       ],
       "api": [

@@ -1,12 +1,11 @@
 <div
-  class="flex justify-center w-[400px] bg-white-1 shadow-neutral-level2 rounded-xl px-4 pb-4"
+  class="flex flex-col items-center gap-6 justify-center w-[400px] bg-white-1 dark:bg-black-1 shadow-neutral-level2 rounded-xl px-4 pb-4"
 >
   <c-button-action
     title="Editar perfil"
     icon="edit"
     buttonClass="rounded-button"
   />
-  <!-- <pre class="w-[100px]">{{ dataProfile | json }}</pre> -->
 
   <div class="flex flex-shrink-0">
     <img
@@ -15,4 +14,52 @@
       alt="avatar"
     />
   </div>
+
+  <div
+    [ngClass]="{
+      'gap-2': dataProfile.username && dataProfile.userAreas,
+      'flex flex-col text-center': true
+    }"
+  >
+    <c-title variant="title-h6" color="black">{{
+      '@' + dataProfile.username
+    }}</c-title>
+
+    @if (dataProfile.userAreas) {
+
+    <p class="body-small text-gray-2">
+      {{
+        dataProfile.userAreas.length > 1
+          ? dataProfile.userAreas.join('  /  ')
+          : dataProfile.userAreas[0] || ''
+      }}
+    </p>
+    }
+  </div>
+
+  @if (dataProfile.description) {
+  <p class="body-medium text-black-1 dark:text-white-1 text-center">
+    {{ dataProfile.description }}
+  </p>
+  }
+
+  <div class="h-[2px] bg-gray-2 rounded-full w-full"></div>
+
+  @if(dataProfile.socialNetworks) {
+  <div class="flex flex-row gap-2">
+    @if(dataProfile.socialNetworks.includes('x')) {
+    <icon-x />
+    } @if(dataProfile.socialNetworks.includes('Discord')) {
+    <icon-discord />
+    } @if(dataProfile.socialNetworks.includes('Facebook')) {
+    <icon-facebook-two />
+    } @if(dataProfile.socialNetworks.includes('Github')) {
+    <icon-github-two />
+    } @if(dataProfile.socialNetworks.includes('LinkedIn')) {
+    <icon-linkedin-two />
+    } @if(dataProfile.socialNetworks.includes('Instagram')) {
+    <icon-instagram-two />
+    }
+  </div>
+  }
 </div>
