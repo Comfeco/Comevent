@@ -68,6 +68,8 @@ module.exports = {
       'neutral-level3': '0 10px 18px rgba(0, 0, 0, 0.10)',
       'neutral-level4': '0 12px 24px rgba(0, 0, 0, 0.10)',
       'material-level1': '0 2px 4px rgba(140, 68, 204, 0.30)',
+      'material-secondary-level1': '0 2px 4px rgba(250, 74, 134, 0.30)',
+      'material-secondary-level2': '0 4px 8px rgba(250, 74, 134, 0.30)',
     },
     fontFamily: {
       title: ['Montserrat', 'sans-serif'],

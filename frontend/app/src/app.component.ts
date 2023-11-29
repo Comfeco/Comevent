@@ -1,8 +1,7 @@
 import { Component, OnInit, computed, effect, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
-import { LoginStateService } from './pages/auth/service/state';
-import { AuthStatus } from './pages/auth/types';
+import { AuthStatus, LoginStateService } from './modules/auth';
 import { supportLanguages } from './utils';
 
 @Component({
@@ -61,7 +60,7 @@ export class AppComponent implements OnInit {
           allowedPublicRoutes.includes(currentRoute) ||
           isChangePasswordRoute(currentRoute)
         ) {
-          this.router.navigateByUrl('/dashboard');
+          this.router.navigateByUrl('/user/profile');
         }
         break;
       case AuthStatus.NOT_AUTHENTICATED:

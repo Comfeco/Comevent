@@ -1,0 +1,51 @@
+<section
+  class="flex flex-row h-[760px] gap-20 justify-center items-center p-16"
+>
+  <div class="flex flex-col gap-6 w-[430px]">
+    <c-title variant="title-h3" color="black">
+      {{ 'home.section.income.titleOne' | translate }}
+    </c-title>
+    <c-title variant="body-medium" color="black">
+      {{ 'home.section.income.descriptionOne' | translate }}
+    </c-title>
+    <div class="flex flex-row justify-start w-full">
+      <c-button variant="button-base">{{
+        'home.section.income.buttonOne' | translate
+      }}</c-button>
+    </div>
+  </div>
+  <div class="flex flex-col gap-6 w-[968px]">
+    <div
+      class="flex flex-col gap-6 w-full rounded-xl h-[214px] background-income-one p-4"
+    >
+      <c-title variant="title-h4" class="text-white-1">
+        {{ 'home.section.income.subtitleOne' | translate }}
+      </c-title>
+      <c-title variant="body-medium" class="text-white-1">
+        {{ 'home.section.income.descriptionTwo' | translate }}
+      </c-title>
+    </div>
+    <div class="flex flex-row gap-6">
+      <div
+        class="flex flex-col gap-6 flex-1 rounded-xl h-[214px] background-income-two p-4"
+      >
+        <c-title variant="title-h4" class="text-white-1">
+          {{ 'home.section.income.subtitleTwo' | translate }}
+        </c-title>
+        <c-title variant="body-medium" class="text-white-1">
+          {{ 'home.section.income.descriptionThree' | translate }}
+        </c-title>
+      </div>
+      <div
+        class="flex flex-col gap-6 flex-1 rounded-xl h-[214px] background-income-three p-4"
+      >
+        <c-title variant="title-h4" class="text-white-1">
+          {{ 'home.section.income.subtitleThree' | translate }}
+        </c-title>
+        <c-title variant="body-medium" class="text-white-1">
+          {{ 'home.section.income.descriptionFour' | translate }}
+        </c-title>
+      </div>
+    </div>
+  </div>
+</section>

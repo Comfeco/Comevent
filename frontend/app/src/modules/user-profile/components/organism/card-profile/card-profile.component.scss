@@ -1,0 +1,7 @@
+:host ::ng-deep .rounded-button {
+  @apply rounded-b-md;
+}
+
+.card-profile {
+  @apply flex flex-col items-center gap-6 justify-center w-[400px] bg-white-1 dark:bg-black-1 shadow-neutral-level2 rounded-xl px-4 pb-4;
+}

@@ -2,6 +2,7 @@ import {
   Area,
   Community,
   Country,
+  Event,
   SocialNetwork,
   Specialty,
   Task,
@@ -16,6 +17,7 @@ import { DataSource, DataSourceOptions } from 'typeorm';
 import { SeederOptions } from 'typeorm-extension';
 import { SnakeNamingStrategy } from 'typeorm-naming-strategies';
 import InitSeeder from '../backend/database/seeders/init.seeders';
+
 import {
   DB_HOST,
   DB_NAME,
@@ -44,6 +46,7 @@ export const options = {
     UserArea,
     SocialNetwork,
     UserProvider,
+    Event,
   ], // *works on windows
   // entities: [
   // join(__dirname, '/../backend/database/src/lib/entities/**/*.entity.ts'),

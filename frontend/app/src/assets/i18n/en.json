@@ -34,5 +34,71 @@
   "layoutAuth": {
     "titleOne": "Login",
     "titleTwo": "Register"
+  },
+
+  "home": {
+    "section": {
+      "header": {
+        "titleOne": "Find your community of interest",
+        "descriptionOne": "Find out about the latest news that your community posts, participate in an event or buy your favorite items",
+        "titleTwo": "Participate in a group and defend your project",
+        "buttonOne": "Create community",
+        "buttonTwo": "Participate in an event",
+        "titleThree": "Subscribe to receive all our updates",
+        "descriptionTwo": "Stay up to date with the latest in community news and events. Subscribe now and be sure to receive regular updates, exclusive offers and featured content straight to your inbox.",
+        "placeholderOne": "Enter your email here",
+        "buttonThree": "Subscribe"
+      },
+      "characteristics": {
+        "titleOne": "Dive in and Share",
+        "subtitleOne": "Events",
+        "descriptionOne": "Discover and participate in a wide range of exciting events. From projects to talks, connect with unique experiences that inspire and enrich you.",
+        "subtitleTwo": "Communities",
+        "descriptionTwo": "Join our vibrant communities and find people with common interests. Collaborate, share ideas and create bonds in a welcoming and dynamic space.",
+        "subtitleThree": "Merchandising",
+        "descriptionThree": "Take a piece of the experience with you with our exclusive selection of merchandise. Quality products that celebrate your favorite events and communities.",
+        "buttonOne": "Discover"
+      },
+      "steps": {
+        "titleOne": "Register at Comevent",
+        "titleTwo": "Find your favorite community",
+        "titleThree": "Register for an event",
+        "titleFour": "Join your group and enjoy",
+        "descriptionOne": "Create your Comevent account and access the world of communities and events. Your next memorable encounter starts here!",
+        "descriptionTwo": "Explore communities that resonate with you and connect with people who share your passions and interests",
+        "descriptionThree": "Choose from a variety of events and secure your place. Adventure and learning await you!",
+        "descriptionFour": "Be part of a group that inspires you, participate in exclusive activities and enjoy every moment with us.",
+        "subtitleOne": "Step 1",
+        "subtitleTwo": "Step 2",
+        "subtitleThree": "Step 3",
+        "subtitleFour": "Step 4"
+      },
+      "income": {
+        "titleOne": "Earn income for your community",
+        "descriptionOne": "Maximize the potential of your community with multiple streams of income. From exclusive subscriptions to merchandise sales and special events, open the doors to new economic opportunities while strengthening community spirit.",
+        "descriptionTwo": "Monetize your passion by creating a subscription community. Offer exclusive content and build a sustainable income stream.",
+        "descriptionThree": "Turn your ideas into products and open a new income channel by selling unique merchandise in our specialty store.",
+        "descriptionFour": "Organize events that captivate and capitalize on your talent. Earn economic benefits while connecting with your audience.",
+        "buttonOne": "Create community",
+        "subtitleOne": "Generate income with your community subscriptions",
+        "subtitleTwo": "Sell exclusive items in the store",
+        "subtitleThree": "Generate income with events"
+      }
+    }
+  },
+  "user": {
+    "section": {
+      "profile": {
+        "buttonOne": "Profile",
+        "buttonTwo": "Groups",
+        "buttonThree": "Events",
+        "buttonFour": "Communities",
+        "buttonFive": "Edit profile",
+        "buttonSix": "Discover events",
+        "titleOne": "Currently you have no notifications",
+        "titleTwo": "Events you participate in",
+        "descriptionOne": "Your next adventure awaits you! Explore and join exciting events now."
+      }
+    }
   }
 }

@@ -3,6 +3,7 @@ import {
   ChangeDetectionStrategy,
   Component,
   ViewEncapsulation,
+  inject,
 } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
 import { NavComponent } from '../../organisms';
@@ -18,5 +19,5 @@ import { FooterComponent } from '../../organisms/footer/footer.component';
   changeDetection: ChangeDetectionStrategy.Default,
 })
 export class LayoutRootComponent {
-  constructor(public route: Router) {}
+  route = inject(Router);
 }

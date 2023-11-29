@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, ViewEncapsulation } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Component, ViewEncapsulation, inject } from '@angular/core';
+import { Router, RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import {
   ButtonComponent,
@@ -26,6 +26,8 @@ import { DarkModeComponent } from '../../atoms';
   encapsulation: ViewEncapsulation.Emulated,
 })
 export class FooterComponent {
+  route = inject(Router);
+
   sponsors = [
     {
       web: 'https://www.comfeco.com/',

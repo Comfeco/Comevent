@@ -1,0 +1,48 @@
+<section
+  class="flex flex-col h-[760px] gap-28 justify-center items-center p-16"
+>
+  <c-title variant="title-h2" color="black">
+    {{ 'home.section.characteristics.titleOne' | translate }}
+  </c-title>
+
+  <div class="flex flex-row justify-between w-full">
+    @for(characteristic of characteristics; track characteristic.id) {
+    <a
+      class="flex flex-col bg-white-1 dark:bg-black-1 cursor-pointer shadow-neutral-level2 rounded-xl p-4 w-[360px] hover-parent gap-10"
+    >
+      <div class="flex flex-col gap-4">
+        <img
+          class="w-[80px] h-[80px]"
+          [src]="characteristic.icon"
+          [alt]="characteristic.title"
+        />
+        <c-title variant="title-h3" color="black">{{
+          characteristic.title | translate
+        }}</c-title>
+
+        <c-title variant="body-medium" color="black" class="leading-7">{{
+          characteristic.description | translate
+        }}</c-title>
+      </div>
+
+      <button
+        [ngClass]="{
+          'hover-child-one text-secondary dark:text-secondary-darkMode':
+            characteristic.id === 0,
+          'hover-child-two text-primary dark:text-primary-darkMode':
+            characteristic.id === 1,
+          'hover-child-three text-accent dark:text-accent-darkMode':
+            characteristic.id === 2,
+          'title-h6 border-transparent rounded-md items-center justify-start outline-none gap-4 w-full flex flex-row h-10': true
+        }"
+      >
+        {{ 'home.section.characteristics.buttonOne' | translate }}
+        <icon-arrow-right
+          class="icon-arrow-right transition-transform duration-300 ease-in-out"
+          [index]="characteristic.id"
+        />
+      </button>
+    </a>
+    }
+  </div>
+</section>

@@ -1,0 +1,31 @@
+<section class="flex flex-row gap-4 px-4 pt-10 w-full">
+  <card-profile
+    [dataProfile]="userProfileStateService.dataUserProfile()"
+    [loadingProfile]="userProfileStateService.loadingProfile()"
+  />
+  <card-without-notifications class="flex-grow" />
+  <card-without-events />
+</section>
+
+<!-- <div class="flex flex-col gap-4 text-center p-4 max-w-full">
+  <h3>Admin dashboard</h3>
+  <pre>{{ userData() | json }}</pre>
+
+  <c-button
+    class="w-full"
+    variant="button-base"
+    color="t-white"
+    routerLink="/dashboard/change-password"
+  >
+    <c-title variant="title-h6" color="white">Change password</c-title>
+  </c-button>
+
+  <c-button
+    class="w-full"
+    variant="button-base"
+    color="t-white"
+    (click)="onLogout()"
+  >
+    <c-title variant="title-h6" color="white">Log Out</c-title>
+  </c-button>
+</div> -->

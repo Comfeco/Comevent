@@ -1,0 +1,11 @@
+.s-secondary {
+  @apply stroke-secondary dark:stroke-secondary-darkMode;
+}
+
+.s-primary {
+  @apply stroke-primary dark:stroke-primary-darkMode;
+}
+
+.s-accent {
+  @apply stroke-accent dark:stroke-accent-darkMode;
+}

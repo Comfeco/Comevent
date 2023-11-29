@@ -1,0 +1,52 @@
+.background-info-step-one {
+  background-image: linear-gradient(
+      181deg,
+      #000 -10.13%,
+      rgba(0, 0, 0, 0) 102.29%
+    ),
+    url(/assets/png/background-step-one.png);
+}
+
+.background-info-step-two {
+  background-image: linear-gradient(
+      181deg,
+      #000 -10.13%,
+      rgba(0, 0, 0, 0) 102.29%
+    ),
+    url(/assets/png/background-step-two.png);
+}
+
+.background-info-step-three {
+  background-image: linear-gradient(
+      181deg,
+      #000 -10.13%,
+      rgba(0, 0, 0, 0) 102.29%
+    ),
+    url(/assets/png/background-step-three.png);
+}
+
+.background-info-step-four {
+  background-image: linear-gradient(
+      181deg,
+      #000 -10.13%,
+      rgba(0, 0, 0, 0) 102.29%
+    ),
+    url(/assets/png/background-step-four.png);
+}
+
+.background-info-step-one,
+.background-info-step-two,
+.background-info-step-three,
+.background-info-step-four {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-tab-step {
+  background-color: #00000050;
+}
+
+.text-shadow-step {
+  text-shadow: 0px 4px 7px #fa4a86;
+}

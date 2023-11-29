@@ -1,0 +1,82 @@
+@if (!loadingProfile) {
+
+<div class="card-profile">
+  <c-button-action
+    [title]="'user.section.profile.buttonFive' | translate"
+    icon="edit"
+    buttonClass="rounded-button"
+  />
+
+  <div class="flex flex-shrink-0">
+    <img
+      class="w-24 h-24 md:w-40 md:h-40 border-2 border-secondary rounded-full flex-shrink-0"
+      [src]="
+        (dataProfile && dataProfile.avatar) || 'assets/png/avatar-default.png'
+      "
+      alt="avatar"
+    />
+  </div>
+
+  <div
+    [ngClass]="{
+      'gap-2': dataProfile.username && dataProfile.userAreas,
+      'flex flex-col text-center': true
+    }"
+  >
+    <c-title variant="title-h6" color="black">{{
+      '@' + dataProfile.username
+    }}</c-title>
+
+    @if (dataProfile.userAreas) {
+
+    <p class="body-small text-gray-2">
+      {{
+        dataProfile.userAreas.length > 1
+          ? dataProfile.userAreas.join('  /  ')
+          : dataProfile.userAreas[0] || ''
+      }}
+    </p>
+    }
+  </div>
+
+  @if (dataProfile.description) {
+  <p class="body-medium text-black-1 dark:text-white-1 text-center">
+    {{ dataProfile.description }}
+  </p>
+  }
+
+  <div class="h-[2px] bg-gray-2 rounded-full w-full"></div>
+
+  @if(dataProfile.socialNetworks) {
+  <div class="flex flex-row gap-2">
+    @if(dataProfile.socialNetworks.includes('x')) {
+    <icon-x />
+    } @if(dataProfile.socialNetworks.includes('Discord')) {
+    <icon-discord />
+    } @if(dataProfile.socialNetworks.includes('Facebook')) {
+    <icon-facebook-two />
+    } @if(dataProfile.socialNetworks.includes('Github')) {
+    <icon-github-two />
+    } @if(dataProfile.socialNetworks.includes('LinkedIn')) {
+    <icon-linkedin-two />
+    } @if(dataProfile.socialNetworks.includes('Instagram')) {
+    <icon-instagram-two />
+    }
+  </div>
+  }
+</div>
+} @if (loadingProfile) {
+<div class="animate-pulse card-profile">
+  <div class="w-1/2 bg-gray-300 h-10 mb-4 rounded"></div>
+  <div class="w-24 h-24 md:w-40 md:h-40 bg-gray-300 rounded-full mb-4"></div>
+  <div class="w-[300px] h-6 bg-gray-300 mb-4 rounded"></div>
+  <div class="w-[250px] h-6 bg-gray-300 mb-4 rounded"></div>
+  <div class="w-full h-[2px] bg-gray-300 rounded-full mb-4"></div>
+  <!-- Simula los iconos de redes sociales -->
+  <div class="flex gap-2">
+    <div class="w-6 h-6 bg-gray-300 rounded-full"></div>
+    <div class="w-6 h-6 bg-gray-300 rounded-full"></div>
+    <div class="w-6 h-6 bg-gray-300 rounded-full"></div>
+  </div>
+</div>
+}

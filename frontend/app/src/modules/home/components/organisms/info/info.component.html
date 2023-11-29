@@ -1,0 +1,49 @@
+<section
+  [ngClass]="{
+    'background-info-step-one': currentStep() === 1,
+    'background-info-step-two': currentStep() === 2,
+    'background-info-step-three': currentStep() === 3,
+    'background-info-step-four': currentStep() === 4,
+    'flex flex-col h-[760px] w-full justify-between': true
+  }"
+>
+  @for (info of infos; track info.id) { @if (info.id === currentStep()) {
+  <description-info
+    [title]="info.title | translate"
+    [description]="info.description | translate"
+  />
+  }}
+
+  <div class="flex flex-row h-[150px] background-tab-step">
+    @for(step of steps; track step.step) {
+    <div
+      [ngClass]="{
+        'border-secondary dark:border-secondary-darkMode':
+          currentStep() === step.step,
+        'border-transparent hover:border-secondary':
+          currentStep() !== step.step,
+        'h-full cursor-pointer border-t-8 flex-1 flex justify-center items-center': true
+      }"
+      (click)="onStep(step.step)"
+    >
+      <div class="flex flex-col gap-2 items-center">
+        @switch (step.step) { @case (1) {
+        <icon-hexagon-number-one [step]="currentStep()" />
+        } @case (2) {
+        <icon-hexagon-number-two [step]="currentStep()" />
+        } @case (3) {
+        <icon-hexagon-number-three [step]="currentStep()" />
+        } @case (4) {
+        <icon-hexagon-number-four [step]="currentStep()" />
+        } }
+        <h2
+          [ngClass]="{ 'text-shadow-step': currentStep() === step.step }"
+          class="title-h2 text-white-1"
+        >
+          {{ step.title | translate }}
+        </h2>
+      </div>
+    </div>
+    }
+  </div>
+</section>

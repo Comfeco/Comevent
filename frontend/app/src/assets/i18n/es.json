@@ -34,5 +34,71 @@
   "layoutAuth": {
     "titleOne": "Ingresar",
     "titleTwo": "Registrarse"
+  },
+
+  "home": {
+    "section": {
+      "header": {
+        "titleOne": "Busca tu comunidad de interés",
+        "descriptionOne": "Entérate de las ultimas novedades que tu comunidad postea, participa de un evento o compra tus items favoritos",
+        "titleTwo": "Participa en grupo y defiende tu proyecto",
+        "buttonOne": "Crear comunidad",
+        "buttonTwo": "Participar en un evento",
+        "titleThree": "Suscríbete para recibir todas nuestras actualizaciones",
+        "descriptionTwo": "Permanece al tanto de lo último en eventos y noticias de la comunidad. Suscríbete ahora y asegúrate de recibir actualizaciones periódicas, ofertas exclusivas y contenido destacado directamente en tu bandeja de entrada.",
+        "placeholderOne": "Ingresa tu email aquí",
+        "buttonThree": "Suscríbete"
+      },
+      "characteristics": {
+        "titleOne": "Sumérgete y Comparte",
+        "subtitleOne": "Eventos",
+        "descriptionOne": "Descubre y participa en una amplia gama de eventos emocionantes. Desde proyectos hasta charlas, conecta con experiencias únicas que te inspiran y enriquecen.",
+        "subtitleTwo": "Comunidades",
+        "descriptionTwo": "Únete a nuestras comunidades vibrantes y encuentra personas con intereses comunes. Colabora, comparte ideas y crea lazos en un espacio acogedor y dinámico.",
+        "subtitleThree": "Comercialización",
+        "descriptionThree": "Lleva contigo un pedazo de la experiencia con nuestra exclusiva selección de merchandising. Productos de calidad que celebran tus eventos y comunidades favoritas.",
+        "buttonOne": "Descubrir"
+      },
+      "steps": {
+        "titleOne": "Registrate en Comevent",
+        "titleTwo": "Busca tu comunidad favorita",
+        "titleThree": "Regístrate en un evento",
+        "titleFour": "Únete a tu grupo y disfruta",
+        "descriptionOne": "Crea tu cuenta en Comevent y accede al mundo de las comunidades y eventos. ¡Tu próximo encuentro memorable comienza aquí!",
+        "descriptionTwo": "Explora comunidades que resuenan contigo y conecta con personas que comparten tus pasiones e intereses",
+        "descriptionThree": "Elige entre una diversidad de eventos y asegura tu lugar. ¡La aventura y el aprendizaje te esperan!",
+        "descriptionFour": "Forma parte de un grupo que te inspira, participa en actividades exclusivas y disfruta cada momento junto a nosotros.",
+        "subtitleOne": "Paso 1",
+        "subtitleTwo": "Paso 2",
+        "subtitleThree": "Paso 3",
+        "subtitleFour": "Paso 4"
+      },
+      "income": {
+        "titleOne": "Obtén ingresos para tu comunidad",
+        "descriptionOne": "Maximiza el potencial de tu comunidad con múltiples flujos de ingresos. Desde suscripciones exclusivas hasta ventas de mercancía y eventos especiales, abre las puertas a nuevas oportunidades económicas mientras fortaleces el espíritu comunitario.",
+        "descriptionTwo": "Monetiza tu pasión creando una comunidad de suscripción. Ofrece contenido exclusivo y construye un flujo de ingresos sostenible.",
+        "descriptionThree": "Convierte tus ideas en productos y abre un nuevo canal de ingresos vendiendo mercancía única en nuestra tienda especializada.",
+        "descriptionFour": "Organiza eventos que cautiven y capitaliza tu talento. Obtén beneficios económicos mientras conectas con tu audiencia.",
+        "buttonOne": "Crear comunidad",
+        "subtitleOne": "Genera ingresos con las suscripciones de tu comunidad",
+        "subtitleTwo": "Vende objetos exclusivos en la tienda",
+        "subtitleThree": "Genere ingresos con eventos"
+      }
+    }
+  },
+  "user": {
+    "section": {
+      "profile": {
+        "buttonOne": "Perfil",
+        "buttonTwo": "Grupos",
+        "buttonThree": "Eventos",
+        "buttonFour": "Comunidades",
+        "buttonFive": "Editar perfil",
+        "buttonSix": "Descubrir eventos",
+        "titleOne": "Actualmente no tienes notificaciones",
+        "titleTwo": "Eventos en los que participas",
+        "descriptionOne": "¡Tu próxima aventura te espera! Explora y únete a eventos emocionantes ahora."
+      }
+    }
   }
 }

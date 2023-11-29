@@ -1,6 +1,6 @@
 import { Pipe, PipeTransform, inject } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { IAreaOfInterest } from '../../pages/auth/types';
+import { IAreaOfInterest } from '../../modules/auth';
 
 @Pipe({
   name: 'translateAreas',
