@@ -1,0 +1,1318 @@
+[36m⠋[39m Generating browser application bundles (phase: setup)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: setup)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m  [2m | [22m[1mNames[22m        [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mvendor.js[39m[37m            [2m | [22mvendor       [2m | [22m  [96m3.37 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mmain.js[39m[37m              [2m | [22mmain         [2m | [22m[96m486.72 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mpolyfills.js[39m[37m         [2m | [22mpolyfills    [2m | [22m[96m333.23 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mstyles.css, styles.js[39m[37m[2m | [22mstyles       [2m | [22m[96m255.88 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m           [2m | [22mruntime      [2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1m [22m                    [2m | [22m[1mInitial Total[22m[2m | [22m  [1m4.42 MB[22m[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T16:33:59.776Z[39m[37m[22m - Hash: [1m[37m381b270a6f7308c4[39m[37m[22m - Time: [1m[37m5602[39m[37m[22mms[0m[39m
+[37m[39m
+[37m** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **[39m
+[37m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+
+WARNING: There was an error creating glob patterns, returning an empty array
+createGlobPatternsForDependencies: Error when generating globs.
+ENOENT: no such file or directory, scandir 'C:\projects\Comevent\database'
+
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m486.83 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T16:40:33.609Z[39m[37m[22m - Hash: [1m[37m9127496ce6f8700b[39m[37m[22m - Time: [1m[37m7168[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.html[0m:[93m2[0m:[93m17[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'user' since it isn't a known property of 'card-profile'.[39m[22m
+[1m[31m1. If 'card-profile' is an Angular component and it has 'user' input, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'card-profile' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m   <card-profile [user]="user" />[39m[22m
+[1m[31m[7m [0m [91m                ~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m488.09 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T16:40:42.213Z[39m[37m[22m - Hash: [1m[37m18f9a3f7bfea0d50[39m[37m[22m - Time: [1m[37m848[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.html[0m:[93m2[0m:[93m17[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'user' since it isn't a known property of 'card-profile'.[39m[22m
+[1m[31m1. If 'card-profile' is an Angular component and it has 'user' input, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'card-profile' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m   <card-profile [user]="user" />[39m[22m
+[1m[31m[7m [0m [91m                ~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m488.09 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T16:40:54.850Z[39m[37m[22m - Hash: [1m[37m1e1cd866c0b1fa95[39m[37m[22m - Time: [1m[37m730[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.html[0m:[93m2[0m:[93m17[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'user' since it isn't a known property of 'card-profile'.[39m[22m
+[1m[31m1. If 'card-profile' is an Angular component and it has 'user' input, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'card-profile' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m   <card-profile [user]="user" />[39m[22m
+[1m[31m[7m [0m [91m                ~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m488.09 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T16:41:00.123Z[39m[37m[22m - Hash: [1m[37mdd36443a5e3826c4[39m[37m[22m - Time: [1m[37m926[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.html[0m:[93m2[0m:[93m17[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'user' since it isn't a known property of 'card-profile'.[39m[22m
+[1m[31m1. If 'card-profile' is an Angular component and it has 'user' input, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'card-profile' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m   <card-profile [user]="user" />[39m[22m
+[1m[31m[7m [0m [91m                ~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m488.13 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T16:41:13.471Z[39m[37m[22m - Hash: [1m[37m58c3cc89626e9253[39m[37m[22m - Time: [1m[37m761[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m488.13 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T16:44:36.493Z[39m[37m[22m - Hash: [1m[37mbdfbc62f81e2c982[39m[37m[22m - Time: [1m[37m844[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T16:49:33.707Z[39m[37m[22m - Hash: [1m[37mbdfbc62f81e2c982[39m[37m[22m - Time: [1m[37m774[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T17:00:08.956Z[39m[37m[22m - Hash: [1m[37mbdfbc62f81e2c982[39m[37m[22m - Time: [1m[37m618[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T17:00:50.045Z[39m[37m[22m - Hash: [1m[37mbdfbc62f81e2c982[39m[37m[22m - Time: [1m[37m699[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m488.55 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T17:01:00.610Z[39m[37m[22m - Hash: [1m[37m47562b39e4c8cfe1[39m[37m[22m - Time: [1m[37m1167[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/types/user.types.ts[0m:[93m15[0m:[93m15[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Specialty'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m15[0m   specialty?: Specialty;[39m[22m
+[1m[31m[7m  [0m [91m              ~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/types/user.types.ts[0m:[93m16[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'SocialNetwork'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m16[0m   socialNetworks?: SocialNetwork[];[39m[22m
+[1m[31m[7m  [0m [91m                   ~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/types/user.types.ts[0m:[93m23[0m:[93m12[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Country'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m23[0m   country: Country;[39m[22m
+[1m[31m[7m  [0m [91m           ~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/types/user.types.ts[0m:[93m24[0m:[93m24[0m - [91merror[0m[90m TS2304: [0mCannot find name 'UsersCommunities'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m24[0m   communitiesIncludes: UsersCommunities[];[39m[22m
+[1m[31m[7m  [0m [91m                       ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/types/user.types.ts[0m:[93m25[0m:[93m17[0m - [91merror[0m[90m TS2552: [0mCannot find name 'User'. Did you mean 'IUser'?[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m25[0m   lastUpdateBy: User;[39m[22m
+[1m[31m[7m  [0m [91m                ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m488.55 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T17:02:54.476Z[39m[37m[22m - Hash: [1m[37m9391e86a3f6b9b83[39m[37m[22m - Time: [1m[37m3808[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T17:04:58.586Z[39m[37m[22m - Hash: [1m[37m9391e86a3f6b9b83[39m[37m[22m - Time: [1m[37m568[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T17:05:09.396Z[39m[37m[22m - Hash: [1m[37m9391e86a3f6b9b83[39m[37m[22m - Time: [1m[37m711[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T17:05:12.623Z[39m[37m[22m - Hash: [1m[37m9391e86a3f6b9b83[39m[37m[22m - Time: [1m[37m537[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T17:05:14.912Z[39m[37m[22m - Hash: [1m[37m9391e86a3f6b9b83[39m[37m[22m - Time: [1m[37m655[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T17:07:10.587Z[39m[37m[22m - Hash: [1m[37m9391e86a3f6b9b83[39m[37m[22m - Time: [1m[37m687[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m488.55 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T17:07:55.223Z[39m[37m[22m - Hash: [1m[37m523c1a5bde40d4e6[39m[37m[22m - Time: [1m[37m879[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T17:08:16.301Z[39m[37m[22m - Hash: [1m[37m523c1a5bde40d4e6[39m[37m[22m - Time: [1m[37m934[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T17:12:30.885Z[39m[37m[22m - Hash: [1m[37m523c1a5bde40d4e6[39m[37m[22m - Time: [1m[37m719[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m488.55 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T17:13:42.596Z[39m[37m[22m - Hash: [1m[37md0e38f09b3fa9951[39m[37m[22m - Time: [1m[37m845[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m488.55 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T17:14:53.620Z[39m[37m[22m - Hash: [1m[37mde604a8028095868[39m[37m[22m - Time: [1m[37m639[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T17:15:13.373Z[39m[37m[22m - Hash: [1m[37mde604a8028095868[39m[37m[22m - Time: [1m[37m782[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T17:15:56.264Z[39m[37m[22m - Hash: [1m[37mde604a8028095868[39m[37m[22m - Time: [1m[37m567[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m488.55 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T17:16:12.810Z[39m[37m[22m - Hash: [1m[37mc5fade7c4e8d9b07[39m[37m[22m - Time: [1m[37m816[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m488.55 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T17:16:25.149Z[39m[37m[22m - Hash: [1m[37m3213d381b909afc9[39m[37m[22m - Time: [1m[37m843[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T17:16:56.929Z[39m[37m[22m - Hash: [1m[37m3213d381b909afc9[39m[37m[22m - Time: [1m[37m571[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m488.55 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T17:17:07.995Z[39m[37m[22m - Hash: [1m[37m4949e0c6f89b870c[39m[37m[22m - Time: [1m[37m706[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m488.55 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T19:12:58.953Z[39m[37m[22m - Hash: [1m[37m2d094c23f0fb8a23[39m[37m[22m - Time: [1m[37m982[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T19:12:59.586Z[39m[37m[22m - Hash: [1m[37m2d094c23f0fb8a23[39m[37m[22m - Time: [1m[37m554[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T19:13:16.812Z[39m[37m[22m - Hash: [1m[37m2d094c23f0fb8a23[39m[37m[22m - Time: [1m[37m496[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T19:13:18.311Z[39m[37m[22m - Hash: [1m[37m2d094c23f0fb8a23[39m[37m[22m - Time: [1m[37m411[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T19:14:21.465Z[39m[37m[22m - Hash: [1m[37m2d094c23f0fb8a23[39m[37m[22m - Time: [1m[37m567[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T19:14:39.054Z[39m[37m[22m - Hash: [1m[37m2d094c23f0fb8a23[39m[37m[22m - Time: [1m[37m533[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m488.55 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T19:14:48.492Z[39m[37m[22m - Hash: [1m[37m9deafc8e30e409bf[39m[37m[22m - Time: [1m[37m639[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T19:15:02.810Z[39m[37m[22m - Hash: [1m[37m9deafc8e30e409bf[39m[37m[22m - Time: [1m[37m592[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m488.55 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T19:15:14.520Z[39m[37m[22m - Hash: [1m[37m217805f50c1110a7[39m[37m[22m - Time: [1m[37m542[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T19:15:21.824Z[39m[37m[22m - Hash: [1m[37m217805f50c1110a7[39m[37m[22m - Time: [1m[37m446[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T19:44:40.173Z[39m[37m[22m - Hash: [1m[37m217805f50c1110a7[39m[37m[22m - Time: [1m[37m1109[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T19:47:56.399Z[39m[37m[22m - Hash: [1m[37m217805f50c1110a7[39m[37m[22m - Time: [1m[37m1290[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m488.55 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:01:01.581Z[39m[37m[22m - Hash: [1m[37md5cb4488a4ef5857[39m[37m[22m - Time: [1m[37m1475[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:01:21.000Z[39m[37m[22m - Hash: [1m[37md5cb4488a4ef5857[39m[37m[22m - Time: [1m[37m819[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:01:51.471Z[39m[37m[22m - Hash: [1m[37md5cb4488a4ef5857[39m[37m[22m - Time: [1m[37m1025[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m491.05 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:02:22.980Z[39m[37m[22m - Hash: [1m[37me5bd3c2bc72a3bef[39m[37m[22m - Time: [1m[37m2318[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/modules/user-profile/adapters/index.ts[39m[31m[0m:[0m[93m7:21-47[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve './login.adapter' in 'C:\projects\Comevent\frontend\app\src\modules\user-profile\adapters'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/adapters/index.ts[0m:[93m1[0m:[93m15[0m - [91merror[0m[90m TS2307: [0mCannot find module './login.adapter' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m export * from './login.adapter';[39m[22m
+[1m[31m[7m [0m [91m              ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/service/api/user.api.service.ts[0m:[93m7[0m:[93m10[0m - [91merror[0m[90m TS2305: [0mModule '"../../adapters"' has no exported member 'DataUserAdapter'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m import { DataUserAdapter } from '../../adapters';[39m[22m
+[1m[31m[7m [0m [91m         ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m491.10 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:07:17.767Z[39m[37m[22m - Hash: [1m[37m4545a487e2225a65[39m[37m[22m - Time: [1m[37m1406[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/modules/user-profile/adapters/index.ts[39m[31m[0m:[0m[93m7:21-47[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve './login.adapter' in 'C:\projects\Comevent\frontend\app\src\modules\user-profile\adapters'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/adapters/index.ts[0m:[93m1[0m:[93m15[0m - [91merror[0m[90m TS2307: [0mCannot find module './login.adapter' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m export * from './login.adapter';[39m[22m
+[1m[31m[7m [0m [91m              ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/service/api/user.api.service.ts[0m:[93m7[0m:[93m10[0m - [91merror[0m[90m TS2305: [0mModule '"../../adapters"' has no exported member 'DataUserAdapter'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m import { DataUserAdapter } from '../../adapters';[39m[22m
+[1m[31m[7m [0m [91m         ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:07:34.223Z[39m[37m[22m - Hash: [1m[37m4545a487e2225a65[39m[37m[22m - Time: [1m[37m1574[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/modules/user-profile/adapters/index.ts[39m[31m[0m:[0m[93m7:21-47[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve './login.adapter' in 'C:\projects\Comevent\frontend\app\src\modules\user-profile\adapters'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/adapters/index.ts[0m:[93m1[0m:[93m15[0m - [91merror[0m[90m TS2307: [0mCannot find module './login.adapter' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m export * from './login.adapter';[39m[22m
+[1m[31m[7m [0m [91m              ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/service/api/user.api.service.ts[0m:[93m7[0m:[93m10[0m - [91merror[0m[90m TS2305: [0mModule '"../../adapters"' has no exported member 'DataUserAdapter'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m import { DataUserAdapter } from '../../adapters';[39m[22m
+[1m[31m[7m [0m [91m         ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m491.10 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:08:19.499Z[39m[37m[22m - Hash: [1m[37m232778e51a61852e[39m[37m[22m - Time: [1m[37m2099[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/modules/user-profile/adapters/index.ts[39m[31m[0m:[0m[93m7:21-47[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve './login.adapter' in 'C:\projects\Comevent\frontend\app\src\modules\user-profile\adapters'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/adapters/index.ts[0m:[93m1[0m:[93m15[0m - [91merror[0m[90m TS2307: [0mCannot find module './login.adapter' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m export * from './login.adapter';[39m[22m
+[1m[31m[7m [0m [91m              ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/service/api/user.api.service.ts[0m:[93m7[0m:[93m10[0m - [91merror[0m[90m TS2305: [0mModule '"../../adapters"' has no exported member 'DataUserAdapter'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m import { DataUserAdapter } from '../../adapters';[39m[22m
+[1m[31m[7m [0m [91m         ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m491.10 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:18:44.528Z[39m[37m[22m - Hash: [1m[37md14c9e56c70f50d0[39m[37m[22m - Time: [1m[37m1597[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/modules/user-profile/adapters/index.ts[39m[31m[0m:[0m[93m7:21-47[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve './login.adapter' in 'C:\projects\Comevent\frontend\app\src\modules\user-profile\adapters'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/adapters/index.ts[0m:[93m1[0m:[93m15[0m - [91merror[0m[90m TS2307: [0mCannot find module './login.adapter' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m export * from './login.adapter';[39m[22m
+[1m[31m[7m [0m [91m              ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/service/api/user.api.service.ts[0m:[93m7[0m:[93m10[0m - [91merror[0m[90m TS2305: [0mModule '"../../adapters"' has no exported member 'DataUserAdapter'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m import { DataUserAdapter } from '../../adapters';[39m[22m
+[1m[31m[7m [0m [91m         ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:18:45.368Z[39m[37m[22m - Hash: [1m[37md14c9e56c70f50d0[39m[37m[22m - Time: [1m[37m741[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/modules/user-profile/adapters/index.ts[39m[31m[0m:[0m[93m7:21-47[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve './login.adapter' in 'C:\projects\Comevent\frontend\app\src\modules\user-profile\adapters'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/adapters/index.ts[0m:[93m1[0m:[93m15[0m - [91merror[0m[90m TS2307: [0mCannot find module './login.adapter' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m export * from './login.adapter';[39m[22m
+[1m[31m[7m [0m [91m              ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/service/api/user.api.service.ts[0m:[93m7[0m:[93m10[0m - [91merror[0m[90m TS2305: [0mModule '"../../adapters"' has no exported member 'DataUserAdapter'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m import { DataUserAdapter } from '../../adapters';[39m[22m
+[1m[31m[7m [0m [91m         ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:19:01.074Z[39m[37m[22m - Hash: [1m[37md14c9e56c70f50d0[39m[37m[22m - Time: [1m[37m821[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/modules/user-profile/adapters/index.ts[39m[31m[0m:[0m[93m7:21-47[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve './login.adapter' in 'C:\projects\Comevent\frontend\app\src\modules\user-profile\adapters'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/adapters/index.ts[0m:[93m1[0m:[93m15[0m - [91merror[0m[90m TS2307: [0mCannot find module './login.adapter' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m export * from './login.adapter';[39m[22m
+[1m[31m[7m [0m [91m              ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/service/api/user.api.service.ts[0m:[93m7[0m:[93m10[0m - [91merror[0m[90m TS2305: [0mModule '"../../adapters"' has no exported member 'DataUserAdapter'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m import { DataUserAdapter } from '../../adapters';[39m[22m
+[1m[31m[7m [0m [91m         ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:19:18.940Z[39m[37m[22m - Hash: [1m[37md14c9e56c70f50d0[39m[37m[22m - Time: [1m[37m824[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/modules/user-profile/adapters/index.ts[39m[31m[0m:[0m[93m7:21-47[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve './login.adapter' in 'C:\projects\Comevent\frontend\app\src\modules\user-profile\adapters'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/adapters/index.ts[0m:[93m1[0m:[93m15[0m - [91merror[0m[90m TS2307: [0mCannot find module './login.adapter' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m export * from './login.adapter';[39m[22m
+[1m[31m[7m [0m [91m              ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/service/api/user.api.service.ts[0m:[93m7[0m:[93m10[0m - [91merror[0m[90m TS2305: [0mModule '"../../adapters"' has no exported member 'DataUserAdapter'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m import { DataUserAdapter } from '../../adapters';[39m[22m
+[1m[31m[7m [0m [91m         ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m493.12 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:19:31.807Z[39m[37m[22m - Hash: [1m[37m5c1775fe850361a9[39m[37m[22m - Time: [1m[37m1681[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/modules/user-profile/adapters/index.ts[39m[31m[0m:[0m[93m7:21-47[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve './login.adapter' in 'C:\projects\Comevent\frontend\app\src\modules\user-profile\adapters'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/adapters/index.ts[0m:[93m1[0m:[93m15[0m - [91merror[0m[90m TS2307: [0mCannot find module './login.adapter' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m export * from './login.adapter';[39m[22m
+[1m[31m[7m [0m [91m              ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/service/api/user.api.service.ts[0m:[93m7[0m:[93m10[0m - [91merror[0m[90m TS2305: [0mModule '"../../adapters"' has no exported member 'DataUserAdapter'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m import { DataUserAdapter } from '../../adapters';[39m[22m
+[1m[31m[7m [0m [91m         ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m493.10 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:21:40.013Z[39m[37m[22m - Hash: [1m[37m51f6a7d39c1b299b[39m[37m[22m - Time: [1m[37m904[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/modules/user-profile/adapters/index.ts[39m[31m[0m:[0m[93m7:21-47[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve './login.adapter' in 'C:\projects\Comevent\frontend\app\src\modules\user-profile\adapters'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/adapters/index.ts[0m:[93m1[0m:[93m15[0m - [91merror[0m[90m TS2307: [0mCannot find module './login.adapter' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m export * from './login.adapter';[39m[22m
+[1m[31m[7m [0m [91m              ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/service/api/user.api.service.ts[0m:[93m7[0m:[93m10[0m - [91merror[0m[90m TS2305: [0mModule '"../../adapters"' has no exported member 'DataUserAdapter'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m import { DataUserAdapter } from '../../adapters';[39m[22m
+[1m[31m[7m [0m [91m         ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m493.18 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:22:58.467Z[39m[37m[22m - Hash: [1m[37m80886e41b7435c84[39m[37m[22m - Time: [1m[37m1319[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/modules/user-profile/adapters/index.ts[39m[31m[0m:[0m[93m7:21-47[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve './login.adapter' in 'C:\projects\Comevent\frontend\app\src\modules\user-profile\adapters'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/adapters/index.ts[0m:[93m1[0m:[93m15[0m - [91merror[0m[90m TS2307: [0mCannot find module './login.adapter' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m export * from './login.adapter';[39m[22m
+[1m[31m[7m [0m [91m              ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/service/api/user.api.service.ts[0m:[93m7[0m:[93m10[0m - [91merror[0m[90m TS2305: [0mModule '"../../adapters"' has no exported member 'DataUserAdapter'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m import { DataUserAdapter } from '../../adapters';[39m[22m
+[1m[31m[7m [0m [91m         ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m493.34 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:26:07.962Z[39m[37m[22m - Hash: [1m[37mede6212e563f1e55[39m[37m[22m - Time: [1m[37m1958[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/modules/user-profile/adapters/index.ts[39m[31m[0m:[0m[93m7:21-47[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve './login.adapter' in 'C:\projects\Comevent\frontend\app\src\modules\user-profile\adapters'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/adapters/index.ts[0m:[93m1[0m:[93m15[0m - [91merror[0m[90m TS2307: [0mCannot find module './login.adapter' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m export * from './login.adapter';[39m[22m
+[1m[31m[7m [0m [91m              ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.html[0m:[93m2[0m:[93m3[0m - [91merror[0m[90m NG8008: [0mRequired input 'dataUserProfile' from component CardProfileComponent must be specified.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m   <card-profile [user]="user" />[39m[22m
+[1m[31m[7m [0m [91m  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.html[0m:[93m2[0m:[93m17[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'user' since it isn't a known property of 'card-profile'.[39m[22m
+[1m[31m1. If 'card-profile' is an Angular component and it has 'user' input, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'card-profile' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m   <card-profile [user]="user" />[39m[22m
+[1m[31m[7m [0m [91m                ~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/module[39m[22m[1m[31ms/user-profile/pages/profile/profile.component.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/service/api/user.api.service.ts[0m:[93m7[0m:[93m10[0m - [91merror[0m[90m TS2305: [0mModule '"../../adapters"' has no exported member 'DataUserAdapter'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m import { DataUserAdapter } from '../../adapters';[39m[22m
+[1m[31m[7m [0m [91m         ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m493.33 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:26:39.468Z[39m[37m[22m - Hash: [1m[37m9de35c2b7a2e610f[39m[37m[22m - Time: [1m[37m1226[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/modules/user-profile/adapters/index.ts[39m[31m[0m:[0m[93m7:21-47[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve './login.adapter' in 'C:\projects\Comevent\frontend\app\src\modules\user-profile\adapters'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/adapters/index.ts[0m:[93m1[0m:[93m15[0m - [91merror[0m[90m TS2307: [0mCannot find module './login.adapter' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m export * from './login.adapter';[39m[22m
+[1m[31m[7m [0m [91m              ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.html[0m:[93m2[0m:[93m3[0m - [91merror[0m[90m NG8008: [0mRequired input 'dataProfile' from component CardProfileComponent must be specified.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m   <card-profile [user]="user" />[39m[22m
+[1m[31m[7m [0m [91m  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.html[0m:[93m2[0m:[93m17[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'user' since it isn't a known property of 'card-profile'.[39m[22m
+[1m[31m1. If 'card-profile' is an Angular component and it has 'user' input, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'card-profile' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m   <card-profile [user]="user" />[39m[22m
+[1m[31m[7m [0m [91m                ~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/us[39m[22m[1m[31mer-profile/pages/profile/profile.component.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/service/api/user.api.service.ts[0m:[93m7[0m:[93m10[0m - [91merror[0m[90m TS2305: [0mModule '"../../adapters"' has no exported member 'DataUserAdapter'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m import { DataUserAdapter } from '../../adapters';[39m[22m
+[1m[31m[7m [0m [91m         ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m493.20 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:29:17.150Z[39m[37m[22m - Hash: [1m[37mbd1508da558f7322[39m[37m[22m - Time: [1m[37m1300[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/modules/user-profile/adapters/index.ts[39m[31m[0m:[0m[93m7:21-47[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve './login.adapter' in 'C:\projects\Comevent\frontend\app\src\modules\user-profile\adapters'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/adapters/index.ts[0m:[93m1[0m:[93m15[0m - [91merror[0m[90m TS2307: [0mCannot find module './login.adapter' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m export * from './login.adapter';[39m[22m
+[1m[31m[7m [0m [91m              ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.html[0m:[93m2[0m:[93m3[0m - [91merror[0m[90m NG8008: [0mRequired input 'dataProfile' from component CardProfileComponent must be specified.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m   <card-profile [user]="user" />[39m[22m
+[1m[31m[7m [0m [91m  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.html[0m:[93m2[0m:[93m17[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'user' since it isn't a known property of 'card-profile'.[39m[22m
+[1m[31m1. If 'card-profile' is an Angular component and it has 'user' input, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'card-profile' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m   <card-profile [user]="user" />[39m[22m
+[1m[31m[7m [0m [91m                ~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/us[39m[22m[1m[31mer-profile/pages/profile/profile.component.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/service/api/user.api.service.ts[0m:[93m7[0m:[93m10[0m - [91merror[0m[90m TS2305: [0mModule '"../../adapters"' has no exported member 'DataUserAdapter'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m import { DataUserAdapter } from '../../adapters';[39m[22m
+[1m[31m[7m [0m [91m         ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m493.20 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:29:34.906Z[39m[37m[22m - Hash: [1m[37mc6872bd6a4629db6[39m[37m[22m - Time: [1m[37m1185[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/modules/user-profile/adapters/index.ts[39m[31m[0m:[0m[93m7:21-47[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve './login.adapter' in 'C:\projects\Comevent\frontend\app\src\modules\user-profile\adapters'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/adapters/index.ts[0m:[93m1[0m:[93m15[0m - [91merror[0m[90m TS2307: [0mCannot find module './login.adapter' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m export * from './login.adapter';[39m[22m
+[1m[31m[7m [0m [91m              ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.html[0m:[93m2[0m:[93m3[0m - [91merror[0m[90m NG8008: [0mRequired input 'dataProfile' from component CardProfileComponent must be specified.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m   <card-profile [user]="user" />[39m[22m
+[1m[31m[7m [0m [91m  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.html[0m:[93m2[0m:[93m17[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'user' since it isn't a known property of 'card-profile'.[39m[22m
+[1m[31m1. If 'card-profile' is an Angular component and it has 'user' input, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'card-profile' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m   <card-profile [user]="user" />[39m[22m
+[1m[31m[7m [0m [91m                ~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/us[39m[22m[1m[31mer-profile/pages/profile/profile.component.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/service/api/user.api.service.ts[0m:[93m7[0m:[93m10[0m - [91merror[0m[90m TS2305: [0mModule '"../../adapters"' has no exported member 'DataUserAdapter'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m import { DataUserAdapter } from '../../adapters';[39m[22m
+[1m[31m[7m [0m [91m         ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m493.37 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:30:22.617Z[39m[37m[22m - Hash: [1m[37mc4e3b9c5f9f3b8fc[39m[37m[22m - Time: [1m[37m1114[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./frontend/app/src/modules/user-profile/adapters/index.ts[39m[31m[0m:[0m[93m7:21-47[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve './login.adapter' in 'C:\projects\Comevent\frontend\app\src\modules\user-profile\adapters'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/adapters/index.ts[0m:[93m1[0m:[93m15[0m - [91merror[0m[90m TS2307: [0mCannot find module './login.adapter' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m export * from './login.adapter';[39m[22m
+[1m[31m[7m [0m [91m              ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.html[0m:[93m2[0m:[93m3[0m - [91merror[0m[90m NG8008: [0mRequired input 'dataProfile' from component CardProfileComponent must be specified.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m   <card-profile [user]="user" />[39m[22m
+[1m[31m[7m [0m [91m  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.html[0m:[93m2[0m:[93m17[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'user' since it isn't a known property of 'card-profile'.[39m[22m
+[1m[31m1. If 'card-profile' is an Angular component and it has 'user' input, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'card-profile' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m   <card-profile [user]="user" />[39m[22m
+[1m[31m[7m [0m [91m                ~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/us[39m[22m[1m[31mer-profile/pages/profile/profile.component.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/service/api/user.api.service.ts[0m:[93m7[0m:[93m10[0m - [91merror[0m[90m TS2305: [0mModule '"../../adapters"' has no exported member 'DataUserAdapter'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m import { DataUserAdapter } from '../../adapters';[39m[22m
+[1m[31m[7m [0m [91m         ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m494.34 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:31:07.830Z[39m[37m[22m - Hash: [1m[37m26155477c360155a[39m[37m[22m - Time: [1m[37m2072[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.html[0m:[93m2[0m:[93m3[0m - [91merror[0m[90m NG8008: [0mRequired input 'dataProfile' from component CardProfileComponent must be specified.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m   <card-profile [user]="user" />[39m[22m
+[1m[31m[7m [0m [91m  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.html[0m:[93m2[0m:[93m17[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'user' since it isn't a known property of 'card-profile'.[39m[22m
+[1m[31m1. If 'card-profile' is an Angular component and it has 'user' input, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'card-profile' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m   <card-profile [user]="user" />[39m[22m
+[1m[31m[7m [0m [91m                ~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m494.34 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:31:08.544Z[39m[37m[22m - Hash: [1m[37m7df616c3c2cd5937[39m[37m[22m - Time: [1m[37m608[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.html[0m:[93m2[0m:[93m3[0m - [91merror[0m[90m NG8008: [0mRequired input 'dataProfile' from component CardProfileComponent must be specified.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m   <card-profile [user]="user" />[39m[22m
+[1m[31m[7m [0m [91m  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.html[0m:[93m2[0m:[93m17[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'user' since it isn't a known property of 'card-profile'.[39m[22m
+[1m[31m1. If 'card-profile' is an Angular component and it has 'user' input, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'card-profile' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m   <card-profile [user]="user" />[39m[22m
+[1m[31m[7m [0m [91m                ~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m494.34 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:31:28.014Z[39m[37m[22m - Hash: [1m[37m30403908a91402b8[39m[37m[22m - Time: [1m[37m1105[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.html[0m:[93m2[0m:[93m3[0m - [91merror[0m[90m NG8008: [0mRequired input 'dataProfile' from component CardProfileComponent must be specified.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m   <card-profile [user]="user" />[39m[22m
+[1m[31m[7m [0m [91m  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.html[0m:[93m2[0m:[93m17[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'user' since it isn't a known property of 'card-profile'.[39m[22m
+[1m[31m1. If 'card-profile' is an Angular component and it has 'user' input, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'card-profile' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m   <card-profile [user]="user" />[39m[22m
+[1m[31m[7m [0m [91m                ~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.ts[0m:[93m18[0m:[93m16[0m[39m[22m
+[1m[31m    [7m18[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m494.39 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:31:39.515Z[39m[37m[22m - Hash: [1m[37m4608c714957273e2[39m[37m[22m - Time: [1m[37m1318[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m493.61 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:32:11.896Z[39m[37m[22m - Hash: [1m[37m54cef10e6e2ab630[39m[37m[22m - Time: [1m[37m1300[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m493.13 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:32:35.678Z[39m[37m[22m - Hash: [1m[37m66ff2926ee270c59[39m[37m[22m - Time: [1m[37m1105[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m493.13 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:34:09.232Z[39m[37m[22m - Hash: [1m[37m991f36e396a91d6d[39m[37m[22m - Time: [1m[37m847[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m493.17 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:34:29.595Z[39m[37m[22m - Hash: [1m[37m04e9cf8c466db5bb[39m[37m[22m - Time: [1m[37m1370[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m493.46 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:34:52.312Z[39m[37m[22m - Hash: [1m[37mbf623db89db6e105[39m[37m[22m - Time: [1m[37m1445[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m493.54 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:55:20.062Z[39m[37m[22m - Hash: [1m[37ma0099348c628d5dd[39m[37m[22m - Time: [1m[37m1912[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m493.57 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:56:04.189Z[39m[37m[22m - Hash: [1m[37m3f82f6403d144e2c[39m[37m[22m - Time: [1m[37m1903[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m493.58 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:56:27.414Z[39m[37m[22m - Hash: [1m[37mba90a919debc33ac[39m[37m[22m - Time: [1m[37m1453[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m493.57 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:56:36.796Z[39m[37m[22m - Hash: [1m[37md1f578ea3ac18a5d[39m[37m[22m - Time: [1m[37m1080[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m494.83 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:57:18.064Z[39m[37m[22m - Hash: [1m[37m2383a60a09dd54b3[39m[37m[22m - Time: [1m[37m1602[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.html[0m:[93m7[0m:[93m11[0m - [91merror[0m[90m TS2349: [0mThis expression is not callable.[39m[22m
+[1m[31m  Type 'ILogin' has no call signatures.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m   <pre>{{ user() | json }}</pre>[39m[22m
+[1m[31m[7m [0m [91m          ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.ts[0m:[93m19[0m:[93m16[0m[39m[22m
+[1m[31m    [7m19[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.html[0m:[93m7[0m:[93m11[0m - [91merror[0m[90m TS2721: [0mCannot invoke an object which is possibly 'null'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m   <pre>{{ user() | json }}</pre>[39m[22m
+[1m[31m[7m [0m [91m          ~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfrontend/app/src/modules/user-profile/pages/profile/profile.component.ts[0m:[93m19[0m:[93m16[0m[39m[22m
+[1m[31m    [7m19[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m493.57 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:57:54.931Z[39m[37m[22m - Hash: [1m[37md1f578ea3ac18a5d[39m[37m[22m - Time: [1m[37m1227[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m493.59 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T20:59:33.869Z[39m[37m[22m - Hash: [1m[37ma3217ba3a27c00f4[39m[37m[22m - Time: [1m[37m1368[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m493.64 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-28T21:00:56.474Z[39m[37m[22m - Hash: [1m[37m49ee324a2a4374d7[39m[37m[22m - Time: [1m[37m1920[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m

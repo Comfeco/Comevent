@@ -1,11 +1,19 @@
 import { BLOCKED_TIME, ROLES } from '@db/constants';
 import { Exclude } from 'class-transformer';
-import { Column, Entity, ManyToOne, OneToMany } from 'typeorm';
+import {
+  Column,
+  Entity,
+  JoinTable,
+  ManyToMany,
+  ManyToOne,
+  OneToMany,
+} from 'typeorm';
 import { UserProvider } from '.';
 import { LastUpdatedBy } from '../../decorators/lastUpdateBy.decorator';
 import { IUser } from '../interfaces/user.interface';
 import { BaseEntity } from './base.entity';
 import { Country } from './country.entity';
+import { Event } from './event.entity';
 import { SocialNetwork } from './socialNetwork.entity';
 import { Specialty } from './specialty.entity';
 import { UserArea } from './userArea.entity';
@@ -87,4 +95,10 @@ export class User extends BaseEntity implements IUser {
 
   @LastUpdatedBy(User)
   lastUpdateBy!: User;
+
+  @ManyToMany(() => Event, (event) => event.users)
+  @JoinTable({
+    name: 'user_events',
+  })
+  events!: Event[];
 }

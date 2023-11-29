@@ -1,22 +1,43 @@
 import { CommonModule } from '@angular/common';
-import { Component, computed, inject } from '@angular/core';
+import { Component, OnInit, computed, inject } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ButtonComponent, TitleComponent } from '@ui/components';
+import { CardProfileComponent, UserProfileStateService } from '../..';
+import { TokenService } from '../../../../common/services/token.service';
+import { ILogin } from '../../../auth';
 import { LoginStateService } from '../../../auth/service/state';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, ButtonComponent, TitleComponent],
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    ButtonComponent,
+    TitleComponent,
+    CardProfileComponent,
+  ],
   selector: 'profile',
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.scss'],
 })
-export class ProfileComponent {
+export class ProfileComponent implements OnInit {
   private loginService = inject(LoginStateService);
-
-  public user = computed(() => this.loginService.currentUser());
+  private tokenService = inject(TokenService);
+  public userProfileStateService = inject(UserProfileStateService);
+  public userData = computed(() => this.loginService.currentUser());
+  public user: ILogin | null = null;
 
   onLogout() {
     this.loginService.logout();
+  }
+
+  ngOnInit(): void {
+    const userId = this.tokenService.getUserIdFromToken();
+
+    if (userId) {
+      this.userProfileStateService.onDataUserProfile(userId);
+    } else {
+      console.log('No entro');
+    }
   }
 }

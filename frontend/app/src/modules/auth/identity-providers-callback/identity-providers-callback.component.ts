@@ -1,8 +1,6 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { RegisterApiService } from '../service/api';
 import { LoginStateService } from '../service/state';
-import { RegisterUtilsService } from '../service/utils';
 
 @Component({
   selector: 'app-identity-providers-callback',
@@ -10,10 +8,8 @@ import { RegisterUtilsService } from '../service/utils';
   styleUrls: ['./identity-providers-callback.component.scss'],
 })
 export class IdentityProvidersCallbackComponent implements OnInit {
-  private registerUtils = inject(RegisterUtilsService);
   private activatedRoute = inject(ActivatedRoute);
   private loginState = inject(LoginStateService);
-  private registerApi = inject(RegisterApiService);
   private router = inject(Router);
 
   ngOnInit(): void {
@@ -28,6 +24,13 @@ export class IdentityProvidersCallbackComponent implements OnInit {
     console.log(code, provider, id, routeParams);
 
     if (code && provider && id) {
+      this.loginState.loginProvider(code, id, provider);
+    } else {
+      console.log('Redirigiendo al inicio...');
+      this.router.navigateByUrl('/');
+    }
+
+    /* if (code && provider && id) {
       this.registerApi.claimToken(code, id, provider).subscribe({
         next: ({ data, response }) => {
           console.log('data user', data);
@@ -49,6 +52,6 @@ export class IdentityProvidersCallbackComponent implements OnInit {
       console.log('salto acá');
 
       this.router.navigateByUrl('/');
-    }
+    } */
   }
 }

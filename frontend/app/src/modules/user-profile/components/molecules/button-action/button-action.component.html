@@ -1,0 +1,11 @@
+<button
+  [ngClass]="buttonClass"
+  class="flex flex-row justify-center bg-secondary-light-2 cursor-pointer hover-parent text-secondary hover:text-white-1 dark:hover:text-white-1 items-center gap-2 outline-none h-[38px] hover:bg-secondary border-transparent w-auto px-4"
+>
+  @switch (icon) { @case ('edit') {
+  <icon-edit class="stroke-secondary hover-child" />
+  } @case ('view') {
+  <icon-view />
+  } }
+  <span class="title-h6">{{ title }}</span>
+</button>

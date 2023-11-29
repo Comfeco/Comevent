@@ -100,7 +100,7 @@ export class RegisterApiService {
         console.log('Response received:', r);
         this.proccessTokenResponse(r.data as IUser);
         console.log('Token processed');
-        this.router.navigateByUrl('/dashboard');
+        this.router.navigateByUrl('/user/profile');
         console.log('Redirected to dashboard');
       }),
       catchError((err) => {

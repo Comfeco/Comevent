@@ -23,7 +23,7 @@ export class ResetStateService {
       .pipe(take(1))
       .subscribe({
         next: ({ data, response }) => {
-          this.router.navigateByUrl('/dashboard');
+          this.router.navigateByUrl('/user/profile');
           Swal.success(response.message, true);
         },
         error: ({ response }) => {

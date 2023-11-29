@@ -34,3 +34,27 @@ export enum AuthProvider {
   DISCORD = 'discord',
   GITHUB = 'github',
 }
+
+export enum AreaName {
+  DEVELOPMENT = 'Development',
+  DESIGN = 'Design',
+  MARKETING = 'Marketing',
+  SALES = 'Sales',
+  HUMAN_RESOURCES = 'Human Resources',
+  FINANCE = 'Finance',
+  CUSTOMER_SERVICE = 'Customer Service',
+  RESEARCH_AND_DEVELOPMENT = 'Research and Development',
+  IT_SUPPORT = 'IT Support',
+  LEGAL = 'Legal',
+  PUBLIC_RELATIONS = 'Public Relations',
+  OPERATIONS = 'Operations',
+}
+
+export enum SocialPlatform {
+  X = 'x',
+  DISCORD = 'Discord',
+  FACEBOOK = 'Facebook',
+  GITHUB = 'Github',
+  LINKEDIN = 'LinkedIn',
+  INSTAGRAM = 'Instagram',
+}

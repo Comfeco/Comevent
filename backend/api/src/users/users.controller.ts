@@ -32,6 +32,7 @@ import {
   UserToProjectDTO,
   ValidRolesDTO,
 } from './dto';
+import { UserProfileDTO } from './dto/UserProfile.dto';
 import { ChangePasswordDTO } from './dto/changePassword.dto';
 import { UsersService } from './users.service';
 
@@ -77,6 +78,22 @@ export class UsersController {
     try {
       const user = await this.usersService.findUserById(id);
       return Resp.Success<User>(user, 'OK');
+    } catch (error) {
+      throw Resp.Error('NOT_FOUND', 'User not found');
+    }
+  }
+
+  @Get('profile/:id')
+  @UserDoc()
+  public async findUserProfileById(
+    @Param('id') id: string,
+    @CurrentUser([ROLES.ADMIN, ROLES.USER]) currentUser: User
+  ) {
+    try {
+      const user = await this.usersService.findUserProfileById(id);
+      console.log('Controller user:', user);
+
+      return Resp.Success<UserProfileDTO>(user, 'OK');
     } catch (error) {
       throw Resp.Error('NOT_FOUND', 'User not found');
     }

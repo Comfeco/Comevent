@@ -1,4 +1,4 @@
-import { User, UsersCommunities } from '../entities';
+import { User, UserArea, UsersCommunities } from '../entities';
 import { Country } from '../entities/country.entity';
 import { SocialNetwork } from '../entities/socialNetwork.entity';
 import { Specialty } from '../entities/specialty.entity';
@@ -15,7 +15,7 @@ export interface IUser {
   username: string;
   avatar?: string;
   description?: string;
-  areasOfExpertise?: string;
+  userAreas: UserArea[];
   areasOfInterest?: string;
   specialty?: Specialty;
   socialNetworks?: SocialNetwork[];

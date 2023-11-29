@@ -1,0 +1,18 @@
+<div
+  class="flex justify-center w-[400px] bg-white-1 shadow-neutral-level2 rounded-xl px-4 pb-4"
+>
+  <c-button-action
+    title="Editar perfil"
+    icon="edit"
+    buttonClass="rounded-button"
+  />
+  <!-- <pre class="w-[100px]">{{ dataProfile | json }}</pre> -->
+
+  <div class="flex flex-shrink-0">
+    <img
+      class="w-24 h-24 md:w-40 md:h-40 border-2 border-secondary rounded-full flex-shrink-0"
+      [src]="dataProfile && dataProfile.avatar"
+      alt="avatar"
+    />
+  </div>
+</div>

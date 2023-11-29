@@ -21,6 +21,8 @@ import {
   UpdateUserDTO,
   UserToProjectDTO,
 } from './dto';
+import { UserProfileDTO } from './dto/UserProfile.dto';
+import { ISimplifiedUser } from './types/simplifiedUser.type';
 
 @Injectable()
 export class UsersService {
@@ -194,6 +196,48 @@ export class UsersService {
 
       return user;
     } catch (error) {
+      throw Resp.Error(error);
+    }
+  }
+
+  public async findUserProfileById(id: string): Promise<UserProfileDTO> {
+    try {
+      const userWithAreas = await this.userRepository
+        .createQueryBuilder('user')
+        .select(['user.username', 'user.avatar', 'user.description'])
+        .leftJoinAndSelect('user.socialNetworks', 'socialNetwork')
+        .leftJoinAndSelect('user.events', 'events')
+        .leftJoinAndSelect(
+          'user.userAreas',
+          'userArea',
+          'userArea.type = :type',
+          { type: 'EXPERTISE' }
+        )
+        .leftJoinAndSelect('userArea.area', 'area')
+        .where('user.id = :id', { id })
+        .getOne();
+
+      if (!userWithAreas) {
+        throw Resp.Error('NOT_FOUND');
+      }
+
+      const simplifiedUser: ISimplifiedUser = {
+        username: userWithAreas.username,
+        avatar: userWithAreas.avatar,
+        description: userWithAreas.description,
+        socialNetworks: userWithAreas.socialNetworks.map(
+          (social) => social.platform
+        ),
+        userAreas: userWithAreas.userAreas.map((area) => area.area.name),
+        events: userWithAreas.events,
+      };
+
+      const userProfile = Object.assign(new UserProfileDTO(), simplifiedUser);
+
+      return userProfile;
+    } catch (error) {
+      console.log('error user', error);
+
       throw Resp.Error(error);
     }
   }

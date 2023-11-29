@@ -1,0 +1,172 @@
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 207 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (5cf189e7818cd16a)
+[1m[31mDebugger listening [39m[22m
+[1m[31mon ws://localhost:9229/62c59012-e4cc-4756-bd52-542ec453861a[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/62c59012-e4cc-4756-bd52-542ec453861a[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 208 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m92:44[22m[39m[1m[39m[22m
+[90mTS2339: [39mProperty 'findUserProfileById' does not exist on type 'UsersService'.
+  [0m [90m 90 |[39m   ) {[0m
+  [0m [90m 91 |[39m     [36mtry[39m {[0m
+  [0m[31m[1m>[22m[39m[90m 92 |[39m       [36mconst[39m user [33m=[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mfindUserProfileById(id)[33m;[39m[0m
+  [0m [90m    |[39m                                            [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 93 |[39m       [36mreturn[39m [33mResp[39m[33m.[39m[33mSuccess[39m[33m<[39m[33mUser[39m[33m>[39m(user[33m,[39m [32m'OK'[39m)[33m;[39m[0m
+  [0m [90m 94 |[39m     } [36mcatch[39m (error) {[0m
+  [0m [90m 95 |[39m       [36mthrow[39m [33mResp[39m[33m.[39m[33mError[39m([32m'NOT_FOUND'[39m[33m,[39m [32m'User not found'[39m)[33m;[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (8e948dd78d0518a4)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 209 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (25c4476d6f23ceb9)
+[1m[31mDebugger listening on ws://l[39m[22m
+[1m[31mocalhost:9229/6ede8e84-c111-4531-8d1a-a2d91e8411c3[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/6ede8e84-c111-4531-8d1a-a2d91e8411c3[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 209 KiB [1m[33m[entry][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (25c4476d6f23ceb9)
+[1m[31mDebugger listening on ws[39m[22m
+[1m[31m://localhost:9229/0c604aec-2645-47f6-9660-018cc07de6f9[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/0c604aec-2645-47f6-9660-018cc07de6f9[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 209 KiB [1m[33m[entry][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (25c4476d6f23ceb9)
+[1m[31mDebugger listening on ws://loc[39m[22m
+[1m[31malhost:9229/7345f234-eefb-409e-8472-e4aefe2b53b1[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/7345f234-eefb-409e-8472-e4aefe2b53b1[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 209 KiB [1m[33m[entry][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (25c4476d6f23ceb9)
+[1m[31mDebugger listening on ws://[39m[22m
+[1m[31mlocalhost:9229/51f1ad9c-4ca6-4f6c-86fb-85b239fb703d[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/51f1ad9c-4ca6-4f6c-86fb-85b239fb703d[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 209 KiB [1m[33m[entry][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (25c4476d6f23ceb9)
+[1m[31mDebugger listening on ws://loca[39m[22m
+[1m[31mlhost:9229/49ebdc9a-d19c-4b4c-b9bd-d1c564f3004a[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/49ebdc9a-d19c-4b4c-b9bd-d1c564f3004a[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 209 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m93:33[22m[39m[1m[39m[22m
+[90mTS2345: [39mArgument of type '{ cause: Error; name: string; message: string; stack?: string; data: UserProfileDTO; } | { status: HttpStatus; message: string; code: "CONTINUE" | "SWITCHING_PROTOCOLS" | ... 45 more ... | "HTTP_VERSION_NOT_SUPPORTED"; success: boolean; data: {}; }' is not assignable to parameter of type 'User'.
+  Type '{ cause: Error; name: string; message: string; stack?: string; data: UserProfileDTO; }' is missing the following properties from type 'User': firstName, lastName, age, email, and 23 more.
+  [0m [90m 91 |[39m     [36mtry[39m {[0m
+  [0m [90m 92 |[39m       [36mconst[39m user [33m=[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mfindUserProfileById(id)[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 93 |[39m       [36mreturn[39m [33mResp[39m[33m.[39m[33mSuccess[39m[33m<[39m[33mUser[39m[33m>[39m(user[33m,[39m [32m'OK'[39m)[33m;[39m[0m
+  [0m [90m    |[39m                                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 94 |[39m     } [36mcatch[39m (error) {[0m
+  [0m [90m 95 |[39m       [36mthrow[39m [33mResp[39m[33m.[39m[33mError[39m([32m'NOT_FOUND'[39m[33m,[39m [32m'User not found'[39m)[33m;[39m[0m
+  [0m [90m 96 |[39m     }[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (40b1c661a8e285af)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 209 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.controller.ts:[32m[1m93:33[22m[39m[1m[39m[22m
+[90mTS2345: [39mArgument of type 'UserProfileDTO' is not assignable to parameter of type 'User'.
+  Type 'UserProfileDTO' is missing the following properties from type 'User': firstName, lastName, age, email, and 21 more.
+  [0m [90m 91 |[39m     [36mtry[39m {[0m
+  [0m [90m 92 |[39m       [36mconst[39m user [33m=[39m [36mawait[39m [36mthis[39m[33m.[39musersService[33m.[39mfindUserProfileById(id)[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 93 |[39m       [36mreturn[39m [33mResp[39m[33m.[39m[33mSuccess[39m[33m<[39m[33mUser[39m[33m>[39m(user[33m,[39m [32m'OK'[39m)[33m;[39m[0m
+  [0m [90m    |[39m                                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 94 |[39m     } [36mcatch[39m (error) {[0m
+  [0m [90m 95 |[39m       [36mthrow[39m [33mResp[39m[33m.[39m[33mError[39m([32m'NOT_FOUND'[39m[33m,[39m [32m'User not found'[39m)[33m;[39m[0m
+  [0m [90m 96 |[39m     }[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (9aaa31eff04c3897)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 209 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (d07051061a99acd6)
+[1m[31mDebugger listening on ws://loc[39m[22m
+[1m[31malhost:9229/b0a241b8-00af-4f12-bf2f-4ccf0d1f20d5[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/b0a241b8-00af-4f12-bf2f-4ccf0d1f20d5[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 209 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (2858185510ec798e)
+[1m[31mDebugger listening on ws://localhost:9229/c86[39m[22m
+[1m[31md7f4e-6286-468e-aa4f-397ebc4c6a31[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/c86d7f4e-6286-468e-aa4f-397ebc4c6a31[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 209 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (84945309c6350d8e)
+[1m[31mDebugger listening on ws://localhost:9[39m[22m
+[1m[31m229/21f6efd6-e78f-491d-a664-39693243648d[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/21f6efd6-e78f-491d-a664-39693243648d[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 210 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.service.ts:[32m[1m220:7[22m[39m[1m[39m[22m
+[90mTS2322: [39mType 'User' is not assignable to type 'UserProfileDTO'.
+  Types of property 'events' are incompatible.
+    Type 'Event[]' is not assignable to type 'string[]'.
+      Type 'Event' is not assignable to type 'string'.
+  [0m [90m 218 |[39m       }[0m
+  [0m [90m 219 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 220 |[39m       [36mreturn[39m user[33m;[39m[0m
+  [0m [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 221 |[39m     } [36mcatch[39m (error) {[0m
+  [0m [90m 222 |[39m       [36mthrow[39m [33mResp[39m[33m.[39m[33mError[39m(error)[33m;[39m[0m
+  [0m [90m 223 |[39m     }[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (a6cb2a02613ca406)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 210 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.service.ts:[32m[1m220:7[22m[39m[1m[39m[22m
+[90mTS2322: [39mType 'User' is not assignable to type 'UserProfileDTO'.
+  Types of property 'events' are incompatible.
+    Type 'Event[]' is not assignable to type 'string[]'.
+      Type 'Event' is not assignable to type 'string'.
+  [0m [90m 218 |[39m       }[0m
+  [0m [90m 219 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 220 |[39m       [36mreturn[39m user[33m;[39m[0m
+  [0m [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 221 |[39m     } [36mcatch[39m (error) {[0m
+  [0m [90m 222 |[39m       [36mthrow[39m [33mResp[39m[33m.[39m[33mError[39m(error)[33m;[39m[0m
+  [0m [90m 223 |[39m     }[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (fb5d0ef0d03c0739)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 210 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./backend/api/src/users/users.service.ts:[32m[1m220:7[22m[39m[1m[39m[22m
+[90mTS2322: [39mType 'User' is not assignable to type 'UserProfileDTO'.
+  Types of property 'events' are incompatible.
+    Type 'Event[]' is not assignable to type 'string[]'.
+      Type 'Event' is not assignable to type 'string'.
+  [0m [90m 218 |[39m       }[0m
+  [0m [90m 219 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 220 |[39m       [36mreturn[39m user[33m;[39m[0m
+  [0m [90m     |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 221 |[39m     } [36mcatch[39m (error) {[0m
+  [0m [90m 222 |[39m       [36mthrow[39m [33mResp[39m[33m.[39m[33mError[39m(error)[33m;[39m[0m
+  [0m [90m 223 |[39m     }[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (0b70b081000ac1a7)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 210 KiB [1m[33m[entry][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (0b70b081000ac1a7)
+[1m[31mDebugger listening on ws://localhost:9229[39m[22m
+[1m[31m/b3bb9a08-f0bf-4842-bd30-47f7561beb34[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/b3bb9a08-f0bf-4842-bd30-47f7561beb34[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 213 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (2416417b16d42b34)
+[1m[31mDebugger listening on w[39m[22m
+[1m[31ms://localhost:9229/6f450e8f-4879-4e3a-b58c-938dd386a454[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/6f450e8f-4879-4e3a-b58c-938dd386a454[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
